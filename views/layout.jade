@@ -1,0 +1,29 @@
+!!! 5
+html(lang='en')
+  head
+    title= title
+    script(src="js/jquery-1.8.0.min.js")
+    script(src="/socket.io/socket.io.js")
+    script(src="controllers/login.js")
+    script(src="controllers/foyer.js")
+    script(src="controllers/deckbuilder.js")
+    script(src="controllers/booster.js")
+    script(src="sets/sets.js")
+    script(src="sets/rtr.js")
+    script(src="sets/gtc.js")
+    script(src="js/bootstrap.min.js")
+    script(src="js/bootstrap-dropdown.js")
+    script(src="js/bootstrap-collapse.js")
+    script(src="js/jquery-1.8.0.min.js")
+    script(src="js/draft_height.js")
+    <link href="css/bootstrap.css" rel="stylesheet"></link>
+    <link href="css/cloudmagic.css" rel="stylesheet"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  body
+    include header
+    #content
+      include login
+      include foyer
+      include draft
+      include builder
+  script(src="controllers/draft.js")

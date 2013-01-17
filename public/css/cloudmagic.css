@@ -1,0 +1,273 @@
+
+div.builder_list_div {
+    width:78%;
+    border:2px solid;
+    border-radius:8px;
+    padding:5px;
+}
+
+div.builder_list_pool_main {
+    height:200px;
+}
+
+div.builder_list_side {
+    height:125px;
+}
+
+div.builder_table_div {
+    height:66%; width:100%; overflow-y:scroll;
+}
+
+table.builder_content_table {
+    display:table; text-align:left; width:100%; table-layout:fixed;
+}
+
+table.builder_content_inner_table {
+    display:table; text-align:left; width:100%;
+}
+
+table.builder_header_table {
+    width:100%; height:auto;
+}
+
+tbody.builder_tbody {
+    display:table-row-group; text-align:left;
+}
+
+th.bth {
+    font-size : x-small;
+}
+
+th.bth_name {
+    width : 15%;
+}
+
+th.bth_type {
+    width : 12%;
+}
+
+th.bth_stype {
+    width : 7%;
+}
+
+th.bth_power {
+    width : 6%;
+}
+
+th.bth_tough {
+    width : 6%;
+}
+
+th.bth_mana {
+    width : 5%;
+}
+
+th.bth_set {
+    width : 5%;
+}
+
+th.bth_rarity {
+    width : 7%;
+}
+
+th.bth_flavor {
+    width : auto;
+}
+
+
+/*  <td>  */
+td.btd {
+    font-size : x-small;
+}
+
+td.btd_name {
+    width : 15%;
+}
+
+td.btd_type {
+    width : 12%;
+}
+
+td.btd_stype {
+    width : 7%;
+}
+
+td.btd_power {
+    width : 6%;
+}
+
+td.btd_tough {
+    width : 6%;
+}
+
+td.btd_mana {
+    width : 5%;
+}
+
+td.btd_set {
+    width : 5%;
+}
+
+td.btd_rarity {
+    width : 7%;
+}
+
+td.btd_flavor {
+    width : auto;
+}
+
+
+input.bcradio {
+    
+    padding-left : 5px;
+    margin-top : 10px;
+    
+}
+
+label.bcrlabel {
+    
+    padding-left : 5px;
+    margin-top : 10px;
+    font-size : x-small;
+    margin : auto;
+    margin-right : 6px;
+    
+}
+
+button.bsearchbtn {
+    font-size : x-small;
+    width : auto;
+}
+
+button.bsortbtn {
+    margin-top:10px;
+    width:auto;
+    font-size:x-small;
+}
+
+select.bdrop_select {
+    width:auto;
+    font-size:x-small;
+}
+
+li.nav_section {
+    padding:10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Header Divs and Classes */
+#header {
+	padding-bottom:5px;
+}
+
+/* Content Divs and Classes */
+#content {
+	padding-top:40px;
+}
+
+  /* Draft View Divs and Classes */
+    #draft {
+    	width:100%;
+    }
+    
+    #draft .less-space [class*="span"] {
+        margin-left:0.25%;
+    }
+    
+    #draft .no-height {
+      height:0px;
+    }
+		
+		#draft .no-padding {
+			padding:0%;
+		}
+  	  
+    /* Pack Screen */
+      #draft #pack-screen {
+      	width:100%;
+				height:auto;
+				position:fixed;
+				background-color:#fff;
+      }
+			
+	    #draft #pack-screen .row-padding {
+	    	padding-bottom:0.25%;
+	    }
+      
+      #draft #pack-screen #preview {
+      	
+      }
+      
+      #draft #pack-screen #preview img {
+      	width:100%;
+      }
+      
+      #draft #pack-screen .row-fluid .span1 {
+        width: 12.2%;
+        *width: 11.95%;
+				background-image:url('/img/cardback.jpg');
+				background-repeat: no-repeat;
+				-moz-border-radius: 5.5px;
+				-webkit-border-radius: 5.5px;
+				border-radius: 5.5px;
+      }
+      
+      #draft #pack-screen .row-fluid .span2 {
+        width: 19.65%;
+        *width: 19.50%;
+      }
+      
+      #draft #pack-screen .row-fluid .span10 {
+        width: 79.85%;
+        *width: 79.50%;
+      }
+    
+  	/* Control Bar */
+      #draft #control-bar {
+				background-color:#444;
+      }
+    
+  	/* Pick Screen */
+      #draft #pick-screen {
+				padding-bottom:500px;
+      }
+  		
+      #draft #pick-screen .row-fluid .span1 {
+        width: 9.72%;
+        *width: 9.47%;
+				background-image:url('/img/transparent.png');
+				background-repeat: no-repeat;
+      }
+			
+      #draft #pick-screen .stack {
+				margin-bottom:-12%;
+      }
+			
+      #draft #pick-screen .rounded {
+				-moz-border-radius: 5.5px;
+				-webkit-border-radius: 5.5px;
+				border-radius: 5.5px;
+      }
+			
+			
+			
+			
+			
+			#disclaimer {
+				position:fixed;
+				width:600px;
+				bottom:1px;
+				left:100px;
+				z-index:-1;
+			}
+			
+   
+  
