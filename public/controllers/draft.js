@@ -129,15 +129,41 @@ Draft = {
         
         /*** put the card in the card picks UI ***/
         /* get the converted mana cost of the card (count from 1 for now) */
-        var cnc = 1;
-        if( Draft.colSize[ Draft.picknum ] + 1 >= Draft.numPickRows ){
-            // add a new row
+        var cmc = GTC.card_data[ pick_id ].cmc;
+        var pickRowNum = Draft.colSize[ cmc ];
+        if( pickRowNum < Draft.numPickRows ){
+            // there is space in the corresponding CMC column, so add the
+            var idx = Draft.colSize[ cmc ]; // non zero index
+        }
+        else{ // add a new row
+            
+            var row = $("div");
+            row.addClass("row-fluid").addClass("less-space");
+            
+            for( var i = 0; i < 10; ++i ){
+            
+                var col = $("div");
+                col.attr("id", "pick-card-" + pickRowNum + "-" + i);
+                col.addClass("span1").addClass("stack").addClass("rounded");
+                
+                var img = $("img");
+                img.attr("src", "/img/transparent.png");
+                
+                col.append( img );
+                row.append( col );
+            
+            }
+            
             ++ Draft.numPickRows;
         }
         
-        /* TODO add the next pack's images to the pack UI */
-        $("#pick-card-" + Draft.picknum).css( "background-image", 'url(' + pick_img + ')' );
-        $("#pick-card-" + Draft.picknum).on( 'mouseover', { 'id' : pick_id }, Draft.cardZoom );
+        ++ Draft.colSize[ cmc ];
+        
+        console.log( "Putting card into:")
+        console.log( "#pick-card-" + pickRowNum + "-" + cmc )
+        
+        $( "#pick-card-" + pickRowNum + "-" + cmc ).css( "background-image", 'url(' + pick_img + ')' );
+        $( "#pick-card-" + pickRowNum + "-" + cmc ).on( 'mouseover', { 'id' : pick_id }, Draft.cardZoom );
         
     }
     
