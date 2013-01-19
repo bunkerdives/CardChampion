@@ -7,8 +7,6 @@ Draft = {
     drafts : {},
 
     newDraft : function( draftId, set, groupData ) {
-        
-        console.log("new draft");
     
         // create an object containing this draft's data
         var draftData = { 'id' : draftId, 'set' : set, 'players' : [], 'pData' : {},
@@ -22,16 +20,11 @@ Draft = {
         // get the nicks of the first and last players in the pod
         var first = groupData[0].nick;
         var last = groupData[7].nick;
-		
-		//console.log( 'groupData:' );
-		//console.log( groupData );
         
         // loop through each player in the group's data
         for( var i = 0; i < groupData.length; ++i ){
 			
 			var o = groupData[i];
-			//console.log( 'object' );
-			//console.log( o );
         
             // add the player's nick to the draft's list of players
             draftData.players[i] = o.nick;
@@ -81,26 +74,27 @@ Draft = {
     
     startDraft : function( draftId ) {
         
-        //var draftData = Draft.drafts[ draftId ];
-		// **********************
-        var draft = Draft;
-        console.log(draftId);
-        console.log(draft);
-        var drafts = draft.drafts;
-        var eventId = drafts[ draftId ];
-        var players = eventId.players;
+        var players = Draft.drafts[draftId]['players'];
         var order = JSON.stringify( players );
         
-        console.log("start draft");
+        console.log("start draft id: " + Draft.drafts[ draftId ].id);
+        
+        for( var i = 0; i < 8; ++i ){
+            var player = Draft.drafts[draftId]['players'][i];
+            console.log("start draft " + i + " player: " + player)
+            // get the player's socket
+            var socket = Draft.drafts[draftId]['pData'][player]['socket'];
+            socket.emit( 'DraftStart', { 'order' : order } );
+        }
         
         // send a start draft event to all the players in this draft
-        io.sockets.in( Draft.drafts[ draftId ].draftId ).emit( 'StartDraft', { 'order' : order } );
+        //io.sockets.in( Draft.drafts[ draftId ].id ).emit( 'DraftStart', { 'order' : order } );
         
     },
     
     distributeBoosterPacks : function( draftId ) {
         
-        var draftData = drafts[ draftId ];
+        var draftData = Draft.drafts[ draftId ];
         var players = draftData['players'];
         var pData = draftData['pData'];
         var size = players.length;
@@ -113,10 +107,10 @@ Draft = {
             socket = pData[nick].socket;
         
             // create a randomized booster pack for the given set
-            booster = BoosterPack.newBooster(set);
+            //booster = BoosterPack.newBooster(set);
             
             // send a NewBooster event to the player w/ the booster pack inside
-            socket.emit( 'NewBooster', { 'booster' : JSON.stringify(booster) } );
+            //socket.emit( 'NewBooster', { 'booster' : JSON.stringify(booster) } );
             
         }
         

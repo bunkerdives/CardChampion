@@ -285,12 +285,12 @@ Draft = {
     }
 
     , draftStart : function(data, _socket) {
+        
+        console.log("draft start");
     
         var body = $.parseJSON(data);
         var cards = body.cards;
         var users = body.users;
-        
-        console.log("draft start");
         
         // initialize the list of picks and the passed cards queue
         Draft.picks = [];

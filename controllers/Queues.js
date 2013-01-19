@@ -41,7 +41,7 @@ Queues = {
             // create a tourney ID and make sure it's available
             var tourneyId = uuid.v4();
             
-            io.sockets.in(set).emit( 'Unsubscribe' );
+            //io.sockets.in(set).emit( 'Unsubscribe' );
         
             // create a new draft tournament
             draft.newDraft( tourneyId, set, queued );
