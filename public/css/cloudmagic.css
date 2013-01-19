@@ -266,6 +266,7 @@ li.nav_section {
 			#draft #control-bar select {
 				margin-bottom:0px;
 				padding-bottom:0px;
+				width:auto;
 			}
     
   	/* Pick Screen */
