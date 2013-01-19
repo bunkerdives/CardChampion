@@ -261,12 +261,20 @@ li.nav_section {
 			
       #draft #control-bar .span3 {
 				min-height:0px;
+				padding-left:0px;
+				margin-left:0px;
+				width:25%;
       }
 			
 			#draft #control-bar select {
 				margin-bottom:0px;
 				padding-bottom:0px;
 				width:auto;
+				
+			}
+			
+			#draft #control-bar .dropdown-menu {
+				min-width:0px;
 			}
     
   	/* Pick Screen */

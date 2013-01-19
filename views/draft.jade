@@ -45,14 +45,19 @@
         .span3 Pick #, Pack #
         .span3 1:30
         .span3
-          button.btn Sort
-          select
-            option Pack
-            option Picks
-          select
-            option By color
-            option By cost
-            option By type
+          .input-prepend
+            .btn-group
+              button.btn.dropdown-toggle(data-toggle="dropdown") Sort
+              ul.dropdown-menu
+                li
+                  a(tabindex="-1", href="#") Pack
+                li
+                  a(tabindex="-1", href="#") Picks
+            select
+              option by color
+              option by cost
+              option by type
+              option by rarity
         .span3
           button.btn(onclick="Draft.shufflePack();") Shuffle pack
   #pick-screen
