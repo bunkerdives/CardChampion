@@ -248,9 +248,13 @@ li.nav_section {
     
   	/* Control Bar */
       #draft #control-bar {
-				color:#000;
+				background-color:#000;
+				color:#fff;
+				font-size:26px;
+				font-weight:400;
 				text-align:center;
 				min-height:0px;
+				margin-top:2.5px;
 				padding-top:5px;
 				padding-bottom:5px;
       }
@@ -258,6 +262,11 @@ li.nav_section {
       #draft #control-bar .span3 {
 				min-height:0px;
       }
+			
+			#draft #control-bar select {
+				margin-bottom:0px;
+				padding-bottom:0px;
+			}
     
   	/* Pick Screen */
       #draft #pick-screen {

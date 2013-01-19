@@ -2,7 +2,7 @@
   #pack-screen
     .row-fluid.no-height
       .span12
-        .row-fluid.less-space.row-padding
+        .row-fluid.less-space.no-padding
           #preview.span2
             img#preview-src(src="/img/transparent.png")
           #pack.span10
@@ -44,8 +44,15 @@
       #control-bar.span12
         .span3 Pick #, Pack #
         .span3 1:30
-        .span3 Sort: Color
-        .span3 Shuffle
+        .span3
+          select
+            option Sort by color
+            option Sort by cost
+            option Sort by type
+          button.btn ^
+          button.btn v
+        .span3
+          button.btn Shuffle pack
   #pick-screen
     .row-fluid.no-height
       #pick-table.span12
