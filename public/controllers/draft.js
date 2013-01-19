@@ -12,6 +12,8 @@ Draft = {
     // a queue of boosters from the server, in case any come before user is done picking
     , newBoosterQueue : null
     
+    , highlight : -1
+    
     , curPack : []
     
     , boosters : []
@@ -56,7 +58,7 @@ Draft = {
         for( var i = 1; i < 15; ++i ){
             
             var id = Draft.curPack[i-1];
-            var data = { 'id' : id }
+            var data = { 'id' : id, 'slot' : i }
             
             console.log( id );
             console.log( GTC.card_data[id].img );
@@ -64,10 +66,28 @@ Draft = {
             /* register mouseover handler */
             $( "#pack-card-" + i ).on( 'mouseover', data, Draft.cardZoom );
             
+            /* register singler click handler */
+            $( "#pack-card-" + i ).click( data, Draft.highlightCard );
+            
             /* register double click handler */
             $( "#pack-card-" + i ).dblclick( data, Draft.selectCard );
             
         }
+        
+    }
+    
+    , highlightCard : function(event){
+        
+        var slot = event.data.slot;
+        
+        if( Draft.highlight > 0 ){
+            // remove the existing highlight
+            $( "#pack-card-" + Draft.highlight ).removeClass("select");
+        }
+        
+        $( "#pack-card-" + slot ).addClass("select");
+        
+        Draft.highlight = slot;
         
     }
     
@@ -103,12 +123,10 @@ Draft = {
         
         Draft.curPack = Draft.boosters[ Draft.picknum % 8 ];
         
-        console.log( "BOOSTER NUM: " + (Draft.picknum % 8) )
-        console.log( "PICKNUM: " + Draft.picknum)
-        
-        console.log( "BOOSTER LENGTHS 1: ")
-        for( var i = 0; i < 8; ++i ){
-            console.log( "Booster " + i + ": " + Draft.boosters[i].length )
+        // deselect the card if it was already highlighted
+        if( event.data.slot == Draft.highlight ){
+            $( "#pack-card-" + Draft.highlight ).removeClass("select");
+            Draft.highlight = -1;
         }
         
         /* replace the images in the pack UI with the new pack images */
@@ -120,6 +138,8 @@ Draft = {
             $( "#pack-card-" + i ).dblclick( { 'id' : id }, Draft.selectCard );
             $( "#pack-card-" + i ).off( 'mouseover' );
             $( "#pack-card-" + i ).on( 'mouseover', { 'id' : id }, Draft.cardZoom );
+            $( "#pack-card-" + i ).off( 'click' );
+            $( "#pack-card-" + i ).click( {'id':id,'slot':i}, Draft.highlightCard );
         }
         for( ; i < 15; ++i ){
             $( "#pack-card-" + i ).css( "background-image", 'url(\'/img/transparent.png\')' );
@@ -137,8 +157,7 @@ Draft = {
         }
         else{ // add a new row
             
-            var row = $('<div>');
-            row.addClass("row-fluid").addClass("less-space");
+            var row = $('<div>').addClass("row-fluid").addClass("less-space");
             
             for( var i = 0; i < 10; ++i ){
             
@@ -146,8 +165,7 @@ Draft = {
                 col.attr("id", "pick-card-" + pickRowNum + "-" + i);
                 col.addClass("span1").addClass("stack").addClass("rounded");
                 
-                var img = $("<img>");
-                img.attr("src", "/img/transparent.png");
+                var img = $("<img>").attr("src", "/img/transparent.png");
                 
                 col.append( img );
                 row.append( col );
@@ -164,9 +182,6 @@ Draft = {
         }
         
         ++ Draft.colSize[ cmc ];
-        
-        console.log( "Putting card into:")
-        console.log( "#pick-card-" + pickRowNum + "-" + cmc )
         
         $( "#pick-card-" + pickRowNum + "-" + cmc ).css( "background-image", 'url(' + pick_img + ')' );
         $( "#pick-card-" + pickRowNum + "-" + cmc ).on( 'mouseover', { 'id' : pick_id }, Draft.cardZoom );
