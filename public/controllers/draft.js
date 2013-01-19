@@ -76,17 +76,20 @@ Draft = {
         var pick_id = event.data.id;
         var pick_img = GTC.card_data[ pick_id ].img;
         
+        Draft.picknum += 1;
+        
         /* remove the card from the current pack's list of cards */
         for( var i = 0; i < Draft.curPack.length; ++i ){
             if( Draft.curPack[i] == pick_id ){
                 Draft.curPack.splice(i,1);
+                break;
             }
         }
         
         /* remove a card randomly from all other packs */
         for( var i = 0; i < 8; ++i ){
             
-            if( i == Draft.packIdx ){
+            if( i == (Draft.picknum % 8 - 1)){
                 continue;
             }
             
@@ -98,23 +101,19 @@ Draft = {
             
         }
         
-        /* get the next pack */
-        Draft.picknum += 1;
-        if( Draft.picknum == 8 ){
-            Draft.picknum = 0;
-        }
-        if( Draft.picknum == 14 ){ // TODO
-            // remove all images from the pack UI
-        }
-        Draft.curPack = Draft.boosters[ Draft.picknum ];
+        Draft.curPack = Draft.boosters[ Draft.picknum % 8 ];
         
+        console.log( "BOOSTER NUM: " + (Draft.picknum % 8) )
         console.log( "PICKNUM: " + Draft.picknum)
+        
+        console.log( "BOOSTER LENGTHS 1: ")
+        for( var i = 0; i < 8; ++i ){
+            console.log( "Booster " + i + ": " + Draft.boosters[i].length )
+        }
         
         /* replace the images in the pack UI with the new pack images */
         for( var i = 1; i < 15 - Draft.picknum; ++i ){
-            console.log("SELECT CARD: " + (i))
             var id = Draft.curPack[ i - 1 ];
-            console.log("ID: " + id)
             var img = GTC.card_data[ id ].img;
             $( "#pack-card-" + i ).css( "background-image", 'url(' + img + ')' );
             $( "#pack-card-" + i ).off( 'dblclick' );
@@ -123,7 +122,6 @@ Draft = {
             $( "#pack-card-" + i ).on( 'mouseover', { 'id' : id }, Draft.cardZoom );
         }
         for( ; i < 15; ++i ){
-            console.log("SELECT CARD: " + i)
             $( "#pack-card-" + i ).css( "background-image", 'url(\'/img/transparent.png\')' );
             $( "#pack-card-" + i ).off( 'dblclick' );
             $( "#pack-card-" + i ).off( 'mouseover' );
