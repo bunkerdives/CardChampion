@@ -219,6 +219,41 @@ Draft = {
         
     }
     
+    , shufflePack : function(){
+        
+        var i = Draft.curPack.length, j, tempi, tempj;
+        if( i == 0 ){
+            return false;
+        }
+        while( --i ){
+            j = Math.floor( Math.random() * ( i + 1 ) );
+            tempi = Draft.curPack[i];
+            tempj = Draft.curPack[j];
+            Draft.curPack[i] = tempj;
+            Draft.curPack[j] = tempi;
+        }
+        
+        /* replace the images in the pack UI with the new pack images */
+        for( var i = 1; i < 15 - Draft.picknum; ++i ){
+            var id = Draft.curPack[ i - 1 ];
+            var img = GTC.card_data[ id ].img;
+            $( "#pack-card-" + i ).css( "background-image", 'url(' + img + ')' );
+            $( "#pack-card-" + i ).off( 'dblclick' );
+            $( "#pack-card-" + i ).dblclick( { 'id' : id }, Draft.selectCard );
+            $( "#pack-card-" + i ).off( 'mouseover' );
+            $( "#pack-card-" + i ).on( 'mouseover', { 'id' : id }, Draft.cardZoom );
+            $( "#pack-card-" + i ).off( 'click' );
+            $( "#pack-card-" + i ).click( {'id':id,'slot':i}, Draft.highlightCard );
+        }
+        for( ; i < 15; ++i ){
+            $( "#pack-card-" + i ).css( "background-image", 'url(\'/img/transparent.png\')' );
+            $( "#pack-card-" + i ).off( 'click' );
+            $( "#pack-card-" + i ).off( 'dblclick' );
+            $( "#pack-card-" + i ).off( 'mouseover' );
+        }
+        
+    }
+    
     , resizeRow : function(row){
         
 		fixed_height = $('#pick-row-loaded').height()
