@@ -137,16 +137,16 @@ Draft = {
         }
         else{ // add a new row
             
-            var row = $("div");
+            var row = $('<div>');
             row.addClass("row-fluid").addClass("less-space");
             
             for( var i = 0; i < 10; ++i ){
             
-                var col = $("div");
+                var col = $("<div>");
                 col.attr("id", "pick-card-" + pickRowNum + "-" + i);
                 col.addClass("span1").addClass("stack").addClass("rounded");
                 
-                var img = $("img");
+                var img = $("<img>");
                 img.attr("src", "/img/transparent.png");
                 
                 col.append( img );
@@ -154,7 +154,13 @@ Draft = {
             
             }
             
+            $("#pick-table").append(row);
+            
+            /* Call row background resize function */
+            Draft.resizeRow( pickRowNum );
+            
             ++ Draft.numPickRows;
+            
         }
         
         ++ Draft.colSize[ cmc ];
@@ -193,6 +199,12 @@ Draft = {
         
         $("#pack-card-15").css( "background-image", 'url(\'/img/transparent.png\')' );
         $("#pack-card-16").css( "background-image", 'url(\'/img/transparent.png\')' );
+        
+    }
+    
+    , resizeRow : function(row){
+        
+        return 1;
         
     }
 

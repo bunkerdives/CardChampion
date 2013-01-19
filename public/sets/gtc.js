@@ -83,6 +83,7 @@ GTC = {
         , '162'
         , '163'
         , '164'
+        , '170'
         , '171'
         , '178'
         , '180'
@@ -667,6 +668,14 @@ GTC = {
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hdp3bxhyks_en.jpg'
         }
         
+        , '170' : {
+            'name' : 'Gruul Ragebeast'
+            , 'rarity' : 'R'
+            , 'color' : 'RG'
+            , 'cmc' : 7
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qnyu9rzw3i_en.jpg'
+        }
+        
         /* invalid card id */
         , '169' : {
             'name' : 'Gruul Charm'
@@ -834,6 +843,15 @@ GTC = {
             , 'cmc' : 5
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/87zvag5bon_en.jpg'
         }
+        
+        /*
+        , '206' : {
+            'name' : 'Vizkopa Guildmage'
+            , 'rarity' : 'U'
+            , 'color' : 'WB'
+            , 'cmc' : 2
+            , 'img' : ''
+        }*/
         
         , '207' : {
             'name' : 'Whispering Madness'
