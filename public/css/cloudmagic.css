@@ -255,8 +255,8 @@ li.nav_section {
 				text-align:center;
 				min-height:0px;
 				margin-top:2.5px;
-				padding-top:5px;
-				padding-bottom:5px;
+				padding-top:3px;
+				padding-bottom:3.5px;
       }
 			
       #draft #control-bar .span3 {
@@ -266,15 +266,51 @@ li.nav_section {
 				width:25%;
       }
 			
-			#draft #control-bar select {
-				margin-bottom:0px;
+			#draft #control-bar .input-prepend {
 				padding-bottom:0px;
-				width:auto;
-				
+				margin-bottom:0px;
+			}
+			
+			#draft #control-bar #sortWrapper {
+				-webkit-border-radius: 4px 4px 4px 4px;
+				-moz-border-radius: 4px 4px 4px 4px;
+				border-radius: 4px 4px 4px 4px;
+				height:36px;
+				width:141px;
+				margin-left:auto;
+				margin-right:auto;
+				padding-right:3px;
+				-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+				-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+				box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+			}
+			
+			#draft #control-bar #sortButton {
+				padding-top: 7px;
+				padding-right: 10px;
+				padding-bottom: 7px;
+				padding-left: 12px;
+				border:0px;
+				border-right:1px solid;
+				border-right-color: rgba(0, 0, 0, 0.0980392);
+				font-size:16px;
 			}
 			
 			#draft #control-bar .dropdown-menu {
 				min-width:0px;
+			}
+			
+			#draft #control-bar span {
+				display:inline;
+				padding-left:4px;
+			}
+			
+			#draft #control-bar select {
+				margin-bottom:0px;
+				padding-bottom:0px;
+				width:85px;
+				position:relative;
+				top:3px;
 			}
     
   	/* Pick Screen */
