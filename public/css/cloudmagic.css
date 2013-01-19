@@ -206,6 +206,9 @@ li.nav_section {
 				background-image:url('/img/retina_wood.png');
 				background-repeat: repeat;
 				padding-top:5px;
+				-webkit-box-shadow: 0px 5px 10px rgba(50, 50, 50, 0.75);
+				-moz-box-shadow:    0px 5px 10px rgba(50, 50, 50, 0.75);
+				box-shadow:         0px 5px 10px rgba(50, 50, 50, 0.75);
       }
 			
 	    #draft #pack-screen .row-padding {
@@ -241,7 +244,7 @@ li.nav_section {
     
   	/* Control Bar */
       #draft #control-bar {
-				background-color:#444;
+				color:#000;
       }
     
   	/* Pick Screen */
