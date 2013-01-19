@@ -76,8 +76,6 @@ Draft = {
         var pick_id = event.data.id;
         var pick_img = GTC.card_data[ pick_id ].img;
         
-        console.log( Draft.curPack.length );
-        
         /* remove the card from the current pack's list of cards */
         for( var i = 0; i < Draft.curPack.length; ++i ){
             if( Draft.curPack[i] == pick_id ){
@@ -102,7 +100,7 @@ Draft = {
         
         /* get the next pack */
         Draft.picknum += 1;
-        if( Draft.picknum == 9 ){
+        if( Draft.picknum == 8 ){
             Draft.picknum = 0;
         }
         if( Draft.picknum == 14 ){ // TODO
@@ -110,11 +108,14 @@ Draft = {
         }
         Draft.curPack = Draft.boosters[ Draft.picknum ];
         
+        console.log( "PICKNUM: " + Draft.picknum)
+        
         /* replace the images in the pack UI with the new pack images */
         for( var i = 1; i < 15 - Draft.picknum; ++i ){
+            console.log("SELECT CARD: " + (i))
             var id = Draft.curPack[ i - 1 ];
+            console.log("ID: " + id)
             var img = GTC.card_data[ id ].img;
-            console.log(img);
             $( "#pack-card-" + i ).css( "background-image", 'url(' + img + ')' );
             $( "#pack-card-" + i ).off( 'dblclick' );
             $( "#pack-card-" + i ).dblclick( { 'id' : id }, Draft.selectCard );
@@ -122,6 +123,7 @@ Draft = {
             $( "#pack-card-" + i ).on( 'mouseover', { 'id' : id }, Draft.cardZoom );
         }
         for( ; i < 15; ++i ){
+            console.log("SELECT CARD: " + i)
             $( "#pack-card-" + i ).css( "background-image", 'url(\'/img/transparent.png\')' );
             $( "#pack-card-" + i ).off( 'dblclick' );
             $( "#pack-card-" + i ).off( 'mouseover' );
@@ -204,12 +206,23 @@ Draft = {
     
     , resizeRow : function(row){
         
+		fixed_height = $('#pick-row-loaded').height()
+		fixed_width = $('#pick-row-loaded').width()
+        
+        for( var col = 0; col < 10; ++col ){
+            var id = "#pick-card-" + row + "-" + col;
+			$(id).css( {
+	  		"background-size" : fixed_width + "px " + fixed_height + "px"
+			} );
+        }
+        
+        /*
 			  var fixed_height = 0
 			  var fixed_width = 0
   		  fixed_height = $('#pick-row-loaded').height()
   			fixed_width = $('#pick-row-loaded').width()
   			var i = row //i.e., row#, 0=1
-		
+        
   			//-0(row)-0(column)
   			function loopRow(r) {
   				if(r <= i)
@@ -229,6 +242,8 @@ Draft = {
   			}
   			loopRow(0);
         return 1;
+        
+        */
         
     }
 
