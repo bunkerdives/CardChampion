@@ -4,51 +4,52 @@
       .span12
         .row-fluid.less-space.row-padding
           #preview.span2
-            img#preview-src(src="/img/cardback.jpg")
+            img#preview-src(src="/img/transparent.png")
           #pack.span10
             .row-fluid.less-space.row-padding
-              .span1#pack-card-1
-                img#pack-tran-1(src="/img/transparent.png")
-              .span1#pack-card-2
-                img#pack-tran-2(src="/img/transparent.png")
-              .span1#pack-card-3
-                img#pack-tran-3(src="/img/transparent.png")
-              .span1#pack-card-4
-                img#pack-tran-4(src="/img/transparent.png")
-              .span1#pack-card-5
-                img#pack-tran-5(src="/img/transparent.png")
-              .span1#pack-card-6
-                img#pack-tran-6(src="/img/transparent.png")
-              .span1#pack-card-7
-                img#pack-tran-7(src="/img/transparent.png")
-              .span1#pack-card-8
-                img#pack-tran-8#pack-row1-loaded(src="/img/transparent.png")
+              #pack-card-1.span1
+                img(src="/img/transparent.png")
+              #pack-card-2.span1
+                img(src="/img/transparent.png")
+              #pack-card-3.span1
+                img(src="/img/transparent.png")
+              #pack-card-4.span1
+                img(src="/img/transparent.png")
+              #pack-card-5.span1
+                img(src="/img/transparent.png")
+              #pack-card-6.span1
+                img(src="/img/transparent.png")
+              #pack-card-7.span1
+                img(src="/img/transparent.png")
+              #pack-card-8.span1
+                img#pack-tran-8(src="/img/transparent.png")
             .row-fluid.less-space.no-padding
-              .span1#pack-card-9
-                img#pack-tran-9(src="/img/transparent.png")
-              .span1#pack-card-10
-                img#pack-tran-10(src="/img/transparent.png")
-              .span1#pack-card-11
-                img#pack-tran-11(src="/img/transparent.png")
-              .span1#pack-card-12
-                img#pack-tran-12(src="/img/transparent.png")
-              .span1#pack-card-13
-                img#pack-tran-13(src="/img/transparent.png")
-              .span1#pack-card-14
-                img#pack-tran-14(src="/img/transparent.png")
-              .span1#pack-card-15
-                img#pack-tran-15(src="/img/transparent.png")
-              .span1#pack-card-16
-                img#pack-row2-loaded(src="/img/transparent.png")
+              #pack-card-9.span1
+                img(src="/img/transparent.png")
+              #pack-card-10.span1
+                img(src="/img/transparent.png")
+              #pack-card-11.span1
+                img(src="/img/transparent.png")
+              #pack-card-12.span1
+                img(src="/img/transparent.png")
+              #pack-card-13.span1
+                img(src="/img/transparent.png")
+              #pack-card-14.span1
+                img(src="/img/transparent.png")
+              #pack-card-15.span1
+                img(src="/img/transparent.png")
+              #pack-card-16.span1
+                img#pack-tran-16(src="/img/transparent.png")
     .row-fluid
       #control-bar.span12
-        .span4 Pick #, Pack #
-        .span4 1:30
-        .span4 Sort: Color
+        .span3 Pick #, Pack #
+        .span3 1:30
+        .span3 Sort: Color
+        .span3 Shuffle
   #pick-screen
     .row-fluid.no-height
       #pick-table.span12
-        .row-fluid.less-space
+        #row0.row-fluid.less-space
           #pick-card-0-0.span1.stack.rounded
             img(src="/img/transparent.png")
           #pick-card-0-1.span1.stack.rounded
@@ -70,5 +71,4 @@
           #pick-card-0-9.span1.stack.rounded
             img#pick-row-loaded(src="/img/transparent.png")
   #disclaimer
-    small
-      "Magic the Gathering is TM and copyright Wizards of the Coast, Inc, a subsidiary of Hasbro, Inc. All rights reserved. This site is unaffiliated. Articles and comments are user-submitted and do not represent official endorsements of this site."
+    small Magic the Gathering is TM and copyright Wizards of the Coast, Inc, a subsidiary of Hasbro, Inc. All rights reserved. This site is unaffiliated. Articles and comments are user-submitted and do not represent official endorsements of this site.

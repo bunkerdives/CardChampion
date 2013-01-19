@@ -216,7 +216,11 @@ li.nav_section {
 	    }
       
       #draft #pack-screen #preview {
-      	
+				background-image:url('/img/cardback.jpg');
+				background-repeat: no-repeat;
+				-moz-border-radius: 13.5px;
+				-webkit-border-radius: 13.5px;
+				border-radius: 13.5px;
       }
       
       #draft #pack-screen #preview img {
@@ -227,9 +231,9 @@ li.nav_section {
         width: 12.2%;
         *width: 11.95%;
 				background-repeat: no-repeat;
-				-moz-border-radius: 5.5px;
-				-webkit-border-radius: 5.5px;
-				border-radius: 5.5px;
+				-moz-border-radius: 7.5px;
+				-webkit-border-radius: 7.5px;
+				border-radius: 7.5px;
       }
       
       #draft #pack-screen .row-fluid .span2 {
@@ -245,6 +249,14 @@ li.nav_section {
   	/* Control Bar */
       #draft #control-bar {
 				color:#000;
+				text-align:center;
+				min-height:0px;
+				padding-top:5px;
+				padding-bottom:5px;
+      }
+			
+      #draft #control-bar .span3 {
+				min-height:0px;
       }
     
   	/* Pick Screen */
@@ -255,8 +267,6 @@ li.nav_section {
       #draft #pick-screen .row-fluid .span1 {
         width: 9.72%;
         *width: 9.47%;
-				background-image:url('/img/transparent.png');
-				background-repeat: no-repeat;
       }
 			
       #draft #pick-screen .stack {
