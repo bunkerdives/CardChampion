@@ -1,4 +1,4 @@
-var io = module.parent.exports.io;
+//var io = module.parent.exports.io;
 var BoosterPack = require('./BoosterPack.js');
 
 Draft = {
@@ -6,17 +6,13 @@ Draft = {
     // an object with each ongoing draft's data
     drafts : {},
 
-    newDraft : function( draftId, set, size, groupData ) {
+    newDraft : function( draftId, set, groupData ) {
         
         console.log("new draft");
     
-        // ** TODO add support for pods if tournament is larger than 8 people **
-        if( size != 8 )
-            return;
-    
         // create an object containing this draft's data
         var draftData = { 'id' : draftId, 'set' : set, 'players' : [], 'pData' : {},
-                          'packNum' : 1, 'direction' : 'left', 'size' : size };
+                          'packNum' : 1, 'direction' : 'left', 'size' : 8 };
         
         // add this draft's data to our super draft hash
         Draft.drafts[ draftId ] = draftData;

@@ -1,7 +1,7 @@
 Foyer = {
     
     init : function() {
-        Foyer.bindButtons();
+        console.log("Foyer init")
     }
 	
     , showFoyerInterface : function() {
@@ -15,35 +15,16 @@ Foyer = {
         
     }
     
-    // bind buttons to their click handlers
-    // TODO show the draft screen
-    , bindButtons : function() {
-        
-        $("#draft_btn").bind( "click", function() {
-            Foyer.draftSet( "RtR", '8' );
-        } );
-				
-        $("#deck_builder_btn").bind( "click", function() {
-            DeckBuilder.showBuilderInterface();
-        } );
-        
-    }
-    
-    , draftSet : function( set, size ) {
+    , draftSet : function(set) {
     
         // connect a socket to the server
-        var socket = io.connect('http://localhost/Tourneys');
+        var socket = io.connect('http://localhost');
         
-        if( set != "RtR" ){
-            return;
-        }
-        if( size != '8' ){
+        if( set != "GTC" ){
             return;
         }
         
-        // send a socket msg to server that the client wants to join a queue
-		var data = { 'nick' : Login.nick, 'format' : 'draft', 'set' : set, 'size' : size };
-        socket.emit( 'JoinQueue', JSON.stringify(data) );
+		var data = { 'nick' : 'Dean', 'set' : set };
         
         // register a socket listener for the draft start event and its data
         socket.on( 'DraftStart', function( data ) {
@@ -53,8 +34,15 @@ Foyer = {
 		// show the user a dialog with the number of current drafters in the queue
 		socket.on( 'NewDrafter', function(data) {
             Foyer.showDraftDialog( data );
-            //Draft.showDraftInterface( data );
 		});
+        
+        socket.on( 'Unsubscribe', function(data) {
+            console.log("Unsubscribed")
+            socket.leave( '/' + set );
+        });
+        
+        // send a socket msg to server that the client wants to join a queue
+        socket.emit( 'JoinDraftQueue', JSON.stringify(data) );
         
     }
 	
@@ -62,15 +50,12 @@ Foyer = {
 		
 		console.log('showdraftdialog');
 		
- 		// untoggle visibility of the lobby interface
-      	$("#foyer").css( "display", "none" );
-		  
-		// toggle visibility of the draft interface
-		$('#draft').css( "display", "block" );
+ 		// toggle visibility of the queue list
+		$('#queue_list').css( "display", "block" );
 		
 		// display the queue dialog and show the number of players
 		var players = data + " players";
-		$('#queue').html( players );
+		$('#queue_size').html( players );
 		
 	  }
 	
