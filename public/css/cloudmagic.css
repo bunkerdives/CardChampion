@@ -206,9 +206,6 @@ li.nav_section {
 				background-image:url('/img/retina_wood.png');
 				background-repeat: repeat;
 				padding-top:5px;
-				-webkit-box-shadow: 0px 5px 10px rgba(50, 50, 50, 0.75);
-				-moz-box-shadow:    0px 5px 10px rgba(50, 50, 50, 0.75);
-				box-shadow:         0px 5px 10px rgba(50, 50, 50, 0.75);
       }
 			
 	    #draft #pack-screen .row-padding {
@@ -248,11 +245,19 @@ li.nav_section {
     
   	/* Control Bar */
       #draft #control-bar {
-				background-color:#000;
 				color:#fff;
+				background: rgb(52,54,58); /* Old browsers */
+				background: -moz-linear-gradient(top,  rgba(52,54,58,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(52,54,58,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  rgba(52,54,58,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  rgba(52,54,58,1) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  rgba(52,54,58,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+				background: linear-gradient(to bottom,  rgba(52,54,58,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
+				-webkit-box-shadow: 0px 5px 10px rgba(50, 50, 50, 0.75);
+				-moz-box-shadow:    0px 5px 10px rgba(50, 50, 50, 0.75);
+				box-shadow:         0px 5px 10px rgba(50, 50, 50, 0.75);
 				font-size:26px;
 				font-weight:400;
-				text-align:center;
 				min-height:0px;
 				margin-top:2.5px;
 				padding-top:3px;
@@ -266,51 +271,91 @@ li.nav_section {
 				width:25%;
       }
 			
-			#draft #control-bar .input-prepend {
+			@font-face {
+			  font-family: 'digital';
+			  src: url('/fonts/digi.ttf');
+			}
+			
+			#draft #control-bar #info {
+				padding-top:5px;
+				text-align:right;
+			}
+			
+			#draft #control-bar #timer {
+				font-family: digital, arial, verdana;
+				font-size:40px;
+				line-height:35px;
+				text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+				text-align:left;
+			}
+			
+			#draft #control-bar #sort {
+				text-align:right;
+				
+			}
+			
+			#draft #control-bar #sort .input-prepend {
 				padding-bottom:0px;
 				margin-bottom:0px;
 			}
 			
-			#draft #control-bar #sortWrapper {
+			#draft #control-bar #sort-wrapper {
+				float:right;
+				height:36px;
+				width:157px;
+				padding-right:3px;
+				margin-right:5px;
 				-webkit-border-radius: 4px 4px 4px 4px;
 				-moz-border-radius: 4px 4px 4px 4px;
 				border-radius: 4px 4px 4px 4px;
-				height:36px;
-				width:141px;
-				margin-left:auto;
-				margin-right:auto;
-				padding-right:3px;
 				-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 				-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 				box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+				border:1px solid;
+				border-top-color: rgba(0, 0, 0, 0.0980392);
+				border-right-color: rgba(0, 0, 0, 0.0980392);
+				border-bottom-color: rgba(0, 0, 0, 0.247059);
+				border-left:0px;
 			}
 			
-			#draft #control-bar #sortButton {
-				padding-top: 7px;
-				padding-right: 10px;
-				padding-bottom: 7px;
+			#draft #control-bar #sort #sort-button {
+				padding-right: 12px;
 				padding-left: 12px;
 				border:0px;
 				border-right:1px solid;
 				border-right-color: rgba(0, 0, 0, 0.0980392);
-				font-size:16px;
+				line-height:28px;
 			}
 			
-			#draft #control-bar .dropdown-menu {
+			#draft #control-bar #sort .dropdown-menu {
 				min-width:0px;
 			}
 			
 			#draft #control-bar span {
 				display:inline;
-				padding-left:4px;
+				padding-left:2px;
 			}
 			
-			#draft #control-bar select {
+			#draft #control-bar #prependedInput {
+				padding-left:5px;
+			}
+			
+			#draft #control-bar #sort select {
 				margin-bottom:0px;
 				padding-bottom:0px;
 				width:85px;
 				position:relative;
 				top:3px;
+			}
+			
+			#draft #control-bar #shuffle {
+				text-align:left;
+			}
+			
+			#draft #control-bar #shuffle #shuffle-button {
+				padding-right: 12px;
+				padding-left: 12px;
+				line-height:28px;
 			}
     
   	/* Pick Screen */

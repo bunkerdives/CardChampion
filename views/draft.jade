@@ -42,13 +42,15 @@
                 img#pack-tran-16(src="/img/transparent.png")
     .row-fluid
       #control-bar.span12
-        .span3 Pick #, Pack #
-        .span3 1:30
-        .span3
+        #info.span3 Pack #, Pick #|Pick #/45
+        #timer.span3 1:30
+        #sort.span3
           .input-prepend
-            #sortWrapper.btn-primary
+            #sort-wrapper.btn-success
               .btn-group
-                button#sortButton.btn.btn-primary.dropdown-toggle(data-toggle="dropdown") Sort
+                button#sort-button.btn.btn-success.dropdown-toggle(data-toggle="dropdown")
+                  i.icon-refresh.icon-white
+                  span Sort
                 ul.dropdown-menu
                   li
                     a(tabindex="-1", href="#") Pack
@@ -60,9 +62,9 @@
                   option by cost
                   option by type
                   option by rarity
-        .span3
-          button.btn(onclick="Draft.shufflePack();")
-            i.icon-random
+        #shuffle.span3
+          button#shuffle-button.btn.btn-danger(onclick="Draft.shufflePack();")
+            i.icon-random.icon-white
             span Shuffle pack
   #pick-screen
     .row-fluid.no-height
