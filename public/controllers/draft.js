@@ -18,8 +18,6 @@ Draft = {
     
     , boosters : []
     
-    , packIdx : 0
-    
     , picknum : 0
     
     , numPickRows : 1
@@ -59,9 +57,6 @@ Draft = {
             
             var id = Draft.curPack[i-1];
             var data = { 'id' : id, 'slot' : i }
-            
-            console.log( id );
-            console.log( GTC.card_data[id].img );
             
             /* register mouseover handler */
             $( "#pack-card-" + i ).on( 'mouseover', data, Draft.cardZoom );
@@ -142,7 +137,7 @@ Draft = {
             $( "#pack-card-" + i ).click( {'id':id,'slot':i}, Draft.highlightCard );
         }
         for( ; i < 15; ++i ){
-            $( "#pack-card-" + i ).css( "background-image", 'url(\'/img/transparent.png\')' );
+            $( "#pack-card-" + i ).css( "background-image", 'none' );
             $( "#pack-card-" + i ).off( 'click' );
             $( "#pack-card-" + i ).off( 'dblclick' );
             $( "#pack-card-" + i ).off( 'mouseover' );
@@ -152,6 +147,7 @@ Draft = {
         /* get the converted mana cost of the card (count from 1 for now) */
         var cmc = GTC.card_data[ pick_id ].cmc;
         var pickRowNum = Draft.colSize[ cmc ];
+        
         if( pickRowNum < Draft.numPickRows ){
             // there is space in the corresponding CMC column, so add the
             var idx = Draft.colSize[ cmc ]; // non zero index
@@ -159,6 +155,8 @@ Draft = {
         else{ // add a new row
             
             var row = $('<div>').addClass("row-fluid").addClass("less-space");
+            row.attr("id", "row" + pickRowNum);
+            $("#pick-table").append(row);
             
             for( var i = 0; i < 10; ++i ){
             
@@ -169,13 +167,11 @@ Draft = {
                 var img = $("<img>").attr("src", "/img/transparent.png");
                 
                 col.append( img );
-                row.append( col );
+                $(row).append( col );
             
             }
             
-            $("#pick-table").append(row);
-            
-            /* Call row background resize function */
+            // Call row background resize function
             Draft.resizeRow( pickRowNum );
             
             ++ Draft.numPickRows;
