@@ -204,6 +204,30 @@ Draft = {
     
     , resizeRow : function(row){
         
+			  var fixed_height = 0
+			  var fixed_width = 0
+  		  fixed_height = $('#pick-row-loaded').height()
+  			fixed_width = $('#pick-row-loaded').width()
+  			var i = row //i.e., row#, 0=1
+		
+  			//-0(row)-0(column)
+  			function loopRow(r) {
+  				if(r <= i)
+  				{
+  				
+  					function loopCol(c) {
+  						if(c <= 9)
+  						{
+  							$("#pick-card-" + r + "-" + c).css({
+  					  		"background-size": fixed_width + "px " + fixed_height + "px"
+  							}, loopCol(c+1));
+  						}
+  						loopRow(r+1)
+  					}
+  					loopCol(0);
+  				}
+  			}
+  			loopRow(0);
         return 1;
         
     }
