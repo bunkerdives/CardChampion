@@ -1,5 +1,5 @@
-//Determine #pick-screen top padding
-	//onLoad of last card in pack screen
+//onLoad
+	//Determine #pick-screen top padding
 $(document).ready(function(){
 	$('#pack-tran-16').load(function(){
 	  var fixed_height = $('#pack-screen').height();
@@ -9,19 +9,10 @@ $(document).ready(function(){
 		});
 	});
 });
-	//onResize of window
-$(window).resize(function() {
-  var fixed_height = $('#pack-screen').height();
-	var fixed_height = fixed_height + 7; //i.e., normal padding
-	$("#pick-screen").css({
-	  "padding-top" : fixed_height + "px"
-	});
-});
-//
+	
 
-//Determine background image (i.e., card) size of pack screen spans
-	//Pack cards, i.e., .span1
-		//onLoad (after first row of pack is loaded)
+	//Determine background image (i.e., card) sizes
+		//Pack cards
 $(document).ready(function(){
 	$('#pack-tran-8').load(function(){
 	  var fixed_height = $('#pack-tran-8').height();
@@ -34,8 +25,7 @@ $(document).ready(function(){
 		}
 	});
 });
-	//Preview
-		//onLoad
+		//Preview card
 $(document).ready(function(){
 	$('#pack-tran-8').load(function(){
 		var id = "#preview";
@@ -48,8 +38,7 @@ $(document).ready(function(){
 });
 
 
-//Background image (i.e., card) size of pick screen
-	//onLoad first row of picks
+		//Pick cards
 $(document).ready(function(){
 	$('#pick-row-loaded').load(function(){
 	  var fixed_height = $('#pick-row-loaded').height();
@@ -66,16 +55,22 @@ $(document).ready(function(){
 //
 
 
+//onResize of window
+	//Determine #pick-screen top padding
+$(window).resize(function() {
+  var fixed_height = $('#pack-screen').height();
+	var fixed_height = fixed_height + 7; //i.e., normal padding
+	$("#pick-screen").css({
+	  "padding-top" : fixed_height + "px"
+	});
+});
 
-
-
-
-//onResize of window, change card sizes; RESIZE BEGIN
+	//Determine background image (i.e., card) sizes
 var rtime = new Date(1, 1, 2000, 12,00,00);
 var timeout = false;
 var delta = 200;
 
-		//Pack screen
+		//Pack cards
 $(window).resize(function() {
 		for( var i = 0; i < 16; ++i ){
 			var id = "#pack-card-" + i;
@@ -86,7 +81,8 @@ $(window).resize(function() {
 				});
 			}	
 		}
-			//Preview image
+		
+		//Preview card
 		var id = "#preview";
 		if ($(id).css('background-image') !== 'none') {
 			$(id).css({
@@ -95,7 +91,7 @@ $(window).resize(function() {
 			});
 		}	
 		
-			//Pick screen//REWRITE THIS SECTION LATER
+		//Pick cards//REWRITE THIS SECTION LATER
 		var rowEval = 45;
 		for( var r = 0; r < rowEval; ++r ){
 			var id = "#row-" + r;
@@ -115,12 +111,14 @@ $(window).resize(function() {
 			}
 		}
 		
+		//Set timeout of window resize
     rtime = new Date();
     if (timeout === false) {
         timeout = true;
         setTimeout(resizeend, delta);
     }
 });
+
 		//RESIZE END
 function resizeend() {
     if (new Date() - rtime < delta) {
@@ -128,7 +126,7 @@ function resizeend() {
     } else {
         timeout = false;
 				
-				//pack screen
+				//Pack cards
 			  var fixed_height = $('#pack-tran-8').height();
 			 	var fixed_width = $('#pack-tran-8').width();
 				for( var i = 0; i < 16; ++i ){
@@ -139,7 +137,7 @@ function resizeend() {
 					});
 				}
 				
-				//preview image
+				//Preview card
 				var id = "#preview";
 				var fixed_height = $(id).height();
 				var fixed_width = $(id).width();
@@ -148,7 +146,7 @@ function resizeend() {
 					  "background-size" : fixed_width + "px " + fixed_height + "px"
 				});
 				
-				//Pick screen 			
+				//Pick cards			
 			var rowEval = 45;
 			for( var r = 0; r < rowEval; ++r ){
 				var id = "#row-" + r;
@@ -171,16 +169,5 @@ function resizeend() {
 			}
     }               
 }
-
-
-
-
-
-
-
-
-
-
-
-
+//
 //
