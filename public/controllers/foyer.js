@@ -13,20 +13,26 @@ Foyer = {
             return;
         }
         
-		var data = { 'nick' : 'Dean', 'set' : set };
+		// setup the socket callbacks to handle state messages from the server
+        Foyer.setupSocketCallbacks( socket );
+        
+        // send a socket msg to server that the client wants to join a queue
+        var data = { 'nick' : 'Dean', 'set' : set };
+        socket.emit( 'JoinDraftQueue', JSON.stringify(data) );
+        
+    }
+    
+    , setupSocketCallbacks : function( socket ) {
         
         // register a socket listener for the draft start event and its data
-        socket.on( 'DraftStart', function( data ) {
-            Draft.draftStart( data, socket );
+        socket.on( 'StartDraft', function( data ) {
+            Draft.startDraft( data, socket );
         } );
 		
 		// show the user a dialog with the number of current drafters in the queue
 		socket.on( 'NewDrafter', function(data) {
             Foyer.showDraftDialog( data );
 		});
-        
-        // send a socket msg to server that the client wants to join a queue
-        socket.emit( 'JoinDraftQueue', JSON.stringify(data) );
         
     }
 	
