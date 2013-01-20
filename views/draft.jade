@@ -42,8 +42,13 @@
                 img#pack-tran-16(src="/img/transparent.png")
     .row-fluid
       #control-bar.span12
-        #info.span3 Pack #, Pick #|Pick #/45
-        #timer.span3 1:30
+        #info.span3
+          span Pack
+          span.digital-clock  3
+          span Pick
+          span.digital-clock 14
+        #timer.span3
+          span.digital-clock 1:30
         #sort.span3
           .input-prepend
             #sort-wrapper.btn-success
