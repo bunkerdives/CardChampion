@@ -1,5 +1,5 @@
 //var io = module.parent.exports.io;
-var BoosterPack = require('./BoosterPack.js');
+var Booster = require('./Booster.js');
 var uuid = require('node-uuid');
 
 Draft = {
@@ -13,6 +13,7 @@ Draft = {
             'id' : uuid.v4() // automatically name the first available queue
             , 'set' : 'GTC'
             , 'players' : []
+            , 'sockets' : {}
             , 'player_data' : {}
             , 'size' : 8
             , 'pack' : 0
@@ -32,17 +33,19 @@ Draft = {
         var id = queue.id;
 		socket.join( id );
         
-        console.log( "joinDraftQueue started a new queue, named: " + id );
+        // add a nick attribute to the user's socket
+        socket.nick = nick;
         
-        // add the user to our list of players
+        // add the user to our list of players AND to our hash of sockets
         queue.players.push( nick );
+        queue.sockets[nick] = socket;
         
         // create an object to house a player object for use during the draft
         var player_obj = { 
             'nick' : nick
-            , 'socket' : socket
             , "picks" : []
             , "packHeld" : []
+            , "packQueue" : []
             , "left" : ''
             , "right" : ''
         };
@@ -75,70 +78,78 @@ Draft = {
 
     , newDraft : function( draftId ) {
         
-        console.log("\n\nNEW DRAFT\n\n");
-        
         // get the nicks of the first and last players in the pod
-        var players = Draft.drafts[draftId].players
+        var draft = Draft.drafts[draftId];
+        var players = draft.players;
+        var pData =  draft.player_data;
+        var sockets = draft.sockets;
         var first = players[0];
         var last = players[7];
-        
-        console.log( "First user: " + first )
-        console.log( "Last user: " + last )
-        
-        console.log( "\n\nNew draft's engine object: ")
-        console.log( Draft.drafts[draftId] )
         
         // loop through each player in the group's data
         for( var i = 0; i < players.length; ++i ){
             
-            // assign the players to the left of this user
+            var nick = players[i];
+            var pObj = pData[nick];
+            
+            // assign the players to the left and right of this user
             if( i == 0 )
-                pData['left'] = last;
+                pObj['left'] = last;
             else
-                pData['left'] = players[i-1];
-            
-            // assign the players to the right of this user
-            if( i > 7 )
-                pData['right'] = first;
+                pObj['left'] = players[i-1];
+            if( i == 7 )
+                pObj['right'] = first;
             else
-                pData['right'] = groupData[i+1].nick;
-            
-            i += 1;
+                pObj['right'] = players[i+1];
+                
+            // assign a CardPick event handler to the player's socket
+            var socket = sockets[nick];
+            socket.on( 'CardPick', function(data) {
+                Draft.newPick( data, draftId, socket );
+            });
             
         }
         
-        console.log("\n\nUpdated draft engine object with left and right attributes:")
-        console.log(Draft.drafts[draftId])
-        
         // signal start of draft to each player with the draft order, first to last
         Draft.startDraft( draftId );
-        
-        // assign and give the clients their first booster pack
-        Draft.distributeBoosterPacks( draftId );
-        
-        // register a handler to listen for new user picks over the socket
-        io.sockets.in( draftId ).on( 'CardPick', function( data ) {
-            Draft.newPick( data, draftId );
-        } );
         
     }
     
     , startDraft : function( draftId ) {
         
-        var players = Draft.drafts[draftId].players;
-        var order = JSON.stringify( players );
+        var draft = Draft.drafts[draftId];
+        var players = draft.players;
+        var pData = draft.player_data;
+        var size = draft.size;
+        var set = draft.set;
        
-        // send a start draft event to all the players in this draft
-        io.sockets.in( draftId ).emit( 'DraftStart', { 'order' : order } );
+        // send a start draft event to all the players in this draft with their first booster pack
+        for( var i = 0; i < size; ++i ){
+        
+            var nick = players[i];
+            var socket = draft.sockets[nick];
+        
+            // create a randomized booster pack for the given set
+            var booster = Booster.newBooster(set);
+            var data = JSON.stringify({ 'booster' : booster });
+            
+            // put the booster data in the user object
+            pData.heldPack = booster;
+            
+            // send a NewBooster event to the player w/ the booster pack inside
+            socket.emit( 'StartDraft', data );
+            
+        }
         
     }
     
     , distributeBoosterPacks : function( draftId ) {
         
-        console.log("distributeBoosterPacks");
-        
-        var players = Draft.drafts[draftId].players;
-        var size = Draft.drafts[draftId].size;
+        var draft = Draft.drafts[draftId];
+        var players = draft.players;
+        var pData = draft.player_data;
+        var size = draft.size;
+        var set = draft.set;
     
         // give each player in the draft a new, unopened booster pack
         for( var i = 0; i < size; ++i ){
@@ -147,60 +158,81 @@ Draft = {
             socket = pData[nick].socket;
         
             // create a randomized booster pack for the given set
-            //booster = BoosterPack.newBooster(set);
+            booster = Booster.newBooster(set);
             
             // send a NewBooster event to the player w/ the booster pack inside
-            socket.emit( 'NewBooster', { 'booster' : "empty booster!" } );
+            socket.emit( 'NewBooster', { 'booster' : booster } );
             
         }
         
     }
     
-    , newPick : function( data ) {
+    , newPick : function( data, draftId, socket ) {
     
-        var data = $.parseJSON( data );
+        var data = JSON.parse( data );
         var draftId = data['dId'];
         var pick = data['pick'];
-        var nick = data['nick'];
+        
+        // TODO get the user's ID from the socket
+        var nick = socket.nick;
+        
+        console.log("User " + nick + " picked the card: " + pick)
         
         // get the player's data object and position
         var draft = Draft.drafts[ draftId ];
-        var pData = draft.players.nick;
+        var pData = draft.player_data[nick] = player_obj;
         
         // save the player's pick
         pData.picks.push( pick );
         
         // remove the card from the user's booster pack
-        delete pData.curpack.pick;
+        for( var i = 0; i < pData.picks.length; ++i ){
+            if( pData.packHeld[i] == pick ){
+                pData.packHeld.splice( i, 1 );
+            }
+        }
         
-        // update this draft's total number of picks
-        draft.picks += 1;
+        var packRemains = pData.packHeld;
         
         // push the remaining cards into the booster queue of the player to the right/left
-        var next = pData[ pData['direction'] ];
-        if( draft.players[next].boosterQueue.length == 0 )
-            draft.players[next].curPack = pData.curpack;
-        else
-            draft.players[next].boosterQueue.push( pData.curpack );
+        var dir = draft['dir'], next;
+        if( dir == 0 ){ // pass to the left
+            next = pData['left'];
+        }
+        else{ // pass to the right
+            next = pData['right'];
+        }
+        
+        // if there are packs in this user's queue, send a PackPass event now
+        if( pData.packQueue.length > 0 ){
             
-        // if the player's booster queue is nonempty, assign the first as their current pack
-        if( pData.boosterQueue.length == 0 )
-            pData.curpack = null;
-        else
-            pData.curpack = pData.boosterQueue.shift();
-        
-        // send a PackPass event with the remaining cards to the player on the left/right
-        if( pData.curpack.length > 0 ){
-            draft.players[next].socket.emit( 'PackPass', { 'booster' : pData.curpack } );
-            return;
+            // remove the first pack from this players pack queue and mark it held
+            var pack = pData.packQueue.shift();
+            pData.packHeld = pack;
+            
+            // send a PackPass event with the remainder of the pack
+            var data = JSON.stringify( { 'booster' : pack } );
+            draft.sockets[ nick ].emit( 'PackPass', data );
+            
         }
         
-        // if the last pick was received, tell each client that the draft is over
-        if( draft.picks == 45*8 ){
-            // TODO send an EndDraft message to all players in the draft
+        // either make the pack remains the next player's currently held OR add it to their pack queue
+        if( draft.player_data[next].packHeld == null ){
+            
+            // assign the next player the remaining pack
+            draft.player_data[next].packHeld = packRemains;
+            
+            // signal the next player with a PackPass event
+            var data = JSON.stringify( { 'booster' : packRemains } );
+            draft.sockets[next].emit( 'PackPass', data );
+            
         }
+        else{ // add the pack to the player's pack queue 
+            draft.player_data[next].packQueue.push( packRemains );
+        }
+            
         // if at end of the first or second packs, change direction and give out unopened boosters
-        else if( draft.picks == 15*8 ){
+        if( draft.picks == 15*8 ){
             draft.direction = 'right';
             Draft.distributeBoosterPacks( draftId );
         }
