@@ -2,7 +2,7 @@
   #pack-screen
     .row-fluid.no-height
       .span12
-        .row-fluid.less-space.no-padding
+        .row-fluid.less-space.no-padding.border-bottom
           #preview.span2
             img#preview-src(src="/img/transparent.png")
           #pack.span10
@@ -40,20 +40,29 @@
                 img(src="/img/transparent.png")
               #pack-card-16.span1
                 img#pack-tran-16(src="/img/transparent.png")
-    .row-fluid
+    .row-fluid.border-bottom
       #control-bar.span12
-        #info.span3
-          span Pack
-          span.digital-clock  3
-          span Pick
-          span.digital-clock 14
-        #timer.span3
-          span.digital-clock 1:30
-        #sort.span3
+        span#info
+          span.set-symbol(style="background-image:url('/img/gtc_symbol_gold.png');")
+            span#pack-count-1.card-count 1
+          span.set-symbol
+            span#pack-count-2.card-count
+          span.set-symbol
+            span#pack-count-3.card-count
+          .btn-group
+            button#pick-info-button.btn.btn-primary.dropdown-toggle(data-toggle="dropdown")
+              span#pick-count 0
+            ul.dropdown-menu
+              span Text                  
+        span#shuffle
+          button#shuffle-button.btn.btn-danger(onclick="Draft.shufflePack();")
+            i.icon-random.icon-white
+            span Shuffle pack
+        span#sort
           .input-prepend
-            #sort-wrapper.btn-success
+            #sort-wrapper.btn-primary
               .btn-group
-                button#sort-button.btn.btn-success.dropdown-toggle(data-toggle="dropdown")
+                button#sort-button.btn.btn-primary.dropdown-toggle(data-toggle="dropdown")
                   i.icon-refresh.icon-white
                   span Sort
                 ul.dropdown-menu
@@ -67,10 +76,8 @@
                   option by cost
                   option by type
                   option by rarity
-        #shuffle.span3
-          button#shuffle-button.btn.btn-danger(onclick="Draft.shufflePack();")
-            i.icon-random.icon-white
-            span Shuffle pack
+        span#timer.digital-clock 1:30
+          
   #pick-screen
     .row-fluid.no-height
       #pick-table.span12
