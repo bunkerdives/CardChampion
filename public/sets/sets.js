@@ -1,7 +1,8 @@
 Sets = {
     
     'set_list' : [
-        'RtR'
+        'GTC'
+        , 'RTR'
         , 'M13'
         , 'AVR'
         , 'DKA'
@@ -11,7 +12,7 @@ Sets = {
     , function : getSetList( set ) {
         
         switch( set ){
-            case( 'RtR' ):
+            case( 'GTC' ):
                 return RtR.set_list;
             default:
                 return null;
@@ -22,7 +23,7 @@ Sets = {
     , function : getCardData( set ) {
         
         switch( set ){
-            case( 'RtR' ):
+            case( 'GTC' ):
                 return RtR.card_data;
             return null;
         }

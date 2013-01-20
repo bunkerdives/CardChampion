@@ -1,72 +1,72 @@
-var RtR = require('../public/sets/rtr.js');
+var GTC = require('../public/sets/gtc.js');
 
 BoosterPack = {
 
     newBooster : function( set ) {
     
-        // the to be populated list of card IDs in the booster pack
-        var cards = [];
+        var booster = [];
+        var i = 0;
         
-        // use the appropriate set data structure
-        var setData;
-        switch( set ) {
-            case "RtR":
-                setData = RtR;
-                break;
+        if( set != 'GTC' ){
+            return;
         }
         
-        // get the list of cards for each rarity
-        var common = RtR.common;
-        var uncommon = RtR.uncommon;
-        var rare = RtR.rare;
-        var mythic = RtR.mythic
+        for( ; i < 10; ++i ){
+            booster[i] = Booster.randCommon( set );
+        }
+        for( ; i < 13; ++i ){
+            booster[i] = Booster.randUncommon( set );
+        }
+        for( ; i < 14; ++i ){
+            booster[13] = Booster.randRare( set );
+        }
+        // TODO add random chance of foil card
         
-        // calculate the number of cards for each rarity
-        var num_common = common.length;
-        var num_uncommon = uncommon.length;
-        var num_rare = rare.length;
-        var num_mythic = mythic.length;
+        return booster;
     
-        // randomly select 10 commons
-        var i, ran;
-        for( i = 0; i < 10; ++i ) {
-            ran = Math.floor( Math.random() * num_common );
-            cards[i] = commons[ ran ];
-        }
-        
-        // randomly select 3 uncommons
-        for( ; i < 13; ++i ) {
-            ran = Math.floor( Math.random() * num_uncommon );
-            cards[i] = uncommons[ ran ];
-        }
-        
-        // randomly select a rare ** TODO add random chance for mythic
-        ran = Math.floor( Math.random() * num_rare );
-        cards[13] = rares[ ran ];
-        
-        // randomly select a land ** TODO add random chance for foil c/u/r/m
-        cards[14] = randomLand();
-        
-        return cards;
+    }
     
-    },
+    , randCommon : function( set ){
+        
+        /* pick a random index */
+        var num = GTC.commons.length;
+        var idx = Math.floor( Math.random() * num );
+        
+        /* return the random card's ID */
+        return GTC.commons[ idx ];
+        
+    }
     
-    randomLand : function() {
+    , randUncommon : function(){
         
-        var ran = Math.floor( Math.random() * 5 );
+        /* pick a random index */
+        var num = GTC.uncommons.length;
+        var idx = Math.floor( Math.random() * num );
         
-        switch( ran ) {
-            case 0:
-                return 'plains';
-            case 1:
-                return 'island';
-            case 2:
-                return 'swamp';
-            case 3:
-                return 'mountain';
-            case 4:
-                return 'forest';
-        }
+        /* return the random card's ID */
+        return GTC.uncommons[ idx ];
+        
+    }
+    
+    , randRare : function(){
+        
+        /* pick a random index */
+        var num = GTC.rares.length;
+        var idx = Math.floor( Math.random() * num );
+        
+        /* return the random card's ID */
+        return GTC.rares[ idx ];
+        
+    }
+    
+    , randMythic : function(){
+        
+        /* pick a random index */
+        var num = GTC.mythics.length;
+        var idx = Math.floor( Math.random() * num );
+        
+        /* return the random card's ID */
+        return GTC.mythics[ idx ];
         
     }
 

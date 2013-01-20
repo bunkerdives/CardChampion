@@ -6,6 +6,10 @@ Draft = {
     // is the user still deciding on their pick?
     , choosing : true
     
+    , timer_min : 1
+    
+    , timer_sec : 30
+    
     // a list of the user's picks
     , picks : null
     
@@ -49,6 +53,9 @@ Draft = {
         /* register booster card slots mouse over events to enlarge image */
         Draft.registerHandlers();
         
+        // start to timer at 1 minute 30 seconds
+        Draft.startTimer(1,30);
+        
     }
     
     , registerHandlers : function(){
@@ -68,6 +75,31 @@ Draft = {
             $( "#pack-card-" + i ).dblclick( data, Draft.selectCard );
             
         }
+        
+    }
+    
+    , startTimer : function(min, sec){
+        
+        Draft.min = min;
+        Draft.sec = sec;
+        
+        // Display the time on the clock
+        $("#timer").html( min + ":" + sec);
+        
+        var timer = setInterval( Draft.timerFired, 1000 );
+        
+    }
+    
+    , timerFired : function(){
+        
+        Draft.sec -= 1;
+        
+        if( Draft.sec == -1 ){
+            Draft.min -= 1;
+            Draft.sec = 59;
+        }
+        
+        $("#timer").html( Draft.min + ":" + Draft.sec);
         
     }
     
@@ -202,7 +234,6 @@ Draft = {
         for( var i = 0; i < booster.length; ++i ){
             var id = booster[i];
             images[i] = GTC.card_data[ id ].img;
-            //console.log( images[i] );
         }
         
         /* add the card images to the card packs */
@@ -314,21 +345,6 @@ Draft = {
         // start the timer at 60 seconds
         Draft.updateTimer(60);
 
-    }
-    
-    , showDraftInterface : function(users) {
-    
-        // hide the main interface
-        $("#main").css("display", "none");
-        
-        // show the draft interface
-        $("#draft").css("display", "block");
-        
-        // add the users to the user list
-        for( var user in users ) {
-            $("#users").append( user + "<br>" );
-        }
-    
     }
     
     , pickCard : function(pick) {

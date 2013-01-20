@@ -2,11 +2,6 @@ Booster = {
     
     newBoosterPack : function(set){
         
-        console.log( GTC.card_data )
-        console.log( "\n\n\n\n\n\n" )
-        
-        console.log( "newBooster" );
-        
         var booster = [];
         
         if( set != 'GTC' ){
@@ -24,6 +19,7 @@ Booster = {
         booster[13] = Booster.randRare();
         
         return booster;
+        
     }
     
     , randCommon : function(){
@@ -73,4 +69,5 @@ Booster = {
         return GTC.mythics[ idx ];
         
     }
+    
 };

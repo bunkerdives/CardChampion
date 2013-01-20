@@ -1,18 +1,7 @@
 Foyer = {
     
     init : function() {
-        console.log("Foyer init")
-    }
-	
-    , showFoyerInterface : function() {
-    
-        // hide the login
-        $("#login").css( "display", "none" );
-    
-        // toggle visibility of the lobby interface
-        $("#foyer").css( "display", "block" );
-        Foyer.bindButtons();
-        
+        console.log("Foyer initialized");
     }
     
     , draftSet : function(set) {
@@ -36,19 +25,12 @@ Foyer = {
             Foyer.showDraftDialog( data );
 		});
         
-        socket.on( 'Unsubscribe', function(data) {
-            console.log("Unsubscribed")
-            socket.leave( '/' + set );
-        });
-        
         // send a socket msg to server that the client wants to join a queue
         socket.emit( 'JoinDraftQueue', JSON.stringify(data) );
         
     }
 	
 	, showDraftDialog : function( data ) {
-		
-		console.log('showdraftdialog');
 		
  		// toggle visibility of the queue list
 		$('#queue_list').css( "display", "block" );

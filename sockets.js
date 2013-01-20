@@ -1,21 +1,14 @@
 // get the draft and queue controllers
-var draft = require( './controllers/Draft.js' );
-var queue = require( './controllers/Queues.js' );
+var Draft = require( './controllers/Draft.js' );
 
 // get the io object
 io = module.parent.exports.io;
 
 io.on( 'connection', function(socket) {
 
-    // JoinQueue socket listener binding
+    // JoinDraftQueue socket listener binding
     socket.on( 'JoinDraftQueue', function(data) {
-        queue.joinDraftQueue(data, socket);
+        Draft.joinDraftQueue(data, socket);
     } );
     
 } );
-
-io.sockets.on('connection', function(socket) {
-   
-    ;
-    
-});

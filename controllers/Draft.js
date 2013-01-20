@@ -1,53 +1,101 @@
 //var io = module.parent.exports.io;
 var BoosterPack = require('./BoosterPack.js');
+var uuid = require('node-uuid');
 
 Draft = {
 
     // an object with each ongoing draft's data
-    drafts : {},
-
-    newDraft : function( draftId, set, groupData ) {
+    drafts : { }
     
-        // create an object containing this draft's data
-        var draftData = { 'id' : draftId, 'set' : set, 'players' : [], 'pData' : {},
-                          'packNum' : 1, 'direction' : 'left', 'size' : 8 };
+    // an object containing the queues of each tournament type
+    , draft_queues : {
+        'GTC' : {
+            'id' : uuid.v4() // automatically name the first available queue
+            , 'set' : 'GTC'
+            , 'players' : []
+            , 'player_data' : {}
+            , 'size' : 8
+            , 'pack' : 0
+            , 'dir' : 0 // 0 = left, 1 = right
+        }
+    }
+    
+    , joinDraftQueue : function( data, socket ) {
+    
+		// get the client's nick, format, set, and size of tourney from the request
+        var json = JSON.parse(data);
+        var nick = json['nick'] + "_" + uuid.v4();
+        var set = json['set'];
         
-        // add this draft's data to our super draft hash
-        Draft.drafts[ draftId ] = draftData;
+		// add this socket to the proper queue room
+        var queue = Draft.draft_queues['GTC']
+        var id = queue.id;
+		socket.join( id );
         
-        var draft = Draft.drafts[ draftId ];
+        console.log( "joinDraftQueue started a new queue, named: " + id );
+        
+        // add the user to our list of players
+        queue.players.push( nick );
+        
+        // create an object to house a player object for use during the draft
+        var player_obj = { 
+            'nick' : nick
+            , 'socket' : socket
+            , "picks" : []
+            , "packHeld" : []
+            , "left" : ''
+            , "right" : ''
+        };
+        
+        // add the player data to this tourney's current hash of queued players
+        Draft.draft_queues[ set ].player_data[nick] = player_obj;
+        
+        // if the queue has enough players, start the tourney and notify users
+        var size = queue.players.length;
+        if( size == 8 ){
+            
+            // move this draft's queue object into the drafts object for future use
+            Draft.drafts[id] = Draft.draft_queues[set];
+            
+            // create a new draft queue for future drafters to join
+			Draft.draft_queues[ set ] = Draft.newEmptyQueueObj( set, 8 );
+            
+            // create a new draft tournament
+            Draft.newDraft( id );
+			
+			return;
+            
+        }
+		
+		// send a socket event to all drafters showing the number of players
+        // TODO send the name of the new player to enter the draft
+		io.sockets.in( id ).emit( 'NewDrafter', size );
+		
+    }
+
+    , newDraft : function( draftId ) {
+        
+        console.log("\n\nNEW DRAFT\n\n");
         
         // get the nicks of the first and last players in the pod
-        var first = groupData[0].nick;
-        var last = groupData[7].nick;
+        var players = Draft.drafts[draftId].players
+        var first = players[0];
+        var last = players[7];
+        
+        console.log( "First user: " + first )
+        console.log( "Last user: " + last )
+        
+        console.log( "\n\nNew draft's engine object: ")
+        console.log( Draft.drafts[draftId] )
         
         // loop through each player in the group's data
-        for( var i = 0; i < groupData.length; ++i ){
-			
-			var o = groupData[i];
-        
-            // add the player's nick to the draft's list of players
-            draftData.players[i] = o.nick;
-            
-            // add the player's socket to this draft's socket group
-            var socket = o.socket;
-            socket.join( draftId );
-        
-            // create a player object for each player
-            var pData = {};
-            pData['socket'] = socket;
-            pData['picks'] = [];
-            pData['curPack'] = [];
-            pData['boosterQueue'] = [];
-            
-            // add the object to this draft's data structure
-            draftData.pData[ o.nick ] = pData;
+        for( var i = 0; i < players.length; ++i ){
             
             // assign the players to the left of this user
             if( i == 0 )
                 pData['left'] = last;
             else
-                pData['left'] = groupData[i-1].nick;
+                pData['left'] = players[i-1];
             
             // assign the players to the right of this user
             if( i > 7 )
@@ -59,46 +107,38 @@ Draft = {
             
         }
         
+        console.log("\n\nUpdated draft engine object with left and right attributes:")
+        console.log(Draft.drafts[draftId])
+        
         // signal start of draft to each player with the draft order, first to last
         Draft.startDraft( draftId );
         
         // assign and give the clients their first booster pack
-        Draft.distributeBoosterPacks( draftData );
+        Draft.distributeBoosterPacks( draftId );
         
         // register a handler to listen for new user picks over the socket
-        io.of( draftId ).on( 'CardPick', function( data ) {
+        io.sockets.in( draftId ).on( 'CardPick', function( data ) {
             Draft.newPick( data, draftId );
         } );
         
-    },
+    }
     
-    startDraft : function( draftId ) {
+    , startDraft : function( draftId ) {
         
-        var players = Draft.drafts[draftId]['players'];
+        var players = Draft.drafts[draftId].players;
         var order = JSON.stringify( players );
-        
-        console.log("start draft id: " + Draft.drafts[ draftId ].id);
-        
-        for( var i = 0; i < 8; ++i ){
-            var player = Draft.drafts[draftId]['players'][i];
-            console.log("start draft " + i + " player: " + player)
-            // get the player's socket
-            var socket = Draft.drafts[draftId]['pData'][player]['socket'];
-            socket.emit( 'DraftStart', { 'order' : order } );
-        }
-        
+       
         // send a start draft event to all the players in this draft
-        //io.sockets.in( Draft.drafts[ draftId ].id ).emit( 'DraftStart', { 'order' : order } );
+        io.sockets.in( draftId ).emit( 'DraftStart', { 'order' : order } );
         
-    },
+    }
     
-    distributeBoosterPacks : function( draftId ) {
+    , distributeBoosterPacks : function( draftId ) {
         
-        var draftData = Draft.drafts[ draftId ];
-        var players = draftData['players'];
-        var pData = draftData['pData'];
-        var size = players.length;
-        var socket, booster, nick;
+        console.log("distributeBoosterPacks");
+        
+        var players = Draft.drafts[draftId].players;
+        var size = Draft.drafts[draftId].size;
     
         // give each player in the draft a new, unopened booster pack
         for( var i = 0; i < size; ++i ){
@@ -110,13 +150,13 @@ Draft = {
             //booster = BoosterPack.newBooster(set);
             
             // send a NewBooster event to the player w/ the booster pack inside
-            //socket.emit( 'NewBooster', { 'booster' : JSON.stringify(booster) } );
+            socket.emit( 'NewBooster', { 'booster' : "empty booster!" } );
             
         }
         
-    },
+    }
     
-    newPick : function( data ) {
+    , newPick : function( data ) {
     
         var data = $.parseJSON( data );
         var draftId = data['dId'];
@@ -169,9 +209,9 @@ Draft = {
             Draft.distributeBoosterPacks();
         }
         
-    },
+    }
     
-    endDraft : function( draftId ) {
+    , endDraft : function( draftId ) {
         
         var draftData = drafts[ draftId ];
         var players = draftData.players;
@@ -179,6 +219,22 @@ Draft = {
         
         // send a start draft event to all the players in this draft
         io.sockets.in( draftData.draftId ).emit( 'EndDraft', { 'order' : order } );
+        
+    }
+    
+    , newEmptyQueueObj : function( set, size ) {
+        
+        var queue = {
+            'id' : uuid.v4() // automatically name the first available queue
+            , 'set' : set
+            , 'players' : []
+            , 'player_data' : {}
+            , 'size' : size
+            , 'pack' : 0
+            , 'dir' : 0 // 0 = left, 1 = right
+        }
+        
+        return queue;
         
     }
     
