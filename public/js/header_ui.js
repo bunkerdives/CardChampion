@@ -8,6 +8,7 @@ function collapse() {
 	$('#content').css({
 		"padding-top" : "20px",
 	});
+	resizeScreen();
 }
 
 function expand() {
@@ -20,4 +21,5 @@ function expand() {
 	$('#content').css({
 		"padding-top" : "50px",
 	});
+	resizeScreen();
 }
