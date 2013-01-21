@@ -119,13 +119,37 @@ GTC = {
     ]
     
     , card_data : {
+
+        , '1' : {
+            'name' : 'Aerial Maneuver'
+            , 'rarity' : 'C'
+            , 'color' : 'W'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/s2blzt60xg_en.jpg'
+        }
+
+        , '2' : {
+            'name' : 'Angelic Edict'
+            , 'rarity' : 'C'
+            , 'color' : 'W'
+            , 'cmc' : 5
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qxev1gcz8k_en.jpg'
+        }
         
-        '3' : {
+        , '3' : {
             'name' : 'Angelic Skirmisher'
             , 'rarity' : 'R'
             , 'color' : 'W'
             , 'cmc' : 6
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/geydrm7hlb_en.jpg'
+        }
+
+        , '4' : {
+            'name' : 'Assault Griffin'
+            , 'rarity' : 'C'
+            , 'color' : 'W'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/t4d32of3hb_en.jpg'
         }
         
         , '5' : {
@@ -151,6 +175,38 @@ GTC = {
             , 'cmc' : 1
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/mshrpl53qw_en.jpg'
         }
+
+        , '8' : {
+            'name' : 'Court Street Denizen'
+            , 'rarity' : 'C'
+            , 'color' : 'W'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/x6xmjttbf0_en.jpg'
+        }
+
+        , '9' : {
+            'name' : 'Daring Skyjek'
+            , 'rarity' : 'C'
+            , 'color' : 'W'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/lwwem5osbd_en.jpg'
+        }
+
+        , '10' : {
+            'name' : 'Debtor\'s Pulpit'
+            , 'rarity' : 'U'
+            , 'color' : 'W'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ppg16l9mmu_en.jpg'
+        }
+
+        , '11' : {
+            'name' : 'Dutiful Thrull'
+            , 'rarity' : 'C'
+            , 'color' : 'W'
+            , 'cmc' : 1
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/9baoz7lzr2_en.jpg'
+        }
         
         , '12' : {
             'name' : 'Frontline Medic'
@@ -166,6 +222,54 @@ GTC = {
             , 'color' : 'W'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ugoh63m1ri_en.jpg'
+        }
+
+        , '14' : {
+            'name' : 'Guardian of the Gateless'
+            , 'rarity' : 'U'
+            , 'color' : 'W'
+            , 'cmc' : 5
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zza31tx469_en.jpg'
+        }
+
+        , '15' : {
+            'name' : 'Guildscorn Ward'
+            , 'rarity' : 'C'
+            , 'color' : 'W'
+            , 'cmc' : 1
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/wf83m20x8i_en.jpg'
+        }
+
+        , '16' : {
+            'name' : 'Hold the Gates'
+            , 'rarity' : 'U'
+            , 'color' : 'W'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/kkxu6rjrst_en.jpg'
+        }
+
+        , '17' : {
+            'name' : 'Holy Mantle'
+            , 'rarity' : 'U'
+            , 'color' : 'W'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/3k9k1zaa41_en.jpg'
+        }
+
+        , '18' : {
+            'name' : 'Knight of Obligation'
+            , 'rarity' : 'U'
+            , 'color' : 'W'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/dktwqdwpom_en.jpg'
+        }
+
+        , '19' : {
+            'name' : 'Knight Watch'
+            , 'rarity' : 'C'
+            , 'color' : 'W'
+            , 'cmc' : 5
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/oe9csqdmin_en.jpg'
         }
         
         , '20' : {
@@ -183,6 +287,38 @@ GTC = {
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yxtqf1k89d_en.jpg'
         }
+
+        , '22' : {
+            'name' : 'Nav Squad Commandos'
+            , 'rarity' : 'C'
+            , 'color' : 'W'
+            , 'cmc' : 5
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/68bkgffyh7_en.jpg'
+        }
+
+        , '23' : {
+            'name' : 'Righteous Charge'
+            , 'rarity' : 'U'
+            , 'color' : 'W'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/sbjmlo2ue5_en.jpg'
+        }
+
+        , '24' : {
+            'name' : 'Shielded Passage'
+            , 'rarity' : 'C'
+            , 'color' : 'W'
+            , 'cmc' : 1
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/opzfzqn62b_en.jpg'
+        }
+
+        , '25' : {
+            'name' : 'Smite'
+            , 'rarity' : 'C'
+            , 'color' : 'W'
+            , 'cmc' : 1
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/rz26vdnqzd_en.jpg'
+        }
         
         , '26' : {
             'name' : 'Syndic of Tithes'
@@ -191,17 +327,48 @@ GTC = {
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/q67q2d1sma_en.jpg'
         }
+
+        , '27' : {
+            'name' : 'Urbis Protector'
+            , 'rarity' : 'U'
+            , 'color' : 'W'
+            , 'cmc' : 6
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/rus5geripy_en.jpg'
+        }
+
+        , '28' : {
+            'name' : 'Zarichi Tiger'
+            , 'rarity' : 'C'
+            , 'color' : 'W'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ndfrirtc6h_en.jpg'
+        }
         
         /* BLUE */
         
-        /*
         , '29' : {
             'name' : 'Aetherize'
             , 'rarity' : 'U'
             , 'color' : 'U'
             , 'cmc' : 4
-            , 'img' : ''
-        }*/
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/uyrloq9dnd_en.jpg'
+        }
+
+        , '30' : {
+            'name' : 'Agoraphobia'
+            , 'rarity' : 'U'
+            , 'color' : 'U'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/x3nw3d7538_en.jpg'
+        }
+
+        , '31' : {
+            'name' : 'Clinging Anemones'
+            , 'rarity' : 'C'
+            , 'color' : 'U'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a34dp8fg4w_en.jpg'
+        }
         
         , '32' : {
             'name' : 'Cloudfin Raptor'
@@ -226,6 +393,14 @@ GTC = {
             , 'cmc' : 12
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/b1ne8elfka_en.jpg'
         }
+
+        , '35' : {
+            'name' : 'Frilled Oculus'
+            , 'rarity' : 'C'
+            , 'color' : 'U'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/gu046anask_en.jpg'
+        }
         
         , '36' : {
             'name' : 'Gridlock'
@@ -242,6 +417,30 @@ GTC = {
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/bkbf3hs2eo_en.jpg'
         }
+
+        , '38' : {
+            'name' : 'Incursion Specialist'
+            , 'rarity' : 'U'
+            , 'color' : 'U'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/6kugs03zvb_en.jpg'
+        }
+
+        , '39' : {
+            'name' : 'Keymaster Rogue'
+            , 'rarity' : 'C'
+            , 'color' : 'U'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/100a9dio61_en.jpg'
+        }
+
+        , '40' : {
+            'name' : 'Last Thoughts'
+            , 'rarity' : 'C'
+            , 'color' : 'U'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/meayfn8y2b_en.jpg'
+        }
         
         , '41' : {
             'name' : 'Leyline Phantom'
@@ -249,6 +448,22 @@ GTC = {
             , 'color' : 'U'
             , 'cmc' : 5
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/uhd7veq7bi_en.jpg'
+        }
+
+        , '42' : {
+            'name' : 'Metropolis Sprite'
+            , 'rarity' : 'C'
+            , 'color' : 'U'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/nxohv3sgd9_en.jpg'
+        }
+
+        , '43' : {
+            'name' : 'Mindeye Drake'
+            , 'rarity' : 'U'
+            , 'color' : 'U'
+            , 'cmc' : 5
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/r5wg9ip3a1_en.jpg'
         }
         
         , '44' : {
@@ -258,15 +473,70 @@ GTC = {
             , 'cmc' : 1
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/wb71jk0gzt_en.jpg'
         }
+
+        , '45' : {
+            'name' : 'Realmwright'
+            , 'rarity' : 'R'
+            , 'color' : 'U'
+            , 'cmc' : 1
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/3sxhp1fq4s_en.jpg'
+        }
+
+        , '46' : {
+            'name' : 'Sage\'s Row Denizen'
+            , 'rarity' : 'C'
+            , 'color' : 'U'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zz2xe2fvnv_en.jpg'
+        }
+
+        , '47' : {
+            'name' : 'Sapphire Drake'
+            , 'rarity' : 'U'
+            , 'color' : 'U'
+            , 'cmc' : 6
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/vs36u27da0_en.jpg'
+        }
+
+        , '48' : {
+            'name' : 'Scatter Arc'
+            , 'rarity' : 'C'
+            , 'color' : 'U'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/585imaplro_en.jpg'
+        }
         
-        /*
         , '49' : {
             'name' : 'Simic Fluxmage'
             , 'rarity' : 'U'
             , 'color' : 'U'
             , 'cmc' : 3
-            , 'img' : ''
-        }*/
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/oyknlk2j2x_en.jpg'
+        }
+
+        , '50' : {
+            'name' : 'Simic Manipulator'
+            , 'rarity' : 'R'
+            , 'color' : 'U'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/mcyzhgmlwb_en.jpg'
+        }
+
+        , '51' : {
+            'name' : 'Skygames'
+            , 'rarity' : 'C'
+            , 'color' : 'U'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/b1tan9rt21_en.jpg'
+        }
+
+        , '52' : {
+            'name' : 'Spell Rupture'
+            , 'rarity' : 'C'
+            , 'color' : 'U'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/5qkxz95nqc_en.jpg'
+        }
         
         , '53' : {
             'name' : 'Stolen Identity'
@@ -274,6 +544,30 @@ GTC = {
             , 'color' : 'U'
             , 'cmc' : 6
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/k9uaahs7dv_en.jpg'
+        }
+
+        , '54' : {
+            'name' : 'Totally Lost'
+            , 'rarity' : 'C'
+            , 'color' : 'U'
+            , 'cmc' : 5
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yanzr91jbp_en.jpg'
+        }
+
+        , '55' : {
+            'name' : 'Voidwalk'
+            , 'rarity' : 'U'
+            , 'color' : 'U'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/wmy6mm5ncr_en.jpg'
+        }
+
+        , '56' : {
+            'name' : 'Way of the Thief'
+            , 'rarity' : 'C'
+            , 'color' : 'U'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zojrtczz5t_en.jpg'
         }
         
         /* BLACK */

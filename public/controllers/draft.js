@@ -69,12 +69,12 @@ Draft = {
         
         // add a handler to listen for the PackPass socket event
         socket.on( 'PackPass', function(cards) {
-            Draft.takePack( $.parseJSON(cards) );
+            Draft.takePack( cards );
         } );
         
         // add a handler to listen for the EndDraft socket event
         socket.on( 'EndDraft', function(picks) {
-            Draft.endDraft( picks );
+            Draft.endDraft( $.parseJSON(picks) );
         } );
 
     }
@@ -113,13 +113,18 @@ Draft = {
         
     }
     
-    , takePack : function(pack) {
+    , takePack : function( data ) {
+        
+        var body = $.parseJSON(data);
+        var pack = body['booster'];
+        
+        console.log("Taking the pack: " + pack)
     
         // add the booster the server passed us to our queue
-        Draft.newBoosterQueue.push( cards );
+        Draft.newBoosterQueue.push( pack );
         
         // if the user is done with the last pack, display the cards and reset the timer
-        if( choosing == false ){
+        if( Draft.choosing == false ){
             Draft.choosing = true;
             Draft.addPackToUI( Draft.newBoosterQueue.shift() );
         }
@@ -147,12 +152,15 @@ Draft = {
     
     , addPackToUI : function( pack ) {
         
+        console.log("addPackToUI adding pack " + pack + " to the UI")
+        
         // assign the pack as our currently held pack
         Draft.curPack = pack;
         
         // replace the images in the pack UI with the new pack images
         for( var i = 1; i < 15 - Draft.picknum; ++i ){
             var id = pack[ i - 1 ];
+            console.log("Getting image for card " + id );
             var img = GTC.card_data[ id ].img;
             $( "#pack-card-" + i ).css( "background-image", 'url(' + img + ')' );
             $( "#pack-card-" + i ).off( 'click' );
@@ -323,7 +331,7 @@ Draft = {
         
     }
     
-    /*
+    
     , selectCard : function(event){
         
         var pick_id = event.data.id;
@@ -481,11 +489,11 @@ Draft = {
         $("#pack-card-16").css( "background-image", 'none' );
         
     }
-    */
+    
 
 };
 
 $( function() {
     // TODO turn on if testing single player mode
-    // Draft.init();
+    //Draft.init();
 } );
