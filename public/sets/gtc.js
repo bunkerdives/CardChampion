@@ -571,6 +571,38 @@ GTC = {
         }
         
         /* BLACK */
+				
+        , '57' : {
+            'name' : 'Balustrade Spy'
+            , 'rarity' : 'C'
+            , 'color' : 'B'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/6ie4ilpo2k_en.jpg'
+        }
+				
+        , '58' : {
+            'name' : 'Basilica Screecher'
+            , 'rarity' : 'C'
+            , 'color' : 'B'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/l83xuhfgpi_en.jpg'
+        }
+				
+        , '59' : {
+            'name' : 'Contaminated Ground'
+            , 'rarity' : 'C'
+            , 'color' : 'B'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/1ztn3kk1f6_en.jpg'
+        }
+				
+        , '60' : {
+            'name' : 'Corpse Blockade'
+            , 'rarity' : 'C'
+            , 'color' : 'B'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/sv4ncxwwk9_en.jpg'
+        }
         
         , '61' : {
             'name' : 'Crypt Ghast'
@@ -578,6 +610,31 @@ GTC = {
             , 'color' : 'B'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/5atfjinpng_en.jpg'
+        }
+				
+        , '62' : {
+            'name' : "Death's Approach"
+            , 'rarity' : 'C'
+            , 'color' : 'B'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/238mhptv53_en.jpg'
+        }
+        
+				
+        , '63' : {
+            'name' : 'Devour Flesh'
+            , 'rarity' : 'C'
+            , 'color' : 'B'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ntfiiz5vzm_en.jpg'
+        }
+				
+        , '64' : {
+            'name' : 'Dying Wish'
+            , 'rarity' : 'U'
+            , 'color' : 'B'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/6qakt7vakw_en.jpg'
         }
         
         , '65' : {
@@ -587,17 +644,72 @@ GTC = {
             , 'cmc' : 3
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/3c7ur9svcm_en.jpg'
         }
-        
-        , '74' : {
+				
+        , '66' : {
+            'name' : 'Grisly Spectacle'
+            , 'rarity' : 'C'
+            , 'color' : 'B'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/00tyvpgtmm_en.jpg'
+        }
+				
+        , '67' : {
+            'name' : 'Gutter Skulk'
+            , 'rarity' : 'C'
+            , 'color' : 'B'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/op8bl6byx0_en.jpg'
+        }
+				
+        , '68' : {
+            'name' : 'Horror of the Dim'
+            , 'rarity' : 'C'
+            , 'color' : 'B'
+            , 'cmc' : 5
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yuaehtzaoy_en.jpg'
+        }
+				
+        , '69' : {
+            'name' : 'Illness in the Ranks'
+            , 'rarity' : 'U'
+            , 'color' : 'B'
+            , 'cmc' : 1
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/awhhr8evmz_en.jpg'
+        }
+				
+        , '70' : {
+            'name' : 'Killing Glare'
+            , 'rarity' : 'U'
+            , 'color' : 'B'
+            , 'cmc' : 1
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/v6k7izopy2_en.jpg'
+        }
+				
+        , '71' : {
             'name' : 'Lord of the Void'
             , 'rarity' : 'M'
             , 'color' : 'B'
             , 'cmc' : 7
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ytnaqsgi03_en.jpg'
         }
+				
+        , '72' : {
+            'name' : 'Mental Vapors'
+            , 'rarity' : 'U'
+            , 'color' : 'B'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/t127tqnlwd_en.jpg'
+        }
+				
+        , '73' : {
+            'name' : 'Midnight Recovery'
+            , 'rarity' : 'C'
+            , 'color' : 'B'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/wxqrlnpnkc_en.jpg'
+        }
         
-        /* invalid card id */
-        , '75' : {
+        , '74' : {
             'name' : 'Ogre Slumlord'
             , 'rarity' : 'R'
             , 'color' : 'B'
@@ -605,16 +717,55 @@ GTC = {
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/6jl9gl8hs8_en.jpg'
         }
         
-        /* invalid card id */
-        , '76' : {
+        , '75' : {
             'name' : 'Sepulchral Primordial'
             , 'rarity' : 'R'
             , 'color' : 'B'
             , 'cmc' : 7
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ke6zenv9u5_en.jpg'
         }
+				
+        , '76' : {
+            'name' : 'Shadow Alley Denizen'
+            , 'rarity' : 'C'
+            , 'color' : 'B'
+            , 'cmc' : 1
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/aknhpcus4v_en.jpg'
+        }
+				
+        , '77' : {
+            'name' : 'Shadow Slice'
+            , 'rarity' : 'C'
+            , 'color' : 'B'
+            , 'cmc' : 5
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/2690x9cacp_en.jpg'
+        }
+				
+        , '78' : {
+            'name' : 'Slate Street Ruffian'
+            , 'rarity' : 'C'
+            , 'color' : 'B'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tjdf072pmm_en.jpg'
+        }
+				
+        , '79' : {
+            'name' : 'Smog Elemental'
+            , 'rarity' : 'U'
+            , 'color' : 'B'
+            , 'cmc' : 6
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/kp8zv8uors_en.jpg'
+        }
+				
+        , '80' : {
+            'name' : 'Syndicate Enforcer'
+            , 'rarity' : 'C'
+            , 'color' : 'B'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/7yyz1uilfu_en.jpg'
+        }
         
-        , '81' : {
+        , '80' : {
             'name' : 'Thrull Parasite'
             , 'rarity' : 'U'
             , 'color' : 'B'
@@ -630,7 +781,6 @@ GTC = {
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/gagqof3lss_en.jpg'
         }
         
-        /* invalid card id */
         , '83' : {
             'name' : 'Undercity Plague'
             , 'rarity' : 'R'
@@ -638,29 +788,90 @@ GTC = {
             , 'cmc' : 6
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/4n01133uru_en.jpg'
         }
+				
+        , '84' : {
+            'name' : 'Wight of Precinct Six'
+            , 'rarity' : 'U'
+            , 'color' : 'B'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a4jnjrni3w_en.jpg'
+        }
         
         /* RED */
+				
+        , '85' : {
+            'name' : 'Act of Treason'
+            , 'rarity' : 'C'
+            , 'color' : 'R'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/kwiwruz4m4_en.jpg'
+        }
+				
+        , '86' : {
+            'name' : 'Bomber Corps'
+            , 'rarity' : 'C'
+            , 'color' : 'R'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/4fltpd2024_en.jpg'
+        }
+				
+        , '87' : {
+            'name' : 'Cinder Elemental'
+            , 'rarity' : 'U'
+            , 'color' : 'R'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/rz0z2ryydi_en.jpg'
+        }
+				
+        , '88' : {
+            'name' : 'Crackling Perimeter'
+            , 'rarity' : 'U'
+            , 'color' : 'R'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hx9ijcwoe6_en.jpg'
+        }
+				
+        , '89' : {
+            'name' : 'Ember Beast'
+            , 'rarity' : 'C'
+            , 'color' : 'R'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/g8xjadtkqz_en.jpg'
+        }
         
-        /* invalid card id */
-        /*
-        , '84' : {
+        , '90' : {
             'name' : 'Firefist Striker'
             , 'rarity' : 'U'
-            , 'color' : 'W'
+            , 'color' : 'R'
             , 'cmc' : 2
-            , 'img' : ''
-        }*/
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/lt2zjov5j5_en.jpg'
+        }
         
         , '91' : {
             'name' : 'Five-Alarm Fire'
             , 'rarity' : 'R'
-            , 'color' : 'W'
+            , 'color' : 'R'
             , 'cmc' : 3
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/k1xdjk3rp8_en.jpg'
         }
-        
-        /* invalid card id */
+				
         , '92' : {
+            'name' : 'Foundry Street Denizen'
+            , 'rarity' : 'C'
+            , 'color' : 'R'
+            , 'cmc' : 1
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/k37kqf0wtl_en.jpg'
+        }
+				
+        , '93' : {
+            'name' : 'Furious Resistance'
+            , 'rarity' : 'C'
+            , 'color' : 'R'
+            , 'cmc' : 1
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/0qh1t58pbb_en.jpg'
+        }
+        
+        , '94' : {
             'name' : 'Hellkite Tyrant'
             , 'rarity' : 'M'
             , 'color' : 'R'
@@ -668,40 +879,106 @@ GTC = {
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/njcdxzejfx_en.jpg'
         }
         
-        /* invalid card id */
-        , '93' : {
+        , '95' : {
             'name' : 'Hellraiser Goblin'
             , 'rarity' : 'U'
             , 'color' : 'R'
             , 'cmc' : 3
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/3x7y42x6y8_en.jpg'
         }
+				
+        , '96' : {
+            'name' : 'Homing Lightning'
+            , 'rarity' : 'U'
+            , 'color' : 'R'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/e6xrhzmtlt_en.jpg'
+        }
         
-        /* invalid card id */
-        , '94' : {
+        , '97' : {
             'name' : 'Legion Loyalist'
             , 'rarity' : 'R'
             , 'color' : 'R'
             , 'cmc' : 1
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/0xfkhp15jr_en.jpg'
         }
+				
+        , '98' : {
+            'name' : 'Madcap Skills'
+            , 'rarity' : 'C'
+            , 'color' : 'R'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/trear46frs_en.jpg'
+        }
+				
+        , '99' : {
+            'name' : 'Mark for Death'
+            , 'rarity' : 'U'
+            , 'color' : 'R'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/muzjxjjkqc_en.jpg'
+        }
+				
+        , '100' : {
+            'name' : 'Massive Raid'
+            , 'rarity' : 'C'
+            , 'color' : 'R'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/vye7iil36e_en.jpg'
+        }
         
-        /*
         , '101' : {
             'name' : 'Molten Primordial'
             , 'rarity' : 'R'
             , 'color' : 'R'
             , 'cmc' : 7
-            , 'img' : ''
-        }*/
-        
-        /* invalid card id */
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/fn48qunlog_en.jpg'
+        }
+				
         , '102' : {
+            'name' : 'Mugging'
+            , 'rarity' : 'C'
+            , 'color' : 'R'
+            , 'cmc' : 1
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/cvv7pamj05_en.jpg'
+        }
+				
+        , '103' : {
+            'name' : 'Ripscale Predator'
+            , 'rarity' : 'U'
+            , 'color' : 'R'
+            , 'cmc' : 6
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/kfpwqssybv_en.jpg'
+        }
+        , '104' : {
+            'name' : 'Scorchwalker'
+            , 'rarity' : 'C'
+            , 'color' : 'R'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/t3sy7hufd1_en.jpg'
+        }
+        , '105' : {
+            'name' : 'Skinbrand Goblin'
+            , 'rarity' : 'C'
+            , 'color' : 'R'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/nzxwjej2xg_en.jpg'
+        }
+				
+        , '106' : {
             'name' : 'Skullcrack'
             , 'rarity' : 'U'
             , 'color' : 'R'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/jpf5qzipuk_en.jpg'
+        }
+				
+        , '107' : {
+            'name' : 'Structural Collapse'
+            , 'rarity' : 'C'
+            , 'color' : 'R'
+            , 'cmc' : 6
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hobhkezyjj_en.jpg'
         }
         
         , '108' : {
@@ -711,6 +988,14 @@ GTC = {
             , 'cmc' : 5
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zpg0dfq8wh_en.jpg'
         }
+				
+        , '109' : {
+            'name' : 'Towering Thunderfist'
+            , 'rarity' : 'C'
+            , 'color' : 'R'
+            , 'cmc' : 5
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/sufw94jfuw_en.jpg'
+        }
         
         , '110' : {
             'name' : 'Viashino Shanktail'
@@ -718,6 +1003,22 @@ GTC = {
             , 'color' : 'R'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/v092k7o543_en.jpg'
+        }
+				
+        , '111' : {
+            'name' : 'Warmind Infantry'
+            , 'rarity' : 'C'
+            , 'color' : 'R'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/0tnqrwbo5o_en.jpg'
+        }
+				
+        , '112' : {
+            'name' : 'Wrecking Ogre'
+            , 'rarity' : 'R'
+            , 'color' : 'R'
+            , 'cmc' : 5
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/bwmny93p22_en.jpg'
         }
         
         /* GREEN */
