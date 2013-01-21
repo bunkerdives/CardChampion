@@ -518,6 +518,61 @@ li.nav_section {
 			
 			
 			
+			/*End Draft styles*/
+	
+	#draft-builder {
+		overflow:hidden;		
+	}
+	
+	#draft-builder #top-screen {
+		background-color:#fff;
+	}
+	
+	#draft-builder #img-preview {
+		background-color:transparent;
+		background-image:url('/img/cardback.jpg');
+		background-repeat: no-repeat;
+		-webkit-border-radius: 6%;
+		-moz-border-radius: 6%;
+		border-radius: 6%;
+		margin-top:5px;
+		margin-left:5px;
+	}
+	
+	
+	#draft-builder #card-pool {
+		float:right;
+	}
+	
+	#draft #card-pool-scroll {
+		overflow:auto;
+		width:100%;
+	}
+	
+	#draft-builder #card-pool-inner {
+		background-image:url('/img/retina_wood.png');
+		background-repeat: repeat;
+	}
+	
+	#draft-builder #control-bar {
+		height:40px;
+		width:100%;
+		background-color:#000;
+	}
+	
+	#draft-builder #bottom-screen {
+		background-color:#444;
+	}
+	
+	#draft-builder #deck-area {
+		overflow:auto;
+	}
+	
+	#draft-builder #deck-area-inner {
+		background-image:url('/img/retina_wood.png');
+		background-repeat: repeat;
+	}
+
 			
 			#disclaimer {
 				position:fixed;
