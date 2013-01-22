@@ -1021,14 +1021,31 @@ GTC = {
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/bwmny93p22_en.jpg'
         }
         
+        
         /* GREEN */
         
-        , '115' : {
-            'name' : 'Experiment One'
+        , '113' : {
+            'name' : 'Adaptive Snapjaw'
+            , 'rarity' : 'C'
+            , 'color' : 'G'
+            , 'cmc' : 5
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/swccqvb40q_en.jpg'
+        }
+        
+        , '114' : {
+            'name' : 'Alpha Authority'
             , 'rarity' : 'U'
             , 'color' : 'G'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zst0b6bp6o_en.jpg'
+        }
+        
+        , '115' : {
+            'name' : 'Burst of Strength'
+            , 'rarity' : 'C'
+            , 'color' : 'G'
             , 'cmc' : 1
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/krxym94uy0_en.jpg'
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a7eacen9wm_en.jpg'
         }
         
         , '116' : {
@@ -1039,6 +1056,38 @@ GTC = {
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/gpbrb0j6xt_en.jpg'
         }
         
+        , '117' : {
+            'name' : 'Crowned Ceratok'
+            , 'rarity' : 'U'
+            , 'color' : 'G'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/i4h4vuk1ym_en.jpg'
+        }
+        
+        , '118' : {
+            'name' : 'Disciple of the Old Ways'
+            , 'rarity' : 'C'
+            , 'color' : 'G'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/krxym94uy0_en.jpg'
+        }
+        
+        , '119' : {
+            'name' : 'Experiment One'
+            , 'rarity' : 'U'
+            , 'color' : 'G'
+            , 'cmc' : 1
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/krxym94uy0_en.jpg'
+        }
+        
+        , '120' : {
+            'name' : 'Forced Adaptation'
+            , 'rarity' : 'C'
+            , 'color' : 'G'
+            , 'cmc' : 1
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/1wi1c32pmx_en.jpg'
+        }
+        
         , '121' : {
             'name' : 'Giant Adephage'
             , 'rarity' : 'M'
@@ -1047,13 +1096,52 @@ GTC = {
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tkohp7rxit_en.jpg'
         }
         
-        /* invalid card id */
         , '122' : {
+            'name' : 'Greenside Watcher'
+            , 'rarity' : '1'
+            , 'color' : 'G'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/jnx0mtbzuf_en.jpg'
+        }
+        
+        , '123' : {
             'name' : 'Gyre Sage'
             , 'rarity' : 'R'
             , 'color' : 'G'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/22s62gzi2u_en.jpg'
+        }
+        
+        , '124' : {
+            'name' : 'Hindervines'
+            , 'rarity' : 'U'
+            , 'color' : 'G'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/mk2hux6uur_en.jpg'
+        }
+        
+        , '125' : {
+            'name' : 'Ivy Lane Denizen'
+            , 'rarity' : 'C'
+            , 'color' : 'G'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/n22pbcviuo_en.jpg'
+        }
+        
+        , '126' : {
+            'name' : 'Miming Slime'
+            , 'rarity' : 'U'
+            , 'color' : 'G'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/4qqeq64b8z_en.jpg'
+        }
+        
+        , '127' : {
+            'name' : 'Naturalize'
+            , 'rarity' : 'U'
+            , 'color' : 'G'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/1zs0k7lowd_en.jpg'
         }
         
         , '128' : {
@@ -1062,6 +1150,30 @@ GTC = {
             , 'color' : 'G'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qj83mlrs8l_en.jpg'
+        }
+        
+        , '129' : {
+            'name' : 'Predator\'s Rapport'
+            , 'rarity' : 'C'
+            , 'color' : 'G'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qte0p92qh2_en.jpg'
+        }
+        
+        , '130' : {
+            'name' : 'Rust Scarab'
+            , 'rarity' : 'U'
+            , 'color' : 'G'
+            , 'cmc' : 5
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/i8rgqnqric_en.jpg'
+        }
+        
+        , '131' : {
+            'name' : 'Scab-Clan Charger'
+            , 'rarity' : 'C'
+            , 'color' : 'G'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/lrptnirsf4_en.jpg'
         }
         
         , '132' : {
@@ -1080,15 +1192,61 @@ GTC = {
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/7v8xv9xoxq_en.jpg'
         }
         
-        /* invalid card id */
-        /*
         , '134' : {
             'name' : 'Slaughterhorn'
             , 'rarity' : 'C'
             , 'color' : 'G'
             , 'cmc' : 3
-            , 'img' : ''
-        }*/
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tm143aipok_en.jpg'
+        }
+        
+        , '135' : {
+            'name' : 'Spire Tracer'
+            , 'rarity' : 'C'
+            , 'color' : 'G'
+            , 'cmc' : 1
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/iod3iyz3j2_en.jpg'
+        }
+        
+        , '136' : {
+            'name' : 'Sylan Primordial'
+            , 'rarity' : 'R'
+            , 'color' : 'G'
+            , 'cmc' : 7
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tgmanwihfz_en.jpg'
+        }
+        
+        , '137' : {
+            'name' : 'Tower Defense'
+            , 'rarity' : 'U'
+            , 'color' : 'G'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/xcwdekx57n_en.jpg'
+        }
+        
+        , '138' : {
+            'name' : 'Verdant Haven'
+            , 'rarity' : 'C'
+            , 'color' : 'G'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/i33qpq2vly_en.jpg'
+        }
+        
+        , '139' : {
+            'name' : 'Wasteland Viper'
+            , 'rarity' : 'U'
+            , 'color' : 'G'
+            , 'cmc' : 1
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/juiolmlrkl_en.jpg'
+        }
+        
+        , '140' : {
+            'name' : 'Wildwood Rebirth'
+            , 'rarity' : 'C'
+            , 'color' : 'G'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/h814trbfxv_en.jpg'
+        }
         
         /* MULTICOLORED */
         
@@ -1473,14 +1631,46 @@ GTC = {
         }
         
         
-        /* HYBRID */
+        /***   HYBRID   ***/
         
-        , '215' : {
+        , '211' : {
+            'name' : 'Arrows of Justice'
+            , 'rarity' : 'U'
+            , 'color' : 'M'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/fjb3f1fhtk_en.jpg'
+        }
+        
+        , '212' : {
+            'name' : 'Beckon Appartition'
+            , 'rarity' : 'C'
+            , 'color' : 'M'
+            , 'cmc' : 1
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ydyjwxx5nc_en.jpg'
+        }
+        
+        , '213' : {
             'name' : 'Biomass Mutation'
             , 'rarity' : 'R'
             , 'color' : 'GU'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ny6mtaygmr_en.jpg'
+        }
+        
+        , '214' : {
+            'name' : 'Bioshift'
+            , 'rarity' : 'C'
+            , 'color' : 'M'
+            , 'cmc' : 1
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tth5um1bl2_en.jpg'
+        }
+        
+        , '215' : {
+            'name' : 'Boros Reckoner'
+            , 'rarity' : 'R'
+            , 'color' : 'M'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hxyzo9fn7v_en.jpg'
         }
         
         , '216' : {
@@ -1491,34 +1681,90 @@ GTC = {
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/kwtkd3c7sh_en.jpg'
         }
         
+        , '217' : {
+            'name' : 'Coerced Confession'
+            , 'rarity' : 'U'
+            , 'color' : 'M'
+            , 'cmc' : 5
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/t8sia8416y_en.jpg'
+        }
+        
+        , '218' : {
+            'name' : 'Deathcult Rogue'
+            , 'rarity' : 'C'
+            , 'color' : 'M'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/j1m7z578aa_en.jpg'
+        }
+        
+        , '219' : {
+            'name' : 'Gift of Orzhova'
+            , 'rarity' : 'U'
+            , 'color' : 'M'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a9i9v9k80t_en.jpg'
+        }
+        
+        , '220' : {
+            'name' : 'Immortal Servitude'
+            , 'rarity' : 'R'
+            , 'color' : 'M'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/14gyxtjfad_en.jpg'
+        }
+        
+        , '221' : {
+            'name' : 'Merfolk of the Depths'
+            , 'rarity' : 'U'
+            , 'color' : 'M'
+            , 'cmc' : 6
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/lerob5qo3b_en.jpg'
+        }
+        
         , '222' : {
             'name' : 'Nightveil Specter'
             , 'rarity' : 'R'
-            , 'color' : 'G'
+            , 'color' : 'M'
             , 'cmc' : 3
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/cxg272cbbg_en.jpg'
+        }
+        
+        , '223' : {
+            'name' : 'Pit Fight'
+            , 'rarity' : 'C'
+            , 'color' : 'M'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/0k5uqfenyb_en.jpg'
         }
         
         , '224' : {
             'name' : 'Rubblebelt Raiders'
             , 'rarity' : 'R'
-            , 'color' : 'RG'
+            , 'color' : 'M'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/svjfhh3bbx_en.jpg'
         }
         
         , '225' : {
-            'name' : 'Pit Fight'
+            'name' : 'Shattering Blow'
             , 'rarity' : 'C'
-            , 'color' : 'RG'
+            , 'color' : 'M'
             , 'cmc' : 2
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/0k5uqfenyb_en.jpg'
-        }
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/7qd529r6rd_en.jpg'
+       }
         
         
         /* ARTIFACTS */
         
-        , '223' : {
+        , '226' : {
+            'name' : 'Armored Transport'
+            , 'rarity' : 'C'
+            , 'color' : 'A'
+            , 'cmc' : 3
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qhq0f16v5n_en.jpg'
+       }
+        
+        , '227' : {
             'name' : 'Boros Keyrune'
             , 'rarity' : 'U'
             , 'color' : 'A'
@@ -1558,14 +1804,45 @@ GTC = {
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/7anbuzmoy2_en.jpg'
         }
         
-        /* invalid card id */
         , '232' : {
+            'name' : 'Millennial Gargoyle'
+            , 'rarity' : 'C'
+            , 'color' : 'A'
+            , 'cmc' : 4
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a1qmgxzl4y_en.jpg'
+       }
+        
+        , '233' : {
             'name' : 'Orzhov Keyrune'
             , 'rarity' : 'U'
             , 'color' : 'A'
             , 'cmc' : 3
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/p6ky6h8leu_en.jpg'
         }
+        
+        , '234' : {
+            'name' : 'Prophetic Prism'
+            , 'rarity' : 'C'
+            , 'color' : 'A'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/1acadm3rgd_en.jpg'
+       }
+        
+        , '235' : {
+            'name' : 'Razortip Whip'
+            , 'rarity' : 'C'
+            , 'color' : 'A'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/jx30fv68bw_en.jpg'
+       }
+        
+        , '236' : {
+            'name' : 'Riot Gear'
+            , 'rarity' : 'C'
+            , 'color' : 'A'
+            , 'cmc' : 2
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/65agsc00a2_en.jpg'
+       }
         
         , '237' : {
             'name' : 'Simic Keyrune'
@@ -1574,6 +1851,105 @@ GTC = {
             , 'cmc' : 3
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/vvolws6ynj_en.jpg'
         }
+        
+        , '238' : {
+            'name' : 'Skybinder Staff'
+            , 'rarity' : 'C'
+            , 'color' : 'A'
+            , 'cmc' : 1
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/drn2bbhkl9_en.jpg'
+       }
+       
+       
+       /* LANDS */
+        
+        , '239' : {
+            'name' : 'Boros Guildgate'
+            , 'rarity' : 'C'
+            , 'color' : 'A'
+            , 'cmc' : 0
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/i1ido682cf_en.jpg'
+       }
+        
+        , '240' : {
+            'name' : 'Breeding Pool'
+            , 'rarity' : 'R'
+            , 'color' : 'A'
+            , 'cmc' : 0
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/k6ttg3nv03_en.jpg'
+       }
+        
+        , '241' : {
+            'name' : 'Dimir Guildgate'
+            , 'rarity' : 'C'
+            , 'color' : 'A'
+            , 'cmc' : 0
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/0oeb2p3d8x_en.jpg'
+       }
+        
+        , '242' : {
+            'name' : 'Godless Shrine'
+            , 'rarity' : 'R'
+            , 'color' : 'A'
+            , 'cmc' : 0
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/onzd119aok_en.jpg'
+       }
+        
+        , '243' : {
+            'name' : 'Gruul Guildgate'
+            , 'rarity' : 'C'
+            , 'color' : 'A'
+            , 'cmc' : 0
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/2twgjn2ey3_en.jpg'
+       }
+        
+        , '244' : {
+            'name' : 'Orzhov Guildgate'
+            , 'rarity' : 'C'
+            , 'color' : 'A'
+            , 'cmc' : 0
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/sktlscjx5r_en.jpg'
+       }
+        
+        , '245' : {
+            'name' : 'Sacred Foundry'
+            , 'rarity' : 'R'
+            , 'color' : 'A'
+            , 'cmc' : 0
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/l5uvcxgxu3_en.jpg'
+       }
+        
+        , '246' : {
+            'name' : 'Simic Guildgate'
+            , 'rarity' : 'C'
+            , 'color' : 'A'
+            , 'cmc' : 0
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yj3xjb1kr4_en.jpg'
+       }
+        
+        , '247' : {
+            'name' : 'Stomping Ground'
+            , 'rarity' : 'R'
+            , 'color' : 'A'
+            , 'cmc' : 0
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/dvdz6c6zos_en.jpg'
+       }
+        
+        , '248' : {
+            'name' : 'Thespian\'s Stage'
+            , 'rarity' : 'R'
+            , 'color' : 'A'
+            , 'cmc' : 0
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/is276nnn03_en.jpg'
+       }
+        
+        , '249' : {
+            'name' : 'Watery Grave'
+            , 'rarity' : 'R'
+            , 'color' : 'A'
+            , 'cmc' : 0
+            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yp1jnjsbh4_en.jpg'
+       }
         
     }
     
