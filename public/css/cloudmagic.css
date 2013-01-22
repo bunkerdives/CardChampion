@@ -526,6 +526,8 @@ li.nav_section {
 	
 	#draft-builder #top-screen {
 		background-color:#fff;
+		background-image:url('/img/retina_wood.png');
+		background-repeat: repeat;
 	}
 	
 	#draft-builder #img-preview {
@@ -550,6 +552,7 @@ li.nav_section {
 	}
 	
 	#draft-builder #card-pool-inner {
+		float:left;
 		background-image:url('/img/retina_wood.png');
 		background-repeat: repeat;
 	}
@@ -565,12 +568,31 @@ li.nav_section {
 	}
 	
 	#draft-builder #deck-area {
+		float:left;
+	}
+	
+	#draft-builder #deck-area-scroll {
 		overflow:auto;
+		width:100%;
 	}
 	
 	#draft-builder #deck-area-inner {
 		background-image:url('/img/retina_wood.png');
 		background-repeat: repeat;
+		float:left;
+		padding-left:3px;
+	}
+	
+	#draft-builder .card {
+		display:inline;
+		background-image:url('/img/cardback.jpg');
+		background-repeat: no-repeat;
+		float:left;
+		padding-right:3px;
+	}
+	
+	#draft-builder .stack {
+		margin-top:-175px;
 	}
 
 			
