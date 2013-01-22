@@ -23,6 +23,24 @@
             #card-pool-1-6.card.stack
             #card-pool-1-7.card.stack
   #control-bar
+    #sort
+      .input-prepend
+        #sort-wrapper.btn-primary
+          .btn-group
+            button#sort-button.btn.btn-primary.dropdown-toggle(data-toggle="dropdown")
+              i.icon-refresh.icon-white
+              span Sort
+            ul.dropdown-menu
+              li
+                a(tabindex="-1", href="#") Mainboard
+              li
+                a(tabindex="-1", href="#") Sideboard
+          span#prependedInput
+            select
+              option by color
+              option by cost
+              option by type
+              option by rarity
   #bottom-screen
     #deck-area
       #deck-area-scroll

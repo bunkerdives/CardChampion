@@ -10,7 +10,7 @@ function screenSize() {
 		var headerHeight = 20;
 	}
 	
-	var halfScreenHeight = ((windowHeight-headerHeight)/2)-20;//-20 for half of the 40px tall #control-bar
+	var halfScreenHeight = ((windowHeight-headerHeight)/2)-22;//-22 for half of the 44px tall #control-bar
 	var halfScreenWidth = windowWidth;	
 	$('#top-screen').css({
 		"height" : halfScreenHeight,
@@ -37,24 +37,24 @@ function screenSize() {
 	});
 	$('#card-pool-scroll').css("height", cardPoolHeight);
 	$('#card-pool-inner').css("min-width", cardPoolWidth - 3);
+	$('#card-pool-inner').css("min-height", cardPoolHeight);
 
-	
-	
-	var deckAreaHeight = halfScreenHeight - 3;
-	var deckAreaWidth = windowWidth - 3;
+	var deckAreaHeight = halfScreenHeight;
+	var deckAreaWidth = windowWidth;
 	$('#deck-area').css({
 		"height" : deckAreaHeight,
 		"width" : deckAreaWidth
 	});
 	$('#deck-area-scroll').css("height", deckAreaHeight);
-	$('#deck-area-inner').css("min-width", deckAreaWidth);
+	$('#deck-area-inner').css("min-width", deckAreaWidth - 3);
+	$('#deck-area-inner').css("min-height", deckAreaHeight);
 }
 
 function cardSizeInit(){
 	var cardHeight = 198.7;//standard height
 	var cardWidth = 143;//standard width
 	
-	var cardPoolInnerHeight = (cardHeight * 2) + 3;//Add detect row
+	var cardPoolInnerHeight = ((cardHeight * 2)-175) + 3;//Add detect row
 	var cardPoolInnerWidth = (cardWidth * 8) + (3 * 8);//add detect columns
 	
 	$("#card-pool-inner").css({

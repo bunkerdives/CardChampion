@@ -422,17 +422,17 @@ li.nav_section {
 				text-align:center;
 			}
 			
-			#draft #control-bar #sort {
+			#control-bar #sort {
 				float:right;
 				padding-left:10px;
 			}
 			
-			#draft #control-bar #sort .input-prepend {
+			#control-bar #sort .input-prepend {
 				padding-bottom:0px;
 				margin-bottom:0px;
 			}
 			
-			#draft #control-bar #sort-wrapper {
+			#control-bar #sort-wrapper {
 				float:right;
 				height:36px;
 				width:157px;
@@ -450,7 +450,7 @@ li.nav_section {
 				border-left:0px;
 			}
 			
-			#draft #control-bar #sort #sort-button {
+			#control-bar #sort #sort-button {
 				padding-right: 12px;
 				padding-left: 12px;
 				border:0px;
@@ -459,20 +459,20 @@ li.nav_section {
 				line-height:28px;
 			}
 			
-			#draft #control-bar #sort .dropdown-menu {
+			#control-bar #sort .dropdown-menu {
 				min-width:0px;
 			}
 			
-			#draft #control-bar span {
+			#control-bar span {
 				display:inline;
 				padding-left:2px;
 			}
 			
-			#draft #control-bar #prependedInput {
+			#control-bar #prependedInput {
 				padding-left:5px;
 			}
 			
-			#draft #control-bar #sort select {
+			#control-bar #sort select {
 				margin-bottom:0px;
 				padding-bottom:0px;
 				width:85px;
@@ -558,7 +558,7 @@ li.nav_section {
 	}
 	
 	#draft-builder #control-bar {
-		height:40px;
+		height:44px;
 		width:100%;
 		background-color:#000;
 	}
@@ -589,10 +589,20 @@ li.nav_section {
 		background-repeat: no-repeat;
 		float:left;
 		padding-right:3px;
+		-webkit-border-radius: 6%;
+		-moz-border-radius: 6%;
+		border-radius: 6%;
+		-moz-box-shadow:inset 0px 0px 1px 1px #ffffff;
+		-webkit-box-shadow:inset 0px 0px 1px 1px #ffffff;
+		box-shadow:inset 0px 0px 1px 1px #ffffff;
 	}
 	
 	#draft-builder .stack {
 		margin-top:-175px;
+	}
+	
+	#draft-builder #sort {
+		padding:2px;
 	}
 
 			
