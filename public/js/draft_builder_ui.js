@@ -13,7 +13,7 @@ function screenSize() {
 	var halfScreenHeight = ((windowHeight-headerHeight)/2)-22;//-22 for half of the 44px tall #control-bar
 	var halfScreenWidth = windowWidth;	
 	$('#top-screen').css({
-		"height" : halfScreenHeight,
+		"height" : halfScreenHeight - 1, //for bottom border
 		"width" : halfScreenWidth 
 	});
 	$('#bottom-screen').css({
@@ -29,7 +29,7 @@ function screenSize() {
 		"background-size" : previewWidth + "px " + previewHeight + "px"
 	});
 	
-	var cardPoolHeight = halfScreenHeight;
+	var cardPoolHeight = halfScreenHeight - 1;//for bottom border on #top-screen
 	var cardPoolWidth = (windowWidth-10)-previewWidth;//5 for left margin on #img-preview, 5 for margin between #img-preview and #card-pool
 	$('#card-pool').css({
 		"height" : cardPoolHeight,
