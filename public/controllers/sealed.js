@@ -84,6 +84,7 @@ Sealed = {
         console.log("addCardToPool " + img + ", row = " + rowIdx + ", col = " + colIdx )
         console.log( "#card-pool-" + rowIdx + "-" + colIdx + "\n\n" )
         $("#card-pool-" + rowIdx + "-" + colIdx).css("background-image", 'url(' + img + ')' );
+        $( "#card-pool-" + rowIdx + "-" + colIdx ).on( 'mouseover', { 'id' : id }, Sealed.cardZoom );
         
     }
     
@@ -101,6 +102,16 @@ Sealed = {
             $(row).append( img );
             
         }
+        
+    }
+    
+    , cardZoom : function(event) {
+        
+        var id = event.data.id;
+        var img = GTC.card_data[ id ].img;
+        $("#img-preview").css( "background-image", 'url(' + img + ')' );
+        
+        console.log( "cardZoom: " + 'url(' + img + ')' );
         
     }
     
