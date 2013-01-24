@@ -163,6 +163,7 @@ Draft = {
             console.log("Getting image for card " + id );
             var img = GTC.card_data[ id ].img;
             $( "#pack-card-" + i ).css( "background-image", 'url(' + img + ')' );
+            $( "#pack-card-" + i ).css( "display", "block" );
             $( "#pack-card-" + i ).off( 'click' );
             $( "#pack-card-" + i ).off( 'dblclick' );
             $( "#pack-card-" + i ).off( 'mouseover' );
@@ -199,6 +200,7 @@ Draft = {
         var cmc = GTC.card_data[ pick_id ].cmc;
         var idx = Draft.colSize[ cmc ];
         
+        // if the card needs a new row for insertion, create a new row and append it to #pick-table
         if( idx >= Draft.numPickRows ){
             
             var row = $('<div>').addClass("row-fluid").addClass("less-space").attr("id", "row" + idx);
@@ -223,6 +225,7 @@ Draft = {
         
         var pick_img = GTC.card_data[ pick_id ].img;
         $( "#pick-card-" + idx + "-" + cmc ).css( "background-image", 'url(' + pick_img + ')' );
+        $( "#pick-card-" + idx + "-" + cmc ).css( "display", "block" );
         $( "#pick-card-" + idx + "-" + cmc ).on( 'mouseover', { 'id' : pick_id }, Draft.cardZoom );
         
         
@@ -483,6 +486,7 @@ Draft = {
         // add the card images to the card packs
         for( var i = 1; i < images.length + 1; ++i ){
             $("#pack-card-" + i).css( "background-image", 'url(' + images[i-1] + ')' );
+            $("#pack-card-" + i).css( "display", "block" );
         }
         
         $("#pack-card-15").css( "background-image", 'none' );
