@@ -665,16 +665,18 @@ body {
 	
 	#draft-builder .card {
 		display:inline;
-		background-image:url('/img/cardback.jpg');
 		background-repeat: no-repeat;
 		float:left;
 		padding-right:3px;
 		-webkit-border-radius: 6%;
 		-moz-border-radius: 6%;
 		border-radius: 6%;
-		-moz-box-shadow:inset 0px 0px 1px 1px #ffffff;
+		/*-moz-box-shadow:inset 0px 0px 1px 1px #ffffff;
 		-webkit-box-shadow:inset 0px 0px 1px 1px #ffffff;
-		box-shadow:inset 0px 0px 1px 1px #ffffff;
+		box-shadow:inset 0px 0px 1px 1px #ffffff;*/
+		height:198.7px;
+		width:143px;
+		background-size:143px 198.7px;
 	}
 	
 	#draft-builder .stack {
@@ -683,6 +685,12 @@ body {
 	
 	#draft-builder #sort {
 		padding:2px;
+	}
+	
+	
+	.card-pool-row {
+		display:block;
+		clear:both;
 	}
 
 			
