@@ -3,6 +3,23 @@ Sealed = {
     numRows : 1
     
     , numCols : 7
+    
+    , numMainRows : 1
+    
+    , numMainUsedRows : 0
+    
+    , colSize : [
+        0
+        , 0
+        , 0
+        , 0
+        , 0
+        , 0
+        , 0
+        , 0
+        , 0
+        , 0
+    ]
   
     , startSealed : function(set){
         
@@ -78,13 +95,59 @@ Sealed = {
         
     }
     
-    , addCardToPool : function( id, rowIdx, colIdx ) {
+    , addCardToPool : function( id, row, col ) {
         
         var img = GTC.card_data[ id ].img;
-        console.log("addCardToPool " + img + ", row = " + rowIdx + ", col = " + colIdx )
-        console.log( "#card-pool-" + rowIdx + "-" + colIdx + "\n\n" )
-        $("#card-pool-" + rowIdx + "-" + colIdx).css("background-image", 'url(' + img + ')' );
-        $( "#card-pool-" + rowIdx + "-" + colIdx ).on( 'mouseover', { 'id' : id }, Sealed.cardZoom );
+        $( "#card-pool-" + row + "-" + col).css("background-image", 'url(' + img + ')' );
+        $( "#card-pool-" + row + "-" + col ).on( 'mouseover', { 'id' : id }, Sealed.cardZoom );
+        $( "#card-pool-" + row + "-" + col ).dblclick( { 'id' : id, 'row' : row, 'col' : col }, Sealed.addCardToMain );
+        
+    }
+    
+    , addCardToPoolCallback : function( event ) {
+        
+    }
+    
+    , addCardToMain : function( event ) {
+        
+        var id = event.data.id;
+        var row = event.data.row;
+        var col = event.data.col;
+        
+        console.log("Adding card " + id + " to row " + row + ", col " + col )
+        
+        // remove the card from the pool UI
+        var elemID = "#card-pool-" + row + "-" + col
+        $(elemID).css("background-image", "none");
+        $(elemID).off( 'click' );
+        $(elemID).off( 'dblclick' );
+        $(elemID).off( 'mouseover' );
+        
+        // TODO shift the remaining cards in the pool column up
+        
+        // if a new mainboard row is needed, create it
+        if( Sealed.numMainUsedRows == Sealed.numMainRows ){
+            Sealed.createNewMainRow( Sealed.numMainRows );
+            Sealed.numMainUsedRows += 1;
+            Sealed.numMainRows += 1;
+        }
+        if( Sealed.numMainUsedRows == 0 ){
+            Sealed.numMainUsedRows += 1;
+        }
+        
+        // get the converted mana cost of the card, to be used as the column index
+        var colIdx = GTC.card_data[id].cmc;
+        
+        // get the row index based on the number of cards occupying that mana cost column
+        var rowIdx = Sealed.colSize[ colIdx ];
+        Sealed.colSize[ colIdx ] += 1;
+        
+        // add the card to the mainboard
+        var img = GTC.card_data[ id ].img;
+        console.log("Adding " + id + " to row " + rowIdx + ", col " + colIdx)
+        $( "#deck-area-" + rowIdx + "-" + colIdx).css("background-image", 'url(' + img + ')' );
+        $( "#deck-area-" + rowIdx + "-" + colIdx ).on( 'mouseover', { 'id' : id }, Sealed.cardZoom );
+        $( "#deck-area-" + rowIdx + "-" + colIdx ).dblclick( { 'id' : id }, 'addCardToPoolCallback' );
         
     }
     
@@ -105,13 +168,28 @@ Sealed = {
         
     }
     
+    , createNewMainRow : function( rowIdx ){
+        
+        var row = $('<div>').attr("id", "card-pool-row-" + rowIdx);
+        row.addClass("deck-area-row");
+        $("#deck-area-inner").append(row);
+            
+        for( var i = 0; i < 7; ++i ){
+                
+            var img = $("<div>");
+            img.addClass( "card" ).addClass("stack");
+            img.attr("id", "deck-area-" + rowIdx + "-" + i );
+            $(row).append( img );
+            
+        }
+        
+    }
+    
     , cardZoom : function(event) {
         
         var id = event.data.id;
         var img = GTC.card_data[ id ].img;
         $("#img-preview").css( "background-image", 'url(' + img + ')' );
-        
-        console.log( "cardZoom: " + 'url(' + img + ')' );
         
     }
     
