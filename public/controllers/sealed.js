@@ -99,8 +99,10 @@ Sealed = {
         
         var img = GTC.card_data[ id ].img;
         $( "#card-pool-" + row + "-" + col).css("background-image", 'url(' + img + ')' );
+        $( "#card-pool-" + row + "-" + col).css("z-index", row);
         $( "#card-pool-" + row + "-" + col ).on( 'mouseover', { 'id' : id }, Sealed.cardZoom );
         $( "#card-pool-" + row + "-" + col ).dblclick( { 'id' : id, 'row' : row, 'col' : col }, Sealed.addCardToMain );
+        
         
     }
     
@@ -119,6 +121,7 @@ Sealed = {
         // remove the card from the pool UI
         var elemID = "#card-pool-" + row + "-" + col
         $(elemID).css("background-image", "none");
+        $(elemID).css("z-index", "-1");
         $(elemID).off( 'click' );
         $(elemID).off( 'dblclick' );
         $(elemID).off( 'mouseover' );
@@ -146,6 +149,7 @@ Sealed = {
         var img = GTC.card_data[ id ].img;
         console.log("Adding " + id + " to row " + rowIdx + ", col " + colIdx)
         $( "#deck-area-" + rowIdx + "-" + colIdx).css("background-image", 'url(' + img + ')' );
+        $( "#deck-area-" + rowIdx + "-" + colIdx).css("z-index", rowIdx );
         $( "#deck-area-" + rowIdx + "-" + colIdx ).on( 'mouseover', { 'id' : id }, Sealed.cardZoom );
         $( "#deck-area-" + rowIdx + "-" + colIdx ).dblclick( { 'id' : id }, 'addCardToPoolCallback' );
         
@@ -179,6 +183,7 @@ Sealed = {
             var img = $("<div>");
             img.addClass( "card" ).addClass("stack");
             img.attr("id", "deck-area-" + rowIdx + "-" + i );
+            img.css("z-index", "-1");
             $(row).append( img );
             
         }
