@@ -312,8 +312,11 @@ body {
 	top:0px;
 	left:0px;
 	z-index:1200;
-	opacity:0.8;
-	background-color:#ccc;
+}
+
+#foyer .opacity60 {
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.6);
 }
 
 #foyer #nickname-lightbox-inner {
@@ -322,9 +325,9 @@ body {
 	width:400px;
 	height:300px;
 	background-color:#555;
-	-moz-box-shadow: 8px 10px 44px #000000;
-	-webkit-box-shadow: 8px 10px 44px #000000;
-	box-shadow: 8px 10px 44px #000000;
+	-moz-box-shadow: 10px 10px 44px #000000;
+	-webkit-box-shadow: 10px 10px 44px #000000;
+	box-shadow: 10px 10px 44px #000000;
 	opacity:1;
 	margin-top:100px;
 }
