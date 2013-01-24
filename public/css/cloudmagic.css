@@ -159,7 +159,10 @@ li.nav_section {
 
 
 
-
+body {
+	background-image:url('/img/navy_blue.png');
+	background-repeat: repeat;
+}
 
 
 
@@ -179,12 +182,15 @@ li.nav_section {
 	background: -ms-linear-gradient(top,  rgba(48,49,53,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(48,49,53,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303135', endColorstr='#000000',GradientType=0 ); /* IE6-9 */	
+	-webkit-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 1px 5px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 1px 5px rgba(50, 50, 50, 0.75);
 }
 	
 	#header #open a {
 		color:#fff;
 		line-height:40px;
-		padding-left:15px;
+		padding-left:50px;
 		font-size:30px;
 		text-decoration:none;
 		position:relative;
@@ -198,7 +204,7 @@ li.nav_section {
 	#header #open a:hover {
 		color:#bbb;
 		line-height:40px;
-		padding-left:15px;
+		padding-left:50px;
 		font-size:30px;
 		text-decoration:none;
 	}
@@ -228,7 +234,9 @@ li.nav_section {
 		background: -ms-linear-gradient(top,  rgba(48,49,53,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
 		background: linear-gradient(to bottom,  rgba(48,49,53,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303135', endColorstr='#000000',GradientType=0 ); /* IE6-9 */	
-		
+		-webkit-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow:    0px 1px 5px rgba(50, 50, 50, 0.75);
+		box-shadow:         0px 1px 5px rgba(50, 50, 50, 0.75);
 	}
 	
 	#header #closed #expand {
@@ -251,6 +259,56 @@ li.nav_section {
 #content {
 	padding-top:50px;
 }
+
+
+/* Foyer */
+#foyer {
+	padding-top:20px;
+	width:940px;
+	margin-left:auto;
+	margin-right:auto;
+	color:#fff;
+}
+
+#foyer #front-page-info {
+	width:700px;
+	float:left;
+}
+
+#foyer #front-page-buttons {
+	width:240px;
+	text-align:center;
+	float:right;
+}
+
+#foyer #join-button {
+	margin-bottom:5px;
+	margin-top:10px;
+}
+
+#foyer #sealed-button {
+	margin-bottom:10px;
+}
+
+#foyer #chat {
+	clear:both;
+	padding-top:20px;
+}
+
+#foyer #chat-shown {
+	min-height:500px;
+	border:1px solid #000;
+	text-align:center;
+	margin-bottom:20px;
+	margin-left:0px;
+}
+
+#foyer #screenshot-carousel {
+	border:2px solid #000;
+}
+/* Foyer end */
+
+
 
   /* Draft View Divs and Classes */
     #draft {
@@ -345,6 +403,9 @@ li.nav_section {
 				padding-left:15px;
 				border-top:1px solid #777;
 				border-bottom:1px solid #000;
+				-webkit-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
+				-moz-box-shadow:    0px 1px 5px rgba(50, 50, 50, 0.75);
+				box-shadow:         0px 1px 5px rgba(50, 50, 50, 0.75);
       }
 			
 			#draft #control-bar #info {
@@ -577,6 +638,9 @@ li.nav_section {
 		min-height:0px;
 		border-top:1px solid #555;
 		border-bottom:1px solid #000;
+		-webkit-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow:    0px 1px 5px rgba(50, 50, 50, 0.75);
+		box-shadow:         0px 1px 5px rgba(50, 50, 50, 0.75);
 	}
 	
 	#draft-builder #bottom-screen {
