@@ -183,8 +183,10 @@ Draft = {
     // removeAllFromPackUI() - remove all cards from the pack UI
     , removeAllFromPackUI : function() {
     
-        for( var i = 1; i < 15; ++i ){
+        var size = Draft.curPack.length;
+        for( var i = 1; i < size; ++i ){
             var id = Draft.curPack[ i - 1 ];
+            console.log("removeAllFromPackUI: i = " + i)
             var img = GTC.card_data[ id ].img;
             $( "#pack-card-" + i ).css( "background-image", 'none' );
             $( "#pack-card-" + i ).off( 'click' );

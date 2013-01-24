@@ -105,16 +105,10 @@ Draft = {
                 
             // assign a CardPick event handler to the player's socket
             var socket = sockets[nick];
-            /*
-            socket.on( 'CardPick', function(data) {
-                Draft.cardPick( data, draftId, socket );
-            });
-            */
-            
             ( function(socket){
                 socket.on( 'CardPick', function(data) {
                   Draft.cardPick( data, draftId, socket );
-                });
+                } );
             })(socket);
             
         }

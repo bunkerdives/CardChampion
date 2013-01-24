@@ -1686,7 +1686,7 @@ GTC = {
 				
         , '176' : {
             'name' : 'Master Biomancer'
-            , 'rarity' : 'C'
+            , 'rarity' : 'M'
             , 'color' : 'GU'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/k7puv0lf7s_en.jpg'
