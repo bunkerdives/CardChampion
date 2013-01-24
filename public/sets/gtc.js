@@ -1401,12 +1401,13 @@ GTC = {
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/h814trbfxv_en.jpg'
         }
         
-        /* MULTICOLORED */
+        
+        /***   MULTICOLORED   ***/
         
         , '141' : {
             'name' : 'Alms Beast'
             , 'rarity' : 'R'
-            , 'color' : 'WB'
+            , 'color' : 'M'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/d03hk9ieuy_en.jpg'
         }
@@ -1414,7 +1415,7 @@ GTC = {
         , '142' : {
             'name' : 'Assemble the Legion'
             , 'rarity' : 'R'
-            , 'color' : 'RW'
+            , 'color' : 'M'
             , 'cmc' : 5
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/rldznvbkbx_en.jpg'
         }
@@ -1422,7 +1423,7 @@ GTC = {
         , '143' : {
             'name' : 'Aurelia, the Warleader'
             , 'rarity' : 'M'
-            , 'color' : 'RW'
+            , 'color' : 'M'
             , 'cmc' : 6
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/n4l84yaowd_en.jpg'
         }
@@ -1430,7 +1431,7 @@ GTC = {
         , '144' : {
             'name' : 'Aurelia\'s Fury'
             , 'rarity' : 'M'
-            , 'color' : 'RW'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/72iagzis13_en.jpg'
         }
@@ -1438,7 +1439,7 @@ GTC = {
         , '145' : {
             'name' : 'Bane Alley Broker'
             , 'rarity' : 'U'
-            , 'color' : 'UB'
+            , 'color' : 'M'
             , 'cmc' : 3
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/atyr93aly4_en.jpg'
         }
@@ -1446,7 +1447,7 @@ GTC = {
         , '146' : {
             'name' : 'Biovisionary'
             , 'rarity' : 'R'
-            , 'color' : 'GU'
+            , 'color' : 'M'
             , 'cmc' : 3
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/m45basnlm5_en.jpg'
         }
@@ -1454,7 +1455,7 @@ GTC = {
         , '147' : {
             'name' : 'Borborygmos Enraged'
             , 'rarity' : 'M'
-            , 'color' : 'RG'
+            , 'color' : 'M'
             , 'cmc' : 8
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/h6ewtukll4_en.jpg'
         }
@@ -1462,7 +1463,7 @@ GTC = {
         , '148' : {
             'name' : 'Boros Charm'
             , 'rarity' : 'U'
-            , 'color' : 'RW'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yo8hf6s3w3_en.jpg'
         }
@@ -1470,7 +1471,7 @@ GTC = {
         , '149' : {
             'name' : 'Call of the Nightwing'
             , 'rarity' : 'U'
-            , 'color' : 'UB'
+            , 'color' : 'M'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/j8la39uo68_en.jpg'
         }
@@ -1478,7 +1479,7 @@ GTC = {
         , '150' : {
             'name' : 'Cartel Aristocrat'
             , 'rarity' : 'U'
-            , 'color' : 'WB'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/cnl8q8ecqe_en.jpg'
         }
@@ -1487,7 +1488,7 @@ GTC = {
         , '151' : {
             'name' : 'Clan Defiance'
             , 'rarity' : 'R'
-            , 'color' : 'RG'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qjl90s7xs1_en.jpg'
         }
@@ -1495,7 +1496,7 @@ GTC = {
         , '152' : {
             'name' : 'Consuming Aberration'
             , 'rarity' : 'R'
-            , 'color' : 'UB'
+            , 'color' : 'M'
             , 'cmc' : 5
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a2ivtdwluu_en.jpg'
         }
@@ -1503,7 +1504,7 @@ GTC = {
         , '153' : {
             'name' : 'Deathpact Angel'
             , 'rarity' : 'M'
-            , 'color' : 'WB'
+            , 'color' : 'M'
             , 'cmc' : 6
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zdwcgxx5n9_en.jpg'
         }
@@ -1511,7 +1512,7 @@ GTC = {
         , '154' : {
             'name' : 'Dimir Charm'
             , 'rarity' : 'U'
-            , 'color' : 'UB'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qrevu051ek_en.jpg'
         }
@@ -1519,7 +1520,7 @@ GTC = {
         , '155' : {
             'name' : 'Dinrova Horror'
             , 'rarity' : 'U'
-            , 'color' : 'UB'
+            , 'color' : 'M'
             , 'cmc' : 6
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hfr63ma542_en.jpg'
         }
@@ -1527,7 +1528,7 @@ GTC = {
         , '156' : {
             'name' : 'Domri Rade'
             , 'rarity' : 'M'
-            , 'color' : 'RG'
+            , 'color' : 'M'
             , 'cmc' : 3
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/lsnhs59758_en.jpg'
         }
@@ -1535,7 +1536,7 @@ GTC = {
         , '157' : {
             'name' : 'Drakewing Krasis'
             , 'rarity' : 'C'
-            , 'color' : 'GU'
+            , 'color' : 'M'
             , 'cmc' : 3
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/8dykso0jvs_en.jpg'
         }
@@ -1543,7 +1544,7 @@ GTC = {
         , '158' : {
             'name' : 'Duskmantle Guildmage'
             , 'rarity' : 'C'
-            , 'color' : 'UB'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hxxrj1a4b7_en.jpg'
         }
@@ -1551,7 +1552,7 @@ GTC = {
         , '159' : {
             'name' : 'Duskmantle Seer'
             , 'rarity' : 'M'
-            , 'color' : 'UB'
+            , 'color' : 'M'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/cfjgv67awc_en.jpg'
         }
@@ -1559,7 +1560,7 @@ GTC = {
         , '160' : {
             'name' : 'Elusive Krasis'
             , 'rarity' : 'U'
-            , 'color' : 'GU'
+            , 'color' : 'M'
             , 'cmc' : 3
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yszmf4t45e_en.jpg'
         }
@@ -1567,7 +1568,7 @@ GTC = {
         , '161' : {
             'name' : 'Executioner\'s Swing'
             , 'rarity' : 'C'
-            , 'color' : 'WB'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yrv7lyjz66_en.jpg'
         }
@@ -1575,7 +1576,7 @@ GTC = {
         , '162' : {
             'name' : 'Fathom Mage'
             , 'rarity' : 'R'
-            , 'color' : 'GU'
+            , 'color' : 'M'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/akz61fr8xd_en.jpg'
         }
@@ -1583,7 +1584,7 @@ GTC = {
         , '163' : {
             'name' : 'Firemane Avenger'
             , 'rarity' : 'R'
-            , 'color' : 'RW'
+            , 'color' : 'M'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/27agtdswcs_en.jpg'
         }
@@ -1591,7 +1592,7 @@ GTC = {
         , '164' : {
             'name' : 'Fortress Cyclops'
             , 'rarity' : 'U'
-            , 'color' : 'RW'
+            , 'color' : 'M'
             , 'cmc' : 5
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/sc923hfr03_en.jpg'
         }
@@ -1599,7 +1600,7 @@ GTC = {
         , '165' : {
             'name' : 'Foundry Champion'
             , 'rarity' : 'R'
-            , 'color' : 'RW'
+            , 'color' : 'M'
             , 'cmc' : 6
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/9wstmvlpdq_en.jpg'
         }
@@ -1607,7 +1608,7 @@ GTC = {
         , '166' : {
             'name' : 'Frenzied Tilling'
             , 'rarity' : 'U'
-            , 'color' : 'RG'
+            , 'color' : 'M'
             , 'cmc' : 5
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/necxi8gahs_en.jpg'
         }
@@ -1615,7 +1616,7 @@ GTC = {
         , '167' : {
             'name' : 'Ghor-Clan Rampager'
             , 'rarity' : 'U'
-            , 'color' : 'RG'
+            , 'color' : 'M'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/4olvi22ygg_en.jpg'
         }
@@ -1623,7 +1624,7 @@ GTC = {
         , '168' : {
             'name' : 'Ground Assault'
             , 'rarity' : 'U'
-            , 'color' : 'RG'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hdp3bxhyks_en.jpg'
         }
@@ -1631,7 +1632,7 @@ GTC = {
         , '169' : {
             'name' : 'Gruul Charm'
             , 'rarity' : 'U'
-            , 'color' : 'RG'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tjz4h9t7sv_en.jpg'
         }
@@ -1639,7 +1640,7 @@ GTC = {
         , '170' : {
             'name' : 'Gruul Ragebeast'
             , 'rarity' : 'R'
-            , 'color' : 'RG'
+            , 'color' : 'M'
             , 'cmc' : 7
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qnyu9rzw3i_en.jpg'
         }
@@ -1647,7 +1648,7 @@ GTC = {
         , '171' : {
             'name' : 'High Priest of Penance'
             , 'rarity' : 'R'
-            , 'color' : 'WB'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tj3ox8eg1z_en.jpg'
         }
@@ -1655,7 +1656,7 @@ GTC = {
         , '172' : {
             'name' : 'Hydroform'
             , 'rarity' : 'C'
-            , 'color' : 'GU'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/t9dognx636_en.jpg'
         }
@@ -1663,7 +1664,7 @@ GTC = {
         , '173' : {
             'name' : 'Kingpin\'s Pet'
             , 'rarity' : 'C'
-            , 'color' : 'WB'
+            , 'color' : 'M'
             , 'cmc' : 3
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tcr4p6r6qv_en.jpg'
         }
@@ -1671,7 +1672,7 @@ GTC = {
         , '174' : {
             'name' : 'Lazav, Dimir Mastermind'
             , 'rarity' : 'M'
-            , 'color' : 'UB'
+            , 'color' : 'M'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zi3leei9i4_en.jpg'
         }
@@ -1679,7 +1680,7 @@ GTC = {
         , '175' : {
             'name' : 'Martial Glory'
             , 'rarity' : 'C'
-            , 'color' : 'RW'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/6xuylzeiye_en.jpg'
         }
@@ -1687,7 +1688,7 @@ GTC = {
         , '176' : {
             'name' : 'Master Biomancer'
             , 'rarity' : 'M'
-            , 'color' : 'GU'
+            , 'color' : 'M'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/k7puv0lf7s_en.jpg'
         }
@@ -1695,7 +1696,7 @@ GTC = {
         , '177' : {
             'name' : 'Merciless Eviction'
             , 'rarity' : 'R'
-            , 'color' : 'WB'
+            , 'color' : 'M'
             , 'cmc' : 6
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/c004geytgz_en.jpg'
         }
@@ -1703,7 +1704,7 @@ GTC = {
         , '178' : {
             'name' : 'Mind Grind'
             , 'rarity' : 'R'
-            , 'color' : 'UB'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/iu0xzauwx9_en.jpg'
         }
@@ -1711,7 +1712,7 @@ GTC = {
         , '179' : {
             'name' : 'Mortus Strider'
             , 'rarity' : 'C'
-            , 'color' : 'UB'
+            , 'color' : 'M'
             , 'cmc' : 3
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/coiklp4xfo_en.jpg'
         }
@@ -1719,7 +1720,7 @@ GTC = {
         , '180' : {
             'name' : 'Mystic Genesis'
             , 'rarity' : 'R'
-            , 'color' : 'GU'
+            , 'color' : 'M'
             , 'cmc' : 5
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ib4pqypnny_en.jpg'
         }
@@ -1727,7 +1728,7 @@ GTC = {
         , '181' : {
             'name' : 'Nimbus Swimmer'
             , 'rarity' : 'U'
-            , 'color' : 'GU'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/mra4eudez4_en.jpg'
         }
@@ -1743,7 +1744,7 @@ GTC = {
         , '183' : {
             'name' : 'One Thousand Lashes'
             , 'rarity' : 'U'
-            , 'color' : 'WB'
+            , 'color' : 'M'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/6lh7qy7834_en.jpg'
         }
@@ -1751,7 +1752,7 @@ GTC = {
         , '184' : {
             'name' : 'Ordruun Veteran'
             , 'rarity' : 'U'
-            , 'color' : 'RW'
+            , 'color' : 'M'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a36xolka4g_en.jpg'
         }
@@ -1759,7 +1760,7 @@ GTC = {
         , '185' : {
             'name' : 'Orzhov Charm'
             , 'rarity' : 'U'
-            , 'color' : 'WB'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/wxveeg54dm_en.jpg'
         }
@@ -1767,7 +1768,7 @@ GTC = {
         , '186' : {
             'name' : 'Paranoid Delusions'
             , 'rarity' : 'C'
-            , 'color' : 'UB'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/wjqt0et5b2_en.jpg'
         }
@@ -1775,7 +1776,7 @@ GTC = {
         , '187' : {
             'name' : 'Primal Visitation'
             , 'rarity' : 'C'
-            , 'color' : 'RG'
+            , 'color' : 'M'
             , 'cmc' : 5
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/f0w4uubozz_en.jpg'
         }
@@ -1783,7 +1784,7 @@ GTC = {
         , '188' : {
             'name' : 'Prime Speaker Zegana'
             , 'rarity' : 'M'
-            , 'color' : 'GU'
+            , 'color' : 'M'
             , 'cmc' : 6
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/9js3k7phym_en.jpg'
         }
@@ -1791,7 +1792,7 @@ GTC = {
         , '189' : {
             'name' : 'Psychic Strike'
             , 'rarity' : 'C'
-            , 'color' : 'UB'
+            , 'color' : 'M'
             , 'cmc' : 3
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/b2bjhcwm2e_en.jpg'
         }
@@ -1799,7 +1800,7 @@ GTC = {
         , '190' : {
             'name' : 'Purge the Profane'
             , 'rarity' : 'C'
-            , 'color' : 'WB'
+            , 'color' : 'M'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/vcbilrlqa5_en.jpg'
         }
@@ -1807,7 +1808,7 @@ GTC = {
         , '191' : {
             'name' : 'Rubblehulk'
             , 'rarity' : 'R'
-            , 'color' : 'RG'
+            , 'color' : 'M'
             , 'cmc' : 6
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/dw6ibrnf9p_en.jpg'
         }
@@ -1815,7 +1816,7 @@ GTC = {
         , '192' : {
             'name' : 'Ruination Wurm'
             , 'rarity' : 'C'
-            , 'color' : 'RG'
+            , 'color' : 'M'
             , 'cmc' : 6
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/pua43pwkps_en.jpg'
         }
@@ -1823,7 +1824,7 @@ GTC = {
         , '193' : {
             'name' : 'Shambleshark'
             , 'rarity' : 'C'
-            , 'color' : 'GU'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ad2buftts7_en.jpg'
         }
@@ -1831,7 +1832,7 @@ GTC = {
         , '194' : {
             'name' : 'Signal the Clans'
             , 'rarity' : 'R'
-            , 'color' : 'RG'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ulqi7zd9gw_en.jpg'
         }
@@ -1839,7 +1840,7 @@ GTC = {
         , '195' : {
             'name' : 'Simic Charm'
             , 'rarity' : 'U'
-            , 'color' : 'GU'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qn5e3tjtlk_en.jpg'
         }
@@ -1847,7 +1848,7 @@ GTC = {
         , '196' : {
             'name' : 'Skaarg Guildmage'
             , 'rarity' : 'U'
-            , 'color' : 'RG'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/3xw48p8yik_en.jpg'
         }
@@ -1855,7 +1856,7 @@ GTC = {
         , '197' : {
             'name' : 'Skynight Legionarre'
             , 'rarity' : 'C'
-            , 'color' : 'RW'
+            , 'color' : 'M'
             , 'cmc' : 3
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/cbg48u45g6_en.jpg'
         }
@@ -1863,7 +1864,7 @@ GTC = {
         , '198' : {
             'name' : 'Soul Ransom'
             , 'rarity' : 'R'
-            , 'color' : 'UB'
+            , 'color' : 'M'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/v1n9eq8w2g_en.jpg'
         }
@@ -1871,7 +1872,7 @@ GTC = {
         , '199' : {
             'name' : 'Spark Trooper'
             , 'rarity' : 'R'
-            , 'color' : 'RW'
+            , 'color' : 'M'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/1nyz690klp_en.jpg'
         }
@@ -1879,7 +1880,7 @@ GTC = {
         , '200' : {
             'name' : 'Sunhome Guildmage'
             , 'rarity' : 'U'
-            , 'color' : 'RW'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/0nce6kkxuw_en.jpg'
         }
@@ -1887,7 +1888,7 @@ GTC = {
         , '201' : {
             'name' : 'Treasury Thrull'
             , 'rarity' : 'R'
-            , 'color' : 'WB'
+            , 'color' : 'M'
             , 'cmc' : 6
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zfzyzgcjnr_en.jpg'
         }
@@ -1895,7 +1896,7 @@ GTC = {
         , '202' : {
             'name' : 'Truefire Paladin'
             , 'rarity' : 'U'
-            , 'color' : 'RW'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/lmjzkisdor_en.jpg'
         }
@@ -1903,7 +1904,7 @@ GTC = {
         , '203' : {
             'name' : 'Unexpected Results'
             , 'rarity' : 'R'
-            , 'color' : 'GU'
+            , 'color' : 'M'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/byricomkdk_en.jpg'
         }
@@ -1911,7 +1912,7 @@ GTC = {
         , '204' : {
             'name' : 'Urban Evolution'
             , 'rarity' : 'U'
-            , 'color' : 'GU'
+            , 'color' : 'M'
             , 'cmc' : 5
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/byrseahxfw_en.jpg'
         }
@@ -1919,7 +1920,7 @@ GTC = {
         , '205' : {
             'name' : 'Vizkopa Confessor'
             , 'rarity' : 'U'
-            , 'color' : 'WB'
+            , 'color' : 'M'
             , 'cmc' : 5
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/87zvag5bon_en.jpg'
         }
@@ -1927,7 +1928,7 @@ GTC = {
         , '206' : {
             'name' : 'Vizkopa Guildmage'
             , 'rarity' : 'U'
-            , 'color' : 'WB'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/4giis8ijc3_en.jpg'
         }
@@ -1935,7 +1936,7 @@ GTC = {
         , '207' : {
             'name' : 'Whispering Madness'
             , 'rarity' : 'R'
-            , 'color' : 'UB'
+            , 'color' : 'M'
             , 'cmc' : 4
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/67b3byoela_en.jpg'
         }
@@ -1943,7 +1944,7 @@ GTC = {
         , '208' : {
             'name' : 'Wojek Halberdiers'
             , 'rarity' : 'C'
-            , 'color' : 'RW'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/j4bdoldrkz_en.jpg'
         }
@@ -1951,7 +1952,7 @@ GTC = {
         , '209' : {
             'name' : 'Zameck Guildmage'
             , 'rarity' : 'U'
-            , 'color' : 'GU'
+            , 'color' : 'M'
             , 'cmc' : 2
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/7h4ianmut1_en.jpg'
         }
@@ -1959,7 +1960,7 @@ GTC = {
         , '210' : {
             'name' : 'Zhur-Taa Swine'
             , 'rarity' : 'C'
-            , 'color' : 'RG'
+            , 'color' : 'M'
             , 'cmc' : 5
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/1f2gkz8cg9_en.jpg'
         }

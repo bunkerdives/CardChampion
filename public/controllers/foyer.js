@@ -2,6 +2,14 @@ Foyer = {
     
     init : function() {
         console.log("Foyer initialized");
+        //Foyer.registerHandlers();
+    }
+    
+    , registerHandlers : function() {
+        
+        $("#draft-button").click( Foyer.draftSet('GTC') );
+        $("#sealed-button").click( Sealed.startSealed('GTC') );
+        
     }
     
     , draftSet : function(set) {
@@ -45,7 +53,7 @@ Foyer = {
 		var players = data + " players";
 		$('#queue_size').html( players );
 		
-	  }
+	}
 	
 };
 

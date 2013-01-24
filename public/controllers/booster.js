@@ -1,32 +1,63 @@
 Booster = {
     
-    newBoosterPack : function(set){
-        
+     newBooster : function( set ) {
+    
         var booster = [];
+        var i = 0;
         
         if( set != 'GTC' ){
             return;
         }
         
-        for( var i = 0; i < 10; ++i ){
-            booster[i] = Booster.randCommon();
+        // TODO add dynamic support for other card sets
+        
+        console.log( "Creating a booster pack for the set " + GTC.set )
+        
+        var card;
+        for( ; i < 10; ++i ){
+            while( card = Booster.randCommon( set ) ){
+                if( $.inArray(card, booster) == -1 ){
+                    booster[i] = card;
+                    break;
+                }
+            }
+        }
+        for( ; i < 13; ++i ){
+            while( card = Booster.randUncommon( set ) ){
+                if( $.inArray(card, booster) == -1 ){
+                    booster[i] = card;
+                    break;
+                }
+            }   
+        }
+        for( ; i < 14; ++i ){
+            while( card = Booster.randRare( set ) ){
+                if( $.inArray(card, booster) == -1 ){
+                    booster[i] = card;
+                    break;
+                }
+            }   
+            
         }
         
-        booster[10] = Booster.randUncommon();
-        booster[11] = Booster.randUncommon();
-        booster[12] = Booster.randUncommon();
-        
-        booster[13] = Booster.randRare();
+        // TODO add random chance of foil card
         
         return booster;
-        
+    
     }
     
-    , randCommon : function(){
-        
-        var num = GTC.commons.length;
+    , chanceMythic : function(){
+        var chance = Math.floor( Math.random() * 1000 );
+        if( chance <= 125 ){
+            return true;
+        }
+        return false;
+    }
+    
+    , randCommon : function( set ){
         
         /* pick a random index */
+        var num = GTC.commons.length;
         var idx = Math.floor( Math.random() * num );
         
         /* return the random card's ID */
@@ -36,9 +67,8 @@ Booster = {
     
     , randUncommon : function(){
         
-        var num = GTC.uncommons.length;
-        
         /* pick a random index */
+        var num = GTC.uncommons.length;
         var idx = Math.floor( Math.random() * num );
         
         /* return the random card's ID */
@@ -46,28 +76,19 @@ Booster = {
         
     }
     
-    , randRare : function(){
+    , randRare : function( ){
         
-        var num = GTC.rares.length;
-        
-        /* pick a random index */
-        var idx = Math.floor( Math.random() * num );
-        
-        /* return the random card's ID */
-        return GTC.rares[ idx ];
-        
-    }
-    
-    , randMythic : function(){
-        
-        var num = GTC.mythics.length;
-        
-        /* pick a random index */
-        var idx = Math.floor( Math.random() * num );
-        
-        /* return the random card's ID */
-        return GTC.mythics[ idx ];
+        if( Booster.chanceMythic() == false ){
+            var num = GTC.rares.length;
+            var idx = Math.floor( Math.random() * num );
+            return GTC.rares[ idx ];
+        }
+        else{
+            var num = GTC.mythics.length;
+            var idx = Math.floor( Math.random() * num );
+            return GTC.mythics[ idx ];
+        }
         
     }
-    
+
 };
