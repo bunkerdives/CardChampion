@@ -61,9 +61,10 @@ Sealed = {
                 row = 0;
             }
             else{
-                if( row > 0 ){
+                if( row >= Sealed.numRows ){
                     console.log( "create a new row" )
                     Sealed.createNewPoolRow( row );
+                    Sealed.numRows += 1;
                 }
             }
             
