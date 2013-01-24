@@ -90,6 +90,7 @@ Sealed = {
     , createNewPoolRow : function( rowIdx ) {
         
         var row = $('<div>').attr("id", "card-pool-row-" + rowIdx);
+        row.addClass("card-pool-row");
         $("#card-pool-inner").append(row);
             
         for( var i = 0; i < 7; ++i ){
