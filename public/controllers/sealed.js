@@ -102,7 +102,7 @@ Sealed = {
         $( "#card-pool-" + row + "-" + col).css("z-index", row);
         $( "#card-pool-" + row + "-" + col ).on( 'mouseover', { 'id' : id }, Sealed.cardZoom );
         $( "#card-pool-" + row + "-" + col ).dblclick( { 'id' : id, 'row' : row, 'col' : col }, Sealed.addCardToMain );
-        
+        resizeScreen();
         
     }
     

@@ -36,8 +36,6 @@ function screenSize() {
 		"width" : cardPoolWidth
 	});
 	$('#card-pool-scroll').css("height", cardPoolHeight);
-	$('#card-pool-inner').css("min-width", cardPoolWidth - 3);
-	$('#card-pool-inner').css("min-height", cardPoolHeight);
 
 	var deckAreaHeight = halfScreenHeight;
 	var deckAreaWidth = windowWidth;
@@ -46,26 +44,34 @@ function screenSize() {
 		"width" : deckAreaWidth
 	});
 	$('#deck-area-scroll').css("height", deckAreaHeight);
-	$('#deck-area-inner').css("min-width", deckAreaWidth - 3);
-	$('#deck-area-inner').css("min-height", deckAreaHeight);
-}
-
-function cardSizeInit(){
-	var cardHeight = 198.7;//standard height
-	var cardWidth = 143;//standard width
 	
-	var cardPoolInnerHeight = ((cardHeight * Sealed.numRows)-(178 * Sealed.numRows)) + 6;//178 for negative margin-top on each .card, 3 for padding top on #card-pool-row-0/3 for bottom padding
+	
+	
+	
+	var cardHeight = $('#card-pool-0-0').height();//standard height
+	var cardWidth = $('#card-pool-0-0').width();//standard width
+	
+	var cardPoolInnerHeight = ((cardHeight * Sealed.numRows)-(178 * (Sealed.numRows - 1))) + 6;//178 for negative margin-top on each .card, 3 for padding top on #card-pool-row-0/3 for bottom padding
 	var cardPoolInnerWidth = (cardWidth * Sealed.numCols) + (3 * Sealed.numCols);//3 for left padding on each column
 	
 	$("#card-pool-inner").css({
 		"height" : cardPoolInnerHeight,
 		"width" : cardPoolInnerWidth,
+		"min-width": cardPoolWidth - 3,
+		"min-height": cardPoolHeight
 	});	
 	
 	$("#deck-area-inner").css({
 		"height" : cardPoolInnerHeight,
 		"width" : cardPoolInnerWidth,
+		"min-width": deckAreaWidth - 3,
+		"min-height": deckAreaHeight
 	});	
+}
+
+function cardSizeInit(){
+	var cardHeight = 198.7;//standard height
+	var cardWidth = 143;//standard width
 	
 	$(".card").css({
 		"height" : cardHeight,
