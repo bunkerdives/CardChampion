@@ -64,10 +64,6 @@ Sealed = {
         
         packs = packs.sort( Sealed.sortPoolByColor );
         
-        for( var i = 0; i < packs.length; ++i ){
-            console.log( GTC.card_data[ packs[i] ].name );
-        }
-        
         var color = GTC.card_data[ packs[0] ].color;
         var col = 0;
         var row = 0;
@@ -75,8 +71,6 @@ Sealed = {
         for( var i = 0; i < packs.length; ++i ){
             
             var id = packs[i];
-            
-            console.log( "addPacksToPool " + i + " " + id )
             
             if( color != GTC.card_data[ id ].color ){
                 // add the next card to the next column
@@ -118,6 +112,87 @@ Sealed = {
     
     , addCardToPoolCallback : function( event ) {
         
+        var id = event.data.id;
+        var row = event.data.row;
+        var col = event.data.col;
+        
+        // remove the card from the mainboard UI
+        var elemID = "#deck-area-" + row + "-" + col;
+        $(elemID).css("background-image", "none");
+        $(elemID).css("z-index", "-1");
+        $(elemID).off( 'click' );
+        $(elemID).off( 'dblclick' );
+        $(elemID).off( 'mouseover' );
+        
+        // shift the remaining cards in the mainboard column up
+        var colSize = Sealed.colSize[ col ];
+        for( var i = row; i < colSize - 1; ++i ){
+            // the id of the card we are replacing
+            elemID =  "#deck-area-" + i + "-" + col;
+            
+            // the id of the card we are copying
+            nextID = "#deck-area-" + (i+1) + "-" + col;
+            
+            // get the copied card's ID and img
+            cId = $(nextID).attr("data-card-id");
+            cImg = GTC.card_data[ cId ].img;
+            
+            $(elemID).css("background-image", 'url(' + cImg + ')' );
+            $(elemID).css("z-index", i);
+            $(elemID).on( 'mouseover', { 'id' : cId }, Sealed.cardZoom );
+            $(elemID).dblclick( { 'id' : cId, 'row' : i, 'col' : col }, Sealed.addCardToPoolCallback );
+            $(elemID).attr( "data-card-id", cId );
+        }
+        
+        // hide the last card in the column
+        elemID = "#deck-area-" + (colSize - 1) + "-" + col;
+        $(elemID).attr( "data-card-id", "" );
+        $(elemID).css("background-image", "none");
+        $(elemID).css("z-index", "-1");
+        $(elemID).off( 'click' );
+        $(elemID).off( 'dblclick' );
+        $(elemID).off( 'mouseover' );
+        
+        Sealed.colSize[ col ] -= 1;
+        
+        // get the color of the card
+        var colIdx = GTC.card_data[id].color;
+        switch(colIdx){
+            case "W":
+                colIdx = 0;
+                break;
+            case "U":
+                colIdx = 1;
+                break;
+            case "B":
+                colIdx = 2;
+                break;
+            case "R":
+                colIdx = 3;
+                break;
+            case "G":
+                colIdx = 4;
+                break;
+            case "M":
+                colIdx = 5;
+                break;
+            case "A":
+                colIdx = 6;
+                break;
+        }
+        
+        // get the row index based on the number of cards occupying that mana cost column
+        var rowIdx = Sealed.colSizePool[ colIdx ];
+        Sealed.colSizePool[ colIdx ] += 1;
+        
+        // add the card to the pool
+        var img = GTC.card_data[ id ].img;
+        $( "#card-pool-" + rowIdx + "-" + colIdx).css("background-image", 'url(' + img + ')' );
+        $( "#card-pool-" + rowIdx + "-" + colIdx).css("z-index", rowIdx );
+        $( "#card-pool-" + rowIdx + "-" + colIdx ).on( 'mouseover', { 'id' : id, 'row' : rowIdx, 'col' : colIdx }, Sealed.cardZoom );
+        $( "#card-pool-" + rowIdx + "-" + colIdx ).dblclick( { 'id' : id, 'row' : rowIdx, 'col' : colIdx }, Sealed.addCardToMain );
+        $( "#card-pool-" + rowIdx + "-" + colIdx ).attr( "data-card-id", id );
+        
     }
     
     , addCardToMain : function( event ) {
@@ -126,21 +201,22 @@ Sealed = {
         var row = event.data.row;
         var col = event.data.col;
         
-        console.log("Adding card " + id + " to row " + row + ", col " + col )
+        //console.log("Adding card " + id + " to row " + row + ", col " + col )
         
         // remove the card from the pool UI
-        var elemID = "#card-pool-" + row + "-" + col
+        var elemID = "#card-pool-" + row + "-" + col;
         $(elemID).css("background-image", "none");
         $(elemID).css("z-index", "-1");
         $(elemID).off( 'click' );
         $(elemID).off( 'dblclick' );
         $(elemID).off( 'mouseover' );
         
-        // TODO shift the remaining cards in the pool column up
+        // shift the remaining cards in the pool column up
         var colSize = Sealed.colSizePool[ col ];
         for( var i = row; i < colSize - 1; ++i ){
             // the id of the card we are replacing
             elemID =  "#card-pool-" + i + "-" + col;
+            
             // the id of the card we are copying
             nextID = "#card-pool-" + (i+1) + "-" + col;
             
@@ -184,11 +260,11 @@ Sealed = {
         
         // add the card to the mainboard
         var img = GTC.card_data[ id ].img;
-        console.log("Adding " + id + " to row " + rowIdx + ", col " + colIdx)
+        //console.log("Adding " + id + " to row " + rowIdx + ", col " + colIdx)
         $( "#deck-area-" + rowIdx + "-" + colIdx).css("background-image", 'url(' + img + ')' );
         $( "#deck-area-" + rowIdx + "-" + colIdx).css("z-index", rowIdx );
         $( "#deck-area-" + rowIdx + "-" + colIdx ).on( 'mouseover', { 'id' : id }, Sealed.cardZoom );
-        $( "#deck-area-" + rowIdx + "-" + colIdx ).dblclick( { 'id' : id }, 'addCardToPoolCallback' );
+        $( "#deck-area-" + rowIdx + "-" + colIdx ).dblclick( { 'id' : id, 'row' : rowIdx, 'col' : colIdx }, Sealed.addCardToPoolCallback );
         $( "#deck-area-" + rowIdx + "-" + colIdx ).attr( "data-card-id", id );
         
     }
