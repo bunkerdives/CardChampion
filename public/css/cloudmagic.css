@@ -323,7 +323,7 @@ body {
 	margin-left:auto;
 	margin-right:auto;
 	width:400px;
-	height:300px;
+	height:250px;
 	background-color:#333;
 	-moz-box-shadow: 10px 10px 44px #000000;
 	-webkit-box-shadow: 10px 10px 44px #000000;
@@ -337,6 +337,7 @@ body {
 	-moz-box-shadow: inset 0px 0px 2px #ccc;
 	-webkit-box-shadow: inset 0px 0px 2px #ccc;
 	box-shadow: inset 0px 0px 2px #ccc;
+	text-align:center;
 }
 /* Foyer end */
 
