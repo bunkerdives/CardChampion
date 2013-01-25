@@ -8,11 +8,18 @@ Sealed = {
     
     , numMainUsedRows : 0
     
-    , colSize : [
+    , colSizePool : [
         0
         , 0
         , 0
         , 0
+        , 0
+        , 0
+        , 0
+    ]
+    
+    , colSize : [
+        0
         , 0
         , 0
         , 0
@@ -102,7 +109,10 @@ Sealed = {
         $( "#card-pool-" + row + "-" + col).css("z-index", row);
         $( "#card-pool-" + row + "-" + col ).on( 'mouseover', { 'id' : id }, Sealed.cardZoom );
         $( "#card-pool-" + row + "-" + col ).dblclick( { 'id' : id, 'row' : row, 'col' : col }, Sealed.addCardToMain );
+        $( "#card-pool-" + row + "-" + col ).attr( "data-card-id", id );
         resizeScreen();
+        
+        Sealed.colSizePool[ col ] += 1;
         
     }
     
@@ -127,6 +137,33 @@ Sealed = {
         $(elemID).off( 'mouseover' );
         
         // TODO shift the remaining cards in the pool column up
+        var colSize = Sealed.colSizePool[ col ];
+        for( var i = row; i < colSize - 1; ++i ){
+            // the id of the card we are replacing
+            elemID =  "#card-pool-" + i + "-" + col;
+            // the id of the card we are copying
+            nextID = "#card-pool-" + (i+1) + "-" + col;
+            
+            // get the copied card's ID and img
+            cId = $(nextID).attr("data-card-id");
+            cImg = GTC.card_data[ cId ].img;
+            
+            $(elemID).css("background-image", 'url(' + cImg + ')' );
+            $(elemID).css("z-index", i);
+            $(elemID).on( 'mouseover', { 'id' : cId }, Sealed.cardZoom );
+            $(elemID).dblclick( { 'id' : cId, 'row' : i, 'col' : col }, Sealed.addCardToMain );
+            $(elemID).attr( "data-card-id", cId );
+        }
+        // hide the last card in the column
+        elemID = "#card-pool-" + (colSize - 1) + "-" + col;
+        $(elemID).attr( "data-card-id", "" );
+        $(elemID).css("background-image", "none");
+        $(elemID).css("z-index", "-1");
+        $(elemID).off( 'click' );
+        $(elemID).off( 'dblclick' );
+        $(elemID).off( 'mouseover' );
+        
+        Sealed.colSizePool[ col ] -= 1;
         
         // if a new mainboard row is needed, create it
         if( Sealed.numMainUsedRows == Sealed.numMainRows ){
@@ -152,6 +189,7 @@ Sealed = {
         $( "#deck-area-" + rowIdx + "-" + colIdx).css("z-index", rowIdx );
         $( "#deck-area-" + rowIdx + "-" + colIdx ).on( 'mouseover', { 'id' : id }, Sealed.cardZoom );
         $( "#deck-area-" + rowIdx + "-" + colIdx ).dblclick( { 'id' : id }, 'addCardToPoolCallback' );
+        $( "#deck-area-" + rowIdx + "-" + colIdx ).attr( "data-card-id", id );
         
     }
     
@@ -166,7 +204,7 @@ Sealed = {
             var img = $("<div>");
             img.addClass( "card" ).addClass("stack");
             img.attr("id", "card-pool-" + rowIdx + "-" + i );
-            img.css("z-index", rowIdx);
+            img.css("z-index", "-1");
             $(row).append( img );
             
         }

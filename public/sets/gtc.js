@@ -349,7 +349,7 @@ GTC = {
             'name' : 'Debtor\'s Pulpit'
             , 'rarity' : 'U'
             , 'color' : 'W'
-            , 'cmc' : 4
+            , 'cmc' : 5
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ppg16l9mmu_en.jpg'
         }
 
