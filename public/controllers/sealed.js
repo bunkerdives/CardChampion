@@ -166,6 +166,7 @@ Sealed = {
             var img = $("<div>");
             img.addClass( "card" ).addClass("stack");
             img.attr("id", "card-pool-" + rowIdx + "-" + i );
+            img.css("z-index", rowIdx);
             $(row).append( img );
             
         }
@@ -174,8 +175,8 @@ Sealed = {
     
     , createNewMainRow : function( rowIdx ){
         
-        var row = $('<div>').attr("id", "card-pool-row-" + rowIdx);
-        row.addClass("deck-area-row");
+        var row = $('<div>').attr("id", "deck-area-row-" + rowIdx);
+        row.addClass("card-pool-row");
         $("#deck-area-inner").append(row);
             
         for( var i = 0; i < 7; ++i ){
