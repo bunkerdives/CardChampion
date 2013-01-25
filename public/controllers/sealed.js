@@ -117,12 +117,14 @@ Sealed = {
         var col = event.data.col;
         
         // remove the card from the mainboard UI
+        /*
         var elemID = "#deck-area-" + row + "-" + col;
         $(elemID).css("background-image", "none");
         $(elemID).css("z-index", "-1");
         $(elemID).off( 'click' );
         $(elemID).off( 'dblclick' );
         $(elemID).off( 'mouseover' );
+        */
         
         // shift the remaining cards in the mainboard column up
         var colSize = Sealed.colSize[ col ];
@@ -139,6 +141,8 @@ Sealed = {
             
             $(elemID).css("background-image", 'url(' + cImg + ')' );
             $(elemID).css("z-index", i);
+            $(elemID).off( 'dblclick' );
+            $(elemID).off( 'mouseover' );
             $(elemID).on( 'mouseover', { 'id' : cId }, Sealed.cardZoom );
             $(elemID).dblclick( { 'id' : cId, 'row' : i, 'col' : col }, Sealed.addCardToPoolCallback );
             $(elemID).attr( "data-card-id", cId );
@@ -204,12 +208,14 @@ Sealed = {
         //console.log("Adding card " + id + " to row " + row + ", col " + col )
         
         // remove the card from the pool UI
+        /*
         var elemID = "#card-pool-" + row + "-" + col;
         $(elemID).css("background-image", "none");
         $(elemID).css("z-index", "-1");
         $(elemID).off( 'click' );
         $(elemID).off( 'dblclick' );
         $(elemID).off( 'mouseover' );
+        */
         
         // shift the remaining cards in the pool column up
         var colSize = Sealed.colSizePool[ col ];
@@ -226,6 +232,8 @@ Sealed = {
             
             $(elemID).css("background-image", 'url(' + cImg + ')' );
             $(elemID).css("z-index", i);
+            $(elemID).off( 'dblclick' );
+            $(elemID).off( 'mouseover' );
             $(elemID).on( 'mouseover', { 'id' : cId }, Sealed.cardZoom );
             $(elemID).dblclick( { 'id' : cId, 'row' : i, 'col' : col }, Sealed.addCardToMain );
             $(elemID).attr( "data-card-id", cId );
@@ -235,7 +243,6 @@ Sealed = {
         $(elemID).attr( "data-card-id", "" );
         $(elemID).css("background-image", "none");
         $(elemID).css("z-index", "-1");
-        $(elemID).off( 'click' );
         $(elemID).off( 'dblclick' );
         $(elemID).off( 'mouseover' );
         
