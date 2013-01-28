@@ -277,7 +277,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'W'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/s2blzt60xg_en.jpg'
         }
 
@@ -286,7 +286,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'W'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qxev1gcz8k_en.jpg'
         }
         
@@ -295,7 +295,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'W'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/geydrm7hlb_en.jpg'
         }
 
@@ -304,7 +304,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'W'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/t4d32of3hb_en.jpg'
         }
         
@@ -313,7 +313,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'W'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/5htsd44dbw_en.jpg'
         }
         
@@ -322,7 +322,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'W'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/h7rblgpvzo_en.jpg'
         }
         
@@ -331,7 +331,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'W'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/mshrpl53qw_en.jpg'
         }
 
@@ -340,7 +340,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'W'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/x6xmjttbf0_en.jpg'
         }
 
@@ -349,7 +349,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'W'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/lwwem5osbd_en.jpg'
         }
 
@@ -358,7 +358,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'W'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ppg16l9mmu_en.jpg'
         }
 
@@ -367,7 +367,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'W'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/9baoz7lzr2_en.jpg'
         }
         
@@ -376,7 +376,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'W'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/h3jgrtb8kb_en.jpg'
         }
         
@@ -385,7 +385,7 @@ GTC = {
             , 'rarity' : 'M'
             , 'color' : 'W'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Planeswalker'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ugoh63m1ri_en.jpg'
         }
 
@@ -394,7 +394,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'W'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zza31tx469_en.jpg'
         }
 
@@ -403,7 +403,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'W'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/wf83m20x8i_en.jpg'
         }
 
@@ -412,7 +412,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'W'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/kkxu6rjrst_en.jpg'
         }
 
@@ -421,7 +421,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'W'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/3k9k1zaa41_en.jpg'
         }
 
@@ -430,7 +430,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'W'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/dktwqdwpom_en.jpg'
         }
 
@@ -439,7 +439,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'W'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/oe9csqdmin_en.jpg'
         }
         
@@ -448,7 +448,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'W'
             , 'cmc' : 7
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/8xcbfb8ww4_en.jpg'
         }
         
@@ -457,7 +457,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'W'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yxtqf1k89d_en.jpg'
         }
 
@@ -466,7 +466,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'W'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/68bkgffyh7_en.jpg'
         }
 
@@ -475,7 +475,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'W'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/sbjmlo2ue5_en.jpg'
         }
 
@@ -484,7 +484,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'W'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/opzfzqn62b_en.jpg'
         }
 
@@ -493,7 +493,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'W'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/rz26vdnqzd_en.jpg'
         }
         
@@ -502,7 +502,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'W'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/q67q2d1sma_en.jpg'
         }
 
@@ -511,7 +511,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'W'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/rus5geripy_en.jpg'
         }
 
@@ -520,7 +520,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'W'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ndfrirtc6h_en.jpg'
         }
         
@@ -531,7 +531,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'U'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/uyrloq9dnd_en.jpg'
         }
 
@@ -540,7 +540,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'U'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/x3nw3d7538_en.jpg'
         }
 
@@ -549,7 +549,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'U'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a34dp8fg4w_en.jpg'
         }
         
@@ -558,7 +558,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'U'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ptvrnuyfro_en.jpg'
         }
         
@@ -567,7 +567,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'U'
             , 'cmc' : 7
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/80msjvqnnz_en.jpg'
         }
         
@@ -576,7 +576,7 @@ GTC = {
             , 'rarity' : 'M'
             , 'color' : 'U'
             , 'cmc' : 12
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/b1ne8elfka_en.jpg'
         }
 
@@ -585,7 +585,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'U'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/gu046anask_en.jpg'
         }
         
@@ -594,7 +594,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'U'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/7jucq0zln0_en.jpg'
         }
         
@@ -603,7 +603,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'U'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/bkbf3hs2eo_en.jpg'
         }
 
@@ -612,7 +612,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'U'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/6kugs03zvb_en.jpg'
         }
 
@@ -621,7 +621,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'U'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/100a9dio61_en.jpg'
         }
 
@@ -630,7 +630,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'U'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/meayfn8y2b_en.jpg'
         }
         
@@ -639,7 +639,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'U'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/uhd7veq7bi_en.jpg'
         }
 
@@ -648,7 +648,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'U'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/nxohv3sgd9_en.jpg'
         }
 
@@ -657,7 +657,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'U'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/r5wg9ip3a1_en.jpg'
         }
         
@@ -666,7 +666,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'U'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/wb71jk0gzt_en.jpg'
         }
 
@@ -675,7 +675,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'U'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/3sxhp1fq4s_en.jpg'
         }
 
@@ -684,7 +684,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'U'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zz2xe2fvnv_en.jpg'
         }
 
@@ -693,7 +693,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'U'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/vs36u27da0_en.jpg'
         }
 
@@ -702,7 +702,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'U'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/585imaplro_en.jpg'
         }
         
@@ -711,7 +711,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'U'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/oyknlk2j2x_en.jpg'
         }
 
@@ -720,7 +720,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'U'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/mcyzhgmlwb_en.jpg'
         }
 
@@ -729,7 +729,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'U'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/b1tan9rt21_en.jpg'
         }
 
@@ -738,7 +738,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'U'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/5qkxz95nqc_en.jpg'
         }
         
@@ -747,7 +747,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'U'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/k9uaahs7dv_en.jpg'
         }
 
@@ -756,7 +756,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'U'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yanzr91jbp_en.jpg'
         }
 
@@ -765,7 +765,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'U'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/wmy6mm5ncr_en.jpg'
         }
 
@@ -774,7 +774,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'U'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zojrtczz5t_en.jpg'
         }
         
@@ -785,7 +785,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'B'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/6ie4ilpo2k_en.jpg'
         }
 				
@@ -794,7 +794,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'B'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/l83xuhfgpi_en.jpg'
         }
 				
@@ -803,7 +803,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'B'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/1ztn3kk1f6_en.jpg'
         }
 				
@@ -812,7 +812,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'B'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/sv4ncxwwk9_en.jpg'
         }
         
@@ -821,7 +821,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'B'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/5atfjinpng_en.jpg'
         }
 				
@@ -830,7 +830,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'B'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/238mhptv53_en.jpg'
         }
         
@@ -840,7 +840,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'B'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ntfiiz5vzm_en.jpg'
         }
 				
@@ -849,7 +849,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'B'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/6qakt7vakw_en.jpg'
         }
         
@@ -858,7 +858,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'B'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/3c7ur9svcm_en.jpg'
         }
 				
@@ -867,7 +867,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'B'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/00tyvpgtmm_en.jpg'
         }
 				
@@ -876,7 +876,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'B'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/op8bl6byx0_en.jpg'
         }
 				
@@ -885,7 +885,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'B'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yuaehtzaoy_en.jpg'
         }
 				
@@ -894,7 +894,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'B'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/awhhr8evmz_en.jpg'
         }
 				
@@ -903,7 +903,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'B'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/v6k7izopy2_en.jpg'
         }
 				
@@ -912,7 +912,7 @@ GTC = {
             , 'rarity' : 'M'
             , 'color' : 'B'
             , 'cmc' : 7
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ytnaqsgi03_en.jpg'
         }
 				
@@ -921,7 +921,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'B'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/t127tqnlwd_en.jpg'
         }
 				
@@ -930,7 +930,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'B'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/wxqrlnpnkc_en.jpg'
         }
         
@@ -939,7 +939,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'B'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/6jl9gl8hs8_en.jpg'
         }
         
@@ -948,7 +948,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'B'
             , 'cmc' : 7
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ke6zenv9u5_en.jpg'
         }
 				
@@ -957,7 +957,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'B'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/aknhpcus4v_en.jpg'
         }
 				
@@ -966,7 +966,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'B'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/2690x9cacp_en.jpg'
         }
 				
@@ -975,7 +975,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'B'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tjdf072pmm_en.jpg'
         }
 				
@@ -984,7 +984,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'B'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/kp8zv8uors_en.jpg'
         }
 				
@@ -993,7 +993,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'B'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/7yyz1uilfu_en.jpg'
         }
         
@@ -1002,7 +1002,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'B'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/kl4nesr3r3_en.jpg'
         }
         
@@ -1011,7 +1011,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'B'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/gagqof3lss_en.jpg'
         }
         
@@ -1020,7 +1020,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'B'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/4n01133uru_en.jpg'
         }
 				
@@ -1029,7 +1029,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'B'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a4jnjrni3w_en.jpg'
         }
         
@@ -1040,7 +1040,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'R'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/kwiwruz4m4_en.jpg'
         }
 				
@@ -1049,7 +1049,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'R'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/4fltpd2024_en.jpg'
         }
 				
@@ -1058,7 +1058,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'R'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/rz0z2ryydi_en.jpg'
         }
 				
@@ -1067,7 +1067,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'R'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hx9ijcwoe6_en.jpg'
         }
 				
@@ -1076,7 +1076,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'R'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/g8xjadtkqz_en.jpg'
         }
         
@@ -1085,7 +1085,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'R'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/lt2zjov5j5_en.jpg'
         }
         
@@ -1094,7 +1094,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'R'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/k1xdjk3rp8_en.jpg'
         }
 				
@@ -1103,7 +1103,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'R'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/k37kqf0wtl_en.jpg'
         }
 				
@@ -1112,7 +1112,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'R'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/0qh1t58pbb_en.jpg'
         }
         
@@ -1121,7 +1121,7 @@ GTC = {
             , 'rarity' : 'M'
             , 'color' : 'R'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/njcdxzejfx_en.jpg'
         }
         
@@ -1130,7 +1130,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'R'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/3x7y42x6y8_en.jpg'
         }
 				
@@ -1139,7 +1139,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'R'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/e6xrhzmtlt_en.jpg'
         }
         
@@ -1148,7 +1148,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'R'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/0xfkhp15jr_en.jpg'
         }
 				
@@ -1157,7 +1157,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'R'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/trear46frs_en.jpg'
         }
 				
@@ -1166,7 +1166,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'R'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/muzjxjjkqc_en.jpg'
         }
 				
@@ -1175,7 +1175,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'R'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/vye7iil36e_en.jpg'
         }
         
@@ -1184,7 +1184,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'R'
             , 'cmc' : 7
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/fn48qunlog_en.jpg'
         }
 				
@@ -1193,7 +1193,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'R'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/cvv7pamj05_en.jpg'
         }
 				
@@ -1202,7 +1202,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'R'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/kfpwqssybv_en.jpg'
         }
         , '104' : {
@@ -1210,7 +1210,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'R'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/t3sy7hufd1_en.jpg'
         }
         , '105' : {
@@ -1218,7 +1218,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'R'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/nzxwjej2xg_en.jpg'
         }
 				
@@ -1227,7 +1227,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'R'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/jpf5qzipuk_en.jpg'
         }
 				
@@ -1236,7 +1236,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'R'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hobhkezyjj_en.jpg'
         }
         
@@ -1245,7 +1245,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'R'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zpg0dfq8wh_en.jpg'
         }
 				
@@ -1254,7 +1254,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'R'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/sufw94jfuw_en.jpg'
         }
         
@@ -1263,7 +1263,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'R'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/v092k7o543_en.jpg'
         }
 				
@@ -1272,7 +1272,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'R'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/0tnqrwbo5o_en.jpg'
         }
 				
@@ -1281,7 +1281,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'R'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/bwmny93p22_en.jpg'
         }
         
@@ -1293,7 +1293,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'G'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/swccqvb40q_en.jpg'
         }
         
@@ -1302,7 +1302,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'G'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zst0b6bp6o_en.jpg'
         }
         
@@ -1311,7 +1311,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'G'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a7eacen9wm_en.jpg'
         }
         
@@ -1320,7 +1320,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'G'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/gpbrb0j6xt_en.jpg'
         }
         
@@ -1329,7 +1329,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'G'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/i4h4vuk1ym_en.jpg'
         }
         
@@ -1338,7 +1338,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'G'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/krxym94uy0_en.jpg'
         }
         
@@ -1347,7 +1347,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'G'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/krxym94uy0_en.jpg'
         }
         
@@ -1356,7 +1356,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'G'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/1wi1c32pmx_en.jpg'
         }
         
@@ -1365,7 +1365,7 @@ GTC = {
             , 'rarity' : 'M'
             , 'color' : 'G'
             , 'cmc' : 7
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tkohp7rxit_en.jpg'
         }
         
@@ -1374,7 +1374,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'G'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/jnx0mtbzuf_en.jpg'
         }
         
@@ -1383,7 +1383,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'G'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/22s62gzi2u_en.jpg'
         }
         
@@ -1392,7 +1392,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'G'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/mk2hux6uur_en.jpg'
         }
         
@@ -1401,7 +1401,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'G'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/n22pbcviuo_en.jpg'
         }
         
@@ -1410,7 +1410,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'G'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/4qqeq64b8z_en.jpg'
         }
         
@@ -1419,7 +1419,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'G'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/1zs0k7lowd_en.jpg'
         }
         
@@ -1428,7 +1428,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'G'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qj83mlrs8l_en.jpg'
         }
         
@@ -1437,7 +1437,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'G'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qte0p92qh2_en.jpg'
         }
         
@@ -1446,7 +1446,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'G'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/i8rgqnqric_en.jpg'
         }
         
@@ -1455,7 +1455,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'G'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/lrptnirsf4_en.jpg'
         }
         
@@ -1464,7 +1464,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'G'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/sxk4y8p47v_en.jpg'
         }
         
@@ -1473,7 +1473,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'G'
             , 'cmc' : 8
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/7v8xv9xoxq_en.jpg'
         }
         
@@ -1482,7 +1482,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'G'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tm143aipok_en.jpg'
         }
         
@@ -1491,7 +1491,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'G'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/iod3iyz3j2_en.jpg'
         }
         
@@ -1500,7 +1500,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'G'
             , 'cmc' : 7
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tgmanwihfz_en.jpg'
         }
         
@@ -1509,7 +1509,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'G'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/xcwdekx57n_en.jpg'
         }
         
@@ -1518,7 +1518,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'G'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/i33qpq2vly_en.jpg'
         }
         
@@ -1527,7 +1527,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'G'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/juiolmlrkl_en.jpg'
         }
         
@@ -1536,7 +1536,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'G'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/h814trbfxv_en.jpg'
         }
         
@@ -1548,7 +1548,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/d03hk9ieuy_en.jpg'
         }
         
@@ -1557,7 +1557,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/rldznvbkbx_en.jpg'
         }
         
@@ -1566,7 +1566,7 @@ GTC = {
             , 'rarity' : 'M'
             , 'color' : 'M'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/n4l84yaowd_en.jpg'
         }
         
@@ -1575,7 +1575,7 @@ GTC = {
             , 'rarity' : 'M'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/72iagzis13_en.jpg'
         }
 				
@@ -1584,7 +1584,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/atyr93aly4_en.jpg'
         }
         
@@ -1593,7 +1593,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/m45basnlm5_en.jpg'
         }
         
@@ -1602,7 +1602,7 @@ GTC = {
             , 'rarity' : 'M'
             , 'color' : 'M'
             , 'cmc' : 8
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/h6ewtukll4_en.jpg'
         }
         
@@ -1611,7 +1611,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yo8hf6s3w3_en.jpg'
         }
         
@@ -1620,7 +1620,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/j8la39uo68_en.jpg'
         }
 				
@@ -1629,7 +1629,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/cnl8q8ecqe_en.jpg'
         }
         
@@ -1639,7 +1639,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qjl90s7xs1_en.jpg'
         }
         
@@ -1648,7 +1648,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a2ivtdwluu_en.jpg'
         }
         
@@ -1657,7 +1657,7 @@ GTC = {
             , 'rarity' : 'M'
             , 'color' : 'M'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zdwcgxx5n9_en.jpg'
         }
         
@@ -1666,7 +1666,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qrevu051ek_en.jpg'
         }
 				
@@ -1675,7 +1675,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hfr63ma542_en.jpg'
         }
         
@@ -1684,7 +1684,7 @@ GTC = {
             , 'rarity' : 'M'
             , 'color' : 'M'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Planeswalker'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/lsnhs59758_en.jpg'
         }
         
@@ -1693,7 +1693,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/8dykso0jvs_en.jpg'
         }
         
@@ -1702,7 +1702,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hxxrj1a4b7_en.jpg'
         }
 				
@@ -1711,7 +1711,7 @@ GTC = {
             , 'rarity' : 'M'
             , 'color' : 'M'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/cfjgv67awc_en.jpg'
         }
         
@@ -1720,7 +1720,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yszmf4t45e_en.jpg'
         }
 				
@@ -1729,7 +1729,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yrv7lyjz66_en.jpg'
         }
         
@@ -1738,7 +1738,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/akz61fr8xd_en.jpg'
         }
         
@@ -1747,7 +1747,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/27agtdswcs_en.jpg'
         }
         
@@ -1756,7 +1756,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/sc923hfr03_en.jpg'
         }
 
@@ -1765,7 +1765,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/9wstmvlpdq_en.jpg'
         }
 				
@@ -1774,7 +1774,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/necxi8gahs_en.jpg'
         }
         
@@ -1783,7 +1783,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/4olvi22ygg_en.jpg'
         }
         
@@ -1792,7 +1792,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hdp3bxhyks_en.jpg'
         }
 				
@@ -1801,7 +1801,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tjz4h9t7sv_en.jpg'
         }
         
@@ -1810,7 +1810,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 7
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qnyu9rzw3i_en.jpg'
         }
         
@@ -1819,7 +1819,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tj3ox8eg1z_en.jpg'
         }
 				
@@ -1828,7 +1828,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/t9dognx636_en.jpg'
         }
 				
@@ -1837,7 +1837,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tcr4p6r6qv_en.jpg'
         }
         
@@ -1846,7 +1846,7 @@ GTC = {
             , 'rarity' : 'M'
             , 'color' : 'M'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zi3leei9i4_en.jpg'
         }
 				
@@ -1855,7 +1855,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/6xuylzeiye_en.jpg'
         }
 				
@@ -1864,7 +1864,7 @@ GTC = {
             , 'rarity' : 'M'
             , 'color' : 'M'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/k7puv0lf7s_en.jpg'
         }
         
@@ -1873,7 +1873,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/c004geytgz_en.jpg'
         }
         
@@ -1882,7 +1882,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/iu0xzauwx9_en.jpg'
         }
 				
@@ -1891,7 +1891,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/coiklp4xfo_en.jpg'
         }
         
@@ -1900,7 +1900,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ib4pqypnny_en.jpg'
         }
 				
@@ -1909,7 +1909,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/mra4eudez4_en.jpg'
         }
         
@@ -1918,7 +1918,7 @@ GTC = {
             , 'rarity' : 'M'
             , 'color' : 'WB'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/m2t717ynfw_en.jpg'
         }
         
@@ -1927,7 +1927,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/6lh7qy7834_en.jpg'
         }
 				
@@ -1936,7 +1936,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a36xolka4g_en.jpg'
         }
 				
@@ -1945,7 +1945,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/wxveeg54dm_en.jpg'
         }
 				
@@ -1954,7 +1954,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/wjqt0et5b2_en.jpg'
         }
 				
@@ -1963,7 +1963,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/f0w4uubozz_en.jpg'
         }
         
@@ -1972,7 +1972,7 @@ GTC = {
             , 'rarity' : 'M'
             , 'color' : 'M'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/9js3k7phym_en.jpg'
         }
 				
@@ -1981,7 +1981,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/b2bjhcwm2e_en.jpg'
         }
         
@@ -1990,7 +1990,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/vcbilrlqa5_en.jpg'
         }
 				
@@ -1999,7 +1999,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/dw6ibrnf9p_en.jpg'
         }
 				
@@ -2008,7 +2008,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/pua43pwkps_en.jpg'
         }
         
@@ -2017,7 +2017,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ad2buftts7_en.jpg'
         }
         
@@ -2026,7 +2026,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ulqi7zd9gw_en.jpg'
         }
         
@@ -2035,7 +2035,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qn5e3tjtlk_en.jpg'
         }
         
@@ -2044,7 +2044,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/3xw48p8yik_en.jpg'
         }
         
@@ -2053,7 +2053,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/cbg48u45g6_en.jpg'
         }
         
@@ -2062,7 +2062,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/v1n9eq8w2g_en.jpg'
         }
         
@@ -2071,7 +2071,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/1nyz690klp_en.jpg'
         }
 				
@@ -2080,7 +2080,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/0nce6kkxuw_en.jpg'
         }
         
@@ -2089,7 +2089,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zfzyzgcjnr_en.jpg'
         }
 				
@@ -2098,7 +2098,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/lmjzkisdor_en.jpg'
         }
 				
@@ -2107,7 +2107,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/byricomkdk_en.jpg'
         }
         
@@ -2116,7 +2116,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/byrseahxfw_en.jpg'
         }
         
@@ -2125,7 +2125,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/87zvag5bon_en.jpg'
         }
         
@@ -2134,7 +2134,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/4giis8ijc3_en.jpg'
         }
         
@@ -2143,7 +2143,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/67b3byoela_en.jpg'
         }
 				
@@ -2152,7 +2152,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/j4bdoldrkz_en.jpg'
         }
         
@@ -2161,7 +2161,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/7h4ianmut1_en.jpg'
         }
         
@@ -2170,7 +2170,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/1f2gkz8cg9_en.jpg'
         }
         
@@ -2182,7 +2182,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/fjb3f1fhtk_en.jpg'
         }
         
@@ -2191,7 +2191,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ydyjwxx5nc_en.jpg'
         }
         
@@ -2200,7 +2200,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ny6mtaygmr_en.jpg'
         }
         
@@ -2209,7 +2209,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tth5um1bl2_en.jpg'
         }
         
@@ -2218,7 +2218,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hxyzo9fn7v_en.jpg'
         }
         
@@ -2227,7 +2227,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/kwtkd3c7sh_en.jpg'
         }
         
@@ -2236,7 +2236,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 5
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/t8sia8416y_en.jpg'
         }
         
@@ -2245,7 +2245,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/j1m7z578aa_en.jpg'
         }
         
@@ -2254,7 +2254,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Enchantment'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a9i9v9k80t_en.jpg'
         }
         
@@ -2263,7 +2263,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Sorcery'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/14gyxtjfad_en.jpg'
         }
         
@@ -2272,7 +2272,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'M'
             , 'cmc' : 6
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/lerob5qo3b_en.jpg'
         }
         
@@ -2281,7 +2281,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/cxg272cbbg_en.jpg'
         }
         
@@ -2290,7 +2290,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/0k5uqfenyb_en.jpg'
         }
         
@@ -2299,7 +2299,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'M'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/svjfhh3bbx_en.jpg'
         }
         
@@ -2308,7 +2308,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'M'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Instant'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/7qd529r6rd_en.jpg'
        }
         
@@ -2320,7 +2320,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'A'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Artifact Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qhq0f16v5n_en.jpg'
        }
         
@@ -2329,7 +2329,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'A'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Artifact'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/r9yqn7qxnt_en.jpg'
         }
         
@@ -2338,7 +2338,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'A'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Artifact'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/4pij2wdr3y_en.jpg'
         }
         
@@ -2347,7 +2347,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'A'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Artifact'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/h0ndjlxf87_en.jpg'
         }
         
@@ -2356,7 +2356,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'A'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Artifact'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/5s4gwhr2u9_en.jpg'
         }
         
@@ -2365,7 +2365,7 @@ GTC = {
             , 'rarity' : 'R'
             , 'color' : 'A'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Artifact'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/7anbuzmoy2_en.jpg'
         }
         
@@ -2374,7 +2374,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'A'
             , 'cmc' : 4
-            , 'type' : ''
+            , 'type' : 'Artifact Creature'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a1qmgxzl4y_en.jpg'
        }
         
@@ -2383,7 +2383,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'A'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Artifact'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/p6ky6h8leu_en.jpg'
         }
         
@@ -2392,7 +2392,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'A'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Artifact'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/1acadm3rgd_en.jpg'
        }
         
@@ -2401,7 +2401,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'A'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Artifact'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/jx30fv68bw_en.jpg'
        }
         
@@ -2410,7 +2410,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'A'
             , 'cmc' : 2
-            , 'type' : ''
+            , 'type' : 'Artifact'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/65agsc00a2_en.jpg'
        }
         
@@ -2419,7 +2419,7 @@ GTC = {
             , 'rarity' : 'U'
             , 'color' : 'A'
             , 'cmc' : 3
-            , 'type' : ''
+            , 'type' : 'Artifact'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/vvolws6ynj_en.jpg'
         }
         
@@ -2428,7 +2428,7 @@ GTC = {
             , 'rarity' : 'C'
             , 'color' : 'A'
             , 'cmc' : 1
-            , 'type' : ''
+            , 'type' : 'Artifact'
             , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/drn2bbhkl9_en.jpg'
        }
        
