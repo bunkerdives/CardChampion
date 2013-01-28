@@ -12,6 +12,12 @@ Sealed = {
     
     , deck : []
     
+    , numLandsInDeck : 0
+    
+    , numCreaturesInDeck : 0
+    
+    , numCardsInDeck : 0
+    
     , colSizePool : [
         0
         , 0
@@ -78,13 +84,11 @@ Sealed = {
             
             if( color != GTC.card_data[ id ].color ){
                 // add the next card to the next column
-                console.log( "add the next card to the next column" )
                 ++ col;
                 row = 0;
             }
             else{
                 if( row >= Sealed.numRows ){
-                    console.log( "create a new row" )
                     Sealed.createNewPoolRow( row );
                     Sealed.numRows += 1;
                 }
@@ -92,7 +96,6 @@ Sealed = {
             
             color = GTC.card_data[ id ].color;
             
-            console.log("Adding " + id + " to card pool with row = " + row + ", col = " + col );
             Sealed.addCardToPool( id, row, col );
             row += 1;
             
@@ -201,6 +204,18 @@ Sealed = {
         $( "#card-pool-" + rowIdx + "-" + colIdx ).dblclick( { 'id' : id, 'row' : rowIdx, 'col' : colIdx }, Sealed.addCardToMain );
         $( "#card-pool-" + rowIdx + "-" + colIdx ).attr( "data-card-id", id );
         
+        // adjust the total, creature, and land counters
+        Sealed.numCardsInDeck --;
+        $( "#mainboard-total" ).html( (Sealed.numCardsInDeck) + "/40" );
+        if( GTC.card_data[id].type == "Creature" || GTC.card_data[id].type == "Artifact Creature" ){
+            Sealed.numCreaturesInDeck --;
+            $("#mainboard-creatures").html( "Creatures: " + (Sealed.numCreaturesInDeck) );
+        }
+        else if( GTC.card_data[id].type == "Land" ){
+            Sealed.numLandsInDeck --;
+            $("#mainboard-lands").html( "Lands: " + (Sealed.numLandsInDeck) );
+        }
+        
     }
     
     , addCardToMain : function( event ) {
@@ -277,6 +292,18 @@ Sealed = {
         $( "#deck-area-" + rowIdx + "-" + colIdx ).on( 'mouseover', { 'id' : id }, Sealed.cardZoom );
         $( "#deck-area-" + rowIdx + "-" + colIdx ).dblclick( { 'id' : id, 'row' : rowIdx, 'col' : colIdx }, Sealed.addCardToPoolCallback );
         $( "#deck-area-" + rowIdx + "-" + colIdx ).attr( "data-card-id", id );
+        
+        // adjust the total, creature, and land counters
+        Sealed.numCardsInDeck ++;
+        $( "#mainboard-total" ).html( (Sealed.numCardsInDeck) + "/40" );
+        if( GTC.card_data[id]['type'] == "Creature" || GTC.card_data[id]['type'] == "Artifact Creature" ){
+            Sealed.numCreaturesInDeck ++;
+            $("#mainboard-creatures").html( "Creatures: " + (Sealed.numCreaturesInDeck) );
+        }
+        else if( GTC.card_data[id]['type'] == "Land" ){
+            Sealed.numLandsInDeck ++;
+            $("#mainboard-lands").html( "Lands: " + (Sealed.numLandsInDeck) );
+        }
         
     }
     
@@ -363,7 +390,7 @@ Sealed = {
         
     }
     
-    , insertSplitCardsIntoPool( split ) {
+    , insertSplitCardsIntoPool : function( split ) {
         
         var numSplits = split.length;
         
