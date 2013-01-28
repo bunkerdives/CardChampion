@@ -8,6 +8,10 @@ Sealed = {
     
     , numMainUsedRows : 0
     
+    , pool : []
+    
+    , deck : []
+    
     , colSizePool : [
         0
         , 0
@@ -317,6 +321,88 @@ Sealed = {
         var id = event.data.id;
         var img = GTC.card_data[ id ].img;
         $("#img-preview").css( "background-image", 'url(' + img + ')' );
+        
+    }
+    
+    , sortCardsIntoUIByType : function( ui, type ) {
+        
+        var sorted = [];
+        var split;
+        
+        var unsorted;
+        switch( ui ){
+            case "pool":
+                unsorted = Sealed.pool;
+                break;
+            case "deck":
+                unsorted = Sealed.deck;
+                break;
+            default:
+                return;
+        }
+        
+        switch( type ){
+            case "cost":
+                sorted = unsorted.sort( Sealed.costSort );
+                split = Sealed.splitByCost( sorted );
+                break;
+            default:
+                return;
+        }
+        
+        switch( ui ){
+            case "pool":
+                Sealed.insertSplitCardsIntoPool( split );
+                break;
+            default:
+                return;
+        }
+        
+        return sorted;
+        
+        
+    }
+    
+    , insertSplitCardsIntoPool( split ) {
+        
+        var numSplits = split.length;
+        
+        for( var i = 0; i < numSplits; ++i ){
+            
+        }
+        
+    }
+    
+    , costSort : function( a, b ) {
+        
+        var aCost = GTC.card_data[a].cmc;
+        var bCost = GTC.card_data[b].cmc;
+        
+        return aCost - bCost;
+        
+    }
+    
+    , splitByCost : function( sorted ) {
+        
+        var numCards = sorted.length;
+        if( numCards == 0 ){
+            return sorted;
+        }
+        
+        var split = [ [] ];
+        var color = GTC.card_data[ sorted[0] ].cmc;
+        var colorIdx = 0;
+        for( var i = 0; i < numCards; ++i ){
+            var id = sorted[i];
+            var tmpColor = GTC.card_data[ id ].cmc;
+            if( tmpColor != color ){
+                color = tmpColor;
+                split.push( [] );
+                colorIdx ++;
+            }
+            // add the card to the appropriate split column
+            split[ colorIdx ].push( id );
+        }
         
     }
     
