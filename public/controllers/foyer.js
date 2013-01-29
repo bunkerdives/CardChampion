@@ -9,7 +9,8 @@ Foyer = {
         
         $("#draft-button").click( Foyer.draftSet('GTC') );
         $("#sealed-button").click( Sealed.startSealed('GTC') );
-        
+				$("#chat-button").click( Foyer.showLightbox() );
+				$("#hide-lightbox-button").click( Foyer.hideLightbox() );
     }
     
     , draftSet : function(set) {
@@ -52,6 +53,26 @@ Foyer = {
 		// display the queue dialog and show the number of players
 		var players = data + " players";
 		$('#queue_size').html( players );
+		
+	}
+	
+	, showLightbox : function() {
+		
+		// hide "Chat" button
+		$('#chat-hidden').css("display", "none");
+		
+		// show nickname lightbox
+		$('#nickname-lightbox').css("display", "block");
+		
+	}
+	
+	, hideLightbox : function() {
+		
+		//Show "chat" button
+		$('#chat-hidden').css("display", "block");
+		
+		//hide nickname lightbox
+		$('#nickname-lightbox').css("display", "none");
 		
 	}
 	

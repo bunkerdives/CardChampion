@@ -367,9 +367,9 @@ body {
 			
 			#control-bar #sort-wrapper {
 				float:right;
-				height:36px;
-				width:157px;
-				padding-right:3px;
+				height:25px;
+				width:155px;
+				padding-right:2px;
 				-webkit-border-radius: 4px 4px 4px 4px;
 				-moz-border-radius: 4px 4px 4px 4px;
 				border-radius: 4px 4px 4px 4px;
@@ -389,7 +389,8 @@ body {
 				border:0px;
 				border-right:1px solid;
 				border-right-color: rgba(0, 0, 0, 0.0980392);
-				line-height:28px;
+				line-height:18px;
+				height:26px;
 			}
 			
 			#control-bar #sort .dropdown-menu {
@@ -410,7 +411,8 @@ body {
 				padding-bottom:0px;
 				width:85px;
 				position:relative;
-				top:3px;
+				top:2px;
+				height:22px;
 			}
 			
 			#draft #control-bar #shuffle {
@@ -495,7 +497,7 @@ body {
 	}
 	
 	#draft-builder #control-bar {
-		height:42px;
+		height:30px;
 		width:100%;
 		color:#fff;
 		background: rgb(48,49,53); /* Old browsers */
@@ -557,7 +559,7 @@ body {
 	}
 	
 	#draft-builder #mainboard-breakdown {
-		line-height:40px;
+		line-height:28px;
 		font-size:20px;
 		font-weight:200;
 	}
@@ -567,7 +569,8 @@ body {
 	}
 	
 	#draft-builder #sort {
-		padding:2px;
+		padding-right:4px;
+		padding-top:1px;
 	}
 	
 	
@@ -585,7 +588,4 @@ body {
 				bottom:1px;
 				left:100px;
 				z-index:-1;
-			}
-			
-   
-  
+			}  

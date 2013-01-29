@@ -5,7 +5,7 @@
       button#draft-button.btn.btn-large.btn-success(onclick="Foyer.draftSet('GTC');") Join Gatecrash Draft
       button#sealed-button.btn.btn-large.btn-success(onclick="Sealed.startSealed('GTC');") Gatecrash Sealed
       #chat-hidden
-        #chat-button.button.btn.btn-large.btn-primary(onclick="showLightbox();") Chat
+        #chat-button.button.btn.btn-large.btn-primary(onclick="Foyer.showLightbox();") Chat
       #queue_list(style="display:none;")
         #queue_size 0 players
         #player_list
@@ -19,7 +19,7 @@
         img(src="/img/draft_screenshot.png")
   #nickname-lightbox.opacity60(style="display:none;")
     #nickname-lightbox-inner
-      a(onclick="hideLightbox();")
+      a#hide-lightbox-button(onclick="Foyer.hideLightbox();")
         i.icon-remove.icon-white.pull-right
       h2(style="padding-top:15px;") Please provide a nickname:
       input
