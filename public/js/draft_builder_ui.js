@@ -1,3 +1,96 @@
+
+function showSealedInterface(data){
+        
+	// untoggle visibility of the lobby interface
+  	$("#foyer").css( "display", "none" );
+		  
+	// toggle visibility of the draft interface
+	$('#draft-builder').css( "display", "block" );
+        
+}
+    
+function adjustCardCounterUI( magnitude, type ){
+    $( "#mainboard-total" ).html( (Sealed.numCardsInDeck) + "/40" );
+    if( type == "Creature" || type == "Artifact Creature" ){
+        Sealed.numCreaturesInDeck += magnitude;
+        $("#mainboard-creatures").html( "Creatures: " + (Sealed.numCreaturesInDeck) );
+    }
+    else if( type == "Land" ){
+        Sealed.numLandsInDeck += magnitude;
+        $("#mainboard-lands").html( "Lands: " + (Sealed.numLandsInDeck) );
+    }
+}
+    
+function addCardToUI( element, id, img, row, col, ui ){
+        
+    var data = { 'id' : id, 'row' : row, 'col' : col };
+    element.css( "background-image", 'url(' + img + ')' );
+    element.css( "z-index", row );
+    element.on( 'mouseover', data, cardZoom );
+        
+    element.attr( "data-card-id", id );
+        
+    switch( ui ){
+        case "pool" :
+            element.dblclick( data, Sealed.addCardToMain );
+            break;
+        case "main" :
+            element.dblclick( data, Sealed.addCardToPoolCallback );
+            break;
+    }
+        
+    resizeScreen();
+        
+}
+    
+function removeCardFromUI( element ) {
+    element.attr( "data-card-id", "" );
+    element.css( "background-image", "none" );
+    element.css( "z-index", "-1" );
+    element.off( 'dblclick' );
+    element.off( 'mouseover' );
+}
+    
+function createNewPoolRow( rowIdx ) {
+        
+    var row = $('<div>').attr("id", "card-pool-row-" + rowIdx);
+    row.addClass("card-pool-row");
+    $("#card-pool-inner").append(row);
+            
+    for( var i = 0; i < 7; ++i ){
+        var img = $("<div>");
+        img.addClass( "card" ).addClass("stack");
+        img.attr("id", "card-pool-" + rowIdx + "-" + i );
+        img.css("z-index", "-1");
+        $(row).append( img );
+    }
+        
+}
+    
+function createNewMainRow( rowIdx ){
+        
+    var row = $('<div>').attr("id", "deck-area-row-" + rowIdx);
+    row.addClass("card-pool-row");
+    $("#deck-area-inner").append(row);
+            
+    for( var i = 0; i < 7; ++i ){
+        var img = $("<div>");
+        img.addClass( "card" ).addClass("stack");
+        img.attr("id", "deck-area-" + rowIdx + "-" + i );
+        img.css("z-index", "-1");
+        $(row).append( img );
+    }
+        
+}
+    
+function cardZoom( event ) {
+        
+    var id = event.data.id;
+    var img = GTC.card_data[ id ].img;
+    $("#img-preview").css( "background-image", 'url(' + img + ')' );
+        
+}
+
 function screenSize() {
 	var windowHeight = $(window).height();
 	var windowWidth = $(window).width();
@@ -47,9 +140,6 @@ function screenSize() {
 	});
 	$('#deck-area-scroll').css("height", deckAreaHeight);
 	
-	
-	
-	
 	var cardHeight = $('#card-pool-0-0').height();//standard height
 	var cardWidth = $('#card-pool-0-0').width();//standard width
 	
@@ -69,18 +159,19 @@ function screenSize() {
 		"min-width": deckAreaWidth - 3,
 		"min-height": deckAreaHeight
 	});	
+    
 }
 
 function cardSizeInit(){
-	var cardHeight = 198.7;//standard height
-	var cardWidth = 143;//standard width
+    
+	var cardHeight = 198.7; //standard height
+	var cardWidth = 143; //standard width
 	
 	$(".card").css({
 		"height" : cardHeight,
 		"width" : cardWidth,
 		"background-size" : cardWidth + "px " + cardHeight + "px"
-	});	
-	
+	});
 
 }
 

@@ -11,8 +11,6 @@ Booster = {
         
         // TODO add dynamic support for other card sets
         
-        console.log( "Creating a booster pack for the set " + GTC.set )
-        
         var card;
         for( ; i < 10; ++i ){
             while( card = Booster.randCommon( set ) ){
