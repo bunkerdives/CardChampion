@@ -76,6 +76,19 @@ Foyer = {
 		
 	}
 	
+	, showChat : function() {
+		
+		//Show "chat" button
+		$('#chat-shown').css("display", "block");
+		
+		//hide nickname lightbox
+		$('#nickname-lightbox').css("display", "none");
+		
+		//hide carousel
+		$('#screenshot-carousel').css("display", "none");
+		
+	}
+	
 };
 
 $( function() {

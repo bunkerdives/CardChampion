@@ -2,7 +2,7 @@
   #top-screen
     #img-preview.pull-left
     #card-pool
-      #card-pool-scroll
+      #card-pool-scroll(style="overflow:scroll;")
         #card-pool-inner
           #card-pool-row-0(style="padding-top:3px;padding-bottom:3px;")
             #card-pool-0-0.card
@@ -17,11 +17,13 @@
       span#mainboard-total 0/40
       span#mainboard-creatures Creatures: 0
       span#mainboard-lands Lands: 0
+    #card-size-slider(style="display:inline-block;color:#fff;")
+      input#slide(type="range", min="70", max="170", step="1", value="100", onchange="cardSizeChange(this.value);")
     #sort
       .input-prepend
         #sort-wrapper.btn-primary
           .btn-group
-            button#sort-button.btn.btn-primary.dropdown-toggle(data-toggle="dropdown")
+            button#sort-button.btn.btn-small.btn-primary.dropdown-toggle(data-toggle="dropdown")
               i.icon-refresh.icon-white
               span Sort
             ul.dropdown-menu
@@ -35,6 +37,39 @@
               option#sort-cost by cost
               option#sort-type by type
               option#sort-rarity by rarity
+    #add-land.pull-right(style="text-align:center;margin:0px;")
+      .btn-group
+        button#add-land-button.btn.btn-small.btn-success.dropdown-toggle(data-toggle="dropdown")
+          span Add Land
+        ul#add-land-dropdown.dropdown-menu(style="top:18px;left:-45px;width:136px;min-width:136px;")
+          li#white-mana
+            i.icon-plus-sign.pull-left(style="position:relative;top:2px;left:25px;")
+            img(src="/img/white-mana.jpg")
+            span : 0
+            i.icon-minus-sign.pull-right(style="position:relative;top:2px;right:25px;")
+          li#blue-mana
+            i.icon-plus-sign.pull-left(style="position:relative;top:2px;left:25px;")
+            img(src="/img/blue-mana.jpg")
+            span : 0
+            i.icon-minus-sign.pull-right(style="position:relative;top:2px;right:25px;")
+          li#black-mana
+            i.icon-plus-sign.pull-left(style="position:relative;top:2px;left:25px;")
+            img(src="/img/black-mana.jpg")
+            span : 0
+            i.icon-minus-sign.pull-right(style="position:relative;top:2px;right:25px;")
+          li#red-mana
+            i.icon-plus-sign.pull-left(style="position:relative;top:2px;left:25px;")
+            img(src="/img/red-mana.jpg")
+            span : 0
+            i.icon-minus-sign.pull-right(style="position:relative;top:2px;right:25px;")
+          li#green-mana
+            i.icon-plus-sign.pull-left(style="position:relative;top:2px;left:25px;")
+            img(src="/img/green-mana.jpg")
+            span : 0
+            i.icon-minus-sign.pull-right(style="position:relative;top:2px;right:25px;")
+          li(style="padding-top:4px;")
+            button.btn.btn-small.btn-primary(style="margin-right:4px;") Suggest
+            button.btn.btn-small.btn-success Add
   #bottom-screen
     #deck-area
       #deck-area-scroll

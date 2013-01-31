@@ -9,8 +9,24 @@
       #queue_list(style="display:none;")
         #queue_size 0 players
         #player_list
-  #chat
-    #chat-shown(style="display:none;")
+  #chat.row
+    #chat-shown.span12(style="display:none;")
+      .row-fluid
+        #left-pane.span7.offset1
+          #convo.span12
+            .chat-msg Welcome
+            .chat-msg
+              span.chat-username(style="color:red;") Username1: 
+              span Test aofnaonfawfwaidjioawjfdioglksdnvkljndlkmcaoisfliawijflkngjfnb fdkbnfd kjnganfgoanjflkdlkfflksnfaejbfjkrbgnkjrn
+        #right-pane.span3
+          #userlist.span12
+            .chat-user(style="color:red;")
+              span.chat-username Username1
+              span.chat-status GTC Draft
+          #chat-input.span12
+            textarea.span12
+            input#color-picker.pull-left(type="color")
+            button.btn.btn-small.btn-success.pull-right Send
   #screenshot-carousel.carousel.slide
     .carousel-inner
       .item.active
@@ -24,4 +40,4 @@
       h2(style="padding-top:15px;") Please provide a nickname:
       input
       br
-      button.btn.btn-success.btn-large(style="margin-top:15px;") Submit
+      button.btn.btn-success.btn-large(style="margin-top:15px;", onclick="Foyer.showChat();") Submit
