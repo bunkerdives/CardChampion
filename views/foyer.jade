@@ -12,20 +12,32 @@
   #chat.row
     #chat-shown.span12(style="display:none;")
       .row-fluid
-        #left-pane.span7.offset1
+        #left-pane.span5
           #convo.span12
             #convo-inner
               .chat-msg 
                 span Welcome to LimitedMTG.com!
           #chat-input.span12
-            textarea.span10
+            textarea.span9
             input#color-picker(type="color")
             button.btn.btn-small.btn-success Send
-        #right-pane.span3
+        #middle-pane.span3
           #userlist.span12
             .chat-user(style="color:red;")
               span.chat-username Username1
               span.chat-status GTC Draft
+        #right-pane.span4
+          #sets.span12
+            table.table.table-bordered.table-striped
+              tr
+                td Gatecrash (GTC)
+                td 0/8
+              tr
+                td Return to Ravnica (RTR)
+                td 0/8
+              tr
+                td Magic 2013 (M13)
+                td 0/8
   #screenshot-carousel.carousel.slide
     .carousel-inner
       .item.active
