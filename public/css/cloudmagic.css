@@ -9,6 +9,7 @@ textarea {
 
 
 
+
 /* Header Divs and Classes */
 #header #open {
 	height:50px;/* linked with #content padding-top */
@@ -165,9 +166,42 @@ textarea {
 
 #foyer #chat #convo {
 	background-color:#eee;
-	height:400px;
-	overflow:scroll;
+	height:370px;
+	overflow:auto;
 	text-align:left;
+	padding:0;
+	padding-bottom:20px;
+	margin:0;
+}
+
+#foyer #chat #chat-input {
+	background-color:#ddd;
+	margin-left:0px;
+	height:25px;
+}
+
+#foyer #chat #chat-input textarea {
+	height:25px;
+	margin-bottom:0px;
+	display:inline-block;
+}
+
+#foyer #chat #chat-input #color-picker {
+	height:25px;
+	width:25px;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:1px;
+	padding-right:1px;
+	display:inline-block;
+	margin-bottom:0px;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+#foyer #chat #chat-input button {
+	line-height:18px;
+	margin-top:1px;
 }
 
 #foyer #chat #right-pane {
@@ -178,9 +212,8 @@ textarea {
 #foyer #chat #userlist {
 	background-color:#eee;
 	margin-left:0px;
-	height:275px;
-	overflow:scroll;
-	border-bottom:6px solid black;
+	height:400px;
+	overflow:auto;
 }
 
 #foyer #chat .chat-user {
@@ -192,32 +225,6 @@ textarea {
 	font-size:10px;
 	font-weight:200px;
 	font-style:italic;
-}
-
-#foyer #chat #chat-input {
-	background-color:#ddd;
-	margin-left:0px;
-	height:125px;
-	padding-right:1px;
-}
-
-#foyer #chat #chat-input textarea {
-	height:100px;
-	margin-bottom:0px;
-}
-
-#foyer #chat #chat-input #color-picker {
-	height:21px;
-	width:21px;
-	padding-top:1px;
-	padding-bottom:1px;
-	padding-left:1px;
-	padding-right:1px;
-}
-
-#foyer #chat #chat-input button {
-	line-height:18px;
-	margin-top:1px;
 }
 
 #foyer #screenshot-carousel {

@@ -14,19 +14,18 @@
       .row-fluid
         #left-pane.span7.offset1
           #convo.span12
-            .chat-msg Welcome
-            .chat-msg
-              span.chat-username(style="color:red;") Username1: 
-              span Test aofnaonfawfwaidjioawjfdioglksdnvkljndlkmcaoisfliawijflkngjfnb fdkbnfd kjnganfgoanjflkdlkfflksnfaejbfjkrbgnkjrn
+            #convo-inner
+              .chat-msg 
+                span Welcome to LimitedMTG.com!
+          #chat-input.span12
+            textarea.span10
+            input#color-picker(type="color")
+            button.btn.btn-small.btn-success Send
         #right-pane.span3
           #userlist.span12
             .chat-user(style="color:red;")
               span.chat-username Username1
               span.chat-status GTC Draft
-          #chat-input.span12
-            textarea.span12
-            input#color-picker.pull-left(type="color")
-            button.btn.btn-small.btn-success.pull-right Send
   #screenshot-carousel.carousel.slide
     .carousel-inner
       .item.active
