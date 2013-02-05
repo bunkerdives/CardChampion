@@ -235,15 +235,37 @@ textarea {
 	margin-left:0px;
 	border:6px solid black;
 	border-left:0px;
+	border-bottom:0px;
 }
 
 #foyer #chat #sets {
-	height:400px;
+	height:375px;
 	background-color:#eee;
+	overflow:auto;
+}
+
+#foyer #chat #sets .table {
+	margin-bottom:0px;
 }
 
 #foyer #chat #sets tr:hover {
 	cursor:pointer;
+}
+
+#foyer #chat #set-select {
+	height:30px;
+	background-color:#000;
+	margin-left:0px;
+	text-align:right;
+}
+
+#foyer #chat #set-select button {
+	line-height:18px;
+	margin-top:4px;
+}
+
+#foyer #chat #select-draft-button {
+	margin-right:5px;
 }
 
 #foyer #screenshot-carousel {
