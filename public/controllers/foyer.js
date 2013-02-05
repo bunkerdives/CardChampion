@@ -1,6 +1,10 @@
 Foyer = {
     
-    init : function() {
+    nickname : ''
+    
+    , socket : null
+    
+    , init : function() {
         console.log("Foyer initialized");
         //Foyer.registerHandlers();
     }
@@ -63,6 +67,9 @@ Foyer = {
 		
 		// show nickname lightbox
 		$('#nickname-lightbox').css("display", "block");
+        
+        // install a callback to fire when the user presses the submit button
+        $('#nick-submit-btn').click( Foyer.chooseNick );
 		
 	}
 	
@@ -88,6 +95,71 @@ Foyer = {
 		$('#screenshot-carousel').css("display", "none");
 		
 	}
+    
+    , chooseNick : function(event) {
+        
+        // get the nickname from the text input element
+        var nick = $('#nick-input').val();
+        
+        console.log( nick );
+        Foyer.nickname = nick;
+        
+        // open a chat socket
+        socket = Foyer.socket;
+        socket = io.connect('http://localhost');
+        console.log("nickname: " + Foyer.nickname);
+        socket.on('connect', function() {
+            var data = JSON.stringify( {'nick' : nick} );
+            socket.emit('adduser', data);
+        });
+        
+        socket.on('newuser', Foyer.newUser);
+        
+        // install chat socket callbacks
+        socket.on('newmsg', Foyer.newMsg);
+        
+        // install send button callback
+        //$("#chat-send-btn").click( Foyer.sendMsg );
+        
+        ( function(socket){
+            $("#chat-send-btn").click( function(data) {
+                Foyer.sendMsg(data, socket);
+            } );
+        })(socket);
+        
+    }
+    
+    , sendMsg : function( data, socket ) {
+        
+        // get the message text
+        var msg = $("#chat-msg").val();
+        var data = JSON.stringify( { 'nick' : Foyer.nickname, 'msg' : msg } );
+        socket.emit('newmsg', data);
+        
+    }
+    
+    , newUser : function(data) {
+        
+        var users = JSON.parse(data)['users'];
+        
+        for( var i = 0; i < users.length; ++i ){
+            var nick = users[i];
+            var chat = '<div class="chat-user" style="color:red;"><span class="chat-username">' + nick + '</span><span class="chat-status">Lobby</span></div>'
+            $("#userlist").append(chat);
+        }
+        
+    }
+    
+    , newMsg : function( data ) {
+        
+        var json = JSON.parse(data);
+        var nick = json['nick'];
+        var msg = json['msg'];
+        
+        console.log("New message!");
+        console.log(nick);
+        console.log(msg + "\n\n");
+    }
 	
 };
 

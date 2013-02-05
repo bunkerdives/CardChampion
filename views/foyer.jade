@@ -18,14 +18,11 @@
               .chat-msg 
                 span Welcome to LimitedMTG.com!
           #chat-input.span12
-            textarea.span9
+            textarea#chat-msg.span9
             input#color-picker(type="color")
-            button.btn.btn-small.btn-success Send
+            button#chat-send-btn.btn.btn-small.btn-success Send
         #middle-pane.span3
           #userlist.span12
-            .chat-user(style="color:red;")
-              span.chat-username Username1
-              span.chat-status GTC Draft
         #right-pane.span4
           #sets.span12
             table.table.table-bordered.table-striped
@@ -49,6 +46,6 @@
       a#hide-lightbox-button(onclick="Foyer.hideLightbox();")
         i.icon-remove.icon-white.pull-right
       h2(style="padding-top:15px;") Please provide a nickname:
-      input
+      input#nick-input
       br
-      button.btn.btn-success.btn-large(style="margin-top:15px;", onclick="Foyer.showChat();") Submit
+      button#nick-submit-btn.btn.btn-success.btn-large(style="margin-top:15px;", onclick="Foyer.showChat();") Submit
