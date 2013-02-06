@@ -9,14 +9,14 @@
                 span Welcome to LimitedMTG.com!
           #chat-input.span12
             textarea#chat-msg.span9
-            input#color-picker(type="color")
             button#chat-send-btn.btn.btn-small.btn-success Send
+            input#color-picker(type="color")
         #middle-pane
           #userlist.span12
         #right-pane
           #sets.span12
             table.table.table-bordered.table-striped
-              tr#set-GTC
+              tr#set-GTC.success
                 td.set-title Gatecrash (GTC)
                 td.set-queue 0/8
               tr#set-RTR
@@ -242,8 +242,8 @@
                 td.set-title Limited Edition Alpha (LEA)
                 td.set-queue 0/8
           #set-select.span12
-            button#select-draft-button.btn.btn-small.disabled Draft
-            button#select-sealed-button.btn.btn-small.disabled Sealed
+            button#select-draft-button.btn.btn-small Draft
+            button#select-sealed-button.btn.btn-small Sealed
   #nickname-lightbox.opacity60(style="display:none;")
     #nickname-lightbox-inner
       a#hide-lightbox-button(onclick="Foyer.hideLightbox();")
@@ -251,4 +251,4 @@
       h2(style="padding-top:15px;") Please provide a nickname:
       input#nick-input
       br
-      button#nick-submit-btn.btn.btn-success.btn-large(style="margin-top:15px;", onclick="Foyer.hideLightbox();") Submit
+      button#nick-submit-btn.btn.btn-success.btn-large(style="margin-top:15px;", onclick="Sealed.startSealed();") Submit
