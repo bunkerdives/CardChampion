@@ -13,8 +13,8 @@ Foyer = {
         
         $("#draft-button").click( Foyer.draftSet('GTC') );
         $("#sealed-button").click( Sealed.startSealed('GTC') );
-				$("#chat-button").click( Foyer.showLightbox() );
-				$("#hide-lightbox-button").click( Foyer.hideLightbox() );
+		$("#chat-button").click( Foyer.showLightbox() );
+		$("#hide-lightbox-button").click( Foyer.hideLightbox() );
     }
     
     , draftSet : function(set) {
