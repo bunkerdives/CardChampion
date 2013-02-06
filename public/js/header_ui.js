@@ -19,7 +19,7 @@ function expand() {
 		"display" : "block",
 	});
 	$('#content').css({
-		"padding-top" : "50px",
+		"padding-top" : "40px",
 	});
 	resizeScreen();
 }

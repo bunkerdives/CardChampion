@@ -1,18 +1,8 @@
-#foyer(style="display:block;")
-  #join
-    #front-page-info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    #front-page-buttons
-      button#draft-button.btn.btn-large.btn-success(onclick="Foyer.draftSet('GTC');") Join Gatecrash Draft
-      button#sealed-button.btn.btn-large.btn-success(onclick="Sealed.startSealed('GTC');") Gatecrash Sealed
-      #chat-hidden
-        #chat-button.button.btn.btn-large.btn-primary(onclick="Foyer.showLightbox();") Chat
-      #queue_list(style="display:none;")
-        #queue_size 0 players
-        #player_list
+#foyer(style="display:none;")
   #chat.row
-    #chat-shown.span12(style="display:none;")
-      .row-fluid
-        #left-pane.span5
+    #chat-shown.span12
+      .row-fluid(style="text-align:center;")
+        #left-pane
           #convo.span12
             #convo-inner
               .chat-msg 
@@ -21,9 +11,9 @@
             textarea#chat-msg.span9
             input#color-picker(type="color")
             button#chat-send-btn.btn.btn-small.btn-success Send
-        #middle-pane.span3
+        #middle-pane
           #userlist.span12
-        #right-pane.span4
+        #right-pane
           #sets.span12
             table.table.table-bordered.table-striped
               tr#set-GTC
@@ -254,12 +244,6 @@
           #set-select.span12
             button#select-draft-button.btn.btn-small.disabled Draft
             button#select-sealed-button.btn.btn-small.disabled Sealed
-  #screenshot-carousel.carousel.slide
-    .carousel-inner
-      .item.active
-        img(src="/img/builder_screenshot.png")
-      .item
-        img(src="/img/draft_screenshot.png")
   #nickname-lightbox.opacity60(style="display:none;")
     #nickname-lightbox-inner
       a#hide-lightbox-button(onclick="Foyer.hideLightbox();")
@@ -267,4 +251,4 @@
       h2(style="padding-top:15px;") Please provide a nickname:
       input#nick-input
       br
-      button#nick-submit-btn.btn.btn-success.btn-large(style="margin-top:15px;", onclick="Foyer.showChat();") Submit
+      button#nick-submit-btn.btn.btn-success.btn-large(style="margin-top:15px;", onclick="Foyer.hideLightbox();") Submit
