@@ -33,8 +33,6 @@ function addCardToUI( element, id, img, row, col, ui, set ) {
     element.on( 'mouseover', data, cardZoom );
     element.attr( "data-card-id", id );
     
-    console.log("Adding " + set.card_data[id].name + " to the card pool! Row " + row + ", Col " + col);
-        
     switch( ui ){
         case "pool" :
             element.dblclick( data, Sealed.addCardToMain );

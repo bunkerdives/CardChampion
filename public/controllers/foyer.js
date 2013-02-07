@@ -2,6 +2,8 @@ Foyer = {
     
     nickname : ''
     
+    , set : 'GTC'
+    
     , socket : null
     
     , init : function() {
@@ -10,27 +12,33 @@ Foyer = {
     
     , registerHandlers : function() {
         console.log("Registered foyer handlers!");
-        var data = { 'set' : 'LEA' };
-        $("#draft-button").click( data, Foyer.draftSet );
-        $("#select-sealed-button").click( data, Sealed.startSealed );
+        $("#draft-button").click( Foyer.draftSet );
+        $("#select-sealed-button").click( Sealed.startSealed );
 		$("#nick-submit-btn").click( Foyer.hideLightbox );
         
-        $(".set-tr").each( function () {
-            var tr = this;
-            tr.click( Foyer.selectSet );
+        $(".set-td").each( function () {
+            $(this).click( { 'set' : this.parentNode.id }, Foyer.selectSet );
         } );
+    }
+    
+    , selectSet : function(event) {
+        
+        var set = event.data.set;
+        
+        // unhighlight the last selected set; highlight the newly selected set
+        $( '#' + Foyer.set ).removeClass("success");
+        $( '#' + set ).addClass("success");
+        
+        Foyer.set = set;
+        
     }
     
     , draftSet : function(event) {
         
-        var set = event.data.set;
+        var set = Foyer.set;
     
         // connect a socket to the server
         var socket = io.connect('http://localhost');
-        
-        if( set != "GTC" ){
-            return;
-        }
         
 		// setup the socket callbacks to handle state messages from the server
         Foyer.setupSocketCallbacks( socket );

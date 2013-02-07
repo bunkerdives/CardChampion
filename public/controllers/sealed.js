@@ -43,7 +43,7 @@ Sealed = {
   
     , startSealed : function( event ){
         
-        var setName = event.data.set;
+        var setName = Foyer.set;
         var set = Sets.getSet( setName );
         
         showSealedInterface();
