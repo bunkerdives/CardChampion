@@ -1,5 +1,5 @@
 
-function showSealedInterface(data){
+function showSealedInterface( data ) {
         
 	// untoggle visibility of the lobby interface
   	$("#foyer").css( "display", "none" );
@@ -9,8 +9,10 @@ function showSealedInterface(data){
         
 }
     
-function adjustCardCounterUI( magnitude, type ){
+function adjustCardCounterUI( magnitude, type ) {
+    
     $( "#mainboard-total" ).html( (Sealed.numCardsInDeck) + "/40" );
+    
     if( type == "Creature" || type == "Artifact Creature" ){
         Sealed.numCreaturesInDeck += magnitude;
         $("#mainboard-creatures").html( "Creatures: " + (Sealed.numCreaturesInDeck) );
@@ -19,16 +21,19 @@ function adjustCardCounterUI( magnitude, type ){
         Sealed.numLandsInDeck += magnitude;
         $("#mainboard-lands").html( "Lands: " + (Sealed.numLandsInDeck) );
     }
+    
 }
     
-function addCardToUI( element, id, img, row, col, ui ){
-        
-    var data = { 'id' : id, 'row' : row, 'col' : col };
+function addCardToUI( element, id, img, row, col, ui, set ) {
+    
+    var data = { 'id' : id, 'row' : row, 'col' : col, 'set' : set };
+    
     element.css( "background-image", 'url(' + img + ')' );
     element.css( "z-index", row );
     element.on( 'mouseover', data, cardZoom );
-        
     element.attr( "data-card-id", id );
+    
+    console.log("Adding " + set.card_data[id].name + " to the card pool! Row " + row + ", Col " + col);
         
     switch( ui ){
         case "pool" :
@@ -67,7 +72,7 @@ function createNewPoolRow( rowIdx ) {
         
 }
     
-function createNewMainRow( rowIdx ){
+function createNewMainRow( rowIdx ) {
         
     var row = $('<div>').attr("id", "deck-area-row-" + rowIdx);
     row.addClass("card-pool-row");
@@ -84,11 +89,10 @@ function createNewMainRow( rowIdx ){
 }
     
 function cardZoom( event ) {
-        
     var id = event.data.id;
-    var img = GTC.card_data[ id ].img;
+    var set = event.data.set;
+    var img = Sealed.newMultiverseURL( set.card_data[ id ].multiverse );
     $("#img-preview").css( "background-image", 'url(' + img + ')' );
-        
 }
 
 function screenSize() {
@@ -174,8 +178,6 @@ function cardSizeInit(){
 	});
 
 }
-
-
 
 /*
 			Card size slider
@@ -285,12 +287,9 @@ function cardSizeChangeEnd() {
 		}
 	}
 }
-
 /*
 		Card size slider end
 */
-
-
 
 function resizeScreen() {
 	screenSize();
@@ -307,7 +306,3 @@ $(document).ready(function(){
 $(window).resize(function() {
 	resizeScreen();
 });
-
-
-
-

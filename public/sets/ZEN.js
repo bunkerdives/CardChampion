@@ -247,7 +247,9 @@ ZEN = {
             '158' : {
                     'name' : 'Cobra Trap'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '4GG'
+                    , 'cmc' : '6'
                     , 'multiverse' : '197535'
                     , 'type' : 'Instant  — Trap'
                     , 'pt' : ''
@@ -256,7 +258,9 @@ ZEN = {
                 , '175' : {
                     'name' : 'Rampaging Baloths'
                     , 'rarity' : 'M'
+                    , 'color' : 'G'
                     , 'cost' : '4GG'
+                    , 'cmc' : '6'
                     , 'multiverse' : '192222'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(6/6)'
@@ -265,7 +269,9 @@ ZEN = {
                 , '138' : {
                     'name' : 'Obsidian Fireheart'
                     , 'rarity' : 'M'
+                    , 'color' : 'R'
                     , 'cost' : '1RRR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '192224'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(4/4)'
@@ -274,7 +280,9 @@ ZEN = {
                 , '114' : {
                     'name' : 'Vampire Lacerator'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '192225'
                     , 'type' : 'Creature  — Vampire Warrior'
                     , 'pt' : '(2/2)'
@@ -283,7 +291,9 @@ ZEN = {
                 , '176' : {
                     'name' : 'Relic Crush'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '4G'
+                    , 'cmc' : '5'
                     , 'multiverse' : '178115'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -292,7 +302,9 @@ ZEN = {
                 , '110' : {
                     'name' : 'Sadistic Sacrament'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : 'BBB'
+                    , 'cmc' : '3'
                     , 'multiverse' : '195632'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -301,7 +313,9 @@ ZEN = {
                 , '23' : {
                     'name' : 'Kor Skyfisher'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '178145'
                     , 'type' : 'Creature  — Kor Soldier'
                     , 'pt' : '(2/3)'
@@ -310,7 +324,9 @@ ZEN = {
                 , '93' : {
                     'name' : 'Guul Draz Vampire'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '180498'
                     , 'type' : 'Creature  — Vampire Rogue'
                     , 'pt' : '(1/1)'
@@ -319,7 +335,9 @@ ZEN = {
                 , '204' : {
                     'name' : 'Stonework Puma'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '190397'
                     , 'type' : 'Artifact Creature  — Cat Ally'
                     , 'pt' : '(2/2)'
@@ -328,7 +346,9 @@ ZEN = {
                 , '60' : {
                     'name' : 'Reckless Scholar'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '180493'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(2/1)'
@@ -337,7 +357,9 @@ ZEN = {
                 , '137' : {
                     'name' : 'Murasa Pyromancer'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '4RR'
+                    , 'cmc' : '6'
                     , 'multiverse' : '195634'
                     , 'type' : 'Creature  — Human Shaman Ally'
                     , 'pt' : '(3/2)'
@@ -346,7 +368,9 @@ ZEN = {
                 , '171' : {
                     'name' : 'Oran-Rief Survivalist'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '178138'
                     , 'type' : 'Creature  — Human Warrior Ally'
                     , 'pt' : '(1/1)'
@@ -355,7 +379,9 @@ ZEN = {
                 , '33' : {
                     'name' : 'Quest for the Holy Relic'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '197406'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -364,7 +390,9 @@ ZEN = {
                 , '167' : {
                     'name' : 'Mold Shambler'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '183414'
                     , 'type' : 'Creature  — Fungus Beast'
                     , 'pt' : '(3/3)'
@@ -373,7 +401,9 @@ ZEN = {
                 , '57' : {
                     'name' : 'Mindbreak Trap'
                     , 'rarity' : 'M'
+                    , 'color' : 'U'
                     , 'cost' : '2UU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '197532'
                     , 'type' : 'Instant  — Trap'
                     , 'pt' : ''
@@ -382,7 +412,9 @@ ZEN = {
                 , '44' : {
                     'name' : 'Cancel'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1UU'
+                    , 'cmc' : '3'
                     , 'multiverse' : '189001'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -391,7 +423,9 @@ ZEN = {
                 , '198' : {
                     'name' : 'Expedition Map'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : '1'
+                    , 'cmc' : '1'
                     , 'multiverse' : '193405'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -400,7 +434,9 @@ ZEN = {
                 , '169' : {
                     'name' : 'Oracle of Mul Daya'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '185737'
                     , 'type' : 'Creature  — Elf Shaman'
                     , 'pt' : '(2/2)'
@@ -409,7 +445,9 @@ ZEN = {
                 , '35' : {
                     'name' : 'Shieldmate\'s Blessing'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '178119'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -418,7 +456,9 @@ ZEN = {
                 , '91' : {
                     'name' : 'Grim Discovery'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '180127'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -427,7 +467,9 @@ ZEN = {
                 , '231' : {
                     'name' : 'Forest'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '201962'
                     , 'type' : 'Basic Land  — Forest'
                     , 'pt' : ''
@@ -436,7 +478,9 @@ ZEN = {
                 , '229' : {
                     'name' : 'Swamp'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '201978'
                     , 'type' : 'Basic Land  — Swamp'
                     , 'pt' : ''
@@ -445,7 +489,9 @@ ZEN = {
                 , '163' : {
                     'name' : 'Harrow'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '180408'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -454,7 +500,9 @@ ZEN = {
                 , '52' : {
                     'name' : 'Living Tsunami'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2UU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '189636'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(4/4)'
@@ -463,7 +511,9 @@ ZEN = {
                 , '178' : {
                     'name' : 'Savage Silhouette'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '186316'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -472,7 +522,9 @@ ZEN = {
                 , '64' : {
                     'name' : 'Seascape Aerialist'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '4U'
+                    , 'cmc' : '5'
                     , 'multiverse' : '195631'
                     , 'type' : 'Creature  — Merfolk Wizard Ally'
                     , 'pt' : '(2/3)'
@@ -481,7 +533,9 @@ ZEN = {
                 , '12' : {
                     'name' : 'Felidar Sovereign'
                     , 'rarity' : 'M'
+                    , 'color' : 'W'
                     , 'cost' : '4WW'
+                    , 'cmc' : '6'
                     , 'multiverse' : '185743'
                     , 'type' : 'Creature  — Cat Beast'
                     , 'pt' : '(4/6)'
@@ -490,7 +544,9 @@ ZEN = {
                 , '150' : {
                     'name' : 'Tuktuk Grunts'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '4R'
+                    , 'cmc' : '5'
                     , 'multiverse' : '192229'
                     , 'type' : 'Creature  — Goblin Warrior Ally'
                     , 'pt' : '(2/2)'
@@ -499,7 +555,9 @@ ZEN = {
                 , '9' : {
                     'name' : 'Day of Judgment'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '2WW'
+                    , 'cmc' : '4'
                     , 'multiverse' : '186309'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -508,7 +566,9 @@ ZEN = {
                 , '183' : {
                     'name' : 'Tanglesap'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '191355'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -517,7 +577,9 @@ ZEN = {
                 , '218' : {
                     'name' : 'Oran-Rief, the Vastwood'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '190417'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -526,7 +588,9 @@ ZEN = {
                 , '153' : {
                     'name' : 'Zektar Shrine Expedition'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '183403'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -535,7 +599,9 @@ ZEN = {
                 , '168' : {
                     'name' : 'Nissa\'s Chosen'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'GG'
+                    , 'cmc' : '2'
                     , 'multiverse' : '185699'
                     , 'type' : 'Creature  — Elf Warrior'
                     , 'pt' : '(2/3)'
@@ -544,7 +610,9 @@ ZEN = {
                 , '70' : {
                     'name' : 'Spreading Seas'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '190405'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -553,7 +621,9 @@ ZEN = {
                 , '104' : {
                     'name' : 'Mire Blight'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '190401'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -562,7 +632,9 @@ ZEN = {
                 , '58' : {
                     'name' : 'Paralyzing Grasp'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '178109'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -571,7 +643,9 @@ ZEN = {
                 , '162' : {
                     'name' : 'Greenweaver Druid'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '185694'
                     , 'type' : 'Creature  — Elf Druid'
                     , 'pt' : '(1/1)'
@@ -580,7 +654,9 @@ ZEN = {
                 , '139' : {
                     'name' : 'Plated Geopede'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '170977'
                     , 'type' : 'Creature  — Insect'
                     , 'pt' : '(1/1)'
@@ -589,7 +665,9 @@ ZEN = {
                 , '211' : {
                     'name' : 'Graypelt Refuge'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '189631'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -598,7 +676,9 @@ ZEN = {
                 , '123' : {
                     'name' : 'Goblin Bushwhacker'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '177501'
                     , 'type' : 'Creature  — Goblin Warrior'
                     , 'pt' : '(1/1)'
@@ -607,7 +687,9 @@ ZEN = {
                 , '34' : {
                     'name' : 'Shepherd of the Lost'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '4W'
+                    , 'cmc' : '5'
                     , 'multiverse' : '193399'
                     , 'type' : 'Creature  — Angel'
                     , 'pt' : '(3/3)'
@@ -616,7 +698,9 @@ ZEN = {
                 , '32' : {
                     'name' : 'Pitfall Trap'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '197533'
                     , 'type' : 'Instant  — Trap'
                     , 'pt' : ''
@@ -625,7 +709,9 @@ ZEN = {
                 , '180' : {
                     'name' : 'Scythe Tiger'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '178113'
                     , 'type' : 'Creature  — Cat'
                     , 'pt' : '(3/2)'
@@ -634,7 +720,9 @@ ZEN = {
                 , '103' : {
                     'name' : 'Mindless Null'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '180415'
                     , 'type' : 'Creature  — Zombie'
                     , 'pt' : '(2/2)'
@@ -643,7 +731,9 @@ ZEN = {
                 , '99' : {
                     'name' : 'Kalitas, Bloodchief of Ghet'
                     , 'rarity' : 'M'
+                    , 'color' : 'B'
                     , 'cost' : '5BB'
+                    , 'cmc' : '7'
                     , 'multiverse' : '185704'
                     , 'type' : 'Legendary Creature  — Vampire Warrior'
                     , 'pt' : '(5/5)'
@@ -652,7 +742,9 @@ ZEN = {
                 , '19' : {
                     'name' : 'Kor Duelist'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '177542'
                     , 'type' : 'Creature  — Kor Soldier'
                     , 'pt' : '(1/1)'
@@ -661,7 +753,9 @@ ZEN = {
                 , '68' : {
                     'name' : 'Sphinx of Jwar Isle'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '4UU'
+                    , 'cmc' : '6'
                     , 'multiverse' : '185709'
                     , 'type' : 'Creature  — Sphinx'
                     , 'pt' : '(5/5)'
@@ -670,7 +764,9 @@ ZEN = {
                 , '159' : {
                     'name' : 'Frontier Guide'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '180361'
                     , 'type' : 'Creature  — Elf Scout'
                     , 'pt' : '(1/1)'
@@ -679,7 +775,9 @@ ZEN = {
                 , '106' : {
                     'name' : 'Nimana Sell-Sword'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '197403'
                     , 'type' : 'Creature  — Human Warrior Ally'
                     , 'pt' : '(2/2)'
@@ -688,7 +786,9 @@ ZEN = {
                 , '36' : {
                     'name' : 'Steppe Lynx'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '171012'
                     , 'type' : 'Creature  — Cat'
                     , 'pt' : '(0/1)'
@@ -697,7 +797,9 @@ ZEN = {
                 , '71' : {
                     'name' : 'Summoner\'s Bane'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2UU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '191360'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -706,7 +808,9 @@ ZEN = {
                 , '145' : {
                     'name' : 'Seismic Shudder'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '180134'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -715,7 +819,9 @@ ZEN = {
                 , '20' : {
                     'name' : 'Kor Hookmaster'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '178131'
                     , 'type' : 'Creature  — Kor Soldier'
                     , 'pt' : '(2/2)'
@@ -724,7 +830,9 @@ ZEN = {
                 , '184' : {
                     'name' : 'Terra Stomper'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '3GGG'
+                    , 'cmc' : '6'
                     , 'multiverse' : '186321'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(8/8)'
@@ -733,7 +841,9 @@ ZEN = {
                 , '142' : {
                     'name' : 'Quest for Pure Flame'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '197407'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -742,7 +852,9 @@ ZEN = {
                 , '95' : {
                     'name' : 'Hagra Diabolist'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '4B'
+                    , 'cmc' : '5'
                     , 'multiverse' : '197404'
                     , 'type' : 'Creature  — Ogre Shaman Ally'
                     , 'pt' : '(3/2)'
@@ -751,7 +863,9 @@ ZEN = {
                 , '81' : {
                     'name' : 'Blood Tribute'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '4BB'
+                    , 'cmc' : '6'
                     , 'multiverse' : '170995'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -760,7 +874,9 @@ ZEN = {
                 , '148' : {
                     'name' : 'Spire Barrage'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '4R'
+                    , 'cmc' : '5'
                     , 'multiverse' : '180495'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -769,7 +885,9 @@ ZEN = {
                 , '4' : {
                     'name' : 'Brave the Elements'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '185734'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -778,7 +896,9 @@ ZEN = {
                 , '172' : {
                     'name' : 'Predatory Urge'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '169958'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -787,7 +907,9 @@ ZEN = {
                 , '190' : {
                     'name' : 'Vines of Vastwood'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '177571'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -796,7 +918,9 @@ ZEN = {
                 , '90' : {
                     'name' : 'Giant Scorpion'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '192226'
                     , 'type' : 'Creature  — Scorpion'
                     , 'pt' : '(1/3)'
@@ -805,7 +929,9 @@ ZEN = {
                 , '82' : {
                     'name' : 'Bloodchief Ascension'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '197892'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -814,7 +940,9 @@ ZEN = {
                 , '74' : {
                     'name' : 'Trapmaker\'s Snare'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '192223'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -823,7 +951,9 @@ ZEN = {
                 , '21' : {
                     'name' : 'Kor Outfitter'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : 'WW'
+                    , 'cmc' : '2'
                     , 'multiverse' : '189637'
                     , 'type' : 'Creature  — Kor Soldier'
                     , 'pt' : '(2/2)'
@@ -832,7 +962,9 @@ ZEN = {
                 , '143' : {
                     'name' : 'Ruinous Minotaur'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1RR'
+                    , 'cmc' : '3'
                     , 'multiverse' : '189624'
                     , 'type' : 'Creature  — Minotaur Warrior'
                     , 'pt' : '(5/2)'
@@ -841,7 +973,9 @@ ZEN = {
                 , '212' : {
                     'name' : 'Jwar Isle Refuge'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '189627'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -850,7 +984,9 @@ ZEN = {
                 , '208' : {
                     'name' : 'Arid Mesa'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '177584'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -859,7 +995,9 @@ ZEN = {
                 , '13' : {
                     'name' : 'Iona, Shield of Emeria'
                     , 'rarity' : 'M'
+                    , 'color' : 'W'
                     , 'cost' : '6WWW'
+                    , 'cmc' : '9'
                     , 'multiverse' : '190407'
                     , 'type' : 'Legendary Creature  — Angel'
                     , 'pt' : '(7/7)'
@@ -868,7 +1006,9 @@ ZEN = {
                 , '207' : {
                     'name' : 'Akoum Refuge'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '189638'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -877,7 +1017,9 @@ ZEN = {
                 , '156' : {
                     'name' : 'Beast Hunt'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '185703'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -886,7 +1028,9 @@ ZEN = {
                 , '97' : {
                     'name' : 'Heartstabber Mosquito'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '191361'
                     , 'type' : 'Creature  — Insect'
                     , 'pt' : '(2/2)'
@@ -895,7 +1039,9 @@ ZEN = {
                 , '215' : {
                     'name' : 'Magosi, the Waterveil'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '190412'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -904,7 +1050,9 @@ ZEN = {
                 , '135' : {
                     'name' : 'Mark of Mutiny'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '186324'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -913,7 +1061,9 @@ ZEN = {
                 , '18' : {
                     'name' : 'Kor Cartographer'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '170991'
                     , 'type' : 'Creature  — Kor Scout'
                     , 'pt' : '(2/2)'
@@ -922,7 +1072,9 @@ ZEN = {
                 , '132' : {
                     'name' : 'Kazuul Warlord'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '4R'
+                    , 'cmc' : '5'
                     , 'multiverse' : '190408'
                     , 'type' : 'Creature  — Minotaur Warrior Ally'
                     , 'pt' : '(3/3)'
@@ -931,7 +1083,9 @@ ZEN = {
                 , '43' : {
                     'name' : 'Caller of Gales'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '183417'
                     , 'type' : 'Creature  — Merfolk Wizard'
                     , 'pt' : '(1/1)'
@@ -940,7 +1094,9 @@ ZEN = {
                 , '199' : {
                     'name' : 'Explorer\'s Scope'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : '1'
+                    , 'cmc' : '1'
                     , 'multiverse' : '190396'
                     , 'type' : 'Artifact  — Equipment'
                     , 'pt' : ''
@@ -949,7 +1105,9 @@ ZEN = {
                 , '6' : {
                     'name' : 'Celestial Mantle'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '3WWW'
+                    , 'cmc' : '6'
                     , 'multiverse' : '198524'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -958,7 +1116,9 @@ ZEN = {
                 , '115' : {
                     'name' : 'Vampire Nighthawk'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1BB'
+                    , 'cmc' : '3'
                     , 'multiverse' : '185707'
                     , 'type' : 'Creature  — Vampire Shaman'
                     , 'pt' : '(2/3)'
@@ -967,7 +1127,9 @@ ZEN = {
                 , '8' : {
                     'name' : 'Conqueror\'s Pledge'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '2WWW'
+                    , 'cmc' : '5'
                     , 'multiverse' : '195626'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -976,7 +1138,9 @@ ZEN = {
                 , '170' : {
                     'name' : 'Oran-Rief Recluse'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '185696'
                     , 'type' : 'Creature  — Spider'
                     , 'pt' : '(1/3)'
@@ -985,7 +1149,9 @@ ZEN = {
                 , '16' : {
                     'name' : 'Kazandu Blademaster'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : 'WW'
+                    , 'cmc' : '2'
                     , 'multiverse' : '191356'
                     , 'type' : 'Creature  — Human Soldier Ally'
                     , 'pt' : '(1/1)'
@@ -994,7 +1160,9 @@ ZEN = {
                 , '46' : {
                     'name' : 'Gomazoa'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '198523'
                     , 'type' : 'Creature  — Jellyfish'
                     , 'pt' : '(0/3)'
@@ -1003,7 +1171,9 @@ ZEN = {
                 , '147' : {
                     'name' : 'Slaughter Cry'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '178136'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1012,7 +1182,9 @@ ZEN = {
                 , '225' : {
                     'name' : 'Valakut, the Molten Pinnacle'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '190400'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1021,7 +1193,9 @@ ZEN = {
                 , '185' : {
                     'name' : 'Territorial Baloth'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '4G'
+                    , 'cmc' : '5'
                     , 'multiverse' : '170971'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(4/4)'
@@ -1030,7 +1204,9 @@ ZEN = {
                 , '77' : {
                     'name' : 'Whiplash Trap'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '3UU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '197526'
                     , 'type' : 'Instant  — Trap'
                     , 'pt' : ''
@@ -1039,7 +1215,9 @@ ZEN = {
                 , '75' : {
                     'name' : 'Umara Raptor'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '180447'
                     , 'type' : 'Creature  — Bird Ally'
                     , 'pt' : '(1/1)'
@@ -1048,7 +1226,9 @@ ZEN = {
                 , '149' : {
                     'name' : 'Torch Slinger'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '180423'
                     , 'type' : 'Creature  — Goblin Shaman'
                     , 'pt' : '(2/2)'
@@ -1057,7 +1237,9 @@ ZEN = {
                 , '196' : {
                     'name' : 'Eldrazi Monument'
                     , 'rarity' : 'M'
+                    , 'color' : 'A'
                     , 'cost' : '5'
+                    , 'cmc' : '5'
                     , 'multiverse' : '193398'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1066,7 +1248,9 @@ ZEN = {
                 , '51' : {
                     'name' : 'Lethargy Trap'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '197534'
                     , 'type' : 'Instant  — Trap'
                     , 'pt' : ''
@@ -1075,7 +1259,9 @@ ZEN = {
                 , '187' : {
                     'name' : 'Turntimber Basilisk'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '1GG'
+                    , 'cmc' : '3'
                     , 'multiverse' : '178140'
                     , 'type' : 'Creature  — Basilisk'
                     , 'pt' : '(2/1)'
@@ -1084,7 +1270,9 @@ ZEN = {
                 , '73' : {
                     'name' : 'Trapfinder\'s Trick'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '192212'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1093,7 +1281,9 @@ ZEN = {
                 , '10' : {
                     'name' : 'Devout Lightcaster'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : 'WWW'
+                    , 'cmc' : '3'
                     , 'multiverse' : '191374'
                     , 'type' : 'Creature  — Kor Cleric'
                     , 'pt' : '(2/2)'
@@ -1102,7 +1292,9 @@ ZEN = {
                 , '117' : {
                     'name' : 'Bladetusk Boar'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '180350'
                     , 'type' : 'Creature  — Boar'
                     , 'pt' : '(3/2)'
@@ -1111,7 +1303,9 @@ ZEN = {
                 , '108' : {
                     'name' : 'Quest for the Gravelord'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '180448'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1120,7 +1314,9 @@ ZEN = {
                 , '39' : {
                     'name' : 'World Queller'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '3WW'
+                    , 'cmc' : '5'
                     , 'multiverse' : '191376'
                     , 'type' : 'Creature  — Avatar'
                     , 'pt' : '(4/4)'
@@ -1129,7 +1325,9 @@ ZEN = {
                 , '53' : {
                     'name' : 'Lorthos, the Tidemaker'
                     , 'rarity' : 'M'
+                    , 'color' : 'U'
                     , 'cost' : '5UUU'
+                    , 'cmc' : '8'
                     , 'multiverse' : '191369'
                     , 'type' : 'Legendary Creature  — Octopus'
                     , 'pt' : '(8/8)'
@@ -1138,7 +1336,9 @@ ZEN = {
                 , '210' : {
                     'name' : 'Emeria, the Sky Ruin'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '190414'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1147,7 +1347,9 @@ ZEN = {
                 , '127' : {
                     'name' : 'Goblin War Paint'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '185701'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1156,7 +1358,9 @@ ZEN = {
                 , '124' : {
                     'name' : 'Goblin Guide'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '170987'
                     , 'type' : 'Creature  — Goblin Scout'
                     , 'pt' : '(2/2)'
@@ -1165,7 +1369,9 @@ ZEN = {
                 , '121' : {
                     'name' : 'Elemental Appeal'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : 'RRRR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '192221'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1174,7 +1380,9 @@ ZEN = {
                 , '177' : {
                     'name' : 'River Boa'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '197405'
                     , 'type' : 'Creature  — Snake'
                     , 'pt' : '(2/1)'
@@ -1183,7 +1391,9 @@ ZEN = {
                 , '113' : {
                     'name' : 'Vampire Hexmage'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : 'BB'
+                    , 'cmc' : '2'
                     , 'multiverse' : '192232'
                     , 'type' : 'Creature  — Vampire Shaman'
                     , 'pt' : '(2/1)'
@@ -1192,7 +1402,9 @@ ZEN = {
                 , '164' : {
                     'name' : 'Joraga Bard'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '192227'
                     , 'type' : 'Creature  — Elf Rogue Ally'
                     , 'pt' : '(1/4)'
@@ -1201,7 +1413,9 @@ ZEN = {
                 , '173' : {
                     'name' : 'Primal Bellow'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '193407'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1210,7 +1424,9 @@ ZEN = {
                 , '188' : {
                     'name' : 'Turntimber Ranger'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '3GG'
+                    , 'cmc' : '5'
                     , 'multiverse' : '169971'
                     , 'type' : 'Creature  — Elf Scout Ally'
                     , 'pt' : '(2/2)'
@@ -1219,7 +1435,9 @@ ZEN = {
                 , '222' : {
                     'name' : 'Soaring Seacliff'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '177541'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1228,7 +1446,9 @@ ZEN = {
                 , '65' : {
                     'name' : 'Shoal Serpent'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '5U'
+                    , 'cmc' : '6'
                     , 'multiverse' : '177517'
                     , 'type' : 'Creature  — Serpent'
                     , 'pt' : '(5/5)'
@@ -1237,7 +1457,9 @@ ZEN = {
                 , '50' : {
                     'name' : 'Kraken Hatchling'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '177585'
                     , 'type' : 'Creature  — Kraken'
                     , 'pt' : '(0/4)'
@@ -1246,7 +1468,9 @@ ZEN = {
                 , '182' : {
                     'name' : 'Tajuru Archer'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '180457'
                     , 'type' : 'Creature  — Elf Archer Ally'
                     , 'pt' : '(1/2)'
@@ -1255,7 +1479,9 @@ ZEN = {
                 , '155' : {
                     'name' : 'Baloth Woodcrasher'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '4GG'
+                    , 'cmc' : '6'
                     , 'multiverse' : '192231'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(4/4)'
@@ -1264,7 +1490,9 @@ ZEN = {
                 , '84' : {
                     'name' : 'Bog Tatters'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '4B'
+                    , 'cmc' : '5'
                     , 'multiverse' : '177500'
                     , 'type' : 'Creature  — Wraith'
                     , 'pt' : '(4/2)'
@@ -1273,7 +1501,9 @@ ZEN = {
                 , '66' : {
                     'name' : 'Sky Ruin Drake'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '4U'
+                    , 'cmc' : '5'
                     , 'multiverse' : '192211'
                     , 'type' : 'Creature  — Drake'
                     , 'pt' : '(2/5)'
@@ -1282,7 +1512,9 @@ ZEN = {
                 , '224' : {
                     'name' : 'Turntimber Grove'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '169977'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1291,7 +1523,9 @@ ZEN = {
                 , '131' : {
                     'name' : 'Inferno Trap'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '197530'
                     , 'type' : 'Instant  — Trap'
                     , 'pt' : ''
@@ -1300,7 +1534,9 @@ ZEN = {
                 , '118' : {
                     'name' : 'Burst Lightning'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '177558'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1309,7 +1545,9 @@ ZEN = {
                 , '7' : {
                     'name' : 'Cliff Threader'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '177546'
                     , 'type' : 'Creature  — Kor Scout'
                     , 'pt' : '(2/1)'
@@ -1318,7 +1556,9 @@ ZEN = {
                 , '63' : {
                     'name' : 'Sea Gate Loremaster'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '4U'
+                    , 'cmc' : '5'
                     , 'multiverse' : '195629'
                     , 'type' : 'Creature  — Merfolk Wizard Ally'
                     , 'pt' : '(1/3)'
@@ -1327,7 +1567,9 @@ ZEN = {
                 , '197' : {
                     'name' : 'Eternity Vessel'
                     , 'rarity' : 'M'
+                    , 'color' : 'A'
                     , 'cost' : '6'
+                    , 'cmc' : '6'
                     , 'multiverse' : '189006'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1336,7 +1578,9 @@ ZEN = {
                 , '79' : {
                     'name' : 'Bala Ged Thief'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '197402'
                     , 'type' : 'Creature  — Human Rogue Ally'
                     , 'pt' : '(2/2)'
@@ -1345,7 +1589,9 @@ ZEN = {
                 , '107' : {
                     'name' : 'Ob Nixilis, the Fallen'
                     , 'rarity' : 'M'
+                    , 'color' : 'B'
                     , 'cost' : '3BB'
+                    , 'cmc' : '5'
                     , 'multiverse' : '192219'
                     , 'type' : 'Legendary Creature  — Demon'
                     , 'pt' : '(3/3)'
@@ -1354,7 +1600,9 @@ ZEN = {
                 , '154' : {
                     'name' : 'Baloth Cage Trap'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '3GG'
+                    , 'cmc' : '5'
                     , 'multiverse' : '197531'
                     , 'type' : 'Instant  — Trap'
                     , 'pt' : ''
@@ -1363,7 +1611,9 @@ ZEN = {
                 , '72' : {
                     'name' : 'Tempest Owl'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '180482'
                     , 'type' : 'Creature  — Bird'
                     , 'pt' : '(1/2)'
@@ -1372,7 +1622,9 @@ ZEN = {
                 , '47' : {
                     'name' : 'Hedron Crab'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '180348'
                     , 'type' : 'Creature  — Crab'
                     , 'pt' : '(0/2)'
@@ -1381,7 +1633,9 @@ ZEN = {
                 , '141' : {
                     'name' : 'Pyromancer Ascension'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '197891'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1390,7 +1644,9 @@ ZEN = {
                 , '152' : {
                     'name' : 'Warren Instigator'
                     , 'rarity' : 'M'
+                    , 'color' : 'R'
                     , 'cost' : 'RR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '191368'
                     , 'type' : 'Creature  — Goblin Berserker'
                     , 'pt' : '(1/1)'
@@ -1399,7 +1655,9 @@ ZEN = {
                 , '87' : {
                     'name' : 'Disfigure'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '180115'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1408,7 +1666,9 @@ ZEN = {
                 , '230' : {
                     'name' : 'Mountain'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '201967'
                     , 'type' : 'Basic Land  — Mountain'
                     , 'pt' : ''
@@ -1417,7 +1677,9 @@ ZEN = {
                 , '22' : {
                     'name' : 'Kor Sanctifiers'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '192214'
                     , 'type' : 'Creature  — Kor Cleric'
                     , 'pt' : '(2/3)'
@@ -1426,7 +1688,9 @@ ZEN = {
                 , '193' : {
                     'name' : 'Blade of the Bloodchief'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '1'
+                    , 'cmc' : '1'
                     , 'multiverse' : '193397'
                     , 'type' : 'Artifact  — Equipment'
                     , 'pt' : ''
@@ -1435,7 +1699,9 @@ ZEN = {
                 , '214' : {
                     'name' : 'Kazandu Refuge'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '189635'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1444,7 +1710,9 @@ ZEN = {
                 , '129' : {
                     'name' : 'Hellkite Charger'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '4RR'
+                    , 'cmc' : '6'
                     , 'multiverse' : '185727'
                     , 'type' : 'Creature  — Dragon'
                     , 'pt' : '(5/5)'
@@ -1453,7 +1721,9 @@ ZEN = {
                 , '206' : {
                     'name' : 'Trusty Machete'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '1'
+                    , 'cmc' : '1'
                     , 'multiverse' : '193396'
                     , 'type' : 'Artifact  — Equipment'
                     , 'pt' : ''
@@ -1462,7 +1732,9 @@ ZEN = {
                 , '2' : {
                     'name' : 'Arrow Volley Trap'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '3WW'
+                    , 'cmc' : '5'
                     , 'multiverse' : '193404'
                     , 'type' : 'Instant  — Trap'
                     , 'pt' : ''
@@ -1471,7 +1743,9 @@ ZEN = {
                 , '203' : {
                     'name' : 'Spidersilk Net'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : '0'
+                    , 'cmc' : '0'
                     , 'multiverse' : '178134'
                     , 'type' : 'Artifact  — Equipment'
                     , 'pt' : ''
@@ -1480,7 +1754,9 @@ ZEN = {
                 , '202' : {
                     'name' : 'Khalni Gem'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '198519'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1489,7 +1765,9 @@ ZEN = {
                 , '45' : {
                     'name' : 'Cosi\'s Trickster'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '186322'
                     , 'type' : 'Creature  — Merfolk Wizard'
                     , 'pt' : '(1/1)'
@@ -1498,7 +1776,9 @@ ZEN = {
                 , '157' : {
                     'name' : 'Beastmaster Ascension'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '197890'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1507,7 +1787,9 @@ ZEN = {
                 , '220' : {
                     'name' : 'Scalding Tarn'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '190393'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1516,7 +1798,9 @@ ZEN = {
                 , '130' : {
                     'name' : 'Highland Berserker'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '180467'
                     , 'type' : 'Creature  — Human Berserker Ally'
                     , 'pt' : '(2/1)'
@@ -1525,7 +1809,9 @@ ZEN = {
                 , '161' : {
                     'name' : 'Grazing Gladehart'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '189621'
                     , 'type' : 'Creature  — Antelope'
                     , 'pt' : '(2/2)'
@@ -1534,7 +1820,9 @@ ZEN = {
                 , '227' : {
                     'name' : 'Plains'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '201972'
                     , 'type' : 'Basic Land  — Plains'
                     , 'pt' : ''
@@ -1543,7 +1831,9 @@ ZEN = {
                 , '96' : {
                     'name' : 'Halo Hunter'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '2BBB'
+                    , 'cmc' : '5'
                     , 'multiverse' : '185752'
                     , 'type' : 'Creature  — Demon'
                     , 'pt' : '(6/3)'
@@ -1552,7 +1842,9 @@ ZEN = {
                 , '48' : {
                     'name' : 'Into the Roil'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '178151'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1561,7 +1853,9 @@ ZEN = {
                 , '5' : {
                     'name' : 'Caravan Hurda'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '4W'
+                    , 'cmc' : '5'
                     , 'multiverse' : '185697'
                     , 'type' : 'Creature  — Giant'
                     , 'pt' : '(1/5)'
@@ -1570,7 +1864,9 @@ ZEN = {
                 , '125' : {
                     'name' : 'Goblin Ruinblaster'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '180411'
                     , 'type' : 'Creature  — Goblin Shaman'
                     , 'pt' : '(2/1)'
@@ -1579,7 +1875,9 @@ ZEN = {
                 , '11' : {
                     'name' : 'Emeria Angel'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '2WW'
+                    , 'cmc' : '4'
                     , 'multiverse' : '190399'
                     , 'type' : 'Creature  — Angel'
                     , 'pt' : '(3/3)'
@@ -1588,7 +1886,9 @@ ZEN = {
                 , '112' : {
                     'name' : 'Surrakar Marauder'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '180465'
                     , 'type' : 'Creature  — Surrakar'
                     , 'pt' : '(2/1)'
@@ -1597,7 +1897,9 @@ ZEN = {
                 , '179' : {
                     'name' : 'Scute Mob'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '180455'
                     , 'type' : 'Creature  — Insect'
                     , 'pt' : '(1/1)'
@@ -1606,7 +1908,9 @@ ZEN = {
                 , '59' : {
                     'name' : 'Quest for Ancient Secrets'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '195635'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1615,7 +1919,9 @@ ZEN = {
                 , '200' : {
                     'name' : 'Grappling Hook'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '192220'
                     , 'type' : 'Artifact  — Equipment'
                     , 'pt' : ''
@@ -1624,7 +1930,9 @@ ZEN = {
                 , '174' : {
                     'name' : 'Quest for the Gemblades'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '195572'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1633,7 +1941,9 @@ ZEN = {
                 , '128' : {
                     'name' : 'Hellfire Mongrel'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '192215'
                     , 'type' : 'Creature  — Elemental Hound'
                     , 'pt' : '(2/2)'
@@ -1642,7 +1952,9 @@ ZEN = {
                 , '209' : {
                     'name' : 'Crypt of Agadeem'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '190394'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1651,7 +1963,9 @@ ZEN = {
                 , '61' : {
                     'name' : 'Rite of Replication'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '2UU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '195630'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1660,7 +1974,9 @@ ZEN = {
                 , '94' : {
                     'name' : 'Hagra Crocodile'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '170998'
                     , 'type' : 'Creature  — Crocodile'
                     , 'pt' : '(3/1)'
@@ -1669,7 +1985,9 @@ ZEN = {
                 , '201' : {
                     'name' : 'Hedron Scrabbler'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '193394'
                     , 'type' : 'Artifact Creature  — Construct'
                     , 'pt' : '(1/1)'
@@ -1678,7 +1996,9 @@ ZEN = {
                 , '30' : {
                     'name' : 'Ondu Cleric'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '192210'
                     , 'type' : 'Creature  — Kor Cleric Ally'
                     , 'pt' : '(1/1)'
@@ -1687,7 +2007,9 @@ ZEN = {
                 , '116' : {
                     'name' : 'Vampire\'s Bite'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '178150'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1696,7 +2018,9 @@ ZEN = {
                 , '133' : {
                     'name' : 'Lavaball Trap'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '6RR'
+                    , 'cmc' : '8'
                     , 'multiverse' : '197528'
                     , 'type' : 'Instant  — Trap'
                     , 'pt' : ''
@@ -1705,7 +2029,9 @@ ZEN = {
                 , '38' : {
                     'name' : 'Windborne Charge'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '2WW'
+                    , 'cmc' : '4'
                     , 'multiverse' : '190418'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1714,7 +2040,9 @@ ZEN = {
                 , '213' : {
                     'name' : 'Kabira Crossroads'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '169963'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1723,7 +2051,9 @@ ZEN = {
                 , '41' : {
                     'name' : 'Archive Trap'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '3UU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '197538'
                     , 'type' : 'Instant  — Trap'
                     , 'pt' : ''
@@ -1732,7 +2062,9 @@ ZEN = {
                 , '92' : {
                     'name' : 'Guul Draz Specter'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '2BB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '183418'
                     , 'type' : 'Creature  — Specter'
                     , 'pt' : '(2/2)'
@@ -1741,7 +2073,9 @@ ZEN = {
                 , '86' : {
                     'name' : 'Desecrated Earth'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '4B'
+                    , 'cmc' : '5'
                     , 'multiverse' : '178137'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1750,7 +2084,9 @@ ZEN = {
                 , '101' : {
                     'name' : 'Marsh Casualties'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : 'BB'
+                    , 'cmc' : '2'
                     , 'multiverse' : '177543'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1759,7 +2095,9 @@ ZEN = {
                 , '146' : {
                     'name' : 'Shatterskull Giant'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '180505'
                     , 'type' : 'Creature  — Giant Warrior'
                     , 'pt' : '(4/3)'
@@ -1768,7 +2106,9 @@ ZEN = {
                 , '192' : {
                     'name' : 'Adventuring Gear'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : '1'
+                    , 'cmc' : '1'
                     , 'multiverse' : '178135'
                     , 'type' : 'Artifact  — Equipment'
                     , 'pt' : ''
@@ -1777,7 +2117,9 @@ ZEN = {
                 , '42' : {
                     'name' : 'Archmage Ascension'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '197893'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1786,7 +2128,9 @@ ZEN = {
                 , '111' : {
                     'name' : 'Soul Stair Expedition'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '177586'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1795,7 +2139,9 @@ ZEN = {
                 , '76' : {
                     'name' : 'Welkin Tern'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '191353'
                     , 'type' : 'Creature  — Bird'
                     , 'pt' : '(2/1)'
@@ -1804,7 +2150,9 @@ ZEN = {
                 , '89' : {
                     'name' : 'Gatekeeper of Malakir'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : 'BB'
+                    , 'cmc' : '2'
                     , 'multiverse' : '185698'
                     , 'type' : 'Creature  — Vampire Warrior'
                     , 'pt' : '(2/2)'
@@ -1813,7 +2161,9 @@ ZEN = {
                 , '217' : {
                     'name' : 'Misty Rainforest'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '190413'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1822,7 +2172,9 @@ ZEN = {
                 , '166' : {
                     'name' : 'Lotus Cobra'
                     , 'rarity' : 'M'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '185749'
                     , 'type' : 'Creature  — Snake'
                     , 'pt' : '(2/1)'
@@ -1831,7 +2183,9 @@ ZEN = {
                 , '223' : {
                     'name' : 'Teetering Peaks'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '177549'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1840,7 +2194,9 @@ ZEN = {
                 , '219' : {
                     'name' : 'Piranha Marsh'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '169975'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1849,7 +2205,9 @@ ZEN = {
                 , '24' : {
                     'name' : 'Landbind Ritual'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '3WW'
+                    , 'cmc' : '5'
                     , 'multiverse' : '188999'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1858,7 +2216,9 @@ ZEN = {
                 , '151' : {
                     'name' : 'Unstable Footing'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '192209'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1867,7 +2227,9 @@ ZEN = {
                 , '17' : {
                     'name' : 'Kor Aeronaut'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : 'WW'
+                    , 'cmc' : '2'
                     , 'multiverse' : '177530'
                     , 'type' : 'Creature  — Kor Soldier'
                     , 'pt' : '(2/2)'
@@ -1876,7 +2238,9 @@ ZEN = {
                 , '122' : {
                     'name' : 'Geyser Glider'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '3RR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '197887'
                     , 'type' : 'Creature  — Elemental Beast'
                     , 'pt' : '(4/4)'
@@ -1885,7 +2249,9 @@ ZEN = {
                 , '194' : {
                     'name' : 'Blazing Torch'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '1'
+                    , 'cmc' : '1'
                     , 'multiverse' : '191372'
                     , 'type' : 'Artifact  — Equipment'
                     , 'pt' : ''
@@ -1894,7 +2260,9 @@ ZEN = {
                 , '80' : {
                     'name' : 'Blood Seeker'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '180362'
                     , 'type' : 'Creature  — Vampire Shaman'
                     , 'pt' : '(1/1)'
@@ -1903,7 +2271,9 @@ ZEN = {
                 , '195' : {
                     'name' : 'Carnage Altar'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '193406'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1912,7 +2282,9 @@ ZEN = {
                 , '144' : {
                     'name' : 'Runeflare Trap'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '4RR'
+                    , 'cmc' : '6'
                     , 'multiverse' : '197536'
                     , 'type' : 'Instant  — Trap'
                     , 'pt' : ''
@@ -1921,7 +2293,9 @@ ZEN = {
                 , '62' : {
                     'name' : 'Roil Elemental'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '3UUU'
+                    , 'cmc' : '6'
                     , 'multiverse' : '185712'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(3/2)'
@@ -1930,7 +2304,9 @@ ZEN = {
                 , '191' : {
                     'name' : 'Zendikar Farguide'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '4G'
+                    , 'cmc' : '5'
                     , 'multiverse' : '189620'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(3/3)'
@@ -1939,7 +2315,9 @@ ZEN = {
                 , '37' : {
                     'name' : 'Sunspring Expedition'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '177551'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1948,7 +2326,9 @@ ZEN = {
                 , '69' : {
                     'name' : 'Sphinx of Lost Truths'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '3UU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '185751'
                     , 'type' : 'Creature  — Sphinx'
                     , 'pt' : '(3/5)'
@@ -1957,7 +2337,9 @@ ZEN = {
                 , '85' : {
                     'name' : 'Crypt Ripper'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2BB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '178121'
                     , 'type' : 'Creature  — Shade'
                     , 'pt' : '(2/2)'
@@ -1966,7 +2348,9 @@ ZEN = {
                 , '181' : {
                     'name' : 'Summoning Trap'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '4GG'
+                    , 'cmc' : '6'
                     , 'multiverse' : '197527'
                     , 'type' : 'Instant  — Trap'
                     , 'pt' : ''
@@ -1975,7 +2359,9 @@ ZEN = {
                 , '67' : {
                     'name' : 'Spell Pierce'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '178144'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1984,7 +2370,9 @@ ZEN = {
                 , '109' : {
                     'name' : 'Ravenous Trap'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '2BB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '197537'
                     , 'type' : 'Instant  — Trap'
                     , 'pt' : ''
@@ -1993,7 +2381,9 @@ ZEN = {
                 , '134' : {
                     'name' : 'Magma Rift'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '180352'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2002,7 +2392,9 @@ ZEN = {
                 , '98' : {
                     'name' : 'Hideous End'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1BB'
+                    , 'cmc' : '3'
                     , 'multiverse' : '180435'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2011,7 +2403,9 @@ ZEN = {
                 , '102' : {
                     'name' : 'Mind Sludge'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '4B'
+                    , 'cmc' : '5'
                     , 'multiverse' : '193403'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2020,7 +2414,9 @@ ZEN = {
                 , '31' : {
                     'name' : 'Pillarfield Ox'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '190395'
                     , 'type' : 'Creature  — Ox'
                     , 'pt' : '(2/4)'
@@ -2029,7 +2425,9 @@ ZEN = {
                 , '100' : {
                     'name' : 'Malakir Bloodwitch'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '3BB'
+                    , 'cmc' : '5'
                     , 'multiverse' : '190398'
                     , 'type' : 'Creature  — Vampire Shaman'
                     , 'pt' : '(4/4)'
@@ -2038,7 +2436,9 @@ ZEN = {
                 , '40' : {
                     'name' : '�ther Figment'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '170993'
                     , 'type' : 'Creature  — Illusion'
                     , 'pt' : '(1/1)'
@@ -2047,7 +2447,9 @@ ZEN = {
                 , '165' : {
                     'name' : 'Khalni Heart Expedition'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '186320'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2056,7 +2458,9 @@ ZEN = {
                 , '88' : {
                     'name' : 'Feast of Blood'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '189629'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2065,7 +2469,9 @@ ZEN = {
                 , '126' : {
                     'name' : 'Goblin Shortcutter'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '180473'
                     , 'type' : 'Creature  — Goblin Scout'
                     , 'pt' : '(2/1)'
@@ -2074,7 +2480,9 @@ ZEN = {
                 , '221' : {
                     'name' : 'Sejiri Refuge'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '189626'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -2083,7 +2491,9 @@ ZEN = {
                 , '1' : {
                     'name' : 'Armament Master'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : 'WW'
+                    , 'cmc' : '2'
                     , 'multiverse' : '190420'
                     , 'type' : 'Creature  — Kor Soldier'
                     , 'pt' : '(2/2)'
@@ -2092,7 +2502,9 @@ ZEN = {
                 , '28' : {
                     'name' : 'Nimbus Wings'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '180346'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2101,7 +2513,9 @@ ZEN = {
                 , '226' : {
                     'name' : 'Verdant Catacombs'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '193400'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -2110,7 +2524,9 @@ ZEN = {
                 , '56' : {
                     'name' : 'Merfolk Wayfinder'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '170978'
                     , 'type' : 'Creature  — Merfolk Scout'
                     , 'pt' : '(1/2)'
@@ -2119,7 +2535,9 @@ ZEN = {
                 , '140' : {
                     'name' : 'Punishing Fire'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '192217'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2128,7 +2546,9 @@ ZEN = {
                 , '54' : {
                     'name' : 'Lullmage Mentor'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '1UU'
+                    , 'cmc' : '3'
                     , 'multiverse' : '190404'
                     , 'type' : 'Creature  — Merfolk Wizard'
                     , 'pt' : '(2/2)'
@@ -2137,7 +2557,9 @@ ZEN = {
                 , '216' : {
                     'name' : 'Marsh Flats'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '191371'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -2146,7 +2568,9 @@ ZEN = {
                 , '186' : {
                     'name' : 'Timbermaw Larva'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '180458'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(2/2)'
@@ -2155,7 +2579,9 @@ ZEN = {
                 , '78' : {
                     'name' : 'Windrider Eel'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '170982'
                     , 'type' : 'Creature  — Fish'
                     , 'pt' : '(2/2)'
@@ -2164,7 +2590,9 @@ ZEN = {
                 , '105' : {
                     'name' : 'Needlebite Trap'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '5BB'
+                    , 'cmc' : '7'
                     , 'multiverse' : '197529'
                     , 'type' : 'Instant  — Trap'
                     , 'pt' : ''
@@ -2173,7 +2601,9 @@ ZEN = {
                 , '49' : {
                     'name' : 'Ior Ruin Expedition'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '185711'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2182,7 +2612,9 @@ ZEN = {
                 , '189' : {
                     'name' : 'Vastwood Gorger'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '5G'
+                    , 'cmc' : '6'
                     , 'multiverse' : '180454'
                     , 'type' : 'Creature  — Wurm'
                     , 'pt' : '(5/6)'
@@ -2191,7 +2623,9 @@ ZEN = {
                 , '160' : {
                     'name' : 'Gigantiform'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '3GG'
+                    , 'cmc' : '5'
                     , 'multiverse' : '195627'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2200,7 +2634,9 @@ ZEN = {
                 , '136' : {
                     'name' : 'Molten Ravager'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '191359'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(0/4)'
@@ -2209,7 +2645,9 @@ ZEN = {
                 , '3' : {
                     'name' : 'Bold Defense'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '180509'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2218,7 +2656,9 @@ ZEN = {
                 , '205' : {
                     'name' : 'Trailblazer\'s Boots'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '190410'
                     , 'type' : 'Artifact  — Equipment'
                     , 'pt' : ''
@@ -2227,7 +2667,9 @@ ZEN = {
                 , '25' : {
                     'name' : 'Luminarch Ascension'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '197889'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2236,7 +2678,9 @@ ZEN = {
                 , '29' : {
                     'name' : 'Noble Vestige'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '171001'
                     , 'type' : 'Creature  — Spirit'
                     , 'pt' : '(1/2)'
@@ -2245,7 +2689,9 @@ ZEN = {
                 , '119' : {
                     'name' : 'Demolish'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '190406'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2254,7 +2700,9 @@ ZEN = {
                 , '228' : {
                     'name' : 'Island'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '201964'
                     , 'type' : 'Basic Land  — Island'
                     , 'pt' : ''
@@ -2263,7 +2711,9 @@ ZEN = {
                 , '120' : {
                     'name' : 'Electropotence'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '191373'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2272,7 +2722,9 @@ ZEN = {
                 , '26' : {
                     'name' : 'Makindi Shieldmate'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '195628'
                     , 'type' : 'Creature  — Kor Soldier Ally'
                     , 'pt' : '(0/3)'
@@ -2281,7 +2733,9 @@ ZEN = {
                 , '27' : {
                     'name' : 'Narrow Escape'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '180360'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2290,7 +2744,9 @@ ZEN = {
                 , '55' : {
                     'name' : 'Merfolk Seastalkers'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '189625'
                     , 'type' : 'Creature  — Merfolk Scout'
                     , 'pt' : '(2/3)'
@@ -2299,7 +2755,9 @@ ZEN = {
                 , '14' : {
                     'name' : 'Journey to Nowhere'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '177505'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2308,7 +2766,9 @@ ZEN = {
                 , '83' : {
                     'name' : 'Bloodghast'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : 'BB'
+                    , 'cmc' : '2'
                     , 'multiverse' : '192230'
                     , 'type' : 'Creature  — Vampire Spirit'
                     , 'pt' : '(2/1)'
@@ -2317,7 +2777,9 @@ ZEN = {
                 , '15' : {
                     'name' : 'Kabira Evangel'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '180347'
                     , 'type' : 'Creature  — Human Cleric Ally'
                     , 'pt' : '(2/3)'

@@ -350,7 +350,9 @@ TMP = {
             '36' : {
                     'name' : 'Choke'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4753'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -359,7 +361,9 @@ TMP = {
                 , '263' : {
                     'name' : 'Shimmering Wings'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4726'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -368,7 +372,9 @@ TMP = {
                 , '166' : {
                     'name' : 'Manta Riders'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4711'
                     , 'type' : 'Creature  — Merfolk'
                     , 'pt' : '(1/1)'
@@ -377,7 +383,9 @@ TMP = {
                 , '129' : {
                     'name' : 'Heartwood Dryad'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4765'
                     , 'type' : 'Creature  — Dryad'
                     , 'pt' : '(2/1)'
@@ -386,7 +394,9 @@ TMP = {
                 , '229' : {
                     'name' : 'Respite'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4783'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -395,7 +405,9 @@ TMP = {
                 , '233' : {
                     'name' : 'Rootwalla'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4786'
                     , 'type' : 'Creature  — Lizard'
                     , 'pt' : '(2/2)'
@@ -404,7 +416,9 @@ TMP = {
                 , '223' : {
                     'name' : 'Reap'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4781'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -413,7 +427,9 @@ TMP = {
                 , '118' : {
                     'name' : 'Ghost Town'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4932'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -422,7 +438,9 @@ TMP = {
                 , '23' : {
                     'name' : 'Booby Trap'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '6'
+                    , 'cmc' : '6'
                     , 'multiverse' : '4597'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -431,7 +449,9 @@ TMP = {
                 , '64' : {
                     'name' : 'Dauthi Mercenary'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4652'
                     , 'type' : 'Creature  — Dauthi Knight Mercenary'
                     , 'pt' : '(2/1)'
@@ -440,7 +460,9 @@ TMP = {
                 , '265' : {
                     'name' : 'Sky Spirit'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '1WU'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4917'
                     , 'type' : 'Creature  — Spirit'
                     , 'pt' : '(2/2)'
@@ -449,7 +471,9 @@ TMP = {
                 , '297' : {
                     'name' : 'Swamp'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4924'
                     , 'type' : 'Basic Land  — Swamp'
                     , 'pt' : ''
@@ -458,7 +482,9 @@ TMP = {
                 , '274' : {
                     'name' : 'Soltari Foot Soldier'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4901'
                     , 'type' : 'Creature  — Soltari Soldier'
                     , 'pt' : '(1/1)'
@@ -467,7 +493,9 @@ TMP = {
                 , '136' : {
                     'name' : 'Humility'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '2WW'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4881'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -476,7 +504,9 @@ TMP = {
                 , '126' : {
                     'name' : 'Harrow'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4764'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -485,7 +515,9 @@ TMP = {
                 , '217' : {
                     'name' : 'Rampant Growth'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4779'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -494,7 +526,9 @@ TMP = {
                 , '80' : {
                     'name' : 'Echo Chamber'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4602'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -503,7 +537,9 @@ TMP = {
                 , '181' : {
                     'name' : 'Mogg Hollows'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4934'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -512,7 +548,9 @@ TMP = {
                 , '195' : {
                     'name' : 'Orim, Samite Healer'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '1WW'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4890'
                     , 'type' : 'Legendary Creature  — Human Cleric'
                     , 'pt' : '(1/3)'
@@ -521,7 +559,9 @@ TMP = {
                 , '99' : {
                     'name' : 'Field of Souls'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '2WW'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4874'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -530,7 +570,9 @@ TMP = {
                 , '109' : {
                     'name' : 'Fool\'s Tome'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4609'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -539,7 +581,9 @@ TMP = {
                 , '41' : {
                     'name' : 'Circle of Protection: Red'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4867'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -548,7 +592,9 @@ TMP = {
                 , '232' : {
                     'name' : 'Rootbreaker Wurm'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '5GG'
+                    , 'cmc' : '7'
                     , 'multiverse' : '4785'
                     , 'type' : 'Creature  — Wurm'
                     , 'pt' : '(6/6)'
@@ -557,7 +603,9 @@ TMP = {
                 , '83' : {
                     'name' : 'Elite Javelineer'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4873'
                     , 'type' : 'Creature  — Human Soldier'
                     , 'pt' : '(2/2)'
@@ -566,7 +614,9 @@ TMP = {
                 , '11' : {
                     'name' : 'Apocalypse'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '2RRR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4802'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -575,7 +625,9 @@ TMP = {
                 , '227' : {
                     'name' : 'Renegade Warlord'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '4R'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4839'
                     , 'type' : 'Creature  — Human Warrior'
                     , 'pt' : '(3/3)'
@@ -584,7 +636,9 @@ TMP = {
                 , '271' : {
                     'name' : 'Skyshroud Vampire'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '3BB'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4686'
                     , 'type' : 'Creature  — Vampire'
                     , 'pt' : '(3/3)'
@@ -593,7 +647,9 @@ TMP = {
                 , '244' : {
                     'name' : 'Sandstone Warrior'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4841'
                     , 'type' : 'Creature  — Human Soldier Warrior'
                     , 'pt' : '(1/3)'
@@ -602,7 +658,9 @@ TMP = {
                 , '35' : {
                     'name' : 'Chill'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4692'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -611,7 +669,9 @@ TMP = {
                 , '198' : {
                     'name' : 'Pacifism'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4892'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -620,7 +680,9 @@ TMP = {
                 , '24' : {
                     'name' : 'Bottle Gnomes'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4598'
                     , 'type' : 'Artifact Creature  — Gnome'
                     , 'pt' : '(1/3)'
@@ -629,7 +691,9 @@ TMP = {
                 , '204' : {
                     'name' : 'Phyrexian Grimoire'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4621'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -638,7 +702,9 @@ TMP = {
                 , '91' : {
                     'name' : 'Enraging Licid'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4811'
                     , 'type' : 'Creature  — Licid'
                     , 'pt' : '(1/1)'
@@ -647,7 +713,9 @@ TMP = {
                 , '321' : {
                     'name' : 'Volrath\'s Curse'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4741'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -656,7 +724,9 @@ TMP = {
                 , '225' : {
                     'name' : 'Recycle'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '4GG'
+                    , 'cmc' : '6'
                     , 'multiverse' : '4782'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -665,7 +735,9 @@ TMP = {
                 , '309' : {
                     'name' : 'Tooth and Claw'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4854'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -674,7 +746,9 @@ TMP = {
                 , '269' : {
                     'name' : 'Skyshroud Ranger'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4790'
                     , 'type' : 'Creature  — Elf'
                     , 'pt' : '(1/1)'
@@ -683,7 +757,9 @@ TMP = {
                 , '123' : {
                     'name' : 'Grindstone'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '1'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4610'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -692,7 +768,9 @@ TMP = {
                 , '2' : {
                     'name' : 'Advance Scout'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4857'
                     , 'type' : 'Creature  — Human Soldier Scout'
                     , 'pt' : '(1/1)'
@@ -701,7 +779,9 @@ TMP = {
                 , '258' : {
                     'name' : 'Serene Offering'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4898'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -710,7 +790,9 @@ TMP = {
                 , '296' : {
                     'name' : 'Sudden Impact'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4852'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -719,7 +801,9 @@ TMP = {
                 , '211' : {
                     'name' : 'Power Sink'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'XU'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4716'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -728,7 +812,9 @@ TMP = {
                 , '222' : {
                     'name' : 'Reanimate'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4680'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -737,7 +823,9 @@ TMP = {
                 , '302' : {
                     'name' : 'Thalakos Lowlands'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4942'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -746,7 +834,9 @@ TMP = {
                 , '101' : {
                     'name' : 'Firefly'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4813'
                     , 'type' : 'Creature  — Insect'
                     , 'pt' : '(1/1)'
@@ -755,7 +845,9 @@ TMP = {
                 , '262' : {
                     'name' : 'Shatter'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4847'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -764,7 +856,9 @@ TMP = {
                 , '242' : {
                     'name' : 'Safeguard'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '3WW'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4897'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -773,7 +867,9 @@ TMP = {
                 , '173' : {
                     'name' : 'Metallic Sliver'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : '1'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4617'
                     , 'type' : 'Artifact Creature  — Sliver'
                     , 'pt' : '(1/1)'
@@ -782,7 +878,9 @@ TMP = {
                 , '160' : {
                     'name' : 'Lowland Giant'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4829'
                     , 'type' : 'Creature  — Giant'
                     , 'pt' : '(4/3)'
@@ -791,7 +889,9 @@ TMP = {
                 , '112' : {
                     'name' : 'Fugitive Druid'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4763'
                     , 'type' : 'Creature  — Human Druid'
                     , 'pt' : '(3/2)'
@@ -800,7 +900,9 @@ TMP = {
                 , '183' : {
                     'name' : 'Mogg Squad'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4834'
                     , 'type' : 'Creature  — Goblin'
                     , 'pt' : '(3/3)'
@@ -809,7 +911,9 @@ TMP = {
                 , '1' : {
                     'name' : 'Abandon Hope'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : 'X1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4635'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -818,7 +922,9 @@ TMP = {
                 , '28' : {
                     'name' : 'Canopy Spider'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4751'
                     , 'type' : 'Creature  — Spider'
                     , 'pt' : '(1/3)'
@@ -827,7 +933,9 @@ TMP = {
                 , '134' : {
                     'name' : 'Horned Sliver'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4768'
                     , 'type' : 'Creature  — Sliver'
                     , 'pt' : '(2/2)'
@@ -836,7 +944,9 @@ TMP = {
                 , '330' : {
                     'name' : 'Wind Drake'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4745'
                     , 'type' : 'Creature  — Drake'
                     , 'pt' : '(2/2)'
@@ -845,7 +955,9 @@ TMP = {
                 , '246' : {
                     'name' : 'Sarcomancy'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4683'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -854,7 +966,9 @@ TMP = {
                 , '94' : {
                     'name' : 'Essence Bottle'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4606'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -863,7 +977,9 @@ TMP = {
                 , '326' : {
                     'name' : 'Whim of Volrath'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4742'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -872,7 +988,9 @@ TMP = {
                 , '308' : {
                     'name' : 'Time Warp'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '3UU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4737'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -881,7 +999,9 @@ TMP = {
                 , '135' : {
                     'name' : 'Horned Turtle'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4704'
                     , 'type' : 'Creature  — Turtle'
                     , 'pt' : '(1/4)'
@@ -890,7 +1010,9 @@ TMP = {
                 , '140' : {
                     'name' : 'Intuition'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4707'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -899,7 +1021,9 @@ TMP = {
                 , '55' : {
                     'name' : 'Crown of Flames'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4809'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -908,7 +1032,9 @@ TMP = {
                 , '316' : {
                     'name' : 'Unstable Shapeshifter'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4740'
                     , 'type' : 'Creature  — Shapeshifter'
                     , 'pt' : '(0/1)'
@@ -917,7 +1043,9 @@ TMP = {
                 , '264' : {
                     'name' : 'Shocker'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4848'
                     , 'type' : 'Creature  — Insect'
                     , 'pt' : '(1/1)'
@@ -926,7 +1054,9 @@ TMP = {
                 , '206' : {
                     'name' : 'Phyrexian Splicer'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4623'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -935,7 +1065,9 @@ TMP = {
                 , '257' : {
                     'name' : 'Selenia, Dark Angel'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '3WB'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4916'
                     , 'type' : 'Legendary Creature  — Angel'
                     , 'pt' : '(3/3)'
@@ -944,7 +1076,9 @@ TMP = {
                 , '70' : {
                     'name' : 'Dirtcowl Wurm'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '4G'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4755'
                     , 'type' : 'Creature  — Wurm'
                     , 'pt' : '(3/4)'
@@ -953,7 +1087,9 @@ TMP = {
                 , '240' : {
                     'name' : 'Sacred Guide'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4896'
                     , 'type' : 'Creature  — Human Cleric'
                     , 'pt' : '(1/1)'
@@ -962,7 +1098,9 @@ TMP = {
                 , '329' : {
                     'name' : 'Wind Dancer'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4744'
                     , 'type' : 'Creature  — Faerie'
                     , 'pt' : '(1/1)'
@@ -971,7 +1109,9 @@ TMP = {
                 , '212' : {
                     'name' : 'Precognition'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '4U'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4717'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -980,7 +1120,9 @@ TMP = {
                 , '81' : {
                     'name' : 'Eladamri, Lord of Leaves'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : 'GG'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4757'
                     , 'type' : 'Legendary Creature  — Elf Warrior'
                     , 'pt' : '(2/2)'
@@ -989,7 +1131,9 @@ TMP = {
                 , '85' : {
                     'name' : 'Elvish Fury'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4760'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -998,7 +1142,9 @@ TMP = {
                 , '63' : {
                     'name' : 'Dauthi Marauder'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4651'
                     , 'type' : 'Creature  — Dauthi Minion'
                     , 'pt' : '(3/1)'
@@ -1007,7 +1153,9 @@ TMP = {
                 , '234' : {
                     'name' : 'Rootwater Depths'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4937'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1016,7 +1164,9 @@ TMP = {
                 , '284' : {
                     'name' : 'Spirit Mirror'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '2WW'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4906'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1025,7 +1175,9 @@ TMP = {
                 , '106' : {
                     'name' : 'Flowstone Salamander'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '3RR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4817'
                     , 'type' : 'Creature  — Salamander'
                     , 'pt' : '(3/4)'
@@ -1034,7 +1186,9 @@ TMP = {
                 , '32' : {
                     'name' : 'Carrionette'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4639'
                     , 'type' : 'Creature  — Skeleton'
                     , 'pt' : '(1/1)'
@@ -1043,7 +1197,9 @@ TMP = {
                 , '273' : {
                     'name' : 'Soltari Emissary'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4900'
                     , 'type' : 'Creature  — Soltari Soldier'
                     , 'pt' : '(2/1)'
@@ -1052,7 +1208,9 @@ TMP = {
                 , '199' : {
                     'name' : 'Pallimud'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4837'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(*/3)'
@@ -1061,7 +1219,9 @@ TMP = {
                 , '208' : {
                     'name' : 'Pine Barrens'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4935'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1070,7 +1230,9 @@ TMP = {
                 , '103' : {
                     'name' : 'Flailing Drake'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4761'
                     , 'type' : 'Creature  — Drake'
                     , 'pt' : '(2/3)'
@@ -1079,7 +1241,9 @@ TMP = {
                 , '170' : {
                     'name' : 'Mawcor'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '3UU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4712'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(3/3)'
@@ -1088,7 +1252,9 @@ TMP = {
                 , '207' : {
                     'name' : 'Pincher Beetles'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4778'
                     , 'type' : 'Creature  — Insect'
                     , 'pt' : '(3/1)'
@@ -1097,7 +1263,9 @@ TMP = {
                 , '139' : {
                     'name' : 'Interdict'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4706'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1106,7 +1274,9 @@ TMP = {
                 , '107' : {
                     'name' : 'Flowstone Sculpture'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '6'
+                    , 'cmc' : '6'
                     , 'multiverse' : '4608'
                     , 'type' : 'Artifact Creature  — Shapeshifter'
                     , 'pt' : '(4/4)'
@@ -1115,7 +1285,9 @@ TMP = {
                 , '53' : {
                     'name' : 'Counterspell'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'UU'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4693'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1124,7 +1296,9 @@ TMP = {
                 , '214' : {
                     'name' : 'Puppet Strings'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4624'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1133,7 +1307,9 @@ TMP = {
                 , '30' : {
                     'name' : 'Canyon Wildcat'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4807'
                     , 'type' : 'Creature  — Cat'
                     , 'pt' : '(2/1)'
@@ -1142,7 +1318,9 @@ TMP = {
                 , '174' : {
                     'name' : 'Mindwhip Sliver'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4674'
                     , 'type' : 'Creature  — Sliver'
                     , 'pt' : '(2/2)'
@@ -1151,7 +1329,9 @@ TMP = {
                 , '146' : {
                     'name' : 'Kezzerdrix'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '2BB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4667'
                     , 'type' : 'Creature  — Rabbit Beast'
                     , 'pt' : '(4/4)'
@@ -1160,7 +1340,9 @@ TMP = {
                 , '288' : {
                     'name' : 'Starke of Rath'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '1RR'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4849'
                     , 'type' : 'Legendary Creature  — Human Rogue'
                     , 'pt' : '(2/2)'
@@ -1169,7 +1351,9 @@ TMP = {
                 , '4' : {
                     'name' : 'Altar Of Dementia (Altar of Dementia)'
                     , 'rarity' : ''
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4596'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1178,7 +1362,9 @@ TMP = {
                 , '323' : {
                     'name' : 'Warmth'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4909'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1187,7 +1373,9 @@ TMP = {
                 , '299' : {
                     'name' : 'Talon Sliver'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4908'
                     , 'type' : 'Creature  — Sliver'
                     , 'pt' : '(1/1)'
@@ -1196,7 +1384,9 @@ TMP = {
                 , '155' : {
                     'name' : 'Lightning Blast'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4827'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1205,7 +1395,9 @@ TMP = {
                 , '276' : {
                     'name' : 'Soltari Lancer'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4902'
                     , 'type' : 'Creature  — Soltari Knight'
                     , 'pt' : '(2/2)'
@@ -1214,7 +1406,9 @@ TMP = {
                 , '178' : {
                     'name' : 'Mogg Cannon'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4618'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1223,7 +1417,9 @@ TMP = {
                 , '152' : {
                     'name' : 'Legacy\'s Allure'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : 'UU'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4708'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1232,7 +1428,9 @@ TMP = {
                 , '218' : {
                     'name' : 'Ranger en-Vec'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '1GW'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4914'
                     , 'type' : 'Creature  — Human Soldier Archer'
                     , 'pt' : '(2/2)'
@@ -1241,7 +1439,9 @@ TMP = {
                 , '228' : {
                     'name' : 'Repentance'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4895'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1250,7 +1450,9 @@ TMP = {
                 , '159' : {
                     'name' : 'Lotus Petal'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : '0'
+                    , 'cmc' : '0'
                     , 'multiverse' : '4614'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1259,7 +1461,9 @@ TMP = {
                 , '196' : {
                     'name' : 'Orim\'s Prayer'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '1WW'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4891'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1268,7 +1472,9 @@ TMP = {
                 , '154' : {
                     'name' : 'Light of Day'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4884'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1277,7 +1483,9 @@ TMP = {
                 , '243' : {
                     'name' : 'Salt Flats'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4938'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1286,7 +1494,9 @@ TMP = {
                 , '33' : {
                     'name' : 'Chaotic Goo'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4808'
                     , 'type' : 'Creature  — Ooze'
                     , 'pt' : '(0/0)'
@@ -1295,7 +1505,9 @@ TMP = {
                 , '145' : {
                     'name' : 'Jinxed Idol'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4613'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1304,7 +1516,9 @@ TMP = {
                 , '200' : {
                     'name' : 'Patchwork Gnomes'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4619'
                     , 'type' : 'Artifact Creature  — Gnome'
                     , 'pt' : '(2/1)'
@@ -1313,7 +1527,9 @@ TMP = {
                 , '237' : {
                     'name' : 'Rootwater Matriarch'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '2UU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4722'
                     , 'type' : 'Creature  — Merfolk'
                     , 'pt' : '(2/3)'
@@ -1322,7 +1538,9 @@ TMP = {
                 , '279' : {
                     'name' : 'Soltari Trooper'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4905'
                     , 'type' : 'Creature  — Soltari Soldier'
                     , 'pt' : '(1/1)'
@@ -1331,7 +1549,9 @@ TMP = {
                 , '125' : {
                     'name' : 'Hanna\'s Custody'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4878'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1340,7 +1560,9 @@ TMP = {
                 , '182' : {
                     'name' : 'Mogg Raider'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4833'
                     , 'type' : 'Creature  — Goblin'
                     , 'pt' : '(1/1)'
@@ -1349,7 +1571,9 @@ TMP = {
                 , '275' : {
                     'name' : 'Soltari Guerrillas'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '2WR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4918'
                     , 'type' : 'Creature  — Soltari Soldier'
                     , 'pt' : '(3/2)'
@@ -1358,7 +1582,9 @@ TMP = {
                 , '252' : {
                     'name' : 'Scroll Rack'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4628'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1367,7 +1593,9 @@ TMP = {
                 , '29' : {
                     'name' : 'Canyon Drake'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4806'
                     , 'type' : 'Creature  — Drake'
                     , 'pt' : '(1/2)'
@@ -1376,7 +1604,9 @@ TMP = {
                 , '261' : {
                     'name' : 'Shadowstorm'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4846'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1385,7 +1615,9 @@ TMP = {
                 , '147' : {
                     'name' : 'Kindle'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4826'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1394,7 +1626,9 @@ TMP = {
                 , '62' : {
                     'name' : 'Dauthi Horror'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4650'
                     , 'type' : 'Creature  — Dauthi Horror'
                     , 'pt' : '(2/1)'
@@ -1403,7 +1637,9 @@ TMP = {
                 , '61' : {
                     'name' : 'Dauthi Ghoul'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4649'
                     , 'type' : 'Creature  — Dauthi Zombie'
                     , 'pt' : '(1/1)'
@@ -1412,7 +1648,9 @@ TMP = {
                 , '73' : {
                     'name' : 'Disturbed Burial'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4657'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1421,7 +1659,9 @@ TMP = {
                 , '267' : {
                     'name' : 'Skyshroud Elf'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4789'
                     , 'type' : 'Creature  — Elf Druid'
                     , 'pt' : '(1/1)'
@@ -1430,7 +1670,9 @@ TMP = {
                 , '119' : {
                     'name' : 'Giant Crab'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '4U'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4703'
                     , 'type' : 'Creature  — Crab'
                     , 'pt' : '(3/3)'
@@ -1439,7 +1681,9 @@ TMP = {
                 , '71' : {
                     'name' : 'Disenchant'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4872'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1448,7 +1692,9 @@ TMP = {
                 , '260' : {
                     'name' : 'Shadow Rift'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4725'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1457,7 +1703,9 @@ TMP = {
                 , '51' : {
                     'name' : 'Commander Greven il-Vec'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '3BBB'
+                    , 'cmc' : '6'
                     , 'multiverse' : '4643'
                     , 'type' : 'Legendary Creature  — Human Warrior'
                     , 'pt' : '(7/5)'
@@ -1466,7 +1714,9 @@ TMP = {
                 , '312' : {
                     'name' : 'Trained Armodon'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1GG'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4794'
                     , 'type' : 'Creature  — Elephant'
                     , 'pt' : '(3/3)'
@@ -1475,7 +1725,9 @@ TMP = {
                 , '289' : {
                     'name' : 'Static Orb'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4630'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1484,7 +1736,9 @@ TMP = {
                 , '203' : {
                     'name' : 'Perish'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4676'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1493,7 +1747,9 @@ TMP = {
                 , '286' : {
                     'name' : 'Squee\'s Toy'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : '1'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4629'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1502,7 +1758,9 @@ TMP = {
                 , '15' : {
                     'name' : 'Avenging Angel'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '3WW'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4863'
                     , 'type' : 'Creature  — Angel'
                     , 'pt' : '(3/3)'
@@ -1511,7 +1769,9 @@ TMP = {
                 , '300' : {
                     'name' : 'Telethopter'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4631'
                     , 'type' : 'Artifact Creature  — Thopter'
                     , 'pt' : '(3/1)'
@@ -1520,7 +1780,9 @@ TMP = {
                 , '102' : {
                     'name' : 'Fireslinger'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4814'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(1/1)'
@@ -1529,7 +1791,9 @@ TMP = {
                 , '10' : {
                     'name' : 'Apes of Rath'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '2GG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4748'
                     , 'type' : 'Creature  — Ape'
                     , 'pt' : '(5/4)'
@@ -1538,7 +1802,9 @@ TMP = {
                 , '294' : {
                     'name' : 'Storm Front'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4793'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1547,7 +1813,9 @@ TMP = {
                 , '38' : {
                     'name' : 'Circle of Protection: Black'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4864'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1556,7 +1824,9 @@ TMP = {
                 , '143' : {
                     'name' : 'Jackal Pup'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4825'
                     , 'type' : 'Creature  — Hound'
                     , 'pt' : '(2/1)'
@@ -1565,7 +1835,9 @@ TMP = {
                 , '68' : {
                     'name' : 'Death Pits of Rath'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '3BB'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4655'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1574,7 +1846,9 @@ TMP = {
                 , '13' : {
                     'name' : 'Armored Pegasus'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4861'
                     , 'type' : 'Creature  — Pegasus'
                     , 'pt' : '(1/2)'
@@ -1583,7 +1857,9 @@ TMP = {
                 , '292' : {
                     'name' : 'Stinging Licid'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4730'
                     , 'type' : 'Creature  — Licid'
                     , 'pt' : '(1/1)'
@@ -1592,7 +1868,9 @@ TMP = {
                 , '250' : {
                     'name' : 'Scragnoth'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '4G'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4787'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(3/4)'
@@ -1601,7 +1879,9 @@ TMP = {
                 , '127' : {
                     'name' : 'Havoc'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4823'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1610,7 +1890,9 @@ TMP = {
                 , '115' : {
                     'name' : 'Gallantry'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4876'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1619,7 +1901,9 @@ TMP = {
                 , '27' : {
                     'name' : 'Caldera Lake'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4930'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1628,7 +1912,9 @@ TMP = {
                 , '153' : {
                     'name' : 'Legerdemain'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2UU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4709'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1637,7 +1923,9 @@ TMP = {
                 , '59' : {
                     'name' : 'Darkling Stalker'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4647'
                     , 'type' : 'Creature  — Shade Spirit'
                     , 'pt' : '(1/1)'
@@ -1646,7 +1934,9 @@ TMP = {
                 , '209' : {
                     'name' : 'Pit Imp'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4677'
                     , 'type' : 'Creature  — Imp'
                     , 'pt' : '(0/1)'
@@ -1655,7 +1945,9 @@ TMP = {
                 , '192' : {
                     'name' : 'Nurturing Licid'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4776'
                     , 'type' : 'Creature  — Licid'
                     , 'pt' : '(1/1)'
@@ -1664,7 +1956,9 @@ TMP = {
                 , '114' : {
                     'name' : 'Fylamarid'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '1UU'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4701'
                     , 'type' : 'Creature  — Squid Beast'
                     , 'pt' : '(1/3)'
@@ -1673,7 +1967,9 @@ TMP = {
                 , '280' : {
                     'name' : 'Souldrinker'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4687'
                     , 'type' : 'Creature  — Spirit'
                     , 'pt' : '(2/2)'
@@ -1682,7 +1978,9 @@ TMP = {
                 , '322' : {
                     'name' : 'Wall of Diffusion'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4855'
                     , 'type' : 'Creature  — Wall'
                     , 'pt' : '(0/5)'
@@ -1691,7 +1989,9 @@ TMP = {
                 , '268' : {
                     'name' : 'Skyshroud Forest'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4940'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1700,7 +2000,9 @@ TMP = {
                 , '77' : {
                     'name' : 'Dregs of Sorrow'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : 'X4B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4659'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1709,7 +2011,9 @@ TMP = {
                 , '219' : {
                     'name' : 'Rathi Dragon'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4838'
                     , 'type' : 'Creature  — Dragon'
                     , 'pt' : '(5/5)'
@@ -1718,7 +2022,9 @@ TMP = {
                 , '215' : {
                     'name' : 'Quickening Licid'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4894'
                     , 'type' : 'Creature  — Licid'
                     , 'pt' : '(1/1)'
@@ -1727,7 +2033,9 @@ TMP = {
                 , '290' : {
                     'name' : 'Staunch Defenders'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '3WW'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4907'
                     , 'type' : 'Creature  — Human Soldier'
                     , 'pt' : '(3/4)'
@@ -1736,7 +2044,9 @@ TMP = {
                 , '144' : {
                     'name' : 'Jet Medallion'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4612'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1745,7 +2055,9 @@ TMP = {
                 , '175' : {
                     'name' : 'Minion of the Wastes'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '3BBB'
+                    , 'cmc' : '6'
                     , 'multiverse' : '4675'
                     , 'type' : 'Creature  — Minion'
                     , 'pt' : '(*/*)'
@@ -1754,7 +2066,9 @@ TMP = {
                 , '325' : {
                     'name' : 'Watchdog'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4634'
                     , 'type' : 'Artifact Creature  — Hound'
                     , 'pt' : '(1/2)'
@@ -1763,7 +2077,9 @@ TMP = {
                 , '20' : {
                     'name' : 'Blood Frenzy'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4804'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1772,7 +2088,9 @@ TMP = {
                 , '97' : {
                     'name' : 'Extinction'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '4B'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4663'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1781,7 +2099,9 @@ TMP = {
                 , '197' : {
                     'name' : 'Overrun'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '2GGG'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4777'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1790,7 +2110,9 @@ TMP = {
                 , '220' : {
                     'name' : 'Rats of Rath'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4679'
                     , 'type' : 'Creature  — Rat'
                     , 'pt' : '(2/1)'
@@ -1799,7 +2121,9 @@ TMP = {
                 , '100' : {
                     'name' : 'Fighting Drake'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2UU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4700'
                     , 'type' : 'Creature  — Drake'
                     , 'pt' : '(2/4)'
@@ -1808,7 +2132,9 @@ TMP = {
                 , '186' : {
                     'name' : 'Mounted Archers'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4888'
                     , 'type' : 'Creature  — Human Soldier Archer'
                     , 'pt' : '(2/3)'
@@ -1817,7 +2143,9 @@ TMP = {
                 , '157' : {
                     'name' : 'Living Death'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '3BB'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4671'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1826,7 +2154,9 @@ TMP = {
                 , '116' : {
                     'name' : 'Gaseous Form'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4702'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1835,7 +2165,9 @@ TMP = {
                 , '259' : {
                     'name' : 'Servant of Volrath'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4685'
                     , 'type' : 'Creature  — Minion'
                     , 'pt' : '(3/3)'
@@ -1844,7 +2176,9 @@ TMP = {
                 , '161' : {
                     'name' : 'Maddening Imp'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4672'
                     , 'type' : 'Creature  — Imp'
                     , 'pt' : '(1/1)'
@@ -1853,7 +2187,9 @@ TMP = {
                 , '191' : {
                     'name' : 'No Quarter'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4835'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1862,7 +2198,9 @@ TMP = {
                 , '78' : {
                     'name' : 'Duplicity'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '3UU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4697'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1871,7 +2209,9 @@ TMP = {
                 , '110' : {
                     'name' : 'Forest'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4928'
                     , 'type' : 'Basic Land  — Forest'
                     , 'pt' : ''
@@ -1880,7 +2220,9 @@ TMP = {
                 , '72' : {
                     'name' : 'Dismiss'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2UU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4695'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1889,7 +2231,9 @@ TMP = {
                 , '128' : {
                     'name' : 'Heart Sliver'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4824'
                     , 'type' : 'Creature  — Sliver'
                     , 'pt' : '(1/1)'
@@ -1898,7 +2242,9 @@ TMP = {
                 , '235' : {
                     'name' : 'Rootwater Diver'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4720'
                     , 'type' : 'Creature  — Merfolk'
                     , 'pt' : '(1/1)'
@@ -1907,7 +2253,9 @@ TMP = {
                 , '130' : {
                     'name' : 'Heartwood Giant'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '3GG'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4766'
                     , 'type' : 'Creature  — Giant'
                     , 'pt' : '(4/4)'
@@ -1916,7 +2264,9 @@ TMP = {
                 , '162' : {
                     'name' : 'Magmasaur'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '3RR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4830'
                     , 'type' : 'Creature  — Elemental Lizard'
                     , 'pt' : '(0/0)'
@@ -1925,7 +2275,9 @@ TMP = {
                 , '137' : {
                     'name' : 'Imps\' Taunt'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4666'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1934,7 +2286,9 @@ TMP = {
                 , '138' : {
                     'name' : 'Insight'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4705'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1943,7 +2297,9 @@ TMP = {
                 , '187' : {
                     'name' : 'Muscle Sliver'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4772'
                     , 'type' : 'Creature  — Sliver'
                     , 'pt' : '(1/1)'
@@ -1952,7 +2308,9 @@ TMP = {
                 , '163' : {
                     'name' : 'Magnetic Web'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4615'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1961,7 +2319,9 @@ TMP = {
                 , '310' : {
                     'name' : 'Torture Chamber'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4633'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1970,7 +2330,9 @@ TMP = {
                 , '193' : {
                     'name' : 'Opportunist'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4836'
                     , 'type' : 'Creature  — Human Soldier'
                     , 'pt' : '(2/2)'
@@ -1979,7 +2341,9 @@ TMP = {
                 , '313' : {
                     'name' : 'Tranquility'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4795'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1988,7 +2352,9 @@ TMP = {
                 , '301' : {
                     'name' : 'Thalakos Dreamsower'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4732'
                     , 'type' : 'Creature  — Thalakos Wizard'
                     , 'pt' : '(1/1)'
@@ -1997,7 +2363,9 @@ TMP = {
                 , '172' : {
                     'name' : 'Meditate'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4713'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2006,7 +2374,9 @@ TMP = {
                 , '179' : {
                     'name' : 'Mogg Conscripts'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4831'
                     , 'type' : 'Creature  — Goblin'
                     , 'pt' : '(2/2)'
@@ -2015,7 +2385,9 @@ TMP = {
                 , '241' : {
                     'name' : 'Sadistic Glee'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4682'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2024,7 +2396,9 @@ TMP = {
                 , '247' : {
                     'name' : 'Scabland'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4939'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -2033,7 +2407,9 @@ TMP = {
                 , '306' : {
                     'name' : 'Thumbscrews'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4632'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2042,7 +2418,9 @@ TMP = {
                 , '65' : {
                     'name' : 'Dauthi Mindripper'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4653'
                     , 'type' : 'Creature  — Dauthi Minion'
                     , 'pt' : '(2/1)'
@@ -2051,7 +2429,9 @@ TMP = {
                 , '111' : {
                     'name' : 'Frog Tongue'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4762'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2060,7 +2440,9 @@ TMP = {
                 , '17' : {
                     'name' : 'Bayou Dragonfly'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4749'
                     , 'type' : 'Creature  — Insect'
                     , 'pt' : '(1/1)'
@@ -2069,7 +2451,9 @@ TMP = {
                 , '124' : {
                     'name' : 'Hand to Hand'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4822'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2078,7 +2462,9 @@ TMP = {
                 , '46' : {
                     'name' : 'Cloudchaser Eagle'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4871'
                     , 'type' : 'Creature  — Bird'
                     , 'pt' : '(2/2)'
@@ -2087,7 +2473,9 @@ TMP = {
                 , '92' : {
                     'name' : 'Ertai\'s Meddling'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : 'XU'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4698'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2096,7 +2484,9 @@ TMP = {
                 , '282' : {
                     'name' : 'Spike Drone'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4792'
                     , 'type' : 'Creature  — Spike Drone'
                     , 'pt' : '(0/0)'
@@ -2105,7 +2495,9 @@ TMP = {
                 , '44' : {
                     'name' : 'Clergy en-Vec'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4870'
                     , 'type' : 'Creature  — Human Cleric'
                     , 'pt' : '(1/1)'
@@ -2114,7 +2506,9 @@ TMP = {
                 , '278' : {
                     'name' : 'Soltari Priest'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : 'WW'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4904'
                     , 'type' : 'Creature  — Soltari Cleric'
                     , 'pt' : '(2/1)'
@@ -2123,7 +2517,9 @@ TMP = {
                 , '236' : {
                     'name' : 'Rootwater Hunter'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4721'
                     , 'type' : 'Creature  — Merfolk'
                     , 'pt' : '(1/1)'
@@ -2132,7 +2528,9 @@ TMP = {
                 , '319' : {
                     'name' : 'Verdigris'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4798'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2141,7 +2539,9 @@ TMP = {
                 , '93' : {
                     'name' : 'Escaped Shapeshifter'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '3UU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4699'
                     , 'type' : 'Creature  — Shapeshifter'
                     , 'pt' : '(3/4)'
@@ -2150,7 +2550,9 @@ TMP = {
                 , '25' : {
                     'name' : 'Bounty Hunter'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '2BB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4638'
                     , 'type' : 'Creature  — Human Archer Minion'
                     , 'pt' : '(2/2)'
@@ -2159,7 +2561,9 @@ TMP = {
                 , '19' : {
                     'name' : 'Benthic Behemoth'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '5UUU'
+                    , 'cmc' : '8'
                     , 'multiverse' : '4690'
                     , 'type' : 'Creature  — Serpent'
                     , 'pt' : '(7/6)'
@@ -2168,7 +2572,9 @@ TMP = {
                 , '254' : {
                     'name' : 'Searing Touch'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4843'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2177,7 +2583,9 @@ TMP = {
                 , '113' : {
                     'name' : 'Furnace of Rath'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '1RRR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4819'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2186,7 +2594,9 @@ TMP = {
                 , '180' : {
                     'name' : 'Mogg Fanatic'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4832'
                     , 'type' : 'Creature  — Goblin'
                     , 'pt' : '(1/1)'
@@ -2195,7 +2605,9 @@ TMP = {
                 , '272' : {
                     'name' : 'Soltari Crusader'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4899'
                     , 'type' : 'Creature  — Soltari Knight'
                     , 'pt' : '(2/1)'
@@ -2204,7 +2616,9 @@ TMP = {
                 , '52' : {
                     'name' : 'Corpse Dance'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4644'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2213,7 +2627,9 @@ TMP = {
                 , '131' : {
                     'name' : 'Heartwood Treefolk'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '2GG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4767'
                     , 'type' : 'Creature  — Treefolk'
                     , 'pt' : '(3/4)'
@@ -2222,7 +2638,9 @@ TMP = {
                 , '108' : {
                     'name' : 'Flowstone Wyvern'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '3RR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4818'
                     , 'type' : 'Creature  — Drake'
                     , 'pt' : '(3/3)'
@@ -2231,7 +2649,9 @@ TMP = {
                 , '6' : {
                     'name' : 'Ancient Runes'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4801'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2240,7 +2660,9 @@ TMP = {
                 , '8' : {
                     'name' : 'Angelic Protector'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4858'
                     , 'type' : 'Creature  — Angel'
                     , 'pt' : '(2/2)'
@@ -2249,7 +2671,9 @@ TMP = {
                 , '96' : {
                     'name' : 'Excavator'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4607'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2258,7 +2682,9 @@ TMP = {
                 , '39' : {
                     'name' : 'Circle of Protection: Blue'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4865'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2267,7 +2693,9 @@ TMP = {
                 , '334' : {
                     'name' : 'Wood Sage'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : 'GU'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4921'
                     , 'type' : 'Creature  — Human Druid'
                     , 'pt' : '(1/1)'
@@ -2276,7 +2704,9 @@ TMP = {
                 , '314' : {
                     'name' : 'Trumpeting Armodon'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4796'
                     , 'type' : 'Creature  — Elephant'
                     , 'pt' : '(3/3)'
@@ -2285,7 +2715,9 @@ TMP = {
                 , '42' : {
                     'name' : 'Circle of Protection: Shadow'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4868'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2294,7 +2726,9 @@ TMP = {
                 , '26' : {
                     'name' : 'Broken Fall'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4750'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2303,7 +2737,9 @@ TMP = {
                 , '90' : {
                     'name' : 'Enfeeblement'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'BB'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4661'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2312,7 +2748,9 @@ TMP = {
                 , '66' : {
                     'name' : 'Dauthi Slayer'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'BB'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4654'
                     , 'type' : 'Creature  — Dauthi Soldier'
                     , 'pt' : '(2/2)'
@@ -2321,7 +2759,9 @@ TMP = {
                 , '54' : {
                     'name' : 'Crazed Armodon'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '2GG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4754'
                     , 'type' : 'Creature  — Elephant'
                     , 'pt' : '(3/3)'
@@ -2330,7 +2770,9 @@ TMP = {
                 , '158' : {
                     'name' : 'Lobotomy'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '2UB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4913'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2339,7 +2781,9 @@ TMP = {
                 , '324' : {
                     'name' : 'Wasteland'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4944'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -2348,7 +2792,9 @@ TMP = {
                 , '293' : {
                     'name' : 'Stone Rain'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4850'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2357,7 +2803,9 @@ TMP = {
                 , '21' : {
                     'name' : 'Blood Pet'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '12342'
                     , 'type' : 'Creature  — Thrull'
                     , 'pt' : '(1/1)'
@@ -2366,7 +2814,9 @@ TMP = {
                 , '335' : {
                     'name' : 'Worthy Cause'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4911'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2375,7 +2825,9 @@ TMP = {
                 , '256' : {
                     'name' : 'Segmented Wurm'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '3RG'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4915'
                     , 'type' : 'Creature  — Wurm'
                     , 'pt' : '(5/5)'
@@ -2384,7 +2836,9 @@ TMP = {
                 , '31' : {
                     'name' : 'Capsize'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1UU'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4691'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2393,7 +2847,9 @@ TMP = {
                 , '150' : {
                     'name' : 'Krakilin'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : 'XGG'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4769'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(0/0)'
@@ -2402,7 +2858,9 @@ TMP = {
                 , '281' : {
                     'name' : 'Spell Blast'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'XU'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4728'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2411,7 +2869,9 @@ TMP = {
                 , '141' : {
                     'name' : 'Invulnerability'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4882'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2420,7 +2880,9 @@ TMP = {
                 , '43' : {
                     'name' : 'Circle of Protection: White'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4869'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2429,7 +2891,9 @@ TMP = {
                 , '239' : {
                     'name' : 'Ruby Medallion'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4625'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2438,7 +2902,9 @@ TMP = {
                 , '89' : {
                     'name' : 'Energizer'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4605'
                     , 'type' : 'Artifact Creature  — Juggernaut'
                     , 'pt' : '(2/2)'
@@ -2447,7 +2913,9 @@ TMP = {
                 , '98' : {
                     'name' : 'Fevered Convulsions'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : 'BB'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4664'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2456,7 +2924,9 @@ TMP = {
                 , '202' : {
                     'name' : 'Pegasus Refuge'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4893'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2465,7 +2935,9 @@ TMP = {
                 , '37' : {
                     'name' : 'Cinder Marsh'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4931'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -2474,7 +2946,9 @@ TMP = {
                 , '82' : {
                     'name' : 'Eladamri\'s Vineyard'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4758'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2483,7 +2957,9 @@ TMP = {
                 , '18' : {
                     'name' : 'Bellowing Fiend'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '4B'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4637'
                     , 'type' : 'Creature  — Spirit'
                     , 'pt' : '(3/3)'
@@ -2492,7 +2968,9 @@ TMP = {
                 , '190' : {
                     'name' : 'Needle Storm'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4775'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2501,7 +2979,9 @@ TMP = {
                 , '253' : {
                     'name' : 'Sea Monster'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '4UU'
+                    , 'cmc' : '6'
                     , 'multiverse' : '4724'
                     , 'type' : 'Creature  — Serpent'
                     , 'pt' : '(6/6)'
@@ -2510,7 +2990,9 @@ TMP = {
                 , '318' : {
                     'name' : 'Verdant Force'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '5GGG'
+                    , 'cmc' : '8'
                     , 'multiverse' : '4797'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(7/7)'
@@ -2519,7 +3001,9 @@ TMP = {
                 , '133' : {
                     'name' : 'Hero\'s Resolve'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4879'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2528,7 +3012,9 @@ TMP = {
                 , '168' : {
                     'name' : 'Marsh Lurker'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4673'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(3/2)'
@@ -2537,7 +3023,9 @@ TMP = {
                 , '270' : {
                     'name' : 'Skyshroud Troll'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '2GG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4791'
                     , 'type' : 'Creature  — Troll Giant'
                     , 'pt' : '(3/3)'
@@ -2546,7 +3034,9 @@ TMP = {
                 , '148' : {
                     'name' : 'Knight Of Dawn (Knight of Dawn)'
                     , 'rarity' : ''
+                    , 'color' : 'A'
                     , 'cost' : '1WW'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4883'
                     , 'type' : 'Creature  — Human Knight'
                     , 'pt' : '(2/2)'
@@ -2555,7 +3045,9 @@ TMP = {
                 , '205' : {
                     'name' : 'Phyrexian Hulk'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '6'
+                    , 'cmc' : '6'
                     , 'multiverse' : '4622'
                     , 'type' : 'Artifact Creature  — Golem'
                     , 'pt' : '(5/4)'
@@ -2564,7 +3056,9 @@ TMP = {
                 , '331' : {
                     'name' : 'Winds of Rath'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '3WW'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4910'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2573,7 +3067,9 @@ TMP = {
                 , '86' : {
                     'name' : 'Emerald Medallion'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4603'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2582,7 +3078,9 @@ TMP = {
                 , '238' : {
                     'name' : 'Rootwater Shaman'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4723'
                     , 'type' : 'Creature  — Merfolk Shaman'
                     , 'pt' : '(2/2)'
@@ -2591,7 +3089,9 @@ TMP = {
                 , '231' : {
                     'name' : 'Root Maze'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4784'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2600,7 +3100,9 @@ TMP = {
                 , '87' : {
                     'name' : 'Emmessi Tome'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4604'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2609,7 +3111,9 @@ TMP = {
                 , '287' : {
                     'name' : 'Stalking Stones'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4941'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -2618,7 +3122,9 @@ TMP = {
                 , '185' : {
                     'name' : 'Mountain'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4947'
                     , 'type' : 'Basic Land  — Mountain'
                     , 'pt' : ''
@@ -2627,7 +3133,9 @@ TMP = {
                 , '188' : {
                     'name' : 'Natural Spring'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '3GG'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4773'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2636,7 +3144,9 @@ TMP = {
                 , '49' : {
                     'name' : 'Coiled Tinviper'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4599'
                     , 'type' : 'Artifact Creature  — Snake'
                     , 'pt' : '(2/1)'
@@ -2645,7 +3155,9 @@ TMP = {
                 , '298' : {
                     'name' : 'Tahngarth\'s Rage'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4853'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2654,7 +3166,9 @@ TMP = {
                 , '60' : {
                     'name' : 'Dauthi Embrace'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4648'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2663,7 +3177,9 @@ TMP = {
                 , '122' : {
                     'name' : 'Gravedigger'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4665'
                     , 'type' : 'Creature  — Zombie'
                     , 'pt' : '(2/2)'
@@ -2672,7 +3188,9 @@ TMP = {
                 , '184' : {
                     'name' : 'Mongrel Pack'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4771'
                     , 'type' : 'Creature  — Hound'
                     , 'pt' : '(4/1)'
@@ -2681,7 +3199,9 @@ TMP = {
                 , '48' : {
                     'name' : 'Coffin Queen'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4642'
                     , 'type' : 'Creature  — Zombie Wizard'
                     , 'pt' : '(1/1)'
@@ -2690,7 +3210,9 @@ TMP = {
                 , '40' : {
                     'name' : 'Circle of Protection: Green'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4866'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2699,7 +3221,9 @@ TMP = {
                 , '156' : {
                     'name' : 'Lightning Elemental'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4828'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(4/1)'
@@ -2708,7 +3232,9 @@ TMP = {
                 , '210' : {
                     'name' : 'Plains'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4955'
                     , 'type' : 'Basic Land  — Plains'
                     , 'pt' : ''
@@ -2717,7 +3243,9 @@ TMP = {
                 , '149' : {
                     'name' : 'Knight of Dusk'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1BB'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4668'
                     , 'type' : 'Creature  — Human Knight'
                     , 'pt' : '(2/2)'
@@ -2726,7 +3254,9 @@ TMP = {
                 , '132' : {
                     'name' : 'Helm of Possession'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4611'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2735,7 +3265,9 @@ TMP = {
                 , '277' : {
                     'name' : 'Soltari Monk'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : 'WW'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4903'
                     , 'type' : 'Creature  — Soltari Monk Cleric'
                     , 'pt' : '(2/1)'
@@ -2744,7 +3276,9 @@ TMP = {
                 , '304' : {
                     'name' : 'Thalakos Seer'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'UU'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4734'
                     , 'type' : 'Creature  — Thalakos Wizard'
                     , 'pt' : '(1/1)'
@@ -2753,7 +3287,9 @@ TMP = {
                 , '104' : {
                     'name' : 'Flickering Ward'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4875'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2762,7 +3298,9 @@ TMP = {
                 , '151' : {
                     'name' : 'Leeching Licid'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4670'
                     , 'type' : 'Creature  — Licid'
                     , 'pt' : '(1/1)'
@@ -2771,7 +3309,9 @@ TMP = {
                 , '230' : {
                     'name' : 'Rolling Thunder'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'XRR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4840'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2780,7 +3320,9 @@ TMP = {
                 , '332' : {
                     'name' : 'Winged Sliver'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4746'
                     , 'type' : 'Creature  — Sliver'
                     , 'pt' : '(1/1)'
@@ -2789,7 +3331,9 @@ TMP = {
                 , '295' : {
                     'name' : 'Stun'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4851'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2798,7 +3342,9 @@ TMP = {
                 , '311' : {
                     'name' : 'Tradewind Rider'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4738'
                     , 'type' : 'Creature  — Spirit'
                     , 'pt' : '(1/4)'
@@ -2807,7 +3353,9 @@ TMP = {
                 , '305' : {
                     'name' : 'Thalakos Sentry'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4735'
                     , 'type' : 'Creature  — Thalakos Soldier'
                     , 'pt' : '(1/2)'
@@ -2816,7 +3364,9 @@ TMP = {
                 , '251' : {
                     'name' : 'Screeching Harpy'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '2BB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4684'
                     , 'type' : 'Creature  — Harpy Beast'
                     , 'pt' : '(2/2)'
@@ -2825,7 +3375,9 @@ TMP = {
                 , '216' : {
                     'name' : 'Rain of Tears'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1BB'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4678'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2834,7 +3386,9 @@ TMP = {
                 , '249' : {
                     'name' : 'Scorched Earth'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : 'XR'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4842'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2843,7 +3397,9 @@ TMP = {
                 , '57' : {
                     'name' : 'Dark Banishing'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4645'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2852,7 +3408,9 @@ TMP = {
                 , '12' : {
                     'name' : 'Armor Sliver'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4689'
                     , 'type' : 'Creature  — Sliver'
                     , 'pt' : '(2/2)'
@@ -2861,7 +3419,9 @@ TMP = {
                 , '7' : {
                     'name' : 'Ancient Tomb'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4636'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -2870,7 +3430,9 @@ TMP = {
                 , '34' : {
                     'name' : 'Charging Rhino'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '3GG'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4752'
                     , 'type' : 'Creature  — Rhino'
                     , 'pt' : '(4/4)'
@@ -2879,7 +3441,9 @@ TMP = {
                 , '213' : {
                     'name' : 'Propaganda'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4718'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2888,7 +3452,9 @@ TMP = {
                 , '224' : {
                     'name' : 'Reckless Spite'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1BB'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4681'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2897,7 +3463,9 @@ TMP = {
                 , '164' : {
                     'name' : 'Mana Severance'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4710'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2906,7 +3474,9 @@ TMP = {
                 , '221' : {
                     'name' : 'Reality Anchor'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4780'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2915,7 +3485,9 @@ TMP = {
                 , '105' : {
                     'name' : 'Flowstone Giant'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4816'
                     , 'type' : 'Creature  — Giant'
                     , 'pt' : '(3/3)'
@@ -2924,7 +3496,9 @@ TMP = {
                 , '248' : {
                     'name' : 'Scalding Tongs'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4627'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2933,7 +3507,9 @@ TMP = {
                 , '201' : {
                     'name' : 'Pearl Medallion'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4620'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2942,7 +3518,9 @@ TMP = {
                 , '291' : {
                     'name' : 'Steal Enchantment'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : 'UU'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4729'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2951,7 +3529,9 @@ TMP = {
                 , '50' : {
                     'name' : 'Cold Storage'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4600'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2960,7 +3540,9 @@ TMP = {
                 , '171' : {
                     'name' : 'Maze of Shadows'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4933'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -2969,7 +3551,9 @@ TMP = {
                 , '245' : {
                     'name' : 'Sapphire Medallion'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4626'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2978,7 +3562,9 @@ TMP = {
                 , '121' : {
                     'name' : 'Goblin Bombardment'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4821'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2987,7 +3573,9 @@ TMP = {
                 , '120' : {
                     'name' : 'Giant Strength'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'RR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4820'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2996,7 +3584,9 @@ TMP = {
                 , '14' : {
                     'name' : 'Auratog'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4862'
                     , 'type' : 'Creature  — Atog'
                     , 'pt' : '(1/2)'
@@ -3005,7 +3595,9 @@ TMP = {
                 , '328' : {
                     'name' : 'Wild Wurm'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4856'
                     , 'type' : 'Creature  — Wurm'
                     , 'pt' : '(5/4)'
@@ -3014,7 +3606,9 @@ TMP = {
                 , '266' : {
                     'name' : 'Skyshroud Condor'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4727'
                     , 'type' : 'Creature  — Bird'
                     , 'pt' : '(2/2)'
@@ -3023,7 +3617,9 @@ TMP = {
                 , '307' : {
                     'name' : 'Time Ebb'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4736'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -3032,7 +3628,9 @@ TMP = {
                 , '74' : {
                     'name' : 'Dracoplasm'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : 'UR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4912'
                     , 'type' : 'Creature  — Shapeshifter'
                     , 'pt' : '(0/0)'
@@ -3041,7 +3639,9 @@ TMP = {
                 , '88' : {
                     'name' : 'Endless Scream'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'XB'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4660'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -3050,7 +3650,9 @@ TMP = {
                 , '320' : {
                     'name' : 'Vhati il-Dal'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '2BG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4920'
                     , 'type' : 'Legendary Creature  — Human Warrior'
                     , 'pt' : '(3/3)'
@@ -3059,7 +3661,9 @@ TMP = {
                 , '255' : {
                     'name' : 'Seeker of Skybreak'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4788'
                     , 'type' : 'Creature  — Elf'
                     , 'pt' : '(2/1)'
@@ -3068,7 +3672,9 @@ TMP = {
                 , '317' : {
                     'name' : 'Vec Townships'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4943'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -3077,7 +3683,9 @@ TMP = {
                 , '75' : {
                     'name' : 'Dread of Night'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4658'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -3086,7 +3694,9 @@ TMP = {
                 , '176' : {
                     'name' : 'Mirri\'s Guile'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4770'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -3095,7 +3705,9 @@ TMP = {
                 , '189' : {
                     'name' : 'Nature\'s Revolt'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '3GG'
+                    , 'cmc' : '5'
                     , 'multiverse' : '4774'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -3104,7 +3716,9 @@ TMP = {
                 , '5' : {
                     'name' : 'Aluren'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '2GG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4747'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -3113,7 +3727,9 @@ TMP = {
                 , '167' : {
                     'name' : 'Marble Titan'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4886'
                     , 'type' : 'Creature  — Giant'
                     , 'pt' : '(3/3)'
@@ -3122,7 +3738,9 @@ TMP = {
                 , '58' : {
                     'name' : 'Dark Ritual'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4646'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -3131,7 +3749,9 @@ TMP = {
                 , '283' : {
                     'name' : 'Spinal Graft'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4688'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -3140,7 +3760,9 @@ TMP = {
                 , '22' : {
                     'name' : 'Boil'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4805'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -3149,7 +3771,9 @@ TMP = {
                 , '45' : {
                     'name' : 'Clot Sliver'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4640'
                     , 'type' : 'Creature  — Sliver'
                     , 'pt' : '(1/1)'
@@ -3158,7 +3782,9 @@ TMP = {
                 , '84' : {
                     'name' : 'Elven Warhounds'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4759'
                     , 'type' : 'Creature  — Hound'
                     , 'pt' : '(2/2)'
@@ -3167,7 +3793,9 @@ TMP = {
                 , '79' : {
                     'name' : 'Earthcraft'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4756'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -3176,7 +3804,9 @@ TMP = {
                 , '67' : {
                     'name' : 'Deadshot'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4810'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -3185,7 +3815,9 @@ TMP = {
                 , '327' : {
                     'name' : 'Whispers of the Muse'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4743'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -3194,7 +3826,9 @@ TMP = {
                 , '315' : {
                     'name' : 'Twitch'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4739'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -3203,7 +3837,9 @@ TMP = {
                 , '169' : {
                     'name' : 'Master Decoy'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4887'
                     , 'type' : 'Creature  — Human Soldier'
                     , 'pt' : '(1/2)'
@@ -3212,7 +3848,9 @@ TMP = {
                 , '165' : {
                     'name' : 'Manakin'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4616'
                     , 'type' : 'Artifact Creature  — Construct'
                     , 'pt' : '(1/1)'
@@ -3221,7 +3859,9 @@ TMP = {
                 , '303' : {
                     'name' : 'Thalakos Mistfolk'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4733'
                     , 'type' : 'Creature  — Thalakos Illusion'
                     , 'pt' : '(2/1)'
@@ -3230,7 +3870,9 @@ TMP = {
                 , '16' : {
                     'name' : 'Barbed Sliver'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4803'
                     , 'type' : 'Creature  — Sliver'
                     , 'pt' : '(2/2)'
@@ -3239,7 +3881,9 @@ TMP = {
                 , '47' : {
                     'name' : 'Coercion'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4641'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -3248,7 +3892,9 @@ TMP = {
                 , '95' : {
                     'name' : 'Evincar\'s Justice'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2BB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4662'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -3257,7 +3903,9 @@ TMP = {
                 , '333' : {
                     'name' : 'Winter\'s Grasp'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '1GG'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4799'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -3266,7 +3914,9 @@ TMP = {
                 , '226' : {
                     'name' : 'Reflecting Pool'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4936'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -3275,7 +3925,9 @@ TMP = {
                 , '142' : {
                     'name' : 'Island'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '4951'
                     , 'type' : 'Basic Land  — Island'
                     , 'pt' : ''
@@ -3284,7 +3936,9 @@ TMP = {
                 , '117' : {
                     'name' : 'Gerrard\'s Battle Cry'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4877'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -3293,7 +3947,9 @@ TMP = {
                 , '194' : {
                     'name' : 'Oracle en-Vec'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4889'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(1/1)'
@@ -3302,7 +3958,9 @@ TMP = {
                 , '9' : {
                     'name' : 'Anoint'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4859'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -3311,7 +3969,9 @@ TMP = {
                 , '177' : {
                     'name' : 'Mnemonic Sliver'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4714'
                     , 'type' : 'Creature  — Sliver'
                     , 'pt' : '(2/2)'
@@ -3320,7 +3980,9 @@ TMP = {
                 , '76' : {
                     'name' : 'Dream Cache'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4696'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -3329,7 +3991,9 @@ TMP = {
                 , '69' : {
                     'name' : 'Diabolic Edict'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '4656'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -3338,7 +4002,9 @@ TMP = {
                 , '285' : {
                     'name' : 'Spontaneous Combustion'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '1BR'
+                    , 'cmc' : '3'
                     , 'multiverse' : '4919'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -3347,7 +4013,9 @@ TMP = {
                 , '3' : {
                     'name' : 'Aftershock'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '4800'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -3356,7 +4024,9 @@ TMP = {
                 , '56' : {
                     'name' : 'Cursed Scroll'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '1'
+                    , 'cmc' : '1'
                     , 'multiverse' : '4601'
                     , 'type' : 'Artifact'
                     , 'pt' : ''

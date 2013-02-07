@@ -352,7 +352,9 @@ MIR = {
             '288' : {
                     'name' : 'Teferi\'s Imp'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3369'
                     , 'type' : 'Creature  — Imp'
                     , 'pt' : '(1/1)'
@@ -361,7 +363,9 @@ MIR = {
                 , '279' : {
                     'name' : 'Superior Numbers'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : 'GG'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3413'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -370,7 +374,9 @@ MIR = {
                 , '159' : {
                     'name' : 'Kaervek\'s Torch'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'XR'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3456'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -379,7 +385,9 @@ MIR = {
                 , '81' : {
                     'name' : 'Dream Fighter'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3334'
                     , 'type' : 'Creature  — Human Soldier'
                     , 'pt' : '(1/1)'
@@ -388,7 +396,9 @@ MIR = {
                 , '284' : {
                     'name' : 'Taniwha'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '3UU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3366'
                     , 'type' : 'Legendary Creature  — Serpent'
                     , 'pt' : '(7/7)'
@@ -397,7 +407,9 @@ MIR = {
                 , '203' : {
                     'name' : 'Pearl Dragon'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '4WW'
+                    , 'cmc' : '6'
                     , 'multiverse' : '3508'
                     , 'type' : 'Creature  — Dragon'
                     , 'pt' : '(4/4)'
@@ -406,7 +418,9 @@ MIR = {
                 , '194' : {
                     'name' : 'Natural Balance'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '2GG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3400'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -415,7 +429,9 @@ MIR = {
                 , '36' : {
                     'name' : 'Builder\'s Bane'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'XXR'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3431'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -424,7 +440,9 @@ MIR = {
                 , '334' : {
                     'name' : 'Zombie Mob'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '2BB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3322'
                     , 'type' : 'Creature  — Zombie'
                     , 'pt' : '(2/0)'
@@ -433,7 +451,9 @@ MIR = {
                 , '162' : {
                     'name' : 'Kukemssa Serpent'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3343'
                     , 'type' : 'Creature  — Serpent'
                     , 'pt' : '(4/3)'
@@ -442,7 +462,9 @@ MIR = {
                 , '1' : {
                     'name' : 'Abyssal Hunter'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3272'
                     , 'type' : 'Creature  — Human Assassin'
                     , 'pt' : '(1/1)'
@@ -451,7 +473,9 @@ MIR = {
                 , '148' : {
                     'name' : 'Iron Tusk Elephant'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '4W'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3497'
                     , 'type' : 'Creature  — Elephant'
                     , 'pt' : '(3/3)'
@@ -460,7 +484,9 @@ MIR = {
                 , '281' : {
                     'name' : 'Swamp'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '3564'
                     , 'type' : 'Basic Land  — Swamp'
                     , 'pt' : ''
@@ -469,7 +495,9 @@ MIR = {
                 , '18' : {
                     'name' : 'Barbed Foliage'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '2GG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3376'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -478,7 +506,9 @@ MIR = {
                 , '223' : {
                     'name' : 'Rampant Growth'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3404'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -487,7 +517,9 @@ MIR = {
                 , '305' : {
                     'name' : 'Unyaro Bee Sting'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3419'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -496,7 +528,9 @@ MIR = {
                 , '69' : {
                     'name' : 'Decomposition'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3381'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -505,7 +539,9 @@ MIR = {
                 , '94' : {
                     'name' : 'Enlightened Tutor'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3489'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -514,7 +550,9 @@ MIR = {
                 , '235' : {
                     'name' : 'Restless Dead'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3307'
                     , 'type' : 'Creature  — Skeleton'
                     , 'pt' : '(1/1)'
@@ -523,7 +561,9 @@ MIR = {
                 , '280' : {
                     'name' : 'Suq\'Ata Firewalker'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '1UU'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3365'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(0/1)'
@@ -532,7 +572,9 @@ MIR = {
                 , '165' : {
                     'name' : 'Lightning Reflexes'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3457'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -541,7 +583,9 @@ MIR = {
                 , '217' : {
                     'name' : 'Purgatory'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '2WB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3546'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -550,7 +594,9 @@ MIR = {
                 , '193' : {
                     'name' : 'Mystical Tutor'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3351'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -559,7 +605,9 @@ MIR = {
                 , '220' : {
                     'name' : 'Quirion Elves'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3403'
                     , 'type' : 'Creature  — Elf Druid'
                     , 'pt' : '(1/1)'
@@ -568,7 +616,9 @@ MIR = {
                 , '171' : {
                     'name' : 'Mangara\'s Blessing'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3500'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -577,7 +627,9 @@ MIR = {
                 , '331' : {
                     'name' : 'Zhalfirin Commander'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3524'
                     , 'type' : 'Creature  — Human Knight'
                     , 'pt' : '(2/2)'
@@ -586,7 +638,9 @@ MIR = {
                 , '239' : {
                     'name' : 'Roots of Life'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '1GG'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3406'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -595,7 +649,9 @@ MIR = {
                 , '79' : {
                     'name' : 'Dread Specter'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3288'
                     , 'type' : 'Creature  — Specter'
                     , 'pt' : '(2/2)'
@@ -604,7 +660,9 @@ MIR = {
                 , '68' : {
                     'name' : 'Dazzling Beauty'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3483'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -613,7 +671,9 @@ MIR = {
                 , '54' : {
                     'name' : 'Cloak of Invisibility'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3329'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -622,7 +682,9 @@ MIR = {
                 , '227' : {
                     'name' : 'Razor Pendulum'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3265'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -631,7 +693,9 @@ MIR = {
                 , '186' : {
                     'name' : 'Mist Dragon'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '4UU'
+                    , 'cmc' : '6'
                     , 'multiverse' : '3350'
                     , 'type' : 'Creature  — Dragon'
                     , 'pt' : '(4/4)'
@@ -640,7 +704,9 @@ MIR = {
                 , '185' : {
                     'name' : 'Misers\' Cage'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3259'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -649,7 +715,9 @@ MIR = {
                 , '90' : {
                     'name' : 'Emberwilde Djinn'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3443'
                     , 'type' : 'Creature  — Djinn'
                     , 'pt' : '(5/4)'
@@ -658,7 +726,9 @@ MIR = {
                 , '297' : {
                     'name' : 'Torrent of Lava'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : 'XRR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3470'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -667,7 +737,9 @@ MIR = {
                 , '214' : {
                     'name' : 'Prismatic Circle'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3509'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -676,7 +748,9 @@ MIR = {
                 , '199' : {
                     'name' : 'Pacifism'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3507'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -685,7 +759,9 @@ MIR = {
                 , '155' : {
                     'name' : 'Jungle Troll'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '1RG'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3540'
                     , 'type' : 'Creature  — Troll'
                     , 'pt' : '(2/1)'
@@ -694,7 +770,9 @@ MIR = {
                 , '55' : {
                     'name' : 'Consuming Ferocity'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3437'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -703,7 +781,9 @@ MIR = {
                 , '116' : {
                     'name' : 'Forbidden Crypt'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '3BB'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3293'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -712,7 +792,9 @@ MIR = {
                 , '125' : {
                     'name' : 'Goblin Tinkerer'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3451'
                     , 'type' : 'Creature  — Goblin Artificer'
                     , 'pt' : '(1/2)'
@@ -721,7 +803,9 @@ MIR = {
                 , '253' : {
                     'name' : 'Serene Heart'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3411'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -730,7 +814,9 @@ MIR = {
                 , '230' : {
                     'name' : 'Reflect Damage'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '3RW'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3548'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -739,7 +825,9 @@ MIR = {
                 , '22' : {
                     'name' : 'Bay Falcon'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3325'
                     , 'type' : 'Creature  — Bird'
                     , 'pt' : '(1/1)'
@@ -748,7 +836,9 @@ MIR = {
                 , '134' : {
                     'name' : 'Hammer of Bogardan'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '1RR'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3452'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -757,7 +847,9 @@ MIR = {
                 , '302' : {
                     'name' : 'Unerring Sling'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3270'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -766,7 +858,9 @@ MIR = {
                 , '248' : {
                     'name' : 'Sea Scryer'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3361'
                     , 'type' : 'Creature  — Merfolk Wizard'
                     , 'pt' : '(1/1)'
@@ -775,7 +869,9 @@ MIR = {
                 , '180' : {
                     'name' : 'Merfolk Seer'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3347'
                     , 'type' : 'Creature  — Merfolk Wizard'
                     , 'pt' : '(2/2)'
@@ -784,7 +880,9 @@ MIR = {
                 , '121' : {
                     'name' : 'Gibbering Hyenas'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3388'
                     , 'type' : 'Creature  — Hyena'
                     , 'pt' : '(3/2)'
@@ -793,7 +891,9 @@ MIR = {
                 , '182' : {
                     'name' : 'Mind Harness'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3349'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -802,7 +902,9 @@ MIR = {
                 , '123' : {
                     'name' : 'Goblin Scouts'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '3RR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3449'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -811,7 +913,9 @@ MIR = {
                 , '265' : {
                     'name' : 'Sky Diamond'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3267'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -820,7 +924,9 @@ MIR = {
                 , '167' : {
                     'name' : 'Locust Swarm'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3395'
                     , 'type' : 'Creature  — Insect'
                     , 'pt' : '(1/1)'
@@ -829,7 +935,9 @@ MIR = {
                 , '119' : {
                     'name' : 'Frenetic Efreet'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '1UR'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3535'
                     , 'type' : 'Creature  — Efreet'
                     , 'pt' : '(2/1)'
@@ -838,7 +946,9 @@ MIR = {
                 , '211' : {
                     'name' : 'Power Sink'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'XU'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3354'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -847,7 +957,9 @@ MIR = {
                 , '292' : {
                     'name' : 'Telim\'Tor\'s Edict'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3469'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -856,7 +968,9 @@ MIR = {
                 , '3' : {
                     'name' : 'Afiya Grove'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3374'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -865,7 +979,9 @@ MIR = {
                 , '108' : {
                     'name' : 'Firebreathing'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3445'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -874,7 +990,9 @@ MIR = {
                 , '40' : {
                     'name' : 'Cadaverous Knight'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3279'
                     , 'type' : 'Creature  — Zombie Knight'
                     , 'pt' : '(2/2)'
@@ -883,7 +1001,9 @@ MIR = {
                 , '249' : {
                     'name' : 'Sealed Fate'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'XUB'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3553'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -892,7 +1012,9 @@ MIR = {
                 , '53' : {
                     'name' : 'Civic Guildmage'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3482'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(1/1)'
@@ -901,7 +1023,9 @@ MIR = {
                 , '209' : {
                     'name' : 'Political Trickery'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3352'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -910,7 +1034,9 @@ MIR = {
                 , '15' : {
                     'name' : 'Auspicious Ancestor'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3478'
                     , 'type' : 'Creature  — Human Cleric'
                     , 'pt' : '(2/3)'
@@ -919,7 +1045,9 @@ MIR = {
                 , '20' : {
                     'name' : 'Barreling Attack'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3428'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -928,7 +1056,9 @@ MIR = {
                 , '42' : {
                     'name' : 'Carrion'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '1BB'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3280'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -937,7 +1067,9 @@ MIR = {
                 , '147' : {
                     'name' : 'Infernal Contract'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : 'BBB'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3298'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -946,7 +1078,9 @@ MIR = {
                 , '181' : {
                     'name' : 'Mind Bend'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3348'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -955,7 +1089,9 @@ MIR = {
                 , '258' : {
                     'name' : 'Shaper Guildmage'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3362'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(1/1)'
@@ -964,7 +1100,9 @@ MIR = {
                 , '11' : {
                     'name' : 'Armor of Thorns'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3375'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -973,7 +1111,9 @@ MIR = {
                 , '225' : {
                     'name' : 'Ravenous Vampire'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '3BB'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3305'
                     , 'type' : 'Creature  — Vampire'
                     , 'pt' : '(3/3)'
@@ -982,7 +1122,9 @@ MIR = {
                 , '324' : {
                     'name' : 'Wild Elephant'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3423'
                     , 'type' : 'Creature  — Elephant'
                     , 'pt' : '(3/3)'
@@ -991,7 +1133,9 @@ MIR = {
                 , '152' : {
                     'name' : 'Jolrael\'s Centaur'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1GG'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3391'
                     , 'type' : 'Creature  — Centaur Archer'
                     , 'pt' : '(2/2)'
@@ -1000,7 +1144,9 @@ MIR = {
                 , '129' : {
                     'name' : 'Gravebane Zombie'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3296'
                     , 'type' : 'Creature  — Zombie'
                     , 'pt' : '(3/2)'
@@ -1009,7 +1155,9 @@ MIR = {
                 , '157' : {
                     'name' : 'Kaervek\'s Hex'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3299'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1018,7 +1166,9 @@ MIR = {
                 , '106' : {
                     'name' : 'Final Fortune'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : 'RR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3444'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1027,7 +1177,9 @@ MIR = {
                 , '4' : {
                     'name' : 'Afterlife'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3476'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1036,7 +1188,9 @@ MIR = {
                 , '102' : {
                     'name' : 'Femeref Knight'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3493'
                     , 'type' : 'Creature  — Human Knight'
                     , 'pt' : '(2/2)'
@@ -1045,7 +1199,9 @@ MIR = {
                 , '245' : {
                     'name' : 'Sapphire Charm'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3360'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1054,7 +1210,9 @@ MIR = {
                 , '61' : {
                     'name' : 'Crystal Golem'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3246'
                     , 'type' : 'Artifact Creature  — Golem'
                     , 'pt' : '(3/3)'
@@ -1063,7 +1221,9 @@ MIR = {
                 , '110' : {
                     'name' : 'Flare'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3447'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1072,7 +1232,9 @@ MIR = {
                 , '189' : {
                     'name' : 'Mountain Valley'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '3574'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1081,7 +1243,9 @@ MIR = {
                 , '115' : {
                     'name' : 'Foratog'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3386'
                     , 'type' : 'Creature  — Atog'
                     , 'pt' : '(1/2)'
@@ -1090,7 +1254,9 @@ MIR = {
                 , '84' : {
                     'name' : 'Early Harvest'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '1GG'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3382'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1099,7 +1265,9 @@ MIR = {
                 , '124' : {
                     'name' : 'Goblin Soothsayer'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3450'
                     , 'type' : 'Creature  — Goblin Shaman'
                     , 'pt' : '(1/1)'
@@ -1108,7 +1276,9 @@ MIR = {
                 , '183' : {
                     'name' : 'Mindbender Spores'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3398'
                     , 'type' : 'Creature  — Fungus Wall'
                     , 'pt' : '(0/1)'
@@ -1117,7 +1287,9 @@ MIR = {
                 , '274' : {
                     'name' : 'Stalking Tiger'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3412'
                     , 'type' : 'Creature  — Cat'
                     , 'pt' : '(3/3)'
@@ -1126,7 +1298,9 @@ MIR = {
                 , '270' : {
                     'name' : 'Spatial Binding'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'UB'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3555'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1135,7 +1309,9 @@ MIR = {
                 , '205' : {
                     'name' : 'Phyrexian Purge'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '2BR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3544'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1144,7 +1320,9 @@ MIR = {
                 , '244' : {
                     'name' : 'Sandstorm'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3408'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1153,7 +1331,9 @@ MIR = {
                 , '256' : {
                     'name' : 'Shadowbane'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3513'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1162,7 +1342,9 @@ MIR = {
                 , '153' : {
                     'name' : 'Jolt'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3341'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1171,7 +1353,9 @@ MIR = {
                 , '34' : {
                     'name' : 'Breathstealer'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3278'
                     , 'type' : 'Creature  — Nightstalker'
                     , 'pt' : '(2/2)'
@@ -1180,7 +1364,9 @@ MIR = {
                 , '238' : {
                     'name' : 'Rocky Tar Pit'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '3575'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1189,7 +1375,9 @@ MIR = {
                 , '154' : {
                     'name' : 'Jungle Patrol'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3392'
                     , 'type' : 'Creature  — Human Soldier'
                     , 'pt' : '(3/2)'
@@ -1198,7 +1386,9 @@ MIR = {
                 , '219' : {
                     'name' : 'Pyric Salamander'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3458'
                     , 'type' : 'Creature  — Salamander'
                     , 'pt' : '(1/1)'
@@ -1207,7 +1397,9 @@ MIR = {
                 , '197' : {
                     'name' : 'Nocturnal Raid'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '2BB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3301'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1216,7 +1408,9 @@ MIR = {
                 , '25' : {
                     'name' : 'Benthic Djinn'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '2UB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3528'
                     , 'type' : 'Creature  — Djinn'
                     , 'pt' : '(5/3)'
@@ -1225,7 +1419,9 @@ MIR = {
                 , '135' : {
                     'name' : 'Harbinger of Night'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '2BB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3297'
                     , 'type' : 'Creature  — Spirit'
                     , 'pt' : '(2/3)'
@@ -1234,7 +1430,9 @@ MIR = {
                 , '296' : {
                     'name' : 'Tombstone Stairwell'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '2BB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3318'
                     , 'type' : 'World Enchantment'
                     , 'pt' : ''
@@ -1243,7 +1441,9 @@ MIR = {
                 , '212' : {
                     'name' : 'Preferred Selection'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '2GG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3402'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1252,7 +1452,9 @@ MIR = {
                 , '243' : {
                     'name' : 'Sandbar Crocodile'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '4U'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3359'
                     , 'type' : 'Creature  — Crocodile'
                     , 'pt' : '(6/5)'
@@ -1261,7 +1463,9 @@ MIR = {
                 , '187' : {
                     'name' : 'Moss Diamond'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3260'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1270,7 +1474,9 @@ MIR = {
                 , '52' : {
                     'name' : 'Circle of Despair'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '1WB'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3530'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1279,7 +1485,9 @@ MIR = {
                 , '38' : {
                     'name' : 'Burning Shield Askari'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3433'
                     , 'type' : 'Creature  — Human Knight'
                     , 'pt' : '(2/2)'
@@ -1288,7 +1496,9 @@ MIR = {
                 , '234' : {
                     'name' : 'Reparations'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '1WU'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3549'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1297,7 +1507,9 @@ MIR = {
                 , '278' : {
                     'name' : 'Sunweb'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3517'
                     , 'type' : 'Creature  — Wall'
                     , 'pt' : '(5/6)'
@@ -1306,7 +1518,9 @@ MIR = {
                 , '78' : {
                     'name' : 'Drain Life'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'X1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3287'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1315,7 +1529,9 @@ MIR = {
                 , '264' : {
                     'name' : 'Skulking Ghost'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3312'
                     , 'type' : 'Creature  — Spirit'
                     , 'pt' : '(2/1)'
@@ -1324,7 +1540,9 @@ MIR = {
                 , '145' : {
                     'name' : 'Illumination'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : 'WW'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3496'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1333,7 +1551,9 @@ MIR = {
                 , '29' : {
                     'name' : 'Blinding Light'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3480'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1342,7 +1562,9 @@ MIR = {
                 , '111' : {
                     'name' : 'Flash'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3337'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1351,7 +1573,9 @@ MIR = {
                 , '126' : {
                     'name' : 'Granger Guildmage'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3389'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(1/1)'
@@ -1360,7 +1584,9 @@ MIR = {
                 , '175' : {
                     'name' : 'Maro'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '2GG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3397'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(*/*)'
@@ -1369,7 +1595,9 @@ MIR = {
                 , '13' : {
                     'name' : 'Ashen Powder'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '2BB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3273'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1378,7 +1606,9 @@ MIR = {
                 , '120' : {
                     'name' : 'Giant Mantis'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3387'
                     , 'type' : 'Creature  — Insect'
                     , 'pt' : '(2/4)'
@@ -1387,7 +1617,9 @@ MIR = {
                 , '317' : {
                     'name' : 'Wall of Corpses'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3320'
                     , 'type' : 'Creature  — Wall'
                     , 'pt' : '(0/2)'
@@ -1396,7 +1628,9 @@ MIR = {
                 , '100' : {
                     'name' : 'Femeref Archers'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3384'
                     , 'type' : 'Creature  — Human Archer'
                     , 'pt' : '(2/2)'
@@ -1405,7 +1639,9 @@ MIR = {
                 , '318' : {
                     'name' : 'Wall of Resistance'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3521'
                     , 'type' : 'Creature  — Wall'
                     , 'pt' : '(0/3)'
@@ -1414,7 +1650,9 @@ MIR = {
                 , '202' : {
                     'name' : 'Paupers\' Cage'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3262'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1423,7 +1661,9 @@ MIR = {
                 , '132' : {
                     'name' : 'Hakim, Loreweaver'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '3UU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3339'
                     , 'type' : 'Legendary Creature  — Human Wizard'
                     , 'pt' : '(2/4)'
@@ -1432,7 +1672,9 @@ MIR = {
                 , '143' : {
                     'name' : 'Igneous Golem'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '5'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3253'
                     , 'type' : 'Artifact Creature  — Golem'
                     , 'pt' : '(3/4)'
@@ -1441,7 +1683,9 @@ MIR = {
                 , '28' : {
                     'name' : 'Blind Fury'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3429'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1450,7 +1694,9 @@ MIR = {
                 , '262' : {
                     'name' : 'Sidar Jabari'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3514'
                     , 'type' : 'Legendary Creature  — Human Knight'
                     , 'pt' : '(2/2)'
@@ -1459,7 +1705,9 @@ MIR = {
                 , '174' : {
                     'name' : 'Marble Diamond'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3258'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1468,7 +1716,9 @@ MIR = {
                 , '24' : {
                     'name' : 'Benevolent Unicorn'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3479'
                     , 'type' : 'Creature  — Unicorn'
                     , 'pt' : '(1/2)'
@@ -1477,7 +1727,9 @@ MIR = {
                 , '207' : {
                     'name' : 'Phyrexian Vault'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3264'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1486,7 +1738,9 @@ MIR = {
                 , '240' : {
                     'name' : 'Sabertooth Cobra'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3407'
                     , 'type' : 'Creature  — Snake'
                     , 'pt' : '(2/2)'
@@ -1495,7 +1749,9 @@ MIR = {
                 , '300' : {
                     'name' : 'Uktabi Faerie'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3416'
                     , 'type' : 'Creature  — Faerie'
                     , 'pt' : '(1/1)'
@@ -1504,7 +1760,9 @@ MIR = {
                 , '74' : {
                     'name' : 'Disenchant'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3485'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1513,7 +1771,9 @@ MIR = {
                 , '247' : {
                     'name' : 'Sawback Manticore'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '3RG'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3552'
                     , 'type' : 'Creature  — Manticore'
                     , 'pt' : '(2/4)'
@@ -1522,7 +1782,9 @@ MIR = {
                 , '21' : {
                     'name' : 'Basalt Golem'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '5'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3242'
                     , 'type' : 'Artifact Creature  — Golem'
                     , 'pt' : '(2/4)'
@@ -1531,7 +1793,9 @@ MIR = {
                 , '104' : {
                     'name' : 'Feral Shadow'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3291'
                     , 'type' : 'Creature  — Nightstalker'
                     , 'pt' : '(2/1)'
@@ -1540,7 +1804,9 @@ MIR = {
                 , '41' : {
                     'name' : 'Canopy Dragon'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '4GG'
+                    , 'cmc' : '6'
                     , 'multiverse' : '3378'
                     , 'type' : 'Creature  — Dragon'
                     , 'pt' : '(4/4)'
@@ -1549,7 +1815,9 @@ MIR = {
                 , '14' : {
                     'name' : 'Asmira, Holy Avenger'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '2GW'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3527'
                     , 'type' : 'Legendary Creature  — Human Cleric'
                     , 'pt' : '(2/3)'
@@ -1558,7 +1826,9 @@ MIR = {
                 , '308' : {
                     'name' : 'Vaporous Djinn'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2UU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3372'
                     , 'type' : 'Creature  — Djinn'
                     , 'pt' : '(3/4)'
@@ -1567,7 +1837,9 @@ MIR = {
                 , '35' : {
                     'name' : 'Brushwagg'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '1GG'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3377'
                     , 'type' : 'Creature  — Brushwagg'
                     , 'pt' : '(3/2)'
@@ -1576,7 +1848,9 @@ MIR = {
                 , '286' : {
                     'name' : 'Teferi\'s Curse'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3367'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1585,7 +1859,9 @@ MIR = {
                 , '251' : {
                     'name' : 'Seedling Charm'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3409'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1594,7 +1870,9 @@ MIR = {
                 , '307' : {
                     'name' : 'Urborg Panther'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3319'
                     , 'type' : 'Creature  — Nightstalker Cat'
                     , 'pt' : '(2/2)'
@@ -1603,7 +1881,9 @@ MIR = {
                 , '213' : {
                     'name' : 'Prismatic Boon'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'XWU'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3545'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1612,7 +1892,9 @@ MIR = {
                 , '133' : {
                     'name' : 'Hall of Gemstone'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '1GG'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3390'
                     , 'type' : 'World Enchantment'
                     , 'pt' : ''
@@ -1621,7 +1903,9 @@ MIR = {
                 , '190' : {
                     'name' : 'Mtenda Griffin'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3503'
                     , 'type' : 'Creature  — Griffin'
                     , 'pt' : '(2/2)'
@@ -1630,7 +1914,9 @@ MIR = {
                 , '260' : {
                     'name' : 'Shauku\'s Minion'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '1BR'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3554'
                     , 'type' : 'Creature  — Human Minion'
                     , 'pt' : '(2/2)'
@@ -1639,7 +1925,9 @@ MIR = {
                 , '160' : {
                     'name' : 'Karoo Meerkat'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3394'
                     , 'type' : 'Creature  — Mongoose'
                     , 'pt' : '(2/1)'
@@ -1648,7 +1936,9 @@ MIR = {
                 , '98' : {
                     'name' : 'Fallow Earth'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3383'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1657,7 +1947,9 @@ MIR = {
                 , '158' : {
                     'name' : 'Kaervek\'s Purge'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'XBR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3541'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1666,7 +1958,9 @@ MIR = {
                 , '73' : {
                     'name' : 'Disempower'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3484'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1675,7 +1969,9 @@ MIR = {
                 , '229' : {
                     'name' : 'Reckless Embermage'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3460'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(2/2)'
@@ -1684,7 +1980,9 @@ MIR = {
                 , '319' : {
                     'name' : 'Wall of Roots'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3422'
                     , 'type' : 'Creature  — Plant Wall'
                     , 'pt' : '(0/5)'
@@ -1693,7 +1991,9 @@ MIR = {
                 , '49' : {
                     'name' : 'Chariot of the Sun'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3245'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1702,7 +2002,9 @@ MIR = {
                 , '86' : {
                     'name' : 'Ekundu Cyclops'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3442'
                     , 'type' : 'Creature  — Cyclops'
                     , 'pt' : '(3/4)'
@@ -1711,7 +2013,9 @@ MIR = {
                 , '114' : {
                     'name' : 'Fog'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3385'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1720,7 +2024,9 @@ MIR = {
                 , '7' : {
                     'name' : 'Aleatory'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3426'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1729,7 +2035,9 @@ MIR = {
                 , '44' : {
                     'name' : 'Celestial Dawn'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '1WW'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3481'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1738,7 +2046,9 @@ MIR = {
                 , '283' : {
                     'name' : 'Talruum Minotaur'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3467'
                     , 'type' : 'Creature  — Minotaur Berserker'
                     , 'pt' : '(3/3)'
@@ -1747,7 +2057,9 @@ MIR = {
                 , '315' : {
                     'name' : 'Volcanic Geyser'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : 'XRR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3473'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1756,7 +2068,9 @@ MIR = {
                 , '312' : {
                     'name' : 'Village Elder'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3420'
                     , 'type' : 'Creature  — Human Druid'
                     , 'pt' : '(1/1)'
@@ -1765,7 +2079,9 @@ MIR = {
                 , '151' : {
                     'name' : 'Jabari\'s Influence'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '3WW'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3499'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1774,7 +2090,9 @@ MIR = {
                 , '9' : {
                     'name' : 'Amulet of Unmaking'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '5'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3241'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1783,7 +2101,9 @@ MIR = {
                 , '122' : {
                     'name' : 'Goblin Elite Infantry'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3448'
                     , 'type' : 'Creature  — Goblin Warrior'
                     , 'pt' : '(2/2)'
@@ -1792,7 +2112,9 @@ MIR = {
                 , '204' : {
                     'name' : 'Phyrexian Dreadnought'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '1'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3263'
                     , 'type' : 'Artifact Creature  — Dreadnought'
                     , 'pt' : '(12/12)'
@@ -1801,7 +2123,9 @@ MIR = {
                 , '142' : {
                     'name' : 'Horrible Hordes'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3252'
                     , 'type' : 'Artifact Creature  — Spirit'
                     , 'pt' : '(2/2)'
@@ -1810,7 +2134,9 @@ MIR = {
                 , '241' : {
                     'name' : 'Sacred Mesa'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3512'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1819,7 +2145,9 @@ MIR = {
                 , '179' : {
                     'name' : 'Merfolk Raiders'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3346'
                     , 'type' : 'Creature  — Merfolk Soldier'
                     , 'pt' : '(2/3)'
@@ -1828,7 +2156,9 @@ MIR = {
                 , '113' : {
                     'name' : 'Floodgate'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3338'
                     , 'type' : 'Creature  — Wall'
                     , 'pt' : '(0/5)'
@@ -1837,7 +2167,9 @@ MIR = {
                 , '257' : {
                     'name' : 'Shallow Grave'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3310'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1846,7 +2178,9 @@ MIR = {
                 , '136' : {
                     'name' : 'Harbor Guardian'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '2WU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3537'
                     , 'type' : 'Creature  — Gargoyle'
                     , 'pt' : '(3/4)'
@@ -1855,7 +2189,9 @@ MIR = {
                 , '311' : {
                     'name' : 'Vigilant Martyr'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3520'
                     , 'type' : 'Creature  — Human Cleric'
                     , 'pt' : '(1/1)'
@@ -1864,7 +2200,9 @@ MIR = {
                 , '313' : {
                     'name' : 'Vitalizing Cascade'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'XGW'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3557'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1873,7 +2211,9 @@ MIR = {
                 , '327' : {
                     'name' : 'Withering Boon'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3321'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1882,7 +2222,9 @@ MIR = {
                 , '309' : {
                     'name' : 'Ventifact Bottle'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3271'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1891,7 +2233,9 @@ MIR = {
                 , '64' : {
                     'name' : 'Cycle of Life'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '1GG'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3380'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1900,7 +2244,9 @@ MIR = {
                 , '16' : {
                     'name' : 'Azimaet Drake'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3324'
                     , 'type' : 'Creature  — Drake'
                     , 'pt' : '(1/3)'
@@ -1909,7 +2255,9 @@ MIR = {
                 , '169' : {
                     'name' : 'Malignant Growth'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '3GU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3543'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1918,7 +2266,9 @@ MIR = {
                 , '137' : {
                     'name' : 'Harmattan Efreet'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2UU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3340'
                     , 'type' : 'Creature  — Efreet'
                     , 'pt' : '(2/2)'
@@ -1927,7 +2277,9 @@ MIR = {
                 , '289' : {
                     'name' : 'Teferi\'s Isle'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '3576'
                     , 'type' : 'Legendary Land'
                     , 'pt' : ''
@@ -1936,7 +2288,9 @@ MIR = {
                 , '138' : {
                     'name' : 'Haunting Apparition'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '1UB'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3538'
                     , 'type' : 'Creature  — Spirit'
                     , 'pt' : '(1+*/2)'
@@ -1945,7 +2299,9 @@ MIR = {
                 , '304' : {
                     'name' : 'Unseen Walker'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3418'
                     , 'type' : 'Creature  — Dryad'
                     , 'pt' : '(1/1)'
@@ -1954,7 +2310,9 @@ MIR = {
                 , '303' : {
                     'name' : 'Unfulfilled Desires'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '1UB'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3556'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1963,7 +2321,9 @@ MIR = {
                 , '195' : {
                     'name' : 'Nettletooth Djinn'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3401'
                     , 'type' : 'Creature  — Djinn'
                     , 'pt' : '(4/4)'
@@ -1972,7 +2332,9 @@ MIR = {
                 , '46' : {
                     'name' : 'Chaos Charm'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3434'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1981,7 +2343,9 @@ MIR = {
                 , '176' : {
                     'name' : 'Meddle'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3344'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1990,7 +2354,9 @@ MIR = {
                 , '192' : {
                     'name' : 'Mtenda Lion'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3399'
                     , 'type' : 'Creature  — Cat'
                     , 'pt' : '(2/1)'
@@ -1999,7 +2365,9 @@ MIR = {
                 , '276' : {
                     'name' : 'Stupor'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3316'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2008,7 +2376,9 @@ MIR = {
                 , '117' : {
                     'name' : 'Forest'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '3568'
                     , 'type' : 'Basic Land  — Forest'
                     , 'pt' : ''
@@ -2017,7 +2387,9 @@ MIR = {
                 , '144' : {
                     'name' : 'Illicit Auction'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '3RR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3454'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2026,7 +2398,9 @@ MIR = {
                 , '271' : {
                     'name' : 'Spectral Guardian'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '2WW'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3516'
                     , 'type' : 'Creature  — Spirit'
                     , 'pt' : '(2/3)'
@@ -2035,7 +2409,9 @@ MIR = {
                 , '26' : {
                     'name' : 'Binding Agony'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3275'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2044,7 +2420,9 @@ MIR = {
                 , '30' : {
                     'name' : 'Blistering Barrier'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3430'
                     , 'type' : 'Creature  — Wall'
                     , 'pt' : '(5/2)'
@@ -2053,7 +2431,9 @@ MIR = {
                 , '56' : {
                     'name' : 'Coral Fighters'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3330'
                     , 'type' : 'Creature  — Merfolk Soldier'
                     , 'pt' : '(1/1)'
@@ -2062,7 +2442,9 @@ MIR = {
                 , '200' : {
                     'name' : 'Painful Memories'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3302'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2071,7 +2453,9 @@ MIR = {
                 , '226' : {
                     'name' : 'Ray of Command'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3357'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2080,7 +2464,9 @@ MIR = {
                 , '191' : {
                     'name' : 'Mtenda Herder'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3504'
                     , 'type' : 'Creature  — Human Scout'
                     , 'pt' : '(1/1)'
@@ -2089,7 +2475,9 @@ MIR = {
                 , '216' : {
                     'name' : 'Psychic Transfer'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '4U'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3356'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2098,7 +2486,9 @@ MIR = {
                 , '259' : {
                     'name' : 'Shauku, Endbringer'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '5BB'
+                    , 'cmc' : '7'
                     , 'multiverse' : '3311'
                     , 'type' : 'Legendary Creature  — Vampire'
                     , 'pt' : '(5/5)'
@@ -2107,7 +2497,9 @@ MIR = {
                 , '10' : {
                     'name' : 'Ancestral Memories'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '2UUU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3323'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2116,7 +2508,9 @@ MIR = {
                 , '88' : {
                     'name' : 'Elixir of Vitality'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3248'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2125,7 +2519,9 @@ MIR = {
                 , '60' : {
                     'name' : 'Crypt Cobra'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3283'
                     , 'type' : 'Creature  — Snake'
                     , 'pt' : '(3/3)'
@@ -2134,7 +2530,9 @@ MIR = {
                 , '71' : {
                     'name' : 'Dirtwater Wraith'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3286'
                     , 'type' : 'Creature  — Wraith'
                     , 'pt' : '(1/3)'
@@ -2143,7 +2541,9 @@ MIR = {
                 , '326' : {
                     'name' : 'Windreaper Falcon'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '1RG'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3560'
                     , 'type' : 'Creature  — Bird'
                     , 'pt' : '(1/1)'
@@ -2152,7 +2552,9 @@ MIR = {
                 , '272' : {
                     'name' : 'Spirit of the Night'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '6BBB'
+                    , 'cmc' : '9'
                     , 'multiverse' : '3315'
                     , 'type' : 'Legendary Creature  — Demon Spirit'
                     , 'pt' : '(6/5)'
@@ -2161,7 +2563,9 @@ MIR = {
                 , '139' : {
                     'name' : 'Hazerider Drake'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '2WU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3539'
                     , 'type' : 'Creature  — Drake'
                     , 'pt' : '(2/3)'
@@ -2170,7 +2574,9 @@ MIR = {
                 , '23' : {
                     'name' : 'Bazaar of Wonders'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '3UU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3326'
                     , 'type' : 'World Enchantment'
                     , 'pt' : ''
@@ -2179,7 +2585,9 @@ MIR = {
                 , '75' : {
                     'name' : 'Dissipate'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '1UU'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3332'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2188,7 +2596,9 @@ MIR = {
                 , '196' : {
                     'name' : 'Noble Elephant'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3505'
                     , 'type' : 'Creature  — Elephant'
                     , 'pt' : '(2/2)'
@@ -2197,7 +2607,9 @@ MIR = {
                 , '39' : {
                     'name' : 'Cadaverous Bloom'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '3BG'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3529'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2206,7 +2618,9 @@ MIR = {
                 , '287' : {
                     'name' : 'Teferi\'s Drake'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3368'
                     , 'type' : 'Creature  — Drake'
                     , 'pt' : '(3/2)'
@@ -2215,7 +2629,9 @@ MIR = {
                 , '322' : {
                     'name' : 'Wave Elemental'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2UU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3373'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(2/3)'
@@ -2224,7 +2640,9 @@ MIR = {
                 , '32' : {
                     'name' : 'Bone Mask'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3243'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2233,7 +2651,9 @@ MIR = {
                 , '2' : {
                     'name' : 'Acidic Dagger'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3239'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2242,7 +2662,9 @@ MIR = {
                 , '62' : {
                     'name' : 'Crystal Vein'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '3571'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -2251,7 +2673,9 @@ MIR = {
                 , '320' : {
                     'name' : 'Ward of Lights'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : 'WW'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3522'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2260,7 +2684,9 @@ MIR = {
                 , '198' : {
                     'name' : 'Null Chamber'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3506'
                     , 'type' : 'World Enchantment'
                     , 'pt' : ''
@@ -2269,7 +2695,9 @@ MIR = {
                 , '232' : {
                     'name' : 'Reign of Chaos'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3461'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2278,7 +2706,9 @@ MIR = {
                 , '178' : {
                     'name' : 'Memory Lapse'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3345'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2287,7 +2717,9 @@ MIR = {
                 , '206' : {
                     'name' : 'Phyrexian Tribute'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3303'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2296,7 +2728,9 @@ MIR = {
                 , '301' : {
                     'name' : 'Uktabi Wildcats'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '4G'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3417'
                     , 'type' : 'Creature  — Cat'
                     , 'pt' : '(*/*)'
@@ -2305,7 +2739,9 @@ MIR = {
                 , '91' : {
                     'name' : 'Energy Bolt'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : 'XRW'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3534'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2314,7 +2750,9 @@ MIR = {
                 , '95' : {
                     'name' : 'Ersatz Gnomes'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3249'
                     , 'type' : 'Artifact Creature  — Gnome'
                     , 'pt' : '(1/1)'
@@ -2323,7 +2761,9 @@ MIR = {
                 , '215' : {
                     'name' : 'Prismatic Lace'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3355'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2332,7 +2772,9 @@ MIR = {
                 , '294' : {
                     'name' : 'Thirst'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3370'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2341,7 +2783,9 @@ MIR = {
                 , '37' : {
                     'name' : 'Burning Palm Efreet'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3432'
                     , 'type' : 'Creature  — Efreet'
                     , 'pt' : '(2/2)'
@@ -2350,7 +2794,9 @@ MIR = {
                 , '6' : {
                     'name' : 'Alarum'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3477'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2359,7 +2805,9 @@ MIR = {
                 , '8' : {
                     'name' : 'Amber Prison'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3240'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2368,7 +2816,9 @@ MIR = {
                 , '31' : {
                     'name' : 'Bone Harvest'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3277'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2377,7 +2827,9 @@ MIR = {
                 , '87' : {
                     'name' : 'Ekundu Griffin'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3488'
                     , 'type' : 'Creature  — Griffin'
                     , 'pt' : '(2/2)'
@@ -2386,7 +2838,9 @@ MIR = {
                 , '93' : {
                     'name' : 'Enfeeblement'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'BB'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3290'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2395,7 +2849,9 @@ MIR = {
                 , '246' : {
                     'name' : 'Savage Twister'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'XRG'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3551'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2404,7 +2860,9 @@ MIR = {
                 , '76' : {
                     'name' : 'Divine Offering'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3486'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2413,7 +2871,9 @@ MIR = {
                 , '140' : {
                     'name' : 'Healing Salve'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3495'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2422,7 +2882,9 @@ MIR = {
                 , '237' : {
                     'name' : 'Rock Basilisk'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '4RG'
+                    , 'cmc' : '6'
                     , 'multiverse' : '3550'
                     , 'type' : 'Creature  — Basilisk'
                     , 'pt' : '(4/5)'
@@ -2431,7 +2893,9 @@ MIR = {
                 , '33' : {
                     'name' : 'Boomerang'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'UU'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3327'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2440,7 +2904,9 @@ MIR = {
                 , '325' : {
                     'name' : 'Wildfire Emissary'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3474'
                     , 'type' : 'Creature  — Efreet'
                     , 'pt' : '(2/4)'
@@ -2449,7 +2915,9 @@ MIR = {
                 , '107' : {
                     'name' : 'Fire Diamond'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3250'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2458,7 +2926,9 @@ MIR = {
                 , '330' : {
                     'name' : 'Zebra Unicorn'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '2GW'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3561'
                     , 'type' : 'Creature  — Unicorn'
                     , 'pt' : '(2/2)'
@@ -2467,7 +2937,9 @@ MIR = {
                 , '250' : {
                     'name' : 'Searing Spear Askari'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3462'
                     , 'type' : 'Creature  — Human Knight'
                     , 'pt' : '(2/2)'
@@ -2476,7 +2948,9 @@ MIR = {
                 , '255' : {
                     'name' : 'Shadow Guildmage'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3309'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(1/1)'
@@ -2485,7 +2959,9 @@ MIR = {
                 , '252' : {
                     'name' : 'Seeds of Innocence'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '1GG'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3410'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2494,7 +2970,9 @@ MIR = {
                 , '51' : {
                     'name' : 'Cinder Cloud'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '3RR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3436'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2503,7 +2981,9 @@ MIR = {
                 , '275' : {
                     'name' : 'Stone Rain'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3465'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2512,7 +2992,9 @@ MIR = {
                 , '168' : {
                     'name' : 'Lure of Prey'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '2GG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3396'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2521,7 +3003,9 @@ MIR = {
                 , '293' : {
                     'name' : 'Teremko Griffin'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3518'
                     , 'type' : 'Creature  — Griffin'
                     , 'pt' : '(2/2)'
@@ -2530,7 +3014,9 @@ MIR = {
                 , '172' : {
                     'name' : 'Mangara\'s Equity'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '1WW'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3501'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2539,7 +3025,9 @@ MIR = {
                 , '184' : {
                     'name' : 'Mire Shade'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3300'
                     , 'type' : 'Creature  — Shade'
                     , 'pt' : '(1/1)'
@@ -2548,7 +3036,9 @@ MIR = {
                 , '299' : {
                     'name' : 'Tropical Storm'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : 'XG'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3415'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2557,7 +3047,9 @@ MIR = {
                 , '210' : {
                     'name' : 'Polymorph'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3353'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2566,7 +3058,9 @@ MIR = {
                 , '261' : {
                     'name' : 'Shimmer'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '2UU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3363'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2575,7 +3069,9 @@ MIR = {
                 , '173' : {
                     'name' : 'Mangara\'s Tome'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '5'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3257'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2584,7 +3080,9 @@ MIR = {
                 , '328' : {
                     'name' : 'Worldly Tutor'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3424'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2593,7 +3091,9 @@ MIR = {
                 , '118' : {
                     'name' : 'Forsaken Wastes'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3294'
                     , 'type' : 'World Enchantment'
                     , 'pt' : ''
@@ -2602,7 +3102,9 @@ MIR = {
                 , '82' : {
                     'name' : 'Dwarven Miner'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3440'
                     , 'type' : 'Creature  — Dwarf'
                     , 'pt' : '(1/2)'
@@ -2611,7 +3113,9 @@ MIR = {
                 , '92' : {
                     'name' : 'Energy Vortex'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '3UU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3335'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2620,7 +3124,9 @@ MIR = {
                 , '72' : {
                     'name' : 'Discordant Spirit'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '2BR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3532'
                     , 'type' : 'Creature  — Spirit'
                     , 'pt' : '(2/2)'
@@ -2629,7 +3135,9 @@ MIR = {
                 , '291' : {
                     'name' : 'Telim\'Tor\'s Darts'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3269'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2638,7 +3146,9 @@ MIR = {
                 , '218' : {
                     'name' : 'Purraj of Urborg'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '3BB'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3304'
                     , 'type' : 'Legendary Creature  — Cat Warrior'
                     , 'pt' : '(2/3)'
@@ -2647,7 +3157,9 @@ MIR = {
                 , '242' : {
                     'name' : 'Sand Golem'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '5'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3266'
                     , 'type' : 'Artifact Creature  — Golem'
                     , 'pt' : '(3/3)'
@@ -2656,7 +3168,9 @@ MIR = {
                 , '282' : {
                     'name' : 'Tainted Specter'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3317'
                     , 'type' : 'Creature  — Specter'
                     , 'pt' : '(2/2)'
@@ -2665,7 +3179,9 @@ MIR = {
                 , '316' : {
                     'name' : 'Waiting in the Weeds'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '1GG'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3421'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2674,7 +3190,9 @@ MIR = {
                 , '329' : {
                     'name' : 'Yare'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3523'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2683,7 +3201,9 @@ MIR = {
                 , '130' : {
                     'name' : 'Grim Feast'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '1BG'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3536'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2692,7 +3212,9 @@ MIR = {
                 , '298' : {
                     'name' : 'Tranquil Domain'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3414'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2701,7 +3223,9 @@ MIR = {
                 , '188' : {
                     'name' : 'Mountain'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '3579'
                     , 'type' : 'Basic Land  — Mountain'
                     , 'pt' : ''
@@ -2710,7 +3234,9 @@ MIR = {
                 , '141' : {
                     'name' : 'Hivis of the Scale'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '3RR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3453'
                     , 'type' : 'Legendary Creature  — Viashino Shaman'
                     , 'pt' : '(3/4)'
@@ -2719,7 +3245,9 @@ MIR = {
                 , '163' : {
                     'name' : 'Lead Golem'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '5'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3254'
                     , 'type' : 'Artifact Creature  — Golem'
                     , 'pt' : '(3/5)'
@@ -2728,7 +3256,9 @@ MIR = {
                 , '127' : {
                     'name' : 'Grasslands'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '3573'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -2737,7 +3267,9 @@ MIR = {
                 , '269' : {
                     'name' : 'Soulshriek'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3314'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2746,7 +3278,9 @@ MIR = {
                 , '254' : {
                     'name' : 'Sewer Rats'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3308'
                     , 'type' : 'Creature  — Rat'
                     , 'pt' : '(1/1)'
@@ -2755,7 +3289,9 @@ MIR = {
                 , '85' : {
                     'name' : 'Ebony Charm'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3289'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2764,7 +3300,9 @@ MIR = {
                 , '263' : {
                     'name' : 'Sirocco'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3463'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2773,7 +3311,9 @@ MIR = {
                 , '17' : {
                     'name' : 'Bad River'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '3570'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -2782,7 +3322,9 @@ MIR = {
                 , '146' : {
                     'name' : 'Incinerate'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3455'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2791,7 +3333,9 @@ MIR = {
                 , '177' : {
                     'name' : 'Melesse Spirit'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '3WW'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3502'
                     , 'type' : 'Creature  — Angel Spirit'
                     , 'pt' : '(3/3)'
@@ -2800,7 +3344,9 @@ MIR = {
                 , '321' : {
                     'name' : 'Warping Wurm'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '2GU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3558'
                     , 'type' : 'Creature  — Wurm'
                     , 'pt' : '(1/1)'
@@ -2809,7 +3355,9 @@ MIR = {
                 , '112' : {
                     'name' : 'Flood Plain'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '3572'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -2818,7 +3366,9 @@ MIR = {
                 , '208' : {
                     'name' : 'Plains'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '3587'
                     , 'type' : 'Basic Land  — Plains'
                     , 'pt' : ''
@@ -2827,7 +3377,9 @@ MIR = {
                 , '156' : {
                     'name' : 'Jungle Wurm'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '3GG'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3393'
                     , 'type' : 'Creature  — Wurm'
                     , 'pt' : '(5/5)'
@@ -2836,7 +3388,9 @@ MIR = {
                 , '268' : {
                     'name' : 'Soul Rend'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3313'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2845,7 +3399,9 @@ MIR = {
                 , '306' : {
                     'name' : 'Unyaro Griffin'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3519'
                     , 'type' : 'Creature  — Griffin'
                     , 'pt' : '(2/2)'
@@ -2854,7 +3410,9 @@ MIR = {
                 , '285' : {
                     'name' : 'Teeka\'s Dragon'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '9'
+                    , 'cmc' : '9'
                     , 'multiverse' : '3268'
                     , 'type' : 'Artifact Creature  — Dragon'
                     , 'pt' : '(5/5)'
@@ -2863,7 +3421,9 @@ MIR = {
                 , '99' : {
                     'name' : 'Favorable Destiny'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3491'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2872,7 +3432,9 @@ MIR = {
                 , '97' : {
                     'name' : 'Ethereal Champion'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '2WWW'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3490'
                     , 'type' : 'Creature  — Avatar'
                     , 'pt' : '(3/4)'
@@ -2881,7 +3443,9 @@ MIR = {
                 , '170' : {
                     'name' : 'Mana Prism'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3256'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2890,7 +3454,9 @@ MIR = {
                 , '59' : {
                     'name' : 'Crimson Roc'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '4R'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3439'
                     , 'type' : 'Creature  — Bird'
                     , 'pt' : '(2/2)'
@@ -2899,7 +3465,9 @@ MIR = {
                 , '221' : {
                     'name' : 'Radiant Essence'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '1GW'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3547'
                     , 'type' : 'Creature  — Spirit'
                     , 'pt' : '(2/3)'
@@ -2908,7 +3476,9 @@ MIR = {
                 , '70' : {
                     'name' : 'Delirium'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '1BR'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3531'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2917,7 +3487,9 @@ MIR = {
                 , '161' : {
                     'name' : 'Kukemssa Pirates'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3342'
                     , 'type' : 'Creature  — Human Pirate'
                     , 'pt' : '(2/2)'
@@ -2926,7 +3498,9 @@ MIR = {
                 , '333' : {
                     'name' : 'Zirilan of the Claw'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '3RR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3475'
                     , 'type' : 'Legendary Creature  — Viashino Shaman'
                     , 'pt' : '(3/4)'
@@ -2935,7 +3509,9 @@ MIR = {
                 , '50' : {
                     'name' : 'Choking Sands'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1BB'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3282'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2944,7 +3520,9 @@ MIR = {
                 , '150' : {
                     'name' : 'Ivory Charm'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3498'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2953,7 +3531,9 @@ MIR = {
                 , '63' : {
                     'name' : 'Cursed Totem'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3247'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2962,7 +3542,9 @@ MIR = {
                 , '89' : {
                     'name' : 'Emberwilde Caliph'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '2UR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3533'
                     , 'type' : 'Creature  — Djinn'
                     , 'pt' : '(4/4)'
@@ -2971,7 +3553,9 @@ MIR = {
                 , '66' : {
                     'name' : 'Dark Banishing'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3284'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2980,7 +3564,9 @@ MIR = {
                 , '47' : {
                     'name' : 'Chaosphere'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3435'
                     , 'type' : 'World Enchantment'
                     , 'pt' : ''
@@ -2989,7 +3575,9 @@ MIR = {
                 , '231' : {
                     'name' : 'Regeneration'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3405'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2998,7 +3586,9 @@ MIR = {
                 , '332' : {
                     'name' : 'Zhalfirin Knight'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3525'
                     , 'type' : 'Creature  — Human Knight'
                     , 'pt' : '(2/2)'
@@ -3007,7 +3597,9 @@ MIR = {
                 , '101' : {
                     'name' : 'Femeref Healer'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3492'
                     , 'type' : 'Creature  — Human Cleric'
                     , 'pt' : '(1/1)'
@@ -3016,7 +3608,9 @@ MIR = {
                 , '96' : {
                     'name' : 'Ether Well'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3336'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -3025,7 +3619,9 @@ MIR = {
                 , '131' : {
                     'name' : 'Grinning Totem'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3251'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -3034,7 +3630,9 @@ MIR = {
                 , '310' : {
                     'name' : 'Viashino Warrior'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3471'
                     , 'type' : 'Creature  — Viashino Warrior'
                     , 'pt' : '(4/2)'
@@ -3043,7 +3641,9 @@ MIR = {
                 , '43' : {
                     'name' : 'Catacomb Dragon'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '4BB'
+                    , 'cmc' : '6'
                     , 'multiverse' : '3281'
                     , 'type' : 'Creature  — Dragon'
                     , 'pt' : '(4/4)'
@@ -3052,7 +3652,9 @@ MIR = {
                 , '267' : {
                     'name' : 'Soul Echo'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : 'XWW'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3515'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -3061,7 +3663,9 @@ MIR = {
                 , '45' : {
                     'name' : 'Cerulean Wyvern'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '4U'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3328'
                     , 'type' : 'Creature  — Drake'
                     , 'pt' : '(3/3)'
@@ -3070,7 +3674,9 @@ MIR = {
                 , '164' : {
                     'name' : 'Leering Gargoyle'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '1WU'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3542'
                     , 'type' : 'Creature  — Gargoyle'
                     , 'pt' : '(2/2)'
@@ -3079,7 +3685,9 @@ MIR = {
                 , '323' : {
                     'name' : 'Wellspring'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '1GW'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3559'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -3088,7 +3696,9 @@ MIR = {
                 , '222' : {
                     'name' : 'Raging Spirit'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3459'
                     , 'type' : 'Creature  — Spirit'
                     , 'pt' : '(3/3)'
@@ -3097,7 +3707,9 @@ MIR = {
                 , '103' : {
                     'name' : 'Femeref Scouts'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3494'
                     , 'type' : 'Creature  — Human Scout'
                     , 'pt' : '(1/4)'
@@ -3106,7 +3718,9 @@ MIR = {
                 , '295' : {
                     'name' : 'Tidal Wave'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3371'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -3115,7 +3729,9 @@ MIR = {
                 , '77' : {
                     'name' : 'Divine Retribution'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3487'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -3124,7 +3740,9 @@ MIR = {
                 , '48' : {
                     'name' : 'Charcoal Diamond'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3244'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -3133,7 +3751,9 @@ MIR = {
                 , '266' : {
                     'name' : 'Soar'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3364'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -3142,7 +3762,9 @@ MIR = {
                 , '290' : {
                     'name' : 'Telim\'Tor'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '4R'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3468'
                     , 'type' : 'Legendary Creature  — Human Knight'
                     , 'pt' : '(2/2)'
@@ -3151,7 +3773,9 @@ MIR = {
                 , '335' : {
                     'name' : 'Zuberi, Golden Feather'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '4W'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3526'
                     , 'type' : 'Legendary Creature  — Griffin'
                     , 'pt' : '(3/3)'
@@ -3160,7 +3784,9 @@ MIR = {
                 , '67' : {
                     'name' : 'Dark Ritual'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3285'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -3169,7 +3795,9 @@ MIR = {
                 , '224' : {
                     'name' : 'Rashida Scalebane'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '3WW'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3510'
                     , 'type' : 'Legendary Creature  — Human Soldier'
                     , 'pt' : '(3/4)'
@@ -3178,7 +3806,9 @@ MIR = {
                 , '19' : {
                     'name' : 'Barbed-Back Wurm'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '4B'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3274'
                     , 'type' : 'Creature  — Wurm'
                     , 'pt' : '(4/3)'
@@ -3187,7 +3817,9 @@ MIR = {
                 , '83' : {
                     'name' : 'Dwarven Nomad'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3441'
                     , 'type' : 'Creature  — Dwarf Nomad'
                     , 'pt' : '(1/1)'
@@ -3196,7 +3828,9 @@ MIR = {
                 , '12' : {
                     'name' : 'Armorer Guildmage'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '3427'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(1/1)'
@@ -3205,7 +3839,9 @@ MIR = {
                 , '105' : {
                     'name' : 'Fetid Horror'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3292'
                     , 'type' : 'Creature  — Shade Horror'
                     , 'pt' : '(1/2)'
@@ -3214,7 +3850,9 @@ MIR = {
                 , '228' : {
                     'name' : 'Reality Ripple'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3358'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -3223,7 +3861,9 @@ MIR = {
                 , '109' : {
                     'name' : 'Flame Elemental'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3446'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(3/2)'
@@ -3232,7 +3872,9 @@ MIR = {
                 , '27' : {
                     'name' : 'Blighted Shaman'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3276'
                     , 'type' : 'Creature  — Human Cleric Shaman'
                     , 'pt' : '(1/1)'
@@ -3241,7 +3883,9 @@ MIR = {
                 , '166' : {
                     'name' : 'Lion\'s Eye Diamond'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '0'
+                    , 'cmc' : '0'
                     , 'multiverse' : '3255'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -3250,7 +3894,9 @@ MIR = {
                 , '65' : {
                     'name' : 'Daring Apprentice'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '1UU'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3331'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(1/1)'
@@ -3259,7 +3905,9 @@ MIR = {
                 , '233' : {
                     'name' : 'Reign of Terror'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '3BB'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3306'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -3268,7 +3916,9 @@ MIR = {
                 , '5' : {
                     'name' : 'Agility'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3425'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -3277,7 +3927,9 @@ MIR = {
                 , '149' : {
                     'name' : 'Island'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '3583'
                     , 'type' : 'Basic Land  — Island'
                     , 'pt' : ''
@@ -3286,7 +3938,9 @@ MIR = {
                 , '57' : {
                     'name' : 'Crash of Rhinos'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '6GG'
+                    , 'cmc' : '8'
                     , 'multiverse' : '3379'
                     , 'type' : 'Creature  — Rhino'
                     , 'pt' : '(8/4)'
@@ -3295,7 +3949,9 @@ MIR = {
                 , '314' : {
                     'name' : 'Volcanic Dragon'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '4RR'
+                    , 'cmc' : '6'
                     , 'multiverse' : '3472'
                     , 'type' : 'Creature  — Dragon'
                     , 'pt' : '(4/4)'
@@ -3304,7 +3960,9 @@ MIR = {
                 , '277' : {
                     'name' : 'Subterranean Spirit'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '3RR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '3466'
                     , 'type' : 'Creature  — Elemental Spirit'
                     , 'pt' : '(3/3)'
@@ -3313,7 +3971,9 @@ MIR = {
                 , '201' : {
                     'name' : 'Patagia Golem'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '3261'
                     , 'type' : 'Artifact Creature  — Golem'
                     , 'pt' : '(2/3)'
@@ -3322,7 +3982,9 @@ MIR = {
                 , '236' : {
                     'name' : 'Ritual of Steel'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3511'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -3331,7 +3993,9 @@ MIR = {
                 , '128' : {
                     'name' : 'Grave Servitude'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3295'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -3340,7 +4004,9 @@ MIR = {
                 , '80' : {
                     'name' : 'Dream Cache'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '3333'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -3349,7 +4015,9 @@ MIR = {
                 , '273' : {
                     'name' : 'Spitting Earth'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '3464'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -3358,7 +4026,9 @@ MIR = {
                 , '58' : {
                     'name' : 'Crimson Hellkite'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '6RRR'
+                    , 'cmc' : '9'
                     , 'multiverse' : '3438'
                     , 'type' : 'Creature  — Dragon'
                     , 'pt' : '(6/6)'

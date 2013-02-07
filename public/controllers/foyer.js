@@ -5,19 +5,25 @@ Foyer = {
     , socket : null
     
     , init : function() {
-        console.log("Foyer initialized");
-        //Foyer.registerHandlers();
+        Foyer.registerHandlers();
     }
     
     , registerHandlers : function() {
+        console.log("Registered foyer handlers!");
+        var data = { 'set' : 'LEA' };
+        $("#draft-button").click( data, Foyer.draftSet );
+        $("#select-sealed-button").click( data, Sealed.startSealed );
+		$("#nick-submit-btn").click( Foyer.hideLightbox );
         
-        $("#draft-button").click( Foyer.draftSet('GTC') );
-        $("#sealed-button").click( Sealed.startSealed('GTC') );
-		$("#chat-button").click( Foyer.showLightbox() );
-		$("#hide-lightbox-button").click( Foyer.hideLightbox() );
+        $(".set-tr").each( function () {
+            var tr = this;
+            tr.click( Foyer.selectSet );
+        } );
     }
     
-    , draftSet : function(set) {
+    , draftSet : function(event) {
+        
+        var set = event.data.set;
     
         // connect a socket to the server
         var socket = io.connect('http://localhost');
@@ -60,23 +66,11 @@ Foyer = {
 		
 	}
 	
-	, showLightbox : function() {
-		
-		// hide "Chat" button
-		$('#chat-hidden').css("display", "none");
-		
-		// show nickname lightbox
-		$('#nickname-lightbox').css("display", "block");
-        
-        // install a callback to fire when the user presses the submit button
-        $('#nick-submit-btn').click( Foyer.chooseNick );
-		
-	}
-	
 	, hideLightbox : function() {
-		
-		//Show "chat" button
-		$('#chat-hidden').css("display", "block");
+        
+        console.log("Hide lightbox");
+        
+        Foyer.nickname = $('#nick-input').val();
 		
 		//hide nickname lightbox
 		$('#nickname-lightbox').css("display", "none");
@@ -101,7 +95,6 @@ Foyer = {
         // get the nickname from the text input element
         var nick = $('#nick-input').val();
         
-        console.log( nick );
         Foyer.nickname = nick;
         
         // open a chat socket
@@ -152,7 +145,7 @@ Foyer = {
     
     , newMsg : function( data ) {
         
-        var json = JSON.parse(data);
+        var json = JSON.parse(data);s
         var nick = json['nick'];
         var msg = json['msg'];
         

@@ -268,7 +268,9 @@ RTR = {
             '13' : {
                     'name' : 'Knightly Valor'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '4W'
+                    , 'cmc' : '5'
                     , 'multiverse' : '253646'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -277,7 +279,9 @@ RTR = {
                 , '176' : {
                     'name' : 'Lotleth Troll'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : 'BG'
+                    , 'cmc' : '2'
                     , 'multiverse' : '253518'
                     , 'type' : 'Creature  — Zombie Troll'
                     , 'pt' : '(2/1)'
@@ -286,7 +290,9 @@ RTR = {
                 , '75' : {
                     'name' : 'Shrieking Affliction'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '265409'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -295,7 +301,9 @@ RTR = {
                 , '238' : {
                     'name' : 'Grove of the Guardian'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '270968'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -304,7 +312,9 @@ RTR = {
                 , '85' : {
                     'name' : 'Ash Zealot'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : 'RR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '253623'
                     , 'type' : 'Creature  — Human Warrior'
                     , 'pt' : '(2/2)'
@@ -313,7 +323,9 @@ RTR = {
                 , '239' : {
                     'name' : 'Hallowed Fountain'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '253684'
                     , 'type' : 'Land  — Plains Island'
                     , 'pt' : ''
@@ -322,7 +334,9 @@ RTR = {
                 , '26' : {
                     'name' : 'Swift Justice'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '265416'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -331,7 +345,9 @@ RTR = {
                 , '127' : {
                     'name' : 'Horncaller\'s Chant'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '7G'
+                    , 'cmc' : '8'
                     , 'multiverse' : '253536'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -340,7 +356,9 @@ RTR = {
                 , '106' : {
                     'name' : 'Survey the Wreckage'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '4R'
+                    , 'cmc' : '5'
                     , 'multiverse' : '270804'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -349,7 +367,9 @@ RTR = {
                 , '84' : {
                     'name' : 'Annihilating Fire'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1RR'
+                    , 'cmc' : '3'
                     , 'multiverse' : '270801'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -358,7 +378,9 @@ RTR = {
                 , '72' : {
                     'name' : 'Pack Rat'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '253624'
                     , 'type' : 'Creature  — Rat'
                     , 'pt' : '(*/*)'
@@ -367,7 +389,9 @@ RTR = {
                 , '200' : {
                     'name' : 'Supreme Verdict'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '1WWU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '253512'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -376,7 +400,9 @@ RTR = {
                 , '31' : {
                     'name' : 'Cancel'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1UU'
+                    , 'cmc' : '3'
                     , 'multiverse' : '265403'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -385,7 +411,9 @@ RTR = {
                 , '234' : {
                     'name' : 'Volatile Rig'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '270359'
                     , 'type' : 'Artifact Creature  — Construct'
                     , 'pt' : '(4/4)'
@@ -394,7 +422,9 @@ RTR = {
                 , '29' : {
                     'name' : 'Aquus Steed'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '270361'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(1/3)'
@@ -403,7 +433,9 @@ RTR = {
                 , '153' : {
                     'name' : 'Coursers\' Accord'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : '4GW'
+                    , 'cmc' : '6'
                     , 'multiverse' : '253639'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -412,7 +444,9 @@ RTR = {
                 , '120' : {
                     'name' : 'Death\'s Presence'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '5G'
+                    , 'cmc' : '6'
                     , 'multiverse' : '270793'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -421,7 +455,9 @@ RTR = {
                 , '252' : {
                     'name' : 'Forest'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '289326'
                     , 'type' : 'Basic Land  — Forest'
                     , 'pt' : ''
@@ -430,7 +466,9 @@ RTR = {
                 , '220' : {
                     'name' : 'Slitherhead'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '(B/G)'
+                    , 'cmc' : '5'
                     , 'multiverse' : '253586'
                     , 'type' : 'Creature  — Plant Zombie'
                     , 'pt' : '(1/1)'
@@ -439,7 +477,9 @@ RTR = {
                 , '164' : {
                     'name' : 'Grisly Salvage'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : 'BG'
+                    , 'cmc' : '2'
                     , 'multiverse' : '277996'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -448,7 +488,9 @@ RTR = {
                 , '250' : {
                     'name' : 'Swamp'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '289320'
                     , 'type' : 'Basic Land  — Swamp'
                     , 'pt' : ''
@@ -457,7 +499,9 @@ RTR = {
                 , '227' : {
                     'name' : 'Golgari Keyrune'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253645'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -466,7 +510,9 @@ RTR = {
                 , '8' : {
                     'name' : 'Concordia Pegasus'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '253558'
                     , 'type' : 'Creature  — Pegasus'
                     , 'pt' : '(1/3)'
@@ -475,7 +521,9 @@ RTR = {
                 , '232' : {
                     'name' : 'Street Sweeper'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '6'
+                    , 'cmc' : '6'
                     , 'multiverse' : '270967'
                     , 'type' : 'Artifact Creature  — Construct'
                     , 'pt' : '(4/6)'
@@ -484,7 +532,9 @@ RTR = {
                 , '233' : {
                     'name' : 'Tablet of the Guilds'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '270355'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -493,7 +543,9 @@ RTR = {
                 , '139' : {
                     'name' : 'Worldspine Wurm'
                     , 'rarity' : 'M'
+                    , 'color' : 'G'
                     , 'cost' : '8GGG'
+                    , 'cmc' : '11'
                     , 'multiverse' : '253575'
                     , 'type' : 'Creature  — Wurm'
                     , 'pt' : '(15/15)'
@@ -502,7 +554,9 @@ RTR = {
                 , '115' : {
                     'name' : 'Axebane Stag'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '6G'
+                    , 'cmc' : '7'
                     , 'multiverse' : '265383'
                     , 'type' : 'Creature  — Elk'
                     , 'pt' : '(6/7)'
@@ -511,7 +565,9 @@ RTR = {
                 , '100' : {
                     'name' : 'Mizzium Mortars'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '253632'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -520,7 +576,9 @@ RTR = {
                 , '62' : {
                     'name' : 'Desecration Demon'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '2BB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '270959'
                     , 'type' : 'Creature  — Demon'
                     , 'pt' : '(6/6)'
@@ -529,7 +587,9 @@ RTR = {
                 , '1' : {
                     'name' : 'Angel of Serenity'
                     , 'rarity' : 'M'
+                    , 'color' : 'W'
                     , 'cost' : '4WWW'
+                    , 'cmc' : '7'
                     , 'multiverse' : '253627'
                     , 'type' : 'Creature  — Angel'
                     , 'pt' : '(5/6)'
@@ -538,7 +598,9 @@ RTR = {
                 , '125' : {
                     'name' : 'Gobbling Ooze'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '4G'
+                    , 'cmc' : '5'
                     , 'multiverse' : '253643'
                     , 'type' : 'Creature  — Ooze'
                     , 'pt' : '(3/3)'
@@ -547,7 +609,9 @@ RTR = {
                 , '34' : {
                     'name' : 'Crosstown Courier'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '277991'
                     , 'type' : 'Creature  — Vedalken'
                     , 'pt' : '(2/1)'
@@ -556,7 +620,9 @@ RTR = {
                 , '211' : {
                     'name' : 'Deathrite Shaman'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '(B/G)'
+                    , 'cmc' : '5'
                     , 'multiverse' : '290529'
                     , 'type' : 'Creature  — Elf Shaman'
                     , 'pt' : '(1/2)'
@@ -565,7 +631,9 @@ RTR = {
                 , '63' : {
                     'name' : 'Destroy the Evidence'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '4B'
+                    , 'cmc' : '5'
                     , 'multiverse' : '253571'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -574,7 +642,9 @@ RTR = {
                 , '246' : {
                     'name' : 'Temple Garden'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '253681'
                     , 'type' : 'Land  — Forest Plains'
                     , 'pt' : ''
@@ -583,7 +653,9 @@ RTR = {
                 , '102' : {
                     'name' : 'Pyroconvergence'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '4R'
+                    , 'cmc' : '5'
                     , 'multiverse' : '253568'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -592,7 +664,9 @@ RTR = {
                 , '218' : {
                     'name' : 'Rakdos Cackler'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '(B/R)'
+                    , 'cmc' : '5'
                     , 'multiverse' : '253596'
                     , 'type' : 'Creature  — Devil'
                     , 'pt' : '(1/1)'
@@ -601,7 +675,9 @@ RTR = {
                 , '45' : {
                     'name' : 'Paralyzing Grasp'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '270955'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -610,7 +686,9 @@ RTR = {
                 , '165' : {
                     'name' : 'Havoc Festival'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '4BR'
+                    , 'cmc' : '6'
                     , 'multiverse' : '253648'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -619,7 +697,9 @@ RTR = {
                 , '110' : {
                     'name' : 'Vandalblast'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '253560'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -628,7 +708,9 @@ RTR = {
                 , '70' : {
                     'name' : 'Necropolis Regent'
                     , 'rarity' : 'M'
+                    , 'color' : 'B'
                     , 'cost' : '3BBB'
+                    , 'cmc' : '6'
                     , 'multiverse' : '253569'
                     , 'type' : 'Creature  — Vampire'
                     , 'pt' : '(6/5)'
@@ -637,7 +719,9 @@ RTR = {
                 , '177' : {
                     'name' : 'Loxodon Smiter'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '1GW'
+                    , 'cmc' : '3'
                     , 'multiverse' : '290543'
                     , 'type' : 'Creature  — Elephant Soldier'
                     , 'pt' : '(4/4)'
@@ -646,7 +730,9 @@ RTR = {
                 , '147' : {
                     'name' : 'Centaur Healer'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : '1GW'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253654'
                     , 'type' : 'Creature  — Centaur Cleric'
                     , 'pt' : '(3/3)'
@@ -655,7 +741,9 @@ RTR = {
                 , '16' : {
                     'name' : 'Phantom General'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '270374'
                     , 'type' : 'Creature  — Spirit Soldier'
                     , 'pt' : '(2/3)'
@@ -664,7 +752,9 @@ RTR = {
                 , '160' : {
                     'name' : 'Fall of the Gavel'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '3WU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '290536'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -673,7 +763,9 @@ RTR = {
                 , '78' : {
                     'name' : 'Tavern Swindler'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '270353'
                     , 'type' : 'Creature  — Human Rogue'
                     , 'pt' : '(2/2)'
@@ -682,7 +774,9 @@ RTR = {
                 , '245' : {
                     'name' : 'Steam Vents'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '253682'
                     , 'type' : 'Land  — Island Mountain'
                     , 'pt' : ''
@@ -691,7 +785,9 @@ RTR = {
                 , '107' : {
                     'name' : 'Tenement Crasher'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '5R'
+                    , 'cmc' : '6'
                     , 'multiverse' : '253649'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(5/4)'
@@ -700,7 +796,9 @@ RTR = {
                 , '105' : {
                     'name' : 'Street Spasm'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : 'XR'
+                    , 'cmc' : '1'
                     , 'multiverse' : '265384'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -709,7 +807,9 @@ RTR = {
                 , '198' : {
                     'name' : 'Spawn of Rix Maadi'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : '3BR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '253549'
                     , 'type' : 'Creature  — Horror'
                     , 'pt' : '(5/3)'
@@ -718,7 +818,9 @@ RTR = {
                 , '24' : {
                     'name' : 'Sphere of Safety'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '4W'
+                    , 'cmc' : '5'
                     , 'multiverse' : '270969'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -727,7 +829,9 @@ RTR = {
                 , '181' : {
                     'name' : 'Nivix Guildmage'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'UR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '270366'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(2/2)'
@@ -736,7 +840,9 @@ RTR = {
                 , '145' : {
                     'name' : 'Call of the Conclave'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'GW'
+                    , 'cmc' : '2'
                     , 'multiverse' : '261322'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -745,7 +851,9 @@ RTR = {
                 , '5' : {
                     'name' : 'Azorius Arrester'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '270972'
                     , 'type' : 'Creature  — Human Soldier'
                     , 'pt' : '(2/1)'
@@ -754,7 +862,9 @@ RTR = {
                 , '166' : {
                     'name' : 'Hellhole Flailer'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '1BR'
+                    , 'cmc' : '3'
                     , 'multiverse' : '289211'
                     , 'type' : 'Creature  — Ogre Warrior'
                     , 'pt' : '(3/2)'
@@ -763,7 +873,9 @@ RTR = {
                 , '162' : {
                     'name' : 'Goblin Electromancer'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : 'UR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '253548'
                     , 'type' : 'Creature  — Goblin Wizard'
                     , 'pt' : '(2/2)'
@@ -772,7 +884,9 @@ RTR = {
                 , '28' : {
                     'name' : 'Trostani\'s Judgment'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '5W'
+                    , 'cmc' : '6'
                     , 'multiverse' : '289225'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -781,7 +895,9 @@ RTR = {
                 , '194' : {
                     'name' : 'Skull Rend'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : '3BR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '253622'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -790,7 +906,9 @@ RTR = {
                 , '64' : {
                     'name' : 'Deviant Glee'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '265389'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -799,7 +917,9 @@ RTR = {
                 , '11' : {
                     'name' : 'Fencing Ace'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '253588'
                     , 'type' : 'Creature  — Human Soldier'
                     , 'pt' : '(1/1)'
@@ -808,7 +928,9 @@ RTR = {
                 , '10' : {
                     'name' : 'Eyes in the Skies'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '253553'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -817,7 +939,9 @@ RTR = {
                 , '207' : {
                     'name' : 'Wayfaring Temple'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '1GW'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253539'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(*/*)'
@@ -826,7 +950,9 @@ RTR = {
                 , '163' : {
                     'name' : 'Golgari Charm'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'BG'
+                    , 'cmc' : '2'
                     , 'multiverse' : '265385'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -835,7 +961,9 @@ RTR = {
                 , '94' : {
                     'name' : 'Goblin Rally'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '3RR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '270788'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -844,7 +972,9 @@ RTR = {
                 , '60' : {
                     'name' : 'Dark Revenant'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '270368'
                     , 'type' : 'Creature  — Spirit'
                     , 'pt' : '(2/2)'
@@ -853,7 +983,9 @@ RTR = {
                 , '195' : {
                     'name' : 'Skymark Roc'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '2WU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '253555'
                     , 'type' : 'Creature  — Bird'
                     , 'pt' : '(3/3)'
@@ -862,7 +994,9 @@ RTR = {
                 , '15' : {
                     'name' : 'Palisade Giant'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '4WW'
+                    , 'cmc' : '6'
                     , 'multiverse' : '253567'
                     , 'type' : 'Creature  — Giant Soldier'
                     , 'pt' : '(2/7)'
@@ -871,7 +1005,9 @@ RTR = {
                 , '247' : {
                     'name' : 'Transguild Promenade'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '253550'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -880,7 +1016,9 @@ RTR = {
                 , '173' : {
                     'name' : 'Jarad, Golgari Lich Lord'
                     , 'rarity' : 'M'
+                    , 'color' : 'M'
                     , 'cost' : 'BBGG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '290534'
                     , 'type' : 'Legendary Creature  — Zombie Elf'
                     , 'pt' : '(2/2)'
@@ -889,7 +1027,9 @@ RTR = {
                 , '90' : {
                     'name' : 'Cobblebrute'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '265369'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(5/2)'
@@ -898,7 +1038,9 @@ RTR = {
                 , '121' : {
                     'name' : 'Drudge Beetle'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '265407'
                     , 'type' : 'Creature  — Insect'
                     , 'pt' : '(2/2)'
@@ -907,7 +1049,9 @@ RTR = {
                 , '89' : {
                     'name' : 'Chaos Imps'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '4RR'
+                    , 'cmc' : '6'
                     , 'multiverse' : '270954'
                     , 'type' : 'Creature  — Imp'
                     , 'pt' : '(6/5)'
@@ -916,7 +1060,9 @@ RTR = {
                 , '55' : {
                     'name' : 'Voidwielder'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '4U'
+                    , 'cmc' : '5'
                     , 'multiverse' : '265412'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(1/4)'
@@ -925,7 +1071,9 @@ RTR = {
                 , '129' : {
                     'name' : 'Mana Bloom'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : 'XG'
+                    , 'cmc' : '1'
                     , 'multiverse' : '253592'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -934,7 +1082,9 @@ RTR = {
                 , '59' : {
                     'name' : 'Daggerdrome Imp'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '270349'
                     , 'type' : 'Creature  — Imp'
                     , 'pt' : '(1/1)'
@@ -943,7 +1093,9 @@ RTR = {
                 , '36' : {
                     'name' : 'Dispel'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '253566'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -952,7 +1104,9 @@ RTR = {
                 , '210' : {
                     'name' : 'Cryptborn Horror'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '1(B/R)(B/R)'
+                    , 'cmc' : '11'
                     , 'multiverse' : '265411'
                     , 'type' : 'Creature  — Horror'
                     , 'pt' : '(0/0)'
@@ -961,7 +1115,9 @@ RTR = {
                 , '199' : {
                     'name' : 'Sphinx\'s Revelation'
                     , 'rarity' : 'M'
+                    , 'color' : 'M'
                     , 'cost' : 'XWUU'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253534'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -970,7 +1126,9 @@ RTR = {
                 , '9' : {
                     'name' : 'Ethereal Armor'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '265414'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -979,7 +1137,9 @@ RTR = {
                 , '143' : {
                     'name' : 'Auger Spree'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : '1BR'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253579'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -988,7 +1148,9 @@ RTR = {
                 , '35' : {
                     'name' : 'Cyclonic Rift'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '270798'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -997,7 +1159,9 @@ RTR = {
                 , '190' : {
                     'name' : 'Rites of Reaping'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '4BG'
+                    , 'cmc' : '6'
                     , 'multiverse' : '289219'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1006,7 +1170,9 @@ RTR = {
                 , '83' : {
                     'name' : 'Zanikev Locust'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '5B'
+                    , 'cmc' : '6'
                     , 'multiverse' : '289229'
                     , 'type' : 'Creature  — Insect'
                     , 'pt' : '(3/3)'
@@ -1015,7 +1181,9 @@ RTR = {
                 , '68' : {
                     'name' : 'Launch Party'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '270781'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1024,7 +1192,9 @@ RTR = {
                 , '156' : {
                     'name' : 'Dreadbore'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : 'BR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '270354'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1033,7 +1203,9 @@ RTR = {
                 , '133' : {
                     'name' : 'Seek the Horizon'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '289224'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1042,7 +1214,9 @@ RTR = {
                 , '171' : {
                     'name' : 'Izzet Charm'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'UR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '253528'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1051,7 +1225,9 @@ RTR = {
                 , '69' : {
                     'name' : 'Mind Rot'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '265408'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1060,7 +1236,9 @@ RTR = {
                 , '7' : {
                     'name' : 'Bazaar Krovod'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '4W'
+                    , 'cmc' : '5'
                     , 'multiverse' : '253589'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(2/5)'
@@ -1069,7 +1247,9 @@ RTR = {
                 , '3' : {
                     'name' : 'Arrest'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253573'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1078,7 +1258,9 @@ RTR = {
                 , '41' : {
                     'name' : 'Inaction Injunction'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '265376'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1087,7 +1269,9 @@ RTR = {
                 , '19' : {
                     'name' : 'Rootborn Defenses'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253529'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1096,7 +1280,9 @@ RTR = {
                 , '80' : {
                     'name' : 'Thrill-Kill Assassin'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '265371'
                     , 'type' : 'Creature  — Human Assassin'
                     , 'pt' : '(1/2)'
@@ -1105,7 +1291,9 @@ RTR = {
                 , '20' : {
                     'name' : 'Security Blockade'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '270790'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1114,7 +1302,9 @@ RTR = {
                 , '40' : {
                     'name' : 'Hover Barrier'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253541'
                     , 'type' : 'Creature  — Illusion Wall'
                     , 'pt' : '(0/6)'
@@ -1123,7 +1313,9 @@ RTR = {
                 , '225' : {
                     'name' : 'Civic Saber'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '1'
+                    , 'cmc' : '1'
                     , 'multiverse' : '253619'
                     , 'type' : 'Artifact  — Equipment'
                     , 'pt' : ''
@@ -1132,7 +1324,9 @@ RTR = {
                 , '193' : {
                     'name' : 'Selesnya Charm'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'GW'
+                    , 'cmc' : '2'
                     , 'multiverse' : '253651'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1141,7 +1335,9 @@ RTR = {
                 , '122' : {
                     'name' : 'Druid\'s Deliverance'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '289215'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1150,7 +1346,9 @@ RTR = {
                 , '187' : {
                     'name' : 'Rakdos\'s Return'
                     , 'rarity' : 'M'
+                    , 'color' : 'M'
                     , 'cost' : 'XBR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '253574'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1159,7 +1357,9 @@ RTR = {
                 , '136' : {
                     'name' : 'Towering Indrik'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '253608'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(2/4)'
@@ -1168,7 +1368,9 @@ RTR = {
                 , '114' : {
                     'name' : 'Axebane Guardian'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253556'
                     , 'type' : 'Creature  — Human Druid'
                     , 'pt' : '(0/3)'
@@ -1177,7 +1379,9 @@ RTR = {
                 , '109' : {
                     'name' : 'Utvara Hellkite'
                     , 'rarity' : 'M'
+                    , 'color' : 'R'
                     , 'cost' : '6RR'
+                    , 'cmc' : '8'
                     , 'multiverse' : '270372'
                     , 'type' : 'Creature  — Dragon'
                     , 'pt' : '(6/6)'
@@ -1186,7 +1390,9 @@ RTR = {
                 , '180' : {
                     'name' : 'New Prahv Guildmage'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'WU'
+                    , 'cmc' : '2'
                     , 'multiverse' : '270367'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(2/2)'
@@ -1195,7 +1401,9 @@ RTR = {
                 , '201' : {
                     'name' : 'Teleportal'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'UR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '253562'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1204,7 +1412,9 @@ RTR = {
                 , '23' : {
                     'name' : 'Soul Tithe'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '265372'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1213,7 +1423,9 @@ RTR = {
                 , '212' : {
                     'name' : 'Dryad Militant'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '(G/W)'
+                    , 'cmc' : '5'
                     , 'multiverse' : '289226'
                     , 'type' : 'Creature  — Dryad Soldier'
                     , 'pt' : '(2/1)'
@@ -1222,7 +1434,9 @@ RTR = {
                 , '183' : {
                     'name' : 'Rakdos Charm'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'BR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '253590'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1231,7 +1445,9 @@ RTR = {
                 , '179' : {
                     'name' : 'Mercurial Chemister'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '3UR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '253510'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(2/3)'
@@ -1240,7 +1456,9 @@ RTR = {
                 , '4' : {
                     'name' : 'Avenging Arrow'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '265410'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1249,7 +1467,9 @@ RTR = {
                 , '192' : {
                     'name' : 'Search Warrant'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : 'WU'
+                    , 'cmc' : '2'
                     , 'multiverse' : '253614'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1258,7 +1478,9 @@ RTR = {
                 , '52' : {
                     'name' : 'Stealer of Secrets'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '265413'
                     , 'type' : 'Creature  — Human Rogue'
                     , 'pt' : '(2/2)'
@@ -1267,7 +1489,9 @@ RTR = {
                 , '113' : {
                     'name' : 'Archweaver'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '5GG'
+                    , 'cmc' : '7'
                     , 'multiverse' : '253601'
                     , 'type' : 'Creature  — Spider'
                     , 'pt' : '(5/5)'
@@ -1276,7 +1500,9 @@ RTR = {
                 , '66' : {
                     'name' : 'Grave Betrayal'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '5BB'
+                    , 'cmc' : '7'
                     , 'multiverse' : '270960'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1285,7 +1511,9 @@ RTR = {
                 , '101' : {
                     'name' : 'Pursuit of Flight'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '265390'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1294,7 +1522,9 @@ RTR = {
                 , '49' : {
                     'name' : 'Skyline Predator'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '4UU'
+                    , 'cmc' : '6'
                     , 'multiverse' : '289212'
                     , 'type' : 'Creature  — Drake'
                     , 'pt' : '(3/4)'
@@ -1303,7 +1533,9 @@ RTR = {
                 , '132' : {
                     'name' : 'Savage Surge'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '265388'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1312,7 +1544,9 @@ RTR = {
                 , '119' : {
                     'name' : 'Deadbridge Goliath'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '2GG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '270970'
                     , 'type' : 'Creature  — Insect'
                     , 'pt' : '(5/5)'
@@ -1321,7 +1555,9 @@ RTR = {
                 , '95' : {
                     'name' : 'Gore-House Chainwalker'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '270796'
                     , 'type' : 'Creature  — Human Warrior'
                     , 'pt' : '(2/1)'
@@ -1330,7 +1566,9 @@ RTR = {
                 , '38' : {
                     'name' : 'Downsize'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '265374'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1339,7 +1577,9 @@ RTR = {
                 , '203' : {
                     'name' : 'Treasured Find'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'BG'
+                    , 'cmc' : '2'
                     , 'multiverse' : '270375'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1348,7 +1588,9 @@ RTR = {
                 , '144' : {
                     'name' : 'Azorius Charm'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'WU'
+                    , 'cmc' : '2'
                     , 'multiverse' : '270962'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1357,7 +1599,9 @@ RTR = {
                 , '158' : {
                     'name' : 'Epic Experiment'
                     , 'rarity' : 'M'
+                    , 'color' : 'M'
                     , 'cost' : 'XUR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '253552'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1366,7 +1610,9 @@ RTR = {
                 , '86' : {
                     'name' : 'Batterhorn'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '4R'
+                    , 'cmc' : '5'
                     , 'multiverse' : '265399'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(4/3)'
@@ -1375,7 +1621,9 @@ RTR = {
                 , '48' : {
                     'name' : 'Search the City'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '4U'
+                    , 'cmc' : '5'
                     , 'multiverse' : '265404'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1384,7 +1632,9 @@ RTR = {
                 , '82' : {
                     'name' : 'Underworld Connections'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '1BB'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253507'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1393,7 +1643,9 @@ RTR = {
                 , '98' : {
                     'name' : 'Lobber Crew'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '289218'
                     , 'type' : 'Creature  — Goblin Warrior'
                     , 'pt' : '(0/4)'
@@ -1402,7 +1654,9 @@ RTR = {
                 , '240' : {
                     'name' : 'Izzet Guildgate'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '270961'
                     , 'type' : 'Land  — Gate'
                     , 'pt' : ''
@@ -1411,7 +1665,9 @@ RTR = {
                 , '73' : {
                     'name' : 'Perilous Shadow'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2BB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '265405'
                     , 'type' : 'Creature  — Insect Shade'
                     , 'pt' : '(0/4)'
@@ -1420,7 +1676,9 @@ RTR = {
                 , '149' : {
                     'name' : 'Collective Blessing'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '3GGW'
+                    , 'cmc' : '6'
                     , 'multiverse' : '290528'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1429,7 +1687,9 @@ RTR = {
                 , '79' : {
                     'name' : 'Terrus Wurm'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '6B'
+                    , 'cmc' : '7'
                     , 'multiverse' : '289223'
                     , 'type' : 'Creature  — Zombie Wurm'
                     , 'pt' : '(5/5)'
@@ -1438,7 +1698,9 @@ RTR = {
                 , '178' : {
                     'name' : 'Lyev Skyknight'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '1WU'
+                    , 'cmc' : '3'
                     , 'multiverse' : '265391'
                     , 'type' : 'Creature  — Human Knight'
                     , 'pt' : '(3/1)'
@@ -1447,7 +1709,9 @@ RTR = {
                 , '91' : {
                     'name' : 'Dynacharge'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '265397'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1456,7 +1720,9 @@ RTR = {
                 , '140' : {
                     'name' : 'Abrupt Decay'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : 'BG'
+                    , 'cmc' : '2'
                     , 'multiverse' : '253561'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1465,7 +1731,9 @@ RTR = {
                 , '251' : {
                     'name' : 'Mountain'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '289324'
                     , 'type' : 'Basic Land  — Mountain'
                     , 'pt' : ''
@@ -1474,7 +1742,9 @@ RTR = {
                 , '81' : {
                     'name' : 'Ultimate Price'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '253538'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1483,7 +1753,9 @@ RTR = {
                 , '117' : {
                     'name' : 'Centaur\'s Herald'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '265387'
                     , 'type' : 'Creature  — Elf Scout'
                     , 'pt' : '(0/1)'
@@ -1492,7 +1764,9 @@ RTR = {
                 , '135' : {
                     'name' : 'Stonefare Crocodile'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '265398'
                     , 'type' : 'Creature  — Crocodile'
                     , 'pt' : '(3/2)'
@@ -1501,7 +1775,9 @@ RTR = {
                 , '54' : {
                     'name' : 'Tower Drake'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '265400'
                     , 'type' : 'Creature  — Drake'
                     , 'pt' : '(2/1)'
@@ -1510,7 +1786,9 @@ RTR = {
                 , '42' : {
                     'name' : 'Inspiration'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '265380'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1519,7 +1797,9 @@ RTR = {
                 , '242' : {
                     'name' : 'Rakdos Guildgate'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '270953'
                     , 'type' : 'Land  — Gate'
                     , 'pt' : ''
@@ -1528,7 +1808,9 @@ RTR = {
                 , '67' : {
                     'name' : 'Grim Roustabout'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '265386'
                     , 'type' : 'Creature  — Skeleton Warrior'
                     , 'pt' : '(1/1)'
@@ -1537,7 +1819,9 @@ RTR = {
                 , '76' : {
                     'name' : 'Slum Reaper'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '270373'
                     , 'type' : 'Creature  — Horror'
                     , 'pt' : '(4/2)'
@@ -1546,7 +1830,9 @@ RTR = {
                 , '112' : {
                     'name' : 'Aerial Predation'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '289227'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1555,7 +1841,9 @@ RTR = {
                 , '172' : {
                     'name' : 'Izzet Staticaster'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '1UR'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253638'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(0/3)'
@@ -1564,7 +1852,9 @@ RTR = {
                 , '142' : {
                     'name' : 'Armada Wurm'
                     , 'rarity' : 'M'
+                    , 'color' : 'M'
                     , 'cost' : '2GGWW'
+                    , 'cmc' : '6'
                     , 'multiverse' : '253587'
                     , 'type' : 'Creature  — Wurm'
                     , 'pt' : '(5/5)'
@@ -1573,7 +1863,9 @@ RTR = {
                 , '18' : {
                     'name' : 'Rest in Peace'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '277995'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1582,7 +1874,9 @@ RTR = {
                 , '61' : {
                     'name' : 'Dead Reveler'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253640'
                     , 'type' : 'Creature  — Zombie'
                     , 'pt' : '(2/3)'
@@ -1591,7 +1885,9 @@ RTR = {
                 , '111' : {
                     'name' : 'Viashino Racketeer'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '265379'
                     , 'type' : 'Creature  — Viashino Rogue'
                     , 'pt' : '(2/1)'
@@ -1600,7 +1896,9 @@ RTR = {
                 , '93' : {
                     'name' : 'Explosive Impact'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '5R'
+                    , 'cmc' : '6'
                     , 'multiverse' : '265393'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1609,7 +1907,9 @@ RTR = {
                 , '214' : {
                     'name' : 'Golgari Longlegs'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : '3(B/G)(B/G)'
+                    , 'cmc' : '13'
                     , 'multiverse' : '290535'
                     , 'type' : 'Creature  — Insect'
                     , 'pt' : '(5/4)'
@@ -1618,7 +1918,9 @@ RTR = {
                 , '161' : {
                     'name' : 'Firemind\'s Foresight'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '5UR'
+                    , 'cmc' : '7'
                     , 'multiverse' : '290541'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1627,7 +1929,9 @@ RTR = {
                 , '248' : {
                     'name' : 'Plains'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '289311'
                     , 'type' : 'Basic Land  — Plains'
                     , 'pt' : ''
@@ -1636,7 +1940,9 @@ RTR = {
                 , '224' : {
                     'name' : 'Chromatic Lantern'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '290542'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1645,7 +1951,9 @@ RTR = {
                 , '57' : {
                     'name' : 'Catacomb Slug'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '4B'
+                    , 'cmc' : '5'
                     , 'multiverse' : '253525'
                     , 'type' : 'Creature  — Slug'
                     , 'pt' : '(2/6)'
@@ -1654,7 +1962,9 @@ RTR = {
                 , '208' : {
                     'name' : 'Azor\'s Elocutors'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '3(W/U)(W/U)'
+                    , 'cmc' : '13'
                     , 'multiverse' : '265418'
                     , 'type' : 'Creature  — Human Advisor'
                     , 'pt' : '(3/5)'
@@ -1663,7 +1973,9 @@ RTR = {
                 , '155' : {
                     'name' : 'Dramatic Rescue'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : 'WU'
+                    , 'cmc' : '2'
                     , 'multiverse' : '253544'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1672,7 +1984,9 @@ RTR = {
                 , '209' : {
                     'name' : 'Blistercoil Weird'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '(U/R)'
+                    , 'cmc' : '5'
                     , 'multiverse' : '289222'
                     , 'type' : 'Creature  — Weird'
                     , 'pt' : '(1/1)'
@@ -1681,7 +1995,9 @@ RTR = {
                 , '237' : {
                     'name' : 'Golgari Guildgate'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '270964'
                     , 'type' : 'Land  — Gate'
                     , 'pt' : ''
@@ -1690,7 +2006,9 @@ RTR = {
                 , '39' : {
                     'name' : 'Faerie Impostor'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '322459'
                     , 'type' : 'Creature  — Faerie Rogue'
                     , 'pt' : '(2/1)'
@@ -1699,7 +2017,9 @@ RTR = {
                 , '229' : {
                     'name' : 'Pithing Needle'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '1'
+                    , 'cmc' : '1'
                     , 'multiverse' : '253581'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1708,7 +2028,9 @@ RTR = {
                 , '150' : {
                     'name' : 'Common Bond'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : '1GW'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253565'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1717,7 +2039,9 @@ RTR = {
                 , '170' : {
                     'name' : 'Isperia, Supreme Judge'
                     , 'rarity' : 'M'
+                    , 'color' : 'M'
                     , 'cost' : '2WWUU'
+                    , 'cmc' : '6'
                     , 'multiverse' : '290531'
                     , 'type' : 'Legendary Creature  — Sphinx'
                     , 'pt' : '(6/4)'
@@ -1726,7 +2050,9 @@ RTR = {
                 , '213' : {
                     'name' : 'Frostburn Weird'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : '(U/R)(U/R)'
+                    , 'cmc' : '10'
                     , 'multiverse' : '289230'
                     , 'type' : 'Creature  — Weird'
                     , 'pt' : '(1/4)'
@@ -1735,7 +2061,9 @@ RTR = {
                 , '137' : {
                     'name' : 'Urban Burgeoning'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '270370'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1744,7 +2072,9 @@ RTR = {
                 , '71' : {
                     'name' : 'Ogre Jailbreaker'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '270371'
                     , 'type' : 'Creature  — Ogre Rogue'
                     , 'pt' : '(4/4)'
@@ -1753,7 +2083,9 @@ RTR = {
                 , '196' : {
                     'name' : 'Slaughter Games'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '2BR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '290532'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1762,7 +2094,9 @@ RTR = {
                 , '46' : {
                     'name' : 'Psychic Spiral'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '4U'
+                    , 'cmc' : '5'
                     , 'multiverse' : '270794'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1771,7 +2105,9 @@ RTR = {
                 , '216' : {
                     'name' : 'Judge\'s Familiar'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '(W/U)'
+                    , 'cmc' : '5'
                     , 'multiverse' : '289221'
                     , 'type' : 'Creature  — Bird'
                     , 'pt' : '(1/1)'
@@ -1780,7 +2116,9 @@ RTR = {
                 , '169' : {
                     'name' : 'Hypersonic Dragon'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '3UR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '253655'
                     , 'type' : 'Creature  — Dragon'
                     , 'pt' : '(4/4)'
@@ -1789,7 +2127,9 @@ RTR = {
                 , '205' : {
                     'name' : 'Trostani, Selesnya\'s Voice'
                     , 'rarity' : 'M'
+                    , 'color' : 'M'
                     , 'cost' : 'GGWW'
+                    , 'cmc' : '4'
                     , 'multiverse' : '253641'
                     , 'type' : 'Legendary Creature  — Dryad'
                     , 'pt' : '(2/5)'
@@ -1798,7 +2138,9 @@ RTR = {
                 , '151' : {
                     'name' : 'Corpsejack Menace'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '2BG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '253533'
                     , 'type' : 'Creature  — Fungus'
                     , 'pt' : '(4/4)'
@@ -1807,7 +2149,9 @@ RTR = {
                 , '157' : {
                     'name' : 'Dreg Mangler'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '1BG'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253509'
                     , 'type' : 'Creature  — Plant Zombie'
                     , 'pt' : '(3/3)'
@@ -1816,7 +2160,9 @@ RTR = {
                 , '152' : {
                     'name' : 'Counterflux'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : 'UUR'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253524'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1825,7 +2171,9 @@ RTR = {
                 , '124' : {
                     'name' : 'Giant Growth'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '289213'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1834,7 +2182,9 @@ RTR = {
                 , '202' : {
                     'name' : 'Thoughtflare'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '3UR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '253551'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1843,7 +2193,9 @@ RTR = {
                 , '174' : {
                     'name' : 'Jarad\'s Orders'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '2BG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '253633'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1852,7 +2204,9 @@ RTR = {
                 , '87' : {
                     'name' : 'Bellows Lizard'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '289214'
                     , 'type' : 'Creature  — Lizard'
                     , 'pt' : '(1/1)'
@@ -1861,7 +2215,9 @@ RTR = {
                 , '141' : {
                     'name' : 'Archon of the Triumvirate'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '5WU'
+                    , 'cmc' : '7'
                     , 'multiverse' : '253603'
                     , 'type' : 'Creature  — Archon'
                     , 'pt' : '(4/5)'
@@ -1870,7 +2226,9 @@ RTR = {
                 , '228' : {
                     'name' : 'Izzet Keyrune'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253514'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1879,7 +2237,9 @@ RTR = {
                 , '74' : {
                     'name' : 'Sewer Shambler'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253576'
                     , 'type' : 'Creature  — Zombie'
                     , 'pt' : '(2/1)'
@@ -1888,7 +2248,9 @@ RTR = {
                 , '37' : {
                     'name' : 'Doorkeeper'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '265417'
                     , 'type' : 'Creature  — Homunculus'
                     , 'pt' : '(0/4)'
@@ -1897,7 +2259,9 @@ RTR = {
                 , '50' : {
                     'name' : 'Soulsworn Spirit'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '270357'
                     , 'type' : 'Creature  — Spirit'
                     , 'pt' : '(2/1)'
@@ -1906,7 +2270,9 @@ RTR = {
                 , '22' : {
                     'name' : 'Seller of Songbirds'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253656'
                     , 'type' : 'Creature  — Human'
                     , 'pt' : '(1/2)'
@@ -1915,7 +2281,9 @@ RTR = {
                 , '14' : {
                     'name' : 'Martial Law'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '2WW'
+                    , 'cmc' : '4'
                     , 'multiverse' : '253598'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1924,7 +2292,9 @@ RTR = {
                 , '47' : {
                     'name' : 'Runewing'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '265394'
                     , 'type' : 'Creature  — Bird'
                     , 'pt' : '(2/2)'
@@ -1933,7 +2303,9 @@ RTR = {
                 , '226' : {
                     'name' : 'Codex Shredder'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '1'
+                    , 'cmc' : '1'
                     , 'multiverse' : '253635'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1942,7 +2314,9 @@ RTR = {
                 , '33' : {
                     'name' : 'Conjured Currency'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '5U'
+                    , 'cmc' : '6'
                     , 'multiverse' : '253606'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1951,7 +2325,9 @@ RTR = {
                 , '96' : {
                     'name' : 'Guild Feud'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '5R'
+                    , 'cmc' : '6'
                     , 'multiverse' : '265406'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1960,7 +2336,9 @@ RTR = {
                 , '126' : {
                     'name' : 'Golgari Decoy'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '253508'
                     , 'type' : 'Creature  — Elf Rogue'
                     , 'pt' : '(2/2)'
@@ -1969,7 +2347,9 @@ RTR = {
                 , '206' : {
                     'name' : 'Vitu-Ghazi Guildmage'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'GW'
+                    , 'cmc' : '2'
                     , 'multiverse' : '270346'
                     , 'type' : 'Creature  — Dryad Shaman'
                     , 'pt' : '(2/2)'
@@ -1978,7 +2358,9 @@ RTR = {
                 , '103' : {
                     'name' : 'Racecourse Fury'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '253599'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1987,7 +2369,9 @@ RTR = {
                 , '138' : {
                     'name' : 'Wild Beastmaster'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '270784'
                     , 'type' : 'Creature  — Human Shaman'
                     , 'pt' : '(1/1)'
@@ -1996,7 +2380,9 @@ RTR = {
                 , '123' : {
                     'name' : 'Gatecreeper Vine'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '289217'
                     , 'type' : 'Creature  — Plant'
                     , 'pt' : '(0/2)'
@@ -2005,7 +2391,9 @@ RTR = {
                 , '56' : {
                     'name' : 'Assassin\'s Strike'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '4BB'
+                    , 'cmc' : '6'
                     , 'multiverse' : '289216'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2014,7 +2402,9 @@ RTR = {
                 , '77' : {
                     'name' : 'Stab Wound'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '270791'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2023,7 +2413,9 @@ RTR = {
                 , '217' : {
                     'name' : 'Nivmagus Elemental'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '(U/R)'
+                    , 'cmc' : '5'
                     , 'multiverse' : '290526'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(1/2)'
@@ -2032,7 +2424,9 @@ RTR = {
                 , '25' : {
                     'name' : 'Sunspire Griffin'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1WW'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253554'
                     , 'type' : 'Creature  — Griffin'
                     , 'pt' : '(2/3)'
@@ -2041,7 +2435,9 @@ RTR = {
                 , '243' : {
                     'name' : 'Rogue\'s Passage'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '277992'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -2050,7 +2446,9 @@ RTR = {
                 , '92' : {
                     'name' : 'Electrickery'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '253545'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2059,7 +2457,9 @@ RTR = {
                 , '168' : {
                     'name' : 'Hussar Patrol'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : '2WU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '253520'
                     , 'type' : 'Creature  — Human Knight'
                     , 'pt' : '(2/4)'
@@ -2068,7 +2468,9 @@ RTR = {
                 , '230' : {
                     'name' : 'Rakdos Keyrune'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253617'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2077,7 +2479,9 @@ RTR = {
                 , '2' : {
                     'name' : 'Armory Guard'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '253570'
                     , 'type' : 'Creature  — Giant Soldier'
                     , 'pt' : '(2/5)'
@@ -2086,7 +2490,9 @@ RTR = {
                 , '128' : {
                     'name' : 'Korozda Monitor'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '2GG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '270797'
                     , 'type' : 'Creature  — Lizard'
                     , 'pt' : '(3/3)'
@@ -2095,7 +2501,9 @@ RTR = {
                 , '185' : {
                     'name' : 'Rakdos Ringleader'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '4BR'
+                    , 'cmc' : '6'
                     , 'multiverse' : '253585'
                     , 'type' : 'Creature  — Skeleton Warrior'
                     , 'pt' : '(3/1)'
@@ -2104,7 +2512,9 @@ RTR = {
                 , '223' : {
                     'name' : 'Azorius Keyrune'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253519'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2113,7 +2523,9 @@ RTR = {
                 , '88' : {
                     'name' : 'Bloodfray Giant'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '270785'
                     , 'type' : 'Creature  — Giant'
                     , 'pt' : '(4/3)'
@@ -2122,7 +2534,9 @@ RTR = {
                 , '186' : {
                     'name' : 'Rakdos, Lord of Riots'
                     , 'rarity' : 'M'
+                    , 'color' : 'M'
                     , 'cost' : 'BBRR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '253532'
                     , 'type' : 'Legendary Creature  — Demon'
                     , 'pt' : '(6/6)'
@@ -2131,7 +2545,9 @@ RTR = {
                 , '221' : {
                     'name' : 'Sundering Growth'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : '(G/W)(G/W)'
+                    , 'cmc' : '10'
                     , 'multiverse' : '265415'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2140,7 +2556,9 @@ RTR = {
                 , '148' : {
                     'name' : 'Chemister\'s Trick'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : 'UR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '290524'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2149,7 +2567,9 @@ RTR = {
                 , '235' : {
                     'name' : 'Azorius Guildgate'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '270966'
                     , 'type' : 'Land  — Gate'
                     , 'pt' : ''
@@ -2158,7 +2578,9 @@ RTR = {
                 , '130' : {
                     'name' : 'Oak Street Innkeeper'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '270362'
                     , 'type' : 'Creature  — Elf'
                     , 'pt' : '(1/2)'
@@ -2167,7 +2589,9 @@ RTR = {
                 , '244' : {
                     'name' : 'Selesnya Guildgate'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '271099'
                     , 'type' : 'Land  — Gate'
                     , 'pt' : ''
@@ -2176,7 +2600,9 @@ RTR = {
                 , '175' : {
                     'name' : 'Korozda Guildmage'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'BG'
+                    , 'cmc' : '2'
                     , 'multiverse' : '270364'
                     , 'type' : 'Creature  — Elf Shaman'
                     , 'pt' : '(2/2)'
@@ -2185,7 +2611,9 @@ RTR = {
                 , '43' : {
                     'name' : 'Isperia\'s Skywatch'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '5U'
+                    , 'cmc' : '6'
                     , 'multiverse' : '270958'
                     , 'type' : 'Creature  — Vedalken Knight'
                     , 'pt' : '(3/3)'
@@ -2194,7 +2622,9 @@ RTR = {
                 , '222' : {
                     'name' : 'Vassal Soul'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : '1(W/U)(W/U)'
+                    , 'cmc' : '11'
                     , 'multiverse' : '253521'
                     , 'type' : 'Creature  — Spirit'
                     , 'pt' : '(2/2)'
@@ -2203,7 +2633,9 @@ RTR = {
                 , '99' : {
                     'name' : 'Minotaur Aggressor'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '6R'
+                    , 'cmc' : '7'
                     , 'multiverse' : '270800'
                     , 'type' : 'Creature  — Minotaur Berserker'
                     , 'pt' : '(6/2)'
@@ -2212,7 +2644,9 @@ RTR = {
                 , '58' : {
                     'name' : 'Cremate'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '277990'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2221,7 +2655,9 @@ RTR = {
                 , '53' : {
                     'name' : 'Syncopate'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : 'XU'
+                    , 'cmc' : '1'
                     , 'multiverse' : '270369'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2230,7 +2666,9 @@ RTR = {
                 , '189' : {
                     'name' : 'Risen Sanctuary'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '5GW'
+                    , 'cmc' : '7'
                     , 'multiverse' : '290530'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(8/8)'
@@ -2239,7 +2677,9 @@ RTR = {
                 , '108' : {
                     'name' : 'Traitorous Instinct'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '289228'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2248,7 +2688,9 @@ RTR = {
                 , '184' : {
                     'name' : 'Rakdos Ragemutt'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : '3BR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '290525'
                     , 'type' : 'Creature  — Elemental Hound'
                     , 'pt' : '(3/3)'
@@ -2257,7 +2699,9 @@ RTR = {
                 , '30' : {
                     'name' : 'Blustersquall'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '253582'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2266,7 +2710,9 @@ RTR = {
                 , '131' : {
                     'name' : 'Rubbleback Rhino'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '4G'
+                    , 'cmc' : '5'
                     , 'multiverse' : '265396'
                     , 'type' : 'Creature  — Rhino'
                     , 'pt' : '(3/4)'
@@ -2275,7 +2721,9 @@ RTR = {
                 , '65' : {
                     'name' : 'Drainpipe Vermin'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '265401'
                     , 'type' : 'Creature  — Rat'
                     , 'pt' : '(1/1)'
@@ -2284,7 +2732,9 @@ RTR = {
                 , '241' : {
                     'name' : 'Overgrown Tomb'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '253680'
                     , 'type' : 'Land  — Swamp Forest'
                     , 'pt' : ''
@@ -2293,7 +2743,9 @@ RTR = {
                 , '219' : {
                     'name' : 'Rakdos Shred-Freak'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : '(B/R)(B/R)'
+                    , 'cmc' : '10'
                     , 'multiverse' : '253591'
                     , 'type' : 'Creature  — Human Berserker'
                     , 'pt' : '(2/1)'
@@ -2302,7 +2754,9 @@ RTR = {
                 , '21' : {
                     'name' : 'Selesnya Sentry'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '265382'
                     , 'type' : 'Creature  — Elephant Soldier'
                     , 'pt' : '(3/2)'
@@ -2311,7 +2765,9 @@ RTR = {
                 , '6' : {
                     'name' : 'Azorius Justiciar'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '2WW'
+                    , 'cmc' : '4'
                     , 'multiverse' : '270795'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(2/2)'
@@ -2320,7 +2776,9 @@ RTR = {
                 , '231' : {
                     'name' : 'Selesnya Keyrune'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '253631'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2329,7 +2787,9 @@ RTR = {
                 , '118' : {
                     'name' : 'Chorus of Might'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '265373'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2338,7 +2798,9 @@ RTR = {
                 , '159' : {
                     'name' : 'Essence Backlash'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : '2UR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '290527'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2347,7 +2809,9 @@ RTR = {
                 , '27' : {
                     'name' : 'Trained Caracal'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '253615'
                     , 'type' : 'Creature  — Cat'
                     , 'pt' : '(1/1)'
@@ -2356,7 +2820,9 @@ RTR = {
                 , '154' : {
                     'name' : 'Detention Sphere'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '1WU'
+                    , 'cmc' : '3'
                     , 'multiverse' : '270356'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2365,7 +2831,9 @@ RTR = {
                 , '51' : {
                     'name' : 'Sphinx of the Chimes'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '4UU'
+                    , 'cmc' : '6'
                     , 'multiverse' : '253594'
                     , 'type' : 'Creature  — Sphinx'
                     , 'pt' : '(5/6)'
@@ -2374,7 +2842,9 @@ RTR = {
                 , '134' : {
                     'name' : 'Slime Molding'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : 'XG'
+                    , 'cmc' : '1'
                     , 'multiverse' : '290533'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2383,7 +2853,9 @@ RTR = {
                 , '116' : {
                     'name' : 'Brushstrider'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '265377'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(3/1)'
@@ -2392,7 +2864,9 @@ RTR = {
                 , '167' : {
                     'name' : 'Heroes\' Reunion'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'GW'
+                    , 'cmc' : '2'
                     , 'multiverse' : '290537'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2401,7 +2875,9 @@ RTR = {
                 , '191' : {
                     'name' : 'Rix Maadi Guildmage'
                     , 'rarity' : 'U'
+                    , 'color' : 'M'
                     , 'cost' : 'BR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '270351'
                     , 'type' : 'Creature  — Human Shaman'
                     , 'pt' : '(2/2)'
@@ -2410,7 +2886,9 @@ RTR = {
                 , '197' : {
                     'name' : 'Sluiceway Scorpion'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : '2BG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '253607'
                     , 'type' : 'Creature  — Scorpion'
                     , 'pt' : '(2/2)'
@@ -2419,7 +2897,9 @@ RTR = {
                 , '146' : {
                     'name' : 'Carnival Hellsteed'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '4BR'
+                    , 'cmc' : '6'
                     , 'multiverse' : '270963'
                     , 'type' : 'Creature  — Nightmare Horse'
                     , 'pt' : '(5/4)'
@@ -2428,7 +2908,9 @@ RTR = {
                 , '188' : {
                     'name' : 'Righteous Authority'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '3WU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '253546'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2437,7 +2919,9 @@ RTR = {
                 , '104' : {
                     'name' : 'Splatter Thug'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '265381'
                     , 'type' : 'Creature  — Human Warrior'
                     , 'pt' : '(2/2)'
@@ -2446,7 +2930,9 @@ RTR = {
                 , '249' : {
                     'name' : 'Island'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '289315'
                     , 'type' : 'Basic Land  — Island'
                     , 'pt' : ''
@@ -2455,7 +2941,9 @@ RTR = {
                 , '17' : {
                     'name' : 'Precinct Captain'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : 'WW'
+                    , 'cmc' : '2'
                     , 'multiverse' : '270792'
                     , 'type' : 'Creature  — Human Soldier'
                     , 'pt' : '(2/2)'
@@ -2464,7 +2952,9 @@ RTR = {
                 , '236' : {
                     'name' : 'Blood Crypt'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '253683'
                     , 'type' : 'Land  — Swamp Mountain'
                     , 'pt' : ''
@@ -2473,7 +2963,9 @@ RTR = {
                 , '12' : {
                     'name' : 'Keening Apparition'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '271100'
                     , 'type' : 'Creature  — Spirit'
                     , 'pt' : '(2/2)'
@@ -2482,7 +2974,9 @@ RTR = {
                 , '32' : {
                     'name' : 'Chronic Flooding'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '270786'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2491,7 +2985,9 @@ RTR = {
                 , '182' : {
                     'name' : 'Niv-Mizzet, Dracogenius'
                     , 'rarity' : 'M'
+                    , 'color' : 'M'
                     , 'cost' : '2UURR'
+                    , 'cmc' : '6'
                     , 'multiverse' : '253626'
                     , 'type' : 'Legendary Creature  — Dragon Wizard'
                     , 'pt' : '(5/5)'
@@ -2500,7 +2996,9 @@ RTR = {
                 , '97' : {
                     'name' : 'Guttersnipe'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '265392'
                     , 'type' : 'Creature  — Goblin Shaman'
                     , 'pt' : '(2/2)'
@@ -2509,7 +3007,9 @@ RTR = {
                 , '215' : {
                     'name' : 'Growing Ranks'
                     , 'rarity' : 'R'
+                    , 'color' : 'M'
                     , 'cost' : '2(G/W)(G/W)'
+                    , 'cmc' : '12'
                     , 'multiverse' : '270957'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2518,7 +3018,9 @@ RTR = {
                 , '204' : {
                     'name' : 'Trestle Troll'
                     , 'rarity' : 'C'
+                    , 'color' : 'M'
                     , 'cost' : '1BG'
+                    , 'cmc' : '3'
                     , 'multiverse' : '289220'
                     , 'type' : 'Creature  — Troll'
                     , 'pt' : '(1/4)'
@@ -2527,7 +3029,9 @@ RTR = {
                 , '44' : {
                     'name' : 'Mizzium Skin'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '253636'
                     , 'type' : 'Instant'
                     , 'pt' : ''

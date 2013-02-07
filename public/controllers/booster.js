@@ -5,12 +5,6 @@ Booster = {
         var booster = [];
         var i = 0;
         
-        if( set != 'GTC' ){
-            return;
-        }
-        
-        // TODO add dynamic support for other card sets
-        
         var card;
         for( ; i < 10; ++i ){
             while( card = Booster.randCommon( set ) ){
@@ -55,36 +49,36 @@ Booster = {
     , randCommon : function( set ){
         
         /* pick a random index */
-        var num = GTC.commons.length;
-        var idx = Math.floor( Math.random() * num );
+        var commons = set.commons;
+        var idx = Math.floor( Math.random() * commons.length );
         
         /* return the random card's ID */
-        return GTC.commons[ idx ];
+        return commons[ idx ];
         
     }
     
-    , randUncommon : function(){
+    , randUncommon : function( set ){
         
         /* pick a random index */
-        var num = GTC.uncommons.length;
-        var idx = Math.floor( Math.random() * num );
+        var uncommons = set.uncommons;
+        var idx = Math.floor( Math.random() * uncommons.length );
         
         /* return the random card's ID */
-        return GTC.uncommons[ idx ];
+        return uncommons[ idx ];
         
     }
     
-    , randRare : function( ){
+    , randRare : function( set ){
         
-        if( Booster.chanceMythic() == false ){
-            var num = GTC.rares.length;
-            var idx = Math.floor( Math.random() * num );
-            return GTC.rares[ idx ];
+        if( Booster.chanceMythic() == false || set.mythics.length == 0 ){
+            var rares = set.rares;
+            var idx = Math.floor( Math.random() * rares.length );
+            return rares[ idx ];
         }
         else{
-            var num = GTC.mythics.length;
-            var idx = Math.floor( Math.random() * num );
-            return GTC.mythics[ idx ];
+            var mythics = set.mythics;
+            var idx = Math.floor( Math.random() * mythics.length );
+            return mythics[ idx ];
         }
         
     }

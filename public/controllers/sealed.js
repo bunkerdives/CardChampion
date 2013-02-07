@@ -37,23 +37,30 @@ Sealed = {
         , 0
         , 0
     ]
+    
+    , multiversePrefix : 'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid='
+    , multiverseSuffix : '&type=card'
   
-    , startSealed : function(set){
+    , startSealed : function( event ){
+        
+        var setName = event.data.set;
+        var set = Sets.getSet( setName );
         
         showSealedInterface();
         
-        var packs = Sealed.createSealedPool();
+        var packs = Sealed.createSealedPool( set );
         
-        Sealed.addPacksToPool( packs );
+        Sealed.addPacksToPool( packs, set );
         
     }
     
-    , createSealedPool : function() {
+    , createSealedPool : function(set) {
         
         var boosters = [];
         
         for( var i = 0; i < 6; ++i ){
-            $.merge( boosters, Booster.newBooster('GTC') );
+            var booster = Booster.newBooster(set);
+            $.merge( boosters, booster );
         }
         
         return boosters;
@@ -61,11 +68,11 @@ Sealed = {
     }
     
     // add packs to pool, sorted by color, first column White, 2nd Blue, 3B, 4R, 5G 
-    , addPacksToPool : function(packs) {
+    , addPacksToPool : function( packs, set ) {
         
-        packs = packs.sort( Sealed.sortPoolByColor );
+        packs = packs.sort( Sealed.sortPoolByColor(set) );
         
-        var color = GTC.card_data[ packs[0] ].color;
+        var color = set.card_data[ packs[0] ].color;
         var col = 0;
         var row = 0;
         
@@ -73,7 +80,7 @@ Sealed = {
             
             var id = packs[i];
             
-            if( color != GTC.card_data[ id ].color ){
+            if( color != set.card_data[ id ].color ){
                 // add the next card to the next column
                 ++ col;
                 row = 0;
@@ -85,10 +92,10 @@ Sealed = {
                 }
             }
             
-            color = GTC.card_data[ id ].color;
-            img = GTC.card_data[ id ].img;
+            color = set.card_data[ id ].color;
+            img = Sealed.newMultiverseURL( set.card_data[ id ].multiverse );
             element = $( "#card-pool-" + row + "-" + col);
-            addCardToUI( element, id, img, row, col, 'pool' );
+            addCardToUI( element, id, img, row, col, 'pool', set );
             Sealed.colSizePool[ col ] += 1;
             row += 1;
             
@@ -96,11 +103,16 @@ Sealed = {
         
     }
     
+    , newMultiverseURL : function( multiverse ){
+        return Sealed.multiversePrefix + multiverse + Sealed.multiverseSuffix;
+    }
+    
     , addCardToPoolCallback : function( event ) {
         
         var id = event.data.id;
         var row = event.data.row;
         var col = event.data.col;
+        var set = event.data.set;
         
         // shift the remaining cards in the mainboard column up
         var colSize = Sealed.colSize[ col ];
@@ -114,11 +126,11 @@ Sealed = {
             
             // get the copied card's ID and img
             cId = $(nextID).attr("data-card-id");
-            cImg = GTC.card_data[ cId ].img;
+            cImg = Sealed.newMultiverseURL( set.card_data[ cId ].multiverse );
             
             removeCardFromUI( element );
             
-            addCardToUI( element, cId, cImg, i, col, 'main' );
+            addCardToUI( element, cId, cImg, i, col, 'main', set );
             
         }
         
@@ -129,7 +141,7 @@ Sealed = {
         Sealed.colSize[ col ] -= 1;
         
         // get the color of the card
-        var colIdx = GTC.card_data[id].color;
+        var colIdx = set.card_data[id].color;
         switch(colIdx){
             case "W":
                 colIdx = 0;
@@ -159,13 +171,14 @@ Sealed = {
         Sealed.colSizePool[ colIdx ] += 1;
         
         // add the card to the pool
-        var img = GTC.card_data[ id ].img;
+        var img = Sealed.newMultiverseURL( set.card_data[ id ].multiverse );
         element = $( "#card-pool-" + rowIdx + "-" + colIdx );
-        addCardToUI( element, id, img, rowIdx, colIdx, 'pool' );
+        addCardToUI( element, id, img, rowIdx, colIdx, 'pool', set );
         
         // adjust the total, creature, and land counters
         Sealed.numCardsInDeck --;
-        adjustCardCounterUI(-1, GTC.card_data[id].type);
+        // TODO Fix weird creature name bugs
+        adjustCardCounterUI(-1, set.card_data[id].type);
         
     }
     
@@ -174,6 +187,7 @@ Sealed = {
         var id = event.data.id;
         var row = event.data.row;
         var col = event.data.col;
+        var set = event.data.set;
         
         // shift the remaining cards in the pool column up
         var colSize = Sealed.colSizePool[ col ];
@@ -186,11 +200,11 @@ Sealed = {
             
             // get the copied card's ID and img
             cId = $(nextID).attr("data-card-id");
-            cImg = GTC.card_data[ cId ].img;
+            cImg = Sealed.newMultiverseURL( set.card_data[ cId ].multiverse );
             
             removeCardFromUI( element );
             
-            addCardToUI( element, cId, cImg, i, col, 'pool' );
+            addCardToUI( element, cId, cImg, i, col, 'pool', set );
             
         }
         // hide the last card in the column
@@ -210,24 +224,24 @@ Sealed = {
         }
         
         // get the converted mana cost of the card, to be used as the column index
-        var colIdx = GTC.card_data[id].cmc;
+        var colIdx = set.card_data[id].cmc;
         
         // get the row index based on the number of cards occupying that mana cost column
         var rowIdx = Sealed.colSize[ colIdx ];
         Sealed.colSize[ colIdx ] += 1;
         
         // add the card to the mainboard
-        var img = GTC.card_data[ id ].img;
+        var img = Sealed.newMultiverseURL( set.card_data[ id ].multiverse );
         element = $( "#deck-area-" + rowIdx + "-" + colIdx );
-        addCardToUI( element, id, img, rowIdx, colIdx, 'main' );
+        addCardToUI( element, id, img, rowIdx, colIdx, 'main', set );
         
         // adjust the total, creature, and land counters
         Sealed.numCardsInDeck ++;
-        adjustCardCounterUI(1, GTC.card_data[id].type);
+        adjustCardCounterUI(1, set.card_data[id].type);
         
     }
     
-    , sortCardsIntoUIByType : function( ui, type ) {
+    , sortCardsIntoUIByType : function( ui, type, set ) {
         
         var sorted = [];
         var split;
@@ -247,7 +261,7 @@ Sealed = {
         var split;
         switch( type ){
             case "cost":
-                sorted = unsorted.sort( Sealed.costSort );
+                sorted = unsorted.sort( Sealed.costSort(set) );
                 split = Sealed.splitByCost( sorted );
                 break;
             default:
@@ -266,7 +280,7 @@ Sealed = {
         
     }
     
-    , insertSplitCardsIntoPool : function( split ) {
+    , insertSplitCardsIntoPool : function( split, set ) {
         
         // remove the source images from all html card elements, making the table of cards 'empty'
         var rows = Sealed.numRows;
@@ -290,12 +304,13 @@ Sealed = {
                 // add the card to the pool
                 var id = split[i][j];
                 var row = j;
-                var col = GTC.card_info[ id ].cmc;
-                var img = GTC.card_data[ id ].img;
+                var col = set.card_info[ id ].cmc;
+                var img = Sealed.newMultiverseURL( set.card_data[ id ].multiverse );
+                var data = { 'id' : id, 'row' : row, 'col' : col, 'set' : set };
                 $( "#card-pool-" + row + "-" + col ).css( "background-image", 'url(' + img + ')' );
                 $( "#card-pool-" + row + "-" + col ).css( "z-index", j );
-                $( "#card-pool-" + row + "-" + col ).on( 'mouseover', { 'id' : id, 'row' : row, 'col' : col }, Sealed.cardZoom );
-                $( "#card-pool-" + row + "-" + col ).dblclick( { 'id' : id, 'row' : row, 'col' : col }, Sealed.addCardToMain );
+                $( "#card-pool-" + row + "-" + col ).on( 'mouseover', data, Sealed.cardZoom );
+                $( "#card-pool-" + row + "-" + col ).dblclick( data, Sealed.addCardToMain );
                 $( "#card-pool-" + row + "-" + col ).attr( "data-card-id", id );
             }
             
@@ -303,16 +318,20 @@ Sealed = {
         
     }
     
-    , costSort : function( a, b ) {
+    , costSort : function( set ) {
         
-        var aCost = GTC.card_data[a].cmc;
-        var bCost = GTC.card_data[b].cmc;
+        return function( a, b ){
         
-        return aCost - bCost;
+            var aCost = set.card_data[a].cmc;
+            var bCost = set.card_data[b].cmc;
+        
+            return aCost - bCost;
+        
+        }
         
     }
     
-    , splitByCost : function( sorted ) {
+    , splitByCost : function( sorted, set ) {
         
         var numCards = sorted.length;
         if( numCards == 0 ){
@@ -320,11 +339,11 @@ Sealed = {
         }
         
         var split = [ [] ];
-        var color = GTC.card_data[ sorted[0] ].cmc;
+        var color = set.card_data[ sorted[0] ].cmc;
         var colorIdx = 0;
         for( var i = 0; i < numCards; ++i ){
             var id = sorted[i];
-            var tmpColor = GTC.card_data[ id ].cmc;
+            var tmpColor = set.card_data[ id ].cmc;
             if( tmpColor != color ){
                 color = tmpColor;
                 split.push( [] );
@@ -336,58 +355,62 @@ Sealed = {
         
     }
     
-    , sortPoolByColor : function( a, b ) {
+    , sortPoolByColor : function( set ) {
         
-        var aCol = GTC.card_data[a].color;
-        var bCol = GTC.card_data[b].color;
+        return function( a, b ) {
         
-        switch( aCol ){
-            case "W" :
-                return -1;
-            case "U" :
-                if( bCol == "W"){
-                    return 1;
-                }
-                else{
+            var aCol = set.card_data[a].color;
+            var bCol = set.card_data[b].color;
+        
+            switch( aCol ){
+                case "W" :
                     return -1;
-                }
-            case "B" :
-                if( bCol == "W" || bCol == "U" ){
+                case "U" :
+                    if( bCol == "W"){
+                        return 1;
+                    }
+                    else{
+                        return -1;
+                    }
+                case "B" :
+                    if( bCol == "W" || bCol == "U" ){
+                        return 1;
+                    }
+                    else{
+                        return -1;
+                    }
+                case "R" :
+                    if( bCol == "W" || bCol == "U" || bCol == "B" ){
+                        return 1;
+                    }
+                    else{
+                        return -1;
+                    }
+                case "G" :
+                    if( bCol == "W" || bCol == "U" || bCol == "B" || bCol == "R" ){
+                        return 1;
+                    }
+                    else{
+                        return -1;
+                    }
+                case "M" :
+                    if( bCol == "W" || bCol == "U" || bCol == "B" || bCol == "R" || bCol == "G" ){
+                        return 1;
+                    }
+                    else{
+                        return -1;
+                    }
+                case "A" :
+                    if( bCol == "W" || bCol == "U" || bCol == "B" || bCol == "R" || bCol == "G" || bCol == "M" ){
+                        return 1;
+                    }
+                    else{
+                        return -1;
+                    }
+                default :
                     return 1;
-                }
-                else{
-                    return -1;
-                }
-            case "R" :
-                if( bCol == "W" || bCol == "U" || bCol == "B" ){
-                    return 1;
-                }
-                else{
-                    return -1;
-                }
-            case "G" :
-                if( bCol == "W" || bCol == "U" || bCol == "B" || bCol == "R" ){
-                    return 1;
-                }
-                else{
-                    return -1;
-                }
-            case "M" :
-                if( bCol == "W" || bCol == "U" || bCol == "B" || bCol == "R" || bCol == "G" ){
-                    return 1;
-                }
-                else{
-                    return -1;
-                }
-            case "A" :
-                if( bCol == "W" || bCol == "U" || bCol == "B" || bCol == "R" || bCol == "G" || bCol == "M" ){
-                    return 1;
-                }
-                else{
-                    return -1;
-                }
-            default :
-                return 1;
+            }
+        
         }
         
     }

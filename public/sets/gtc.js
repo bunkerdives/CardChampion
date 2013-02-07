@@ -1,2539 +1,2987 @@
 GTC = {
+        
+        set : 'Gatecrash'
+        
+        , abbr : 'GTC'
+        
+        , commons : [
+            '1'
+            , '2'
+            , '4'
+            , '5'
+            , '8'
+            , '9'
+            , '11'
+            , '14'
+            , '18'
+            , '21'
+            , '23'
+            , '24'
+            , '25'
+            , '27'
+            , '30'
+            , '31'
+            , '34'
+            , '36'
+            , '38'
+            , '39'
+            , '40'
+            , '41'
+            , '45'
+            , '47'
+            , '50'
+            , '51'
+            , '53'
+            , '55'
+            , '56'
+            , '57'
+            , '58'
+            , '59'
+            , '61'
+            , '62'
+            , '65'
+            , '66'
+            , '67'
+            , '72'
+            , '75'
+            , '76'
+            , '77'
+            , '79'
+            , '84'
+            , '85'
+            , '88'
+            , '91'
+            , '92'
+            , '97'
+            , '99'
+            , '101'
+            , '103'
+            , '104'
+            , '106'
+            , '107'
+            , '108'
+            , '110'
+            , '112'
+            , '114'
+            , '115'
+            , '117'
+            , '119'
+            , '121'
+            , '124'
+            , '126'
+            , '128'
+            , '130'
+            , '133'
+            , '134'
+            , '137'
+            , '139'
+            , '155'
+            , '159'
+            , '170'
+            , '171'
+            , '173'
+            , '177'
+            , '184'
+            , '185'
+            , '187'
+            , '188'
+            , '190'
+            , '191'
+            , '195'
+            , '206'
+            , '208'
+            , '210'
+            , '212'
+            , '216'
+            , '221'
+            , '223'
+            , '224'
+            , '230'
+            , '232'
+            , '233'
+            , '234'
+            , '236'
+            , '237'
+            , '239'
+            , '241'
+            , '242'
+            , '244'
+        ]
+        
+        , uncommons : [
+            '7'
+            , '10'
+            , '13'
+            , '15'
+            , '16'
+            , '17'
+            , '20'
+            , '22'
+            , '26'
+            , '28'
+            , '29'
+            , '35'
+            , '37'
+            , '42'
+            , '43'
+            , '46'
+            , '48'
+            , '54'
+            , '63'
+            , '64'
+            , '68'
+            , '69'
+            , '71'
+            , '78'
+            , '80'
+            , '81'
+            , '83'
+            , '86'
+            , '87'
+            , '89'
+            , '94'
+            , '95'
+            , '98'
+            , '102'
+            , '105'
+            , '109'
+            , '113'
+            , '116'
+            , '118'
+            , '123'
+            , '125'
+            , '129'
+            , '131'
+            , '136'
+            , '138'
+            , '144'
+            , '147'
+            , '148'
+            , '149'
+            , '153'
+            , '154'
+            , '156'
+            , '158'
+            , '162'
+            , '164'
+            , '165'
+            , '166'
+            , '167'
+            , '179'
+            , '181'
+            , '182'
+            , '183'
+            , '193'
+            , '194'
+            , '198'
+            , '200'
+            , '202'
+            , '203'
+            , '204'
+            , '207'
+            , '209'
+            , '214'
+            , '215'
+            , '217'
+            , '219'
+            , '225'
+            , '226'
+            , '228'
+            , '231'
+            , '235'
+        ]
+        
+        , rares : [
+            '3'
+            , '6'
+            , '12'
+            , '19'
+            , '32'
+            , '44'
+            , '49'
+            , '52'
+            , '60'
+            , '73'
+            , '74'
+            , '82'
+            , '90'
+            , '96'
+            , '100'
+            , '111'
+            , '122'
+            , '127'
+            , '132'
+            , '135'
+            , '140'
+            , '141'
+            , '145'
+            , '150'
+            , '151'
+            , '160'
+            , '161'
+            , '163'
+            , '168'
+            , '169'
+            , '175'
+            , '176'
+            , '178'
+            , '189'
+            , '192'
+            , '196'
+            , '197'
+            , '199'
+            , '201'
+            , '205'
+            , '211'
+            , '213'
+            , '218'
+            , '220'
+            , '222'
+            , '227'
+            , '229'
+            , '238'
+            , '240'
+            , '243'
+            , '245'
+            , '246'
+            , '247'
+        ]
+        
+        , mythics : [
+            '33'
+            , '70'
+            , '93'
+            , '120'
+            , '142'
+            , '143'
+            , '146'
+            , '152'
+            , '157'
+            , '172'
+            , '174'
+            , '180'
+            , '186'
+        ]
     
-    set : 'Gatecrash'
-    
-    , abbr : 'GTC'
-    
-    , commons : [
-    
-    '1'
-    , '2'
-    , '4'
-    , '5'
-    , '8'
-    , '9'
-    , '11'
-    , '15'
-    , '19'
-    , '22'
-    , '24'
-    , '25'
-    , '26'
-    , '28'
-    , '31'
-    , '32'
-    , '35'
-    , '37'
-    , '39'
-    , '40'
-    , '41'
-    , '42'
-    , '46'
-    , '48'
-    , '51'
-    , '52'
-    , '54'
-    , '56'
-    , '57'
-    , '58'
-    , '59'
-    , '60'
-    , '62'
-    , '63'
-    , '66'
-    , '67'
-    , '68'
-    , '73'
-    , '76'
-    , '77'
-    , '78'
-    , '85'
-    , '86'
-    , '89'
-    , '92'
-    , '93'
-    , '98'
-    , '100'
-    , '102'
-    , '104'
-    , '105'
-    , '107'
-    , '108'
-    , '109'
-    , '111'
-    , '113'
-    , '115'
-    , '116'
-    , '118'
-    , '120'
-    , '125'
-    , '129'
-    , '131'
-    , '134'
-    , '135'
-    , '138'
-    , '140'
-    , '157'
-    , '158'
-    , '161'
-    , '172'
-    , '173'
-    , '175'
-    , '179'
-    , '186'
-    , '187'
-    , '189'
-    , '190'
-    , '192'
-    , '193'
-    , '197'
-    , '208'
-    , '210'
-    , '212'
-    , '214'
-    , '218'
-    , '223'
-    , '225'
-    , '226'
-    , '232'
-    , '234'
-    , '235'
-    , '236'
-    , '238'
-    , '239'
-    , '241'
-    , '243'
-    , '244'
-    , '246'
-    
-    ]
-    
-    , uncommons : [
-    
-    '7'
-    , '10'
-    , '14'
-    , '16'
-    , '17'
-    , '18'
-    , '21'
-    , '23'
-    , '27'
-    , '29'
-    , '30'
-    , '36'
-    , '38'
-    , '43'
-    , '44'
-    , '47'
-    , '49'
-    , '55'
-    , '64'
-    , '65'
-    , '69'
-    , '70'
-    , '72'
-    , '79'
-    , '80'
-    , '82'
-    , '84'
-    , '87'
-    , '88'
-    , '90'
-    , '95'
-    , '96'
-    , '99'
-    , '103'
-    , '106'
-    , '110'
-    , '114'
-    , '117'
-    , '119'
-    , '124'
-    , '126'
-    , '127'
-    , '130'
-    , '132'
-    , '137'
-    , '139'
-    , '145'
-    , '148'
-    , '149'
-    , '150'
-    , '154'
-    , '155'
-    , '160'
-    , '164'
-    , '166'
-    , '167'
-    , '168'
-    , '169'
-    , '181'
-    , '183'
-    , '184'
-    , '185'
-    , '195'
-    , '196'
-    , '200'
-    , '202'
-    , '204'
-    , '205'
-    , '206'
-    , '209'
-    , '211'
-    , '216'
-    , '217'
-    , '219'
-    , '221'
-    , '227'
-    , '228'
-    , '230'
-    , '233'
-    , '237'
-    
-    ]
-    
-    , rares : [
-    
-    '3'
-    , '6'
-    , '12'
-    , '20'
-    , '33'
-    , '45'
-    , '50'
-    , '53'
-    , '61'
-    , '74'
-    , '75'
-    , '83'
-    , '91'
-    , '97'
-    , '101'
-    , '112'
-    , '123'
-    , '128'
-    , '133'
-    , '136'
-    , '141'
-    , '142'
-    , '146'
-    , '151'
-    , '152'
-    , '162'
-    , '163'
-    , '165'
-    , '170'
-    , '171'
-    , '177'
-    , '178'
-    , '180'
-    , '191'
-    , '194'
-    , '198'
-    , '199'
-    , '201'
-    , '203'
-    , '207'
-    , '213'
-    , '215'
-    , '220'
-    , '222'
-    , '224'
-    , '229'
-    , '231'
-    , '240'
-    , '242'
-    , '245'
-    , '247'
-    , '248'
-    , '249'
-    
-    ]
-    
-    , mythics : [
-    
-    '13'
-    , '34'
-    , '71'
-    , '94'
-    , '121'
-    , '143'
-    , '144'
-    , '147'
-    , '153'
-    , '156'
-    , '159'
-    , '174'
-    , '182'
-    , '188'
-    
-    ]
-    
-    , card_data : {
 
-        '1' : {
-            'name' : 'Aerial Maneuver'
-            , 'rarity' : 'C'
-            , 'color' : 'W'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/s2blzt60xg_en.jpg'
-        }
+        , card_data : {
+            '103' : {
+                    'name' : 'Scorchwalker'
+                    , 'rarity' : 'C'
+                    , 'color' : 'R'
+                    , 'cost' : '3R'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366409'
+                    , 'type' : 'Creature  — Elemental'
+                    , 'pt' : '(5/1)'
+                }
+            
+                , '111' : {
+                    'name' : 'Wrecking Ogre'
+                    , 'rarity' : 'R'
+                    , 'color' : 'R'
+                    , 'cost' : '4R'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366446'
+                    , 'type' : 'Creature  — Ogre Warrior'
+                    , 'pt' : '(3/3)'
+                }
+            
+                , '68' : {
+                    'name' : 'Illness in the Ranks'
+                    , 'rarity' : 'U'
+                    , 'color' : 'B'
+                    , 'cost' : 'B'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366354'
+                    , 'type' : 'Enchantment'
+                    , 'pt' : ''
+                }
+            
+                , '39' : {
+                    'name' : 'Last Thoughts'
+                    , 'rarity' : 'C'
+                    , 'color' : 'U'
+                    , 'cost' : '3U'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366407'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '112' : {
+                    'name' : 'Adaptive Snapjaw'
+                    , 'rarity' : 'C'
+                    , 'color' : 'G'
+                    , 'cost' : '4G'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366290'
+                    , 'type' : 'Creature  — Lizard Beast'
+                    , 'pt' : '(6/2)'
+                }
+            
+                , '131' : {
+                    'name' : 'Serene Remembrance'
+                    , 'rarity' : 'U'
+                    , 'color' : 'G'
+                    , 'cost' : 'G'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366269'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '19' : {
+                    'name' : 'Luminate Primordial'
+                    , 'rarity' : 'R'
+                    , 'color' : 'W'
+                    , 'cost' : '5WW'
+                    , 'cmc' : '7'
+                    , 'multiverse' : '366240'
+                    , 'type' : 'Creature  — Avatar'
+                    , 'pt' : '(4/7)'
+                }
+            
+                , '189' : {
+                    'name' : 'Rubblehulk'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '4RG'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366424'
+                    , 'type' : 'Creature  — Elemental'
+                    , 'pt' : '(*/*)'
+                }
+            
+                , '126' : {
+                    'name' : 'Naturalize'
+                    , 'rarity' : 'C'
+                    , 'color' : 'G'
+                    , 'cost' : '1G'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366303'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '116' : {
+                    'name' : 'Crowned Ceratok'
+                    , 'rarity' : 'U'
+                    , 'color' : 'G'
+                    , 'cost' : '3G'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366256'
+                    , 'type' : 'Creature  — Rhino'
+                    , 'pt' : '(4/3)'
+                }
+            
+                , '82' : {
+                    'name' : 'Undercity Plague'
+                    , 'rarity' : 'R'
+                    , 'color' : 'B'
+                    , 'cost' : '4BB'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366231'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '2' : {
+                    'name' : 'Angelic Edict'
+                    , 'rarity' : 'C'
+                    , 'color' : 'W'
+                    , 'cost' : '4W'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366400'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '169' : {
+                    'name' : 'High Priest of Penance'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : 'WB'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366266'
+                    , 'type' : 'Creature  — Human Cleric'
+                    , 'pt' : '(1/1)'
+                }
+            
+                , '227' : {
+                    'name' : 'Glaring Spotlight'
+                    , 'rarity' : 'R'
+                    , 'color' : 'A'
+                    , 'cost' : '1'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366334'
+                    , 'type' : 'Artifact'
+                    , 'pt' : ''
+                }
+            
+                , '114' : {
+                    'name' : 'Burst of Strength'
+                    , 'rarity' : 'C'
+                    , 'color' : 'G'
+                    , 'cost' : 'G'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366304'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '63' : {
+                    'name' : 'Dying Wish'
+                    , 'rarity' : 'U'
+                    , 'color' : 'B'
+                    , 'cost' : '1B'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366382'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '152' : {
+                    'name' : 'Deathpact Angel'
+                    , 'rarity' : 'M'
+                    , 'color' : 'M'
+                    , 'cost' : '3WBB'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366278'
+                    , 'type' : 'Creature  — Angel'
+                    , 'pt' : '(5/5)'
+                }
+            
+                , '168' : {
+                    'name' : 'Gruul Ragebeast'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '5RG'
+                    , 'cmc' : '7'
+                    , 'multiverse' : '366398'
+                    , 'type' : 'Creature  — Beast'
+                    , 'pt' : '(6/6)'
+                }
+            
+                , '101' : {
+                    'name' : 'Mugging'
+                    , 'rarity' : 'C'
+                    , 'color' : 'R'
+                    , 'cost' : 'R'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366430'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '174' : {
+                    'name' : 'Master Biomancer'
+                    , 'rarity' : 'M'
+                    , 'color' : 'M'
+                    , 'cost' : '2GU'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366352'
+                    , 'type' : 'Creature  — Elf Wizard'
+                    , 'pt' : '(2/4)'
+                }
+            
+                , '65' : {
+                    'name' : 'Grisly Spectacle'
+                    , 'rarity' : 'C'
+                    , 'color' : 'B'
+                    , 'cost' : '2BB'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366396'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '214' : {
+                    'name' : 'Burning-Tree Emissary'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : '(R/G)(R/G)'
+                    , 'cmc' : '10'
+                    , 'multiverse' : '366467'
+                    , 'type' : 'Creature  — Human Shaman'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '198' : {
+                    'name' : 'Sunhome Guildmage'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : 'RW'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366429'
+                    , 'type' : 'Creature  — Human Wizard'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '193' : {
+                    'name' : 'Simic Charm'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : 'GU'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366463'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '240' : {
+                    'name' : 'Godless Shrine'
+                    , 'rarity' : 'R'
+                    , 'color' : 'A'
+                    , 'cost' : ''
+                    , 'cmc' : '0'
+                    , 'multiverse' : '366302'
+                    , 'type' : 'Land  — Plains Swamp'
+                    , 'pt' : ''
+                }
+            
+                , '171' : {
+                    'name' : 'Kingpin\'s Pet'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : '1WB'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366361'
+                    , 'type' : 'Creature  — Thrull'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '109' : {
+                    'name' : 'Viashino Shanktail'
+                    , 'rarity' : 'U'
+                    , 'color' : 'R'
+                    , 'cost' : '3R'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366264'
+                    , 'type' : 'Creature  — Viashino Warrior'
+                    , 'pt' : '(3/1)'
+                }
+            
+                , '141' : {
+                    'name' : 'Assemble the Legion'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '3RW'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366470'
+                    , 'type' : 'Enchantment'
+                    , 'pt' : ''
+                }
+            
+                , '13' : {
+                    'name' : 'Guardian of the Gateless'
+                    , 'rarity' : 'U'
+                    , 'color' : 'W'
+                    , 'cost' : '4W'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366260'
+                    , 'type' : 'Creature  — Angel'
+                    , 'pt' : '(3/3)'
+                }
+            
+                , '32' : {
+                    'name' : 'Diluvian Primordial'
+                    , 'rarity' : 'R'
+                    , 'color' : 'U'
+                    , 'cost' : '5UU'
+                    , 'cmc' : '7'
+                    , 'multiverse' : '366326'
+                    , 'type' : 'Creature  — Avatar'
+                    , 'pt' : '(5/5)'
+                }
+            
+                , '207' : {
+                    'name' : 'Zameck Guildmage'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : 'GU'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366454'
+                    , 'type' : 'Creature  — Elf Wizard'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '125' : {
+                    'name' : 'Miming Slime'
+                    , 'rarity' : 'U'
+                    , 'color' : 'G'
+                    , 'cost' : '2G'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366340'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '28' : {
+                    'name' : '�therize'
+                    , 'rarity' : 'U'
+                    , 'color' : 'U'
+                    , 'cost' : '3U'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366273'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '230' : {
+                    'name' : 'Millennial Gargoyle'
+                    , 'rarity' : 'C'
+                    , 'color' : 'A'
+                    , 'cost' : '4'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366451'
+                    , 'type' : 'Artifact Creature  — Gargoyle'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '176' : {
+                    'name' : 'Mind Grind'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : 'XUB'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366418'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '89' : {
+                    'name' : 'Firefist Striker'
+                    , 'rarity' : 'U'
+                    , 'color' : 'R'
+                    , 'cost' : '1R'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366311'
+                    , 'type' : 'Creature  — Human Soldier'
+                    , 'pt' : '(2/1)'
+                }
+            
+                , '77' : {
+                    'name' : 'Slate Street Ruffian'
+                    , 'rarity' : 'C'
+                    , 'color' : 'B'
+                    , 'cost' : '2B'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366366'
+                    , 'type' : 'Creature  — Human Warrior'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '48' : {
+                    'name' : 'Simic Fluxmage'
+                    , 'rarity' : 'U'
+                    , 'color' : 'U'
+                    , 'cost' : '2U'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366274'
+                    , 'type' : 'Creature  — Merfolk Wizard'
+                    , 'pt' : '(1/2)'
+                }
+            
+                , '23' : {
+                    'name' : 'Shielded Passage'
+                    , 'rarity' : 'C'
+                    , 'color' : 'W'
+                    , 'cost' : 'W'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366332'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '107' : {
+                    'name' : 'Tin Street Market'
+                    , 'rarity' : 'C'
+                    , 'color' : 'R'
+                    , 'cost' : '4R'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366318'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '15' : {
+                    'name' : 'Hold the Gates'
+                    , 'rarity' : 'U'
+                    , 'color' : 'W'
+                    , 'cost' : '2W'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366276'
+                    , 'type' : 'Enchantment'
+                    , 'pt' : ''
+                }
+            
+                , '117' : {
+                    'name' : 'Disciple of the Old Ways'
+                    , 'rarity' : 'C'
+                    , 'color' : 'G'
+                    , 'cost' : '1G'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366447'
+                    , 'type' : 'Creature  — Human Warrior'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '102' : {
+                    'name' : 'Ripscale Predator'
+                    , 'rarity' : 'U'
+                    , 'color' : 'R'
+                    , 'cost' : '4RR'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366362'
+                    , 'type' : 'Creature  — Lizard'
+                    , 'pt' : '(6/5)'
+                }
+            
+                , '228' : {
+                    'name' : 'Gruul Keyrune'
+                    , 'rarity' : 'U'
+                    , 'color' : 'A'
+                    , 'cost' : '3'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366443'
+                    , 'type' : 'Artifact'
+                    , 'pt' : ''
+                }
+            
+                , '225' : {
+                    'name' : 'Boros Keyrune'
+                    , 'rarity' : 'U'
+                    , 'color' : 'A'
+                    , 'cost' : '3'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366413'
+                    , 'type' : 'Artifact'
+                    , 'pt' : ''
+                }
+            
+                , '27' : {
+                    'name' : 'Zarichi Tiger'
+                    , 'rarity' : 'C'
+                    , 'color' : 'W'
+                    , 'cost' : '3W'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366249'
+                    , 'type' : 'Creature  — Cat'
+                    , 'pt' : '(2/3)'
+                }
+            
+                , '187' : {
+                    'name' : 'Psychic Strike'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : '1UB'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366296'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '120' : {
+                    'name' : 'Giant Adephage'
+                    , 'rarity' : 'M'
+                    , 'color' : 'G'
+                    , 'cost' : '5GG'
+                    , 'cmc' : '7'
+                    , 'multiverse' : '366394'
+                    , 'type' : 'Creature  — Insect'
+                    , 'pt' : '(7/7)'
+                }
+            
+                , '177' : {
+                    'name' : 'Mortus Strider'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : '1UB'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366449'
+                    , 'type' : 'Creature  — Skeleton'
+                    , 'pt' : '(1/1)'
+                }
+            
+                , '59' : {
+                    'name' : 'Corpse Blockade'
+                    , 'rarity' : 'C'
+                    , 'color' : 'B'
+                    , 'cost' : '2B'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366277'
+                    , 'type' : 'Creature  — Zombie'
+                    , 'pt' : '(1/4)'
+                }
+            
+                , '57' : {
+                    'name' : 'Basilica Screecher'
+                    , 'rarity' : 'C'
+                    , 'color' : 'B'
+                    , 'cost' : '1B'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366321'
+                    , 'type' : 'Creature  — Bat'
+                    , 'pt' : '(1/2)'
+                }
+            
+                , '196' : {
+                    'name' : 'Soul Ransom'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '2UB'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366351'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '129' : {
+                    'name' : 'Rust Scarab'
+                    , 'rarity' : 'U'
+                    , 'color' : 'G'
+                    , 'cost' : '4G'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366245'
+                    , 'type' : 'Creature  — Insect'
+                    , 'pt' : '(4/5)'
+                }
+            
+                , '62' : {
+                    'name' : 'Devour Flesh'
+                    , 'rarity' : 'C'
+                    , 'color' : 'B'
+                    , 'cost' : '1B'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366379'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '130' : {
+                    'name' : 'Scab-Clan Charger'
+                    , 'rarity' : 'C'
+                    , 'color' : 'G'
+                    , 'cost' : '3G'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366410'
+                    , 'type' : 'Creature  — Centaur Warrior'
+                    , 'pt' : '(2/4)'
+                }
+            
+                , '74' : {
+                    'name' : 'Sepulchral Primordial'
+                    , 'rarity' : 'R'
+                    , 'color' : 'B'
+                    , 'cost' : '5BB'
+                    , 'cmc' : '7'
+                    , 'multiverse' : '366285'
+                    , 'type' : 'Creature  — Avatar'
+                    , 'pt' : '(5/4)'
+                }
+            
+                , '7' : {
+                    'name' : 'Boros Elite'
+                    , 'rarity' : 'U'
+                    , 'color' : 'W'
+                    , 'cost' : 'W'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366369'
+                    , 'type' : 'Creature  — Human Soldier'
+                    , 'pt' : '(1/1)'
+                }
+            
+                , '50' : {
+                    'name' : 'Skygames'
+                    , 'rarity' : 'C'
+                    , 'color' : 'U'
+                    , 'cost' : '1U'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366323'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '149' : {
+                    'name' : 'Cartel Aristocrat'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : 'WB'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366364'
+                    , 'type' : 'Creature  — Human Advisor'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '33' : {
+                    'name' : 'Enter the Infinite'
+                    , 'rarity' : 'M'
+                    , 'color' : 'U'
+                    , 'cost' : '8UUUU'
+                    , 'cmc' : '12'
+                    , 'multiverse' : '366411'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '188' : {
+                    'name' : 'Purge the Profane'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : '2WB'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366393'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '186' : {
+                    'name' : 'Prime Speaker Zegana'
+                    , 'rarity' : 'M'
+                    , 'color' : 'M'
+                    , 'cost' : '2GGUU'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366416'
+                    , 'type' : 'Legendary Creature  — Merfolk Wizard'
+                    , 'pt' : '(1/1)'
+                }
+            
+                , '113' : {
+                    'name' : 'Alpha Authority'
+                    , 'rarity' : 'U'
+                    , 'color' : 'G'
+                    , 'cost' : '1G'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366325'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '38' : {
+                    'name' : 'Keymaster Rogue'
+                    , 'rarity' : 'C'
+                    , 'color' : 'U'
+                    , 'cost' : '3U'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366380'
+                    , 'type' : 'Creature  — Human Rogue'
+                    , 'pt' : '(3/2)'
+                }
+            
+                , '212' : {
+                    'name' : 'Bioshift'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : '(G/U)'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366299'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '132' : {
+                    'name' : 'Skarrg Goliath'
+                    , 'rarity' : 'R'
+                    , 'color' : 'G'
+                    , 'cost' : '6GG'
+                    , 'cmc' : '8'
+                    , 'multiverse' : '366458'
+                    , 'type' : 'Creature  — Beast'
+                    , 'pt' : '(9/9)'
+                }
+            
+                , '95' : {
+                    'name' : 'Homing Lightning'
+                    , 'rarity' : 'U'
+                    , 'color' : 'R'
+                    , 'cost' : '2RR'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366297'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '5' : {
+                    'name' : 'Basilica Guards'
+                    , 'rarity' : 'C'
+                    , 'color' : 'W'
+                    , 'cost' : '2W'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366347'
+                    , 'type' : 'Creature  — Human Soldier'
+                    , 'pt' : '(1/4)'
+                }
+            
+                , '36' : {
+                    'name' : 'Hands of Binding'
+                    , 'rarity' : 'C'
+                    , 'color' : 'U'
+                    , 'cost' : '1U'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366445'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '238' : {
+                    'name' : 'Breeding Pool'
+                    , 'rarity' : 'R'
+                    , 'color' : 'A'
+                    , 'cost' : ''
+                    , 'cmc' : '0'
+                    , 'multiverse' : '366291'
+                    , 'type' : 'Land  — Forest Island'
+                    , 'pt' : ''
+                }
+            
+                , '175' : {
+                    'name' : 'Merciless Eviction'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '4WB'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366316'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '42' : {
+                    'name' : 'Mindeye Drake'
+                    , 'rarity' : 'U'
+                    , 'color' : 'U'
+                    , 'cost' : '4U'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366284'
+                    , 'type' : 'Creature  — Drake'
+                    , 'pt' : '(2/5)'
+                }
+            
+                , '244' : {
+                    'name' : 'Simic Guildgate'
+                    , 'rarity' : 'C'
+                    , 'color' : 'A'
+                    , 'cost' : ''
+                    , 'cmc' : '0'
+                    , 'multiverse' : '366383'
+                    , 'type' : 'Land  — Gate'
+                    , 'pt' : ''
+                }
+            
+                , '150' : {
+                    'name' : 'Clan Defiance'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : 'XRG'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366468'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '21' : {
+                    'name' : 'Nav Squad Commandos'
+                    , 'rarity' : 'C'
+                    , 'color' : 'W'
+                    , 'cost' : '4W'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366378'
+                    , 'type' : 'Creature  — Human Soldier'
+                    , 'pt' : '(3/5)'
+                }
+            
+                , '106' : {
+                    'name' : 'Structural Collapse'
+                    , 'rarity' : 'C'
+                    , 'color' : 'R'
+                    , 'cost' : '5R'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366376'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '8' : {
+                    'name' : 'Court Street Denizen'
+                    , 'rarity' : 'C'
+                    , 'color' : 'W'
+                    , 'cost' : '2W'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366389'
+                    , 'type' : 'Creature  — Human Soldier'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '52' : {
+                    'name' : 'Stolen Identity'
+                    , 'rarity' : 'R'
+                    , 'color' : 'U'
+                    , 'cost' : '4UU'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366427'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '45' : {
+                    'name' : 'Sage\'s Row Denizen'
+                    , 'rarity' : 'C'
+                    , 'color' : 'U'
+                    , 'cost' : '2U'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366406'
+                    , 'type' : 'Creature  — Vedalken Wizard'
+                    , 'pt' : '(2/3)'
+                }
+            
+                , '67' : {
+                    'name' : 'Horror of the Dim'
+                    , 'rarity' : 'C'
+                    , 'color' : 'B'
+                    , 'cost' : '4B'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366397'
+                    , 'type' : 'Creature  — Horror'
+                    , 'pt' : '(3/4)'
+                }
+            
+                , '24' : {
+                    'name' : 'Smite'
+                    , 'rarity' : 'C'
+                    , 'color' : 'W'
+                    , 'cost' : 'W'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366456'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '53' : {
+                    'name' : 'Totally Lost'
+                    , 'rarity' : 'C'
+                    , 'color' : 'U'
+                    , 'cost' : '4U'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366433'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '209' : {
+                    'name' : 'Arrows of Justice'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : '2(R/W)'
+                    , 'cmc' : '7'
+                    , 'multiverse' : '366381'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '161' : {
+                    'name' : 'Firemane Avenger'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '2RW'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366341'
+                    , 'type' : 'Creature  — Angel'
+                    , 'pt' : '(3/3)'
+                }
+            
+                , '80' : {
+                    'name' : 'Thrull Parasite'
+                    , 'rarity' : 'U'
+                    , 'color' : 'B'
+                    , 'cost' : 'B'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366437'
+                    , 'type' : 'Creature  — Thrull'
+                    , 'pt' : '(1/1)'
+                }
+            
+                , '183' : {
+                    'name' : 'Orzhov Charm'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : 'WB'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366436'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '22' : {
+                    'name' : 'Righteous Charge'
+                    , 'rarity' : 'U'
+                    , 'color' : 'W'
+                    , 'cost' : '1WW'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366288'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '30' : {
+                    'name' : 'Clinging Anemones'
+                    , 'rarity' : 'C'
+                    , 'color' : 'U'
+                    , 'cost' : '3U'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366363'
+                    , 'type' : 'Creature  — Jellyfish'
+                    , 'pt' : '(1/4)'
+                }
+            
+                , '83' : {
+                    'name' : 'Wight of Precinct Six'
+                    , 'rarity' : 'U'
+                    , 'color' : 'B'
+                    , 'cost' : '1B'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366239'
+                    , 'type' : 'Creature  — Zombie'
+                    , 'pt' : '(1/1)'
+                }
+            
+                , '231' : {
+                    'name' : 'Orzhov Keyrune'
+                    , 'rarity' : 'U'
+                    , 'color' : 'A'
+                    , 'cost' : '3'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366479'
+                    , 'type' : 'Artifact'
+                    , 'pt' : ''
+                }
+            
+                , '91' : {
+                    'name' : 'Foundry Street Denizen'
+                    , 'rarity' : 'C'
+                    , 'color' : 'R'
+                    , 'cost' : 'R'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366472'
+                    , 'type' : 'Creature  — Goblin Warrior'
+                    , 'pt' : '(1/1)'
+                }
+            
+                , '70' : {
+                    'name' : 'Lord of the Void'
+                    , 'rarity' : 'M'
+                    , 'color' : 'B'
+                    , 'cost' : '4BBB'
+                    , 'cmc' : '7'
+                    , 'multiverse' : '366412'
+                    , 'type' : 'Creature  — Demon'
+                    , 'pt' : '(7/7)'
+                }
+            
+                , '173' : {
+                    'name' : 'Martial Glory'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : 'RW'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366358'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '157' : {
+                    'name' : 'Duskmantle Seer'
+                    , 'rarity' : 'M'
+                    , 'color' : 'M'
+                    , 'cost' : '2UB'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366310'
+                    , 'type' : 'Creature  — Vampire Wizard'
+                    , 'pt' : '(4/4)'
+                }
+            
+                , '6' : {
+                    'name' : 'Blind Obedience'
+                    , 'rarity' : 'R'
+                    , 'color' : 'W'
+                    , 'cost' : '1W'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366465'
+                    , 'type' : 'Enchantment'
+                    , 'pt' : ''
+                }
+            
+                , '97' : {
+                    'name' : 'Madcap Skills'
+                    , 'rarity' : 'C'
+                    , 'color' : 'R'
+                    , 'cost' : '1R'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366377'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '61' : {
+                    'name' : 'Death\'s Approach'
+                    , 'rarity' : 'C'
+                    , 'color' : 'B'
+                    , 'cost' : 'B'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366300'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '234' : {
+                    'name' : 'Riot Gear'
+                    , 'rarity' : 'C'
+                    , 'color' : 'A'
+                    , 'cost' : '2'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366349'
+                    , 'type' : 'Artifact  — Equipment'
+                    , 'pt' : ''
+                }
+            
+                , '159' : {
+                    'name' : 'Executioner\'s Swing'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : 'WB'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366444'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '245' : {
+                    'name' : 'Stomping Ground'
+                    , 'rarity' : 'R'
+                    , 'color' : 'A'
+                    , 'cost' : ''
+                    , 'cmc' : '0'
+                    , 'multiverse' : '366232'
+                    , 'type' : 'Land  — Mountain Forest'
+                    , 'pt' : ''
+                }
+            
+                , '104' : {
+                    'name' : 'Skinbrand Goblin'
+                    , 'rarity' : 'C'
+                    , 'color' : 'R'
+                    , 'cost' : '1R'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366434'
+                    , 'type' : 'Creature  — Goblin Warrior'
+                    , 'pt' : '(2/1)'
+                }
+            
+                , '56' : {
+                    'name' : 'Balustrade Spy'
+                    , 'rarity' : 'C'
+                    , 'color' : 'B'
+                    , 'cost' : '3B'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366464'
+                    , 'type' : 'Creature  — Vampire Rogue'
+                    , 'pt' : '(2/3)'
+                }
+            
+                , '54' : {
+                    'name' : 'Voidwalk'
+                    , 'rarity' : 'U'
+                    , 'color' : 'U'
+                    , 'cost' : '3U'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366474'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '123' : {
+                    'name' : 'Hindervines'
+                    , 'rarity' : 'U'
+                    , 'color' : 'G'
+                    , 'cost' : '2G'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366459'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '145' : {
+                    'name' : 'Biovisionary'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '1GU'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366414'
+                    , 'type' : 'Creature  — Human Wizard'
+                    , 'pt' : '(2/3)'
+                }
+            
+                , '75' : {
+                    'name' : 'Shadow Alley Denizen'
+                    , 'rarity' : 'C'
+                    , 'color' : 'B'
+                    , 'cost' : 'B'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366307'
+                    , 'type' : 'Creature  — Vampire Rogue'
+                    , 'pt' : '(1/1)'
+                }
+            
+                , '72' : {
+                    'name' : 'Midnight Recovery'
+                    , 'rarity' : 'C'
+                    , 'color' : 'B'
+                    , 'cost' : '3B'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366476'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '190' : {
+                    'name' : 'Ruination Wurm'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : '4RG'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366235'
+                    , 'type' : 'Creature  — Wurm'
+                    , 'pt' : '(7/6)'
+                }
+            
+                , '182' : {
+                    'name' : 'Ordruun Veteran'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : '2RW'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366259'
+                    , 'type' : 'Creature  — Minotaur Soldier'
+                    , 'pt' : '(3/1)'
+                }
+            
+                , '87' : {
+                    'name' : 'Crackling Perimeter'
+                    , 'rarity' : 'U'
+                    , 'color' : 'R'
+                    , 'cost' : '1R'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366255'
+                    , 'type' : 'Enchantment'
+                    , 'pt' : ''
+                }
+            
+                , '18' : {
+                    'name' : 'Knight Watch'
+                    , 'rarity' : 'C'
+                    , 'color' : 'W'
+                    , 'cost' : '4W'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366477'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '243' : {
+                    'name' : 'Sacred Foundry'
+                    , 'rarity' : 'R'
+                    , 'color' : 'A'
+                    , 'cost' : ''
+                    , 'cmc' : '0'
+                    , 'multiverse' : '366439'
+                    , 'type' : 'Land  — Mountain Plains'
+                    , 'pt' : ''
+                }
+            
+                , '224' : {
+                    'name' : 'Armored Transport'
+                    , 'rarity' : 'C'
+                    , 'color' : 'A'
+                    , 'cost' : '3'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366344'
+                    , 'type' : 'Artifact Creature  — Construct'
+                    , 'pt' : '(2/1)'
+                }
+            
+                , '216' : {
+                    'name' : 'Deathcult Rogue'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : '1(U/B)(U/B)'
+                    , 'cmc' : '11'
+                    , 'multiverse' : '366254'
+                    , 'type' : 'Creature  — Human Rogue'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '160' : {
+                    'name' : 'Fathom Mage'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '2GU'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366399'
+                    , 'type' : 'Creature  — Human Wizard'
+                    , 'pt' : '(1/1)'
+                }
+            
+                , '194' : {
+                    'name' : 'Skarrg Guildmage'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : 'RG'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366350'
+                    , 'type' : 'Creature  — Human Shaman'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '170' : {
+                    'name' : 'Hydroform'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : 'GU'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366423'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '100' : {
+                    'name' : 'Molten Primordial'
+                    , 'rarity' : 'R'
+                    , 'color' : 'R'
+                    , 'cost' : '5RR'
+                    , 'cmc' : '7'
+                    , 'multiverse' : '366356'
+                    , 'type' : 'Creature  — Avatar'
+                    , 'pt' : '(6/4)'
+                }
+            
+                , '1' : {
+                    'name' : 'Aerial Maneuver'
+                    , 'rarity' : 'C'
+                    , 'color' : 'W'
+                    , 'cost' : '1W'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366294'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '155' : {
+                    'name' : 'Drakewing Krasis'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : '1GU'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366292'
+                    , 'type' : 'Creature  — Lizard Drake'
+                    , 'pt' : '(3/1)'
+                }
+            
+                , '86' : {
+                    'name' : 'Cinder Elemental'
+                    , 'rarity' : 'U'
+                    , 'color' : 'R'
+                    , 'cost' : '3R'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366314'
+                    , 'type' : 'Creature  — Elemental'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '64' : {
+                    'name' : 'Gateway Shade'
+                    , 'rarity' : 'U'
+                    , 'color' : 'B'
+                    , 'cost' : '2B'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366438'
+                    , 'type' : 'Creature  — Shade'
+                    , 'pt' : '(1/1)'
+                }
+            
+                , '219' : {
+                    'name' : 'Merfolk of the Depths'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : '4(G/U)(G/U)'
+                    , 'cmc' : '14'
+                    , 'multiverse' : '366442'
+                    , 'type' : 'Creature  — Merfolk Soldier'
+                    , 'pt' : '(4/2)'
+                }
+            
+                , '199' : {
+                    'name' : 'Treasury Thrull'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '4WB'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366359'
+                    , 'type' : 'Creature  — Thrull'
+                    , 'pt' : '(4/4)'
+                }
+            
+                , '127' : {
+                    'name' : 'Ooze Flux'
+                    , 'rarity' : 'R'
+                    , 'color' : 'G'
+                    , 'cost' : '3G'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366375'
+                    , 'type' : 'Enchantment'
+                    , 'pt' : ''
+                }
+            
+                , '142' : {
+                    'name' : 'Aurelia, the Warleader'
+                    , 'rarity' : 'M'
+                    , 'color' : 'M'
+                    , 'cost' : '2RRWW'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366448'
+                    , 'type' : 'Legendary Creature  — Angel'
+                    , 'pt' : '(3/4)'
+                }
+            
+                , '40' : {
+                    'name' : 'Leyline Phantom'
+                    , 'rarity' : 'C'
+                    , 'color' : 'U'
+                    , 'cost' : '4U'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366329'
+                    , 'type' : 'Creature  — Illusion'
+                    , 'pt' : '(5/5)'
+                }
+            
+                , '241' : {
+                    'name' : 'Gruul Guildgate'
+                    , 'rarity' : 'C'
+                    , 'color' : 'A'
+                    , 'cost' : ''
+                    , 'cmc' : '0'
+                    , 'multiverse' : '366253'
+                    , 'type' : 'Land  — Gate'
+                    , 'pt' : ''
+                }
+            
+                , '166' : {
+                    'name' : 'Ground Assault'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : 'RG'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366428'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '139' : {
+                    'name' : 'Wildwood Rebirth'
+                    , 'rarity' : 'C'
+                    , 'color' : 'G'
+                    , 'cost' : '1G'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366425'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '195' : {
+                    'name' : 'Skyknight Legionnaire'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : '1RW'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366338'
+                    , 'type' : 'Creature  — Human Knight'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '51' : {
+                    'name' : 'Spell Rupture'
+                    , 'rarity' : 'C'
+                    , 'color' : 'U'
+                    , 'cost' : '1U'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366372'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '78' : {
+                    'name' : 'Smog Elemental'
+                    , 'rarity' : 'U'
+                    , 'color' : 'B'
+                    , 'cost' : '4BB'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366257'
+                    , 'type' : 'Creature  — Elemental'
+                    , 'pt' : '(3/3)'
+                }
+            
+                , '25' : {
+                    'name' : 'Syndic of Tithes'
+                    , 'rarity' : 'C'
+                    , 'color' : 'W'
+                    , 'cost' : '1W'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366387'
+                    , 'type' : 'Creature  — Human Cleric'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '205' : {
+                    'name' : 'Whispering Madness'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '2UB'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366263'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '34' : {
+                    'name' : 'Frilled Oculus'
+                    , 'rarity' : 'C'
+                    , 'color' : 'U'
+                    , 'cost' : '1U'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366298'
+                    , 'type' : 'Creature  — Homunculus'
+                    , 'pt' : '(1/3)'
+                }
+            
+                , '122' : {
+                    'name' : 'Gyre Sage'
+                    , 'rarity' : 'R'
+                    , 'color' : 'G'
+                    , 'cost' : '1G'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366289'
+                    , 'type' : 'Creature  — Elf Druid'
+                    , 'pt' : '(1/2)'
+                }
+            
+                , '96' : {
+                    'name' : 'Legion Loyalist'
+                    , 'rarity' : 'R'
+                    , 'color' : 'R'
+                    , 'cost' : 'R'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366348'
+                    , 'type' : 'Creature  — Goblin Soldier'
+                    , 'pt' : '(1/1)'
+                }
+            
+                , '98' : {
+                    'name' : 'Mark for Death'
+                    , 'rarity' : 'U'
+                    , 'color' : 'R'
+                    , 'cost' : '3R'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366286'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '17' : {
+                    'name' : 'Knight of Obligation'
+                    , 'rarity' : 'U'
+                    , 'color' : 'W'
+                    , 'cost' : '3W'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366237'
+                    , 'type' : 'Creature  — Human Knight'
+                    , 'pt' : '(2/4)'
+                }
+            
+                , '31' : {
+                    'name' : 'Cloudfin Raptor'
+                    , 'rarity' : 'C'
+                    , 'color' : 'U'
+                    , 'cost' : 'U'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366403'
+                    , 'type' : 'Creature  — Bird Mutant'
+                    , 'pt' : '(0/1)'
+                }
+            
+                , '178' : {
+                    'name' : 'Mystic Genesis'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '2GUU'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366401'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '47' : {
+                    'name' : 'Scatter Arc'
+                    , 'rarity' : 'C'
+                    , 'color' : 'U'
+                    , 'cost' : '3U'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366241'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '93' : {
+                    'name' : 'Hellkite Tyrant'
+                    , 'rarity' : 'M'
+                    , 'color' : 'R'
+                    , 'cost' : '4RR'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366244'
+                    , 'type' : 'Creature  — Dragon'
+                    , 'pt' : '(6/5)'
+                }
+            
+                , '210' : {
+                    'name' : 'Beckon Apparition'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : '(W/B)'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366461'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '143' : {
+                    'name' : 'Aurelia\'s Fury'
+                    , 'rarity' : 'M'
+                    , 'color' : 'M'
+                    , 'cost' : 'XRW'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366384'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '41' : {
+                    'name' : 'Metropolis Sprite'
+                    , 'rarity' : 'C'
+                    , 'color' : 'U'
+                    , 'cost' : '1U'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366293'
+                    , 'type' : 'Creature  — Faerie Rogue'
+                    , 'pt' : '(1/2)'
+                }
+            
+                , '206' : {
+                    'name' : 'Wojek Halberdiers'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : 'RW'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366265'
+                    , 'type' : 'Creature  — Human Soldier'
+                    , 'pt' : '(3/2)'
+                }
+            
+                , '88' : {
+                    'name' : 'Ember Beast'
+                    , 'rarity' : 'C'
+                    , 'color' : 'R'
+                    , 'cost' : '2R'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366306'
+                    , 'type' : 'Creature  — Beast'
+                    , 'pt' : '(3/4)'
+                }
+            
+                , '12' : {
+                    'name' : 'Frontline Medic'
+                    , 'rarity' : 'R'
+                    , 'color' : 'W'
+                    , 'cost' : '2W'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366460'
+                    , 'type' : 'Creature  — Human Cleric'
+                    , 'pt' : '(3/3)'
+                }
+            
+                , '124' : {
+                    'name' : 'Ivy Lane Denizen'
+                    , 'rarity' : 'C'
+                    , 'color' : 'G'
+                    , 'cost' : '3G'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366317'
+                    , 'type' : 'Creature  — Elf Warrior'
+                    , 'pt' : '(2/3)'
+                }
+            
+                , '84' : {
+                    'name' : 'Act of Treason'
+                    , 'rarity' : 'C'
+                    , 'color' : 'R'
+                    , 'cost' : '2R'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366305'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '3' : {
+                    'name' : 'Angelic Skirmisher'
+                    , 'rarity' : 'R'
+                    , 'color' : 'W'
+                    , 'cost' : '4WW'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366395'
+                    , 'type' : 'Creature  — Angel'
+                    , 'pt' : '(4/4)'
+                }
+            
+                , '43' : {
+                    'name' : 'Rapid Hybridization'
+                    , 'rarity' : 'U'
+                    , 'color' : 'U'
+                    , 'cost' : 'U'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366388'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '119' : {
+                    'name' : 'Forced Adaptation'
+                    , 'rarity' : 'C'
+                    , 'color' : 'G'
+                    , 'cost' : 'G'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366336'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '203' : {
+                    'name' : 'Vizkopa Confessor'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : '3WB'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366267'
+                    , 'type' : 'Creature  — Human Cleric'
+                    , 'pt' : '(1/3)'
+                }
+            
+                , '200' : {
+                    'name' : 'Truefire Paladin'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : 'RW'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366322'
+                    , 'type' : 'Creature  — Human Knight'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '94' : {
+                    'name' : 'Hellraiser Goblin'
+                    , 'rarity' : 'U'
+                    , 'color' : 'R'
+                    , 'cost' : '2R'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366342'
+                    , 'type' : 'Creature  — Goblin Berserker'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '153' : {
+                    'name' : 'Dimir Charm'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : 'UB'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366473'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '71' : {
+                    'name' : 'Mental Vapors'
+                    , 'rarity' : 'U'
+                    , 'color' : 'B'
+                    , 'cost' : '3B'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366373'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '76' : {
+                    'name' : 'Shadow Slice'
+                    , 'rarity' : 'C'
+                    , 'color' : 'B'
+                    , 'cost' : '4B'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366455'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '81' : {
+                    'name' : 'Undercity Informer'
+                    , 'rarity' : 'U'
+                    , 'color' : 'B'
+                    , 'cost' : '2B'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366271'
+                    , 'type' : 'Creature  — Human Rogue'
+                    , 'pt' : '(2/3)'
+                }
+            
+                , '134' : {
+                    'name' : 'Spire Tracer'
+                    , 'rarity' : 'C'
+                    , 'color' : 'G'
+                    , 'cost' : 'G'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366236'
+                    , 'type' : 'Creature  — Elf Scout'
+                    , 'pt' : '(1/1)'
+                }
+            
+                , '235' : {
+                    'name' : 'Simic Keyrune'
+                    , 'rarity' : 'U'
+                    , 'color' : 'A'
+                    , 'cost' : '3'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366357'
+                    , 'type' : 'Artifact'
+                    , 'pt' : ''
+                }
+            
+                , '58' : {
+                    'name' : 'Contaminated Ground'
+                    , 'rarity' : 'C'
+                    , 'color' : 'B'
+                    , 'cost' : '1B'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366420'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '226' : {
+                    'name' : 'Dimir Keyrune'
+                    , 'rarity' : 'U'
+                    , 'color' : 'A'
+                    , 'cost' : '3'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366270'
+                    , 'type' : 'Artifact'
+                    , 'pt' : ''
+                }
+            
+                , '144' : {
+                    'name' : 'Bane Alley Broker'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : '1UB'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366475'
+                    , 'type' : 'Creature  — Human Rogue'
+                    , 'pt' : '(0/3)'
+                }
+            
+                , '85' : {
+                    'name' : 'Bomber Corps'
+                    , 'rarity' : 'C'
+                    , 'color' : 'R'
+                    , 'cost' : '1R'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366370'
+                    , 'type' : 'Creature  — Human Soldier'
+                    , 'pt' : '(1/2)'
+                }
+            
+                , '246' : {
+                    'name' : 'Thespian\'s Stage'
+                    , 'rarity' : 'R'
+                    , 'color' : 'A'
+                    , 'cost' : ''
+                    , 'cmc' : '0'
+                    , 'multiverse' : '366353'
+                    , 'type' : 'Land'
+                    , 'pt' : ''
+                }
+            
+                , '172' : {
+                    'name' : 'Lazav, Dimir Mastermind'
+                    , 'rarity' : 'M'
+                    , 'color' : 'M'
+                    , 'cost' : 'UUBB'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366469'
+                    , 'type' : 'Legendary Creature  — Shapeshifter'
+                    , 'pt' : '(3/3)'
+                }
+            
+                , '49' : {
+                    'name' : 'Simic Manipulator'
+                    , 'rarity' : 'R'
+                    , 'color' : 'U'
+                    , 'cost' : '1UU'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366343'
+                    , 'type' : 'Creature  — Mutant Wizard'
+                    , 'pt' : '(0/1)'
+                }
+            
+                , '236' : {
+                    'name' : 'Skyblinder Staff'
+                    , 'rarity' : 'C'
+                    , 'color' : 'A'
+                    , 'cost' : '1'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366346'
+                    , 'type' : 'Artifact  — Equipment'
+                    , 'pt' : ''
+                }
+            
+                , '208' : {
+                    'name' : 'Zhur-Taa Swine'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : '3RG'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366252'
+                    , 'type' : 'Creature  — Boar'
+                    , 'pt' : '(5/4)'
+                }
+            
+                , '99' : {
+                    'name' : 'Massive Raid'
+                    , 'rarity' : 'C'
+                    , 'color' : 'R'
+                    , 'cost' : '1RR'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366320'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '220' : {
+                    'name' : 'Nightveil Specter'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '(U/B)(U/B)(U/B)'
+                    , 'cmc' : '15'
+                    , 'multiverse' : '366242'
+                    , 'type' : 'Creature  — Specter'
+                    , 'pt' : '(2/3)'
+                }
+            
+                , '213' : {
+                    'name' : 'Boros Reckoner'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '(R/W)(R/W)(R/W)'
+                    , 'cmc' : '15'
+                    , 'multiverse' : '366385'
+                    , 'type' : 'Creature  — Minotaur Wizard'
+                    , 'pt' : '(3/3)'
+                }
+            
+                , '242' : {
+                    'name' : 'Orzhov Guildgate'
+                    , 'rarity' : 'C'
+                    , 'color' : 'A'
+                    , 'cost' : ''
+                    , 'cmc' : '0'
+                    , 'multiverse' : '366374'
+                    , 'type' : 'Land  — Gate'
+                    , 'pt' : ''
+                }
+            
+                , '180' : {
+                    'name' : 'Obzedat, Ghost Council'
+                    , 'rarity' : 'M'
+                    , 'color' : 'M'
+                    , 'cost' : '1WWBB'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366246'
+                    , 'type' : 'Legendary Creature  — Spirit Advisor'
+                    , 'pt' : '(5/5)'
+                }
+            
+                , '211' : {
+                    'name' : 'Biomass Mutation'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : 'X(G/U)(G/U)'
+                    , 'cmc' : '10'
+                    , 'multiverse' : '366312'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '44' : {
+                    'name' : 'Realmwright'
+                    , 'rarity' : 'R'
+                    , 'color' : 'U'
+                    , 'cost' : 'U'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366315'
+                    , 'type' : 'Creature  — Vedalken Wizard'
+                    , 'pt' : '(1/1)'
+                }
+            
+                , '35' : {
+                    'name' : 'Gridlock'
+                    , 'rarity' : 'U'
+                    , 'color' : 'U'
+                    , 'cost' : 'XU'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366330'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '115' : {
+                    'name' : 'Crocanura'
+                    , 'rarity' : 'C'
+                    , 'color' : 'G'
+                    , 'cost' : '2G'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366319'
+                    , 'type' : 'Creature  — Crocodile Frog'
+                    , 'pt' : '(1/3)'
+                }
+            
+                , '135' : {
+                    'name' : 'Sylvan Primordial'
+                    , 'rarity' : 'R'
+                    , 'color' : 'G'
+                    , 'cost' : '5GG'
+                    , 'cmc' : '7'
+                    , 'multiverse' : '366282'
+                    , 'type' : 'Creature  — Avatar'
+                    , 'pt' : '(6/8)'
+                }
+            
+                , '164' : {
+                    'name' : 'Frenzied Tilling'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : '3RG'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366295'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '201' : {
+                    'name' : 'Unexpected Results'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '2GU'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366248'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '60' : {
+                    'name' : 'Crypt Ghast'
+                    , 'rarity' : 'R'
+                    , 'color' : 'B'
+                    , 'cost' : '3B'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366452'
+                    , 'type' : 'Creature  — Spirit'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '26' : {
+                    'name' : 'Urbis Protector'
+                    , 'rarity' : 'U'
+                    , 'color' : 'W'
+                    , 'cost' : '4WW'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366415'
+                    , 'type' : 'Creature  — Human Cleric'
+                    , 'pt' : '(1/1)'
+                }
+            
+                , '118' : {
+                    'name' : 'Experiment One'
+                    , 'rarity' : 'U'
+                    , 'color' : 'G'
+                    , 'cost' : 'G'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366441'
+                    , 'type' : 'Creature  — Human Ooze'
+                    , 'pt' : '(1/1)'
+                }
+            
+                , '179' : {
+                    'name' : 'Nimbus Swimmer'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : 'XGU'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366275'
+                    , 'type' : 'Creature  — Leviathan'
+                    , 'pt' : '(0/0)'
+                }
+            
+                , '73' : {
+                    'name' : 'Ogre Slumlord'
+                    , 'rarity' : 'R'
+                    , 'color' : 'B'
+                    , 'cost' : '3BB'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366432'
+                    , 'type' : 'Creature  — Ogre Rogue'
+                    , 'pt' : '(3/3)'
+                }
+            
+                , '66' : {
+                    'name' : 'Gutter Skulk'
+                    , 'rarity' : 'C'
+                    , 'color' : 'B'
+                    , 'cost' : '1B'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366234'
+                    , 'type' : 'Creature  — Zombie Rat'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '37' : {
+                    'name' : 'Incursion Specialist'
+                    , 'rarity' : 'U'
+                    , 'color' : 'U'
+                    , 'cost' : '1U'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366301'
+                    , 'type' : 'Creature  — Human Wizard'
+                    , 'pt' : '(1/3)'
+                }
+            
+                , '247' : {
+                    'name' : 'Watery Grave'
+                    , 'rarity' : 'R'
+                    , 'color' : 'A'
+                    , 'cost' : ''
+                    , 'cmc' : '0'
+                    , 'multiverse' : '366335'
+                    , 'type' : 'Land  — Island Swamp'
+                    , 'pt' : ''
+                }
+            
+                , '4' : {
+                    'name' : 'Assault Griffin'
+                    , 'rarity' : 'C'
+                    , 'color' : 'W'
+                    , 'cost' : '3W'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366337'
+                    , 'type' : 'Creature  — Griffin'
+                    , 'pt' : '(3/2)'
+                }
+            
+                , '69' : {
+                    'name' : 'Killing Glare'
+                    , 'rarity' : 'U'
+                    , 'color' : 'B'
+                    , 'cost' : 'XB'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366466'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '140' : {
+                    'name' : 'Alms Beast'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '2WB'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366402'
+                    , 'type' : 'Creature  — Beast'
+                    , 'pt' : '(6/6)'
+                }
+            
+                , '237' : {
+                    'name' : 'Boros Guildgate'
+                    , 'rarity' : 'C'
+                    , 'color' : 'A'
+                    , 'cost' : ''
+                    , 'cmc' : '0'
+                    , 'multiverse' : '366390'
+                    , 'type' : 'Land  — Gate'
+                    , 'pt' : ''
+                }
+            
+                , '90' : {
+                    'name' : 'Five-Alarm Fire'
+                    , 'rarity' : 'R'
+                    , 'color' : 'R'
+                    , 'cost' : '1RR'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366386'
+                    , 'type' : 'Enchantment'
+                    , 'pt' : ''
+                }
+            
+                , '197' : {
+                    'name' : 'Spark Trooper'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '1RRW'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366422'
+                    , 'type' : 'Creature  — Elemental Soldier'
+                    , 'pt' : '(6/1)'
+                }
+            
+                , '55' : {
+                    'name' : 'Way of the Thief'
+                    , 'rarity' : 'C'
+                    , 'color' : 'U'
+                    , 'cost' : '3U'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366333'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '204' : {
+                    'name' : 'Vizkopa Guildmage'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : 'WB'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366371'
+                    , 'type' : 'Creature  — Human Wizard'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '108' : {
+                    'name' : 'Towering Thunderfist'
+                    , 'rarity' : 'C'
+                    , 'color' : 'R'
+                    , 'cost' : '4R'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366355'
+                    , 'type' : 'Creature  — Giant Soldier'
+                    , 'pt' : '(4/4)'
+                }
+            
+                , '154' : {
+                    'name' : 'Dinrova Horror'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : '4UB'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366453'
+                    , 'type' : 'Creature  — Horror'
+                    , 'pt' : '(4/4)'
+                }
+            
+                , '151' : {
+                    'name' : 'Consuming Aberration'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '3UB'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366391'
+                    , 'type' : 'Creature  — Horror'
+                    , 'pt' : '(*/*)'
+                }
+            
+                , '221' : {
+                    'name' : 'Pit Fight'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : '1(R/G)'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366450'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '165' : {
+                    'name' : 'Ghor-Clan Rampager'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : '2RG'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366287'
+                    , 'type' : 'Creature  — Beast'
+                    , 'pt' : '(4/4)'
+                }
+            
+                , '105' : {
+                    'name' : 'Skullcrack'
+                    , 'rarity' : 'U'
+                    , 'color' : 'R'
+                    , 'cost' : '1R'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366238'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '162' : {
+                    'name' : 'Fortress Cyclops'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : '3RW'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366280'
+                    , 'type' : 'Creature  — Cyclops Soldier'
+                    , 'pt' : '(3/3)'
+                }
+            
+                , '137' : {
+                    'name' : 'Verdant Haven'
+                    , 'rarity' : 'C'
+                    , 'color' : 'G'
+                    , 'cost' : '2G'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366471'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '29' : {
+                    'name' : 'Agoraphobia'
+                    , 'rarity' : 'U'
+                    , 'color' : 'U'
+                    , 'cost' : '1U'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366258'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '232' : {
+                    'name' : 'Prophetic Prism'
+                    , 'rarity' : 'C'
+                    , 'color' : 'A'
+                    , 'cost' : '2'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366262'
+                    , 'type' : 'Artifact'
+                    , 'pt' : ''
+                }
+            
+                , '233' : {
+                    'name' : 'Razortip Whip'
+                    , 'rarity' : 'C'
+                    , 'color' : 'A'
+                    , 'cost' : '2'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366405'
+                    , 'type' : 'Artifact'
+                    , 'pt' : ''
+                }
+            
+                , '146' : {
+                    'name' : 'Borborygmos Enraged'
+                    , 'rarity' : 'M'
+                    , 'color' : 'M'
+                    , 'cost' : '4RRGG'
+                    , 'cmc' : '8'
+                    , 'multiverse' : '366283'
+                    , 'type' : 'Legendary Creature  — Cyclops'
+                    , 'pt' : '(7/6)'
+                }
+            
+                , '222' : {
+                    'name' : 'Rubblebelt Raiders'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '1(R/G)(R/G)(R/G)'
+                    , 'cmc' : '16'
+                    , 'multiverse' : '366462'
+                    , 'type' : 'Creature  — Human Warrior'
+                    , 'pt' : '(3/3)'
+                }
+            
+                , '223' : {
+                    'name' : 'Shattering Blow'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : '1(R/W)'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366331'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '110' : {
+                    'name' : 'Warmind Infantry'
+                    , 'rarity' : 'C'
+                    , 'color' : 'R'
+                    , 'cost' : '2R'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366272'
+                    , 'type' : 'Creature  — Elemental Soldier'
+                    , 'pt' : '(2/3)'
+                }
+            
+                , '10' : {
+                    'name' : 'Debtor\'s Pulpit'
+                    , 'rarity' : 'U'
+                    , 'color' : 'W'
+                    , 'cost' : '4W'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366268'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '20' : {
+                    'name' : 'Murder Investigation'
+                    , 'rarity' : 'U'
+                    , 'color' : 'W'
+                    , 'cost' : '1W'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366327'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '239' : {
+                    'name' : 'Dimir Guildgate'
+                    , 'rarity' : 'C'
+                    , 'color' : 'A'
+                    , 'cost' : ''
+                    , 'cmc' : '0'
+                    , 'multiverse' : '366313'
+                    , 'type' : 'Land  — Gate'
+                    , 'pt' : ''
+                }
+            
+                , '133' : {
+                    'name' : 'Slaughterhorn'
+                    , 'rarity' : 'C'
+                    , 'color' : 'G'
+                    , 'cost' : '2G'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366281'
+                    , 'type' : 'Creature  — Beast'
+                    , 'pt' : '(3/2)'
+                }
+            
+                , '16' : {
+                    'name' : 'Holy Mantle'
+                    , 'rarity' : 'U'
+                    , 'color' : 'W'
+                    , 'cost' : '2WW'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366368'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '92' : {
+                    'name' : 'Furious Resistance'
+                    , 'rarity' : 'C'
+                    , 'color' : 'R'
+                    , 'cost' : 'R'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366309'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '217' : {
+                    'name' : 'Gift of Orzhova'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : '1(W/B)(W/B)'
+                    , 'cmc' : '11'
+                    , 'multiverse' : '366339'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '128' : {
+                    'name' : 'Predator\'s Rapport'
+                    , 'rarity' : 'C'
+                    , 'color' : 'G'
+                    , 'cost' : '2G'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366233'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '156' : {
+                    'name' : 'Duskmantle Guildmage'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : 'UB'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366328'
+                    , 'type' : 'Creature  — Human Wizard'
+                    , 'pt' : '(2/2)'
+                }
+            
+                , '181' : {
+                    'name' : 'One Thousand Lashes'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : '2WB'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366261'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '138' : {
+                    'name' : 'Wasteland Viper'
+                    , 'rarity' : 'U'
+                    , 'color' : 'G'
+                    , 'cost' : 'G'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366417'
+                    , 'type' : 'Creature  — Snake'
+                    , 'pt' : '(1/2)'
+                }
+            
+                , '11' : {
+                    'name' : 'Dutiful Thrull'
+                    , 'rarity' : 'C'
+                    , 'color' : 'W'
+                    , 'cost' : 'W'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366457'
+                    , 'type' : 'Creature  — Thrull'
+                    , 'pt' : '(1/1)'
+                }
+            
+                , '229' : {
+                    'name' : 'Illusionist\'s Bracers'
+                    , 'rarity' : 'R'
+                    , 'color' : 'A'
+                    , 'cost' : '2'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366426'
+                    , 'type' : 'Artifact  — Equipment'
+                    , 'pt' : ''
+                }
+            
+                , '147' : {
+                    'name' : 'Boros Charm'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : 'RW'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366435'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '79' : {
+                    'name' : 'Syndicate Enforcer'
+                    , 'rarity' : 'C'
+                    , 'color' : 'B'
+                    , 'cost' : '3B'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366243'
+                    , 'type' : 'Creature  — Human Rogue'
+                    , 'pt' : '(3/2)'
+                }
+            
+                , '167' : {
+                    'name' : 'Gruul Charm'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : 'RG'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366360'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '136' : {
+                    'name' : 'Tower Defense'
+                    , 'rarity' : 'U'
+                    , 'color' : 'G'
+                    , 'cost' : '1G'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366404'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '218' : {
+                    'name' : 'Immortal Servitude'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : 'X(W/B)(W/B)(W/B)'
+                    , 'cmc' : '15'
+                    , 'multiverse' : '366247'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '215' : {
+                    'name' : 'Coerced Confession'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : '4(U/B)'
+                    , 'cmc' : '9'
+                    , 'multiverse' : '366408'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '158' : {
+                    'name' : 'Elusive Krasis'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : '1GU'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '366279'
+                    , 'type' : 'Creature  — Fish Mutant'
+                    , 'pt' : '(0/4)'
+                }
+            
+                , '14' : {
+                    'name' : 'Guildscorn Ward'
+                    , 'rarity' : 'C'
+                    , 'color' : 'W'
+                    , 'cost' : 'W'
+                    , 'cmc' : '1'
+                    , 'multiverse' : '366392'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '192' : {
+                    'name' : 'Signal the Clans'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : 'RG'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366365'
+                    , 'type' : 'Instant'
+                    , 'pt' : ''
+                }
+            
+                , '191' : {
+                    'name' : 'Shambleshark'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : 'GU'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366478'
+                    , 'type' : 'Creature  — Fish Crab'
+                    , 'pt' : '(2/1)'
+                }
+            
+                , '9' : {
+                    'name' : 'Daring Skyjek'
+                    , 'rarity' : 'C'
+                    , 'color' : 'W'
+                    , 'cost' : '1W'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366251'
+                    , 'type' : 'Creature  — Human Knight'
+                    , 'pt' : '(3/1)'
+                }
+            
+                , '148' : {
+                    'name' : 'Call of the Nightwing'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : '2UB'
+                    , 'cmc' : '4'
+                    , 'multiverse' : '366308'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '46' : {
+                    'name' : 'Sapphire Drake'
+                    , 'rarity' : 'U'
+                    , 'color' : 'U'
+                    , 'cost' : '5U'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366421'
+                    , 'type' : 'Creature  — Drake'
+                    , 'pt' : '(4/4)'
+                }
+            
+                , '184' : {
+                    'name' : 'Paranoid Delusions'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : 'UB'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366324'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '185' : {
+                    'name' : 'Primal Visitation'
+                    , 'rarity' : 'C'
+                    , 'color' : 'M'
+                    , 'cost' : '3RG'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366250'
+                    , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+            
+                , '121' : {
+                    'name' : 'Greenside Watcher'
+                    , 'rarity' : 'C'
+                    , 'color' : 'G'
+                    , 'cost' : '1G'
+                    , 'cmc' : '2'
+                    , 'multiverse' : '366440'
+                    , 'type' : 'Creature  — Elf Druid'
+                    , 'pt' : '(2/1)'
+                }
+            
+                , '202' : {
+                    'name' : 'Urban Evolution'
+                    , 'rarity' : 'U'
+                    , 'color' : 'M'
+                    , 'cost' : '3GU'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '366419'
+                    , 'type' : 'Sorcery'
+                    , 'pt' : ''
+                }
+            
+                , '163' : {
+                    'name' : 'Foundry Champion'
+                    , 'rarity' : 'R'
+                    , 'color' : 'M'
+                    , 'cost' : '4RW'
+                    , 'cmc' : '6'
+                    , 'multiverse' : '366431'
+                    , 'type' : 'Creature  — Elemental Soldier'
+                    , 'pt' : '(4/4)'
+                }
+            
+            }
 
-        , '2' : {
-            'name' : 'Angelic Edict'
-            , 'rarity' : 'C'
-            , 'color' : 'W'
-            , 'cmc' : 5
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qxev1gcz8k_en.jpg'
-        }
-        
-        , '3' : {
-            'name' : 'Angelic Skirmisher'
-            , 'rarity' : 'R'
-            , 'color' : 'W'
-            , 'cmc' : 6
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/geydrm7hlb_en.jpg'
-        }
-
-        , '4' : {
-            'name' : 'Assault Griffin'
-            , 'rarity' : 'C'
-            , 'color' : 'W'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/t4d32of3hb_en.jpg'
-        }
-        
-        , '5' : {
-            'name' : 'Basilica Guards'
-            , 'rarity' : 'C'
-            , 'color' : 'W'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/5htsd44dbw_en.jpg'
-        }
-        
-        , '6' : {
-            'name' : 'Blind Obediance'
-            , 'rarity' : 'R'
-            , 'color' : 'W'
-            , 'cmc' : 2
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/h7rblgpvzo_en.jpg'
-        }
-        
-        , '7' : {
-            'name' : 'Boros Elite'
-            , 'rarity' : 'U'
-            , 'color' : 'W'
-            , 'cmc' : 1
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/mshrpl53qw_en.jpg'
-        }
-
-        , '8' : {
-            'name' : 'Court Street Denizen'
-            , 'rarity' : 'C'
-            , 'color' : 'W'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/x6xmjttbf0_en.jpg'
-        }
-
-        , '9' : {
-            'name' : 'Daring Skyjek'
-            , 'rarity' : 'C'
-            , 'color' : 'W'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/lwwem5osbd_en.jpg'
-        }
-
-        , '10' : {
-            'name' : 'Debtor\'s Pulpit'
-            , 'rarity' : 'U'
-            , 'color' : 'W'
-            , 'cmc' : 5
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ppg16l9mmu_en.jpg'
-        }
-
-        , '11' : {
-            'name' : 'Dutiful Thrull'
-            , 'rarity' : 'C'
-            , 'color' : 'W'
-            , 'cmc' : 1
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/9baoz7lzr2_en.jpg'
-        }
-        
-        , '12' : {
-            'name' : 'Frontline Medic'
-            , 'rarity' : 'R'
-            , 'color' : 'W'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/h3jgrtb8kb_en.jpg'
-        }
-        
-        , '13' : {
-            'name' : 'Gideon, Champion of Justice'
-            , 'rarity' : 'M'
-            , 'color' : 'W'
-            , 'cmc' : 4
-            , 'type' : 'Planeswalker'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ugoh63m1ri_en.jpg'
-        }
-
-        , '14' : {
-            'name' : 'Guardian of the Gateless'
-            , 'rarity' : 'U'
-            , 'color' : 'W'
-            , 'cmc' : 5
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zza31tx469_en.jpg'
-        }
-
-        , '15' : {
-            'name' : 'Guildscorn Ward'
-            , 'rarity' : 'C'
-            , 'color' : 'W'
-            , 'cmc' : 1
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/wf83m20x8i_en.jpg'
-        }
-
-        , '16' : {
-            'name' : 'Hold the Gates'
-            , 'rarity' : 'U'
-            , 'color' : 'W'
-            , 'cmc' : 3
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/kkxu6rjrst_en.jpg'
-        }
-
-        , '17' : {
-            'name' : 'Holy Mantle'
-            , 'rarity' : 'U'
-            , 'color' : 'W'
-            , 'cmc' : 4
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/3k9k1zaa41_en.jpg'
-        }
-
-        , '18' : {
-            'name' : 'Knight of Obligation'
-            , 'rarity' : 'U'
-            , 'color' : 'W'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/dktwqdwpom_en.jpg'
-        }
-
-        , '19' : {
-            'name' : 'Knight Watch'
-            , 'rarity' : 'C'
-            , 'color' : 'W'
-            , 'cmc' : 5
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/oe9csqdmin_en.jpg'
-        }
-        
-        , '20' : {
-            'name' : 'Luminate Primordial'
-            , 'rarity' : 'R'
-            , 'color' : 'W'
-            , 'cmc' : 7
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/8xcbfb8ww4_en.jpg'
-        }
-        
-        , '21' : {
-            'name' : 'Murder Investigation'
-            , 'rarity' : 'U'
-            , 'color' : 'W'
-            , 'cmc' : 2
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yxtqf1k89d_en.jpg'
-        }
-
-        , '22' : {
-            'name' : 'Nav Squad Commandos'
-            , 'rarity' : 'C'
-            , 'color' : 'W'
-            , 'cmc' : 5
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/68bkgffyh7_en.jpg'
-        }
-
-        , '23' : {
-            'name' : 'Righteous Charge'
-            , 'rarity' : 'U'
-            , 'color' : 'W'
-            , 'cmc' : 3
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/sbjmlo2ue5_en.jpg'
-        }
-
-        , '24' : {
-            'name' : 'Shielded Passage'
-            , 'rarity' : 'C'
-            , 'color' : 'W'
-            , 'cmc' : 1
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/opzfzqn62b_en.jpg'
-        }
-
-        , '25' : {
-            'name' : 'Smite'
-            , 'rarity' : 'C'
-            , 'color' : 'W'
-            , 'cmc' : 1
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/rz26vdnqzd_en.jpg'
-        }
-        
-        , '26' : {
-            'name' : 'Syndic of Tithes'
-            , 'rarity' : 'C'
-            , 'color' : 'W'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/q67q2d1sma_en.jpg'
-        }
-
-        , '27' : {
-            'name' : 'Urbis Protector'
-            , 'rarity' : 'U'
-            , 'color' : 'W'
-            , 'cmc' : 6
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/rus5geripy_en.jpg'
-        }
-
-        , '28' : {
-            'name' : 'Zarichi Tiger'
-            , 'rarity' : 'C'
-            , 'color' : 'W'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ndfrirtc6h_en.jpg'
-        }
-        
-        /* BLUE */
-        
-        , '29' : {
-            'name' : 'Aetherize'
-            , 'rarity' : 'U'
-            , 'color' : 'U'
-            , 'cmc' : 4
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/uyrloq9dnd_en.jpg'
-        }
-
-        , '30' : {
-            'name' : 'Agoraphobia'
-            , 'rarity' : 'U'
-            , 'color' : 'U'
-            , 'cmc' : 2
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/x3nw3d7538_en.jpg'
-        }
-
-        , '31' : {
-            'name' : 'Clinging Anemones'
-            , 'rarity' : 'C'
-            , 'color' : 'U'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a34dp8fg4w_en.jpg'
-        }
-        
-        , '32' : {
-            'name' : 'Cloudfin Raptor'
-            , 'rarity' : 'C'
-            , 'color' : 'U'
-            , 'cmc' : 1
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ptvrnuyfro_en.jpg'
-        }
-        
-        , '33' : {
-            'name' : 'Diluvian Primordial'
-            , 'rarity' : 'R'
-            , 'color' : 'U'
-            , 'cmc' : 7
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/80msjvqnnz_en.jpg'
-        }
-        
-        , '34' : {
-            'name' : 'Enter the Infinite'
-            , 'rarity' : 'M'
-            , 'color' : 'U'
-            , 'cmc' : 12
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/b1ne8elfka_en.jpg'
-        }
-
-        , '35' : {
-            'name' : 'Frilled Oculus'
-            , 'rarity' : 'C'
-            , 'color' : 'U'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/gu046anask_en.jpg'
-        }
-        
-        , '36' : {
-            'name' : 'Gridlock'
-            , 'rarity' : 'U'
-            , 'color' : 'U'
-            , 'cmc' : 1
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/7jucq0zln0_en.jpg'
-        }
-        
-        , '37' : {
-            'name' : 'Hands of Binding'
-            , 'rarity' : 'C'
-            , 'color' : 'U'
-            , 'cmc' : 2
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/bkbf3hs2eo_en.jpg'
-        }
-
-        , '38' : {
-            'name' : 'Incursion Specialist'
-            , 'rarity' : 'U'
-            , 'color' : 'U'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/6kugs03zvb_en.jpg'
-        }
-
-        , '39' : {
-            'name' : 'Keymaster Rogue'
-            , 'rarity' : 'C'
-            , 'color' : 'U'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/100a9dio61_en.jpg'
-        }
-
-        , '40' : {
-            'name' : 'Last Thoughts'
-            , 'rarity' : 'C'
-            , 'color' : 'U'
-            , 'cmc' : 2
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/meayfn8y2b_en.jpg'
-        }
-        
-        , '41' : {
-            'name' : 'Leyline Phantom'
-            , 'rarity' : 'C'
-            , 'color' : 'U'
-            , 'cmc' : 5
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/uhd7veq7bi_en.jpg'
-        }
-
-        , '42' : {
-            'name' : 'Metropolis Sprite'
-            , 'rarity' : 'C'
-            , 'color' : 'U'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/nxohv3sgd9_en.jpg'
-        }
-
-        , '43' : {
-            'name' : 'Mindeye Drake'
-            , 'rarity' : 'U'
-            , 'color' : 'U'
-            , 'cmc' : 5
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/r5wg9ip3a1_en.jpg'
-        }
-        
-        , '44' : {
-            'name' : 'Rapid Hybridization'
-            , 'rarity' : 'U'
-            , 'color' : 'U'
-            , 'cmc' : 1
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/wb71jk0gzt_en.jpg'
-        }
-
-        , '45' : {
-            'name' : 'Realmwright'
-            , 'rarity' : 'R'
-            , 'color' : 'U'
-            , 'cmc' : 1
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/3sxhp1fq4s_en.jpg'
-        }
-
-        , '46' : {
-            'name' : 'Sage\'s Row Denizen'
-            , 'rarity' : 'C'
-            , 'color' : 'U'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zz2xe2fvnv_en.jpg'
-        }
-
-        , '47' : {
-            'name' : 'Sapphire Drake'
-            , 'rarity' : 'U'
-            , 'color' : 'U'
-            , 'cmc' : 6
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/vs36u27da0_en.jpg'
-        }
-
-        , '48' : {
-            'name' : 'Scatter Arc'
-            , 'rarity' : 'C'
-            , 'color' : 'U'
-            , 'cmc' : 4
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/585imaplro_en.jpg'
-        }
-        
-        , '49' : {
-            'name' : 'Simic Fluxmage'
-            , 'rarity' : 'U'
-            , 'color' : 'U'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/oyknlk2j2x_en.jpg'
-        }
-
-        , '50' : {
-            'name' : 'Simic Manipulator'
-            , 'rarity' : 'R'
-            , 'color' : 'U'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/mcyzhgmlwb_en.jpg'
-        }
-
-        , '51' : {
-            'name' : 'Skygames'
-            , 'rarity' : 'C'
-            , 'color' : 'U'
-            , 'cmc' : 2
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/b1tan9rt21_en.jpg'
-        }
-
-        , '52' : {
-            'name' : 'Spell Rupture'
-            , 'rarity' : 'C'
-            , 'color' : 'U'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/5qkxz95nqc_en.jpg'
-        }
-        
-        , '53' : {
-            'name' : 'Stolen Identity'
-            , 'rarity' : 'R'
-            , 'color' : 'U'
-            , 'cmc' : 6
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/k9uaahs7dv_en.jpg'
-        }
-
-        , '54' : {
-            'name' : 'Totally Lost'
-            , 'rarity' : 'C'
-            , 'color' : 'U'
-            , 'cmc' : 5
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yanzr91jbp_en.jpg'
-        }
-
-        , '55' : {
-            'name' : 'Voidwalk'
-            , 'rarity' : 'U'
-            , 'color' : 'U'
-            , 'cmc' : 4
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/wmy6mm5ncr_en.jpg'
-        }
-
-        , '56' : {
-            'name' : 'Way of the Thief'
-            , 'rarity' : 'C'
-            , 'color' : 'U'
-            , 'cmc' : 4
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zojrtczz5t_en.jpg'
-        }
-        
-        /* BLACK */
-				
-        , '57' : {
-            'name' : 'Balustrade Spy'
-            , 'rarity' : 'C'
-            , 'color' : 'B'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/6ie4ilpo2k_en.jpg'
-        }
-				
-        , '58' : {
-            'name' : 'Basilica Screecher'
-            , 'rarity' : 'C'
-            , 'color' : 'B'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/l83xuhfgpi_en.jpg'
-        }
-				
-        , '59' : {
-            'name' : 'Contaminated Ground'
-            , 'rarity' : 'C'
-            , 'color' : 'B'
-            , 'cmc' : 2
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/1ztn3kk1f6_en.jpg'
-        }
-				
-        , '60' : {
-            'name' : 'Corpse Blockade'
-            , 'rarity' : 'C'
-            , 'color' : 'B'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/sv4ncxwwk9_en.jpg'
-        }
-        
-        , '61' : {
-            'name' : 'Crypt Ghast'
-            , 'rarity' : 'R'
-            , 'color' : 'B'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/5atfjinpng_en.jpg'
-        }
-				
-        , '62' : {
-            'name' : 'Death\'s Approach'
-            , 'rarity' : 'C'
-            , 'color' : 'B'
-            , 'cmc' : 4
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/238mhptv53_en.jpg'
-        }
-        
-				
-        , '63' : {
-            'name' : 'Devour Flesh'
-            , 'rarity' : 'C'
-            , 'color' : 'B'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ntfiiz5vzm_en.jpg'
-        }
-				
-        , '64' : {
-            'name' : 'Dying Wish'
-            , 'rarity' : 'U'
-            , 'color' : 'B'
-            , 'cmc' : 2
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/6qakt7vakw_en.jpg'
-        }
-        
-        , '65' : {
-            'name' : 'Gateway Shade'
-            , 'rarity' : 'U'
-            , 'color' : 'B'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/3c7ur9svcm_en.jpg'
-        }
-				
-        , '66' : {
-            'name' : 'Grisly Spectacle'
-            , 'rarity' : 'C'
-            , 'color' : 'B'
-            , 'cmc' : 4
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/00tyvpgtmm_en.jpg'
-        }
-				
-        , '67' : {
-            'name' : 'Gutter Skulk'
-            , 'rarity' : 'C'
-            , 'color' : 'B'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/op8bl6byx0_en.jpg'
-        }
-				
-        , '68' : {
-            'name' : 'Horror of the Dim'
-            , 'rarity' : 'C'
-            , 'color' : 'B'
-            , 'cmc' : 5
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yuaehtzaoy_en.jpg'
-        }
-				
-        , '69' : {
-            'name' : 'Illness in the Ranks'
-            , 'rarity' : 'U'
-            , 'color' : 'B'
-            , 'cmc' : 1
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/awhhr8evmz_en.jpg'
-        }
-				
-        , '70' : {
-            'name' : 'Killing Glare'
-            , 'rarity' : 'U'
-            , 'color' : 'B'
-            , 'cmc' : 1
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/v6k7izopy2_en.jpg'
-        }
-				
-        , '71' : {
-            'name' : 'Lord of the Void'
-            , 'rarity' : 'M'
-            , 'color' : 'B'
-            , 'cmc' : 7
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ytnaqsgi03_en.jpg'
-        }
-				
-        , '72' : {
-            'name' : 'Mental Vapors'
-            , 'rarity' : 'U'
-            , 'color' : 'B'
-            , 'cmc' : 4
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/t127tqnlwd_en.jpg'
-        }
-				
-        , '73' : {
-            'name' : 'Midnight Recovery'
-            , 'rarity' : 'C'
-            , 'color' : 'B'
-            , 'cmc' : 4
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/wxqrlnpnkc_en.jpg'
-        }
-        
-        , '74' : {
-            'name' : 'Ogre Slumlord'
-            , 'rarity' : 'R'
-            , 'color' : 'B'
-            , 'cmc' : 5
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/6jl9gl8hs8_en.jpg'
-        }
-        
-        , '75' : {
-            'name' : 'Sepulchral Primordial'
-            , 'rarity' : 'R'
-            , 'color' : 'B'
-            , 'cmc' : 7
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ke6zenv9u5_en.jpg'
-        }
-				
-        , '76' : {
-            'name' : 'Shadow Alley Denizen'
-            , 'rarity' : 'C'
-            , 'color' : 'B'
-            , 'cmc' : 1
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/aknhpcus4v_en.jpg'
-        }
-				
-        , '77' : {
-            'name' : 'Shadow Slice'
-            , 'rarity' : 'C'
-            , 'color' : 'B'
-            , 'cmc' : 5
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/2690x9cacp_en.jpg'
-        }
-				
-        , '78' : {
-            'name' : 'Slate Street Ruffian'
-            , 'rarity' : 'C'
-            , 'color' : 'B'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tjdf072pmm_en.jpg'
-        }
-				
-        , '79' : {
-            'name' : 'Smog Elemental'
-            , 'rarity' : 'U'
-            , 'color' : 'B'
-            , 'cmc' : 6
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/kp8zv8uors_en.jpg'
-        }
-				
-        , '80' : {
-            'name' : 'Syndicate Enforcer'
-            , 'rarity' : 'C'
-            , 'color' : 'B'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/7yyz1uilfu_en.jpg'
-        }
-        
-        , '80' : {
-            'name' : 'Thrull Parasite'
-            , 'rarity' : 'U'
-            , 'color' : 'B'
-            , 'cmc' : 1
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/kl4nesr3r3_en.jpg'
-        }
-        
-        , '82' : {
-            'name' : 'Undercity Informer'
-            , 'rarity' : 'U'
-            , 'color' : 'B'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/gagqof3lss_en.jpg'
-        }
-        
-        , '83' : {
-            'name' : 'Undercity Plague'
-            , 'rarity' : 'R'
-            , 'color' : 'B'
-            , 'cmc' : 6
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/4n01133uru_en.jpg'
-        }
-				
-        , '84' : {
-            'name' : 'Wight of Precinct Six'
-            , 'rarity' : 'U'
-            , 'color' : 'B'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a4jnjrni3w_en.jpg'
-        }
-        
-        /* RED */
-				
-        , '85' : {
-            'name' : 'Act of Treason'
-            , 'rarity' : 'C'
-            , 'color' : 'R'
-            , 'cmc' : 3
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/kwiwruz4m4_en.jpg'
-        }
-				
-        , '86' : {
-            'name' : 'Bomber Corps'
-            , 'rarity' : 'C'
-            , 'color' : 'R'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/4fltpd2024_en.jpg'
-        }
-				
-        , '87' : {
-            'name' : 'Cinder Elemental'
-            , 'rarity' : 'U'
-            , 'color' : 'R'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/rz0z2ryydi_en.jpg'
-        }
-				
-        , '88' : {
-            'name' : 'Crackling Perimeter'
-            , 'rarity' : 'U'
-            , 'color' : 'R'
-            , 'cmc' : 2
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hx9ijcwoe6_en.jpg'
-        }
-				
-        , '89' : {
-            'name' : 'Ember Beast'
-            , 'rarity' : 'C'
-            , 'color' : 'R'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/g8xjadtkqz_en.jpg'
-        }
-        
-        , '90' : {
-            'name' : 'Firefist Striker'
-            , 'rarity' : 'U'
-            , 'color' : 'R'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/lt2zjov5j5_en.jpg'
-        }
-        
-        , '91' : {
-            'name' : 'Five-Alarm Fire'
-            , 'rarity' : 'R'
-            , 'color' : 'R'
-            , 'cmc' : 3
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/k1xdjk3rp8_en.jpg'
-        }
-				
-        , '92' : {
-            'name' : 'Foundry Street Denizen'
-            , 'rarity' : 'C'
-            , 'color' : 'R'
-            , 'cmc' : 1
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/k37kqf0wtl_en.jpg'
-        }
-				
-        , '93' : {
-            'name' : 'Furious Resistance'
-            , 'rarity' : 'C'
-            , 'color' : 'R'
-            , 'cmc' : 1
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/0qh1t58pbb_en.jpg'
-        }
-        
-        , '94' : {
-            'name' : 'Hellkite Tyrant'
-            , 'rarity' : 'M'
-            , 'color' : 'R'
-            , 'cmc' : 6
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/njcdxzejfx_en.jpg'
-        }
-        
-        , '95' : {
-            'name' : 'Hellraiser Goblin'
-            , 'rarity' : 'U'
-            , 'color' : 'R'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/3x7y42x6y8_en.jpg'
-        }
-				
-        , '96' : {
-            'name' : 'Homing Lightning'
-            , 'rarity' : 'U'
-            , 'color' : 'R'
-            , 'cmc' : 4
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/e6xrhzmtlt_en.jpg'
-        }
-        
-        , '97' : {
-            'name' : 'Legion Loyalist'
-            , 'rarity' : 'R'
-            , 'color' : 'R'
-            , 'cmc' : 1
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/0xfkhp15jr_en.jpg'
-        }
-				
-        , '98' : {
-            'name' : 'Madcap Skills'
-            , 'rarity' : 'C'
-            , 'color' : 'R'
-            , 'cmc' : 2
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/trear46frs_en.jpg'
-        }
-				
-        , '99' : {
-            'name' : 'Mark for Death'
-            , 'rarity' : 'U'
-            , 'color' : 'R'
-            , 'cmc' : 4
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/muzjxjjkqc_en.jpg'
-        }
-				
-        , '100' : {
-            'name' : 'Massive Raid'
-            , 'rarity' : 'C'
-            , 'color' : 'R'
-            , 'cmc' : 3
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/vye7iil36e_en.jpg'
-        }
-        
-        , '101' : {
-            'name' : 'Molten Primordial'
-            , 'rarity' : 'R'
-            , 'color' : 'R'
-            , 'cmc' : 7
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/fn48qunlog_en.jpg'
-        }
-				
-        , '102' : {
-            'name' : 'Mugging'
-            , 'rarity' : 'C'
-            , 'color' : 'R'
-            , 'cmc' : 1
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/cvv7pamj05_en.jpg'
-        }
-				
-        , '103' : {
-            'name' : 'Ripscale Predator'
-            , 'rarity' : 'U'
-            , 'color' : 'R'
-            , 'cmc' : 6
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/kfpwqssybv_en.jpg'
-        }
-        , '104' : {
-            'name' : 'Scorchwalker'
-            , 'rarity' : 'C'
-            , 'color' : 'R'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/t3sy7hufd1_en.jpg'
-        }
-        , '105' : {
-            'name' : 'Skinbrand Goblin'
-            , 'rarity' : 'C'
-            , 'color' : 'R'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/nzxwjej2xg_en.jpg'
-        }
-				
-        , '106' : {
-            'name' : 'Skullcrack'
-            , 'rarity' : 'U'
-            , 'color' : 'R'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/jpf5qzipuk_en.jpg'
-        }
-				
-        , '107' : {
-            'name' : 'Structural Collapse'
-            , 'rarity' : 'C'
-            , 'color' : 'R'
-            , 'cmc' : 6
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hobhkezyjj_en.jpg'
-        }
-        
-        , '108' : {
-            'name' : 'Tin Street Market'
-            , 'rarity' : 'C'
-            , 'color' : 'R'
-            , 'cmc' : 5
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zpg0dfq8wh_en.jpg'
-        }
-				
-        , '109' : {
-            'name' : 'Towering Thunderfist'
-            , 'rarity' : 'C'
-            , 'color' : 'R'
-            , 'cmc' : 5
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/sufw94jfuw_en.jpg'
-        }
-        
-        , '110' : {
-            'name' : 'Viashino Shanktail'
-            , 'rarity' : 'U'
-            , 'color' : 'R'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/v092k7o543_en.jpg'
-        }
-				
-        , '111' : {
-            'name' : 'Warmind Infantry'
-            , 'rarity' : 'C'
-            , 'color' : 'R'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/0tnqrwbo5o_en.jpg'
-        }
-				
-        , '112' : {
-            'name' : 'Wrecking Ogre'
-            , 'rarity' : 'R'
-            , 'color' : 'R'
-            , 'cmc' : 5
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/bwmny93p22_en.jpg'
-        }
-        
-        
-        /* GREEN */
-        
-        , '113' : {
-            'name' : 'Adaptive Snapjaw'
-            , 'rarity' : 'C'
-            , 'color' : 'G'
-            , 'cmc' : 5
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/swccqvb40q_en.jpg'
-        }
-        
-        , '114' : {
-            'name' : 'Alpha Authority'
-            , 'rarity' : 'U'
-            , 'color' : 'G'
-            , 'cmc' : 2
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zst0b6bp6o_en.jpg'
-        }
-        
-        , '115' : {
-            'name' : 'Burst of Strength'
-            , 'rarity' : 'C'
-            , 'color' : 'G'
-            , 'cmc' : 1
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a7eacen9wm_en.jpg'
-        }
-        
-        , '116' : {
-            'name' : 'Crocanura'
-            , 'rarity' : 'C'
-            , 'color' : 'G'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/gpbrb0j6xt_en.jpg'
-        }
-        
-        , '117' : {
-            'name' : 'Crowned Ceratok'
-            , 'rarity' : 'U'
-            , 'color' : 'G'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/i4h4vuk1ym_en.jpg'
-        }
-        
-        , '118' : {
-            'name' : 'Disciple of the Old Ways'
-            , 'rarity' : 'C'
-            , 'color' : 'G'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/krxym94uy0_en.jpg'
-        }
-        
-        , '119' : {
-            'name' : 'Experiment One'
-            , 'rarity' : 'U'
-            , 'color' : 'G'
-            , 'cmc' : 1
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/krxym94uy0_en.jpg'
-        }
-        
-        , '120' : {
-            'name' : 'Forced Adaptation'
-            , 'rarity' : 'C'
-            , 'color' : 'G'
-            , 'cmc' : 1
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/1wi1c32pmx_en.jpg'
-        }
-        
-        , '121' : {
-            'name' : 'Giant Adephage'
-            , 'rarity' : 'M'
-            , 'color' : 'G'
-            , 'cmc' : 7
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tkohp7rxit_en.jpg'
-        }
-        
-        , '122' : {
-            'name' : 'Greenside Watcher'
-            , 'rarity' : 'C'
-            , 'color' : 'G'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/jnx0mtbzuf_en.jpg'
-        }
-        
-        , '123' : {
-            'name' : 'Gyre Sage'
-            , 'rarity' : 'R'
-            , 'color' : 'G'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/22s62gzi2u_en.jpg'
-        }
-        
-        , '124' : {
-            'name' : 'Hindervines'
-            , 'rarity' : 'U'
-            , 'color' : 'G'
-            , 'cmc' : 3
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/mk2hux6uur_en.jpg'
-        }
-        
-        , '125' : {
-            'name' : 'Ivy Lane Denizen'
-            , 'rarity' : 'C'
-            , 'color' : 'G'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/n22pbcviuo_en.jpg'
-        }
-        
-        , '126' : {
-            'name' : 'Miming Slime'
-            , 'rarity' : 'U'
-            , 'color' : 'G'
-            , 'cmc' : 3
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/4qqeq64b8z_en.jpg'
-        }
-        
-        , '127' : {
-            'name' : 'Naturalize'
-            , 'rarity' : 'U'
-            , 'color' : 'G'
-            , 'cmc' : 4
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/1zs0k7lowd_en.jpg'
-        }
-        
-        , '128' : {
-            'name' : 'Ooze Flux'
-            , 'rarity' : 'R'
-            , 'color' : 'G'
-            , 'cmc' : 4
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qj83mlrs8l_en.jpg'
-        }
-        
-        , '129' : {
-            'name' : 'Predator\'s Rapport'
-            , 'rarity' : 'C'
-            , 'color' : 'G'
-            , 'cmc' : 3
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qte0p92qh2_en.jpg'
-        }
-        
-        , '130' : {
-            'name' : 'Rust Scarab'
-            , 'rarity' : 'U'
-            , 'color' : 'G'
-            , 'cmc' : 5
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/i8rgqnqric_en.jpg'
-        }
-        
-        , '131' : {
-            'name' : 'Scab-Clan Charger'
-            , 'rarity' : 'C'
-            , 'color' : 'G'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/lrptnirsf4_en.jpg'
-        }
-        
-        , '132' : {
-            'name' : 'Serene Remembrance'
-            , 'rarity' : 'U'
-            , 'color' : 'G'
-            , 'cmc' : 1
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/sxk4y8p47v_en.jpg'
-        }
-        
-        , '133' : {
-            'name' : 'Skarrg Goliath'
-            , 'rarity' : 'R'
-            , 'color' : 'G'
-            , 'cmc' : 8
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/7v8xv9xoxq_en.jpg'
-        }
-        
-        , '134' : {
-            'name' : 'Slaughterhorn'
-            , 'rarity' : 'C'
-            , 'color' : 'G'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tm143aipok_en.jpg'
-        }
-        
-        , '135' : {
-            'name' : 'Spire Tracer'
-            , 'rarity' : 'C'
-            , 'color' : 'G'
-            , 'cmc' : 1
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/iod3iyz3j2_en.jpg'
-        }
-        
-        , '136' : {
-            'name' : 'Sylan Primordial'
-            , 'rarity' : 'R'
-            , 'color' : 'G'
-            , 'cmc' : 7
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tgmanwihfz_en.jpg'
-        }
-        
-        , '137' : {
-            'name' : 'Tower Defense'
-            , 'rarity' : 'U'
-            , 'color' : 'G'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/xcwdekx57n_en.jpg'
-        }
-        
-        , '138' : {
-            'name' : 'Verdant Haven'
-            , 'rarity' : 'C'
-            , 'color' : 'G'
-            , 'cmc' : 3
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/i33qpq2vly_en.jpg'
-        }
-        
-        , '139' : {
-            'name' : 'Wasteland Viper'
-            , 'rarity' : 'U'
-            , 'color' : 'G'
-            , 'cmc' : 1
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/juiolmlrkl_en.jpg'
-        }
-        
-        , '140' : {
-            'name' : 'Wildwood Rebirth'
-            , 'rarity' : 'C'
-            , 'color' : 'G'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/h814trbfxv_en.jpg'
-        }
-        
-        
-        /***   MULTICOLORED   ***/
-        
-        , '141' : {
-            'name' : 'Alms Beast'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/d03hk9ieuy_en.jpg'
-        }
-        
-        , '142' : {
-            'name' : 'Assemble the Legion'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 5
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/rldznvbkbx_en.jpg'
-        }
-        
-        , '143' : {
-            'name' : 'Aurelia, the Warleader'
-            , 'rarity' : 'M'
-            , 'color' : 'M'
-            , 'cmc' : 6
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/n4l84yaowd_en.jpg'
-        }
-        
-        , '144' : {
-            'name' : 'Aurelia\'s Fury'
-            , 'rarity' : 'M'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/72iagzis13_en.jpg'
-        }
-				
-        , '145' : {
-            'name' : 'Bane Alley Broker'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/atyr93aly4_en.jpg'
-        }
-        
-        , '146' : {
-            'name' : 'Biovisionary'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/m45basnlm5_en.jpg'
-        }
-        
-        , '147' : {
-            'name' : 'Borborygmos Enraged'
-            , 'rarity' : 'M'
-            , 'color' : 'M'
-            , 'cmc' : 8
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/h6ewtukll4_en.jpg'
-        }
-        
-        , '148' : {
-            'name' : 'Boros Charm'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yo8hf6s3w3_en.jpg'
-        }
-        
-        , '149' : {
-            'name' : 'Call of the Nightwing'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 4
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/j8la39uo68_en.jpg'
-        }
-				
-        , '150' : {
-            'name' : 'Cartel Aristocrat'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/cnl8q8ecqe_en.jpg'
-        }
-        
-        
-        , '151' : {
-            'name' : 'Clan Defiance'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qjl90s7xs1_en.jpg'
-        }
-        
-        , '152' : {
-            'name' : 'Consuming Aberration'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 5
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a2ivtdwluu_en.jpg'
-        }
-        
-        , '153' : {
-            'name' : 'Deathpact Angel'
-            , 'rarity' : 'M'
-            , 'color' : 'M'
-            , 'cmc' : 6
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zdwcgxx5n9_en.jpg'
-        }
-        
-        , '154' : {
-            'name' : 'Dimir Charm'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qrevu051ek_en.jpg'
-        }
-				
-        , '155' : {
-            'name' : 'Dinrova Horror'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 6
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hfr63ma542_en.jpg'
-        }
-        
-        , '156' : {
-            'name' : 'Domri Rade'
-            , 'rarity' : 'M'
-            , 'color' : 'M'
-            , 'cmc' : 3
-            , 'type' : 'Planeswalker'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/lsnhs59758_en.jpg'
-        }
-        
-        , '157' : {
-            'name' : 'Drakewing Krasis'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/8dykso0jvs_en.jpg'
-        }
-        
-        , '158' : {
-            'name' : 'Duskmantle Guildmage'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hxxrj1a4b7_en.jpg'
-        }
-				
-        , '159' : {
-            'name' : 'Duskmantle Seer'
-            , 'rarity' : 'M'
-            , 'color' : 'M'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/cfjgv67awc_en.jpg'
-        }
-        
-        , '160' : {
-            'name' : 'Elusive Krasis'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yszmf4t45e_en.jpg'
-        }
-				
-        , '161' : {
-            'name' : 'Executioner\'s Swing'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yrv7lyjz66_en.jpg'
-        }
-        
-        , '162' : {
-            'name' : 'Fathom Mage'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/akz61fr8xd_en.jpg'
-        }
-        
-        , '163' : {
-            'name' : 'Firemane Avenger'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/27agtdswcs_en.jpg'
-        }
-        
-        , '164' : {
-            'name' : 'Fortress Cyclops'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 5
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/sc923hfr03_en.jpg'
-        }
-
-        , '165' : {
-            'name' : 'Foundry Champion'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 6
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/9wstmvlpdq_en.jpg'
-        }
-				
-        , '166' : {
-            'name' : 'Frenzied Tilling'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 5
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/necxi8gahs_en.jpg'
-        }
-        
-        , '167' : {
-            'name' : 'Ghor-Clan Rampager'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/4olvi22ygg_en.jpg'
-        }
-        
-        , '168' : {
-            'name' : 'Ground Assault'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hdp3bxhyks_en.jpg'
-        }
-				
-        , '169' : {
-            'name' : 'Gruul Charm'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tjz4h9t7sv_en.jpg'
-        }
-        
-        , '170' : {
-            'name' : 'Gruul Ragebeast'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 7
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qnyu9rzw3i_en.jpg'
-        }
-        
-        , '171' : {
-            'name' : 'High Priest of Penance'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tj3ox8eg1z_en.jpg'
-        }
-				
-        , '172' : {
-            'name' : 'Hydroform'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/t9dognx636_en.jpg'
-        }
-				
-        , '173' : {
-            'name' : 'Kingpin\'s Pet'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tcr4p6r6qv_en.jpg'
-        }
-        
-        , '174' : {
-            'name' : 'Lazav, Dimir Mastermind'
-            , 'rarity' : 'M'
-            , 'color' : 'M'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zi3leei9i4_en.jpg'
-        }
-				
-        , '175' : {
-            'name' : 'Martial Glory'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/6xuylzeiye_en.jpg'
-        }
-				
-        , '176' : {
-            'name' : 'Master Biomancer'
-            , 'rarity' : 'M'
-            , 'color' : 'M'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/k7puv0lf7s_en.jpg'
-        }
-        
-        , '177' : {
-            'name' : 'Merciless Eviction'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 6
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/c004geytgz_en.jpg'
-        }
-        
-        , '178' : {
-            'name' : 'Mind Grind'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/iu0xzauwx9_en.jpg'
-        }
-				
-        , '179' : {
-            'name' : 'Mortus Strider'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/coiklp4xfo_en.jpg'
-        }
-        
-        , '180' : {
-            'name' : 'Mystic Genesis'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 5
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ib4pqypnny_en.jpg'
-        }
-				
-        , '181' : {
-            'name' : 'Nimbus Swimmer'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/mra4eudez4_en.jpg'
-        }
-        
-        , '182' : {
-            'name' : 'Obzedat, Ghost Council'
-            , 'rarity' : 'M'
-            , 'color' : 'WB'
-            , 'cmc' : 5
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/m2t717ynfw_en.jpg'
-        }
-        
-        , '183' : {
-            'name' : 'One Thousand Lashes'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 4
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/6lh7qy7834_en.jpg'
-        }
-				
-        , '184' : {
-            'name' : 'Ordruun Veteran'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a36xolka4g_en.jpg'
-        }
-				
-        , '185' : {
-            'name' : 'Orzhov Charm'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/wxveeg54dm_en.jpg'
-        }
-				
-        , '186' : {
-            'name' : 'Paranoid Delusions'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/wjqt0et5b2_en.jpg'
-        }
-				
-        , '187' : {
-            'name' : 'Primal Visitation'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 5
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/f0w4uubozz_en.jpg'
-        }
-        
-        , '188' : {
-            'name' : 'Prime Speaker Zegana'
-            , 'rarity' : 'M'
-            , 'color' : 'M'
-            , 'cmc' : 6
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/9js3k7phym_en.jpg'
-        }
-				
-        , '189' : {
-            'name' : 'Psychic Strike'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 3
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/b2bjhcwm2e_en.jpg'
-        }
-        
-        , '190' : {
-            'name' : 'Purge the Profane'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 4
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/vcbilrlqa5_en.jpg'
-        }
-				
-        , '191' : {
-            'name' : 'Rubblehulk'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 6
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/dw6ibrnf9p_en.jpg'
-        }
-				
-        , '192' : {
-            'name' : 'Ruination Wurm'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 6
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/pua43pwkps_en.jpg'
-        }
-        
-        , '193' : {
-            'name' : 'Shambleshark'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ad2buftts7_en.jpg'
-        }
-        
-        , '194' : {
-            'name' : 'Signal the Clans'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ulqi7zd9gw_en.jpg'
-        }
-        
-        , '195' : {
-            'name' : 'Simic Charm'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qn5e3tjtlk_en.jpg'
-        }
-        
-        , '196' : {
-            'name' : 'Skaarg Guildmage'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/3xw48p8yik_en.jpg'
-        }
-        
-        , '197' : {
-            'name' : 'Skynight Legionarre'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/cbg48u45g6_en.jpg'
-        }
-        
-        , '198' : {
-            'name' : 'Soul Ransom'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 4
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/v1n9eq8w2g_en.jpg'
-        }
-        
-        , '199' : {
-            'name' : 'Spark Trooper'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/1nyz690klp_en.jpg'
-        }
-				
-        , '200' : {
-            'name' : 'Sunhome Guildmage'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/0nce6kkxuw_en.jpg'
-        }
-        
-        , '201' : {
-            'name' : 'Treasury Thrull'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 6
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/zfzyzgcjnr_en.jpg'
-        }
-				
-        , '202' : {
-            'name' : 'Truefire Paladin'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/lmjzkisdor_en.jpg'
-        }
-				
-        , '203' : {
-            'name' : 'Unexpected Results'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 4
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/byricomkdk_en.jpg'
-        }
-        
-        , '204' : {
-            'name' : 'Urban Evolution'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 5
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/byrseahxfw_en.jpg'
-        }
-        
-        , '205' : {
-            'name' : 'Vizkopa Confessor'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 5
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/87zvag5bon_en.jpg'
-        }
-        
-        , '206' : {
-            'name' : 'Vizkopa Guildmage'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/4giis8ijc3_en.jpg'
-        }
-        
-        , '207' : {
-            'name' : 'Whispering Madness'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 4
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/67b3byoela_en.jpg'
-        }
-				
-        , '208' : {
-            'name' : 'Wojek Halberdiers'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/j4bdoldrkz_en.jpg'
-        }
-        
-        , '209' : {
-            'name' : 'Zameck Guildmage'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/7h4ianmut1_en.jpg'
-        }
-        
-        , '210' : {
-            'name' : 'Zhur-Taa Swine'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 5
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/1f2gkz8cg9_en.jpg'
-        }
-        
-        
-        /***   HYBRID   ***/
-        
-        , '211' : {
-            'name' : 'Arrows of Justice'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 3
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/fjb3f1fhtk_en.jpg'
-        }
-        
-        , '212' : {
-            'name' : 'Beckon Appartition'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 1
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ydyjwxx5nc_en.jpg'
-        }
-        
-        , '213' : {
-            'name' : 'Biomass Mutation'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/ny6mtaygmr_en.jpg'
-        }
-        
-        , '214' : {
-            'name' : 'Bioshift'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 1
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/tth5um1bl2_en.jpg'
-        }
-        
-        , '215' : {
-            'name' : 'Boros Reckoner'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/hxyzo9fn7v_en.jpg'
-        }
-        
-        , '216' : {
-            'name' : 'Burning-Tree Emissary'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/kwtkd3c7sh_en.jpg'
-        }
-        
-        , '217' : {
-            'name' : 'Coerced Confession'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 5
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/t8sia8416y_en.jpg'
-        }
-        
-        , '218' : {
-            'name' : 'Deathcult Rogue'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/j1m7z578aa_en.jpg'
-        }
-        
-        , '219' : {
-            'name' : 'Gift of Orzhova'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 3
-            , 'type' : 'Enchantment'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a9i9v9k80t_en.jpg'
-        }
-        
-        , '220' : {
-            'name' : 'Immortal Servitude'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 3
-            , 'type' : 'Sorcery'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/14gyxtjfad_en.jpg'
-        }
-        
-        , '221' : {
-            'name' : 'Merfolk of the Depths'
-            , 'rarity' : 'U'
-            , 'color' : 'M'
-            , 'cmc' : 6
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/lerob5qo3b_en.jpg'
-        }
-        
-        , '222' : {
-            'name' : 'Nightveil Specter'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 3
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/cxg272cbbg_en.jpg'
-        }
-        
-        , '223' : {
-            'name' : 'Pit Fight'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/0k5uqfenyb_en.jpg'
-        }
-        
-        , '224' : {
-            'name' : 'Rubblebelt Raiders'
-            , 'rarity' : 'R'
-            , 'color' : 'M'
-            , 'cmc' : 4
-            , 'type' : 'Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/svjfhh3bbx_en.jpg'
-        }
-        
-        , '225' : {
-            'name' : 'Shattering Blow'
-            , 'rarity' : 'C'
-            , 'color' : 'M'
-            , 'cmc' : 2
-            , 'type' : 'Instant'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/7qd529r6rd_en.jpg'
-       }
-        
-        
-        /* ARTIFACTS */
-        
-        , '226' : {
-            'name' : 'Armored Transport'
-            , 'rarity' : 'C'
-            , 'color' : 'A'
-            , 'cmc' : 3
-            , 'type' : 'Artifact Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/qhq0f16v5n_en.jpg'
-       }
-        
-        , '227' : {
-            'name' : 'Boros Keyrune'
-            , 'rarity' : 'U'
-            , 'color' : 'A'
-            , 'cmc' : 3
-            , 'type' : 'Artifact'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/r9yqn7qxnt_en.jpg'
-        }
-        
-        , '228' : {
-            'name' : 'Dimir Keyrune'
-            , 'rarity' : 'U'
-            , 'color' : 'A'
-            , 'cmc' : 3
-            , 'type' : 'Artifact'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/4pij2wdr3y_en.jpg'
-        }
-        
-        , '229' : {
-            'name' : 'Glaring Spotlight'
-            , 'rarity' : 'R'
-            , 'color' : 'A'
-            , 'cmc' : 1
-            , 'type' : 'Artifact'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/h0ndjlxf87_en.jpg'
-        }
-        
-        , '230' : {
-            'name' : 'Gruul Keyrune'
-            , 'rarity' : 'U'
-            , 'color' : 'A'
-            , 'cmc' : 3
-            , 'type' : 'Artifact'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/5s4gwhr2u9_en.jpg'
-        }
-        
-        , '231' : {
-            'name' : 'Illusionist\'s Bracers'
-            , 'rarity' : 'R'
-            , 'color' : 'A'
-            , 'cmc' : 2
-            , 'type' : 'Artifact'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/7anbuzmoy2_en.jpg'
-        }
-        
-        , '232' : {
-            'name' : 'Millennial Gargoyle'
-            , 'rarity' : 'C'
-            , 'color' : 'A'
-            , 'cmc' : 4
-            , 'type' : 'Artifact Creature'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/a1qmgxzl4y_en.jpg'
-       }
-        
-        , '233' : {
-            'name' : 'Orzhov Keyrune'
-            , 'rarity' : 'U'
-            , 'color' : 'A'
-            , 'cmc' : 3
-            , 'type' : 'Artifact'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/p6ky6h8leu_en.jpg'
-        }
-        
-        , '234' : {
-            'name' : 'Prophetic Prism'
-            , 'rarity' : 'C'
-            , 'color' : 'A'
-            , 'cmc' : 2
-            , 'type' : 'Artifact'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/1acadm3rgd_en.jpg'
-       }
-        
-        , '235' : {
-            'name' : 'Razortip Whip'
-            , 'rarity' : 'C'
-            , 'color' : 'A'
-            , 'cmc' : 2
-            , 'type' : 'Artifact'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/jx30fv68bw_en.jpg'
-       }
-        
-        , '236' : {
-            'name' : 'Riot Gear'
-            , 'rarity' : 'C'
-            , 'color' : 'A'
-            , 'cmc' : 2
-            , 'type' : 'Artifact'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/65agsc00a2_en.jpg'
-       }
-        
-        , '237' : {
-            'name' : 'Simic Keyrune'
-            , 'rarity' : 'U'
-            , 'color' : 'A'
-            , 'cmc' : 3
-            , 'type' : 'Artifact'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/vvolws6ynj_en.jpg'
-        }
-        
-        , '238' : {
-            'name' : 'Skybinder Staff'
-            , 'rarity' : 'C'
-            , 'color' : 'A'
-            , 'cmc' : 1
-            , 'type' : 'Artifact'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/drn2bbhkl9_en.jpg'
-       }
-       
-       
-       /* LANDS */
-        
-        , '239' : {
-            'name' : 'Boros Guildgate'
-            , 'rarity' : 'C'
-            , 'color' : 'A'
-            , 'cmc' : 0
-            , 'type' : 'Land'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/i1ido682cf_en.jpg'
-       }
-        
-        , '240' : {
-            'name' : 'Breeding Pool'
-            , 'rarity' : 'R'
-            , 'color' : 'A'
-            , 'cmc' : 0
-            , 'type' : 'Land'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/k6ttg3nv03_en.jpg'
-       }
-        
-        , '241' : {
-            'name' : 'Dimir Guildgate'
-            , 'rarity' : 'C'
-            , 'color' : 'A'
-            , 'cmc' : 0
-            , 'type' : 'Land'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/0oeb2p3d8x_en.jpg'
-       }
-        
-        , '242' : {
-            'name' : 'Godless Shrine'
-            , 'rarity' : 'R'
-            , 'color' : 'A'
-            , 'cmc' : 0
-            , 'type' : 'Land'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/onzd119aok_en.jpg'
-       }
-        
-        , '243' : {
-            'name' : 'Gruul Guildgate'
-            , 'rarity' : 'C'
-            , 'color' : 'A'
-            , 'cmc' : 0
-            , 'type' : 'Land'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/2twgjn2ey3_en.jpg'
-       }
-        
-        , '244' : {
-            'name' : 'Orzhov Guildgate'
-            , 'rarity' : 'C'
-            , 'color' : 'A'
-            , 'cmc' : 0
-            , 'type' : 'Land'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/sktlscjx5r_en.jpg'
-       }
-        
-        , '245' : {
-            'name' : 'Sacred Foundry'
-            , 'rarity' : 'R'
-            , 'color' : 'A'
-            , 'cmc' : 0
-            , 'type' : 'Land'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/l5uvcxgxu3_en.jpg'
-       }
-        
-        , '246' : {
-            'name' : 'Simic Guildgate'
-            , 'rarity' : 'C'
-            , 'color' : 'A'
-            , 'cmc' : 0
-            , 'type' : 'Land'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yj3xjb1kr4_en.jpg'
-       }
-        
-        , '247' : {
-            'name' : 'Stomping Ground'
-            , 'rarity' : 'R'
-            , 'color' : 'A'
-            , 'cmc' : 0
-            , 'type' : 'Land'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/dvdz6c6zos_en.jpg'
-       }
-        
-        , '248' : {
-            'name' : 'Thespian\'s Stage'
-            , 'rarity' : 'R'
-            , 'color' : 'A'
-            , 'cmc' : 0
-            , 'type' : 'Land'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/is276nnn03_en.jpg'
-       }
-        
-        , '249' : {
-            'name' : 'Watery Grave'
-            , 'rarity' : 'R'
-            , 'color' : 'A'
-            , 'cmc' : 0
-            , 'type' : 'Land'
-            , 'img' : 'http://media.wizards.com/images/magic/tcg/products/gtc/yp1jnjsbh4_en.jpg'
-       }
-        
-    }
-    
-};
+     };

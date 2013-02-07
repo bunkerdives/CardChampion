@@ -245,7 +245,9 @@ M11 = {
             '218' : {
                     'name' : 'Dragonskull Summit'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '205089'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -254,7 +256,9 @@ M11 = {
                 , '130' : {
                     'name' : 'Earth Servant'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '5R'
+                    , 'cmc' : '6'
                     , 'multiverse' : '204986'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(4/4)'
@@ -263,7 +267,9 @@ M11 = {
                 , '71' : {
                     'name' : 'Sleep'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2UU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205120'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -272,7 +278,9 @@ M11 = {
                 , '224' : {
                     'name' : 'Terramorphic Expanse'
                     , 'rarity' : 'C'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '205236'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -281,7 +289,9 @@ M11 = {
                 , '28' : {
                     'name' : 'Siege Mastodon'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '4W'
+                    , 'cmc' : '5'
                     , 'multiverse' : '208293'
                     , 'type' : 'Creature  — Elephant'
                     , 'pt' : '(3/5)'
@@ -290,7 +300,9 @@ M11 = {
                 , '181' : {
                     'name' : 'Naturalize'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '207336'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -299,7 +311,9 @@ M11 = {
                 , '47' : {
                     'name' : 'Cancel'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1UU'
+                    , 'cmc' : '3'
                     , 'multiverse' : '208217'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -308,7 +322,9 @@ M11 = {
                 , '64' : {
                     'name' : 'Merfolk Spy'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205009'
                     , 'type' : 'Creature  — Merfolk Rogue'
                     , 'pt' : '(1/1)'
@@ -317,7 +333,9 @@ M11 = {
                 , '229' : {
                     'name' : 'Forest'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '213629'
                     , 'type' : 'Basic Land  — Forest'
                     , 'pt' : ''
@@ -326,7 +344,9 @@ M11 = {
                 , '135' : {
                     'name' : 'Fling'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '208001'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -335,7 +355,9 @@ M11 = {
                 , '117' : {
                     'name' : 'Viscera Seer'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205232'
                     , 'type' : 'Creature  — Vampire Wizard'
                     , 'pt' : '(1/1)'
@@ -344,7 +366,9 @@ M11 = {
                 , '227' : {
                     'name' : 'Swamp'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '213620'
                     , 'type' : 'Basic Land  — Swamp'
                     , 'pt' : ''
@@ -353,7 +377,9 @@ M11 = {
                 , '72' : {
                     'name' : 'Stormtide Leviathan'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '5UUU'
+                    , 'cmc' : '8'
                     , 'multiverse' : '205029'
                     , 'type' : 'Creature  — Leviathan'
                     , 'pt' : '(8/8)'
@@ -362,7 +388,9 @@ M11 = {
                 , '11' : {
                     'name' : 'Day of Judgment'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '2WW'
+                    , 'cmc' : '4'
                     , 'multiverse' : '208297'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -371,7 +399,9 @@ M11 = {
                 , '156' : {
                     'name' : 'Wild Evocation'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '5R'
+                    , 'cmc' : '6'
                     , 'multiverse' : '204972'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -380,7 +410,9 @@ M11 = {
                 , '50' : {
                     'name' : 'Conundrum Sphinx'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '2UU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '204982'
                     , 'type' : 'Creature  — Sphinx'
                     , 'pt' : '(4/4)'
@@ -389,7 +421,9 @@ M11 = {
                 , '63' : {
                     'name' : 'Merfolk Sovereign'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '1UU'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205108'
                     , 'type' : 'Creature  — Merfolk'
                     , 'pt' : '(2/2)'
@@ -398,7 +432,9 @@ M11 = {
                 , '25' : {
                     'name' : 'Safe Passage'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205115'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -407,7 +443,9 @@ M11 = {
                 , '1' : {
                     'name' : 'Ajani\'s Mantra'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '204987'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -416,7 +454,9 @@ M11 = {
                 , '95' : {
                     'name' : 'Grave Titan'
                     , 'rarity' : 'M'
+                    , 'color' : 'B'
                     , 'cost' : '4BB'
+                    , 'cmc' : '6'
                     , 'multiverse' : '205012'
                     , 'type' : 'Creature  — Giant'
                     , 'pt' : '(6/6)'
@@ -425,7 +465,9 @@ M11 = {
                 , '150' : {
                     'name' : 'Pyroclasm'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '208009'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -434,7 +476,9 @@ M11 = {
                 , '81' : {
                     'name' : 'Black Knight'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : 'BB'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205218'
                     , 'type' : 'Creature  — Human Knight'
                     , 'pt' : '(2/2)'
@@ -443,7 +487,9 @@ M11 = {
                 , '18' : {
                     'name' : 'Inspired Charge'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2WW'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205074'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -452,7 +498,9 @@ M11 = {
                 , '23' : {
                     'name' : 'Palace Guard'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205110'
                     , 'type' : 'Creature  — Human Soldier'
                     , 'pt' : '(1/4)'
@@ -461,7 +509,9 @@ M11 = {
                 , '62' : {
                     'name' : 'Mass Polymorph'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '5U'
+                    , 'cmc' : '6'
                     , 'multiverse' : '204977'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -470,7 +520,9 @@ M11 = {
                 , '13' : {
                     'name' : 'Excommunicate'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '208273'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -479,7 +531,9 @@ M11 = {
                 , '204' : {
                     'name' : 'Juggernaut'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205230'
                     , 'type' : 'Artifact Creature  — Juggernaut'
                     , 'pt' : '(5/3)'
@@ -488,7 +542,9 @@ M11 = {
                 , '167' : {
                     'name' : 'Elvish Archdruid'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '1GG'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205091'
                     , 'type' : 'Creature  — Elf Druid'
                     , 'pt' : '(2/2)'
@@ -497,7 +553,9 @@ M11 = {
                 , '88' : {
                     'name' : 'Dark Tutelage'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '204979'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -506,7 +564,9 @@ M11 = {
                 , '114' : {
                     'name' : 'Sign in Blood'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'BB'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205118'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -515,7 +575,9 @@ M11 = {
                 , '36' : {
                     'name' : 'Vengeful Archon'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '4WWW'
+                    , 'cmc' : '7'
                     , 'multiverse' : '208288'
                     , 'type' : 'Creature  — Archon'
                     , 'pt' : '(7/7)'
@@ -524,7 +586,9 @@ M11 = {
                 , '22' : {
                     'name' : 'Pacifism'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '208292'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -533,7 +597,9 @@ M11 = {
                 , '192' : {
                     'name' : 'Spined Wurm'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '4G'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205123'
                     , 'type' : 'Creature  — Wurm'
                     , 'pt' : '(5/4)'
@@ -542,7 +608,9 @@ M11 = {
                 , '26' : {
                     'name' : 'Serra Angel'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '3WW'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205234'
                     , 'type' : 'Creature  — Angel'
                     , 'pt' : '(4/4)'
@@ -551,7 +619,9 @@ M11 = {
                 , '208' : {
                     'name' : 'Sorcerer\'s Strongbox'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '4'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205069'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -560,7 +630,9 @@ M11 = {
                 , '175' : {
                     'name' : 'Greater Basilisk'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '3GG'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205016'
                     , 'type' : 'Creature  — Basilisk'
                     , 'pt' : '(3/5)'
@@ -569,7 +641,9 @@ M11 = {
                 , '185' : {
                     'name' : 'Plummet'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205062'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -578,7 +652,9 @@ M11 = {
                 , '89' : {
                     'name' : 'Deathmark'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '207100'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -587,7 +663,9 @@ M11 = {
                 , '84' : {
                     'name' : 'Bog Raiders'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '207105'
                     , 'type' : 'Creature  — Zombie'
                     , 'pt' : '(2/2)'
@@ -596,7 +674,9 @@ M11 = {
                 , '180' : {
                     'name' : 'Mitotic Slime'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '4G'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205032'
                     , 'type' : 'Creature  — Ooze'
                     , 'pt' : '(4/4)'
@@ -605,7 +685,9 @@ M11 = {
                 , '133' : {
                     'name' : 'Fire Servant'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '3RR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '204992'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(4/3)'
@@ -614,7 +696,9 @@ M11 = {
                 , '68' : {
                     'name' : 'Preordain'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205019'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -623,7 +707,9 @@ M11 = {
                 , '196' : {
                     'name' : 'Angel\'s Feather'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '206325'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -632,7 +718,9 @@ M11 = {
                 , '170' : {
                     'name' : 'Gaea\'s Revenge'
                     , 'rarity' : 'M'
+                    , 'color' : 'G'
                     , 'cost' : '5GG'
+                    , 'cmc' : '7'
                     , 'multiverse' : '205033'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(8/5)'
@@ -641,7 +729,9 @@ M11 = {
                 , '136' : {
                     'name' : 'Goblin Balloon Brigade'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '208010'
                     , 'type' : 'Creature  — Goblin Warrior'
                     , 'pt' : '(1/1)'
@@ -650,7 +740,9 @@ M11 = {
                 , '124' : {
                     'name' : 'Chandra\'s Outrage'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205071'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -659,7 +751,9 @@ M11 = {
                 , '110' : {
                     'name' : 'Relentless Rats'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1BB'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205082'
                     , 'type' : 'Creature  — Rat'
                     , 'pt' : '(2/2)'
@@ -668,7 +762,9 @@ M11 = {
                 , '6' : {
                     'name' : 'Baneslayer Angel'
                     , 'rarity' : 'M'
+                    , 'color' : 'W'
                     , 'cost' : '3WW'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205077'
                     , 'type' : 'Creature  — Angel'
                     , 'pt' : '(5/5)'
@@ -677,7 +773,9 @@ M11 = {
                 , '17' : {
                     'name' : 'Infantry Veteran'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '208278'
                     , 'type' : 'Creature  — Human Soldier'
                     , 'pt' : '(1/1)'
@@ -686,7 +784,9 @@ M11 = {
                 , '38' : {
                     'name' : 'White Knight'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : 'WW'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205239'
                     , 'type' : 'Creature  — Human Knight'
                     , 'pt' : '(2/2)'
@@ -695,7 +795,9 @@ M11 = {
                 , '212' : {
                     'name' : 'Temple Bell'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205058'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -704,7 +806,9 @@ M11 = {
                 , '105' : {
                     'name' : 'Nether Horror'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '204994'
                     , 'type' : 'Creature  — Horror'
                     , 'pt' : '(4/2)'
@@ -713,7 +817,9 @@ M11 = {
                 , '39' : {
                     'name' : 'Wild Griffin'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '208275'
                     , 'type' : 'Creature  — Griffin'
                     , 'pt' : '(2/2)'
@@ -722,7 +828,9 @@ M11 = {
                 , '2' : {
                     'name' : 'Ajani\'s Pridemate'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205065'
                     , 'type' : 'Creature  — Cat Soldier'
                     , 'pt' : '(2/2)'
@@ -731,7 +839,9 @@ M11 = {
                 , '31' : {
                     'name' : 'Solemn Offering'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205095'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -740,7 +850,9 @@ M11 = {
                 , '74' : {
                     'name' : 'Tome Scour'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205000'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -749,7 +861,9 @@ M11 = {
                 , '16' : {
                     'name' : 'Honor of the Pure'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205099'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -758,7 +872,9 @@ M11 = {
                 , '43' : {
                     'name' : 'Armored Cancrix'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '4U'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205083'
                     , 'type' : 'Creature  — Crab'
                     , 'pt' : '(2/5)'
@@ -767,7 +883,9 @@ M11 = {
                 , '113' : {
                     'name' : 'Royal Assassin'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '1BB'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205233'
                     , 'type' : 'Creature  — Human Assassin'
                     , 'pt' : '(1/1)'
@@ -776,7 +894,9 @@ M11 = {
                 , '99' : {
                     'name' : 'Leyline of the Void'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '2BB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205013'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -785,7 +905,9 @@ M11 = {
                 , '34' : {
                     'name' : 'Sun Titan'
                     , 'rarity' : 'M'
+                    , 'color' : 'W'
                     , 'cost' : '4WW'
+                    , 'cmc' : '6'
                     , 'multiverse' : '205030'
                     , 'type' : 'Creature  — Giant'
                     , 'pt' : '(6/6)'
@@ -794,7 +916,9 @@ M11 = {
                 , '190' : {
                     'name' : 'Runeclaw Bear'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '207337'
                     , 'type' : 'Creature  — Bear'
                     , 'pt' : '(2/2)'
@@ -803,7 +927,9 @@ M11 = {
                 , '119' : {
                     'name' : 'Ancient Hellkite'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '4RRR'
+                    , 'cmc' : '7'
                     , 'multiverse' : '204980'
                     , 'type' : 'Creature  — Dragon'
                     , 'pt' : '(6/6)'
@@ -812,7 +938,9 @@ M11 = {
                 , '35' : {
                     'name' : 'Tireless Missionaries'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '4W'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205014'
                     , 'type' : 'Creature  — Human Cleric'
                     , 'pt' : '(2/3)'
@@ -821,7 +949,9 @@ M11 = {
                 , '206' : {
                     'name' : 'Ornithopter'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '0'
+                    , 'cmc' : '0'
                     , 'multiverse' : '206331'
                     , 'type' : 'Artifact Creature  — Thopter'
                     , 'pt' : '(0/2)'
@@ -830,7 +960,9 @@ M11 = {
                 , '168' : {
                     'name' : 'Fauna Shaman'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205059'
                     , 'type' : 'Creature  — Elf Shaman'
                     , 'pt' : '(2/2)'
@@ -839,7 +971,9 @@ M11 = {
                 , '51' : {
                     'name' : 'Diminish'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '208226'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -848,7 +982,9 @@ M11 = {
                 , '101' : {
                     'name' : 'Liliana\'s Specter'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1BB'
+                    , 'cmc' : '3'
                     , 'multiverse' : '204998'
                     , 'type' : 'Creature  — Specter'
                     , 'pt' : '(2/1)'
@@ -857,7 +993,9 @@ M11 = {
                 , '164' : {
                     'name' : 'Cultivate'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '204996'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -866,7 +1004,9 @@ M11 = {
                 , '102' : {
                     'name' : 'Mind Rot'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205010'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -875,7 +1015,9 @@ M11 = {
                 , '3' : {
                     'name' : 'Angelic Arbiter'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '5WW'
+                    , 'cmc' : '7'
                     , 'multiverse' : '204975'
                     , 'type' : 'Creature  — Angel'
                     , 'pt' : '(5/6)'
@@ -884,7 +1026,9 @@ M11 = {
                 , '53' : {
                     'name' : 'Foresee'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205068'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -893,7 +1037,9 @@ M11 = {
                 , '20' : {
                     'name' : 'Leyline of Sanctity'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '2WW'
+                    , 'cmc' : '4'
                     , 'multiverse' : '204993'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -902,7 +1048,9 @@ M11 = {
                 , '106' : {
                     'name' : 'Nightwing Shade'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '4B'
+                    , 'cmc' : '5'
                     , 'multiverse' : '207103'
                     , 'type' : 'Creature  — Shade'
                     , 'pt' : '(2/2)'
@@ -911,7 +1059,9 @@ M11 = {
                 , '197' : {
                     'name' : 'Brittle Effigy'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '1'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205002'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -920,7 +1070,9 @@ M11 = {
                 , '141' : {
                     'name' : 'Incite'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205045'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -929,7 +1081,9 @@ M11 = {
                 , '159' : {
                     'name' : 'Awakener Druid'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205076'
                     , 'type' : 'Creature  — Human Druid'
                     , 'pt' : '(1/1)'
@@ -938,7 +1092,9 @@ M11 = {
                 , '93' : {
                     'name' : 'Doom Blade'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205088'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -947,7 +1103,9 @@ M11 = {
                 , '151' : {
                     'name' : 'Reverberate'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : 'RR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205038'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -956,7 +1114,9 @@ M11 = {
                 , '142' : {
                     'name' : 'Inferno Titan'
                     , 'rarity' : 'M'
+                    , 'color' : 'R'
                     , 'cost' : '4RR'
+                    , 'cmc' : '6'
                     , 'multiverse' : '205042'
                     , 'type' : 'Creature  — Giant'
                     , 'pt' : '(6/6)'
@@ -965,7 +1125,9 @@ M11 = {
                 , '153' : {
                     'name' : 'Thunder Strike'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '204973'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -974,7 +1136,9 @@ M11 = {
                 , '15' : {
                     'name' : 'Holy Strength'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205226'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -983,7 +1147,9 @@ M11 = {
                 , '139' : {
                     'name' : 'Goblin Tunneler'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '207999'
                     , 'type' : 'Creature  — Goblin Rogue'
                     , 'pt' : '(1/1)'
@@ -992,7 +1158,9 @@ M11 = {
                 , '4' : {
                     'name' : 'Armored Ascension'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '204997'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1001,7 +1169,9 @@ M11 = {
                 , '45' : {
                     'name' : 'Azure Drake'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '204984'
                     , 'type' : 'Creature  — Drake'
                     , 'pt' : '(2/4)'
@@ -1010,7 +1180,9 @@ M11 = {
                 , '8' : {
                     'name' : 'Celestial Purge'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '208290'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1019,7 +1191,9 @@ M11 = {
                 , '171' : {
                     'name' : 'Garruk\'s Companion'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'GG'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205025'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(3/2)'
@@ -1028,7 +1202,9 @@ M11 = {
                 , '126' : {
                     'name' : 'Combust'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205011'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1037,7 +1213,9 @@ M11 = {
                 , '49' : {
                     'name' : 'Cloud Elemental'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '208224'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(2/3)'
@@ -1046,7 +1224,9 @@ M11 = {
                 , '76' : {
                     'name' : 'Unsummon'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : 'U'
+                    , 'cmc' : '1'
                     , 'multiverse' : '208223'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1055,7 +1235,9 @@ M11 = {
                 , '158' : {
                     'name' : 'Autumn\'s Veil'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205051'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1064,7 +1246,9 @@ M11 = {
                 , '214' : {
                     'name' : 'Voltaic Key'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '1'
+                    , 'cmc' : '1'
                     , 'multiverse' : '206332'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1073,7 +1257,9 @@ M11 = {
                 , '56' : {
                     'name' : 'Ice Cage'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205101'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1082,7 +1268,9 @@ M11 = {
                 , '85' : {
                     'name' : 'Captivating Vampire'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '1BB'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205041'
                     , 'type' : 'Creature  — Vampire'
                     , 'pt' : '(2/2)'
@@ -1091,7 +1279,9 @@ M11 = {
                 , '211' : {
                     'name' : 'Sword of Vengeance'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205044'
                     , 'type' : 'Artifact  — Equipment'
                     , 'pt' : ''
@@ -1100,7 +1290,9 @@ M11 = {
                 , '177' : {
                     'name' : 'Hunters\' Feast'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205037'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1109,7 +1301,9 @@ M11 = {
                 , '60' : {
                     'name' : 'Mana Leak'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '204981'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1118,7 +1312,9 @@ M11 = {
                 , '157' : {
                     'name' : 'Acidic Slime'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '3GG'
+                    , 'cmc' : '5'
                     , 'multiverse' : '207333'
                     , 'type' : 'Creature  — Ooze'
                     , 'pt' : '(2/2)'
@@ -1127,7 +1323,9 @@ M11 = {
                 , '193' : {
                     'name' : 'Sylvan Ranger'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '204976'
                     , 'type' : 'Creature  — Elf Scout'
                     , 'pt' : '(1/1)'
@@ -1136,7 +1334,9 @@ M11 = {
                 , '108' : {
                     'name' : 'Quag Sickness'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205028'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1145,7 +1345,9 @@ M11 = {
                 , '37' : {
                     'name' : 'War Priest of Thune'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '208274'
                     , 'type' : 'Creature  — Human Cleric'
                     , 'pt' : '(2/2)'
@@ -1154,7 +1356,9 @@ M11 = {
                 , '92' : {
                     'name' : 'Disentomb'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '207101'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1163,7 +1367,9 @@ M11 = {
                 , '131' : {
                     'name' : 'Ember Hauler'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : 'RR'
+                    , 'cmc' : '2'
                     , 'multiverse' : '208008'
                     , 'type' : 'Creature  — Goblin'
                     , 'pt' : '(2/2)'
@@ -1172,7 +1378,9 @@ M11 = {
                 , '82' : {
                     'name' : 'Blood Tithe'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205054'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1181,7 +1389,9 @@ M11 = {
                 , '48' : {
                     'name' : 'Clone'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205220'
                     , 'type' : 'Creature  — Shapeshifter'
                     , 'pt' : '(0/0)'
@@ -1190,7 +1400,9 @@ M11 = {
                 , '178' : {
                     'name' : 'Leyline of Vitality'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '2GG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205031'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1199,7 +1411,9 @@ M11 = {
                 , '67' : {
                     'name' : 'Phantom Beast'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '3U'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205017'
                     , 'type' : 'Creature  — Illusion Beast'
                     , 'pt' : '(4/5)'
@@ -1208,7 +1422,9 @@ M11 = {
                 , '125' : {
                     'name' : 'Chandra\'s Spitfire'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205026'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(1/3)'
@@ -1217,7 +1433,9 @@ M11 = {
                 , '55' : {
                     'name' : 'Harbor Serpent'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '4UU'
+                    , 'cmc' : '6'
                     , 'multiverse' : '204974'
                     , 'type' : 'Creature  — Serpent'
                     , 'pt' : '(5/5)'
@@ -1226,7 +1444,9 @@ M11 = {
                 , '90' : {
                     'name' : 'Demon of Death\'s Gate'
                     , 'rarity' : 'M'
+                    , 'color' : 'B'
                     , 'cost' : '6BBB'
+                    , 'cmc' : '9'
                     , 'multiverse' : '205131'
                     , 'type' : 'Creature  — Demon'
                     , 'pt' : '(9/9)'
@@ -1235,7 +1455,9 @@ M11 = {
                 , '115' : {
                     'name' : 'Stabbing Pain'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205048'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1244,7 +1466,9 @@ M11 = {
                 , '132' : {
                     'name' : 'Fiery Hellhound'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1RR'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205093'
                     , 'type' : 'Creature  — Elemental Hound'
                     , 'pt' : '(2/2)'
@@ -1253,7 +1477,9 @@ M11 = {
                 , '228' : {
                     'name' : 'Mountain'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '213625'
                     , 'type' : 'Basic Land  — Mountain'
                     , 'pt' : ''
@@ -1262,7 +1488,9 @@ M11 = {
                 , '7' : {
                     'name' : 'Blinding Mage'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205219'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(1/2)'
@@ -1271,7 +1499,9 @@ M11 = {
                 , '46' : {
                     'name' : 'Call to Mind'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '208218'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1280,7 +1510,9 @@ M11 = {
                 , '69' : {
                     'name' : 'Redirect'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : 'UU'
+                    , 'cmc' : '2'
                     , 'multiverse' : '208227'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1289,7 +1521,9 @@ M11 = {
                 , '10' : {
                     'name' : 'Condemn'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205098'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1298,7 +1532,9 @@ M11 = {
                 , '138' : {
                     'name' : 'Goblin Piker'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205052'
                     , 'type' : 'Creature  — Goblin Warrior'
                     , 'pt' : '(2/1)'
@@ -1307,7 +1543,9 @@ M11 = {
                 , '59' : {
                     'name' : 'Leyline of Anticipation'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '2UU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205008'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1316,7 +1554,9 @@ M11 = {
                 , '61' : {
                     'name' : 'Maritime Guard'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205040'
                     , 'type' : 'Creature  — Merfolk Soldier'
                     , 'pt' : '(1/3)'
@@ -1325,7 +1565,9 @@ M11 = {
                 , '96' : {
                     'name' : 'Gravedigger'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '3B'
+                    , 'cmc' : '4'
                     , 'multiverse' : '207102'
                     , 'type' : 'Creature  — Zombie'
                     , 'pt' : '(2/2)'
@@ -1334,7 +1576,9 @@ M11 = {
                 , '42' : {
                     'name' : 'Alluring Siren'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205073'
                     , 'type' : 'Creature  — Siren'
                     , 'pt' : '(1/1)'
@@ -1343,7 +1587,9 @@ M11 = {
                 , '161' : {
                     'name' : 'Birds of Paradise'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '207334'
                     , 'type' : 'Creature  — Bird'
                     , 'pt' : '(0/1)'
@@ -1352,7 +1598,9 @@ M11 = {
                 , '140' : {
                     'name' : 'Hoarding Dragon'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '3RR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205235'
                     , 'type' : 'Creature  — Dragon'
                     , 'pt' : '(4/4)'
@@ -1361,7 +1609,9 @@ M11 = {
                 , '225' : {
                     'name' : 'Plains'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '213612'
                     , 'type' : 'Basic Land  — Plains'
                     , 'pt' : ''
@@ -1370,7 +1620,9 @@ M11 = {
                 , '152' : {
                     'name' : 'Shiv\'s Embrace'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '208002'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1379,7 +1631,9 @@ M11 = {
                 , '32' : {
                     'name' : 'Squadron Hawk'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '208279'
                     , 'type' : 'Creature  — Bird'
                     , 'pt' : '(1/1)'
@@ -1388,7 +1642,9 @@ M11 = {
                 , '137' : {
                     'name' : 'Goblin Chieftain'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '1RR'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205096'
                     , 'type' : 'Creature  — Goblin'
                     , 'pt' : '(2/2)'
@@ -1397,7 +1653,9 @@ M11 = {
                 , '166' : {
                     'name' : 'Duskdale Wurm'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '5GG'
+                    , 'cmc' : '7'
                     , 'multiverse' : '207335'
                     , 'type' : 'Creature  — Wurm'
                     , 'pt' : '(7/7)'
@@ -1406,7 +1664,9 @@ M11 = {
                 , '83' : {
                     'name' : 'Bloodthrone Vampire'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205238'
                     , 'type' : 'Creature  — Vampire'
                     , 'pt' : '(1/1)'
@@ -1415,7 +1675,9 @@ M11 = {
                 , '118' : {
                     'name' : 'Act of Treason'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205072'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1424,7 +1686,9 @@ M11 = {
                 , '165' : {
                     'name' : 'Dryad\'s Favor'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205109'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1433,7 +1697,9 @@ M11 = {
                 , '201' : {
                     'name' : 'Elixir of Immortality'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '1'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205061'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1442,7 +1708,9 @@ M11 = {
                 , '57' : {
                     'name' : 'Jace\'s Erasure'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205043'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1451,7 +1719,9 @@ M11 = {
                 , '205' : {
                     'name' : 'Kraken\'s Eye'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '206328'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1460,7 +1730,9 @@ M11 = {
                 , '202' : {
                     'name' : 'Gargoyle Sentinel'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '204985'
                     , 'type' : 'Artifact Creature  — Gargoyle'
                     , 'pt' : '(3/3)'
@@ -1469,7 +1741,9 @@ M11 = {
                 , '87' : {
                     'name' : 'Corrupt'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '5B'
+                    , 'cmc' : '6'
                     , 'multiverse' : '207106'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1478,7 +1752,9 @@ M11 = {
                 , '111' : {
                     'name' : 'Rise from the Grave'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '4B'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205113'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1487,7 +1763,9 @@ M11 = {
                 , '199' : {
                     'name' : 'Demon\'s Horn'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '206326'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1496,7 +1774,9 @@ M11 = {
                 , '14' : {
                     'name' : 'Goldenglow Moth'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '208295'
                     , 'type' : 'Creature  — Insect'
                     , 'pt' : '(0/1)'
@@ -1505,7 +1785,9 @@ M11 = {
                 , '54' : {
                     'name' : 'Frost Titan'
                     , 'rarity' : 'M'
+                    , 'color' : 'U'
                     , 'cost' : '4UU'
+                    , 'cmc' : '6'
                     , 'multiverse' : '204999'
                     , 'type' : 'Creature  — Giant'
                     , 'pt' : '(6/6)'
@@ -1514,7 +1796,9 @@ M11 = {
                 , '176' : {
                     'name' : 'Hornet Sting'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205050'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1523,7 +1807,9 @@ M11 = {
                 , '12' : {
                     'name' : 'Elite Vanguard'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '208291'
                     , 'type' : 'Creature  — Human Soldier'
                     , 'pt' : '(2/1)'
@@ -1532,7 +1818,9 @@ M11 = {
                 , '66' : {
                     'name' : 'Negate'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '208222'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1541,7 +1829,9 @@ M11 = {
                 , '112' : {
                     'name' : 'Rotting Legion'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '4B'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205047'
                     , 'type' : 'Creature  — Zombie'
                     , 'pt' : '(4/5)'
@@ -1550,7 +1840,9 @@ M11 = {
                 , '182' : {
                     'name' : 'Nature\'s Spiral'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '207338'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1559,7 +1851,9 @@ M11 = {
                 , '24' : {
                     'name' : 'Roc Egg'
                     , 'rarity' : 'U'
+                    , 'color' : 'W'
                     , 'cost' : '2W'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205055'
                     , 'type' : 'Creature  — Bird'
                     , 'pt' : '(0/3)'
@@ -1568,7 +1862,9 @@ M11 = {
                 , '213' : {
                     'name' : 'Triskelion'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '6'
+                    , 'cmc' : '6'
                     , 'multiverse' : '206719'
                     , 'type' : 'Artifact Creature  — Construct'
                     , 'pt' : '(1/1)'
@@ -1577,7 +1873,9 @@ M11 = {
                 , '147' : {
                     'name' : 'Manic Vandal'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '208007'
                     , 'type' : 'Creature  — Human Warrior'
                     , 'pt' : '(2/2)'
@@ -1586,7 +1884,9 @@ M11 = {
                 , '77' : {
                     'name' : 'Wall of Frost'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '1UU'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205128'
                     , 'type' : 'Creature  — Wall'
                     , 'pt' : '(0/7)'
@@ -1595,7 +1895,9 @@ M11 = {
                 , '173' : {
                     'name' : 'Giant Growth'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205224'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1604,7 +1906,9 @@ M11 = {
                 , '203' : {
                     'name' : 'Jinxed Idol'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '208006'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1613,7 +1917,9 @@ M11 = {
                 , '65' : {
                     'name' : 'Mind Control'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '3UU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '208220'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1622,7 +1928,9 @@ M11 = {
                 , '120' : {
                     'name' : 'Arc Runner'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '204991'
                     , 'type' : 'Creature  — Elemental Ox'
                     , 'pt' : '(5/1)'
@@ -1631,7 +1939,9 @@ M11 = {
                 , '198' : {
                     'name' : 'Crystal Ball'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205049'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1640,7 +1950,9 @@ M11 = {
                 , '107' : {
                     'name' : 'Phylactery Lich'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : 'BBB'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205034'
                     , 'type' : 'Creature  — Zombie'
                     , 'pt' : '(5/5)'
@@ -1649,7 +1961,9 @@ M11 = {
                 , '223' : {
                     'name' : 'Sunpetal Grove'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '205124'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1658,7 +1972,9 @@ M11 = {
                 , '75' : {
                     'name' : 'Traumatize'
                     , 'rarity' : 'R'
+                    , 'color' : 'U'
                     , 'cost' : '3UU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '208221'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1667,7 +1983,9 @@ M11 = {
                 , '104' : {
                     'name' : 'Necrotic Plague'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '2BB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '207104'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1676,7 +1994,9 @@ M11 = {
                 , '27' : {
                     'name' : 'Serra Ascendant'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '204989'
                     , 'type' : 'Creature  — Human Monk'
                     , 'pt' : '(1/1)'
@@ -1685,7 +2005,9 @@ M11 = {
                 , '195' : {
                     'name' : 'Yavimaya Wurm'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '4GG'
+                    , 'cmc' : '6'
                     , 'multiverse' : '205221'
                     , 'type' : 'Creature  — Wurm'
                     , 'pt' : '(6/4)'
@@ -1694,7 +2016,9 @@ M11 = {
                 , '121' : {
                     'name' : 'Berserkers of Blood Ridge'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '4R'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205053'
                     , 'type' : 'Creature  — Human Berserker'
                     , 'pt' : '(4/4)'
@@ -1703,7 +2027,9 @@ M11 = {
                 , '122' : {
                     'name' : 'Bloodcrazed Goblin'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205007'
                     , 'type' : 'Creature  — Goblin Berserker'
                     , 'pt' : '(2/2)'
@@ -1712,7 +2038,9 @@ M11 = {
                 , '222' : {
                     'name' : 'Rootbound Crag'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '205114'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -1721,7 +2049,9 @@ M11 = {
                 , '187' : {
                     'name' : 'Primeval Titan'
                     , 'rarity' : 'M'
+                    , 'color' : 'G'
                     , 'cost' : '4GG'
+                    , 'cmc' : '6'
                     , 'multiverse' : '205027'
                     , 'type' : 'Creature  — Giant'
                     , 'pt' : '(6/6)'
@@ -1730,7 +2060,9 @@ M11 = {
                 , '134' : {
                     'name' : 'Fireball'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : 'XR'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205223'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1739,7 +2071,9 @@ M11 = {
                 , '188' : {
                     'name' : 'Prized Unicorn'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205111'
                     , 'type' : 'Creature  — Unicorn'
                     , 'pt' : '(2/2)'
@@ -1748,7 +2082,9 @@ M11 = {
                 , '144' : {
                     'name' : 'Leyline of Punishment'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '2RR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205018'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -1757,7 +2093,9 @@ M11 = {
                 , '33' : {
                     'name' : 'Stormfront Pegasus'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '208294'
                     , 'type' : 'Creature  — Pegasus'
                     , 'pt' : '(2/1)'
@@ -1766,7 +2104,9 @@ M11 = {
                 , '70' : {
                     'name' : 'Scroll Thief'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '2U'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205004'
                     , 'type' : 'Creature  — Merfolk Rogue'
                     , 'pt' : '(1/3)'
@@ -1775,7 +2115,9 @@ M11 = {
                 , '78' : {
                     'name' : 'Water Servant'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '2UU'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205006'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(3/4)'
@@ -1784,7 +2126,9 @@ M11 = {
                 , '98' : {
                     'name' : 'Howling Banshee'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '2BB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205100'
                     , 'type' : 'Creature  — Spirit'
                     , 'pt' : '(3/3)'
@@ -1793,7 +2137,9 @@ M11 = {
                 , '123' : {
                     'name' : 'Canyon Minotaur'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '208000'
                     , 'type' : 'Creature  — Minotaur Warrior'
                     , 'pt' : '(3/3)'
@@ -1802,7 +2148,9 @@ M11 = {
                 , '215' : {
                     'name' : 'Warlord\'s Axe'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205057'
                     , 'type' : 'Artifact  — Equipment'
                     , 'pt' : ''
@@ -1811,7 +2159,9 @@ M11 = {
                 , '19' : {
                     'name' : 'Knight Exemplar'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : '1WW'
+                    , 'cmc' : '3'
                     , 'multiverse' : '204988'
                     , 'type' : 'Creature  — Human Knight'
                     , 'pt' : '(2/2)'
@@ -1820,7 +2170,9 @@ M11 = {
                 , '186' : {
                     'name' : 'Primal Cocoon'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '204995'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1829,7 +2181,9 @@ M11 = {
                 , '116' : {
                     'name' : 'Unholy Strength'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205237'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -1838,7 +2192,9 @@ M11 = {
                 , '97' : {
                     'name' : 'Haunting Echoes'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : '3BB'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205005'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1847,7 +2203,9 @@ M11 = {
                 , '129' : {
                     'name' : 'Destructive Force'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '5RR'
+                    , 'cmc' : '7'
                     , 'multiverse' : '205046'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1856,7 +2214,9 @@ M11 = {
                 , '52' : {
                     'name' : 'Flashfreeze'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '208219'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1865,7 +2225,9 @@ M11 = {
                 , '5' : {
                     'name' : 'Assault Griffin'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '3W'
+                    , 'cmc' : '4'
                     , 'multiverse' : '208296'
                     , 'type' : 'Creature  — Griffin'
                     , 'pt' : '(3/2)'
@@ -1874,7 +2236,9 @@ M11 = {
                 , '184' : {
                     'name' : 'Overwhelming Stampede'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '3GG'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205003'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1883,7 +2247,9 @@ M11 = {
                 , '155' : {
                     'name' : 'Vulshok Berserker'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '208011'
                     , 'type' : 'Creature  — Human Berserker'
                     , 'pt' : '(3/2)'
@@ -1892,7 +2258,9 @@ M11 = {
                 , '73' : {
                     'name' : 'Time Reversal'
                     , 'rarity' : 'M'
+                    , 'color' : 'U'
                     , 'cost' : '3UU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205022'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1901,7 +2269,9 @@ M11 = {
                 , '194' : {
                     'name' : 'Wall of Vines'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '204983'
                     , 'type' : 'Creature  — Plant Wall'
                     , 'pt' : '(0/3)'
@@ -1910,7 +2280,9 @@ M11 = {
                 , '183' : {
                     'name' : 'Obstinate Baloth'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : '2GG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205075'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(4/4)'
@@ -1919,7 +2291,9 @@ M11 = {
                 , '162' : {
                     'name' : 'Brindle Boar'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205039'
                     , 'type' : 'Creature  — Boar'
                     , 'pt' : '(2/2)'
@@ -1928,7 +2302,9 @@ M11 = {
                 , '216' : {
                     'name' : 'Whispersilk Cloak'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '3'
+                    , 'cmc' : '3'
                     , 'multiverse' : '206342'
                     , 'type' : 'Artifact  — Equipment'
                     , 'pt' : ''
@@ -1937,7 +2313,9 @@ M11 = {
                 , '172' : {
                     'name' : 'Garruk\'s Packleader'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '4G'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205060'
                     , 'type' : 'Creature  — Beast'
                     , 'pt' : '(4/4)'
@@ -1946,7 +2324,9 @@ M11 = {
                 , '58' : {
                     'name' : 'Jace\'s Ingenuity'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '3UU'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205015'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -1955,7 +2335,9 @@ M11 = {
                 , '217' : {
                     'name' : 'Wurm\'s Tooth'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '206330'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -1964,7 +2346,9 @@ M11 = {
                 , '143' : {
                     'name' : 'Lava Axe'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '4R'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205117'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -1973,7 +2357,9 @@ M11 = {
                 , '189' : {
                     'name' : 'Protean Hydra'
                     , 'rarity' : 'R'
+                    , 'color' : 'G'
                     , 'cost' : 'XG'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205112'
                     , 'type' : 'Creature  — Hydra'
                     , 'pt' : '(0/0)'
@@ -1982,7 +2368,9 @@ M11 = {
                 , '44' : {
                     'name' : 'Augury Owl'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1U'
+                    , 'cmc' : '2'
                     , 'multiverse' : '208225'
                     , 'type' : 'Creature  — Bird'
                     , 'pt' : '(1/1)'
@@ -1991,7 +2379,9 @@ M11 = {
                 , '109' : {
                     'name' : 'Reassembling Skeleton'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205066'
                     , 'type' : 'Creature  — Skeleton Warrior'
                     , 'pt' : '(1/1)'
@@ -2000,7 +2390,9 @@ M11 = {
                 , '91' : {
                     'name' : 'Diabolic Tutor'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '2BB'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205222'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2009,7 +2401,9 @@ M11 = {
                 , '163' : {
                     'name' : 'Cudgel Troll'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '2GG'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205084'
                     , 'type' : 'Creature  — Troll'
                     , 'pt' : '(4/3)'
@@ -2018,7 +2412,9 @@ M11 = {
                 , '200' : {
                     'name' : 'Dragon\'s Claw'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '206327'
                     , 'type' : 'Artifact'
                     , 'pt' : ''
@@ -2027,7 +2423,9 @@ M11 = {
                 , '179' : {
                     'name' : 'Llanowar Elves'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205228'
                     , 'type' : 'Creature  — Elf Druid'
                     , 'pt' : '(1/1)'
@@ -2036,7 +2434,9 @@ M11 = {
                 , '79' : {
                     'name' : 'Assassinate'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205217'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2045,7 +2445,9 @@ M11 = {
                 , '145' : {
                     'name' : 'Lightning Bolt'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : 'R'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205227'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2054,7 +2456,9 @@ M11 = {
                 , '9' : {
                     'name' : 'Cloud Crusader'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '2WW'
+                    , 'cmc' : '4'
                     , 'multiverse' : '208287'
                     , 'type' : 'Creature  — Human Knight'
                     , 'pt' : '(2/3)'
@@ -2063,7 +2467,9 @@ M11 = {
                 , '86' : {
                     'name' : 'Child of Night'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205122'
                     , 'type' : 'Creature  — Vampire'
                     , 'pt' : '(2/1)'
@@ -2072,7 +2478,9 @@ M11 = {
                 , '103' : {
                     'name' : 'Nantuko Shade'
                     , 'rarity' : 'R'
+                    , 'color' : 'B'
                     , 'cost' : 'BB'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205229'
                     , 'type' : 'Creature  — Insect Shade'
                     , 'pt' : '(2/1)'
@@ -2081,7 +2489,9 @@ M11 = {
                 , '191' : {
                     'name' : 'Sacred Wolf'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '2G'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205023'
                     , 'type' : 'Creature  — Wolf'
                     , 'pt' : '(3/1)'
@@ -2090,7 +2500,9 @@ M11 = {
                 , '209' : {
                     'name' : 'Steel Overseer'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : '2'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205036'
                     , 'type' : 'Artifact Creature  — Construct'
                     , 'pt' : '(1/1)'
@@ -2099,7 +2511,9 @@ M11 = {
                 , '174' : {
                     'name' : 'Giant Spider'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : '3G'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205225'
                     , 'type' : 'Creature  — Spider'
                     , 'pt' : '(2/4)'
@@ -2108,7 +2522,9 @@ M11 = {
                 , '220' : {
                     'name' : 'Glacial Fortress'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '205094'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -2117,7 +2533,9 @@ M11 = {
                 , '40' : {
                     'name' : '�ther Adept'
                     , 'rarity' : 'C'
+                    , 'color' : 'U'
                     , 'cost' : '1UU'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205020'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(2/2)'
@@ -2126,7 +2544,9 @@ M11 = {
                 , '41' : {
                     'name' : 'Air Servant'
                     , 'rarity' : 'U'
+                    , 'color' : 'U'
                     , 'cost' : '4U'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205070'
                     , 'type' : 'Creature  — Elemental'
                     , 'pt' : '(4/3)'
@@ -2135,7 +2555,9 @@ M11 = {
                 , '94' : {
                     'name' : 'Duress'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : 'B'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205024'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2144,7 +2566,9 @@ M11 = {
                 , '169' : {
                     'name' : 'Fog'
                     , 'rarity' : 'C'
+                    , 'color' : 'G'
                     , 'cost' : 'G'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205064'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2153,7 +2577,9 @@ M11 = {
                 , '30' : {
                     'name' : 'Silvercoat Lion'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '208283'
                     , 'type' : 'Creature  — Cat'
                     , 'pt' : '(2/2)'
@@ -2162,7 +2588,9 @@ M11 = {
                 , '210' : {
                     'name' : 'Stone Golem'
                     , 'rarity' : 'U'
+                    , 'color' : 'A'
                     , 'cost' : '5'
+                    , 'cmc' : '5'
                     , 'multiverse' : '205056'
                     , 'type' : 'Artifact Creature  — Golem'
                     , 'pt' : '(4/4)'
@@ -2171,7 +2599,9 @@ M11 = {
                 , '219' : {
                     'name' : 'Drowned Catacomb'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '205090'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -2180,7 +2610,9 @@ M11 = {
                 , '207' : {
                     'name' : 'Platinum Angel'
                     , 'rarity' : 'M'
+                    , 'color' : 'A'
                     , 'cost' : '7'
+                    , 'cmc' : '7'
                     , 'multiverse' : '206329'
                     , 'type' : 'Artifact Creature  — Angel'
                     , 'pt' : '(4/4)'
@@ -2189,7 +2621,9 @@ M11 = {
                 , '148' : {
                     'name' : 'Prodigal Pyromancer'
                     , 'rarity' : 'U'
+                    , 'color' : 'R'
                     , 'cost' : '2R'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205231'
                     , 'type' : 'Creature  — Human Wizard'
                     , 'pt' : '(1/1)'
@@ -2198,7 +2632,9 @@ M11 = {
                 , '100' : {
                     'name' : 'Liliana\'s Caress'
                     , 'rarity' : 'U'
+                    , 'color' : 'B'
                     , 'cost' : '1B'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205035'
                     , 'type' : 'Enchantment'
                     , 'pt' : ''
@@ -2207,7 +2643,9 @@ M11 = {
                 , '127' : {
                     'name' : 'Cyclops Gladiator'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '1RRR'
+                    , 'cmc' : '4'
                     , 'multiverse' : '205107'
                     , 'type' : 'Creature  — Cyclops Warrior'
                     , 'pt' : '(4/4)'
@@ -2216,7 +2654,9 @@ M11 = {
                 , '128' : {
                     'name' : 'Demolish'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '3R'
+                    , 'cmc' : '4'
                     , 'multiverse' : '208005'
                     , 'type' : 'Sorcery'
                     , 'pt' : ''
@@ -2225,7 +2665,9 @@ M11 = {
                 , '226' : {
                     'name' : 'Island'
                     , 'rarity' : 'L'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '213617'
                     , 'type' : 'Basic Land  — Island'
                     , 'pt' : ''
@@ -2234,7 +2676,9 @@ M11 = {
                 , '149' : {
                     'name' : 'Pyretic Ritual'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '205067'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2243,7 +2687,9 @@ M11 = {
                 , '80' : {
                     'name' : 'Barony Vampire'
                     , 'rarity' : 'C'
+                    , 'color' : 'B'
                     , 'cost' : '2B'
+                    , 'cmc' : '3'
                     , 'multiverse' : '205001'
                     , 'type' : 'Creature  — Vampire'
                     , 'pt' : '(3/2)'
@@ -2252,7 +2698,9 @@ M11 = {
                 , '21' : {
                     'name' : 'Mighty Leap'
                     , 'rarity' : 'C'
+                    , 'color' : 'W'
                     , 'cost' : '1W'
+                    , 'cmc' : '2'
                     , 'multiverse' : '208280'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2261,7 +2709,9 @@ M11 = {
                 , '154' : {
                     'name' : 'Volcanic Strength'
                     , 'rarity' : 'C'
+                    , 'color' : 'R'
                     , 'cost' : '1R'
+                    , 'cmc' : '2'
                     , 'multiverse' : '208004'
                     , 'type' : 'Enchantment  — Aura'
                     , 'pt' : ''
@@ -2270,7 +2720,9 @@ M11 = {
                 , '221' : {
                     'name' : 'Mystifying Maze'
                     , 'rarity' : 'R'
+                    , 'color' : 'A'
                     , 'cost' : ''
+                    , 'cmc' : '0'
                     , 'multiverse' : '204978'
                     , 'type' : 'Land'
                     , 'pt' : ''
@@ -2279,7 +2731,9 @@ M11 = {
                 , '146' : {
                     'name' : 'Magma Phoenix'
                     , 'rarity' : 'R'
+                    , 'color' : 'R'
                     , 'cost' : '3RR'
+                    , 'cmc' : '5'
                     , 'multiverse' : '208003'
                     , 'type' : 'Creature  — Phoenix'
                     , 'pt' : '(3/3)'
@@ -2288,7 +2742,9 @@ M11 = {
                 , '29' : {
                     'name' : 'Silence'
                     , 'rarity' : 'R'
+                    , 'color' : 'W'
                     , 'cost' : 'W'
+                    , 'cmc' : '1'
                     , 'multiverse' : '205119'
                     , 'type' : 'Instant'
                     , 'pt' : ''
@@ -2297,7 +2753,9 @@ M11 = {
                 , '160' : {
                     'name' : 'Back to Nature'
                     , 'rarity' : 'U'
+                    , 'color' : 'G'
                     , 'cost' : '1G'
+                    , 'cmc' : '2'
                     , 'multiverse' : '208284'
                     , 'type' : 'Instant'
                     , 'pt' : ''
