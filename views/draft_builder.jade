@@ -1,10 +1,11 @@
 #draft-builder(style="display:none;")
   #top-screen
-    #img-preview.pull-left
-    #card-pool
-      #card-pool-scroll(style="overflow:scroll;")
+    #preview-wrapper.well
+      #img-preview
+    #card-pool.well
+      #card-pool-scroll
         #card-pool-inner
-          #card-pool-row-0(style="padding-top:3px;padding-bottom:3px;")
+          #card-pool-row-0(style="padding-top:3px;")
             #card-pool-0-0.card
             #card-pool-0-1.card
             #card-pool-0-2.card
@@ -14,17 +15,19 @@
             #card-pool-0-6.card
   #control-bar
     #mainboard-breakdown.pull-left
-      span#mainboard-total 0/40
-      span#mainboard-creatures Creatures: 0
-      span#mainboard-lands Lands: 0
-    #card-size-slider(style="display:inline-block;color:#fff;")
+      #mainboard-total.well 0
+      span(style="margin-left:3px;") /40
+      span(style="margin-left:17px;margin-right:3px;") Creatures:
+      #mainboard-creatures.well 0
+      span(style="margin-left:17px;margin-right:3px;") Lands:
+      #mainboard-lands.well 0
+    #card-size-slider.well(style="display:inline-block;color:#fff;")
       input#slide(type="range", min="70", max="170", step="1", value="100", onchange="cardSizeChange(this.value);")
     #sort
       .input-prepend
         #sort-wrapper.btn-primary
           .btn-group
-            button#sort-button.btn.btn-small.btn-primary.dropdown-toggle(data-toggle="dropdown")
-              i.icon-refresh.icon-white
+            button#sort-button.btn.btn-mini.btn-primary.dropdown-toggle(data-toggle="dropdown")
               span Sort
             ul.dropdown-menu
               li
@@ -39,7 +42,7 @@
               option#sort-rarity by rarity
     #add-land.pull-right(style="text-align:center;margin:0px;")
       .btn-group
-        button#add-land-button.btn.btn-small.btn-success.dropdown-toggle(data-toggle="dropdown")
+        button#add-land-button.btn.btn-mini.btn-success.dropdown-toggle(data-toggle="dropdown")
           span Add Land
         ul#add-land-dropdown.dropdown-menu(style="top:18px;left:-35px;width:136px;min-width:136px;")
           li#white-mana
@@ -71,7 +74,7 @@
             button.btn.btn-small.btn-primary(style="margin-right:4px;") Suggest
             button.btn.btn-small.btn-success Add
   #bottom-screen
-    #deck-area
+    #deck-area.well
       #deck-area-scroll
         #deck-area-inner
           #deck-area-row-0(style="padding-top:3px;")
