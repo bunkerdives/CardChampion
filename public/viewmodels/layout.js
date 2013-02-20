@@ -1,4 +1,36 @@
+ko.plugin = function( configuration ) {
+    
+    var self = this;
+    
+    self.template = configuration.template || '';
+    self.context = configuration.context || '';
+    
+};
 
+ko.bindingHandlers.plugin = {
+    update: function(element, valueAccessor, allBindingsAccessor) {
+        var viewModel = valueAccessor();
+
+        $(element).html('<div id="templateContainer"></div>');
+        var $container = $(element).children('#templateContainer');
+        
+        //ko.renderTemplate( viewModel.template, viewModel, {}, $container, 'replaceNode' );
+        ko.renderTemplate( viewModel.template, viewModel.context, {}, $container, 'replaceNode' );
+    }
+};
+
+var vm = function() {
+    
+    this.plugin = new ko.plugin( { template : "splash", context : SplashViewModel } );
+    
+    //this.foyer = ko.observable();
+    
+}
+
+ko.applyBindings( new vm() );
+
+
+/*
 var View = function( name ) {
     this.templateName = name;
 };
@@ -14,20 +46,17 @@ var LayoutViewModel = function() {
     this.splashVM = SplashViewModel;
     this.foyerSetListVM = FoyerSetListViewModel;
     
-    this.tabs = ko.observableArray( [
-        new Tab("sealed", "Sealed")
-    ] );
+    this.selectedView = ko.observable("splash");
+    this.header = ko.observable("header");
+    this.splashView = ko.observable("splash");
+    this.foyer = ko.observable("foyer");
     
     this.views = ko.observableArray( [
         new View("splash")
         , new View("foyer")
     ] );
     
-    this.selectedView = ko.observable("splash");
-    this.header = ko.observable("header");
-    this.splashView = ko.observable("splash");
-    this.foyer = ko.observable("foyer");
-    
 };
 
 ko.applyBindings( new LayoutViewModel() );
+*/

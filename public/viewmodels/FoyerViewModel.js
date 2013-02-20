@@ -1,6 +1,6 @@
-var FoyerSetListViewModel = {
+var FoyerViewModel = function() {
     
-    setQueues : ko.observableArray( [
+    this.setQueues = ko.observableArray( [
         {
           "setName" : "Gatecrash (GTC)"
           , "queueSize" : "0/8"
@@ -230,3 +230,9 @@ var FoyerSetListViewModel = {
     ] )
     
 };
+
+ko.utils.extend( FoyerViewModel.prototype, {
+    init: function(){
+        console.log("FoyerSetList init")
+    }
+} );

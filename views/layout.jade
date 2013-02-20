@@ -103,8 +103,8 @@ html(lang='en')
   body
     include header
     <div id="content">
-    <div data-bind="template: selectedView"></div>
+    <div data-bind="plugin: plugin"></div>
     </div>
-    script(src="viewmodels/FoyerSetList.js")
+    script(src="viewmodels/FoyerViewModel.js")
     script(src="viewmodels/splash.js")
     script(src="viewmodels/layout.js")

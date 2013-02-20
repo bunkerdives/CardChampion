@@ -1,8 +1,10 @@
 var SplashViewModel = {
     
     showFoyer : function(layout){
-        console.log("showFoyer");
-        layout.selectedView("foyer");
+        var context = new FoyerViewModel();
+        var foyer = new ko.plugin( { template: "foyer", context: context } );
+        ko.applyBindings( { plugin: foyer } );
+        context.init();
     }
     
 };
