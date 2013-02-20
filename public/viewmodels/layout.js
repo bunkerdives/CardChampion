@@ -15,13 +15,17 @@ ko.bindingHandlers.plugin = {
         var $container = $(element).children('#templateContainer');
         
         //ko.renderTemplate( viewModel.template, viewModel, {}, $container, 'replaceNode' );
-        ko.renderTemplate( viewModel.template, viewModel.context, {}, $container, 'replaceNode' );
-    }
+        ko.renderTemplate( viewModel.template, viewModel.context, {
+        	afterRender: function(renderedElement){
+        		viewModel.context.init();
+        	}
+        }, $container, 'replaceNode' );
+		}
 };
 
 var vm = function() {
     
-    this.plugin = new ko.plugin( { template : "splash", context : SplashViewModel } );
+    this.plugin = new ko.plugin( { template : "splash", context : new SplashViewModel() } );
     
     //this.foyer = ko.observable();
     

@@ -233,6 +233,7 @@ var FoyerViewModel = function() {
 
 ko.utils.extend( FoyerViewModel.prototype, {
     init: function(){
-        console.log("FoyerSetList init")
+        console.log("FoyerSetList init");
+				foyerLayout();
     }
 } );
