@@ -1,0 +1,51 @@
+<div id="foyer">
+  <div id="chat" class="row">
+    <div id="chat-shown" class="span12">
+      <div class="row-fluid" style="text-align:center;">
+        <div id="left-pane">
+          <div id="convo" class="span12">
+            <div id="convo-inner">
+              <div class="chat-msg">
+                <span>Welcome to LimitedMTG.com!</span>
+              </div>
+            </div>
+          </div>
+          <div id="chat-input" class="span12">
+            <textarea id="chat-msg" class="span9"/>
+            <button id="chat-send-btn" class="btn btn-small btn-success">Send</button>
+            <input id="color-picker" type="color">
+          </div>
+        </div>
+        <div id="middle-pane">
+          <div id="userlist" class="span12"/>
+        </div>
+        <div id="right-pane">
+          <div id="sets" class="span12">
+            <table class="table table-bordered table-striped">
+              <tbody data-bind="foreach: $root.foyerSetListVM.setQueues">
+                <tr>
+                  <td class="set-title set-td" data-bind="text: setName"/>
+                  <td class="set-queue set-td" data-bind="text: queueSize"/>
+                </tr>
+            </table>
+          </div>
+          <div id="set-select" class="span12">
+            <button id="select-draft-button" class="btn btn-small">Draft</button>
+            <button id="select-sealed-button" class="btn btn-small">Sealed</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="nickname-lightbox" class="opacity60" style="display:none;">
+    <div id="nickname-lightbox-inner">
+      <a id="hide-lightbox-button">
+        <i class="icon-remove icon-white pull-right"/>
+      </a>
+      <h2 style="padding-top:15px;">Please provide a nickname:</h2>
+      <input id="nick-input"/>
+      <br>
+      <button id="nick-submit-btn" class="btn btn-success btn-large" style="margin-top:15px;">Submit</button>
+    </div>
+  </div>
+</div>
