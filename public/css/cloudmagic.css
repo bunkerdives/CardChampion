@@ -23,28 +23,45 @@ textarea {
 
 
 
+.raised {
+	-moz-box-shadow: inset 0 -5px 15px -3px rgba(0, 0, 0, 0.8), inset 0 5px 15px -6px rgba(255, 255, 255, 0.3);
+	-webkit-box-shadow: inset 0 -5px 15px -3px rgba(0, 0, 0, 0.8), inset 0 5px 15px -6px rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 -5px 15px -3px rgba(0, 0, 0, 0.8), inset 0 5px 15px -6px rgba(255, 255, 255, 0.3);
+  /*-webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 -1px 0, rgba(0, 0, 0, 0.8) 0 -1px 7px 0px inset;
+  -moz-box-shadow: rgba(255, 255, 255, 0.1) 0 -1px 0, rgba(0, 0, 0, 0.8) 0 -1px 7px 0px inset;
+  box-shadow: rgba(255, 255, 255, 0.1) 0 -1px 0, rgba(0, 0, 0, 0.8) 0 -1px 7px 0px inset;*/
+  background: #202020;
+  border: 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+
 
 /* Header */
 	#header #open {
 		height:30px;/* linked with #content padding-top */
 		margin-bottom: 0;
-		
+		background-color:#2f2f2f;
 		position: fixed;
 		right: 0;
 		left: 0;
 		z-index: 1030;
+	}
+	
+	#header .foyer-header {
+		-webkit-box-shadow: 0px 1px 7px #111;
+		-moz-box-shadow:    0px 1px 7px #111;
+		box-shadow:         0px 1px 7px #111;
 		
-		/*background-color: #fafafa;
-		background-image: -moz-linear-gradient(top, #fff, #bbb);
-		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#bbb));
-		background-image: -webkit-linear-gradient(top, #fff, #bbb);
-		background-image: -o-linear-gradient(top, #fff, #bbb);
-		background-image: linear-gradient(to bottom, #fff, #bbb);
-		background-repeat: repeat-x;*/
-				
-		/*-webkit-box-shadow: 0px 1px 6px #000, inset 0px 0px 1px #aaa;
-		-moz-box-shadow:    0px 1px 6px #000, inset 0px 0px 1px #aaa;
-		box-shadow:         0px 1px 6px #000, inset 0px 0px 1px #aaa;*/
+		background-color: #fafafa;
+		background-image: -moz-linear-gradient(top, #333, #111);
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333), to(#111));
+		background-image: -webkit-linear-gradient(top, #333, #111);
+		background-image: -o-linear-gradient(top, #333, #111);
+		background-image: linear-gradient(to bottom, #333, #111);
+		background-repeat: repeat-x;
 	}
 	
 	#header #open img {
@@ -152,39 +169,31 @@ textarea {
 
 
 /* Foyer */
-#foyer .span12 {
-	margin-left:0;
+#foyer {
+	background-image:url('http://media.wizards.com/images/magic/daily/wallpapers/Black_Lotus_MTGOweek_1920x1080_Wallpaper.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:-50px -50px;
+}
+#foyer #foyer-content-container {
+	margin-left:auto;
+	margin-right:auto;
+	padding:20px 10px;
+	width:936px;
+	height:auto;
+	background-color:transparent;
+	background-image:url('/img/transparent-foyer-bg.png');
+	background-repeat:repeat;
 }
 
-#foyer #chat {
-	clear:both;
-	padding-top:20px;
-	width:940px;
-	color:#000;
-}
-
-#foyer #chat-hidden {
-	width:940px;
-	text-align:center;
-}
-
-#foyer #chat-button {
-	margin-top:10px;
-}
-
-#foyer #chat #chat-shown {
-	position:absolute;
-	top:100px;
-	left:200px;
-}
-
-#foyer #chat .chat-username {
+#foyer .chat-username {
 	font-size:14px;
 	font-weight:600;
 	padding-right:5px;
+	line-height:14px;
 }
 
-#foyer #chat .chat-msg {
+#foyer .chat-msg {
 	padding-left:5px;
 	padding-right:5px;
 	padding-top:5px;
@@ -193,37 +202,75 @@ textarea {
 	line-height:14px;
 }
 
-#foyer #chat #left-pane {
-	border-top:6px solid black;
-	border-left:6px solid black;
-	border-bottom:6px solid black;
-	width:350px;
-	display:inline-block;
+#foyer #portal {
+	clear:both;
+	margin-top:20px;
+	width:936px;
+	height:429px;
+	color:#fff;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
 }
 
-#foyer #chat #convo {
-	background-color:#eee;
+#foyer #portal #left-pane-wrapper {
+	width:auto;
+	height:429px;
+	padding-right:25px;
+	border-right:1px solid #2a2a2a;
+}
+
+#foyer #portal #left-pane {
+	width:auto;
+	display:inline-block;
+	padding:5px;
+}
+
+#foyer #portal #chat {
+	margin-right:5px;
+}
+
+#foyer #portal #chat #convo {
+	width:340px;
 	height:370px;
 	overflow:auto;
 	text-align:left;
 	padding:0;
 	padding-bottom:20px;
-	margin:0;
 }
 
-#foyer #chat #chat-input {
-	background-color:#ddd;
-	margin-left:0px;
-	height:25px;
+#foyer #portal #chat #chat-input {
+	clear:both;
+	padding-top:5px;
+	height:24px;
+	width:340px;
 }
 
-#foyer #chat #chat-input textarea {
-	height:25px;
-	margin-bottom:0px;
+#foyer #portal #chat-input input {
+	height:24px;
+	width:290px;
+	margin:0px;
+	padding:0px;
 	display:inline-block;
+	-moz-border-top-right-radius:0;
+	-moz-border-bottom-right-radius:0;
+	-webkit-border-top-right-radius:0;
+	-webkit-border-bottom-right-radius:0;
+	border-top-right-radius:0;
+	border-bottom-right-radius:0;
 }
 
-#foyer #chat #chat-input #color-picker {
+#foyer #portal #chat-input button {
+	line-height:18px;
+	-moz-border-top-left-radius:0;
+	-moz-border-bottom-left-radius:0;
+	-webkit-border-top-left-radius:0;
+	-webkit-border-bottom-left-radius:0;
+	border-top-left-radius:0;
+	border-bottom-left-radius:0;
+}
+
+/*#foyer #portal #chat-input #color-picker {
 	height:25px;
 	width:25px;
 	padding-top:0px;
@@ -234,112 +281,125 @@ textarea {
 	margin-bottom:0px;
 	margin-left:5px;
 	margin-right:5px;
-}
+}*/
 
-#foyer #chat #chat-input button {
-	line-height:18px;
-	margin-top:1px;
-}
-
-#foyer #chat #middle-pane {
+#foyer #portal #userlist {
 	margin-left:0px;
-	border:6px solid black;
+	height:419px;
 	width:220px;
-	display:inline-block;
-}
-
-#foyer #chat #userlist {
-	background-color:#eee;
-	margin-left:0px;
-	height:400px;
 	overflow:auto;
 }
 
-#foyer #chat .chat-user {
+#foyer #portal .chat-user {
 	padding-right:5px;
 	padding-left:5px;
 }
 
-#foyer #chat .chat-user:hover {
+#foyer #portal .chat-user:hover {
 	cursor:pointer;
 }
 
-#foyer #chat .chat-status {
+#foyer #portal .chat-status {
 	font-size:10px;
 	font-weight:200px;
 	font-style:italic;
 }
 
-#foyer #chat #right-pane {
+#foyer #portal #right-pane {
 	margin-left:0px;
-	border:6px solid black;
-	border-left:0px;
-	border-bottom:0px;
-	width:346px;
+	width:300px;
 	display:inline-block;
+	padding:5px;
+	margin-left:25px;
 }
 
-#foyer #chat #sets {
-	height:375px;
-	background-color:#eee;
+#foyer #portal #sets {
+	height:390px;
 	overflow:auto;
 }
 
-#foyer #chat #sets .table {
+#foyer #portal #sets .table {
 	margin-bottom:0px;
 }
 
-#foyer #chat #sets tr:hover {
+#foyer #portal #sets tr:hover {
 	cursor:pointer;
 }
 
-#foyer #chat #set-select {
-	height:30px;
-	background-color:#000;
-	margin-left:0px;
+#foyer #portal #set-select {
+	clear:both;
+	height:24px;
+	margin-top:5px;
 	text-align:right;
 }
 
-#foyer #chat #set-select button {
+#foyer #portal #set-select button {
 	line-height:18px;
-	margin-top:4px;
 }
 
-#foyer #chat #select-draft-button {
-	margin-right:5px;
+#foyer #portal #select-draft-button {
+	margin-right:3px;
 }
 
-#foyer #nickname-lightbox {
-	position:fixed;
-	top:0px;
-	left:0px;
-	z-index:1200;
-	color:#ddd;
-}
-
-#foyer .opacity60 {
-	background: rgb(255, 255, 255);
-	background: rgba(255, 255, 255, 0.6);
-}
-
-#foyer #nickname-lightbox-inner {
+#foyer #divider {
+	width:936px;
+	height:26px;
 	margin-left:auto;
 	margin-right:auto;
-	width:400px;
-	height:250px;
-	background-color:#333;
-	-moz-box-shadow: 10px 10px 44px #000000;
-	-webkit-box-shadow: 10px 10px 44px #000000;
-	box-shadow: 10px 10px 44px #000000;
-	opacity:1;
-	margin-top:150px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	border:1px solid #000;
-	-moz-box-shadow: inset 0px 0px 2px #ccc;
-	-webkit-box-shadow: inset 0px 0px 2px #ccc;
-	box-shadow: inset 0px 0px 2px #ccc;
+}
+
+#foyer #divider #divider-left {
+	width:575px;
+	height:25px;
+	border-bottom:1px solid #2a2a2a;
+}
+
+#foyer #divider #divider-right {
+	width:310px;
+	height:25px;
+	border-bottom:1px solid #2a2a2a;
+}
+
+#foyer #foyer-subcontent {
+	width:936px;
+	height:216px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+#foyer #foyer-subcontent #donate {
+	width:575px;
+	height:28px;
+	margin-bottom:49px;
+	margin-top:39px;
+}
+
+#foyer #foyer-subcontent #share {
+	width:310px;
+	height:76px;
+	margin-bottom:25px;
+	margin-top:15px;
+}
+
+#foyer #foyer-subcontent #donate img {
+	width:100px;
+}
+
+#foyer #foyer-footer {
+	clear:both;
+	background-color:#1f1f1f;
+	width:956px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#foyer #foyer-disclaimer {
+	clear:both;
+	width:900px;
+	height:80px;
+	margin-left:auto;
+	margin-right:auto;
 	text-align:center;
 }
 /* Foyer end */
@@ -795,15 +855,10 @@ textarea {
 		width:20px;
 	}
 	
-	
 	.card-pool-row {
 		display:block;
 		clear:both;
 	}
-	
-	
-	
-	
 	
 	.cardResize {
 		background-color:#fff;
@@ -811,14 +866,3 @@ textarea {
 		-webkit-box-shadow:inset 0px 0px 1px 7px #aaa;
 		box-shadow:inset 0px 0px 1px 7px #aaa;
 	}
-	
-	
-
-			
-			#disclaimer {
-				position:fixed;
-				width:600px;
-				bottom:1px;
-				left:100px;
-				z-index:-1;
-			}  

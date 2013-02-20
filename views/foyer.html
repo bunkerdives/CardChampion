@@ -1,51 +1,73 @@
 <div id="foyer">
-  <div id="chat" class="row">
-    <div id="chat-shown" class="span12">
-      <div class="row-fluid" style="text-align:center;">
-        <div id="left-pane">
-          <div id="convo" class="span12">
-            <div id="convo-inner">
-              <div class="chat-msg">
-                <span>Welcome to LimitedMTG.com!</span>
+	<div id="foyer-content-container">
+    <div id="portal">
+      <div id="left-pane-wrapper" class="pull-left">
+        <div id="left-pane" class="raised pull-left">
+          <div id="chat" class="pull-left">
+            <div id="convo" class="well">
+              <div id="convo-inner">
+                <div class="chat-msg">
+                  <span>Welcome to LimitedMTG.com!</span>
+                </div>
               </div>
             </div>
+            <div id="chat-input">
+              <input id="chat-msg" class="pull-left" type="text"/>
+              <button id="chat-send-btn" class="btn btn-small pull-left">Send</button>
+            </div>
           </div>
-          <div id="chat-input" class="span12">
-            <textarea id="chat-msg" class="span9"/>
-            <button id="chat-send-btn" class="btn btn-small btn-success">Send</button>
-            <input id="color-picker" type="color">
-          </div>
+		  		<div id="userlist" class="well pull-right">
+					</div>
+				</div>
+	  	</div>
+      <div id="right-pane" class="raised pull-right">
+        <div id="sets" class="well">
+          <table class="table">
+            <tbody data-bind="foreach: $root.foyerSetListVM.setQueues">
+              <tr>
+                <td class="set-title set-td" data-bind="text: setName"/>
+                <td class="set-queue set-td" data-bind="text: queueSize"/>
+              </tr>
+						</tbody>
+          </table>
         </div>
-        <div id="middle-pane">
-          <div id="userlist" class="span12"/>
-        </div>
-        <div id="right-pane">
-          <div id="sets" class="span12">
-            <table class="table table-bordered table-striped">
-              <tbody data-bind="foreach: $root.foyerSetListVM.setQueues">
-                <tr>
-                  <td class="set-title set-td" data-bind="text: setName"/>
-                  <td class="set-queue set-td" data-bind="text: queueSize"/>
-                </tr>
-            </table>
-          </div>
-          <div id="set-select" class="span12">
-            <button id="select-draft-button" class="btn btn-small">Draft</button>
-            <button id="select-sealed-button" class="btn btn-small">Sealed</button>
-          </div>
+        <div id="set-select">
+          <button id="select-draft-button" class="btn btn-small">Draft</button>
+          <button id="select-sealed-button" class="btn btn-small">Sealed</button>
         </div>
       </div>
     </div>
-  </div>
-  <div id="nickname-lightbox" class="opacity60" style="display:none;">
-    <div id="nickname-lightbox-inner">
-      <a id="hide-lightbox-button">
-        <i class="icon-remove icon-white pull-right"/>
-      </a>
-      <h2 style="padding-top:15px;">Please provide a nickname:</h2>
-      <input id="nick-input"/>
-      <br>
-      <button id="nick-submit-btn" class="btn btn-success btn-large" style="margin-top:15px;">Submit</button>
-    </div>
-  </div>
-</div>
+	  <div id="divider">
+	  	<div id="divider-left" class="pull-left">
+	  	</div>
+	  	<div id="divider-right" class="pull-right">
+	  	</div>
+	  </div>
+	  <div id="foyer-subcontent">
+	  	<div id="donate" class="pull-left">
+	  		<img src="http://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"/>
+	  	</div>
+	  	<div id="share" class="pull-right">
+	  		<span class="lead" style="font-style:italic;">Tired of waiting in queues?</span>
+	  		<div id="share-buttons">
+	  			<span class="st_facebook_large" displayText="Facebook"></span>
+	  			<span class="st_twitter_large" displayText="Tweet"></span>
+	  			<span class="st_googleplus_large" displayText="Google +"></span>
+	  			<span class="st_tumblr_large" displayText="Tumblr"></span>
+	  			<span class="st_reddit_large" displayText="Reddit"></span>
+	  			<span class="st_pinterest_large" displayText="Pinterest"></span>
+	  		</div>
+	  	</div>
+	  </div>
+	</div>
+	<div id="foyer-footer">
+		<div id="foyer-footer-links">
+			<span><a href="#">About Us</a></span>
+			<span><a href="#">What's next?</a></span>
+			<span><a href="#">FAQ</a></span>
+		</div>
+		<div id="foyer-disclaimer">
+			<small>Magic the Gathering is TM and copyright Wizards of the Coast, Inc, a subsidiary of Hasbro, Inc. All rights reserved. This site is unaffiliated. Articles and comments are user-submitted and do not represent official endorsements of this site.</small>
+		</div>
+	</div>
+</div><!-- End #foyer -->
