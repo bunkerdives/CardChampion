@@ -7,6 +7,8 @@ html(lang='en')
     <link href="css/cloudmagic.css" rel="stylesheet"></link>
     script(src="js/jquery-1.8.0.min.js")
     script(src="/socket.io/socket.io.js")
+    script(src="js/knockout.js")
+    script(src="js/koExternalTemplateEngine_all.min.js")
     script(src="sets/gtc.js")
     script(src="sets/2ED.js")
     script(src="sets/3ED.js")
@@ -100,9 +102,9 @@ html(lang='en')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   body
     include header
-    #content
-      include splash
-      include foyer
-      include draft
-      include draft_builder
-      include builder
+    <div id="content">
+    <div data-bind="template: selectedView"></div>
+    </div>
+    script(src="viewmodels/FoyerSetList.js")
+    script(src="viewmodels/splash.js")
+    script(src="viewmodels/layout.js")

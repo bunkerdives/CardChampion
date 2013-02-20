@@ -3,8 +3,8 @@ Login = {
     user : '',
 
     init : function() {
-      console.log("client.js loaded");
-      Login.bindNameButton();
+      //console.log("client.js loaded");
+      //Login.bindNameButton();
     },
     
     bindNameButton : function() {

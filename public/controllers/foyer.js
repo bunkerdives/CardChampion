@@ -7,7 +7,7 @@ Foyer = {
     , socket : null
     
     , init : function() {
-        Foyer.registerHandlers();
+        //Foyer.registerHandlers();
     }
     
     , registerHandlers : function() {

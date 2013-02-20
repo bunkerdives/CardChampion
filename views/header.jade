@@ -1,5 +1,11 @@
-#header
+div
   #open.row-fluid.no-height(style="display:block;")
     .span10
       a(href="#")
         img(src="/img/logo.png")
+      ul.nav.nav-pills
+        li
+          a(href="#") Test
+      ul.nav.nav-pills(data-bind="foreach: tabs")
+        li
+          a(data-bind="text: title")

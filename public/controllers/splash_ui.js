@@ -30,6 +30,7 @@ function appendChat() {
 }
 
 function carouselDimensions() {
+    console.log("Carousel dimensions")
 	var windowWidth = $(window).width();
 	var windowHeight = $(window).height();
 	
@@ -67,11 +68,11 @@ function carouselDimensions() {
 }
 
 $(document).ready(function(){
-	carouselDimensions();
-	lightboxSize();
+	//carouselDimensions();
+	//lightboxSize();
 });
 
 $(window).resize(function() {
-	carouselDimensions();
-	lightboxSize();
+	//carouselDimensions();
+	//lightboxSize();
 });

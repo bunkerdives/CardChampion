@@ -8,6 +8,8 @@
     "jade": "0.27.6",
     "socket.io": "0.9.11",
     "bootstrap": "latest",
-    "jquery" : "latest"
+    "jquery" : "latest",
+    "underscore" : "latest",
+    "knockout-client" : "latest"
   }
 }
