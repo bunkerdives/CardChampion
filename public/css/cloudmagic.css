@@ -64,11 +64,16 @@ textarea {
 		background-repeat: repeat-x;
 	}
 	
-	#header #open img {
+	#header #logo {
+		padding-left:40px;
+		padding-right:20px;
+	}
+	
+	#header img {
 		height:28px;
 	}
 	
-	#header #open a {
+	/*#header #open a {
 		padding-left:40px;
 		
 		color:#444;
@@ -85,6 +90,19 @@ textarea {
 	#header #open a:hover {
 		color:#777;
 		text-decoration:none;
+	}*/
+	
+	#header .tab {
+		font-size:12px;
+		font-weight:200;
+		line-height:12px;
+		padding-top:7px;
+		padding-bottom:7px;
+		color:#888;
+	}
+	
+	.nav-pills > .active > a, .nav-pills > .active > a:hover {
+		background-color:#3a3a3a;
 	}
 
 /* Header End */	
