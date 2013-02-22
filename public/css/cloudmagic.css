@@ -245,7 +245,7 @@ textarea {
 	color:#fff;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:40px;
+	margin-top:10px;
 	text-align:center;
 }
 
@@ -378,7 +378,7 @@ textarea {
 
 #foyer .headline-txt {
 	font-size:45px;
-	font-weight:200;
+	font-weight:100;
 	line-height:45px;
 	font-style:italic;
 }
@@ -429,6 +429,7 @@ textarea {
 	margin-right:auto;
 	margin-top:30px;
 	text-align:center;
+	width:70%;
 }
 /* Foyer end */
 
