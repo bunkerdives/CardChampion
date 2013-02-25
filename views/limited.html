@@ -1,0 +1,115 @@
+<div id="draft-builder">
+  <div id="top-screen">
+    <div id="preview-wrapper" class="well">
+      <div id="img-preview"/>
+    </div>
+    <div id="card-pool" class="well">
+      <div id="card-pool-scroll">
+        <div id="card-pool-inner">
+          <div id="card-pool-row-0">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- End #top-screen -->
+  <div id="control-bar">
+    <div id="mainboard-breakdown" class="pull-left">
+      <div id="mainboard-total" class="well">0</div>
+      <span style="margin-left:3px;">/40</span>
+      <span style="margin-left:17px; margin-right:3px;">Creatures:</span>
+      <div id="mainboard-creatures" class="well">0</div>
+      <span style="margin-left:17px; margin-right:3px;">Lands:</span>
+      <div id="mainboard-lands" class="well">0</span>
+    </div><!-- End #mainboard-breakdown -->
+    <div id="card-size-slider" class="well" style="display:inline-block;color:#fff;">
+      <input id="slide" type="range" min="70" max="170" step="1" value="100"/><!-- TODO onchange callback-->
+    </div><!-- End #card-size-slider -->
+    <div id="sort">
+      <div class="input-prepend">
+        <div id="sort-wrapper" class="btn-primary">
+          <div class="btn-group">
+            <button id="sort-button" class="btn btn-mini btn-primary dropdown-toggle" data-toggle="dropdown">
+              <span>Sort</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a tabindex="-1" href="#">Mainboard</a>
+              </li>
+              <li>
+                <a tabindex="-1" href="#">Sideboard</a>
+              </li>
+            </ul>
+          </div>
+          <span id="prependedInput">
+            <select>
+              <option id="sort-color">by color</option>
+              <option id="sort-cost">by cost</option>
+              <option id="sort-type">by type</option>
+              <option id="sort-rarity">by rarity</option>
+            </select>
+          </span>
+        </div><!-- End #sort-wrapper -->
+      </div><!-- End .input-prepend -->
+    </div><!-- End #sort-->
+    <div id="add-land" class="pull-right" style="text-align:center; margin:0px;">
+      <div class="btn-group">
+        <button id="add-land-button" class="btn btn-mini btn-success dropdown-toggle">
+          <span>Add Land</span>
+        </button>
+        <ul id="add-land-dropdown" class="dropdown-menu" style="top:18px;left:-35px;width:136px;min-width:136px;">
+          <li id="white-mana">
+            <i class="icon-plus-sign pull-left" style="position:relative;top:2px;left:25px;"/>
+            <img src="/img/white-mana.jpg">
+            <span>: 0</span>
+            <i class="icon-minus-sign pull-right" style="position:relative;top:2px;right:25px;"/>
+          </li>
+          <li id="blue-mana">
+            <i class="icon-plus-sign pull-left" style="position:relative;top:2px;left:25px;"/>
+            <img src="/img/blue-mana.jpg">
+            <span>: 0</span>
+            <i class="icon-minus-sign pull-right" style="position:relative;top:2px;right:25px;"/>
+          </li>
+          <li id="black-mana">
+            <i class="icon-plus-sign pull-left" style="position:relative;top:2px;left:25px;"/>
+            <img src="/img/black-mana.jpg">
+            <span>: 0</span>
+            <i class="icon-minus-sign pull-right" style="position:relative;top:2px;right:25px;"/>
+          </li>
+          <li id="red-mana">
+            <i class="icon-plus-sign pull-left" style="position:relative;top:2px;left:25px;"/>
+            <img src="/img/red-mana.jpg">
+            <span>: 0</span>
+            <i class="icon-minus-sign pull-right" style="position:relative;top:2px;right:25px;"/>
+          </li>
+          <li id="green-mana">
+            <i class="icon-plus-sign pull-left" style="position:relative;top:2px;left:25px;"/>
+            <img src="/img/green-mana.jpg">
+            <span>: 0</span>
+            <i class="icon-minus-sign pull-right" style="position:relative;top:2px;right:25px;"/>
+          </li>
+          <li>
+            <button class="btn btn-small btn-primary" style="margin-right:4px;">Suggest</button>
+            <button class="btn btn-small btn-success">Add</button>
+          </li>
+        </ul><!-- End #add-land-dropdown -->
+      </div><!-- End .btn-group -->
+    </div><!-- End #add-land-->
+  </div><!-- End #control-bar -->
+  <div id="bottom-screen">
+    <div id="deck-area" class="well">
+      <div id="deck-area-scroll">
+        <div id="deck-area-inner">
+          <div id="deck-area-row-0">
+            <div id="deck-area-0-0" class="card"/>
+            <div id="deck-area-0-1" class="card"/>
+            <div id="deck-area-0-2" class="card"/>
+            <div id="deck-area-0-3" class="card"/>
+            <div id="deck-area-0-4" class="card"/>
+            <div id="deck-area-0-5" class="card"/>
+            <div id="deck-area-0-6" class="card"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- End #bottom-screen -->
+</div><!-- End #draft-builder -->

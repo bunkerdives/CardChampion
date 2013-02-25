@@ -8,6 +8,7 @@ ko.plugin = function( configuration ) {
 };
 
 ko.bindingHandlers.plugin = {
+    
     update: function(element, valueAccessor, allBindingsAccessor) {
         var viewModel = valueAccessor();
 
@@ -20,14 +21,13 @@ ko.bindingHandlers.plugin = {
         		viewModel.context.init();
         	}
         }, $container, 'replaceNode' );
-		}
+	}
+    
 };
 
 var vm = function() {
     
     this.plugin = new ko.plugin( { template : "splash", context : new SplashViewModel() } );
-    
-    //this.foyer = ko.observable();
     
 }
 

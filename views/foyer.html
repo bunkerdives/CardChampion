@@ -24,16 +24,16 @@
         <div id="sets" class="well">
           <table class="table">
             <tbody data-bind="foreach: setQueues">
-              <tr>
-                <td class="set-title set-td" data-bind="text: setName"/>
-                <td class="set-queue set-td" data-bind="text: queueSize"/>
+              <tr data-bind="click: selectSet">
+                <td class="set-title set-td" data-bind="text: title"/>
+                <td class="set-queue set-td" data-bind="text: size"/>
               </tr>
 						</tbody>
           </table>
         </div>
         <div id="set-select">
           <button id="select-draft-button" class="btn btn-small">Draft</button>
-          <button id="select-sealed-button" class="btn btn-small">Sealed</button>
+          <button id="select-sealed-button" class="btn btn-small" data-bind="click: startSealed">Sealed</button>
         </div>
       </div>
     </div>

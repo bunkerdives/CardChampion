@@ -11,5 +11,7 @@ var SplashViewModel = function() {
 ko.utils.extend( SplashViewModel.prototype, {
     init: function(){
         console.log("SplashViewModel init");
+        carouselDimensions();
+        lightboxSize();
     }
-} );
+} ); 
