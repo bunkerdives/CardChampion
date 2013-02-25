@@ -4,7 +4,7 @@
       a#logo.pull-left(href="#")
         img(src="/img/logo.png")
       ul.nav.nav-pills
-        li.active
+        li#tab1.active.well
           a.tab(href="#") Active
-        li
-          a.tab(href="") Tab
+        li#tab2
+          a.tab(href="#", onclick="tabtest();") Tab
