@@ -398,6 +398,10 @@ textarea {
 	line-height:38px;
 }
 
+#foyer #foyer-subcontent #donate {
+	font-family: 'Raleway', sans-serif;
+}
+
 #foyer #foyer-subcontent #donate img {
 	width:100px;
 }
@@ -758,6 +762,12 @@ textarea {
 		padding-left:3px;
 	}
 	
+	#draft-builder .column {
+		padding-top:3px;
+		display:inline-block;
+		float:left;
+	}
+	
 	#draft-builder #control-bar {
 		padding-top:3px;
 		padding-bottom:3px;
@@ -790,10 +800,9 @@ textarea {
 	}
 	
 	#draft-builder .card {
-		display:inline;
+		display:block;
 		background-position: 0px -1px;
 		background-repeat: no-repeat;
-		float:left;
 		margin-right:3px;
 		-webkit-border-radius: 6.5%;
 		-moz-border-radius: 6.5%;
@@ -805,7 +814,8 @@ textarea {
 		width:143px;
 		background-size:143px 198.7px;
 		position:relative;
-		z-index:-1;
+		
+		background-image:url('/img/cardback.jpg');
 	}
 	
 	#draft-builder .stack {
