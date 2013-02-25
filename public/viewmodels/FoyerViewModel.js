@@ -115,7 +115,7 @@ var setQueue = function( name, abbr, size ) {
 ko.utils.extend( FoyerViewModel.prototype, {
     init: function(){
         console.log("FoyerSetList init");
-				foyerLayout();
+		foyerLayout();
     }
     
 } );
