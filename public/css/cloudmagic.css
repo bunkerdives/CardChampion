@@ -766,6 +766,7 @@ textarea {
 		padding-top:3px;
 		display:inline-block;
 		float:left;
+		margin-top:178px;
 	}
 	
 	#draft-builder #control-bar {
@@ -812,14 +813,12 @@ textarea {
 		box-shadow:inset 0px 0px 1px 1px #888;
 		height:198.7px;
 		width:143px;
+		margin-top:-178px;
 		background-size:143px 198.7px;
 		position:relative;
+		/* z-index:-1; */
 		
 		background-image:url('/img/cardback.jpg');
-	}
-	
-	#draft-builder .stack {
-		margin-top:-178px;
 	}
 	
 	#draft-builder #mainboard-breakdown {
