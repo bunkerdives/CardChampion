@@ -5,21 +5,11 @@
     </div>
     <div id="card-pool" class="well">
       <div id="card-pool-scroll">
-        <div id="card-pool-inner">
-          <div id="card-pool-col-0" class="column">
-						<div id="#card-pool-0-0" class="card"></div>
-						<div id="#card-pool-0-1" class="card stack"></div>
-						<div id="#card-pool-0-2" class="card stack"></div>
-          </div>
-          <div id="card-pool-col-1" class="column">
-						<div id="#card-pool-1-0" class="card"></div>
-						<div id="#card-pool-1-1" class="card stack"></div>
-          </div>
-          <div id="card-pool-col-2" class="column">
-						<div id="#card-pool-2-0" class="card"></div>
-						<div id="#card-pool-2-1" class="card stack"></div>
-						<div id="#card-pool-2-2" class="card stack"></div>
-						<div id="#card-pool-2-3" class="card stack"></div>
+        <div data-bind="foreach: sideboard">
+          <div data-bind="foreach: columns">
+            <div data-bind="foreach: cards">
+              <div class="card" data-bind="style: { background: 'url(' + imgSrc() + ')' }"/>
+            </div>
           </div>
         </div>
       </div>
@@ -111,17 +101,13 @@
   <div id="bottom-screen">
     <div id="deck-area" class="well">
       <div id="deck-area-scroll">
-        <div id="deck-area-inner">
-          <div id="deck-area-row-0">
-            <div id="deck-area-0-0" class="card"/>
-            <div id="deck-area-0-1" class="card"/>
-            <div id="deck-area-0-2" class="card"/>
-            <div id="deck-area-0-3" class="card"/>
-            <div id="deck-area-0-4" class="card"/>
-            <div id="deck-area-0-5" class="card"/>
-            <div id="deck-area-0-6" class="card"/>
-          </div>
-        </div>
+       <div data-bind="foreach: mainboard">
+         <div data-bind="foreach: columns">
+           <div data-bind="foreach: cards">
+             <div class="card" data-bind="style: { background: 'url(' + imgSrc() + ')' }"/>
+           </div>
+         </div>
+       </div>
       </div>
     </div>
   </div><!-- End #bottom-screen -->

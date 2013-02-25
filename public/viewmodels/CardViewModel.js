@@ -6,7 +6,16 @@ var CardViewModel = function( cardData ) {
     this.color = cardData.color;
     this.cost = cardData.cost;
     this.cmc = cardData.cmc;
-    this.multiverse = cardData.multiverse;
     this.pt = cardData.pt;
+    this.multiverse = cardData.multiverse;
+    this.imgSrc = ko.computed( function(){
+        return 'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid='
+        + this.multiverse
+        + '&type=card';
+    }, this);
+    
+    this.cardZoom = function() {
+        
+    }
     
 }
