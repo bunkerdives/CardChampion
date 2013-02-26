@@ -7,7 +7,7 @@
       <div id="card-pool-scroll">
         <div data-bind="foreach: sideboard">
           <div data-bind="foreach: columns">
-            <div data-bind="foreach: cards">
+            <div class="column" data-bind="foreach: cards">
               <div class="card" data-bind="style: { background: 'url(' + imgSrc() + ')' }"/>
             </div>
           </div>

@@ -1,3 +1,16 @@
+var cardSizeInit = function() {
+    
+    	var cardHeight = 198.7; //standard height
+    	var cardWidth = 143; //standard width
+	
+    	$(".card").css({
+    		"height" : cardHeight,
+    		"width" : cardWidth,
+    		"background-size" : cardWidth + "px " + cardHeight + "px"
+    	});
+
+};
+
 var SealedViewModel = function( set ) {
     
     this.set = set;
@@ -127,9 +140,12 @@ var screenSize = function() {
     
 };
 
+
+
 ko.utils.extend( SealedViewModel.prototype, {
-    init: function( ) {
+    init: function() {
         console.log("SealedSetList init");
         screenSize();
+        cardSizeInit();
     }
 } );
