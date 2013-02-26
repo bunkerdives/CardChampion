@@ -22,6 +22,7 @@ var CardViewModel = function( cardData ) {
         + '&type=card';
         
         view.imgSrc( url );
+        
     }
     
 }

@@ -1,6 +1,8 @@
 <div id="draft-builder">
   <div id="top-screen">
-    <div id="img-preview" style="background-image: 'url(img/cardback.jpg)';" data-bind="style: { background: 'url(' + imgSrc() + ')' }"/>
+    <div id="preview-wrapper">
+      <div id="img-preview" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }"/>
+    </div>
     <div id="card-pool" class="well">
       <div id="card-pool-scroll">
         <div id="card-pool-inner">
