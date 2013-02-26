@@ -11,6 +11,8 @@ var FoyerViewModel = function( ) {
         var context = new SealedViewModel( this.selectedSet );
         context.newSealedInstance();
         
+        ViewModel = context;
+        
         var sealed = new ko.plugin( { template: "limited", context: context } );
         ko.applyBindings( { plugin: sealed } );
         

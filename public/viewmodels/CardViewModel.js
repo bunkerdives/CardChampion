@@ -14,8 +14,14 @@ var CardViewModel = function( cardData ) {
         + '&type=card';
     }, this);
     
-    this.cardZoom = function() {
+    this.cardZoom = function( view ) {
+        console.log( "cardZoom" );
         
+        var url = 'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid='
+        + this.multiverse
+        + '&type=card';
+        
+        view.imgSrc( url );
     }
     
 }

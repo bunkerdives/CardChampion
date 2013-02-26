@@ -31,7 +31,8 @@ var vm = function() {
     
 }
 
-ko.applyBindings( new vm() );
+var ViewModel = new vm();
+ko.applyBindings( ViewModel );
 
 
 /*

@@ -1,15 +1,13 @@
 <div id="draft-builder">
   <div id="top-screen">
-    <div id="preview-wrapper" class="well">
-      <div id="img-preview"/>
-    </div>
+    <div id="img-preview" style="background-image: 'url(img/cardback.jpg)';" data-bind="style: { background: 'url(' + imgSrc() + ')' }"/>
     <div id="card-pool" class="well">
       <div id="card-pool-scroll">
         <div id="card-pool-inner">
          <div data-bind="foreach: sideboard">
            <div data-bind="foreach: columns">
              <div class="column" data-bind="foreach: cards">
-               <div class="card" data-bind="style: { background: 'url(' + imgSrc() + ')' }"/>
+               <div class="card" data-bind="style: { background: 'url(' + imgSrc() + ')' }, event: { mouseover: function(){ cardZoom($root); } }"/>
              </div>
            </div>
          </div>

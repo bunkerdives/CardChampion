@@ -3,17 +3,18 @@ var cardSizeInit = function() {
     	var cardHeight = 198.7; //standard height
     	var cardWidth = 143; //standard width
 	
-    	$(".card").css({
+    	$(".card").css( {
     		"height" : cardHeight,
     		"width" : cardWidth,
     		"background-size" : cardWidth + "px " + cardHeight + "px"
-    	});
-
+    	} );
+        
 };
 
 var SealedViewModel = function( set ) {
     
     this.set = set;
+    this.imgSrc = ko.observable( 'img/cardback.jpg' );
     this.sideboard = ko.observableArray( [] );
     this.mainboard = ko.observableArray( [] );
     
