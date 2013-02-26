@@ -5,13 +5,15 @@
     </div>
     <div id="card-pool" class="well">
       <div id="card-pool-scroll">
-        <div data-bind="foreach: sideboard">
-          <div data-bind="foreach: columns">
-            <div class="column" data-bind="foreach: cards">
-              <div class="card" data-bind="style: { background: 'url(' + imgSrc() + ')' }"/>
-            </div>
-          </div>
-        </div>
+        <div id="card-pool-inner">
+         <div data-bind="foreach: sideboard">
+           <div data-bind="foreach: columns">
+             <div class="column" data-bind="foreach: cards">
+               <div class="card" data-bind="style: { background: 'url(' + imgSrc() + ')' }"/>
+             </div>
+           </div>
+         </div>
+       </div>
       </div>
     </div>
   </div><!-- End #top-screen -->
@@ -22,7 +24,7 @@
       <span style="margin-left:17px; margin-right:3px;">Creatures:</span>
       <div id="mainboard-creatures" class="well">0</div>
       <span style="margin-left:17px; margin-right:3px;">Lands:</span>
-      <div id="mainboard-lands" class="well">0</span>
+      <div id="mainboard-lands" class="well">0</div>
     </div><!-- End #mainboard-breakdown -->
     <div id="card-size-slider" class="well" style="display:inline-block;color:#fff;">
       <input id="slide" type="range" min="70" max="170" step="1" value="100"/><!-- TODO onchange callback-->
@@ -101,12 +103,14 @@
   <div id="bottom-screen">
     <div id="deck-area" class="well">
       <div id="deck-area-scroll">
-       <div data-bind="foreach: mainboard">
-         <div data-bind="foreach: columns">
-           <div data-bind="foreach: cards">
-             <div class="card" data-bind="style: { background: 'url(' + imgSrc() + ')' }"/>
-           </div>
-         </div>
+       <div id="deck-area-inner">
+        <div data-bind="foreach: mainboard">
+          <div data-bind="foreach: columns">
+            <div data-bind="foreach: cards">
+              <div class="card" data-bind="style: { background: 'url(' + imgSrc() + ')' }"/>
+            </div>
+          </div>
+        </div>
        </div>
       </div>
     </div>

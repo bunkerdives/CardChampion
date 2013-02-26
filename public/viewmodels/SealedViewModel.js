@@ -121,8 +121,8 @@ var screenSize = function() {
     	var cardPoolInnerHeight = ((cardHeight * Sealed.numRows)-(178 * (Sealed.numRows - 1))) + 3;//178 for negative margin-top on each .card, 3 for padding top on #card-pool-row-0/3 for bottom padding
     	var cardPoolInnerWidth = (cardWidth * Sealed.numCols) + (3 * Sealed.numCols);//3 for left padding on each column
         */
-    	var cardPoolInnerHeight = 3000;
-    	var cardPoolInnerWidth = 3000;
+    	var cardPoolInnerHeight = 6000;
+    	var cardPoolInnerWidth = 6000;
 	
     	$("#card-pool-inner").css({
     		"height" : cardPoolInnerHeight,
