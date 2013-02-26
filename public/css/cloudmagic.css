@@ -462,9 +462,9 @@ textarea {
 		}
 		
 		.select {
-			-moz-box-shadow: inset 0 0 7px 7px #0090ff;
-			-webkit-box-shadow: inset 0 0 7px 7px#0090ff;
-			box-shadow: inset 0 0 7px 7px #0090ff;
+			-moz-box-shadow: inset 0 0 7px 7px #0090ff !important;
+			-webkit-box-shadow: inset 0 0 7px 7px#0090ff !important;
+			box-shadow: inset 0 0 7px 7px #0090ff !important;
 		}
   	  
     /* Pack Screen */
