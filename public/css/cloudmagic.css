@@ -383,9 +383,6 @@ textarea {
 	font-style:italic;
 }
 
-#foyer #foyer-subcontent #donate {
-}
-
 #foyer #foyer-subcontent #share {
 }
 
@@ -400,6 +397,13 @@ textarea {
 
 #foyer #foyer-subcontent #donate {
 	font-family: 'Raleway', sans-serif;
+	font-size:38px;
+	font-weight:100;
+	line-height:38px;
+	font-style:italic;
+	max-width:550px;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 #foyer #foyer-subcontent #donate img {
@@ -715,17 +719,18 @@ textarea {
 	#draft-builder {
 		margin:0;
 		padding:0;
+		overflow:hidden;
 	}
 	
 	#draft-builder #top-screen {
 		padding:0;
-		padding-left:5px;
-		padding-right:5px;
 	}
 	
 	#draft-builder #preview-wrapper {
 		background:#202020;
 		display:inline-block;
+		float:left;
+		margin-left:5px;
 	}
 	
 	#draft-builder #img-preview {
@@ -745,6 +750,7 @@ textarea {
 	
 	#draft-builder #card-pool {
 		display:inline-block;
+		float:left;
 		/*background-image:url('/img/dark_wood.png');
 		background-repeat: repeat;
 		background-attachment:scroll;*/
