@@ -140,7 +140,6 @@ var screenSize = function() {
 
 ko.utils.extend( SealedViewModel.prototype, {
     init: function() {
-        console.log("SealedSetList init");
         screenSize();
         cardSizeInit();
     }

@@ -9,7 +9,7 @@
          <div data-bind="foreach: sideboard">
            <div data-bind="foreach: columns">
              <div class="column" data-bind="foreach: cards">
-               <div class="card" data-bind="style: { background: 'url(' + imgSrc() + ')' }, event: { mouseover: function(){ cardZoom($root); }, click: cardHighlight, dblclick: function(){ cardSelect('sideboard'); } }"/>
+               <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mouseover: function(){ cardZoom($root); }, click: cardHighlight, dblclick: function(){ cardSelect('sideboard'); } }"/>
              </div>
            </div>
          </div>
@@ -106,8 +106,8 @@
        <div id="deck-area-inner">
         <div data-bind="foreach: mainboard">
           <div data-bind="foreach: columns">
-            <div data-bind="foreach: cards">
-              <div class="card" data-bind="style: { background: 'url(' + imgSrc() + ')' }"/>
+            <div class="column" data-bind="foreach: cards">
+              <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mouseover: function(){ cardZoom($root); }, click: cardHighlight, dblclick: function(){ cardSelect('mainboard'); } }"/>
             </div>
           </div>
         </div>

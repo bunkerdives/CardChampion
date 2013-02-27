@@ -41,12 +41,18 @@ var CardViewModel = function( cardData ) {
     
     this.cardSelect = function( poolType ) {
         
+        var sideboard = ViewModel.sideboard()[0];
+        var mainboard = ViewModel.mainboard()[0];
+        
         if( poolType == 'sideboard' ) {
-            var col = this.cardColumn( ViewModel.sideboard()[0], this );
-            ViewModel.sideboard()[0].removeCardFromPool( this, col );
+            var col = this.cardColumn( sideboard, this );
+            sideboard.removeCardFromPool( this, col );
+            mainboard.addCardToPool( this );
         }
         else if( poolType == 'mainboard' ) {
-            
+            var col = this.cardColumn( mainboard, this );
+            mainboard.removeCardFromPool( this, col );
+            sideboard.addCardToPool( this );
         }
         
     };
