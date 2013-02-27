@@ -17,7 +17,34 @@ var SealedViewModel = function( set ) {
     this.imgSrc = ko.observable( 'img/cardback.jpg' );
     this.sideboard = ko.observableArray( [] );
     this.mainboard = ko.observableArray( [] );
+    
+    this.sortOption = function( sortType, optionsText ) {
+        this.sortType = sortType;
+        this.optionsText = optionsText;
+    };
+    
+    this.sortOptions = ko.observableArray( [
+        new this.sortOption( 'cmc', 'by cost' )
+        , new this.sortOption( 'color', 'by color' )
+        , new this.sortOption( 'type', 'by type' )
+        , new this.sortOption( 'rarity', 'by rarity' )
+    ] );
+    this.selectedSortOption = ko.observable( this.sortOptions()[0] );
+    
     this.cardselect = null;
+    
+    this.sortPool = function( boardType ) {
+        
+        var sortType = this.selectedSortOption().sortType;
+        
+        if( boardType == "sideboard" ) {
+            this.sideboard()[0].sortPoolByType( sortType, "name" );
+        }
+        else if( boardType == "mainboard" ) {
+            this.mainboard()[0].sortPoolByType( sortType, "name" );
+        }
+        
+    };
     
     this.newSealedInstance = function() {
         
@@ -31,7 +58,7 @@ var SealedViewModel = function( set ) {
         
         // create mainboard CardPoolViewModel
         var mainboard = new CardPoolViewModel( 'mainboard' );
-        mainboard.newCardPoolInstance( [] );
+        mainboard.newCardPoolInstance( '' );
         this.mainboard( [ mainboard ] );
         
     };

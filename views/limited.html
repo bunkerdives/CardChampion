@@ -38,27 +38,22 @@
             </button>
             <ul class="dropdown-menu">
               <li>
-                <a tabindex="-1" href="#">Mainboard</a>
+                <a tabindex="-1" href="#" data-bind="event: { click: function(){ sortPool('sideboard'); } }">Sideboard</a>
               </li>
               <li>
-                <a tabindex="-1" href="#">Sideboard</a>
+                <a tabindex="-1" href="#" data-bind="event: { click: function(){ sortPool('mainboard'); } }">Mainboard</a>
               </li>
             </ul>
           </div>
           <span id="prependedInput">
-            <select>
-              <option id="sort-color">by color</option>
-              <option id="sort-cost">by cost</option>
-              <option id="sort-type">by type</option>
-              <option id="sort-rarity">by rarity</option>
-            </select>
+            <select data-bind="options: sortOptions, optionsText: 'optionsText', value: selectedSortOption"/>
           </span>
         </div><!-- End #sort-wrapper -->
       </div><!-- End .input-prepend -->
     </div><!-- End #sort-->
     <div id="add-land" class="pull-right" style="text-align:center; margin:0px;">
       <div class="btn-group">
-        <button id="add-land-button" class="btn btn-mini btn-success dropdown-toggle">
+        <button id="add-land-button" class="btn btn-mini btn-success dropdown-toggle" data-toggle="dropdown">
           <span>Add Land</span>
         </button>
         <ul id="add-land-dropdown" class="dropdown-menu" style="top:18px;left:-35px;width:136px;min-width:136px;">

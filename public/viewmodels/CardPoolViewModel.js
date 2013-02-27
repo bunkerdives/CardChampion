@@ -5,11 +5,15 @@ var CardPoolViewModel = function( type ) {
     
     this.newCardPoolInstance = function( cards ) {
         // sort the cards by cmc
-        cards = cards.sort( this.sortPoolByCmc );
-        this.formColumnsByCmc( cards );
+        if( cards != '' ){
+            cards = cards.sort( CardSort.costSort );
+            var ColumnView = new ColumnViewModel( cards );
+            this.columns.push( ColumnView );
+            this.sortPoolByType( "cmc", "name" );
+        }
     };
     
-    this.addCardToPool = function( card ) {
+    this.addCardToPool = function( card, colSortType, cardSortType ) {
         
         if( this.columns().length == 0 ){
             var newColumn = new ColumnViewModel( [ card ] );
@@ -18,24 +22,24 @@ var CardPoolViewModel = function( type ) {
             return;
         }
         
-        var cmc = card.cmc;
+        var cardType = card[ colSortType ];
         var curCol;
         
         var i = 0;
-        for(  ; i < this.columns().length; ++i ) {
+        for( ; i < this.columns().length; ++i ) {
             
             var column = this.columns()[i];
-            var colCmc = column.cmc;
-            
-            if( cmc == colCmc ) {
-                // add to this column
+            var colType = column[ colSortType ];
+
+            // add to this column
+            if( cardType == colType ) {
                 this.columns()[i].cards.push(card);
-                this.columns()[i].sortColumn();
+                this.columns()[i].sortColumnByType( cardSortType );
                 return;
             }
-            else if( cmc < colCmc ) {
+            else if( cardType < colType ) {
                 var newColumn = new ColumnViewModel( [ card ] );
-                newColumn.setCmc( card.cmc );
+                newColumn.setType( colSortType, colType );
                 this.columns().splice( i, 0, newColumn );
                 this.columns()[i].sortColumn();
                 this.columns.push();
@@ -48,9 +52,8 @@ var CardPoolViewModel = function( type ) {
         // and its respectable column's cmc is larger than all the others
         // Create a new column for the card and add it to the end of this CardPoolViewModel's columns observableArray
         var newColumn = new ColumnViewModel( [ card ] );
-        newColumn.setCmc( card.cmc );
+        newColumn.setType( colSortType, card[ colSortType ] );
         this.columns.push( newColumn );
-        this.columns()[i].sortColumn();
         
     };
     
@@ -60,39 +63,72 @@ var CardPoolViewModel = function( type ) {
         
     };
     
-    this.sortPoolByCmc = function( a, b ){
-        return a.cmc - b.cmc;
-    }
-    
-    this.formColumnsByCmc = function( cards ){
+    this.sortCardsByType = function( cards, type ) {
         
-        if( cards.length == 0 ){
-            return;
+        var sortFcn;
+        switch( type ) {
+            case "cmc" :
+                sortFcn = CardSort.costSort;
+                break;
+            case "color" :
+                sortFcn = CardSort.colorSort;
+                break;
+            case "rarity" :
+                sortFcn = CardSort.raritySort;
+                break;
+            case "type" :
+                sortFcn = CardSort.typeSort;
         }
         
-        var i = 0;
-        var col = 0;
-        var curCard;
-        var curCost = cards[i].cmc;
+        return cards.sort( sortFcn );
+        
+    };
+    
+    this.sortPoolByType = function( colSortType, cardSortType ) {
+        
+        // get the columns as a single list
+        var cards = [];
+        for( var i = 0; i < this.columns().length; ++i ) {
+            $.merge( cards, this.columns()[i].cards() );
+        }
+        
+        // sort by type
+        cards = this.sortCardsByType( cards, colSortType );
+        
+        var curCard, curType;
+        if( this.columns().length > 0 ) {
+            curType = cards[0][ colSortType ];
+        }
+        
         var column = [];
-        this.columns( [] );
-        while( ( curCard = cards[i] ) != null ){
-            if( curCard.cmc == curCost ){
+        var columns = [];
+        
+        for( var i = 0; i < cards.length; ++i ) {
+            
+            curCard = cards[i];
+            
+            if( curCard[ colSortType ] == curType ) {
                 column.push( curCard );
             }
-            else{
+            else {
                 var ColumnView = new ColumnViewModel( column );
-                ColumnView.sortColumn();
-                ColumnView.setCmc( col );
-                this.columns.push( ColumnView );
+                ColumnView.setType( colSortType, curCard[colSortType] );
+                ColumnView.sortColumnByType( cardSortType );
+                columns.push( ColumnView );
                 column = [];
                 column.push( curCard );
-                curCost = curCard.cmc;
-                ++ col;
+                curType = curCard[ colSortType ];
             }
             
-            ++ i;
         }
+        
+        var ColumnView = new ColumnViewModel( column );
+        ColumnView.setType( colSortType, curCard[colSortType] );
+        ColumnView.sortColumnByType( "name" );
+        columns.push( ColumnView );
+        
+        this.columns( columns );
+        this.columns().push();
         
     }
     

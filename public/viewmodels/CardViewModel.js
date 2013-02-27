@@ -44,15 +44,17 @@ var CardViewModel = function( cardData ) {
         var sideboard = ViewModel.sideboard()[0];
         var mainboard = ViewModel.mainboard()[0];
         
+        var colSortType = ViewModel.selectedSortOption().sortType;
+        
         if( poolType == 'sideboard' ) {
             var col = this.cardColumn( sideboard, this );
             sideboard.removeCardFromPool( this, col );
-            mainboard.addCardToPool( this );
+            mainboard.addCardToPool( this, colSortType, "name" );
         }
         else if( poolType == 'mainboard' ) {
             var col = this.cardColumn( mainboard, this );
             mainboard.removeCardFromPool( this, col );
-            sideboard.addCardToPool( this );
+            sideboard.addCardToPool( this, colSortType, "name" );
         }
         
     };
