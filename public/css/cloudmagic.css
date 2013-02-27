@@ -73,6 +73,10 @@ textarea {
 		height:28px;
 	}
 	
+	#header .nav {
+		margin:0;
+	}
+	
 	/*#header #open a {
 		padding-left:40px;
 		
