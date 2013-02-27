@@ -9,7 +9,7 @@
          <div data-bind="foreach: sideboard">
            <div data-bind="foreach: columns">
              <div class="column" data-bind="foreach: cards">
-               <div class="card" data-bind="style: { background: 'url(' + imgSrc() + ')' }, event: { mouseover: function(){ cardZoom($root); } }"/>
+               <div class="card" data-bind="style: { background: 'url(' + imgSrc() + ')' }, event: { mouseover: function(){ cardZoom($root); }, click: cardHighlight, dblclick: function(){ cardSelect('sideboard'); } }"/>
              </div>
            </div>
          </div>

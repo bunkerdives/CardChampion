@@ -1,27 +1,23 @@
-var CardPoolViewModel = function( ) {
+var CardPoolViewModel = function( type ) {
     
+    this.type = type;
     this.columns = ko.observableArray( [ ] );
     
     this.newCardPoolInstance = function( cards ) {
         
-        console.log( "newCardPoolInstance" );
-        
-        //console.log( cards );
-        
         // sort the cards by cmc
         cards = cards.sort( this.sortPoolByCmc );
-        
-        //console.log( cards );
-        
         this.formColumnsByCmc( cards );
         
     };
     
-    this.addCardToPool = function( card ){
+    this.addCardToPool = function( card ) {
         
     };
     
-    this.removeCardFromPool = function( card ){
+    this.removeCardFromPool = function( view, col ) {
+        
+        this.columns()[col].cards.remove(view);
         
     };
     
@@ -30,6 +26,7 @@ var CardPoolViewModel = function( ) {
     }
     
     this.formColumnsByCmc = function( cards ){
+        
         if( cards.length == 0 ){
             return;
         }
@@ -53,6 +50,7 @@ var CardPoolViewModel = function( ) {
             
             ++ i;
         }
+        
     }
     
 };

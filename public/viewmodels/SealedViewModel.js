@@ -17,29 +17,22 @@ var SealedViewModel = function( set ) {
     this.imgSrc = ko.observable( 'img/cardback.jpg' );
     this.sideboard = ko.observableArray( [] );
     this.mainboard = ko.observableArray( [] );
+    this.cardselect = null;
     
     this.newSealedInstance = function() {
         
-        console.log("newSealedInstance");
-        console.log(this.set);
-        
         // generate a sealed card pool, given to us as an array of CardViewModels
         var cards = this.newSealedPool();
-        console.log( cards );
         
         // create sideboard CardPoolViewModel and add the generated card pool to it
-        var sideboard = new CardPoolViewModel();
+        var sideboard = new CardPoolViewModel( 'sideboard' );
         sideboard.newCardPoolInstance( cards );
-        console.log("sideboard:");
-        console.log(sideboard);
         this.sideboard( [ sideboard ] );
         
         // create mainboard CardPoolViewModel
-        var mainboard = new CardPoolViewModel();
+        var mainboard = new CardPoolViewModel( 'mainboard' );
         mainboard.newCardPoolInstance( [] );
         this.mainboard( [ mainboard ] );
-        
-        console.log( this.sideboard );
         
     };
     
