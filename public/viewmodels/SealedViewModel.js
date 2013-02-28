@@ -19,11 +19,35 @@ var SealedViewModel = function( set ) {
     this.mainboard = ko.observableArray( [] );
     this.mainboardSize = ko.observable( 0 );
     
+    this.numMainboardCreatures = ko.observable( 0 );
+    this.numMainboardLands = ko.observable( 0 );
+    
     this.whiteLandCount = ko.observable( 0 );
     this.blueLandCount = ko.observable( 0 );
     this.blackLandCount = ko.observable( 0 );
     this.redLandCount = ko.observable( 0 );
     this.greenLandCount = ko.observable( 0 );
+    
+    this.addLandToMainboard = function( landData ) {
+        ;
+    };
+    
+    this.adjustCardCounterUI = function( card, magnitude ) {
+        
+        var count = ( this.mainboardSize() + magnitude );
+        if( count >= 0 ) {
+            this.mainboardSize( count );
+        }
+        
+        var type = card.type;
+        if( ( /Creature/g ).test( type ) ){
+            this.numMainboardCreatures( this.numMainboardCreatures() + magnitude );
+        }
+        else if( ( /Land/g ).test( type ) ){
+            this.numMainboardLands( this.numMainboardLands() + magnitude );
+        }
+    
+    };
     
     this.incrLandCount = function( color ) {
         switch( color ) {

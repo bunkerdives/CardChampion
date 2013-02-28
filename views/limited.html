@@ -22,9 +22,9 @@
       <div id="mainboard-total" data-bind="text: mainboardSize" class="well"></div>
       <span style="margin-left:3px;">/40</span>
       <span style="margin-left:17px; margin-right:3px;">Creatures:</span>
-      <div id="mainboard-creatures" class="well">0</div>
+      <div id="mainboard-creatures" class="well" data-bind="text: numMainboardCreatures"></div>
       <span style="margin-left:17px; margin-right:3px;">Lands:</span>
-      <div id="mainboard-lands" class="well">0</div>
+      <div id="mainboard-lands" class="well" data-bind="text: numMainboardLands"></div>
     </div><!-- End #mainboard-breakdown -->
     <div id="card-size-slider" class="well" style="display:inline-block;color:#fff;">
       <input id="slide" type="range" min="70" max="170" step="1" value="100"/><!-- TODO onchange callback-->

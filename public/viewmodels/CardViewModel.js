@@ -14,7 +14,7 @@ var CardViewModel = function( cardData ) {
         return 'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid='
             + this.multiverse
             + '&type=card';
-    }, this);
+    }, this );
     
     this.cardZoom = function( view ) {
         
@@ -53,10 +53,7 @@ var CardViewModel = function( cardData ) {
             sideboard.removeCardFromPool( this, col );
             mainboard.addCardToPool( this, colSortType, "name" );
             
-            count = ViewModel.mainboardSize - 1;
-            if( count >= 0 ){
-                ViewModel.mainboardSize( count );
-            }
+            ViewModel.adjustCardCounterUI( this, 1 );
             
         }
         else if( poolType == 'mainboard' ) {
@@ -66,8 +63,7 @@ var CardViewModel = function( cardData ) {
             mainboard.removeCardFromPool( this, col );
             sideboard.addCardToPool( this, colSortType, "name" );
             
-            count = ViewModel.mainboardSize() + 1;
-            ViewModel.mainboardSize( count );
+            ViewModel.adjustCardCounterUI( this, -1 );
             
         }
         
