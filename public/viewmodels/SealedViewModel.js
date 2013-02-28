@@ -19,6 +19,73 @@ var SealedViewModel = function( set ) {
     this.mainboard = ko.observableArray( [] );
     this.mainboardSize = ko.observable( 0 );
     
+    this.whiteLandCount = ko.observable( 0 );
+    this.blueLandCount = ko.observable( 0 );
+    this.blackLandCount = ko.observable( 0 );
+    this.redLandCount = ko.observable( 0 );
+    this.greenLandCount = ko.observable( 0 );
+    
+    this.incrLandCount = function( color ) {
+        switch( color ) {
+            case 'W' :
+                this.whiteLandCount( this.whiteLandCount() + 1 );
+                break;
+            case 'U' :
+                this.blueLandCount( this.blueLandCount() + 1 );
+                break;
+            case 'B' :
+                this.blackLandCount( this.blackLandCount() + 1 );
+                break;
+            case 'R' :
+                this.redLandCount( this.reLandCount() + 1 );
+                break;
+            case 'G' :
+                this.greenLandCount( this.greenLandCount() + 1 );
+                break;
+            default :
+                break;
+        }
+        return;
+    };
+    
+    this.decrLandCount = function( color ) {
+        switch( color ) {
+            case 'W' :
+                var landCount = this.whiteLandCount();
+                if( landCount > 0 ) {
+                    this.whiteLandCount( landCount - 1 );
+                }
+                break;
+            case 'U' :
+                var landCount = this.blueLandCount();
+                if( landCount > 0 ) {
+                    this.blueLandCount( landCount - 1 );
+                }
+                break;
+            case 'B' :
+                var landCount = this.blackLandCount();
+                if( landCount > 0 ) {
+                    this.blackLandCount( landCount - 1 );
+                }
+                break;
+            case 'R' :
+                var landCount = this.redLandCount();
+                if( landCount > 0 ) {
+                    this.redLandCount( landCount - 1 );
+                }
+                break;
+            case 'G' :
+                var landCount = this.greenLandCount();
+                if( landCount > 0 ) {
+                    this.greenLandCount( landCount - 1 );
+                }
+                break;
+            default :
+                break;
+        }
+        return;
+    };
+    
     this.sortOption = function( sortType, optionsText ) {
         this.sortType = sortType;
         this.optionsText = optionsText;
@@ -61,14 +128,6 @@ var SealedViewModel = function( set ) {
         var mainboard = new CardPoolViewModel( 'mainboard' );
         mainboard.newCardPoolInstance( '' );
         this.mainboard( [ mainboard ] );
-        
-    };
-    
-    this.addCardToMainboard = function() {
-        
-    };
-    
-    this.addCardToSideboard = function() {
         
     };
     
