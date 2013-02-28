@@ -22,7 +22,7 @@ var CardViewModel = function( cardData ) {
                 + this.multiverse
                 + '&type=card';
         
-        view.imgSrc( url );
+        ViewModel.imgSrc( url );
         
     };
     
@@ -47,14 +47,28 @@ var CardViewModel = function( cardData ) {
         var colSortType = ViewModel.selectedSortOption().sortType;
         
         if( poolType == 'sideboard' ) {
+            
             var col = this.cardColumn( sideboard, this );
+            
             sideboard.removeCardFromPool( this, col );
             mainboard.addCardToPool( this, colSortType, "name" );
+            
+            count = ViewModel.mainboardSize - 1;
+            if( count >= 0 ){
+                ViewModel.mainboardSize( count );
+            }
+            
         }
         else if( poolType == 'mainboard' ) {
+            
             var col = this.cardColumn( mainboard, this );
+            
             mainboard.removeCardFromPool( this, col );
             sideboard.addCardToPool( this, colSortType, "name" );
+            
+            count = ViewModel.mainboardSize() + 1;
+            ViewModel.mainboardSize( count );
+            
         }
         
     };

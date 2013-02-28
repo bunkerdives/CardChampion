@@ -11,6 +11,8 @@ var ColumnViewModel = function( cards ) {
     
     this.setType = function( type, typeFigure ) {
         
+        console.log( "setType!  type = " + type + ", typeFigure = " + typeFigure );
+        
         this.colType = type;
         
         switch( type ) {

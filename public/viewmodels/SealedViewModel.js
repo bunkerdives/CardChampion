@@ -17,6 +17,7 @@ var SealedViewModel = function( set ) {
     this.imgSrc = ko.observable( 'img/cardback.jpg' );
     this.sideboard = ko.observableArray( [] );
     this.mainboard = ko.observableArray( [] );
+    this.mainboardSize = ko.observable( 0 );
     
     this.sortOption = function( sortType, optionsText ) {
         this.sortType = sortType;

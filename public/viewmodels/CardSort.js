@@ -13,6 +13,10 @@ var CardSort = {
         var aColor = a.color;
         var bColor = b.color;
         
+        if( aColor == bColor ){
+            return 0;
+        }
+        
         switch( aColor ){
             case "W" :
                 return -1;
@@ -62,6 +66,10 @@ var CardSort = {
         
         var aRarity = a.rarity;
         var bRarity = b.rarity;
+        
+        if( aRarity == bRarity ) {
+            return 0;
+        }
         
         switch( aRarity ){
             case "M" :

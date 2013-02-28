@@ -22,24 +22,23 @@ var CardPoolViewModel = function( type ) {
             return;
         }
         
-        var cardType = card[ colSortType ];
+        var cardCost = card.cmc;
         var curCol;
         
-        var i = 0;
-        for( ; i < this.columns().length; ++i ) {
+        for( var i = 0 ; i < this.columns().length; ++i ) {
             
             var column = this.columns()[i];
-            var colType = column[ colSortType ];
-
+            colCost = column.cmc;
+            
             // add to this column
-            if( cardType == colType ) {
+            if( cardCost == colCost ) {
                 this.columns()[i].cards.push(card);
                 this.columns()[i].sortColumnByType( cardSortType );
                 return;
             }
-            else if( cardType < colType ) {
+            else if( cardCost < colCost ) {
                 var newColumn = new ColumnViewModel( [ card ] );
-                newColumn.setType( colSortType, colType );
+                newColumn.setType( colSortType, cardCost );
                 this.columns().splice( i, 0, newColumn );
                 this.columns()[i].sortColumn();
                 this.columns.push();
