@@ -52,10 +52,11 @@ function foyerLayout(){
 	//Foyer BG calculation should go here
 	
 	var foyerContainerW = windowWidth*0.95;
-	if (foyerContainerW>1175) {
-		foyerContainerW=1175;
+	if (foyerContainerW>1100) {
+		foyerContainerW=1100;
 	}
 	var foyerContainerPaddedW = foyerContainerW-20;
+	$("#open").css("width", foyerContainerPaddedW);
 	$("#foyer-banner-wrapper").css("width", foyerContainerW);
 	$("#foyer-banner").css("width", foyerContainerPaddedW);
 	$("#foyer-content-container").css("width", foyerContainerW);
@@ -63,7 +64,7 @@ function foyerLayout(){
 	$("#foyer-subcontent").css("width", foyerContainerW);
 	$("#foyer-footer").css("width", foyerContainerW);
 	
-	var leftPaneW = (foyerContainerPaddedW*0.7); //#right-pane width, -10 for l&r padding
+	var leftPaneW = (foyerContainerPaddedW*0.675); //#right-pane width, -10 for l&r padding
 	$("#left-pane").css("width", leftPaneW);
 	
 	var foyerLinksW = 0;
