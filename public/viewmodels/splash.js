@@ -12,5 +12,6 @@ ko.utils.extend( SplashViewModel.prototype, {
     init: function() {
         carouselDimensions();
         lightboxSize();
+				iMacLayout();
     }
 } ); 

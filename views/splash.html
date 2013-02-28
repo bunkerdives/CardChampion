@@ -1,5 +1,5 @@
-<div id="splash" style="display:block;">
-  <div id="screenshot-carousel" class="carousel slide">
+<div id="splash" style="display:block;background-color:#fff;width:100%;height:auto;margin-top:-30px;">
+  <!--<div id="screenshot-carousel" class="carousel slide">
     <div class="carousel-inner">
       <div class="item active">
         <img id="slide1" class="screenshot" src="/img/builder_screenshot.png"/>
@@ -19,5 +19,12 @@
       <br>
       <button class="btn btn-large btn-primary" data-bind="click: showFoyer">Launch</button>
     </div>
-  </div>
+  </div>-->
+	<div id="splash-content-container" style="max-width:1000px;margin-left:auto;margin-right:auto;padding-bottom:50px;padding-top:20px;text-align:center;">
+		<img id="imac-wrapper" src="/img/imac.png" style="width:100%;" />
+		<div id="imac-screenshot-wrapper" style="margin-left:auto;margin-right:auto;">
+			<img id="imac-screenshot-1" src="/img/builder_screenshot.png" style="width:100%;height:100%;" />
+		</div>
+		<button class="btn btn-large btn-primary" style="margin-top:250px;" data-bind="click: showFoyer">Launch</button>
+	</div>
 </div>

@@ -117,6 +117,8 @@ ko.utils.extend( FoyerViewModel.prototype, {
         foyerLayout();
 				navEvents();
 				$('#foyer-banner').animate({'background-position-y':'-550px'},3200);
+				$("#open").css("display", "block");
+				$("body").css("background-color", "#2f2f2f");
     }
     
 } );

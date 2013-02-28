@@ -1,13 +1,3 @@
-function tabtest() {
-	
-	$("#tab1").removeClass("active");
-	$("#tab1").removeClass("well");
-	$("#tab2").addClass("active");
-	$("#tab2").addClass("well");
-}
-
-
-
 function infoSlide(str,arr){
 	console.log('infoSlide function called. arg1=' + str + ' arg2=' + arr);
 	navEvents();
@@ -56,8 +46,6 @@ function navEvents(){
 		});
 	});
 }
-
-
 
 function foyerLayout(){
 	var windowWidth = $(window).width();
