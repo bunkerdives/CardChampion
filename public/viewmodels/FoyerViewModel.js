@@ -115,6 +115,8 @@ var setQueue = function( name, abbr, size ) {
 ko.utils.extend( FoyerViewModel.prototype, {
     init: function(){
         foyerLayout();
+				navEvents();
+				$('#foyer-banner').animate({'background-position-y':'-550px'},3200);
     }
     
 } );
