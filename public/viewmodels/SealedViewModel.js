@@ -147,7 +147,7 @@ var SealedViewModel = function( set ) {
 };
 
 var screenSize = function() {
-	    $("#open").removeClass("foyer-header");
+	    //$("#open").removeClass("foyer-header");
 			
       var windowHeight = $(window).height();
     	var windowWidth = $(window).width();

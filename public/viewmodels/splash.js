@@ -13,5 +13,6 @@ ko.utils.extend( SplashViewModel.prototype, {
         carouselDimensions();
         lightboxSize();
 				iMacLayout();
+				$("#imac-screenshot-1").fadeIn(1000);
     }
 } ); 

@@ -118,7 +118,7 @@ ko.utils.extend( FoyerViewModel.prototype, {
 				navEvents();
 				$('#foyer-link-1').off();
 				$('#foyer-banner').animate({'background-position-y':'-550px'},3200);
-				$("#open").css("display", "block");
+				$("#header").css("display", "block");
 				$("body").css("background-color", "#2f2f2f");
     }
     

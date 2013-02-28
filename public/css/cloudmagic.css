@@ -45,7 +45,7 @@ a:hover {
 
 
 /* Header */
-	#header #open {
+	#header {
 		height:30px;/* linked with #content padding-top */
 		margin-bottom: 0;
 		background-color:#2f2f2f;
@@ -54,8 +54,14 @@ a:hover {
 		left: 0;
 		z-index: 1030;
 	}
+	#header #open {
+		margin-left:auto;
+		margin-right:auto;
+		height:30px;/* linked with #content padding-top */
+		margin-bottom: 0;
+	}
 	
-	#header .foyer-header {
+	.foyer-header {
 		-webkit-box-shadow: 0px 1px 7px #111;
 		-moz-box-shadow:    0px 1px 7px #111;
 		box-shadow:         0px 1px 7px #111;
@@ -70,7 +76,6 @@ a:hover {
 	}
 	
 	#header #logo {
-		padding-left:40px;
 		padding-right:20px;
 	}
 	
