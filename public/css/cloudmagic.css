@@ -8,6 +8,10 @@ textarea {
     resize: none;
 }
 
+a:hover {
+	cursor:pointer;
+}
+
 /* Don't show shadows when selecting text */
 ::-moz-selection { background: #555; color: #fff; text-shadow: none; }
 ::selection { background: #555; color: #fff; text-shadow: none; }
@@ -56,11 +60,11 @@ textarea {
 		box-shadow:         0px 1px 7px #111;
 		
 		background-color: #fafafa;
-		background-image: -moz-linear-gradient(top, #333, #111);
-		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333), to(#111));
-		background-image: -webkit-linear-gradient(top, #333, #111);
-		background-image: -o-linear-gradient(top, #333, #111);
-		background-image: linear-gradient(to bottom, #333, #111);
+		background-image: -moz-linear-gradient(top, #fff, #eee);
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#eee));
+		background-image: -webkit-linear-gradient(top, #fff, #eee);
+		background-image: -o-linear-gradient(top, #fff, #eee);
+		background-image: linear-gradient(to bottom, #fff, #eee);
 		background-repeat: repeat-x;
 	}
 	
@@ -202,15 +206,16 @@ textarea {
 
 /* Foyer */
 #foyer {
-	background-image:url('http://media.wizards.com/images/magic/daily/wallpapers/Black_Lotus_MTGOweek_1920x1080_Wallpaper.jpg');
+	background-image:url('http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1920x1080_Wallpaper.jpg');
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-position:-50px -50px;
 }
+
 #foyer #foyer-content-container {
 	margin-left:auto;
 	margin-right:auto;
-	padding:20px 10px;
+	padding-top:10px;
 	height:auto;
 	background-color:transparent;
 	background-image:url('/img/transparent-foyer-bg.png');
@@ -224,7 +229,12 @@ textarea {
 	-moz-box-shadow: inset 0 0 1px 1px #202020;
 	-webkit-box-shadow: inset 0 0 1px 1px #202020;
 	box-shadow: inset 0 0 1px 1px #202020;
-	margin-top:-1px;
+}
+
+#foyer #foyer-banner-wrapper {
+	margin-left:auto;
+	margin-right:auto;
+	border-bottom: 3px solid #231F20;
 }
 
 #foyer .chat-username {
@@ -246,22 +256,24 @@ textarea {
 #foyer #portal {
 	clear:both;
 	height:429px;
-	color:#fff;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:10px;
+	color:#000;
+	margin-left:10px;
+	margin-right:10px;
 	text-align:center;
+	padding-bottom:10px;
 }
 
-#foyer #portal #left-pane-wrapper {
+#foyer #portal #right-pane-wrapper {
 	width:auto;
 	height:429px;
+	padding-top:10px;
+	border-left: 1px dotted #231f20;
 }
 
-#foyer #portal #left-pane {
+#foyer #portal #right-pane {
 	width:auto;
 	display:inline-block;
-	padding:5px;
+	padding:0;
 }
 
 #foyer #portal #chat {
@@ -297,6 +309,9 @@ textarea {
 
 #foyer #portal #chat-input button {
 	line-height:18px;
+}
+
+#foyer #portal #chat-input .appended {
 	-moz-border-top-left-radius:0;
 	-moz-border-bottom-left-radius:0;
 	-webkit-border-top-left-radius:0;
@@ -339,10 +354,11 @@ textarea {
 	font-style:italic;
 }
 
-#foyer #portal #right-pane {
+#foyer #portal #left-pane {
 	margin-left:0px;
 	display:inline-block;
-	padding:5px;
+	padding:0;
+	padding-top:10px;
 }
 
 #foyer #portal #sets {
@@ -377,14 +393,18 @@ textarea {
 	margin-left:auto;
 	margin-right:auto;
 	text-align:center;
-	margin-bottom:50px;
+	padding-bottom:50px;
+	color:#000;
+	border-top: 1px dotted #231f20;
+	padding-top:50px;
 }
 
 #foyer .headline-txt {
 	font-size:45px;
-	font-weight:100;
+	font-weight:200;
 	line-height:45px;
 	font-style:italic;
+	font-family: 'Raleway', sans-serif;
 }
 
 #foyer #foyer-subcontent #share {
@@ -402,10 +422,9 @@ textarea {
 #foyer #foyer-subcontent #donate {
 	font-family: 'Raleway', sans-serif;
 	font-size:38px;
-	font-weight:100;
+	font-weight:200;
 	line-height:38px;
 	font-style:italic;
-	max-width:550px;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -420,17 +439,37 @@ textarea {
 	margin-right:auto;
 }
 
-#foyer #foyer-footer-links {
-	font-weight:100;
-	font-size:22px;
-	line-height:22px;
-	margin-top:4px;
+#foyer #foyer-links {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 36px;
+	height:36px;
+	text-transform: uppercase;
 	text-align:center;
+	font-weight:400;
+	border-bottom: 1px dotted #231f20;
 }
 
-#foyer #foyer-footer-links a {
-	color:#fff;
+#foyer #foyer-links .foyer-link {
+	float:left;
+}
+
+#foyer #foyer-links .foyer-link-spacer {
+	height:36px;
+	min-height:36px;
+	float:left;
+}
+
+#foyer #foyer-links a {
+	color:#000;
 	text-decoration:none;
+}
+
+#foyer #foyer-links .down-arrow {
+	background-image: url('/img/downArrow.png');
+	background-repeat: no-repeat;
+	background-position: center right;
+	padding: 0 9px 0 0;
 }
 
 #foyer #foyer-disclaimer {

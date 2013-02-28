@@ -1,13 +1,49 @@
 <div id="foyer">
 	<div id="foyer-content-container">
-		<div id="foyer-banner-wrapper" style="height:auto;background-color:#202020;border-radius:5px;margin-left:auto;margin-right:auto;padding:5px;" class="raised">
-			<div id="foyer-banner" class="well" style="height:100px;width:100%;margin-left:auto;margin-right:auto;background-color:#262626;background-image:url('/img/logo.png');background-repeat:repeat;background-size:60px 13px;"></div>
+		<div id="foyer-banner-wrapper">
+			<div id="foyer-banner" style="height:150px;background-color:#5d5d5d;margin-bottom:10px;margin-left:auto;margin-right:auto;background-image:url('http://media.wizards.com/images/magic/daily/wallpapers/Nice_Holiday_1280x960_Wallpaper.jpg');background-position:0px -250px;">
+			</div>
+		</div>
+		<div id="foyer-links">
+			<span class="foyer-link-spacer"></span>
+			<span class="foyer-link"><a id="foyer-link-1">New Game</a></span>
+			<span class="foyer-link-spacer"></span>
+			<span class="foyer-link"><a id="foyer-link-2">Join Draft</a></span>
+			<span class="foyer-link-spacer"></span>
+			<span class="foyer-link"><a id="foyer-link-3" class="down-arrow">About</a></span>
+			<span class="foyer-link-spacer"></span>
+			<span class="foyer-link"><a id="foyer-link-4">FAQ</a></span>
 		</div>
     <div id="portal">
-      <div id="left-pane-wrapper" class="pull-left">
-        <div id="left-pane" class="raised pull-left">
+      <div id="left-pane" class="pull-left" >
+				<div id="info-wrapper" style="height:0px;min-height:0px;overflow:hidden;">
+					<div style="width:100%;height:100%;">
+						<div id="info-1" style="display:none;">
+			        <div id="sets" style="display:block;">
+			          <table class="table">
+			            <tbody data-bind="foreach: setQueues">
+			              <tr data-bind="click: selectSet">
+			                <td class="set-title set-td" data-bind="text: title"/>
+			                <td class="set-queue set-td" data-bind="text: size"/>
+			              </tr>
+									</tbody>
+			          </table>
+			        </div>
+			        <div id="set-select" style="display:block;">
+			          <button id="select-draft-button" class="btn btn-small">Draft</button>
+			          <button id="select-sealed-button" class="btn btn-small" data-bind="click: startSealed">Sealed</button>
+			        </div>
+						</div>
+						<div id="info-2" style="display:none;">Join an open draft queue.</div>
+						<div id="info-3" style="display:none;">About Us, About LimitedMTG.com, Mission Statement.</div>
+						<div id="info-4" style="display:none;">Frequently Asked Questions</div>
+					</div>
+				</div>
+      </div>
+      <div id="right-pane-wrapper" class="pull-right">
+        <div id="right-pane" class="pull-right">
           <div id="chat" class="pull-left">
-            <div id="convo" class="well">
+            <div id="convo" class="">
               <div id="convo-inner">
                 <div class="chat-msg">
                   <span>Welcome to LimitedMTG.com!</span>
@@ -16,32 +52,16 @@
             </div>
             <div id="chat-input">
               <input id="chat-msg" class="pull-left" type="text"/>
-              <button id="chat-send-btn" class="btn btn-small pull-left">Send</button>
+              <button id="chat-send-btn" class="btn btn-small pull-left appended">Send</button>
+							<button class="btn btn-small pull-right"><i class="icon-user"></i></button>
             </div>
           </div>
-		  		<div id="userlist" class="well pull-right">
+		  		<div id="userlist" class="pull-right">
 					</div>
 				</div>
 	  	</div>
-      <div id="right-pane" class="raised pull-right">
-        <div id="sets" class="well">
-          <table class="table">
-            <tbody data-bind="foreach: setQueues">
-              <tr data-bind="click: selectSet">
-                <td class="set-title set-td" data-bind="text: title"/>
-                <td class="set-queue set-td" data-bind="text: size"/>
-              </tr>
-						</tbody>
-          </table>
-        </div>
-        <div id="set-select">
-          <button id="select-draft-button" class="btn btn-small">Draft</button>
-          <button id="select-sealed-button" class="btn btn-small" data-bind="click: startSealed">Sealed</button>
-        </div>
-      </div>
     </div>
 	  <div id="foyer-subcontent">
-			<hr style="clear:both;width:100px;margin-left:auto;margin-right:auto;">
 	  	<div id="share">
 		  	<div id="share-msg" class="headline-txt">
 					<span>Tired of waiting in draft queues?</span>
@@ -55,30 +75,28 @@
 	  			<span><img src="http://w.sharethis.com/images/pinterest_32.png"/></span>
 	  		</div>
 				<div>
-					<small style="font-size:15px;line-height:15px;font-style:normal;font-weight:100;">Share LimitedMTG.com with your fellow planeswalkers.</small>
+					<small style="font-size:15px;line-height:15px;font-style:normal;font-weight:200;">Share LimitedMTG.com with your fellow planeswalkers.</small>
 				</div>
 	  	</div>
 	  	<hr style="clear:both;width:100px;margin-left:auto;margin-right:auto;">
-			<div id="donate" style="clear:both">
-				<span>"Those who don't believe in magic will never find it."</span>
-				<br/>
-				<small style="font-size:22px;line-height:22px;font-style:normal;">-Roald Dahl</small>
-				<br />
-				<br />
-				<span class="headline-txt" style="font-size:36px;line-height:36px;">Those who do,</span>
-				<br/>
-			 	<img src="http://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" style="margin-top:3px;"/>
+			<div id="donate" style="clear:both;">
+				<div style="max-width:550px;margin-left:auto;margin-right:auto;">
+					<span>"Those who don't believe in magic will never find it."</span>
+					<br/>
+					<small style="font-size:22px;line-height:22px;font-style:normal;">-Roald Dahl</small>
+					<br/>
+					<br/>
+			  </div>
+				<div>
+					<span class="headline-txt" style="font-size:36px;line-height:36px;">Those who do,</span>
+					<br/>
+					<img src="http://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" style="margin-top:3px;"/>
+				</div>
 			</div>
 	  </div>
 		<div style="clear:both;"></div>
 	</div>
 	<div id="foyer-footer" class="clearfix">
-		<div id="foyer-footer-links" class="row-fluid">
-			<span class="span3"><a href="#">About Us</a></span>
-			<span class="span3"><a href="#">What's next?</a></span>
-			<span class="span3"><a href="#">FAQ</a></span>
-			<span class="span3"><a href="#">Link</a></span>
-		</div>
 		<div id="foyer-disclaimer">
 			<small>Magic the Gathering is TM and copyright Wizards of the Coast, Inc, a subsidiary of Hasbro, Inc. All rights reserved. This site is unaffiliated. Articles and comments are user-submitted and do not represent official endorsements of this site.</small>
 			<br />
