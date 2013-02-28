@@ -135,7 +135,7 @@ var FoyerViewModel = function() {
     
     this.backgroundImages = [
         'http://media.wizards.com/images/magic/daily/wallpapers/AVR_2_1920x1080_Wallpaper_yf5p1yzptx.jpg'
-        , 'http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1280x960_Wallpaper.jpg'
+        , 'http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1920x1080_Wallpaper.jpg'
     ];
     
     this.bannerId = 0;
