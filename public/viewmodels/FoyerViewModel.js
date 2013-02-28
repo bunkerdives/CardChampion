@@ -169,7 +169,7 @@ ko.utils.extend( FoyerViewModel.prototype, {
         
         foyerLayout();
 		navEvents();
-		$('#foyer-link-1').off();
+		$('#header-link-1').off();
 		
 		$("#header").css("display", "block");
 		$("body").css("background-color", "#2f2f2f");

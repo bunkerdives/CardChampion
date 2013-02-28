@@ -1,7 +1,7 @@
 function infoSlide(str,arr){
 	console.log('infoSlide function called. arg1=' + str + ' arg2=' + arr);
 	navEvents();
-	var linkName = "#foyer-link-" + str;
+	var linkName = "#header-link-" + str;
 	$(linkName).off();
 	var links = arr;
 	var id = "#info-" + str;
@@ -40,8 +40,8 @@ function navEvents(){
 	console.log('navEvents function called.');
   var arr = [1,2,3,4];
 	$.each(arr, function(index, value) {
-		$('#foyer-link-' + value).off();
-		$('#foyer-link-' + value).click(function () {
+		$('#header-link-' + value).off();
+		$('#header-link-' + value).click(function () {
 			navClick(value);
 		});
 	});
@@ -56,7 +56,18 @@ function foyerLayout(){
 		foyerContainerW=1100;
 	}
 	var foyerContainerPaddedW = foyerContainerW-20;
+	
 	$("#open").css("width", foyerContainerPaddedW);
+	var headerLinksW = 0;
+	$('span.header-link').each(function() {
+		headerLinksW += $(this).width();
+		console.log('headerLinksW: ' + headerLinksW);
+	});
+	var headerLinksSpacer = (foyerContainerPaddedW-headerLinksW-143)/5;
+	if (headerLinksSpacer>=13){
+		$(".header-link-spacer").css("width", headerLinksSpacer);
+	}
+		
 	$("#foyer-banner-wrapper").css("width", foyerContainerW);
 	$("#foyer-banner").css("width", foyerContainerPaddedW);
 	$("#foyer-content-container").css("width", foyerContainerW);
@@ -67,16 +78,16 @@ function foyerLayout(){
 	var leftPaneW = (foyerContainerPaddedW*0.675); //#right-pane width, -10 for l&r padding
 	$("#left-pane").css("width", leftPaneW);
 	
-	var foyerLinksW = 0;
+	/*var foyerLinksW = 0;
 	$('span.foyer-link').each(function() {
 	    foyerLinksW += $(this).width();
 	});
 	var foyerLinksSpacer = (leftPaneW-foyerLinksW+20)/5;
 	if (foyerLinksSpacer>=13){
 		$(".foyer-link-spacer").css("width", foyerLinksSpacer);
-	}
+	}*/
 	
-	var rightPaneWrapperW = (foyerContainerPaddedW - leftPaneW)-11; //#left-pane-wrapper width
+	var rightPaneWrapperW = (foyerContainerPaddedW - leftPaneW)-10; //#left-pane-wrapper width
 	$("#right-pane-wrapper").css("width", rightPaneWrapperW);
 	
 	var rightPaneW = rightPaneWrapperW - 10;
