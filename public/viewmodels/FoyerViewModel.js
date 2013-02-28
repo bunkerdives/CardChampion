@@ -1,10 +1,9 @@
-var FoyerViewModel = function( ) {
+var FoyerViewModel = function() {
     
     this.set = null;
-    
     this.selectedSet = "GTC";
     
-    this.startSealed = function( ) {
+    this.startSealed = function() {
         
         var context = new SealedViewModel( this.selectedSet );
         context.newSealedInstance();
@@ -14,6 +13,46 @@ var FoyerViewModel = function( ) {
         var sealed = new ko.plugin( { template: "limited", context: context } );
         ko.applyBindings( { plugin: sealed } );
         
+    };
+
+    this.setBackgroundImage = function() {
+        
+        var ran = Math.floor( Math.random() * ViewModel.backgroundImages.length );
+        
+        $("#foyer").css( {
+            'background-image' : 'url(' + ViewModel.backgroundImages[ran] + ')'
+            , 'background-attachment' : 'fixed'
+            , 'background-position' : '-50px -50px'
+            , 'background-repeat' : 'no-repeat'
+        } );
+        
+    };
+    
+    this.setAnimatedBanner = function() {
+        
+        ViewModel.bannerId += 1;
+        if( ViewModel.bannerId >= ViewModel.bannerImages.length ){
+            ViewModel.bannerId = 0;
+        }
+        
+        var banner = 'url(' + ViewModel.bannerImages[ 1 ] + ')';
+        $('#foyer-banner').css( {
+            'height' : '150px'
+            , 'background-image' : '#5d5d5d'
+            , 'margin-bottom' : '10px'
+            , 'margin-left' : 'auto'
+            , 'margin-right' : 'auto'
+            , "background-image" : banner
+            , 'background-position' : '0px -250px'
+        } );
+        
+        $('#foyer-banner').animate(
+            { 'background-position-y' : '-550px' }
+            , 12400
+            , function() {
+                setTimeout( ViewModel.setAnimatedBanner, 12400 );
+            }
+        );
     };
     
     this.setQueues = ko.observableArray( [
@@ -94,6 +133,18 @@ var FoyerViewModel = function( ) {
         , new setQueue( "Limited Edition Alpha", "LEA", "0/8" )
     ] );
     
+    this.backgroundImages = [
+        'http://media.wizards.com/images/magic/daily/wallpapers/AVR_2_1920x1080_Wallpaper_yf5p1yzptx.jpg'
+        , 'http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1280x960_Wallpaper.jpg'
+    ];
+    
+    this.bannerId = 0;
+    this.bannerImages = [
+        'http://media.wizards.com/images/magic/daily/wallpapers/Nice_Holiday_1280x960_Wallpaper.jpg'
+        , 'http://media.wizards.com/images/magic/tcg/products/m12/wp_dragon_xhdn52rl3i_1280x960.jpg'
+        , 'http://media.wizards.com/images/magic/daily/wallpapers/wp_chainlightning_1280x960.jpg'
+    ];
+    
 };
 
 var setQueue = function( name, abbr, size ) {
@@ -113,13 +164,19 @@ var setQueue = function( name, abbr, size ) {
 };
 
 ko.utils.extend( FoyerViewModel.prototype, {
-    init: function(){
+    
+    init: function() {
+        
         foyerLayout();
-				navEvents();
-				$('#foyer-link-1').off();
-				$('#foyer-banner').animate({'background-position-y':'-550px'},3200);
-				$("#header").css("display", "block");
-				$("body").css("background-color", "#2f2f2f");
+		navEvents();
+		$('#foyer-link-1').off();
+		
+		$("#header").css("display", "block");
+		$("body").css("background-color", "#2f2f2f");
+        
+        ViewModel.setBackgroundImage();
+        ViewModel.setAnimatedBanner();
+        
     }
     
 } );

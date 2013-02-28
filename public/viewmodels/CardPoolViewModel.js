@@ -34,6 +34,7 @@ var CardPoolViewModel = function( type ) {
             if( cardCost == colCost ) {
                 this.columns()[i].cards.push(card);
                 this.columns()[i].sortColumnByType( cardSortType );
+                this.sortPoolByType( "cmc", cardSortType );
                 return;
             }
             else if( cardCost < colCost ) {
@@ -42,6 +43,7 @@ var CardPoolViewModel = function( type ) {
                 this.columns().splice( i, 0, newColumn );
                 this.columns()[i].sortColumn();
                 this.columns.push();
+                this.sortPoolByType( "cmc", cardSortType );
                 return;
             }
             
@@ -53,6 +55,7 @@ var CardPoolViewModel = function( type ) {
         var newColumn = new ColumnViewModel( [ card ] );
         newColumn.setType( colSortType, card[ colSortType ] );
         this.columns.push( newColumn );
+        this.sortPoolByType( "cmc", cardSortType );
         
     };
     
