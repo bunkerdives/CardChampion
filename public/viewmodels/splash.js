@@ -11,9 +11,7 @@ var SplashViewModel = function() {
 
 ko.utils.extend( SplashViewModel.prototype, {
     init: function() {
-        carouselDimensions();
-        lightboxSize();
-		iMacLayout();
-		$("#imac-screenshot-1").fadeIn(1000);
+			splashLayout();
+			$("#imac-screenshot-1").fadeIn(1000);
     }
 } ); 

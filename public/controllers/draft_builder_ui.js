@@ -5,7 +5,7 @@ function showSealedInterface( data ) {
   	$("#foyer").css( "display", "none" );
 		  
 	// toggle visibility of the draft interface
-	$('#draft-builder').css( "display", "block" );
+	$('#limited').css( "display", "block" );
         
 }
     
@@ -42,7 +42,7 @@ function addCardToUI( element, id, img, row, col, ui, set ) {
             break;
     }
         
-    resizeScreen();
+    limitedLayout();
         
 }
     
@@ -93,29 +93,24 @@ function cardZoom( event ) {
     $("#img-preview").css( "background-image", 'url(' + img + ')' );
 }
 
-function screenSize() {
+
+
+
+function limitedLayout() {
 	var windowHeight = $(window).height();
 	var windowWidth = $(window).width();
 	
-	if($('#open').is(":visible")){
-		//if header is open
-		var headerHeight = 50;
-	} else {
-		//if header is closed
-		var headerHeight = 20;
-	}
+	var headerHeight = 30;
 	
 	var halfScreenHeight = ((windowHeight-headerHeight)/2)-12;//-12 for half of the 24px tall #control-bar
 	var halfScreenWidth = windowWidth;
 	var topScreenHeight = (halfScreenHeight + ((windowHeight-headerHeight)/9)) - 2;
 	var bottomScreenHeight= (halfScreenHeight - ((windowHeight-headerHeight)/9)); 	
 	$('#top-screen').css({
-		"height" : topScreenHeight,
-		"width" : halfScreenWidth 
+		"height" : topScreenHeight
 	});
 	$('#bottom-screen').css({
-		"height" : bottomScreenHeight,
-		"width" : halfScreenWidth
+		"height" : bottomScreenHeight
 	});
 	
 	var previewHeight = topScreenHeight-10;//5 for bottom and 5 for top margin on #img-preview
@@ -145,8 +140,11 @@ function screenSize() {
 	var cardHeight = $('#card-pool-0-0').height();//standard height
 	var cardWidth = $('#card-pool-0-0').width();//standard width
 	
-	var cardPoolInnerHeight = ((cardHeight * Sealed.numRows)-(178 * (Sealed.numRows - 1))) + 3;//178 for negative margin-top on each .card, 3 for padding top on #card-pool-row-0/3 for bottom padding
-	var cardPoolInnerWidth = (cardWidth * Sealed.numCols) + (3 * Sealed.numCols);//3 for left padding on each column
+	//var cardPoolInnerHeight = ((cardHeight * Sealed.numRows)-(178 * (Sealed.numRows - 1))) + 3;//178 for negative margin-top on each .card, 3 for padding top on #card-pool-row-0/3 for bottom padding
+	//var cardPoolInnerWidth = (cardWidth * Sealed.numCols) + (3 * Sealed.numCols);//3 for left padding on each column
+	
+	var cardPoolInnerHeight = 3000;
+	var cardPoolInnerWidth= 3000;
 	
 	$("#card-pool-inner").css({
 		"height" : cardPoolInnerHeight,
@@ -177,9 +175,10 @@ function cardSizeInit(){
 
 }
 
+
+
 /*
-			Card size slider
-*/
+			//Card size slider
 
 var rtime = new Date(1, 1, 2000, 12,00,00);
 var timeout = false;
@@ -285,12 +284,15 @@ function cardSizeChangeEnd() {
 		}
 	}
 }
-/*
-		Card size slider end
+
+		//Card size slider end
 */
 
-function resizeScreen() {
-	screenSize();
+
+
+
+function limitedInit() {
+	limitedLayout();
 }
 
 $(document).ready(function(){
@@ -302,5 +304,5 @@ $(document).ready(function(){
 });
 
 $(window).resize(function() {
-	resizeScreen();
+	limitedLayout();
 });

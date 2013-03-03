@@ -1,64 +1,119 @@
 <div id="foyer">
 	<div id="foyer-content-container">
-		<div id="foyer-banner-wrapper">
-			<div id="foyer-banner" style="height:150px;background-color:#5d5d5d;margin-bottom:10px;margin-left:auto;margin-right:auto;background-image:url('http://media.wizards.com/images/magic/daily/wallpapers/Nice_Holiday_1280x960_Wallpaper.jpg');background-position:0px -250px;">
+		<div id="foyer-banner-container">
+			<div class="foyer-padding">
+				<div id="foyer-banner"/>
 			</div>
-		</div>
-		<div id="foyer-links">
-		</div>
-    <div id="portal">
-      <div id="left-pane" class="pull-left" >
-				<div id="info-wrapper" style="height:439px;min-height:0px;overflow:hidden;">
-					<div style="width:100%;height:100%;">
-						<div id="info-1" style="display:block;">
-			        <div id="sets" style="display:block;">
-			          <table class="table">
-			            <tbody data-bind="foreach: setQueues">
-			              <tr data-bind="click: selectSet">
-			                <td class="set-title set-td" data-bind="text: title"/>
-			                <td class="set-queue set-td" data-bind="text: size"/>
-			              </tr>
-									</tbody>
-			          </table>
-			        </div>
-			        <div id="set-select" style="display:block;">
-			          <button id="select-draft-button" class="btn btn-small">Draft</button>
-			          <button id="select-sealed-button" class="btn btn-small" data-bind="click: startSealed">Sealed</button>
-			        </div>
-						</div>
-						<div id="info-2" style="display:none;">Join an open draft queue.</div>
-						<div id="info-3" style="display:none;">About Us, About LimitedMTG.com, Mission Statement.</div>
-						<div id="info-4" style="display:none;">Frequently Asked Questions</div>
-					</div>
-				</div>
-      </div>
-			<hr style="display:inline-block;width:0;height:100px;-webkit-box-shadow: rgba(255, 255, 255, 0.07) 1px 0 0;-moz-box-shadow: rgba(255, 255, 255, 0.07) 1px 0 0;box-shadow: rgba(255, 255, 255, 0.07) 1px 0 0;border-left: 1px solid #121212;border-top: none;margin:0;margin-top:169.5px;"/>
-      <div id="right-pane-wrapper" class="pull-right">
-        <div id="right-pane" class="pull-right">
-          <div id="chat" class="pull-left">
-            <div id="convo" class="">
-              <div id="convo-inner">
-                <div class="chat-msg">
-                  <span>Welcome to LimitedMTG.com!</span>
-                </div>
-              </div>
-            </div>
-            <div id="chat-input">
-              <input id="chat-msg" class="pull-left" type="text"/>
-              <button id="chat-send-btn" class="btn btn-small pull-left appended">Send</button>
-							<button class="btn btn-small pull-right"><i class="icon-user"></i></button>
-            </div>
-          </div>
-		  		<div id="userlist" class="pull-right">
-					</div>
-				</div>
-	  	</div>
-    </div>
+		</div><!--End #foyer-banner-wrapper-->
+		<div id="foyer-links"/>
+    <div id="portal-container">
+			<div class="foyer-padding">
+				<div id="portal" class="clearfix">
+		      <div id="left-pane" class="pull-left">
+						<div id="main-animate-wrapper">
+							<div id="main-content-wrapper">
+								<div id="main-slide-1" class="main-slide" style="display:block;">
+					        <div id="sets">
+					          <table class="table">
+					            <tbody data-bind="foreach: setQueues">
+					              <tr data-bind="click: selectSet">
+					                <td class="set-title set-td" data-bind="text: title"/>
+					                <td class="set-queue set-td" data-bind="text: size"/>
+					              </tr>
+											</tbody>
+					          </table>
+					        </div><!--End #sets-->
+					        <div id="set-select">
+					          <button id="select-draft-button" class="btn btn-small">Draft</button>
+					          <button id="select-sealed-button" class="btn btn-small" data-bind="click: startSealed">Sealed</button>
+					        </div><!--End #set-select-->
+								</div><!--End #main-slide-1-->
+								<div id="main-slide-2" class="main-slide" style="display:none;">Join an open draft queue.</div>
+								<div id="main-slide-3" class="main-slide" style="display:none;">About Us, About LimitedMTG.com, Mission Statement.</div>
+								<div id="main-slide-4" class="main-slide" style="display:none;">
+									<div id="profile-container" style="width:100%;">
+										<div id="profile-inner" class="clearfix" style="width:100%;">
+											<div id="profile-left-col" class="pull-left" style="width:35%;">
+												<div id="profile-info" style="text-align:center;font-size:16px;line-height:16px;font-family: 'Open Sans', sans-serif;">
+													<strong style="font-size:20px;line-height:20px;white-space:pre-wrap;">User_Name_1284</strong><br/>
+													<div style="margin-left:auto;margin-right:auto;margin-top:3px;margin-bottom:3px;border:1px solid #000;">
+														<img src="/img/profile_image_placeholder.jpg" style="width:100%"/>
+													</div>
+													John Doe<br/>
+													03/01/13<br/>
+													This is a description. Lorem ipsum, etc., awiodbawjklbflkawnfl.
+												</div>
+											</div>
+											<div id="profile-right-col" class="pull-right" style="width:65%;">
+												<div id="profile-content-wrapper">
+													<div id="profile-nav" class="row-fluid" style="text-align:center;">
+														<div class="span3">Decks</div>
+														<div class="span3">Buddies</div>
+														<div class="span3">Pack</div>
+														<div class="span3">Threads</div>
+													</div>
+													<div id="profile-content">
+														<div id="profile-deck-previews" style="padding-left:10px;overflow:auto;">
+															<div class="deck-preview clearfix" style="border:1px solid #000;margin-bottom:3px;">
+																<div class="pull-left" style="height:75px;width:20%;background-color:#555;"></div>
+																<div class="pull-right" style="width:80%;text-align:left;">
+																	<div style="padding-left:3px;">
+																		Deck Name<br/>
+																		Format/Colors<br/>
+																		Date Created
+																	</div>
+																</div>
+															</div>
+															<div class="deck-preview clearfix" style="border:1px solid #000;margin-bottom:3px;">
+																<div class="pull-left" style="height:75px;width:20%;background-color:#555;"></div>
+																<div class="pull-right" style="width:80%;text-align:left;">
+																	<div style="padding-left:3px;">
+																		Deck Name<br/>
+																		Format/Colors<br/>
+																		Date Created
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div id="profile-buddy-list" style="display:none;">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><!--End #main-content-wrapper-->
+						</div><!--End #main-animate-wrapper-->
+		      </div><!--End #left-pane-->
+		      <div id="right-pane-wrapper" class="pull-right clearfix">
+						<hr class="vertical-rule pull-left"/>
+		        <div id="right-pane" class="pull-right clearfix">
+		          <div id="chat" class="pull-left">
+		            <div id="chat-convo-wrapper">
+		              <div id="chat-convo">
+		                <div class="chat-msg">
+		                  <span>Welcome to LimitedMTG.com!</span>
+		                </div>
+		              </div><!--End #chat-convo-->
+		            </div><!--End #chat-convo-wrapper-->
+		            <div id="chat-input" class="clearfix">
+		              <input id="chat-msg" class="pull-left" type="text"/>
+		              <button id="chat-send-btn" class="btn btn-small pull-left appended">Send</button>
+									<button class="btn btn-small pull-right"><i class="icon-user"></i></button>
+		            </div><!--End #chat-input-->
+		          </div><!--End #chat-->
+				  		<div id="userlist" class="pull-right"/>
+						</div><!--End #right-pane-->
+				  </div><!--End #right-pane-wrapper-->
+				</div><!--End #portal-->
+			</div><!--End .foyer-padding-->
+    </div><!--End #portal-container-->
 	  <div id="foyer-subcontent">
 	  	<div id="share">
 		  	<div id="share-msg" class="headline-txt">
 					<span>Tired of waiting in draft queues?</span>
-				</div>
+				</div><!--End #share-msg-->
 	  		<div id="share-buttons">
 	  			<span><img src="http://w.sharethis.com/images/facebook_32.png"/></span>
 	  			<span><img src="http://w.sharethis.com/images/twitter_32.png"/></span>
@@ -66,34 +121,28 @@
 	  			<span><img src="http://w.sharethis.com/images/tumblr_32.png"/></span>
 	  			<span><img src="http://w.sharethis.com/images/reddit_32.png"/></span>
 	  			<span><img src="http://w.sharethis.com/images/pinterest_32.png"/></span>
-	  		</div>
-				<div>
-					<small style="font-size:15px;line-height:15px;font-style:normal;font-weight:200;">Share LimitedMTG.com with your fellow planeswalkers.</small>
-				</div>
-	  	</div>
-	  	<hr style="clear:both;width:100px;margin-left:auto;margin-right:auto;">
-			<div id="donate" style="clear:both;">
-				<div style="max-width:550px;margin-left:auto;margin-right:auto;">
+	  		</div><!--End #share-buttons-->
+				<div id="share-caption">
+					<small>Share LimitedMTG.com with your fellow planeswalkers.</small>
+				</div><!--End #share-caption-->
+	  	</div><!--End #share-->
+	  	<hr class="horizontal-rule"/>
+			<div id="donate">
+				<div id="donate-quote">
 					<span>"Those who don't believe in magic will never find it."</span>
-					<br/>
-					<small style="font-size:22px;line-height:22px;font-style:normal;">-Roald Dahl</small>
-					<br/>
-					<br/>
-			  </div>
-				<div>
-					<span class="headline-txt" style="font-size:36px;line-height:36px;">Those who do,</span>
-					<br/>
-					<img src="http://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" style="margin-top:3px;"/>
-				</div>
-			</div>
-	  </div>
-		<div style="clear:both;"></div>
-	</div>
+					<small>-Roald Dahl</small>
+			  </div><!--End #donate-quote-->
+				<div id="donate-closer">
+					<span class="headline-txt">Those who do,</span>
+					<img src="http://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"/>
+				</div><!--End #donate-closer-->
+			</div><!--End #donate-->
+	  </div><!--End #foyer-subcontent-->
+	</div><!--End #foyer-content-container-->
 	<div id="foyer-footer" class="clearfix">
 		<div id="foyer-disclaimer">
 			<small>Magic the Gathering is TM and copyright Wizards of the Coast, Inc, a subsidiary of Hasbro, Inc. All rights reserved. This site is unaffiliated. Articles and comments are user-submitted and do not represent official endorsements of this site.</small>
-			<br />
 			<small>&copy; 2013 LimitedMTG</small>
-		</div>
-	</div>
-</div><!-- End #foyer -->
+		</div><!--End #foyer-disclaimer-->
+	</div><!--End #foyer-footer-->
+</div><!--End #foyer-->

@@ -35,13 +35,10 @@ var FoyerViewModel = function() {
             ViewModel.bannerId = 0;
         }
         
-        var banner = 'url(' + ViewModel.bannerImages[ 1 ] + ')';
+        var banner = 'url(' + ViewModel.bannerImages[ ViewModel.bannerId ] + ')';
         $('#foyer-banner').css( {
             'height' : '150px'
-            , 'background-image' : '#5d5d5d'
-            , 'margin-bottom' : '10px'
-            , 'margin-left' : 'auto'
-            , 'margin-right' : 'auto'
+            , 'background-color' : '#5d5d5d'
             , "background-image" : banner
             , 'background-position' : '0px -250px'
         } );
@@ -50,7 +47,7 @@ var FoyerViewModel = function() {
             { 'background-position-y' : '-550px' }
             , 12400
             , function() {
-                setTimeout( ViewModel.setAnimatedBanner, 12400 );
+                setTimeout( ViewModel.setAnimatedBanner, 8600 );
             }
         );
     };
@@ -166,16 +163,10 @@ var setQueue = function( name, abbr, size ) {
 ko.utils.extend( FoyerViewModel.prototype, {
     
     init: function() {
+			foyerInit();
         
-        foyerLayout();
-		navEvents();
-		$('#header-link-1').off();
-		
-		$("#header").css("display", "block");
-		$("body").css("background-color", "#2f2f2f");
-        
-        ViewModel.setBackgroundImage();
-        ViewModel.setAnimatedBanner();
+      ViewModel.setBackgroundImage();
+      ViewModel.setAnimatedBanner();
         
     }
     
