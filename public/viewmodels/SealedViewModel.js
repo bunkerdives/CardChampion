@@ -251,7 +251,7 @@ var screenSize = function() {
 
 ko.utils.extend( SealedViewModel.prototype, {
     init: function() {
-        screenSize();
+        limitedInit();
         cardSizeInit();
     }
 } );

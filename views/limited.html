@@ -1,11 +1,12 @@
 <div id="limited">
-  <div id="top-screen">
-    <div id="preview-wrapper" class="well">
+	
+  <div id="top-screen" class="clearfix">
+    <div id="preview-wrapper" class="well pull-left">
       <div id="img-preview" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }"/>
     </div>
-    <div id="card-pool" class="well">
-      <div id="card-pool-scroll">
-        <div id="card-pool-inner">
+    <div id="card-pool" class="well pull-left">
+      <div id="card-pool-scroll" class="clearfix">
+        <div id="card-pool-inner" class="pull-left clearfix">
          <div data-bind="foreach: sideboard">
            <div data-bind="foreach: columns">
              <div class="column" data-bind="foreach: cards">
@@ -17,6 +18,7 @@
       </div>
     </div>
   </div><!-- End #top-screen -->
+	
   <div id="control-bar">
     <div id="mainboard-breakdown" class="pull-left">
       <div id="mainboard-total" data-bind="text: mainboardSize" class="well"></div>
@@ -95,6 +97,7 @@
       </div><!-- End .btn-group -->
     </div><!-- End #add-land-->
   </div><!-- End #control-bar -->
+	
   <div id="bottom-screen">
     <div id="deck-area" class="well">
       <div id="deck-area-scroll">

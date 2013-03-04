@@ -96,16 +96,20 @@ function cardZoom( event ) {
 
 
 
-function limitedLayout() {
+function limitedLayout(xOffset) {
+	console.log('limitedLayout function called.');
 	var windowHeight = $(window).height();
-	var windowWidth = $(window).width();
+		var windowWidth = $(window).width();
 	
-	var headerHeight = 30;
+	var templateH = windowHeight-30-5;//30=header height, 5=limited template padding-top
 	
-	var halfScreenHeight = ((windowHeight-headerHeight)/2)-12;//-12 for half of the 24px tall #control-bar
-	var halfScreenWidth = windowWidth;
-	var topScreenHeight = (halfScreenHeight + ((windowHeight-headerHeight)/9)) - 2;
-	var bottomScreenHeight= (halfScreenHeight - ((windowHeight-headerHeight)/9)); 	
+	var halfScreenHeight = ((templateH)/2)-14;//-14 for half of the 28px tall #control-bar
+	
+		var halfScreenWidth = windowWidth;
+		
+	var topScreenHeight = (halfScreenHeight + (templateH/9))-xOffset;
+	var bottomScreenHeight= (halfScreenHeight - (templateH/9))+xOffset; 	
+	
 	$('#top-screen').css({
 		"height" : topScreenHeight
 	});
@@ -113,37 +117,38 @@ function limitedLayout() {
 		"height" : bottomScreenHeight
 	});
 	
-	var previewHeight = topScreenHeight-10;//5 for bottom and 5 for top margin on #img-preview
-	var previewWidth = (previewHeight*0.71935483870968);//Determine width via card ratio
+	var previewWrapperH = topScreenHeight;
+	var previewWrapperW = (previewWrapperH*0.71935483870968);//Determine width via card ratio
+	$('#preview-wrapper').css({
+		"height" : previewWrapperH,
+		"width" : previewWrapperW
+	});
+	
+	var previewImgH = previewWrapperH-6;//6=3px margin-top + 3px margin-bottom
+	var previewImgW = previewWrapperW-6;
 	$('#img-preview').css({
-		"height" : previewHeight,
-		"width" : previewWidth,
-		"background-size" : previewWidth + "px " + previewHeight + "px"
+		"height" : previewImgH,
+		"width" : previewImgW,
+		"background-size" : previewImgW + "px " + previewImgH + "px"
 	});
 	
 	var cardPoolHeight = topScreenHeight;
-	var cardPoolWidth = (windowWidth-10)-previewWidth;//5 for left margin on #img-preview, 5 for margin between #img-preview and #card-pool
+	var cardPoolWidth = (windowWidth-15)-previewWrapperW;
 	$('#card-pool').css({
 		"height" : cardPoolHeight,
 		"width" : cardPoolWidth
 	});
 	$('#card-pool-scroll').css("height", cardPoolHeight);
 
-	var deckAreaHeight = bottomScreenHeight;
-	var deckAreaWidth = windowWidth;
+	var deckAreaHeight = bottomScreenHeight-5;//5=deck-area bottom-padding
+	var deckAreaWidth = windowWidth-10;//10= 5px margin-left + 5px margin-right
 	$('#deck-area').css({
 		"height" : deckAreaHeight,
 		"width" : deckAreaWidth
 	});
 	$('#deck-area-scroll').css("height", deckAreaHeight);
 	
-	var cardHeight = $('#card-pool-0-0').height();//standard height
-	var cardWidth = $('#card-pool-0-0').width();//standard width
-	
-	//var cardPoolInnerHeight = ((cardHeight * Sealed.numRows)-(178 * (Sealed.numRows - 1))) + 3;//178 for negative margin-top on each .card, 3 for padding top on #card-pool-row-0/3 for bottom padding
-	//var cardPoolInnerWidth = (cardWidth * Sealed.numCols) + (3 * Sealed.numCols);//3 for left padding on each column
-	
-	var cardPoolInnerHeight = 3000;
+	var cardPoolInnerHeight = 3000;//Arbitrary number, will be replaced by a calculation of inner dimensions
 	var cardPoolInnerWidth= 3000;
 	
 	$("#card-pool-inner").css({
@@ -159,8 +164,9 @@ function limitedLayout() {
 		"min-width": deckAreaWidth - 3,
 		"min-height": deckAreaHeight
 	});	
-    
 }
+
+
 
 function cardSizeInit(){
     
@@ -292,7 +298,7 @@ function cardSizeChangeEnd() {
 
 
 function limitedInit() {
-	limitedLayout();
+	limitedLayout(0);
 }
 
 $(document).ready(function(){
@@ -304,5 +310,5 @@ $(document).ready(function(){
 });
 
 $(window).resize(function() {
-	limitedLayout();
+	limitedLayout(0);
 });
