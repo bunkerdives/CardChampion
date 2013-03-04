@@ -123,6 +123,7 @@ function limitedLayout(xOffset) {
 		"height" : previewWrapperH,
 		"width" : previewWrapperW
 	});
+	$('#mainboard-breakdown').css("width", previewWrapperW);
 	
 	var previewImgH = previewWrapperH-6;//6=3px margin-top + 3px margin-bottom
 	var previewImgW = previewWrapperW-6;
@@ -168,7 +169,7 @@ function limitedLayout(xOffset) {
 
 
 
-function cardSizeInit(){
+/*function cardSizeInit(){
     
 	var cardHeight = 198.7; //standard height
 	var cardWidth = 143; //standard width
@@ -179,74 +180,41 @@ function cardSizeInit(){
 		"background-size" : cardWidth + "px " + cardHeight + "px"
 	});
 
-}
+}*/
 
 
 
-/*
+
 			//Card size slider
 
 var rtime = new Date(1, 1, 2000, 12,00,00);
 var timeout = false;
-var delta = 300;
+var delta = 500;
 
 function cardSizeChange(slideAmount) {
-	var numPoolRows = Sealed.numRows;
-	var numPoolCols = Sealed.numCols;
-	var numMainRows = Sealed.numMainRows;
-	var numMainCols = 7;
-	var standardHeight = 198.7; //standard card height
-	var standardWidth = 143; //standard card width
+	//console.log('cardSizeChange function called.')
 	
-	//Change background size of cards to 0; add class .cardResize
-	//Loop through elements in card pool
-  for (var i=1;i<=numPoolRows;i++){
-  	for (var j=1;j<=numPoolCols;j++){
-			var id="#card-pool-" + (i-1) + "-" + (j-1); //-1's for zero index
-			//If there is a card in the element
-  		if ($(id).css('z-index') > -1){
-				$(id).css('background-size', '0px 0px');
-  			$(id).addClass('cardResize');
-  		}
-  	}
-  }
-	//Loop through elements in mainboard
-  for (var i=1;i<=numMainRows;i++){
-  	for (var j=1;j<=numMainCols;j++){
-			var id="#deck-area-" + (i-1) + "-" + (j-1); //-1's for zero index
-			//If there is a card in the element
-  		if ($(id).css('z-index') > -1){
-				$(id).css('background-size', '0px 0px');
-  			$(id).addClass('cardResize');
-  		}
-  	}
-  }
+	var standardH = 198.7; //standard card height
+	var standardW = 143; //standard card width
+	var newH = standardH * (slideAmount/100);
+	var newW = standardW * (slideAmount/100);
+	var marginTop = (newH * 0.894) * -1;
+	SealedViewModel.cardH = newH;
+	SealedViewModel.cardW = newW;
 	
-	//Resize inner elements
-	var cardHeight = standardHeight * (slideAmount/100);
-	var cardWidth = standardWidth * (slideAmount/100);
-	var marginTop = (cardHeight * 0.894) * -1;
-	var cardPoolInnerHeight = ((cardHeight * numPoolRows)+(marginTop * (numPoolRows - 1.25))) + 3;
-	var cardPoolInnerWidth = (cardWidth * numPoolCols) + (3 * numPoolCols);//3 for left padding on each column
-	var deckAreaInnerHeight = ((cardHeight * numMainRows)+(marginTop * (numMainRows - 1.25))) + 3;
-	var deckAreaInnerWidth = (cardWidth * numMainCols) + (3 * numMainCols);//3 for left padding on each column
-	$("#card-pool-inner").css({
-		"height" : cardPoolInnerHeight,
-		"width" : cardPoolInnerWidth
+	$(".card").each(function() {//Change background size of cards to 0; add class .cardResize
+		$(this).addClass('cardResize');
+		$(this).css({
+			'background-size': '0px 0px',
+			"height" : newH,
+			"width" : newW,
+			"margin-top" : marginTop
+		});
 	});
-	$("#deck-area-inner").css({
-		"height" : deckAreaInnerHeight,
-		"width" : deckAreaInnerWidth
-	});		
-
 	
-	//Change size of .card elements
-	$('.card').css({
-		"height" : cardHeight,
-		"width" : cardWidth,
+	$(".column").each(function() {
+		$(this).css("margin-top", marginTop*-1);
 	});
-	$('.stack').css('margin-top', marginTop);
-	
 	
 	//Set timeout
 	rtime = new Date();
@@ -257,42 +225,26 @@ function cardSizeChange(slideAmount) {
 }
 
 function cardSizeChangeEnd() {
-	var numPoolRows = Sealed.numRows;
-	var numPoolCols = Sealed.numCols;
-	var numMainRows = Sealed.numMainRows;
-	var numMainCols = 7;
+	//console.log('cardSizeChangeEnd function called.')
   if (new Date() - rtime < delta) {
   	setTimeout(cardSizeChangeEnd, delta);
   } else {
   	timeout = false;
-		//get height and width of any .card element
-		var cardHeight = $('#card-pool-0-0').height();
-		var cardWidth = $('#card-pool-0-0').width();
-		var bgSize=cardWidth + "px " + cardHeight + "px";
+		var newW = SealedViewModel.cardW;
+		var newH = SealedViewModel.cardH;
+		var bgSize=newW + "px " + newH + "px";
 		//remove .cardResize class, change the background size of these elements
-		for (var i=1;i<=numPoolRows;i++){
-		 	for (var j=1;j<=numPoolCols;j++){
-				var id="#card-pool-" + (i-1) + "-" + (j-1);
-		  	if ($(id).css('z-index') > -1){
-					$(id).css('background-size', bgSize);
-		  		$(id).removeClass('cardResize');
-		  	}
-		  }
-		}
-		for (var i=1;i<=numMainRows;i++){
-		 	for (var j=1;j<=numMainCols;j++){
-				var id="#deck-area-" + (i-1) + "-" + (j-1);
-		  	if ($(id).css('z-index') > -1){
-					$(id).css('background-size', bgSize);
-		  		$(id).removeClass('cardResize');
-		  	}
-		  }
-		}
+		$( ".card" ).each(function() {//Change background size of cards to 0; add class .cardResize
+			$(this).removeClass('cardResize');
+			$(this).css({
+				'background-size': bgSize
+			});
+		});
 	}
 }
 
 		//Card size slider end
-*/
+
 
 
 

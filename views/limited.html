@@ -19,17 +19,18 @@
     </div>
   </div><!-- End #top-screen -->
 	
-  <div id="control-bar">
+  <div id="control-bar" class="clearfix">
     <div id="mainboard-breakdown" class="pull-left">
-      <div id="mainboard-total" data-bind="text: mainboardSize" class="well"></div>
-      <span style="margin-left:3px;">/40</span>
-      <span style="margin-left:17px; margin-right:3px;">Creatures:</span>
-      <div id="mainboard-creatures" class="well" data-bind="text: numMainboardCreatures"></div>
-      <span style="margin-left:17px; margin-right:3px;">Lands:</span>
-      <div id="mainboard-lands" class="well" data-bind="text: numMainboardLands"></div>
+      <span id="mainboard-total" data-bind="text: mainboardSize"></span>
+      <span>/40</span>
+      <span style="margin-left:17px;">Creatures:</span>
+      <span id="mainboard-creatures" data-bind="text: numMainboardCreatures"></span>
+      <span style="margin-left:17px;">Lands:</span>
+      <span id="mainboard-lands" data-bind="text: numMainboardLands"></span>
     </div><!-- End #mainboard-breakdown -->
-    <div id="card-size-slider" class="well" style="display:inline-block;color:#fff;">
-      <input id="slide" type="range" min="70" max="170" step="1" value="100"/><!-- TODO onchange callback-->
+		
+    <div id="card-size-slider">
+      <input id="slide" type="range" min="70" max="130" step="1" value="100" onchange="cardSizeChange(this.value);"/><!-- Todo onchange callback-->
     </div><!-- End #card-size-slider -->
     <div id="sort">
       <div class="input-prepend">

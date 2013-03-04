@@ -67,11 +67,11 @@ a:hover {
 	box-shadow:         0px 1px 7px #111;
 	
 	background-color: #fafafa;
-	background-image: -moz-linear-gradient(top, #fff, #eee);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#eee));
-	background-image: -webkit-linear-gradient(top, #fff, #eee);
-	background-image: -o-linear-gradient(top, #fff, #eee);
-	background-image: linear-gradient(to bottom, #fff, #eee);
+	background-image: -moz-linear-gradient(top, #fff, #d0d0d0);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#d0d0d0));
+	background-image: -webkit-linear-gradient(top, #fff, #d0d0d0);
+	background-image: -o-linear-gradient(top, #fff, #d0d0d0);
+	background-image: linear-gradient(to bottom, #fff, #d0d0d0);
 	background-repeat: repeat-x;
 }
 
@@ -976,8 +976,6 @@ a:hover {
 }
 	
 #limited #bottom-screen {
-	/*padding-left:5px;
-	padding-right:5px;*/
 	width:100%;
 }
 	
@@ -1017,25 +1015,33 @@ a:hover {
 }
 	
 #limited #mainboard-breakdown {
-	font-size:17px;
+	min-width:260px;
+	
+	margin-left:5px;
+	
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px;
 	font-weight:400;
-	color:#aaa;
+	line-height:22px;
+	
+	color:#fff;
 	text-shadow: -1px -1px 1px #000, 0px 1px 1px #444; /* Bevel text */
-	margin-left:10px;
+	text-align:center;
 }
 	
-#limited #mainboard-breakdown .well {
+/*#limited #mainboard-breakdown .well {
 	min-width:25px;
 	display:inline-block;
 	text-align:right;
 	padding-right:8px;
 	text-shadow: 0 0 3px rgba(250, 250, 250, 0.5);
 	color:#ddd;
-}
+}*/
 	
 #limited #card-size-slider {
-	margin-left:40px;
 	line-height:20px;
+	display:inline-block;
+	color:#fff;
 }
 	
 input[type="range"]{
