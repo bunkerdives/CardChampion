@@ -14,7 +14,10 @@ var cardSizeInit = function() {
 var SealedViewModel = function( set ) {
 	
 		this.cardH = 198.7;
-		this.cardW =143;
+		this.cardW = 143;
+		
+		this.yOffsetBool = false;
+		this.yOffsetDragStart = 0;
     
     this.set = set;
     this.imgSrc = ko.observable( 'img/cardback.jpg' );

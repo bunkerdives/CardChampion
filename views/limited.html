@@ -29,10 +29,15 @@
       <span id="mainboard-lands" data-bind="text: numMainboardLands"></span>
     </div><!-- End #mainboard-breakdown -->
 		
-    <div id="card-size-slider">
+    <div id="card-size-slider" style="margin-left:300px;">
       <input id="slide" type="range" min="70" max="130" step="1" value="100" onchange="cardSizeChange(this.value);"/><!-- Todo onchange callback-->
     </div><!-- End #card-size-slider -->
-    <div id="sort">
+		
+		<div id="drag-offset-y" style="display:inline-block;">
+			<i class="icon-align-justify icon-white"></i>
+		</div>
+		
+    <div id="sort" class="pull-right">
       <div class="input-prepend">
         <div id="sort-wrapper" class="btn-primary">
           <div class="btn-group">

@@ -94,21 +94,21 @@ function cardZoom( event ) {
 }
 
 
-
-
-function limitedLayout(xOffset) {
+function limitedLayout() {
 	console.log('limitedLayout function called.');
 	var windowHeight = $(window).height();
-		var windowWidth = $(window).width();
+	var windowWidth = $(window).width();
 	
 	var templateH = windowHeight-30-5;//30=header height, 5=limited template padding-top
 	
 	var halfScreenHeight = ((templateH)/2)-14;//-14 for half of the 28px tall #control-bar
 	
-		var halfScreenWidth = windowWidth;
-		
-	var topScreenHeight = (halfScreenHeight + (templateH/9))-xOffset;
-	var bottomScreenHeight= (halfScreenHeight - (templateH/9))+xOffset; 	
+	var halfScreenWidth = windowWidth;
+	
+	var yOffsetNum = yOffset;
+	console.log("yOffsetNum: " + yOffsetNum);
+	var topScreenHeight = (halfScreenHeight + (templateH/9))-yOffsetNum;
+	var bottomScreenHeight= (halfScreenHeight - (templateH/9))+yOffsetNum; 	
 	
 	$('#top-screen').css({
 		"height" : topScreenHeight
@@ -123,6 +123,15 @@ function limitedLayout(xOffset) {
 		"height" : previewWrapperH,
 		"width" : previewWrapperW
 	});
+	
+	var cardPoolHeight = topScreenHeight;
+	var cardPoolWidth = (windowWidth-15)-previewWrapperW;
+	$('#card-pool').css({
+		"height" : cardPoolHeight,
+		"width" : cardPoolWidth
+	});
+	$('#card-pool-scroll').css("height", cardPoolHeight);
+	
 	$('#mainboard-breakdown').css("width", previewWrapperW);
 	
 	var previewImgH = previewWrapperH-6;//6=3px margin-top + 3px margin-bottom
@@ -132,14 +141,6 @@ function limitedLayout(xOffset) {
 		"width" : previewImgW,
 		"background-size" : previewImgW + "px " + previewImgH + "px"
 	});
-	
-	var cardPoolHeight = topScreenHeight;
-	var cardPoolWidth = (windowWidth-15)-previewWrapperW;
-	$('#card-pool').css({
-		"height" : cardPoolHeight,
-		"width" : cardPoolWidth
-	});
-	$('#card-pool-scroll').css("height", cardPoolHeight);
 
 	var deckAreaHeight = bottomScreenHeight-5;//5=deck-area bottom-padding
 	var deckAreaWidth = windowWidth-10;//10= 5px margin-left + 5px margin-right
@@ -166,21 +167,6 @@ function limitedLayout(xOffset) {
 		"min-height": deckAreaHeight
 	});	
 }
-
-
-
-/*function cardSizeInit(){
-    
-	var cardHeight = 198.7; //standard height
-	var cardWidth = 143; //standard width
-	
-	$(".card").css({
-		"height" : cardHeight,
-		"width" : cardWidth,
-		"background-size" : cardWidth + "px " + cardHeight + "px"
-	});
-
-}*/
 
 
 
@@ -245,12 +231,40 @@ function cardSizeChangeEnd() {
 
 		//Card size slider end
 
+var yOffset = 0;
+var yOffsetOld = 0;		
 
-
-
+function offsetDragHandlers() {
+	$('#drag-offset-y').mousedown(function(e){
+		SealedViewModel.yOffsetBool=true;
+		console.log("yOffsetBool: " + SealedViewModel.yOffsetBool);
+		SealedViewModel.yOffsetDragStart=e.pageY;
+		console.log("yOffsetDragStart: " + SealedViewModel.yOffsetDragStart);
+	});
+	
+	$(document).mouseup(function(){
+		if (SealedViewModel.yOffsetBool == true) {
+			SealedViewModel.yOffsetBool = false;
+			yOffsetOld = yOffset;
+			console.log("yOffsetBool: " + SealedViewModel.yOffsetBool);
+		}
+	}).mousemove(function(e){
+		if (SealedViewModel.yOffsetBool == true) {
+			var yOffsetStart = SealedViewModel.yOffsetDragStart;
+			console.log('yOffsetStart: ' + yOffsetStart);
+			var yOffsetEnd = e.pageY;
+			console.log('yOffsetEnd: ' + yOffsetEnd);
+			var yOffsetDelta = yOffsetStart - yOffsetEnd;
+			console.log('yOffsetDelta: ' + yOffsetDelta);
+			yOffset = yOffsetOld + yOffsetDelta;
+			limitedLayout();
+		}
+	});
+}
 
 function limitedInit() {
-	limitedLayout(0);
+	limitedLayout();
+	offsetDragHandlers();
 }
 
 $(document).ready(function(){
@@ -262,5 +276,5 @@ $(document).ready(function(){
 });
 
 $(window).resize(function() {
-	limitedLayout(0);
+	limitedLayout();
 });

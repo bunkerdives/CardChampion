@@ -1065,6 +1065,14 @@ input[type="range"]{
 	border-radius:10px;
 	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #fefefe), color-stop(0.49, #dddddd), color-stop(0.51, #d1d1d1), color-stop(1, #a1a1a1) );
 }
+
+#limited #drag-offset-y {
+	line-height:22px;
+}
+
+#limited #drag-offset-y :hover {
+	cursor:row-resize;
+}
 	
 #limited #sort {
 	margin-right:10px;
