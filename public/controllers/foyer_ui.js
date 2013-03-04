@@ -12,7 +12,7 @@ function appendChat() {
 	++i;
 }*/
 
-function foyerLayout(){
+/*function foyerLayout(){
 	console.log('foyerLayout function called.');
 	var windowWidth = $(window).width();
 	//Foyer BG calculation should go here
@@ -26,20 +26,20 @@ function foyerLayout(){
 	//$("#foyer-banner-wrapper").css("width", foyerContainerW);
 	//$("#foyer-banner").css("width", foyerContainerPaddedW);
 	//$("#portal").css("width", foyerContainerPaddedW);
-	$("#foyer-subcontent").css("width", foyerContainerPaddedW);
-	$("#foyer-footer").css("width", foyerContainerPaddedW);
+	//$("#foyer-subcontent").css("width", foyerContainerPaddedW);
+	//$("#foyer-footer").css("width", foyerContainerPaddedW);
 	
 	var leftPaneW = (foyerContainerPaddedW*0.675); //#right-pane width, -10 for l&r padding
 	//$("#left-pane").css("width", leftPaneW);
 	
-	/*var foyerLinksW = 0;
+	var foyerLinksW = 0;
 	$('span.foyer-link').each(function() {
 	    foyerLinksW += $(this).width();
 	});
 	var foyerLinksSpacer = (leftPaneW-foyerLinksW+20)/5;
 	if (foyerLinksSpacer>=13){
 		$(".foyer-link-spacer").css("width", foyerLinksSpacer);
-	}*/
+	}
 	
 	var rightPaneWrapperW = (foyerContainerPaddedW - leftPaneW)-10; //#left-pane-wrapper width
 	//$("#right-pane-wrapper").css("width", rightPaneWrapperW);
@@ -59,21 +59,20 @@ function foyerLayout(){
 	
 	var userlistW = rightPaneW - chatW; //#userlist width
 	//$("#userlist").css("width", userlistW);
-}
+}*/
 
 function foyerInit(){ 
-	foyerLayout();
+	//foyerLayout();
 	var headerExists = $("#header").css("display");
 	if (headerExists=="none"){
 		$("#header").css("display", "block");//Show header on foyer init
 		headerInit();
 	}
-	$("body").css("background-color", "#2f2f2f");//With regard to darkstrap theme on limited.html template, will change
 }
 
 $(window).resize(function(){
-	var foyerExists = $("#foyer").length;
+	/*var foyerExists = $("#foyer").length;
 	if (foyerExists==1) {
 		foyerLayout();
-	}
+	}*/
 });
