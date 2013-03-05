@@ -69,6 +69,7 @@ var CardViewModel = function( cardData ) {
         
     };
     
+    // cardColumn - return what column the card is currently in, if any
     this.cardColumn = function( pool, card ) {
         
         for( var i = 0; i < pool.columns().length; ++i ) {

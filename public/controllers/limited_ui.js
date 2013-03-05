@@ -95,7 +95,7 @@ function cardZoom( event ) {
 
 
 function limitedLayout() {
-	console.log('limitedLayout function called.');
+	//console.log('limitedLayout function called.');
 	var windowHeight = $(window).height();
 	var windowWidth = $(window).width();
 	
@@ -106,7 +106,7 @@ function limitedLayout() {
 	var halfScreenWidth = windowWidth;
 	
 	var yOffsetNum = yOffset;
-	console.log("yOffsetNum: " + yOffsetNum);
+	//console.log("yOffsetNum: " + yOffsetNum);
 	var topScreenHeight = (halfScreenHeight + (templateH/9))-yOffsetNum;
 	var bottomScreenHeight= (halfScreenHeight - (templateH/9))+yOffsetNum; 	
 	
@@ -237,25 +237,25 @@ var yOffsetOld = 0;
 function offsetDragHandlers() {
 	$('#drag-offset-y').mousedown(function(e){
 		SealedViewModel.yOffsetBool=true;
-		console.log("yOffsetBool: " + SealedViewModel.yOffsetBool);
+		//console.log("yOffsetBool: " + SealedViewModel.yOffsetBool);
 		SealedViewModel.yOffsetDragStart=e.pageY;
-		console.log("yOffsetDragStart: " + SealedViewModel.yOffsetDragStart);
+		//console.log("yOffsetDragStart: " + SealedViewModel.yOffsetDragStart);
 	});
 	
 	$(document).mouseup(function(){
 		if (SealedViewModel.yOffsetBool == true) {
 			SealedViewModel.yOffsetBool = false;
 			yOffsetOld = yOffset;
-			console.log("yOffsetBool: " + SealedViewModel.yOffsetBool);
+			//console.log("yOffsetBool: " + SealedViewModel.yOffsetBool);
 		}
 	}).mousemove(function(e){
 		if (SealedViewModel.yOffsetBool == true) {
 			var yOffsetStart = SealedViewModel.yOffsetDragStart;
-			console.log('yOffsetStart: ' + yOffsetStart);
+			//console.log('yOffsetStart: ' + yOffsetStart);
 			var yOffsetEnd = e.pageY;
-			console.log('yOffsetEnd: ' + yOffsetEnd);
+			//console.log('yOffsetEnd: ' + yOffsetEnd);
 			var yOffsetDelta = yOffsetStart - yOffsetEnd;
-			console.log('yOffsetDelta: ' + yOffsetDelta);
+			//console.log('yOffsetDelta: ' + yOffsetDelta);
 			yOffset = yOffsetOld + yOffsetDelta;
 			limitedLayout();
 		}

@@ -1,23 +1,23 @@
 var cardSizeInit = function() {
     
-    	/*var cardHeight = 198.7; //standard height
-    	var cardWidth = 143; //standard width*/
+	/*var cardHeight = 198.7; //standard height
+	var cardWidth = 143; //standard width*/
 	
-    	$(".card").css( {
-    		"height" : SealedViewModel.cardH,
-    		"width" : SealedViewModel.cardW,
-    		"background-size" : SealedViewModel.cardW + "px " + SealedViewModel.cardH + "px"
-    	} );
+	$(".card").css( {
+		"height" : SealedViewModel.cardH,
+		"width" : SealedViewModel.cardW,
+		"background-size" : SealedViewModel.cardW + "px " + SealedViewModel.cardH + "px"
+	} );
         
 };
 
 var SealedViewModel = function( set ) {
 	
-		this.cardH = 198.7;
-		this.cardW = 143;
-		
-		this.yOffsetBool = false;
-		this.yOffsetDragStart = 0;
+	this.cardH = 198.7;
+	this.cardW = 143;
+	
+	this.yOffsetBool = false;
+	this.yOffsetDragStart = 0;
     
     this.set = set;
     this.imgSrc = ko.observable( 'img/cardback.jpg' );
@@ -34,8 +34,71 @@ var SealedViewModel = function( set ) {
     this.redLandCount = ko.observable( 0 );
     this.greenLandCount = ko.observable( 0 );
     
-    this.addLandToMainboard = function( landData ) {
-        ;
+    this.addLandToMainboard = function() {
+        
+        console.log("addLandToMainboard");
+        
+        // create number of lands per each type, according to the land counts
+        
+        var colSortType = ViewModel.selectedSortOption().sortType;
+        
+        console.log("White land: " + this.whiteLandCount() )
+        
+        for( var i = 0; i < this.whiteLandCount(); ++i ){
+            
+            var land = new Land('W');
+            var landCard = new CardViewModel(land);
+            console.log("white land type: " + landCard.type);
+            
+            this.mainboard()[0].addCardToPool( landCard, colSortType, "name" );
+            this.adjustCardCounterUI( landCard, 1);
+            
+        }
+        
+        for( var i = 0; i < this.blueLandCount(); ++i ){
+            
+            var land = new Land('U');
+            var landCard = new CardViewModel(land);
+            
+            this.mainboard()[0].addCardToPool( landCard, colSortType, "name" );
+            this.adjustCardCounterUI( landCard, 1);
+            
+        }
+        
+        for( var i = 0; i < this.blackLandCount(); ++i ){
+            
+            var land = new Land('B');
+            var landCard = new CardViewModel(land);
+            
+            this.mainboard()[0].addCardToPool( landCard, colSortType, "name" );
+            this.adjustCardCounterUI( landCard, 1);
+            
+        }
+        
+        for( var i = 0; i < this.redLandCount(); ++i ){
+            
+            var land = new Land('R');
+            var landCard = new CardViewModel(land);
+            
+            this.mainboard()[0].addCardToPool( landCard, colSortType, "name" );
+            this.adjustCardCounterUI( landCard, 1);
+            
+        }
+        
+        for( var i = 0; i < this.greenLandCount(); ++i ){
+            
+            var land = new Land('G');
+            var landCard = new CardViewModel(land);
+            
+            this.mainboard()[0].addCardToPool( landCard, colSortType, "name" );
+            this.adjustCardCounterUI( landCard, 1);
+            
+        }
+        
+    };
+    
+    this.suggestLand = function() {
+        
     };
     
     this.adjustCardCounterUI = function( card, magnitude ) {
@@ -67,7 +130,7 @@ var SealedViewModel = function( set ) {
                 this.blackLandCount( this.blackLandCount() + 1 );
                 break;
             case 'R' :
-                this.redLandCount( this.reLandCount() + 1 );
+                this.redLandCount( this.redLandCount() + 1 );
                 break;
             case 'G' :
                 this.greenLandCount( this.greenLandCount() + 1 );
@@ -127,6 +190,7 @@ var SealedViewModel = function( set ) {
         , new this.sortOption( 'type', 'by type' )
         , new this.sortOption( 'rarity', 'by rarity' )
     ] );
+    
     this.selectedSortOption = ko.observable( this.sortOptions()[0] );
     
     this.cardselect = null;
@@ -182,5 +246,11 @@ ko.utils.extend( SealedViewModel.prototype, {
     init: function() {
         limitedInit();
         cardSizeInit();
+        
+    	$("#add-land-dropdown").on("click", function(e){
+    		//do something
+    	  e.stopPropagation();
+    	});
+        
     }
 } );
