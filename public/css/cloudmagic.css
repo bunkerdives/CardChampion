@@ -39,6 +39,13 @@ a:hover {
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 }
+
+.no-select {
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
 /* General classes and styles end */
 
 
@@ -1071,7 +1078,7 @@ input[type="range"]{
 }
 
 #limited #drag-offset-y :hover {
-	cursor:row-resize;
+	cursor:ns-resize;
 }
 	
 #limited #sort {

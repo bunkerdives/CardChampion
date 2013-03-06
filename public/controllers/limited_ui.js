@@ -237,6 +237,7 @@ var yOffsetOld = 0;
 function offsetDragHandlers() {
 	$('#drag-offset-y').mousedown(function(e){
 		SealedViewModel.yOffsetBool=true;
+		$("body").addClass("no-select");
 		//console.log("yOffsetBool: " + SealedViewModel.yOffsetBool);
 		SealedViewModel.yOffsetDragStart=e.pageY;
 		//console.log("yOffsetDragStart: " + SealedViewModel.yOffsetDragStart);
@@ -245,6 +246,7 @@ function offsetDragHandlers() {
 	$(document).mouseup(function(){
 		if (SealedViewModel.yOffsetBool == true) {
 			SealedViewModel.yOffsetBool = false;
+			$("body").removeClass("no-select");
 			yOffsetOld = yOffset;
 			//console.log("yOffsetBool: " + SealedViewModel.yOffsetBool);
 		}
