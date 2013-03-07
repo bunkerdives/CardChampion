@@ -9,8 +9,8 @@
         <div id="card-pool-inner" class="pull-left clearfix">
          <div data-bind="foreach: sideboard">
            <div data-bind="foreach: columns">
-             <div class="column" data-bind="foreach: cards">
-               <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mouseover: function(){ cardZoom($root); }, click: cardHighlight, dblclick: function(){ cardSelect('sideboard'); } }"/>
+             <div class="column" data-bind="foreach: cards, event: { mouseover: mouseOver }">
+               <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(){ mouseDownHandler('sideboard'); }, mouseup: mouseUpHandler, mouseover: function(){ cardZoom($root); }, click: cardHighlight, dblclick: function(){ cardSelect('sideboard'); } }"/>
              </div>
            </div>
          </div>
@@ -110,8 +110,8 @@
        <div id="deck-area-inner">
         <div data-bind="foreach: mainboard">
           <div data-bind="foreach: columns">
-            <div class="column" data-bind="foreach: cards">
-              <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mouseover: function(){ cardZoom($root); }, click: cardHighlight, dblclick: function(){ cardSelect('mainboard'); } }"/>
+            <div class="column" data-bind="foreach: cards, event: { mouseover: mouseOver }">
+              <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(){ mouseDownHandler('mainboard'); }, mouseup: mouseUpHandler, mouseover: function(){ cardZoom($root); }, click: cardHighlight, dblclick: function(){ cardSelect('mainboard'); } }"/>
             </div>
           </div>
         </div>
@@ -119,5 +119,5 @@
       </div>
     </div>
   </div><!-- End #bottom-screen -->
-	<div class="drag-drop-card" style="display:none;position:absolute;z-index:5000;"></div>
+	<div id="drag-drop-card" style="display:none;position:absolute;z-index:5000;"></div>
 </div><!-- End #limited -->

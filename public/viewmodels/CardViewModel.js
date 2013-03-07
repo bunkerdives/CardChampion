@@ -16,6 +16,39 @@ var CardViewModel = function( cardData ) {
             + '&type=card';
     }, this );
     
+    this.mouseDownHandler = function( poolType ) {
+        
+        console.log("mouseDownHandler");
+        
+        // save the column view that this card is in
+        var pool;
+        if( poolType == 'sideboard' ){
+            pool = ViewModel.sideboard()[0];
+        }
+        else if( poolType == 'mainboard' ){
+            pool = ViewModel.mainboard()[0];
+        }
+        else{
+            return;
+        }
+        
+        // save the card view object
+        ViewModel.cardDragCardView = this;
+        
+        // remove this card object from its column
+        var col = this.cardColumn( pool, this );
+        ViewModel.dragDropOrigPool = pool;
+        ViewModel.dragDropOrigColIdx = col;
+        
+        ViewModel.mousedown = true;
+        ViewModel.cardDragSrc = this.imgSrc();
+        
+    };
+    
+    this.mouseUpHandler = function() {
+        ViewModel.mousedown = false;
+    };
+    
     this.cardZoom = function( view ) {
         
         var url = 'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid='

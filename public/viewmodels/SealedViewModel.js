@@ -34,21 +34,24 @@ var SealedViewModel = function( set ) {
     this.redLandCount = ko.observable( 0 );
     this.greenLandCount = ko.observable( 0 );
     
+    this.mousedown = false;
+    this.cardDragCardView = '';
+    this.dragDropOrigPool = '';
+    this.dragDropOrigColIdx = '';
+    this.dragDropNewCol = '';
+    this.cardDragSrc = '';
+    
+    
+    
     this.addLandToMainboard = function() {
-        
-        console.log("addLandToMainboard");
-        
-        // create number of lands per each type, according to the land counts
         
         var colSortType = ViewModel.selectedSortOption().sortType;
         
-        console.log("White land: " + this.whiteLandCount() )
-        
+        // create number of lands per each type, according to the land counts
         for( var i = 0; i < this.whiteLandCount(); ++i ){
             
             var land = new Land('W');
             var landCard = new CardViewModel(land);
-            console.log("white land type: " + landCard.type);
             
             this.mainboard()[0].addCardToPool( landCard, colSortType, "name" );
             this.adjustCardCounterUI( landCard, 1);
@@ -238,12 +241,53 @@ var SealedViewModel = function( set ) {
         
     };
     
+    this.mouseMoveCardDrag = function( event ) {
+        
+        if( ViewModel.mousedown == true ){
+            
+            var pool = ViewModel.dragDropOrigPool;
+            pool.removeCardFromPool( ViewModel.cardDragCardView, ViewModel.dragDropOrigColIdx );
+        
+            var ele = $("#drag-drop-card");
+            ele.css( 'background-image', 'url(' + ViewModel.cardDragSrc + ')' );
+            ele.css( 'display', 'block' );
+            ele.css( 'background-size', ViewModel.cardW + "px " + ViewModel.cardH + "px" );
+            ele.css( 'height', ViewModel.cardH );
+            ele.css( 'width', ViewModel.cardW );
+            ele.css( 'top', event.pageY );
+            ele.css( 'left', event.pageX );
+        }
+    };
+    
+    this.mouseUp = function( event ) {
+      
+        if( ViewModel.mousedown == true ) {
+            
+            // hide the drag drop card
+            $("#drag-drop-card").css( 'display', 'none' );
+            
+            ViewModel.mousedown = false;
+            
+            if( ViewModel.dragDropNewCol != '' ){
+                ViewModel.dragDropNewCol.cards.push( ViewModel.cardDragCardView );
+                ViewModel.dragDropNewCol = '';
+            }
+            else{
+                // add the card back to the column it belongs in
+                var col = ViewModel.dragDropOrigColIdx;
+                ViewModel.dragDropOrigPool.columns()[col].cards.push( ViewModel.cardDragCardView );
+            }
+            
+        }
+        
+    };
+    
 };
 
 
 
 ko.utils.extend( SealedViewModel.prototype, {
-    init: function() {
+    init: function( element, valueAccessor, allBindingsAccessor ) {
         limitedInit();
         cardSizeInit();
         
@@ -252,5 +296,10 @@ ko.utils.extend( SealedViewModel.prototype, {
     	  e.stopPropagation();
     	});
         
+        // attach the mousemove event handler to the document element
+        $(document).mousemove( ViewModel.mouseMoveCardDrag );
+        $(document).mouseup( ViewModel.mouseUp );
+        
     }
+    
 } );

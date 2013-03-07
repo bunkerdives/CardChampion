@@ -132,6 +132,6 @@ var CardPoolViewModel = function( type ) {
         this.columns( columns );
         this.columns().push();
         
-    }
+    };
     
 };
