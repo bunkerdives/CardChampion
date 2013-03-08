@@ -11,8 +11,6 @@ var ColumnViewModel = function( cards ) {
     
     this.setType = function( type, typeFigure ) {
         
-        console.log( "setType!  type = " + type + ", typeFigure = " + typeFigure );
-        
         this.colType = type;
         
         switch( type ) {
@@ -82,6 +80,8 @@ var ColumnViewModel = function( cards ) {
     this.mouseOver = function() {
         
         if( ViewModel.mousedown == true ) {
+            
+            console.log("mouseOver");
             
             ViewModel.dragDropNewCol = this;
             

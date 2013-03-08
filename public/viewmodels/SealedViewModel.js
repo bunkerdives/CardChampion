@@ -35,6 +35,10 @@ var SealedViewModel = function( set ) {
     this.greenLandCount = ko.observable( 0 );
     
     this.mousedown = false;
+    this.cardDragCardCursorTop = '';
+    this.cardDragCardCursorLeft = '';
+    this.cardDragCardTop = '';
+    this.cardDragCardLeft = '';
     this.cardDragCardView = '';
     this.dragDropOrigPool = '';
     this.dragDropOrigColIdx = '';
@@ -247,15 +251,19 @@ var SealedViewModel = function( set ) {
             
             var pool = ViewModel.dragDropOrigPool;
             pool.removeCardFromPool( ViewModel.cardDragCardView, ViewModel.dragDropOrigColIdx );
-        
+            
             var ele = $("#drag-drop-card");
             ele.css( 'background-image', 'url(' + ViewModel.cardDragSrc + ')' );
             ele.css( 'display', 'block' );
             ele.css( 'background-size', ViewModel.cardW + "px " + ViewModel.cardH + "px" );
             ele.css( 'height', ViewModel.cardH );
             ele.css( 'width', ViewModel.cardW );
-            ele.css( 'top', event.pageY );
-            ele.css( 'left', event.pageX );
+            
+            ele.css( {
+                'top' : ViewModel.cardDragCardTop + (event.pageY - ViewModel.cardDragCardCursorTop)
+                , 'left' : ViewModel.cardDragCardLeft + (event.pageX - ViewModel.cardDragCardCursorLeft)
+            } );
+        
         }
     };
     

@@ -1,6 +1,7 @@
 var CardViewModel = function( cardData ) {
     
     this.self = this;
+    this.poolType = '';
     this.name = cardData.name;
     this.rarity = cardData.rarity;
     this.type = cardData.type;
@@ -16,9 +17,9 @@ var CardViewModel = function( cardData ) {
             + '&type=card';
     }, this );
     
-    this.mouseDownHandler = function( poolType ) {
+    this.mouseDownHandler = function( poolType, event ) {
         
-        console.log("mouseDownHandler");
+        //console.log("mouseDownHandler " + poolType);
         
         // save the column view that this card is in
         var pool;
@@ -36,9 +37,21 @@ var CardViewModel = function( cardData ) {
         ViewModel.cardDragCardView = this;
         
         // remove this card object from its column
-        var col = this.cardColumn( pool, this );
         ViewModel.dragDropOrigPool = pool;
-        ViewModel.dragDropOrigColIdx = col;
+        ViewModel.dragDropOrigColIdx = this.cardColumn( pool, this );;
+        
+        // display the cardDragDrop element at the same spot
+        $("#drag-drop-card").css( {
+            'top' : event.pageY
+            , 'left' : event.pageX
+        } );
+        
+        ViewModel.cardDragCardCursorTop = event.pageY;
+        ViewModel.cardDragCardCursorLeft = event.pageX;
+        
+        var offset = $(event.target).offset();
+        ViewModel.cardDragCardTop = offset.top;
+        ViewModel.cardDragCardLeft = offset.left;
         
         ViewModel.mousedown = true;
         ViewModel.cardDragSrc = this.imgSrc();
@@ -117,6 +130,23 @@ var CardViewModel = function( cardData ) {
         }
         
         return -1;
+        
+    }
+    
+};
+
+
+ko.bindingHandlers.mouseDownHandlerTest = {
+    
+    init: function( element, valueAccessor ) {
+        
+        console.log( "mouseDownHandlerTest " + valueAccessor() );
+        
+        ViewModel.cardDragCardTarget = $(element);
+        
+        var options = valueAccessor() || '';
+        
+        ko.bindingHandlers.mousedown.init( element, options );
         
     }
     

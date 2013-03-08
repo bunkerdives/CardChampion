@@ -10,7 +10,7 @@
          <div data-bind="foreach: sideboard">
            <div data-bind="foreach: columns">
              <div class="column" data-bind="foreach: cards, event: { mouseover: mouseOver }">
-               <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(){ mouseDownHandler('sideboard'); }, mouseup: mouseUpHandler, mouseover: function(){ cardZoom($root); }, click: cardHighlight, dblclick: function(){ cardSelect('sideboard'); } }"/>
+               <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(data,event){ mouseDownHandler('sideboard', event); }, mouseup: mouseUpHandler, mouseover: function(){ cardZoom($root); }, click: cardHighlight, dblclick: function(){ cardSelect('sideboard'); } }"/>
              </div>
            </div>
          </div>
@@ -111,7 +111,7 @@
         <div data-bind="foreach: mainboard">
           <div data-bind="foreach: columns">
             <div class="column" data-bind="foreach: cards, event: { mouseover: mouseOver }">
-              <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(){ mouseDownHandler('mainboard'); }, mouseup: mouseUpHandler, mouseover: function(){ cardZoom($root); }, click: cardHighlight, dblclick: function(){ cardSelect('mainboard'); } }"/>
+              <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(data,event){ mouseDownHandler('mainboard', event); }, mouseup: mouseUpHandler, mouseover: function(){ cardZoom($root); }, click: cardHighlight, dblclick: function(){ cardSelect('mainboard'); } }"/>
             </div>
           </div>
         </div>
