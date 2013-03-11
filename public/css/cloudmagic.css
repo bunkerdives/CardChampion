@@ -1,4 +1,4 @@
-/* General classes and styles */
+ /* General classes and styles */
 body {
 	background-image:url('http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1920x1080_Wallpaper.jpg');
 	background-repeat:no-repeat;
@@ -46,6 +46,10 @@ a:hover {
 	-webkit-user-select: none;
 	user-select: none;
 }
+
+body.ns-resize-cursor {
+	cursor:ns-resize !important;
+}
 /* General classes and styles end */
 
 
@@ -53,7 +57,6 @@ a:hover {
 #header {
 	height:30px;/* linked with #content padding-top */
 	margin-bottom: 0;
-	background-color:#2f2f2f;
 	position: fixed;
 	right: 0;
 	left: 0;
@@ -80,6 +83,11 @@ a:hover {
 	background-image: -o-linear-gradient(top, #fff, #d0d0d0);
 	background-image: linear-gradient(to bottom, #fff, #d0d0d0);
 	background-repeat: repeat-x;
+}
+
+.limited-header {
+	background-image:url('/img/limited-header-bg.png');
+	background-repeat:repeat-x;
 }
 
 #header #logo {
@@ -141,7 +149,6 @@ a:hover {
 	font-size: 16px;
 	line-height: 30px;
 	height:30px;
-	text-transform: uppercase;
 	text-align:right;
 	font-weight:400;
 }
@@ -158,6 +165,13 @@ a:hover {
 
 .down-arrow {
 	background-image: url('/img/downArrow.png');
+	background-repeat: no-repeat;
+	background-position: center right;
+	padding: 0 9px 0 0;
+}
+
+.down-arrow-white {
+	background-image: url('/img/down-arrow-white.png');
 	background-repeat: no-repeat;
 	background-position: center right;
 	padding: 0 9px 0 0;
@@ -344,16 +358,15 @@ a:hover {
 }
 
 #foyer #portal-left-pane {
-	width: -webkit-calc(67.5% - 21px);
-	width: -moz-calc(67.5% - 21px);
-	width: calc(67.5% - 21px);
+	width: -webkit-calc(67.5% - 2px);
+	width: -moz-calc(67.5% - 2px);
+	width: calc(67.5% - 2px);
 	
-	height:440px;
+	height:460px;
 	
 	margin:0;
-	padding:10px;
 	
-	border-right:1px solid #000;
+	border-right:2px solid #000;
 }
 
 #foyer #main-animate-wrapper {
@@ -363,8 +376,8 @@ a:hover {
 	
 	overflow:hidden;
 	
-	-webkit-box-shadow: inset 0px 0px 0px 1px #000;
-	box-shadow: inset 0px 0px 0px 1px #000;
+	/*-webkit-box-shadow: inset 0px 0px 0px 1px #000;
+	box-shadow: inset 0px 0px 0px 1px #000;*/
 }
 
 #foyer #sets {
@@ -393,6 +406,93 @@ a:hover {
 
 #foyer #select-draft-button {
 	margin-right:3px;
+}
+
+#foyer #profile-container {
+	width:100%;
+}
+
+#foyer #profile-container a {
+	color:#000;
+	text-decoration:none;
+}
+
+#foyer #profile-inner {
+	width:100%;
+}
+
+#foyer #profile-top-row {
+	width:100%;
+	
+	text-align:center;
+	/*background-color:#aaa;*/
+	height:34px;
+	margin-bottom:10px;
+	border-bottom:2px solid #000;
+	border-left:1px solid #000;
+}
+
+#foyer #profile-username {
+	width:35%;
+	font-size:24px;
+	line-height:34px;
+	white-space:pre-wrap;
+	font-weight:400;
+}
+
+#foyer #profile-nav {
+	line-height:34px;
+	width: -webkit-calc(65% - 10px);
+	width: -moz-calc(65% - 10px);
+	width: calc(65% - 10px);
+}
+
+#foyer .nav {
+	margin:0;
+}
+
+#foyer #profile-nav .nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+	color: #ffffff;
+	background-color: #0088cc;
+}
+
+#foyer #profile-nav .profile-link {
+	width:33%;
+	float:left;
+}
+
+#foyer #profile-bottom-row {
+	width: -webkit-calc(100% - 20px);
+	width: -moz-calc(100% - 20px);
+	width: calc(100% - 20px);
+	margin-left:10px;
+	margin-right:10px;
+}
+
+#foyer #profile-left-col {
+	width:35%;
+}
+
+#foyer #profile-info {
+	text-align:center;
+	font-size:14px;
+	line-height:14px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#foyer #profile-image {
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+	border:1px solid #000;
+}
+
+#foyer #profile-image img {
+	width:100%;
+}
+
+#foyer #profile-description {
+	margin-top:10px;
 }
 
 /*#foyer .vertical-rule {
@@ -810,65 +910,7 @@ a:hover {
  		text-align:center;
  	}
  	
- 	#control-bar .btn-mini {
- 		padding:1px 10px;
- 	}
  	
- 	#control-bar #sort {
- 		float:right;
- 		padding-left:8px;
- 	}
- 	
- 	#control-bar #sort .input-prepend {
- 		padding-bottom:0px;
- 		margin-bottom:0px;
- 	}
- 	
- 	#control-bar #sort-wrapper {
- 		float:right;
- 		height:22px;
- 		width:auto;
- 		-webkit-border-radius: 4px 4px 4px 4px;
- 		-moz-border-radius: 4px 4px 4px 4px;
- 		border-radius: 4px 4px 4px 4px;
- 		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
- 		-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
- 		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
- 		padding-right:3px;
- 		border-left:0px;
- 	}
- 	
- 	#control-bar #sort #sort-button {
- 		border:0px;
- 		border-right:1px solid;
- 		border-right-color: rgba(0, 0, 0, 0.0980392);
- 		height:22px;
- 	}
- 	
- 	#control-bar #sort .dropdown-menu {
- 		min-width:0px;
- 	}
- 	
- 	#control-bar span {
- 		display:inline;
- 	}
- 	
- 	#control-bar #prependedInput {
- 		padding-left:5px;
- 	}
- 	
- 	#control-bar #sort select {
- 		line-height:24px;
- 		margin-bottom:0px;
- 		padding-bottom:0px;
- 		width:100px;
- 		position:relative;
- 		height:18px;
- 		font-size:12px;
- 		background:#fff;
- 		color:#000;
- 		margin-top:2px;
- 	}
  	
  	#draft #control-bar #shuffle {
  		float:right;
@@ -972,7 +1014,7 @@ a:hover {
 	margin-top:178px;
 }
 	
-#limited #control-bar {
+#limited #control-bar-container {
 	padding-top:3px;
 	padding-bottom:3px;
 	width:100%;
@@ -980,6 +1022,163 @@ a:hover {
 	font-weight:400;
 	min-height:0px;
 	line-height:22px;
+}
+
+#limited #limited-control-bar-left {
+	min-width:260px;
+	
+	margin-left:5px;
+	margin-right:5px;
+}
+	
+#limited #mainboard-breakdown {
+	
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+	font-weight:400;
+	line-height:22px;
+	
+	color:#fff;
+	text-shadow: -1px -1px 1px #000, 0px 1px 1px #444; /* Bevel text */
+	text-align:center;
+}
+	
+/*#limited #mainboard-breakdown .well {
+	min-width:25px;
+	display:inline-block;
+	text-align:right;
+	padding-right:8px;
+	text-shadow: 0 0 3px rgba(250, 250, 250, 0.5);
+	color:#ddd;
+}*/
+	
+#limited #card-size-slider {
+	line-height:20px;
+	display:inline-block;
+	color:#fff;
+	margin-left:5px;
+}
+	
+#limited input[type="range"]{
+	-webkit-appearance:none; 
+	-moz-apperance:none; 
+	width:100px;
+	height:5px;
+	margin-top:-2px;
+}
+	
+#limited #card-size-slider input::-webkit-slider-thumb{
+	-webkit-appearance:none; 
+	-moz-apperance:none; 
+	width:10px; 
+	height:10px;
+	-webkit-border-radius:10px; 
+	-moz-border-radius:10px; 
+	-ms-border-radius:10px; 
+	-o-border-radius:10px; 
+	border-radius:10px;
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #fefefe), color-stop(0.49, #dddddd), color-stop(0.51, #d1d1d1), color-stop(1, #a1a1a1) );
+}
+
+#limited #limited-control-bar-right {
+	
+}
+
+#limited #offset-y-container {
+	width: -webkit-calc(100% - 236px);/* Minus width of #control-bar-buttons */
+	width: -moz-calc(100% - 236px);
+	width: calc(100% - 236px);
+}
+
+#limited #drag-offset-y {
+	line-height:22px;
+	text-align:center;
+}
+
+#limited #drag-offset-y :hover {
+	cursor:ns-resize;
+}
+
+#limited #control-bar-buttons {
+	max-height:22px;
+	margin:0;
+	vertical-align:baseline;
+	margin-right:5px;
+}
+
+#limited #control-bar-buttons .btn-mini {
+	padding:0px 6px;
+}
+	
+#limited #control-bar-buttons .btn-group {
+	line-height:12px;
+}
+	
+#limited #add-land-btn img {
+	height:20px;
+	width:20px;
+}
+
+#limited #control-bar-setting-btn [class^="icon-"], [class*=" icon-"] {
+	margin:0;
+	margin-top:-1px;
+}
+
+#limited #control-bar-buttons div {
+	/*display:inline-block;*/
+}
+ 	
+#control-bar-container #sort {
+}
+ 	
+#control-bar-container #sort .input-prepend {
+	padding-bottom:0px;
+	margin-bottom:0px;
+}
+ 	
+#control-bar-container #sort-wrapper {
+	height:22px;
+	width:auto;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	padding-right:3px;
+	border-left:0px;
+}
+ 	
+#control-bar-container #sort #sort-button {
+	border:0px;
+	border-right:1px solid;
+	border-right-color: rgba(0, 0, 0, 0.0980392);
+	height:22px;
+}
+ 	
+#control-bar-container #sort .dropdown-menu {
+	min-width:0px;
+}
+ 	
+#control-bar-container span {
+	display:inline;
+}
+ 	
+#control-bar-container #prependedInput {
+	padding-left:5px;
+}
+ 	
+#control-bar-container #sort select {
+	line-height:24px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+	width:100px;
+	position:relative;
+	height:18px;
+	font-size:12px;
+	background:#fff;
+	color:#000;
+	margin-top:2px;
 }
 	
 #limited #bottom-screen {
@@ -1020,98 +1219,15 @@ a:hover {
 		
 	background-image:url('/img/cardback.jpg');
 }
-	
-#limited #mainboard-breakdown {
-	min-width:260px;
-	
-	margin-left:5px;
-	
-	font-family: 'Open Sans', sans-serif;
-	font-size:16px;
-	font-weight:400;
-	line-height:22px;
-	
-	color:#fff;
-	text-shadow: -1px -1px 1px #000, 0px 1px 1px #444; /* Bevel text */
-	text-align:center;
-}
-	
-/*#limited #mainboard-breakdown .well {
-	min-width:25px;
-	display:inline-block;
-	text-align:right;
-	padding-right:8px;
-	text-shadow: 0 0 3px rgba(250, 250, 250, 0.5);
-	color:#ddd;
-}*/
-	
-#limited #card-size-slider {
-	line-height:20px;
-	display:inline-block;
-	color:#fff;
-}
-	
-input[type="range"]{
-	-webkit-appearance:none; 
-	-moz-apperance:none; 
-	width:80%;
-	margin-left:10%; 
-	height:5px;
-	margin-top:-2px;
-}
-	
-#card-size-slider input::-webkit-slider-thumb{
-	-webkit-appearance:none; 
-	-moz-apperance:none; 
-	width:10px; 
-	height:10px;
-	-webkit-border-radius:10px; 
-	-moz-border-radius:10px; 
-	-ms-border-radius:10px; 
-	-o-border-radius:10px; 
-	border-radius:10px;
-	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #fefefe), color-stop(0.49, #dddddd), color-stop(0.51, #d1d1d1), color-stop(1, #a1a1a1) );
-}
 
-#limited #drag-offset-y {
-	line-height:22px;
-}
-
-#limited #drag-offset-y :hover {
-	cursor:ns-resize;
-}
-	
-#limited #sort {
-	margin-right:10px;
-}
-	
-#limited #add-land {
-	color:#000;
-}
-	
-#limited #control-bar .btn {
-
-	vertical-align:baseline;
-}
-	
-#limited .btn-group {
-	font-size:18px;
-	vertical-align:baseline;
-	line-height:12px;
-}
-	
-#limited #add-land-button {
-	height:22px;
-}
-	
-#limited #add-land img {
-	height:20px;
-	width:20px;
-}
-	
-.card-pool-row {
-	display:block;
-	clear:both;
+#limited #drag-drop-card {
+	-webkit-border-radius: 6.5%;
+	-moz-border-radius: 6.5%;
+	border-radius: 6.5%;
+	-moz-box-shadow:inset 0px 0px 1px 1px #888;
+	-webkit-box-shadow:inset 0px 0px 1px 1px #888;
+	box-shadow:inset 0px 0px 1px 1px #888;
+	/* pointer-events: none; */
 }
 	
 .cardResize {

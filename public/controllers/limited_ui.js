@@ -132,7 +132,24 @@ function limitedLayout() {
 	});
 	$('#card-pool-scroll').css("height", cardPoolHeight);
 	
-	$('#mainboard-breakdown').css("width", previewWrapperW);
+	
+	if (previewWrapperW < 260) {
+		var ctrlBarLeftW = 260;
+	} else {
+		var ctrlBarLeftW = previewWrapperW;
+	}
+	$('#limited-control-bar-left').css("width", ctrlBarLeftW);
+	var ctrlBarRightW = windowWidth - (ctrlBarLeftW + 10);
+	$('#limited-control-bar-right').css("width", ctrlBarRightW);
+	
+	var sliderW = $('#card-size-slider').outerWidth(true);
+	//console.log("sliderW: " + sliderW);
+	var controlBtnW = $('#control-bar-buttons').outerWidth(true);
+	//console.log("controlBtnW: " + controlBtnW);
+	//var dragControllerW = windowWidth-(countersW+sliderW+controlBtnW)-15;
+	//console.log("dragControllerW: " + dragControllerW);
+	//$('#drag-y-controller').css("width", dragControllerW);
+	
 	
 	var previewImgH = previewWrapperH-6;//6=3px margin-top + 3px margin-bottom
 	var previewImgW = previewWrapperW-6;
@@ -238,6 +255,7 @@ function offsetDragHandlers() {
 	$('#drag-offset-y').mousedown(function(e){
 		SealedViewModel.yOffsetBool=true;
 		$("body").addClass("no-select");
+		$("body").addClass("ns-resize-cursor");
 		//console.log("yOffsetBool: " + SealedViewModel.yOffsetBool);
 		SealedViewModel.yOffsetDragStart=e.pageY;
 		//console.log("yOffsetDragStart: " + SealedViewModel.yOffsetDragStart);
@@ -247,6 +265,7 @@ function offsetDragHandlers() {
 		if (SealedViewModel.yOffsetBool == true) {
 			SealedViewModel.yOffsetBool = false;
 			$("body").removeClass("no-select");
+			$("body").removeClass("ns-resize-cursor");
 			yOffsetOld = yOffset;
 			//console.log("yOffsetBool: " + SealedViewModel.yOffsetBool);
 		}
