@@ -75,6 +75,24 @@ function positionLightbox() {
     
 }
 
+function profileLayout() {
+	var contentW = $('#main-animate-wrapper').width();
+	//console.log('contentW: ' + contentW);
+	var leftColW = (contentW-20)*0.35;
+	var profileImgH = leftColW * 0.7252;
+	var imgBgW = leftColW * 1.2252;
+	var imgBgH = imgBgW * 1.39;
+	var imgBgTop = imgBgH * -0.1258;
+	var imgBgLeft = imgBgW * -0.091;
+	$('#profile-image').css({
+		'height': profileImgH,
+		'background-size': imgBgW + "px " + imgBgH + "px",
+		'background-position': imgBgLeft + "px " + imgBgTop + "px"
+	});
+	
+	
+}
+
 function foyerInit(){ 
 	//foyerLayout();
 	var headerExists = $("#header").css("display");
@@ -82,6 +100,7 @@ function foyerInit(){
 		$("#header").css("display", "block");//Show header on foyer init
 		headerInit();
 	}
+	profileLayout();
 }
 
 $(window).resize(function(){
@@ -89,6 +108,7 @@ $(window).resize(function(){
 	if (foyerExists==1) {
 		foyerLayout();
 	}*/
+	profileLayout();
 	if( $('#lightbox-container').size() > 0 ) {
 		positionLightbox();
 	}

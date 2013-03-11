@@ -485,14 +485,15 @@ body.ns-resize-cursor {
 }
 
 #foyer #profile-image {
+	height:200px;
+	
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom:10px;
 	border:1px solid #000;
-}
-
-#foyer #profile-image img {
-	width:100%;
+	
+	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366448&type=card');
+	background-repeat:no-repeat;
 }
 
 #foyer #profile-description {
