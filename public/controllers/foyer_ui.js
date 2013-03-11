@@ -61,6 +61,20 @@ function appendChat() {
 	//$("#userlist").css("width", userlistW);
 }*/
 
+function positionLightbox() {
+
+	if ($(window).width()>600) {
+		var lightboxW = 600;
+	} else {
+		var lightboxW = $(window).width();
+	}
+
+	var lightboxLeft = ($(window).width()/2)-(lightboxW/2);
+			
+	$('#lightbox-container').css('left', lightboxLeft);
+    
+}
+
 function foyerInit(){ 
 	//foyerLayout();
 	var headerExists = $("#header").css("display");
@@ -75,4 +89,7 @@ $(window).resize(function(){
 	if (foyerExists==1) {
 		foyerLayout();
 	}*/
+	if( $('#lightbox-container').size() > 0 ) {
+		positionLightbox();
+	}
 });

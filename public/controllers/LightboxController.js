@@ -4,8 +4,8 @@ var LightboxController = {
     showLightbox : function( content ) {
 
     	// add lightbox/shadow <div/>'s if not previously added
-    	if( $('#lightbox').size() == 0 ) {
-    		var theLightbox = $('<div id="lightbox"/>');
+    	if( $('#lightbox-container').size() == 0 ) {
+    		var theLightbox = $('<div id="lightbox-container"><div id="lightbox-inner"/></div>');
     		var theShadow = $('<div id="lightbox-shadow"/>');
     		$('body').append(theShadow);
     		$('body').append(theLightbox);
@@ -16,19 +16,18 @@ var LightboxController = {
         } );
 
     	// remove any previously added content
-    	$('#lightbox').empty();
+    	$('#lightbox-inner').empty();
 
     	// insert HTML content
     	if( content != null ) {
-    		$('#lightbox').append( content );
+    		$('#lightbox-inner').append( content );
     	}
 
-    	// move the lightbox to the current window top + 100px
-    	$('#lightbox').css( 'top', $(window).scrollTop() + 100 + 'px' );
+    	positionLightbox();
 
     	// display the lightbox
-    	$('#lightbox').show();
-    	$('#lightbox-shadow').show();
+			$('#lightbox-shadow').show();
+    	$('#lightbox-container').show();
 
     }
 
@@ -36,11 +35,11 @@ var LightboxController = {
     , closeLightbox : function() {
 
     	// hide lightbox and shadow <div/>'s
-    	$('#lightbox').hide();
+    	$('#lightbox-container').hide();
     	$('#lightbox-shadow').hide();
 
     	// remove contents of lightbox in case a video or other content is actively playing
-    	$('#lightbox').empty();
+    	$('#lightbox-inner').empty();
     
     }
     
