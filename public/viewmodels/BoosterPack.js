@@ -3,7 +3,7 @@ var BoosterPack = {
     newBooster : function( setAbbr ) {
         
         var booster = [];
-        var set = Sets.getSet( setAbbr );
+        var set = SetController.getSet( setAbbr );
         var i = 0;
         
         var card;

@@ -1,6 +1,6 @@
-Sets = {
+var SetController = {
     
-    set_list : {
+    setList : {
         '2ED' : ED2
         , '3ED' : ED3
         , '4ED' : ED4
@@ -79,10 +79,9 @@ Sets = {
     
     , validSet : function( set ) {
         
-        if( set in Sets.set_list ){
+        if( set in Sets.setList ) {
             return true;
-        }
-        else{
+        } else {
             return false;
         }
         
@@ -91,17 +90,9 @@ Sets = {
     , getSet : function( set ) {
         
         // check if set is in our sets hash, and if so, return the set object
-        if( set in Sets.set_list ){
-            if( Sets.set_list == null ){
-                $.getScript('sets/' + set + '.js');
-                Sets.set_list
-            }
-            else{
-                
-            }
-            return Sets.set_list[set];
-        }
-        else{
+        if( set in SetController.setList ) {
+            return SetController.setList[set];
+        } else {
             return null;
         }
         

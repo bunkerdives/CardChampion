@@ -41,10 +41,12 @@ var CardViewModel = function( cardData ) {
         ViewModel.dragDropOrigColIdx = this.cardColumn( pool, this );;
         
         // display the cardDragDrop element at the same spot
+        /*
         $("#drag-drop-card").css( {
             'top' : event.pageY
             , 'left' : event.pageX
         } );
+        */
         
         ViewModel.cardDragCardCursorTop = event.pageY;
         ViewModel.cardDragCardCursorLeft = event.pageX;
@@ -130,23 +132,6 @@ var CardViewModel = function( cardData ) {
         }
         
         return -1;
-        
-    }
-    
-};
-
-
-ko.bindingHandlers.mouseDownHandlerTest = {
-    
-    init: function( element, valueAccessor ) {
-        
-        console.log( "mouseDownHandlerTest " + valueAccessor() );
-        
-        ViewModel.cardDragCardTarget = $(element);
-        
-        var options = valueAccessor() || '';
-        
-        ko.bindingHandlers.mousedown.init( element, options );
         
     }
     

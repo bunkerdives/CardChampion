@@ -1,36 +1,72 @@
+var mongoose = require('mongoose')
+, Schema = mongoose.Schema
+, ObjectId = Schema.ObjectId;
+
 Login = {
     
-    users : {},
-        
-    nickAvail : function(nick) {
-        if( this.users[nick] )
-            return false;
-        return true;
-    },
+    connect : mongoose.connect('mongodb://localhost/CloudMagic')
     
-    addNick : function(nick) {
-        this.users[nick] = 1;
-    },
+    , User : new Schema( {
+        email : String
+        , thumb : String
+        , joined : String
+        , description : String
+        , decks : []
+        , id : ObjectId
+    } )
     
-    delNick : function(nick) {
-        delete this.users[nick];
-    },
-
-    login : function(req, res){
+    , login : function(req, res){
 
         var user = req.body.user;
 
-        // check our user list for an existing instance of the username
-        if( ! Login.nickAvail(user) ){
-            res.send( "FAIL" );
-            return;
+        console.log("Login for user " + user)
+        
+        var UserModel = mongoose.model( 'User', Login.User, 'users' )
+        
+        if( ! Login.userExists( user, UserModel ) ) {
+            Login.newUser( user, UserModel );
         }
-
-        // add user to the server's list of users
-        Login.addNick(user);
         
         res.send( "OK" );
 
+    }
+    
+    , newUser : function( user, UserModel ) {
+        
+        var userInstance = new UserModel( {
+            email : user
+            , thumb : ''
+            , joined : '3/10/13'
+            , description : 'Looooove magic!'
+            , decks : []
+        } );
+        
+        userInstance.save( function(err) {
+            if(err) {
+                console.log("Failed saving user.")
+            } else {
+                console.log("Saved user " + user + " successfully!");
+            }
+        } );
+        
+    }
+    
+    , userExists : function( user, UserModel ) {
+        
+        UserModel.find( { email : user }, function(err, data) {
+            
+            if( err ) {
+                return false;
+            } else {
+                if( data == [] ) {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+            
+        } );
+        
     }
 
 };

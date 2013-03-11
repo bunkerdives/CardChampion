@@ -45,8 +45,6 @@ var SealedViewModel = function( set ) {
     this.dragDropNewCol = '';
     this.cardDragSrc = '';
     
-    
-    
     this.addLandToMainboard = function() {
         
         var colSortType = ViewModel.selectedSortOption().sortType;
@@ -259,10 +257,18 @@ var SealedViewModel = function( set ) {
             ele.css( 'height', ViewModel.cardH );
             ele.css( 'width', ViewModel.cardW );
             
+            /*
             ele.css( {
                 'top' : ViewModel.cardDragCardTop + (event.pageY - ViewModel.cardDragCardCursorTop)
                 , 'left' : ViewModel.cardDragCardLeft + (event.pageX - ViewModel.cardDragCardCursorLeft)
             } );
+            */
+            
+            ele.css( {
+                'top' : event.pageY
+                , 'left' : event.pageX
+            } );
+            
         
         }
     };
