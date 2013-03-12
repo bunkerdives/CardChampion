@@ -485,20 +485,108 @@ body.ns-resize-cursor {
 }
 
 #foyer #profile-image {
-	height:200px;
-	
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom:10px;
-	border:1px solid #000;
+	border:2px solid #000;
 	
 	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366448&type=card');
 	background-repeat:no-repeat;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 #foyer #profile-description {
 	margin-top:10px;
 }
+
+#foyer #profile-right-col {
+	width:65%;
+}
+
+#foyer #profile-content-wrapper {
+	overflow:auto;
+	height: 404px;
+	padding-left:10px;
+}
+
+#foyer #profile-content {
+	
+}
+
+#foyer #profile-deck-previews {
+	
+}
+
+#foyer #profile-deck-previews .deck-preview {
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	margin-bottom:3px;
+
+	
+	border: 2px solid #000;
+	
+	min-width:350px;
+}
+
+#foyer #profile-deck-previews .deck-preview-img {
+	height:70px;
+	width:70px;
+	border-right:2px solid #000;
+	
+	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366385&type=card');
+	background-repeat:no-repeat;
+	
+	-webkit-border-top-left-radius: 2px;
+	-moz-border-top-left-radius: 2px;
+	border-top-left-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-bottom-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+#foyer #profile-deck-previews .deck-preview-info {
+	width: -webkit-calc(100% - 78px);
+	width: -moz-calc(100% - 78px);
+	width: calc(100% - 78px);
+	height:70px;
+	text-align:left;
+	background-color:#fff;
+	padding-left:3px;
+	padding-right:3px;
+	
+	line-height:23px;
+	
+	-webkit-border-top-right-radius: 2px;
+	-moz-border-top-right-radius: 2px;
+	border-top-right-radius: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	-moz-border-bottom-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+#foyer #profile-deck-previews .deck-preview-stats {
+	width: -webkit-calc(100% - 60px);
+	width: -moz-calc(100% - 60px);
+	width: calc(100% - 60px);
+	text-align:left;
+}
+
+#foyer #profile-deck-previews .deck-preview-btns {
+	text-align:right;
+}
+
+#foyer #profile-deck-previews .deck-preview-btns button {
+	
+	margin-top:3px;
+}
+
+
 
 /*#foyer .vertical-rule {
 	display:inline-block;

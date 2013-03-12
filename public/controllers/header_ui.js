@@ -10,7 +10,7 @@ function mainSlide(str,arr){
 		$(hideSlide).css("display", "none");//Hide div
 	}
 	$(id).css("display", "block");//Show selected slide
-	$('#main-animate-wrapper').animate({height:"439px"},1000);//Animate wrapper opening
+	$('#main-animate-wrapper').animate({height:"460px"},1000);//Animate wrapper opening
 }
 
 function navClick(p){
