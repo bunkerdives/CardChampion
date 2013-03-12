@@ -172,7 +172,9 @@ var setQueue = function( name, abbr, size, foyer ) {
 ko.utils.extend( FoyerViewModel.prototype, {
     
     init: function() {
-			foyerInit();
+	    foyerInit();
+        
+        console.log("FoyerViewModel init!")
         
       ViewModel.setBackgroundImage();
       ViewModel.setAnimatedBanner();

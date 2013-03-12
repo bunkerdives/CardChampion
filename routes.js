@@ -1,8 +1,9 @@
 // get the main controller
-var Login = require( './controllers/Login.js' );
+var Auth = require( './controllers/Auth.js' );
 
 // get the express object
 app = module.parent.exports.app;
+passport = require('passport');
 
 
 // '/' - show the Splash view to the user
@@ -32,5 +33,13 @@ app.get( '/sealed', function(req, res) {
 } );
 
 
+app.get( '/:username', function(req, res){
+    res.render( 'layout.jade', {
+        templateName: JSON.stringify('Foyer')
+        , options: JSON.stringify('')
+    } );
+} );
 
-app.post( '/login', Login.login );
+
+app.post( '/register', Auth.register );
+app.post( '/login', passport.authenticate('local'), Auth.login );

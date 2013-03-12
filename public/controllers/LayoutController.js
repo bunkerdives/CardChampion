@@ -1,7 +1,7 @@
 var LayoutController = function( template, options ) {
     
     // TODO check cookies to see if user is logged in to an OpenID acct or as a guest
-    var loggedIn = false;
+    var loggedIn = localStorage.getItem('auth');
     
     var context;
     switch( template ) {

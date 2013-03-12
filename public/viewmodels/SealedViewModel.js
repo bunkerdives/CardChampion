@@ -304,6 +304,9 @@ ko.utils.extend( SealedViewModel.prototype, {
     init: function( element, valueAccessor, allBindingsAccessor ) {
         limitedInit();
         cardSizeInit();
+        console.log("SealedViewModel init")
+        headerInit();
+        headerInit();
         
     	$("#add-land-dropdown").on("click", function(e){
     		//do something

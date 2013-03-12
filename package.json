@@ -12,5 +12,8 @@
     , "underscore" : "latest"
     , "knockout-client" : "latest"
     , "mongoose" : "latest"
+    , "passport" : "latest"
+    , "passport-local" : "latest"
+    , "passport-local-mongoose" : "latest"
   }
 }

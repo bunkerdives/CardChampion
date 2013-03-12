@@ -16,6 +16,7 @@ var SplashViewModel = function() {
 ko.utils.extend( SplashViewModel.prototype, {
     
     init: function() {
+        console.log("SplashViewModel init!")
 		splashLayout();
 		$("#imac-screenshot-1").fadeIn(1000);
     }
