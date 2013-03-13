@@ -64,6 +64,14 @@
 											</div>
 											<div class="clearfix">
 												<div class="pull-left" style="color:#0088cc;width:44%;text-align:right;">
+													<div>Location:</div>
+												</div>
+												<div class="pull-right" style="width:54%;text-align:left;">
+													<div>Pittsburgh, PA</div>
+												</div>
+											</div>
+											<div class="clearfix">
+												<div class="pull-left" style="color:#0088cc;width:44%;text-align:right;">
 													<div>Date Joined:</div>
 												</div>
 												<div class="pull-right" style="width:54%;text-align:left;">
@@ -78,26 +86,37 @@
 											<div id="profile-content">
 												<div id="profile-deck-previews">
 													
+													<!-- Deck preview -->
 													<div class="deck-preview clearfix">
-														<div class="deck-preview-img pull-left"></div>
-														<div class="deck-preview-info pull-right clearfix">
-															<div class="deck-preview-stats pull-left">
-																Boros Aggro<br/>
-																Standard<br/>
-																03/10/13
+														<div class="deck-preview-left pull-left clearfix">
+															<div class="deck-preview-img pull-left"/>
+															<div class="deck-preview-mana pull-right">
+																<div id="deck-preview-white" class="deck-preview-color"/>
+																<div id="deck-preview-blue" class="deck-preview-color"/>
+																<div id="deck-preview-black" class="deck-preview-color"/>
+																<div id="deck-preview-red" class="deck-preview-color"/>
+																<div id="deck-preview-green" class="deck-preview-color"/>
+															</div>
+														</div>
+														<div class="deck-preview-right pull-right clearfix">
+															<div class="deck-preview-info pull-left">
+																<div class="deck-preview-title">Boros Aggro</div>
+																<div class="deck-preview-format">GTC Sealed</div>
 															</div>
 															<div class="deck-preview-btns pull-right">
 																<div>
-																	<button class="btn">View</button>
+																	<button id="deck-preview-view-btn" class="btn btn-primary"><i class="icon-white icon-eye-open"></i></button>
 																</div>
 																<div>
-																	<button class="btn">Edit</button>
+																	<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
+																</div>
+																<div>
+																	<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
 																</div>
 															</div>
 														</div>
 													</div>
-													
-													
+													<!-- End deck preview -->
 													
 												</div>
 												<div id="profile-buddy-list" style="display:none;">
@@ -105,10 +124,7 @@
 											</div>
 										</div>
 									</div>
-								</div>
-								
-								
-								
+								</div>	
 							</div>
 						</div>
 					</div><!--End #main-slide-4-->

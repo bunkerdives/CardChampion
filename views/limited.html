@@ -34,10 +34,6 @@
 			</div>
 			
 			<div id="limited-control-bar-right" class="pull-right clearfix">
-		    
-				<!--<div id="card-size-slider" class="pull-left">
-		      <input id="slide" type="range" min="70" max="130" step="1" value="100" onchange="cardSizeChange(this.value);"/>--><!-- Todo onchange callback-->
-					<!--</div>--><!-- End #card-size-slider -->
 		
 				<div id="offset-y-container" class="pull-left">
 					<div id="drag-offset-y" style="margin-left:auto;margin-right:auto;">
@@ -95,9 +91,14 @@
 					 	 	</ul>
 					</div>
 					<div id="control-bar-settings-btn" class="btn-group pull-left">
-						<button class="btn btn-mini btn-inverse">
+						<button class="btn btn-mini btn-inverse dropdown-toggle" data-toggle="dropdown">
 							<i class="icon-white icon-cog"></i>
 						</button>
+							<ul class="dropdown-menu" style="left:-140px;">
+								<li id="card-size-slider" class="pull-left">
+						      <input id="slide" type="range" min="70" max="130" step="1" value="100" onchange="cardSizeChange(this.value);"/><!-- Todo onchange callback-->
+								</li><!-- End #card-size-slider -->
+							</ul>
 					</div>
 					<div id="reset-btn" class="btn-group pull-left">
 						<button class="btn btn-mini btn-inverse"><i class="icon-white icon-remove"></i></button>

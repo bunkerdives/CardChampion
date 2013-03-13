@@ -466,11 +466,10 @@ body.ns-resize-cursor {
 }
 
 #foyer #profile-bottom-row {
-	width: -webkit-calc(100% - 20px);
-	width: -moz-calc(100% - 20px);
-	width: calc(100% - 20px);
+	width: -webkit-calc(100% - 10px);
+	width: -moz-calc(100% - 10px);
+	width: calc(100% - 10px);
 	margin-left:10px;
-	margin-right:10px;
 }
 
 #foyer #profile-left-col {
@@ -490,7 +489,7 @@ body.ns-resize-cursor {
 	margin-bottom:10px;
 	border:2px solid #000;
 	
-	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366448&type=card');
+	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366310&type=card');
 	background-repeat:no-repeat;
 	
 	-webkit-border-radius: 5px;
@@ -510,6 +509,7 @@ body.ns-resize-cursor {
 	overflow:auto;
 	height: 404px;
 	padding-left:10px;
+	padding-right:10px;
 }
 
 #foyer #profile-content {
@@ -517,26 +517,40 @@ body.ns-resize-cursor {
 }
 
 #foyer #profile-deck-previews {
-	
+	padding-bottom:50px;
 }
 
 #foyer #profile-deck-previews .deck-preview {
+	background-color:#fff;
+	background-image: -moz-linear-gradient(top, #eee, #ccc);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eee), to(#ccc));
+	background-image: -webkit-linear-gradient(top, #eee, #ccc);
+	background-image: -o-linear-gradient(top, #eee, #ccc);
+	background-image: linear-gradient(to bottom, #eee, #ccc);
+	background-repeat: repeat-x;
 
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	
-	margin-bottom:3px;
+	margin-bottom:5px;
 
 	
 	border: 2px solid #000;
 	
 	min-width:350px;
+	
+	-webkit-box-shadow: 0px 1px 3px 1px #777;
+	box-shadow: 0px 1px 3px 1px #777;
+}
+
+#foyer #profile-deck-previews .deck-preview-left {
+	width:124px;
 }
 
 #foyer #profile-deck-previews .deck-preview-img {
-	height:70px;
-	width:70px;
+	height:100px;
+	width:100px;
 	border-right:2px solid #000;
 	
 	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366385&type=card');
@@ -550,18 +564,47 @@ body.ns-resize-cursor {
 	border-bottom-left-radius: 2px;
 }
 
-#foyer #profile-deck-previews .deck-preview-info {
-	width: -webkit-calc(100% - 78px);
-	width: -moz-calc(100% - 78px);
-	width: calc(100% - 78px);
-	height:70px;
+#foyer #profile-deck-previews .deck-preview-mana {
+	width:18px;
+	height:98px;
+	padding-left:2px;
+	padding-right:2px;
+	margin-top:2px;
+}
+
+#foyer #profile-deck-previews .deck-preview-color {
+	height:18px;
+	width:18px;
+	background-size:18px 18px;
+	background-repeat:no-repeat;
+	margin-top:1px;
+}
+
+#foyer #profile-deck-previews #deck-preview-white {
+	background-image:url('../img/white-mana.jpg');
+}
+
+#foyer #profile-deck-previews #deck-preview-blue {
+	background-image:url('../img/blue-mana.jpg');
+}
+
+#foyer #profile-deck-previews #deck-preview-black {
+	background-image:url('../img/black-mana.jpg');
+}
+
+#foyer #profile-deck-previews #deck-preview-red {
+	background-image:url('../img/red-mana.jpg');
+}
+
+#foyer #profile-deck-previews #deck-preview-green {
+	background-image:url('../img/green-mana.jpg');
+}
+
+#foyer #profile-deck-previews .deck-preview-right {
+	width: -webkit-calc(100% - 124px);
+	width: -moz-calc(100% - 124px);
+	width: calc(100% - 124px);
 	text-align:left;
-	background-color:#fff;
-	padding-left:3px;
-	padding-right:3px;
-	
-	line-height:23px;
-	
 	-webkit-border-top-right-radius: 2px;
 	-moz-border-top-right-radius: 2px;
 	border-top-right-radius: 2px;
@@ -570,20 +613,38 @@ body.ns-resize-cursor {
 	border-bottom-right-radius: 2px;
 }
 
-#foyer #profile-deck-previews .deck-preview-stats {
-	width: -webkit-calc(100% - 60px);
-	width: -moz-calc(100% - 60px);
-	width: calc(100% - 60px);
-	text-align:left;
+#foyer #profile-deck-previews .deck-preview-info {
+	width: -webkit-calc(100% - 30px);
+	width: -moz-calc(100% - 30px);
+	width: calc(100% - 30px);
+	text-align:center;
 }
 
 #foyer #profile-deck-previews .deck-preview-btns {
 	text-align:right;
+	max-height:100px;
+	overflow:hidden;
+	border-left:2px solid #000;
 }
 
 #foyer #profile-deck-previews .deck-preview-btns button {
-	
-	margin-top:3px;
+	padding: 6px 6px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	/*margin-top:3px;*/
+}
+
+#foyer #profile-deck-previews #deck-preview-view-btn {
+	-webkit-border-top-right-radius: 2px;
+	-moz-border-top-right-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+#foyer #profile-deck-previews #deck-preview-info-btn {
+	-webkit-border-bottom-right-radius: 2px;
+	-moz-border-bottom-right-radius: 2px;
+	border-bottom-right-radius: 2px;
 }
 
 

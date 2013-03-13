@@ -90,7 +90,7 @@ function profileLayout() {
 		'background-position': imgBgLeft + "px " + imgBgTop + "px"
 	});
 	
-	var deckImgH = 164.3964;
+	var deckImgH = 233.0827;
 	var deckImgW = deckImgH * 0.71935;
 	var deckImgTop = deckImgH * -0.1258;
 	var deckImgLeft = deckImgW * -0.15;
