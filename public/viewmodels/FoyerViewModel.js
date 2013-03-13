@@ -2,6 +2,12 @@ var FoyerViewModel = function() {
     
     this.set = 'GTC';
     this.selectedSet = "GTC";
+    this.socket = '';
+    
+    this.profileVisible = ko.observable( true );
+    this.aboutVisible = ko.observable( false );
+    this.newEventVisible = ko.observable( false );
+    this.joinDraftVisible = ko.observable( false );
     
     this.startSealed = function() {
         
@@ -16,7 +22,16 @@ var FoyerViewModel = function() {
         */
         
         var redirect = '/sealed?set=' + this.set;
-        window.location.replace( redirect );
+        window.location.href = redirect;
+        
+    };
+    
+    this.sendChatMsg = function() {
+        
+        // get the user's message
+        var newChat = $("#chat-msg").val();
+        
+        //socket.emit()
         
     };
 
@@ -178,6 +193,18 @@ ko.utils.extend( FoyerViewModel.prototype, {
         
       ViewModel.setBackgroundImage();
       ViewModel.setAnimatedBanner();
+      
+      var socket = io.connect('http://localhost');
+      
+      socket.on( "connect", function() {
+          socket.emit( 'joinChat', JSON.stringify({ room : 'generalChat' }) );
+      } );
+      
+      socket.on( "newChat", function(data) {
+          console.log("new chat: " + data);
+      } );
+      
+      ViewModel.socket = socket;
         
     }
     

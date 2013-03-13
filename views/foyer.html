@@ -11,7 +11,7 @@
       <div id="portal-left-pane" class="pull-left">
 				<div id="main-animate-wrapper">
 					
-					<div id="main-slide-1" class="main-slide" style="display:block;">
+					<div id="main-slide-1" class="main-slide" data-bind="if: newEventVisible">
 		        <div id="sets">
 		          <table class="table">
 		            <tbody data-bind="foreach: setQueues">
@@ -28,13 +28,13 @@
 		        </div><!--End #set-select-->
 					</div><!--End #main-slide-1-->
 					
-					<div id="main-slide-2" class="main-slide" style="display:none;">Join an open draft queue.
+					<div id="main-slide-2" class="main-slide" data-bind="if: joinDraftVisible">Join an open draft queue.
 					</div><!--End #main-slide-2-->
 					
-					<div id="main-slide-3" class="main-slide" style="display:none;">About Us, About LimitedMTG.com, Mission Statement.
+					<div id="main-slide-3" class="main-slide" data-bind="if: aboutVisible">About Us, About LimitedMTG.com, Mission Statement.
 					</div><!--End #main-slide-3-->
 					
-					<div id="main-slide-4" class="main-slide" style="display:none;">
+					<div id="main-slide-4" class="main-slide" data-bind="if: profileVisible">
 						<div id="profile-container">
 							<div id="profile-inner">
 								
@@ -49,6 +49,7 @@
 									</div>
 								</div>
 								<div id="profile-bottom-row">
+                  
 									<div id="profile-left-col" class="pull-left">
 										<div id="profile-info" class="clearfix">
 											<div id="profile-image">
@@ -73,6 +74,7 @@
 											<div id="profile-description">This is a description. Lorem ipsum, etc., awiodbawjklbflkawnfl. asdfghjkl;asdfghjkl; asdfghjkl;</div>
 										</div>
 									</div>
+                  
 									<div id="profile-right-col" class="pull-right">
 										<div id="profile-content-wrapper">
 											<div id="profile-content">
@@ -98,13 +100,13 @@
 													</div>
 													
 													
-													
 												</div>
 												<div id="profile-buddy-list" style="display:none;">
 												</div>
 											</div>
 										</div>
 									</div>
+                  
 								</div>
 								
 								
@@ -126,7 +128,7 @@
           </div><!--End #chat-convo-wrapper-->
           <div id="chat-input" class="clearfix">
           	<input id="chat-msg" class="pull-left" type="text"/>
-            <button id="chat-send-btn" class="btn btn-small pull-left appended">Send</button>
+            <button id="chat-send-btn" class="btn btn-small pull-left appended" data-bind="event: { click: sendChatMsg }">Send</button>
 						<button class="btn btn-small pull-right" style="margin-left:5px;"><i class="icon-user"></i></button>
           </div><!--End #chat-input-->
         </div><!--End #chat-->

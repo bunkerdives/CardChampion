@@ -2,10 +2,18 @@ Chat = {
     
     users : []
     
+    , joinChat : function( data ) {
+        
+        var username = data.username;
+        
+        //Chat.users.push( socket );
+        
+        
+    }
+    
     , addUser : function(data) {
         var json = JSON.parse(data);
         var nick = json['nick'];
-        console.log(nick);
         Chat.users.push(nick);
         var data = {
             'users' : Chat.users

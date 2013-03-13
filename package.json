@@ -15,5 +15,8 @@
     , "passport" : "latest"
     , "passport-local" : "latest"
     , "passport-local-mongoose" : "latest"
+    , "passport.socketio" : "latest"
+    , "connect" : "latest"
+    , "xtend" : "latest"
   }
 }

@@ -40,7 +40,6 @@ Auth = {
             
             var ProfileModel = mongoose.model( 'Profile', Auth.Profile, 'Profiles' )
             if( ! Auth.userExists( username, ProfileModel ) ) {
-                res.send( 'User already exists!' );
                 Auth.newUser( username, ProfileModel );
             }
 
