@@ -11,7 +11,41 @@
       <div id="portal-left-pane" class="pull-left">
 				<div id="main-animate-wrapper">
 					
-					<div id="main-slide-1" class="main-slide" data-bind="if: newEventVisible">
+					<div id="main-slide-1" class="main-slide" style="display:none;" data-bind="">
+						<div id="recent-decks">
+							<div class="deck-preview clearfix">
+								<div class="deck-preview-left pull-left clearfix">
+									<div class="deck-preview-img pull-left"/>
+									<div class="deck-preview-mana pull-right">
+										<div id="deck-preview-white" class="deck-preview-color"/>
+										<div id="deck-preview-blue" class="deck-preview-color"/>
+										<div id="deck-preview-black" class="deck-preview-color"/>
+										<div id="deck-preview-red" class="deck-preview-color"/>
+										<div id="deck-preview-green" class="deck-preview-color"/>
+									</div>
+								</div>
+								<div class="deck-preview-right pull-right clearfix">
+									<div class="deck-preview-info pull-left">
+										<div class="deck-preview-title">Boros Aggro</div>
+										<div class="deck-preview-format">GTC Sealed</div>
+									</div>
+									<div class="deck-preview-btns pull-right">
+										<div>
+											<button id="deck-preview-view-btn" class="btn btn-primary"><i class="icon-white icon-eye-open"></i></button>
+										</div>
+										<div>
+											<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
+										</div>
+										<div>
+											<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div id="main-slide-2" class="main-slide" data-bind="if: newEventVisible">
 		        <div id="sets">
 		          <table class="table">
 		            <tbody data-bind="foreach: setQueues">
@@ -26,15 +60,15 @@
 		          <button id="select-draft-button" class="btn btn-small">Draft</button>
 		          <button id="select-sealed-button" class="btn btn-small" data-bind="click: startSealed">Sealed</button>
 		        </div><!--End #set-select-->
-					</div><!--End #main-slide-1-->
-					
-					<div id="main-slide-2" class="main-slide" data-bind="if: joinDraftVisible">Join an open draft queue.
 					</div><!--End #main-slide-2-->
 					
-					<div id="main-slide-3" class="main-slide" data-bind="if: aboutVisible">About Us, About LimitedMTG.com, Mission Statement.
+					<div id="main-slide-3" class="main-slide" data-bind="if: joinDraftVisible">Join an open draft queue.
 					</div><!--End #main-slide-3-->
 					
-					<div id="main-slide-4" class="main-slide" data-bind="if: profileVisible">
+					<div id="main-slide-4" class="main-slide" data-bind="if: aboutVisible">About Us, About LimitedMTG.com, Mission Statement.
+					</div><!--End #main-slide-4-->
+					
+					<div id="main-slide-5" class="main-slide" data-bind="if: profileVisible">
 						<div id="profile-container">
 							<div id="profile-inner">
 								
@@ -126,7 +160,7 @@
 								
 							</div>
 						</div>
-					</div><!--End #main-slide-4-->
+					</div><!--End #main-slide-5-->
 					
 				</div><!--End #main-animate-wrapper-->
       </div><!--End #left-pane-->

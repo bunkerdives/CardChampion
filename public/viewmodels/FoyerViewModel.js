@@ -188,6 +188,7 @@ ko.utils.extend( FoyerViewModel.prototype, {
     
     init: function() {
 	    foyerInit();
+			headerLayout();
         
         console.log("FoyerViewModel init!")
         
