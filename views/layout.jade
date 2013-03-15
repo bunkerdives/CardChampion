@@ -7,6 +7,7 @@ html(lang='en')
     <link href="../css/cloudmagic.css" rel="stylesheet"></link>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Viga|Courgette|Orbitron:400,500' rel='stylesheet' type='text/css'>
     script(src="../js/jquery-1.8.0.min.js")
     script(src="/socket.io/socket.io.js")
     script(src="../js/knockout.js")
@@ -92,6 +93,7 @@ html(lang='en')
     script(src="../controllers/splash_ui.js")
     script(src="../controllers/foyer_ui.js")
     script(src="../controllers/limited_ui.js")
+    script(src="../controllers/builder_ui.js")
     script(src="../js/jquery.mousewheel.js")
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     script(src="../controllers/TemplatePluginController.js")
@@ -99,6 +101,7 @@ html(lang='en')
     include header
     <div id="content">
     <div data-bind="plugin: plugin"></div>
+    include ../views/builder.html
     </div>
     script(src="../models/Land.js")
     script(src="../viewmodels/CardViewModel.js")

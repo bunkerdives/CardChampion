@@ -99,11 +99,11 @@ function profileLayout() {
 		'background-position': deckImgLeft + "px " + deckImgTop + "px"
 	});
 	
-	var navW = $('#profile-nav').width();
+	/*var navW = $('#profile-nav').width();
 	var navSpacerW = (navW-222)/4;
 	$( ".profile-link" ).each(function() {
 	  $(this).css("margin-left", navSpacerW);
-	});
+	});*/
 	
 }
 
