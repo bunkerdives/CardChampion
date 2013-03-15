@@ -52,8 +52,8 @@ body.ns-resize-cursor {
 	cursor:ns-resize !important;
 }
 
-btn-group.btn {   border: 0;   padding: 0; }
-.btn-group.btn > .btn { border-radius: 0 }
+.btn-group.btn {   border: 0;   padding: 0; }
+.btn-group.btn > .btn { border-radius: 0; }
 .btn-group.btn > .dropdown-menu {  text-align: left; }
 .btn-group.btn:first-child > .btn {
   -webkit-border-radius: 4px 0 0 4px;

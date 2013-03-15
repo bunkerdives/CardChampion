@@ -42,16 +42,17 @@
 				</div>
 		
 				<div id="control-bar-buttons" class="btn-toolbar pull-right">
-					<div id="sort-btn" class="btn-group pull-left">
+					<!--<div id="sort-btn" class="btn-group pull-left">
 						<button class="btn btn-mini btn-primary pull-left dropdown-toggle" data-toggle="dropdown">Sort</button>
-            <ul class="dropdown-menu">
-              <li>
-                <a tabindex="-1" href="#" data-bind="event: { click: function(){ sortPool('sideboard'); } }">Sideboard</a>
-              </li>
-              <li>
-                <a tabindex="-1" href="#" data-bind="event: { click: function(){ sortPool('mainboard'); } }">Mainboard</a>
-              </li>
-            </ul>
+	            <ul class="dropdown-menu">
+	              <li>
+	                <a tabindex="-1" href="#" data-bind="event: { click: function(){ sortPool('sideboard'); } }">Sideboard</a>
+	              </li>
+	              <li>
+	                <a tabindex="-1" href="#" data-bind="event: { click: function(){ sortPool('mainboard'); } }">Mainboard</a>
+	              </li>
+	            </ul>
+						
 						<button class="btn btn-mini btn-primary pull-left dropdown-toggle" data-toggle="dropdown"><span id="sort-txt" class="down-arrow-white">by rarity</span></button>
 						  <ul class="dropdown-menu">
 						    <li><a href="#" data-bind="event: { click: function(){ selectSortOption('cmc') } }">by cost</a></li>
@@ -59,7 +60,35 @@
                 <li><a href="#" data-bind="event: { click: function(){ selectSortOption('rarity') } }">by rarity</a></li>
 								<li><a href="#" data-bind="event: { click: function(){ } }">by type</a></li>
 						  </ul>
+					</div>-->
+					<div id="sort-btn" class="btn-group pull-left">
+						<button class="btn btn-group pull-left">
+	            <a class="btn btn-mini btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+								Sort
+	            </a>
+	            <ul class="dropdown-menu">
+	              <li>
+	                <a tabindex="-1" href="#" data-bind="event: { click: function(){ sortPool('sideboard'); } }">Sideboard</a>
+	              </li>
+	              <li>
+	                <a tabindex="-1" href="#" data-bind="event: { click: function(){ sortPool('mainboard'); } }">Mainboard</a>
+	              </li>
+						                
+	            </ul>
+	        	</button>
+		        <button class="btn btn-group pull-left">
+	            <a class="btn btn-mini btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+								by rarity
+	            </a>
+	            <ul class="dropdown-menu">
+						    <li><a href="#" data-bind="event: { click: function(){ selectSortOption('cmc') } }">by cost</a></li>
+								<li><a href="#" data-bind="event: { click: function(){ selectSortOption('color') } }">by color</a></li>
+                <li><a href="#" data-bind="event: { click: function(){ selectSortOption('rarity') } }">by rarity</a></li>
+								<li><a href="#" data-bind="event: { click: function(){ } }">by type</a></li>
+	            </ul>
+		        </button>
 					</div>
+					
 					<div id="add-land-btn" class="btn-group pull-left">
 		        <button class="btn btn-mini btn-success dropdown-toggle" data-toggle="dropdown">Add Land</button>
 			        <ul id="add-land-dropdown" class="dropdown-menu" style="top:18px;left:-35px;width:136px;min-width:136px;">
