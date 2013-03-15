@@ -51,6 +51,22 @@ a:hover {
 body.ns-resize-cursor {
 	cursor:ns-resize !important;
 }
+
+btn-group.btn {   border: 0;   padding: 0; }
+.btn-group.btn > .btn { border-radius: 0 }
+.btn-group.btn > .dropdown-menu {  text-align: left; }
+.btn-group.btn:first-child > .btn {
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+
+.btn-group.btn:last-child > .btn {
+  -webkit-border-radius: 0 4px 4px 0;
+     -moz-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
+}
+
 /* General classes and styles end */
 
 
@@ -295,13 +311,16 @@ body.ns-resize-cursor {
 }
 
 #foyer #foyer-banner-container {
-	width: -webkit-calc(100% - 20px);
-	width: -moz-calc(100% - 20px);
-	width: calc(100% - 20px);
-
-	padding:10px;
 	
-	border-bottom: 2px solid #231F20;
+	width: -webkit-calc(100% - 2px);
+	width: -moz-calc(100% - 2px);
+	width: calc(100% - 2px);
+
+	/*padding:10px;*/
+	
+	border-bottom: 1px solid #231F20;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
 }
 
 #foyer #foyer-banner {
@@ -359,20 +378,20 @@ body.ns-resize-cursor {
 }
 
 #foyer #portal-left-pane {
-	width: -webkit-calc(67.5% - 2px);
-	width: -moz-calc(67.5% - 2px);
-	width: calc(67.5% - 2px);
+	width: -webkit-calc(67.5% - 1px);
+	width: -moz-calc(67.5% - 1px);
+	width: calc(67.5% - 1px);
 	
 	height:460px;
 	
 	margin:0;
 	
-	border-right:2px solid #000;
+	border-right:1px solid #000;
 }
 
 #foyer #main-animate-wrapper {
 	width:100%;
-	height:440px;
+	height:460px;
 	min-height:0px;
 	
 	overflow:hidden;
@@ -432,12 +451,26 @@ body.ns-resize-cursor {
 	text-align:center;
 	/*background-color:#aaa;*/
 	height:34px;
-	margin-bottom:10px;
-	border-bottom:2px solid #000;
 	border-left:1px solid #000;
 	
 	/*-webkit-box-shadow: 0px 3px 5px -2px #444;
 	box-shadow: 0px 3px 5px -2px #444;*/
+	
+	-webkit-box-shadow: 0px 1px 7px #111;
+	-moz-box-shadow:    0px 1px 7px #111;
+	box-shadow:         0px 1px 7px #111;
+	
+	
+	background-color:#fff;
+	background-image: -moz-linear-gradient(top, #eee, #ccc);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eee), to(#ccc));
+	background-image: -webkit-linear-gradient(top, #eee, #ccc);
+	background-image: -o-linear-gradient(top, #eee, #ccc);
+	background-image: linear-gradient(to bottom, #eee, #ccc);
+	background-repeat: repeat-x;
+	
+	position:relative;
+	z-index:1000;
 }
 
 #foyer #profile-username {
@@ -464,10 +497,10 @@ body.ns-resize-cursor {
 	background-color: #0088cc;
 }
 
-#foyer #profile-nav .profile-link {
+/*#foyer #profile-nav .profile-link {
 	width:33%;
 	float:left;
-}
+}*/
 
 #foyer #profile-bottom-row {
 	width: -webkit-calc(100% - 10px);
@@ -485,6 +518,7 @@ body.ns-resize-cursor {
 	font-size:14px;
 	line-height:14px;
 	font-family: 'Open Sans', sans-serif;
+	padding-top:10px;
 }
 
 #foyer #profile-image {
@@ -496,6 +530,17 @@ body.ns-resize-cursor {
 	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366310&type=card');
 	background-repeat:no-repeat;
 	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	-webkit-box-shadow: 0px 1px 3px 1px #777;
+	box-shadow: 0px 1px 3px 1px #777;
+}
+
+#foyer #profile-image img {
+	width:100%;
+	height:100%;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -511,9 +556,10 @@ body.ns-resize-cursor {
 
 #foyer #profile-content-wrapper {
 	overflow:auto;
-	height: 404px;
+	height: 415px;
 	padding-left:10px;
 	padding-right:10px;
+	padding-top:10px;
 }
 
 #foyer #profile-content {
@@ -521,7 +567,7 @@ body.ns-resize-cursor {
 }
 
 #foyer #profile-deck-previews {
-	padding-bottom:50px;
+	padding-bottom:75px;
 }
 
 #foyer .deck-preview {
@@ -549,12 +595,12 @@ body.ns-resize-cursor {
 }
 
 #foyer .deck-preview-left {
-	width:124px;
+	width99px;
 }
 
 #foyer .deck-preview-img {
-	height:100px;
-	width:100px;
+	height:75px;
+	width:75px;
 	border-right:2px solid #000;
 	
 	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366385&type=card');
@@ -568,20 +614,31 @@ body.ns-resize-cursor {
 	border-bottom-left-radius: 2px;
 }
 
+#foyer .deck-preview-img img {
+	width:100%;
+	height:100%;
+	-webkit-border-top-left-radius: 2px;
+	-moz-border-top-left-radius: 2px;
+	border-top-left-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-bottom-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
 #foyer .deck-preview-mana {
-	width:18px;
-	height:98px;
+	width:12px;
+	height:73px;
 	padding-left:2px;
 	padding-right:2px;
 	margin-top:2px;
 }
 
 #foyer .deck-preview-color {
-	height:18px;
-	width:18px;
-	background-size:18px 18px;
+	height:12.5px;
+	width:12.5px;
+	background-size:12px 12px;
 	background-repeat:no-repeat;
-	margin-top:1px;
+	margin-top:1.5px;
 }
 
 #foyer #deck-preview-white {
@@ -605,9 +662,9 @@ body.ns-resize-cursor {
 }
 
 #foyer .deck-preview-right {
-	width: -webkit-calc(100% - 124px);
-	width: -moz-calc(100% - 124px);
-	width: calc(100% - 124px);
+	width: -webkit-calc(100% - 99px);
+	width: -moz-calc(100% - 99px);
+	width: calc(100% - 99px);
 	text-align:left;
 	-webkit-border-top-right-radius: 2px;
 	-moz-border-top-right-radius: 2px;
@@ -622,17 +679,29 @@ body.ns-resize-cursor {
 	width: -moz-calc(100% - 30px);
 	width: calc(100% - 30px);
 	text-align:center;
+	line-height:37px;
+}
+
+#foyer .deck-preview-title {
+	font-weight:400;
+	font-size:22px;
+}
+
+#foyer .deck-preview-format {
+	font-weight:300;
+	font-size:18px;
+	font-style:italic;
 }
 
 #foyer .deck-preview-btns {
 	text-align:right;
-	max-height:100px;
+	max-height:75px;
 	overflow:hidden;
 	border-left:2px solid #000;
 }
 
 #foyer .deck-preview-btns button {
-	padding: 6px 6px;
+	padding: 1.5px 6px;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
@@ -793,7 +862,7 @@ body.ns-resize-cursor {
 	text-align:center;
 	color:#000;
 	
-	border-top: 2px solid #231f20;
+	border-top: 1px solid #231f20;
 }
 
 #foyer .headline-txt {

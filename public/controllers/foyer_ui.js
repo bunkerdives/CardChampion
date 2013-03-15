@@ -90,13 +90,19 @@ function profileLayout() {
 		'background-position': imgBgLeft + "px " + imgBgTop + "px"
 	});
 	
-	var deckImgH = 233.0827;
+	var deckImgH = 174.812;
 	var deckImgW = deckImgH * 0.71935;
 	var deckImgTop = deckImgH * -0.1258;
 	var deckImgLeft = deckImgW * -0.15;
 	$('.deck-preview-img').css({
 		'background-size': deckImgW + "px " + deckImgH + "px",
 		'background-position': deckImgLeft + "px " + deckImgTop + "px"
+	});
+	
+	var navW = $('#profile-nav').width();
+	var navSpacerW = (navW-222)/4;
+	$( ".profile-link" ).each(function() {
+	  $(this).css("margin-left", navSpacerW);
 	});
 	
 }
