@@ -64,18 +64,19 @@ var SealedViewModel = function( set ) {
     this.cardselect = null;
     
     this.selectSortOption = function( type ) {
-        
-        console.log("selectSortOption")
     
         switch( type ) {
             case 'cmc' :
-                this.selectSortOption = this.sortOptions()[0];
+                this.selectedSortOption = this.sortOptions()[0];
+                $("#aSortDisplay").html('by cost');
                 return;
             case 'color' :
-                this.selectSortOption = this.sortOptions()[1];
+                this.selectedSortOption = this.sortOptions()[1];
+                $("#aSortDisplay").html('by color');
                 return;
             case 'rarity' :
-                this.selectSortOption = this.sortOptions()[2];
+                this.selectedSortOption = this.sortOptions()[2];
+                $("#aSortDisplay").html('by rarity');
                 return;
         }
     
@@ -222,7 +223,9 @@ var SealedViewModel = function( set ) {
     
     this.sortPool = function( boardType ) {
         
-        var sortType = this.selectedSortOption().sortType;
+        var sortType = this.selectedSortOption.sortType;
+        
+        console.log("sortPool sortType = " + sortType );
         
         if( boardType == "sideboard" ) {
             this.sideboard()[0].sortPoolByType( sortType, "name" );

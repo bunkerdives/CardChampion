@@ -186,4 +186,4 @@ app.get( '/:username', function(req, res){
 
 app.post( '/register', Auth.register );
 app.post( '/login', passport.authenticate('local'), Auth.login );
-app.post( '/guest', Auth.guest );
+app.post( '/guest', passport.authenticate('local'), Auth.guest );

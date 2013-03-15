@@ -35,9 +35,6 @@ app.configure( function(){
     app.use( express.cookieParser() );
     app.use( express.session(sessionOptions) );
 
-    //app.use( express.cookieParser('your secret here') );
-    //app.use( express.session( { store : sessionStore, secret : 'secret', key : 'express.sid' } ) );
-
     app.use( passport.initialize() );
     app.use( passport.session() );
     

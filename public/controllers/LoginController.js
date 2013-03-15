@@ -22,7 +22,6 @@ var LoginController = {
             , { username : $("#login-nickname").val(), password : $("#login-password").val() }
             , function( data ) {
                 if( data != 'Error' ) {
-                    //localStorage.setItem('auth', true);
                     LightboxController.closeLightbox();
                     $("#header-link-5").css( 'display', 'block' );
                     $("#header-link-5").attr( "href", "/" + data );
@@ -38,6 +37,7 @@ var LoginController = {
         
         $.post(
             '/guest'
+            , { username : 'Guest', password : 'Guest' }
             , function(data) {
                 if( data != 'Error' ) {
                     LightboxController.closeLightbox();

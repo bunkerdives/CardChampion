@@ -14,40 +14,17 @@ Auth = {
         , id : ObjectId
     } )
     
-    , guest : function(req, res) {
+    , guest : function( req, res ) {
         req.session.authOrGuest = true;
         res.send('null');
-        /*
-        return res.render( 'layout.jade', {
-            templateName: JSON.stringify('Decks')
-            , options: JSON.stringify( {
-               'authOrGuest' : true
-               , 'user' : 'null'
-            } )
-        } );
-    */
     }
     
-    , login : function(req, res) {
-        
-        console.log("Auth.login " + req.user.username );
+    , login : function( req, res ) {
         req.session.authOrGuest = true;
-        
         res.send( req.user.username );
-        
-        /*
-        return res.render( 'layout.jade', {
-            templateName: JSON.stringify('Decks')
-            , options: JSON.stringify( {
-               'authOrGuest' : true
-               , 'user' : req.user.username
-            } )
-        } );
-        */
-
     }
     
-    , register : function(req, res) {
+    , register : function( req, res ) {
             
         var username = req.body.username;
         var password = req.body.password;
@@ -55,12 +32,6 @@ Auth = {
         Account.register( new Account({ username : username }), password, function(err, account) {
             
             if (err) {
-                /*
-                return res.render( 'layout.jade', {
-                    templateName: JSON.stringify('Splash')
-                    , options: JSON.stringify('')
-                } );
-                */
                 res.send("Error");
             }
             
@@ -71,17 +42,10 @@ Auth = {
 
             req.session.authOrGuest = true;
 
+            if( username == 'Guest' ){
+                username = 'null';
+            }
             res.send( username );
-            
-            /*
-            return res.render( 'layout.jade', {
-                templateName: JSON.stringify('Decks')
-                , options: JSON.stringify( {
-                   'authOrGuest' : true
-                   , 'user' : username
-                } )
-            } );
-            */
             
         } );
         
