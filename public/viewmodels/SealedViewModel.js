@@ -44,8 +44,44 @@ var SealedViewModel = function( set ) {
     this.dragDropOrigColIdx = '';
     this.dragDropNewCol = '';
     this.cardDragSrc = '';
+
     
-    this.addLandToMainboard = function() {
+    this.sortOption = function( sortType, optionsText ) {
+        this.sortType = sortType;
+        this.optionsText = optionsText;
+    };
+    
+    this.sortOptions = ko.observableArray( [
+        new this.sortOption( 'cmc', 'by cost' )
+        , new this.sortOption( 'color', 'by color' )
+        , new this.sortOption( 'rarity', 'by rarity' )
+        , new this.sortOption( 'type', 'by type' )
+    ] );
+    
+    //this.selectedSortOption = ko.observable( this.sortOptions()[0] );
+    this.selectedSortOption = this.sortOptions()[0];
+    
+    this.cardselect = null;
+    
+    this.selectSortOption = function( type ) {
+        
+        console.log("selectSortOption")
+    
+        switch( type ) {
+            case 'cmc' :
+                this.selectSortOption = this.sortOptions()[0];
+                return;
+            case 'color' :
+                this.selectSortOption = this.sortOptions()[1];
+                return;
+            case 'rarity' :
+                this.selectSortOption = this.sortOptions()[2];
+                return;
+        }
+    
+    }
+    
+    , this.addLandToMainboard = function() {
         
         var colSortType = ViewModel.selectedSortOption().sortType;
         
@@ -183,22 +219,6 @@ var SealedViewModel = function( set ) {
         }
         return;
     };
-    
-    this.sortOption = function( sortType, optionsText ) {
-        this.sortType = sortType;
-        this.optionsText = optionsText;
-    };
-    
-    this.sortOptions = ko.observableArray( [
-        new this.sortOption( 'cmc', 'by cost' )
-        , new this.sortOption( 'color', 'by color' )
-        , new this.sortOption( 'type', 'by type' )
-        , new this.sortOption( 'rarity', 'by rarity' )
-    ] );
-    
-    this.selectedSortOption = ko.observable( this.sortOptions()[0] );
-    
-    this.cardselect = null;
     
     this.sortPool = function( boardType ) {
         

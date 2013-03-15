@@ -92,7 +92,7 @@ var CardViewModel = function( cardData ) {
         var sideboard = ViewModel.sideboard()[0];
         var mainboard = ViewModel.mainboard()[0];
         
-        var colSortType = ViewModel.selectedSortOption().sortType;
+        var colSortType = ViewModel.selectedSortOption.sortType;
         
         if( poolType == 'sideboard' ) {
             

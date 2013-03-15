@@ -1,14 +1,14 @@
 var LayoutController = function( template, options ) {
     
     // check cookies to see if user is logged in to an OpenID acct or as a guest
-    var loggedIn = localStorage.getItem('auth');
+    var loggedIn = options.authOrGuest;
     
     var context;
     switch( template ) {
         case 'Splash':
             context = new SplashViewModel();
             break;
-        case 'Foyer':
+        case 'Decks':
             context = new FoyerViewModel();
             break;
         case 'Limited':
@@ -22,7 +22,15 @@ var LayoutController = function( template, options ) {
             break;
         case 'Profile':
             context = new FoyerViewModel();
-            console.log("LayoutController PROFILE, user = " + options.username );
+            break;
+        case 'NewEvent':
+            context = new FoyerViewModel();
+            break;
+        case 'Draft':
+            context = new FoyerViewModel();
+            break;
+        case 'About':
+            context = new FoyerViewModel();
             break;
         default:
             window.location.replace('/'); // TODO make a 404 page
@@ -30,8 +38,45 @@ var LayoutController = function( template, options ) {
 
     ViewModel = context;
     
-    if( template == 'Profile'){
+    if( template == 'Decks' ) {
         this.plugin = new ko.plugin( { template : 'foyer', context : context } );
+        ViewModel.decksVisible = ko.observable( true );
+        ViewModel.profileVisible( false );
+        ViewModel.aboutVisible( false );
+        ViewModel.newEventVisible( false );
+        ViewModel.joinDraftVisible( false );
+        $("#title").html( options.username );
+    }
+    else if( template == 'NewEvent'){
+        this.plugin = new ko.plugin( { template : 'foyer', context : context } );
+        ViewModel.decksVisible = ko.observable( false );
+        ViewModel.profileVisible( false );
+        ViewModel.aboutVisible( false );
+        ViewModel.newEventVisible( true );
+        ViewModel.joinDraftVisible( false );
+        $("#title").html( options.username );
+    }
+    else if( template == 'Draft'){
+        this.plugin = new ko.plugin( { template : 'foyer', context : context } );
+        ViewModel.decksVisible = ko.observable( false );
+        ViewModel.profileVisible( false );
+        ViewModel.aboutVisible( false );
+        ViewModel.newEventVisible( false );
+        ViewModel.joinDraftVisible( true );
+        $("#title").html( options.username );
+    }
+    else if( template == 'About'){
+        this.plugin = new ko.plugin( { template : 'foyer', context : context } );
+        ViewModel.decksVisible = ko.observable( false );
+        ViewModel.profileVisible( false );
+        ViewModel.aboutVisible( true );
+        ViewModel.newEventVisible( false );
+        ViewModel.joinDraftVisible( false );
+        $("#title").html( options.username );
+    }
+    else if( template == 'Profile'){
+        this.plugin = new ko.plugin( { template : 'foyer', context : context } );
+        ViewModel.decksVisible = ko.observable( false );
         ViewModel.profileVisible( true );
         ViewModel.aboutVisible( false );
         ViewModel.newEventVisible( false );

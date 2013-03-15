@@ -1,7 +1,7 @@
 var SplashViewModel = function() {
     
     this.showFoyer = function(layout){
-        window.location.href = '/foyer';
+        window.location.href = '/decks';
     };
     
 };

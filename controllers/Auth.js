@@ -14,9 +14,15 @@ Auth = {
         , id : ObjectId
     } )
     
+    , guest : function(req, res) {
+        req.session.authOrGuest = true;
+        res.send('OK');
+    }
+    
     , login : function(req, res) {
         
         console.log("Auth.login " + req.user.username );
+        req.session.authOrGuest = true;
         
         res.send( 'OK' );
 
@@ -42,6 +48,8 @@ Auth = {
             if( ! Auth.userExists( username, ProfileModel ) ) {
                 Auth.newUser( username, ProfileModel );
             }
+
+            req.session.authOrGuest = true;
 
             res.send( 'OK' );
             

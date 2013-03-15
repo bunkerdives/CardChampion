@@ -83,7 +83,7 @@ function headerLayout(){
 function headerInit(){
     console.log("headerInit")
 	headerLayout();
-	navEvents();
+	//navEvents();
 	$('#header-link-1').off();//#main-pane-1 is shown on init, ergo turn off click handler for its link
 }
 

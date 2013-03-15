@@ -4,7 +4,8 @@ var FoyerViewModel = function() {
     this.selectedSet = "GTC";
     this.socket = '';
     
-    this.profileVisible = ko.observable( true );
+    this.decksVisible = ko.observable( true );
+    this.profileVisible = ko.observable( false );
     this.aboutVisible = ko.observable( false );
     this.newEventVisible = ko.observable( false );
     this.joinDraftVisible = ko.observable( false );
