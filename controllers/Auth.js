@@ -16,7 +16,16 @@ Auth = {
     
     , guest : function(req, res) {
         req.session.authOrGuest = true;
-        res.send('OK');
+        res.send('null');
+        /*
+        return res.render( 'layout.jade', {
+            templateName: JSON.stringify('Decks')
+            , options: JSON.stringify( {
+               'authOrGuest' : true
+               , 'user' : 'null'
+            } )
+        } );
+    */
     }
     
     , login : function(req, res) {
@@ -24,13 +33,21 @@ Auth = {
         console.log("Auth.login " + req.user.username );
         req.session.authOrGuest = true;
         
-        res.send( 'OK' );
+        res.send( req.user.username );
+        
+        /*
+        return res.render( 'layout.jade', {
+            templateName: JSON.stringify('Decks')
+            , options: JSON.stringify( {
+               'authOrGuest' : true
+               , 'user' : req.user.username
+            } )
+        } );
+        */
 
     }
     
     , register : function(req, res) {
-        
-        console.log("register " + req.body.username + " " + req.body.password );
             
         var username = req.body.username;
         var password = req.body.password;
@@ -38,10 +55,13 @@ Auth = {
         Account.register( new Account({ username : username }), password, function(err, account) {
             
             if (err) {
+                /*
                 return res.render( 'layout.jade', {
                     templateName: JSON.stringify('Splash')
                     , options: JSON.stringify('')
                 } );
+                */
+                res.send("Error");
             }
             
             var ProfileModel = mongoose.model( 'Profile', Auth.Profile, 'Profiles' )
@@ -51,7 +71,17 @@ Auth = {
 
             req.session.authOrGuest = true;
 
-            res.send( 'OK' );
+            res.send( username );
+            
+            /*
+            return res.render( 'layout.jade', {
+                templateName: JSON.stringify('Decks')
+                , options: JSON.stringify( {
+                   'authOrGuest' : true
+                   , 'user' : username
+                } )
+            } );
+            */
             
         } );
         

@@ -21,9 +21,11 @@ var LoginController = {
             '/login'
             , { username : $("#login-nickname").val(), password : $("#login-password").val() }
             , function( data ) {
-                if( data == 'OK' ) {
-                    localStorage.setItem('auth', true);
+                if( data != 'Error' ) {
+                    //localStorage.setItem('auth', true);
                     LightboxController.closeLightbox();
+                    $("#header-link-5").css( 'display', 'block' );
+                    $("#header-link-5").attr( "href", "/" + data );
                 } else { // TODO display an error message here
                     console.log("Error logging in: " + data);
                 }
@@ -37,8 +39,9 @@ var LoginController = {
         $.post(
             '/guest'
             , function(data) {
-                if( data == 'OK' ) {
+                if( data != 'Error' ) {
                     LightboxController.closeLightbox();
+                    $("#header-link-5").css( 'display', 'none');
                 } else { // TODO display an error message
                     console.log("Error logging in as a guest!");
                 }

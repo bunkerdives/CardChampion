@@ -14,10 +14,18 @@ app.get( '/', function(req, res) {
         authOrGuest = false;
     }
     
+    var user;
+    if( req.user != undefined ){
+        user = req.user.username;
+    } else {
+        user = 'null'
+    }
+    
     res.render( 'layout.jade', {
         templateName: JSON.stringify('Splash')
         , options: JSON.stringify( {
-           'authOrGuest' : authOrGuest 
+           'authOrGuest' : authOrGuest
+           , 'user' : user
         } )
         
     } );
@@ -32,10 +40,18 @@ app.get( '/decks', function(req, res) {
         authOrGuest = false;
     }
     
+    var user;
+    if( req.user != undefined ){
+        user = req.user.username;
+    } else {
+        user = 'null'
+    }
+    
     res.render( 'layout.jade', {
         templateName: JSON.stringify('Decks')
         , options: JSON.stringify( {
-           'authOrGuest' : authOrGuest 
+           'authOrGuest' : authOrGuest
+           , 'user' : user
         } )
     } );
 } );
@@ -48,10 +64,18 @@ app.get( '/newevent', function(req, res) {
         authOrGuest = false;
     }
     
+    var user;
+    if( req.user != undefined ){
+        user = req.user.username;
+    } else {
+        user = 'null'
+    }
+    
     res.render( 'layout.jade', {
         templateName: JSON.stringify('NewEvent')
         , options: JSON.stringify( {
-           'authOrGuest' : authOrGuest 
+           'authOrGuest' : authOrGuest
+           , 'user' : user
         } )
         
     } );
@@ -65,10 +89,18 @@ app.get( '/draft', function(req, res) {
         authOrGuest = false;
     }
     
+    var user;
+    if( req.user != undefined ){
+        user = req.user.username;
+    } else {
+        user = 'null'
+    }
+    
     res.render( 'layout.jade', {
         templateName: JSON.stringify('Draft')
         , options: JSON.stringify( {
-           'authOrGuest' : authOrGuest 
+           'authOrGuest' : authOrGuest
+           , 'user' : user
         } )
         
     } );
@@ -82,10 +114,18 @@ app.get( '/about', function(req, res) {
         authOrGuest = false;
     }
     
+    var user;
+    if( req.user != undefined ){
+        user = req.user.username;
+    } else {
+        user = 'null'
+    }
+    
     res.render( 'layout.jade', {
         templateName: JSON.stringify('About')
         , options: JSON.stringify( {
-           'authOrGuest' : authOrGuest 
+           'authOrGuest' : authOrGuest
+           , 'user' : user
         } )
     } );
 } );
@@ -99,9 +139,21 @@ app.get( '/sealed', function(req, res) {
         authOrGuest = false;
     }
     
+    var user;
+    if( req.user != undefined ){
+        user = req.user.username;
+    } else {
+        user = 'null'
+    }
+    
     res.render( 'layout.jade', {
         templateName : JSON.stringify('Limited')
-        , options : JSON.stringify( { 'authOrGuest' : authOrGuest, 'format' : 'sealed', 'set' : req.query['set'] } )
+        , options : JSON.stringify( {
+            'authOrGuest' : authOrGuest
+            , 'format' : 'sealed'
+            , 'set' : req.query['set']
+            , 'user' : user
+        } )
     } );
 } );
 
@@ -113,10 +165,21 @@ app.get( '/:username', function(req, res){
         authOrGuest = false;
     }
     
+    var user;
+    if( req.user != undefined ){
+        user = req.user.username;
+    } else {
+        user = 'null'
+    }
+    
     // route the client to the profile page of the given user
     res.render( 'layout.jade', {
         templateName : JSON.stringify('Profile')
-        , options : JSON.stringify( { 'authOrGuest' : authOrGuest, 'username' : req.params.username } )
+        , options : JSON.stringify( {
+            'authOrGuest' : authOrGuest
+            , 'username' : req.params.username
+            , 'user' : user
+        } )
     } );
 } );
 

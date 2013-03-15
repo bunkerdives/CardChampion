@@ -86,6 +86,12 @@ var LayoutController = function( template, options ) {
         this.plugin = new ko.plugin( { template : template, context : context } );
     }
     
+    if( options.user != 'null' ) {
+        $("#header-link-5").attr( 'href', '/' + options.user );
+    } else {
+        $("#header-link-5").css( 'display', 'none' );
+    }
+    
     // show the login lightbox if at a view without login. Any views that require login will be redirected to the foyer/splash page
     if( template != 'Splash'  &&  !loggedIn ) {
         LoginController.displayLoginLightbox();
