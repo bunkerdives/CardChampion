@@ -1,4 +1,4 @@
-<div id="foyer">
+<div id="foyer" onload="headerLayout()">
 	<div id="foyer-content-container">
 		
 		<div id="foyer-banner-container">
@@ -13,31 +13,38 @@
 					
 					<div id="main-slide-1" class="main-slide" data-bind="if: decksVisible">
 						<div id="recent-decks">
-							<div class="deck-preview clearfix">
-								<div class="deck-preview-left pull-left clearfix">
-									<div class="deck-preview-img pull-left"/>
-									<div class="deck-preview-mana pull-right">
-										<div id="deck-preview-white" class="deck-preview-color"/>
-										<div id="deck-preview-blue" class="deck-preview-color"/>
-										<div id="deck-preview-black" class="deck-preview-color"/>
-										<div id="deck-preview-red" class="deck-preview-color"/>
-										<div id="deck-preview-green" class="deck-preview-color"/>
-									</div>
-								</div>
-								<div class="deck-preview-right pull-right clearfix">
-									<div class="deck-preview-info pull-left">
-										<div class="deck-preview-title">Boros Aggro</div>
-										<div class="deck-preview-format">GTC Sealed</div>
-									</div>
-									<div class="deck-preview-btns pull-right">
-										<div>
-											<button id="deck-preview-view-btn" class="btn btn-primary"><i class="icon-white icon-eye-open"></i></button>
+							<div id="recent-decks-top" class="clearfix">
+								<div id="recent-decks-title" class="pull-left">Recent Decks</div>
+							</div>
+							<div id="recent-decks-content">
+								<div id="recent-decks-inner">
+									<div class="deck-preview clearfix">
+										<div class="deck-preview-left pull-left clearfix">
+											<div class="deck-preview-img pull-left"/>
 										</div>
-										<div>
-											<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
-										</div>
-										<div>
-											<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
+										<div class="deck-preview-right pull-right clearfix">
+											<div class="deck-preview-info pull-left">
+												<div class="deck-preview-mana pull-right">
+													<div class="deck-preview-title">Boros Aggro</div>
+													<span id="deck-preview-white" class="deck-preview-color"/>
+													<span id="deck-preview-blue" class="deck-preview-color"/>
+													<span id="deck-preview-black" class="deck-preview-color"/>
+													<span id="deck-preview-red" class="deck-preview-color"/>
+													<span id="deck-preview-green" class="deck-preview-color"/>
+												</div>
+												<div class="deck-preview-format">GTC Sealed</div>
+											</div>
+											<div class="deck-preview-btns pull-right">
+												<div>
+													<button id="deck-preview-view-btn" class="btn btn-primary"><i class="icon-white icon-eye-open"></i></button>
+												</div>
+												<div>
+													<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
+												</div>
+												<div>
+													<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -77,8 +84,6 @@
 									<div id="profile-nav" class="pull-right clearfix row-fluid">
 										<ul class="nav nav-pills">
 											<li class="active profile-link"><a href="#">Decks</a></li>
-											<li class="profile-link"><a href="#">Buddies</a></li>
-											<li class="profile-link"><a href="#">Threads</a></li>
 										</ul>
 									</div>
 								</div>
