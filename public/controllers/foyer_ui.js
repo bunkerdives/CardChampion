@@ -1,16 +1,17 @@
-/* Auto append to chat
+// Auto append to chat
 var interval = self.setInterval(appendChat,500);
+var i = 0;
 function appendChat() {
-	var convo = $("#convo");
-	var convoInner = $("#convo-inner"); 
+	var convo = $("#chat-convo-wrapper");
+	var convoInner = $("#chat-convo"); 
 	var atBottom = ( convoInner.outerHeight() - convo.scrollTop() ) <=  convo.height();
 	var msg = "<div class='chat-msg'><span class='chat-username' style='color:red;'>Username 1:</span><span>Test" + i + "</span></div>";
 	convoInner.append(msg);
 	if( atBottom ){
-		convo.stop().animate({ scrollTop: convo[0].scrollHeight }, 400);
+		convo.stop().animate({ scrollTop: convo[0].scrollHeight }, 300);
 	}
 	++i;
-}*/
+}
 
 /*function foyerLayout(){
 	console.log('foyerLayout function called.');

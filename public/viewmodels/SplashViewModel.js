@@ -12,7 +12,7 @@ ko.utils.extend( SplashViewModel.prototype, {
     init: function() {
         console.log("SplashViewModel init!");
         $("#title").html('LimitedMTG');
-		splashLayout();
+		splashInit();
 		$("#imac-screenshot-1").fadeIn(1000);
     }
     

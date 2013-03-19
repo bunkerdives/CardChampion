@@ -1,10 +1,11 @@
 /* General classes and styles */
 
 body {
-	background-image:url('http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1920x1080_Wallpaper.jpg');
+	/*background-image:url('http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1920x1080_Wallpaper.jpg');*/
 	background-repeat:no-repeat;
 	background-attachment:fixed;
-	background-position:-50px -50px;
+	/*background-position:-50px -50px;*/
+	background-color:transparent !important;
 }
 
 textarea {
@@ -444,8 +445,9 @@ body.ns-resize-cursor {
 
 #foyer #recent-decks-filters {
 	line-height:34px;
-	padding-right:5px;
+	padding-right:60px;
 	vertical-align:baseline;
+	max-height:34px;
 }
 
 #foyer #recent-decks-filters .btn-group, #foyer #recent-decks-filters .btn {
@@ -456,18 +458,36 @@ body.ns-resize-cursor {
 	top:75%;
 }
 
-
-
-#foyer #recent-decks-content {
-	padding-left:5px;
-	padding-right:5px;
-	/*width: -webkit-calc(100% - 10px);
-	width: -moz-calc(100% - 10px);
-	width: calc(100% - 10px);*/
+#foyer #recent-decks-filters .btn-group + .btn-group {
+	margin-left: 0px;
 }
 
-#foyer #recent-decks-inner {
-	margin-top:5px;
+#foyer #recent-decks-content {
+	height:425px;
+}
+
+#foyer #recent-decks-list {
+	padding-left:60px;
+	padding-right:60px;
+	width: -webkit-calc(100% - 120px);
+	width: -moz-calc(100% - 120px);
+	width: calc(100% - 120px);
+	
+	overflow:auto;
+	height:420px;
+	padding-top:15px;
+}
+
+#foyer #recent-decks-load-more {
+	display:block;
+	width:100%;
+	padding-top:10px;
+	height:44px;
+	line-height:44px;
+}
+
+#foyer #recent-decks-load-more button {
+	vertical-align:baseline;
 }
 
 #foyer #sets {
@@ -545,6 +565,8 @@ body.ns-resize-cursor {
 	line-height:34px;
 	white-space:pre-wrap;
 	font-weight:400;
+	font-family: 'Courgette', cursive;
+	color:#373737;
 }
 
 #foyer #profile-nav {
@@ -552,6 +574,7 @@ body.ns-resize-cursor {
 	width: -webkit-calc(65% - 15px);
 	width: -moz-calc(65% - 15px);
 	width: calc(65% - 15px);
+	padding-right:10px;
 }
 
 #foyer .nav {
@@ -692,8 +715,8 @@ body.ns-resize-cursor {
 }
 
 #foyer .deck-preview-mana {
-	width:73px;
-	height:14px;
+	width:14px;
+	height:73px;
 	padding-left:2px;
 	padding-right:2px;
 	margin-top:2px;
@@ -706,6 +729,21 @@ body.ns-resize-cursor {
 	background-size:12px 12px;
 	background-repeat:no-repeat;
 	margin-top:1.5px;
+}
+
+#foyer #recent-decks-mana {
+	height:37;
+	padding-top:1px;
+}
+
+#foyer #recent-decks-mana .deck-preview-color {
+	float:left;
+	height:24px;
+	width:24px;
+	background-size:24px 24px;
+	background-repeat:no-repeat;
+	margin-top:4px;
+	margin-right:5px;
 }
 
 #foyer #deck-preview-white {
@@ -729,9 +767,22 @@ body.ns-resize-cursor {
 }
 
 #foyer .deck-preview-right {
-	width: -webkit-calc(100% - 99px);
-	width: -moz-calc(100% - 99px);
-	width: calc(100% - 99px);
+	width: -webkit-calc(100% - 98px);
+	width: -moz-calc(100% - 98px);
+	width: calc(100% - 98px);
+	text-align:left;
+	-webkit-border-top-right-radius: 2px;
+	-moz-border-top-right-radius: 2px;
+	border-top-right-radius: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	-moz-border-bottom-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+#foyer .recent-deck-right {
+	width: -webkit-calc(100% - 80px);
+	width: -moz-calc(100% - 80px);
+	width: calc(100% - 80px);
 	text-align:left;
 	-webkit-border-top-right-radius: 2px;
 	-moz-border-top-right-radius: 2px;
@@ -749,17 +800,25 @@ body.ns-resize-cursor {
 	line-height:25px;
 }
 
+#foyer .deck-preview-info-left {
+	line-height:37px;
+}
+
 #foyer .deck-preview-title {
-	font-weight:400;
-	font-size:22px;
-	font-family: 'Viga', sans-serif;
+	white-space:nowrap;
+	font-weight:200;
+	font-size:28px;
+}
+
+#foyer .deck-preview-info-right {
+	line-height:37px;
+	margin-right:5px;
 }
 
 #foyer .deck-preview-format {
 	font-weight:300;
 	font-size:18px;
 	font-style:italic;
-	
 }
 
 #foyer .deck-preview-btns {
@@ -807,18 +866,17 @@ body.ns-resize-cursor {
 	}*/
 
 #foyer #portal-right-pane {
-	width: -webkit-calc(32.5% - 21px);
-	width: -moz-calc(32.5% - 21px);
-	width: calc(32.5% - 21px);
+	width: -webkit-calc(32.5% - 1px);
+	width: -moz-calc(32.5% - 1px);
+	width: calc(32.5% - 1px);
 	
-	height:440px;
+	height:460px;
 	
 	margin:0;
-	padding:10px;
 }
 
 #foyer #chat {
-	width:100%;
+	width: 100%;
 }
 
 #foyer .chat-username {
@@ -826,6 +884,7 @@ body.ns-resize-cursor {
 	font-weight:600;
 	padding-right:5px;
 	line-height:14px;
+	padding-left:5px;
 }
 
 #foyer .chat-msg {
@@ -839,7 +898,7 @@ body.ns-resize-cursor {
 
 #foyer #chat #chat-convo-wrapper {
 	width:100%;
-	height:411px;
+	height:425px;
 	overflow:auto;
 	text-align:left;
 	padding:0;
@@ -847,13 +906,28 @@ body.ns-resize-cursor {
 
 #foyer #chat #chat-convo {
 	width:100%;
+	padding-bottom:20px;
 }
 
-#foyer #chat #chat-input {
+#foyer #chat-input {
 	clear:both;
-	width:100%;
-	padding-top:5px;
-	height:24px;
+	width: -webkit-calc(100% - 20px);
+	width: -moz-calc(100% - 20px);
+	width: calc(100% - 20px);
+	
+	padding-left:10px;
+	padding-right:10px;
+	height:34px;
+	
+	background-color:#fff;
+	background-image: -moz-linear-gradient(top, #eee, #ccc);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eee), to(#ccc));
+	background-image: -webkit-linear-gradient(top, #eee, #ccc);
+	background-image: -o-linear-gradient(top, #eee, #ccc);
+	background-image: linear-gradient(to bottom, #eee, #ccc);
+	background-repeat: repeat-x;
+	
+	border-top:1px solid #000;
 }
 
 #foyer #chat-input input {
@@ -870,13 +944,17 @@ body.ns-resize-cursor {
 	-webkit-border-bottom-right-radius:0;
 	border-top-right-radius:0;
 	border-bottom-right-radius:0;
+	margin-top:5px;
+	background-color:#eee;
+	color:#000;
 }
 
 #foyer #chat-input button {
 	line-height:18px;
+	margin-top:5px;
 }
 
-#foyer #portal #chat-input .appended {
+#foyer .appended {
 	-moz-border-top-left-radius:0;
 	-moz-border-bottom-left-radius:0;
 	-webkit-border-top-left-radius:0;
