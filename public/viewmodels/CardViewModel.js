@@ -115,6 +115,8 @@ var CardViewModel = function( cardData ) {
             
         }
         
+        ViewModel.setPoolSize();
+        
     };
     
     // cardColumn - return what column the card is currently in, if any

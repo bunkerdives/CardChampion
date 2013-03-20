@@ -267,8 +267,6 @@ var SealedViewModel = function( set ) {
     };
     
     this.clearMainboard = function() {
-      
-        console.log("clearMainboard");
         
         var mainboard = ViewModel.mainboard()[0];
         var sideboard = ViewModel.sideboard()[0];
@@ -312,13 +310,6 @@ var SealedViewModel = function( set ) {
             ele.css( 'height', ViewModel.cardH );
             ele.css( 'width', ViewModel.cardW );
             
-            /*
-            ele.css( {
-                'top' : ViewModel.cardDragCardTop + (event.pageY - ViewModel.cardDragCardCursorTop)
-                , 'left' : ViewModel.cardDragCardLeft + (event.pageX - ViewModel.cardDragCardCursorLeft)
-            } );
-            */
-            
             ele.css( {
                 'top' : event.pageY
                 , 'left' : event.pageX
@@ -348,6 +339,33 @@ var SealedViewModel = function( set ) {
             }
             
         }
+        
+    };
+    
+    this.setPoolSize = function() {
+        
+        // get number of columns and max column length (or # rows) in sideboard
+        var sideboardNumCols = this.sideboard()[0].columns().length;
+        var sideboardNumRows = 0;
+        for( var i = 0; i < sideboardNumCols; ++i ) {
+            var columnLen = this.sideboard()[0].columns()[i].cards().length;
+            if( sideboardNumRows < columnLen ) {
+                sideboardNumRows = columnLen;
+            }
+        }
+        
+        var mainboardNumCols = this.mainboard()[0].columns().length;
+        var mainboardNumRows = 0;
+        for( var i = 0; i < mainboardNumCols; ++i ) {
+            var columnLen = this.mainboard()[0].columns()[i].cards().length;
+            if( mainboardNumRows < columnLen ) {
+                mainboardNumRows = columnLen;
+            }
+        }
+        
+        console.log("setPoolSize");
+        console.log("setPoolSize sideboardNumCols = " + sideboardNumCols + ", sideboardNumRows = " + sideboardNumRows );
+        console.log("setPoolSize mainboardNumCols = " + mainboardNumCols + ", mainboardNumRows = " + mainboardNumRows );
         
     };
     
