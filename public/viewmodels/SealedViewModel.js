@@ -266,6 +266,38 @@ var SealedViewModel = function( set ) {
         
     };
     
+    this.clearMainboard = function() {
+      
+        console.log("clearMainboard");
+        
+        var mainboard = ViewModel.mainboard()[0];
+        var sideboard = ViewModel.sideboard()[0];
+        var sortType = ViewModel.selectedSortOption.sortType;
+        
+        // move each card from the mainboard to the sideboard
+        var columns = mainboard.columns();
+        var numColumns = columns.length;
+        
+        for( var i = 0; i < numColumns; ++i ) {
+            
+            var column = columns[i];
+            var cards = column.cards;
+            var numCards = column.cards().length;
+            
+            for( var j = 0; j < numCards; ++j ) {
+                
+                var cardView = column.cards()[j];
+                
+                cards.remove( cardView );
+                
+                sideboard.addCardToPool( cardView, sortType, 'name' );
+                
+            }
+            
+        }
+        
+    };
+    
     this.mouseMoveCardDrag = function( event ) {
         
         if( ViewModel.mousedown == true ){
