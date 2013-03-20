@@ -14,7 +14,6 @@ var SocketController = function() {
             data = JSON.parse(data);
             var user = data.user;
             var msg = data.msg;
-            console.log(user + ": " + msg);
             
         	var convo = $("#chat-convo-wrapper");
         	var convoInner = $("#chat-convo"); 

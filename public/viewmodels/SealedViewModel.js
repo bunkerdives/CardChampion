@@ -300,6 +300,36 @@ var SealedViewModel = function( set ) {
         
     };
     
+    this.clearMainboardLands = function() {
+        
+        var mainboard = ViewModel.mainboard()[0];
+        var sideboard = ViewModel.sideboard()[0];
+        var sortType = ViewModel.selectedSortOption.sortType;
+        
+        // move each card from the mainboard to the sideboard
+        var columns = mainboard.columns();
+        var numColumns = columns.length;
+        
+        for( var i = 0; i < numColumns; ++i ) {
+            
+            var column = columns[i];
+            var cards = column.cards;
+            var numCards = column.cards().length;
+            
+            for( var j = numCards - 1; j >= 0; --j ) {
+                
+                var cardView = column.cards()[j];
+                
+                if( (/Land/g).test( cardView.type ) ) {
+                    cards.remove( cardView );
+                }
+                
+            }
+            
+        }
+        
+    };
+    
     this.mouseMoveCardDrag = function( event ) {
         
         if( ViewModel.mousedown == true ){
@@ -318,7 +348,6 @@ var SealedViewModel = function( set ) {
                 'top' : event.pageY
                 , 'left' : event.pageX
             } );
-            
         
         }
     };
