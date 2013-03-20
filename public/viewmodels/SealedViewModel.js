@@ -15,13 +15,15 @@ var SealedViewModel = function( set ) {
 	
 	this.cardH = 198.7;
 	this.cardW = 143;
-	
 	this.cardPadding = 3;
 	this.cardMarginTop = (this.cardH * 0.894) * -1;
+	
 	this.poolVerticalPadding = 3 * 2; // top and bottom
 	
 	this.yOffsetBool = false;
 	this.yOffsetDragStart = 0;
+	this.yOffset = 0;
+	this.yOffsetOld = 0;
     
     this.set = set;
     this.imgSrc = ko.observable( 'img/cardback.jpg' );

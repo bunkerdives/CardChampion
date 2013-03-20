@@ -105,7 +105,7 @@ function limitedLayout() {
 	
 	var halfScreenWidth = windowWidth;
 	
-	var yOffsetNum = yOffset;
+	var yOffsetNum = ViewModel.yOffset;
 	//console.log("yOffsetNum: " + yOffsetNum);
 	var topScreenHeight = (halfScreenHeight + (templateH/9))-yOffsetNum;
 	var bottomScreenHeight= (halfScreenHeight - (templateH/9))+yOffsetNum; 	
@@ -235,8 +235,8 @@ function cardSizeChangeEnd() {
   	setTimeout(cardSizeChangeEnd, delta);
   } else {
   	timeout = false;
-		var newW = SealedViewModel.cardW;
-		var newH = SealedViewModel.cardH;
+		var newW = ViewModel.cardW;
+		var newH = ViewModel.cardH;
 		var bgSize=newW + "px " + newH + "px";
 		//remove .cardResize class, change the background size of these elements
 		$( ".card" ).each(function() {//Change background size of cards to 0; add class .cardResize
@@ -250,36 +250,29 @@ function cardSizeChangeEnd() {
 
 		//Card size slider end
 
-var yOffset = 0;
-var yOffsetOld = 0;		
+		
 
 function offsetDragHandlers() {
 	$('#drag-offset-y').mousedown(function(e){
-		SealedViewModel.yOffsetBool=true;
+		ViewModel.yOffsetBool=true;
 		$("body").addClass("no-select");
 		$("body").addClass("ns-resize-cursor");
-		//console.log("yOffsetBool: " + SealedViewModel.yOffsetBool);
-		SealedViewModel.yOffsetDragStart=e.pageY;
-		//console.log("yOffsetDragStart: " + SealedViewModel.yOffsetDragStart);
+		ViewModel.yOffsetDragStart=e.pageY;
 	});
 	
 	$(document).mouseup(function(){
-		if (SealedViewModel.yOffsetBool == true) {
-			SealedViewModel.yOffsetBool = false;
+		if (ViewModel.yOffsetBool == true) {
+			ViewModel.yOffsetBool = false;
 			$("body").removeClass("no-select");
 			$("body").removeClass("ns-resize-cursor");
-			yOffsetOld = yOffset;
-			//console.log("yOffsetBool: " + SealedViewModel.yOffsetBool);
+			ViewModel.yOffsetOld = ViewModel.yOffset;
 		}
 	}).mousemove(function(e){
-		if (SealedViewModel.yOffsetBool == true) {
-			var yOffsetStart = SealedViewModel.yOffsetDragStart;
-			//console.log('yOffsetStart: ' + yOffsetStart);
+		if (ViewModel.yOffsetBool == true) {
+			var yOffsetStart = ViewModel.yOffsetDragStart;
 			var yOffsetEnd = e.pageY;
-			//console.log('yOffsetEnd: ' + yOffsetEnd);
 			var yOffsetDelta = yOffsetStart - yOffsetEnd;
-			//console.log('yOffsetDelta: ' + yOffsetDelta);
-			yOffset = yOffsetOld + yOffsetDelta;
+			ViewModel.yOffset = ViewModel.yOffsetOld + yOffsetDelta;
 			limitedLayout();
 		}
 	});
