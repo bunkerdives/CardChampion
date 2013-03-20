@@ -47,7 +47,7 @@
 	            <a class="btn btn-mini btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
 								Sort
 	            </a>
-	            <ul class="dropdown-menu">
+	            <ul class="dropdown-menu pull-right" style="width:auto;min-width:0px;">
 	              <li>
 	                <a tabindex="-1" data-bind="event: { click: function(){ sortPool('sideboard'); } }">Sideboard</a>
 	              </li>
@@ -61,7 +61,7 @@
 	            <a id="aSortDisplay" class="btn btn-mini btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
 								by cost
 	            </a>
-	            <ul class="dropdown-menu">
+	            <ul class="dropdown-menu" style="width:auto;min-width:0;">
 						    <li><a data-bind="event: { click: function(){ selectSortOption('cmc'); } }">by cost</a></li>
 								<li><a data-bind="event: { click: function(){ selectSortOption('color'); } }">by color</a></li>
                 <li><a data-bind="event: { click: function(){ selectSortOption('rarity'); } }">by rarity</a></li>
@@ -72,40 +72,109 @@
 					
 					<div id="add-land-btn" class="btn-group pull-left">
 		        <button class="btn btn-mini btn-success dropdown-toggle" data-toggle="dropdown">Add Land</button>
-			        <ul id="add-land-dropdown" class="dropdown-menu" style="top:18px;left:-35px;width:136px;min-width:136px;">
-			          <li id="white-mana">
-			            <i class="icon-plus-sign pull-left" style="position:relative;top:2px;left:25px;" data-bind="event: { click: function(){ incrLandCount('W'); } }"/>
-			            <img src="/img/white-mana.jpg">
-			            <span data-bind="text: whiteLandCount">0</span>
-			            <i class="icon-minus-sign pull-right" style="position:relative;top:2px;right:25px;" data-bind="event: { click: function(){ decrLandCount('W'); } }"/>
-			          </li>
-			          <li id="blue-mana">
-			            <i class="icon-plus-sign pull-left" style="position:relative;top:2px;left:25px;" data-bind="event: { click: function(){ incrLandCount('U'); } }"/>
-			            <img src="/img/blue-mana.jpg">
-			            <span data-bind="text: blueLandCount">0</span>
-			            <i class="icon-minus-sign pull-right" style="position:relative;top:2px;right:25px;" data-bind="event: { click: function(){ decrLandCount('U'); } }"/>
-			          </li>
-			          <li id="black-mana">
-			            <i class="icon-plus-sign pull-left" style="position:relative;top:2px;left:25px;" data-bind="event: { click: function(){ incrLandCount('B'); } }"/>
-			            <img src="/img/black-mana.jpg">
-			            <span data-bind="text: blackLandCount">0</span>
-			            <i class="icon-minus-sign pull-right" style="position:relative;top:2px;right:25px;" data-bind="event: { click: function(){ decrLandCount('B'); } }"/>
-			          </li>
-			          <li id="red-mana">
-			            <i class="icon-plus-sign pull-left" style="position:relative;top:2px;left:25px;" data-bind="event: { click: function(){ incrLandCount('R'); } }"/>
-			            <img src="/img/red-mana.jpg">
-			            <span data-bind="text: redLandCount">0</span>
-			            <i class="icon-minus-sign pull-right" style="position:relative;top:2px;right:25px;" data-bind="event: { click: function(){ decrLandCount('R'); } }"/>
-			          </li>
-			          <li id="green-mana">
-			            <i class="icon-plus-sign pull-left" style="position:relative;top:2px;left:25px;" data-bind="event: { click: function(){ incrLandCount('G'); } }"/>
-			            <img src="/img/green-mana.jpg">
-			            <span data-bind="text: greenLandCount">0</span>
-			            <i class="icon-minus-sign pull-right" style="position:relative;top:2px;right:25px;" data-bind="event: { click: function(){ decrLandCount('G'); } }"/>
-			          </li>
+			        <ul id="add-land-dropdown" class="dropdown-menu pull-right">
+								<li class="clearfix">
+									<div class="pull-left clearfix half-width">
+										<div class="pull-left clearfix">
+											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ incrLandCount('W'); } }"/>
+										</div>
+										<div class="pull-right">
+											<img src="/img/white-mana.jpg">
+										</div>
+									</div>
+									<div class="pull-right clearfix half-width">
+										<div class="pull-left">
+											<span data-bind="text: whiteLandCount">0</span>
+										</div>
+										<div class="pull-right clearfix">
+											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ decrLandCount('W'); } }"/>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="pull-left clearfix half-width">
+										<div class="pull-left clearfix">
+											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ incrLandCount('U'); } }"/>
+										</div>
+										<div class="pull-right">
+											<img src="/img/blue-mana.jpg">
+										</div>
+									</div>
+									<div class="pull-right clearfix half-width">
+										<div class="pull-left">
+											<span data-bind="text: blueLandCount">0</span>
+										</div>
+										<div class="pull-right clearfix">
+											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ decrLandCount('U'); } }"/>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="pull-left clearfix half-width">
+										<div class="pull-left clearfix">
+											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ incrLandCount('B'); } }"/>
+										</div>
+										<div class="pull-right">
+											<img src="/img/black-mana.jpg">
+										</div>
+									</div>
+									<div class="pull-right clearfix half-width">
+										<div class="pull-left">
+											<span data-bind="text: blackLandCount">0</span>
+										</div>
+										<div class="pull-right clearfix">
+											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ decrLandCount('B'); } }"/>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="pull-left clearfix half-width">
+										<div class="pull-left clearfix">
+											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ incrLandCount('R'); } }"/>
+										</div>
+										<div class="pull-right">
+											<img src="/img/red-mana.jpg">
+										</div>
+									</div>
+									<div class="pull-right clearfix half-width">
+										<div class="pull-left">
+											<span data-bind="text: redLandCount">0</span>
+										</div>
+										<div class="pull-right clearfix">
+											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ decrLandCount('R'); } }"/>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="pull-left clearfix half-width">
+										<div class="pull-left clearfix">
+											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ incrLandCount('G'); } }"/>
+										</div>
+										<div class="pull-right">
+											<img src="/img/green-mana.jpg">
+										</div>
+									</div>
+									<div class="pull-right clearfix half-width">
+										<div class="pull-left">
+											<span data-bind="text: greenLandCount">0</span>
+										</div>
+										<div class="pull-right clearfix">
+											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ decrLandCount('G'); } }"/>
+										</div>
+									</div>
+								</li>
 			          <li>
-			            <button class="btn btn-small btn-primary" style="margin-right:4px;">Suggest</button>
-			            <button class="btn btn-small btn-success" data-bind="event: { click: addLandToMainboard }">Add</button>
+									<div class="text-center">
+			            	<button class="btn btn-mini btn-primary">Suggest</button>
+									</div>
+								</li>
+								<li class="add-land-dropdown-btns clearfix">
+									<div class="half-width pull-left">
+			            	<button class="btn btn-mini btn-success pull-right" data-bind="event: { click: addLandToMainboard }">Add</button>
+									</div>
+									<div class="half-width pull-right">
+										<button class="btn btn-mini btn-danger pull-left">Reset</button>
+									</div>
 			          </li>
 					 	 	</ul>
 					</div>
