@@ -179,17 +179,33 @@
 					 	 	</ul>
 					</div>
 					<div id="control-bar-settings-btn" class="btn-group pull-left">
-						<button class="btn btn-mini btn-inverse dropdown-toggle" data-toggle="dropdown">
+						<button class="btn btn-mini btn-warning dropdown-toggle" data-toggle="dropdown">
 							<i class="icon-white icon-cog"></i>
 						</button>
-							<ul class="dropdown-menu" style="left:-140px;">
-								<li id="card-size-slider" class="pull-left">
-						      <input id="slide" type="range" min="70" max="130" step="1" value="100" onchange="cardSizeChange(this.value);"/><!-- Todo onchange callback-->
+							<ul class="dropdown-menu pull-right">
+								<li id="card-size-slider" class="clearfix">
+									<div id="card-size-slider-left" class="pull-left clearfix">
+										<div id="card-size-slider-left-left" class="pull-left">
+											<img src="../img/grey-card.png" class="pull-right"/>
+										</div>
+										<div id="card-size-slider-left-right" class="pull-right">
+						      		<input id="slide" type="range" min="70" max="130" step="1" value="100" onchange="cardSizeChange(this.value);"/><!-- Todo onchange callback-->
+										</div>
+									</div>
+									<div id="card-size-slider-right" class="pull-right clearfix">
+										<img src="../img/grey-card.png" class="pull-right"/>
+									</div>
 								</li><!-- End #card-size-slider -->
 							</ul>
 					</div>
 					<div id="reset-btn" class="btn-group pull-left">
-						<button class="btn btn-mini btn-inverse"><i class="icon-white icon-remove" data-bind="event: { click : clearMainboard }"></i></button>
+						<button class="btn btn-mini btn-danger dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-white icon-remove"></i><!--data-bind="event: { click : clearMainboard }"-->
+						</button>
+							<ul class="dropdown-menu pull-right">
+								<li><a href="#" data-bind="event: { click : clearMainboard }">Reset All</a></li>
+								<li><a href="#">Reset Land</a></li>
+							</ul>
 					</div>
 				</div><!--End #control-bar-buttons-->
 			</div>
