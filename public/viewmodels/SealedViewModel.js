@@ -141,6 +141,25 @@ var SealedViewModel = function( set ) {
             
         }
         
+        this.resetLandCounters();
+        this.closeLandDropdown();
+        
+    };
+    
+    this.resetLandCounters = function() {
+        this.whiteLandCount(0);
+        this.blueLandCount(0);
+        this.blackLandCount(0);
+        this.redLandCount(0);
+        this.greenLandCount(0);
+    };
+    
+    this.openLandDropdown = function() {
+        $("#add-land-dropdown").css( 'display', 'block' );
+    };
+    
+    this.closeLandDropdown = function() {
+        $("#add-land-dropdown").css( 'display', 'none' );
     };
     
     this.suggestLand = function() {
