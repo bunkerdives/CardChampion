@@ -1,3 +1,33 @@
+function showRegisterForm() {
+	$('#lightbox-txt-container span').text('Register');
+	$('#login-username-container').css('display', 'none');
+	$('#register-username-container').css('display', 'block');
+	$('#login-password-container').css('display', 'none');
+	$('#register-password-container').css('display', 'block');
+	$('#register-password-confirm-container').css('display', 'block');
+	$('#register-email-container').css('display','block');
+	$('#register-email-confirm-container').css('display','block');
+	$('#login-view-register-btn').css('display', 'none');
+	$('#register-view-register-btn').css('display', 'block');
+	$('#login-view-login-btn').css('display', 'none');
+	$('#register-view-login-btn').css('display', 'block');
+}
+
+function showLoginForm() {
+	$('#lightbox-txt-container span').text('Log In');
+	$('#login-username-container').css('display', 'block');
+	$('#register-username-container').css('display', 'none');
+	$('#login-password-container').css('display', 'block');
+	$('#register-password-container').css('display', 'none');
+	$('#register-password-confirm-container').css('display', 'none');
+	$('#register-email-container').css('display','none');
+	$('#register-email-confirm-container').css('display','none');
+	$('#login-view-register-btn').css('display', 'block');
+	$('#register-view-register-btn').css('display', 'none');
+	$('#login-view-login-btn').css('display', 'block');
+	$('#register-view-login-btn').css('display', 'none');
+}
+
 function bgStretch(src,oW,oH,iW,iH,l,t){
 	var windowW = $(window).width();
 	var windowH = $(window).height();
