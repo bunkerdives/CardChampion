@@ -71,7 +71,7 @@ var FoyerViewModel = function() {
 				outerW : 1280
 				, outerH : 960
 				, innerW : 1200
-				, innerH : 528
+				, innerH : 498
 				, l : 80
 				, t : 195
 				, reverse : false
@@ -105,7 +105,10 @@ var FoyerViewModel = function() {
 				var currentBanner = currentBg.banners[ ViewModel.bannerId ];
 				var banner = ViewModel.banners[ currentBanner ];
 				
-				var containerW = $('#foyer-banner').width();
+				var containerW = ($(window).width() * 0.95)-2;
+				if ( containerW > 1098 ) {
+					containerW = 1098;
+				}
 				var containerH = 150; //Static
         
         var bannerSrc = 'url(' + currentBanner + ')';
@@ -128,7 +131,7 @@ var FoyerViewModel = function() {
 				var newT = (bannerTop * (newH / bannerOuterH)) * -1;
 				
 				var newInnerH = ((bannerInnerH / bannerOuterH) * newH);
-				var bannerEndT = ((newInnerH) * -1);
+				var bannerEndT = (newT - (newInnerH-150) );
 				
 				if (reverse == true) {
 					tmpReverse = newT;
