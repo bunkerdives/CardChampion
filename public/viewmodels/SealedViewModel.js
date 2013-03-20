@@ -286,7 +286,7 @@ var SealedViewModel = function( set ) {
             var cards = column.cards;
             var numCards = column.cards().length;
             
-            for( var j = 0; j < numCards; ++j ) {
+            for( var j = numCards - 1; j >= 0; --j ) {
                 
                 var cardView = column.cards()[j];
                 

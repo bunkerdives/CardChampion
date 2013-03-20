@@ -99,8 +99,6 @@ var LayoutController = function( template, options ) {
         LoginController.displayLoginLightbox();
     }
     else if( template != 'Splash' && loggedIn ) {
-        console.log("Splash AND logged in");
-        //ViewModel.socketioHandshake();
         ViewModel.socketController.socketioHandshake();
     }
     
