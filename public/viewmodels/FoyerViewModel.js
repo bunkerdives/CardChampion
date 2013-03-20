@@ -35,45 +35,87 @@ var FoyerViewModel = function() {
         //socket.emit()
         
     };
+		
+		this.backgroundId = 0;
+		this.backgrounds = [
+			{
+				imgSrc : 'http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1920x1080_Wallpaper.jpg'
+				, outerW : 1920
+				, outerH : 1080
+				, innerW : 1920
+				, innerH : 973
+				, l : 0
+				, t : 39
+				, banners : [ 
+					'http://media.wizards.com/images/magic/tcg/products/dka/wp_bonetoash_1024x768.jpg'
+					, 'http://media.wizards.com/images/magic/daily/wallpapers/Nice_Holiday_1280x960_Wallpaper.jpg'
+					, 'http://media.wizards.com/images/magic/daily/wallpapers/AVR_1_1280x960_Wallpaper_m7lr3f99lv.jpg'
+				]
+			}
+		];
+		
+		this.bannerId = 0;
+		this.banners = {
+			
+			'http://media.wizards.com/images/magic/tcg/products/dka/wp_bonetoash_1024x768.jpg' : {
+				outerW : 1024
+				, outerH : 768
+				, innerW : 830
+				, innerH : 459
+				, l : 194
+				, t : 47
+				, reverse : true
+			}
+			
+			, 'http://media.wizards.com/images/magic/daily/wallpapers/Nice_Holiday_1280x960_Wallpaper.jpg' : {
+				outerW : 1280
+				, outerH : 960
+				, innerW : 1200
+				, innerH : 528
+				, l : 80
+				, t : 195
+				, reverse : false
+			}
+			
+			, 'http://media.wizards.com/images/magic/daily/wallpapers/AVR_1_1280x960_Wallpaper_m7lr3f99lv.jpg' : {
+				outerW : 1280
+				, outerH : 960
+				, innerW : 1126
+				, innerH : 450
+				, l : 154
+				, t : 317
+				, reverse : true
+			}
+			
+		};
 
     this.setBackgroundImage = function() {
         
-        /*var ran = Math.floor( Math.random() * ViewModel.backgroundImages.length );
-        
-        $("#foyer").css( {
-            'background-image' : 'url(' + ViewModel.backgroundImages[ran] + ')'
-            , 'background-attachment' : 'fixed'
-            , 'background-position' : '-50px -50px'
-            , 'background-repeat' : 'no-repeat'
-        } );*/
-				/*bgStretch('http://media.wizards.com/images/magic/daily/wallpapers/wp_timerev_1280x1024.jpg',1280,1024,1280,849,0,55);
-				bgStretch('http://media.wizards.com/images/magic/daily/wallpapers/MazeofIth_FTVRealms_1920x1080_Wallpaper.jpg',1920,1080,1920,946,0,35);
-				bgStretch('http://media.wizards.com/images/magic/daily/wallpapers/GroveoftheBurnwillows_FTVRealms_1920x1080_WallpaperTemplate.jpg',1920,1080,1920,946,0,35);
-				bgStretch('http://media.wizards.com/images/magic/daily/wallpapers/Mana_Vault_MTGOweek_1920x1080_Wallpaper.jpg',1920,1080,1920,973,0,39);
-				bgStretch('http://media.wizards.com/images/magic/daily/wallpapers/Mishras_Workshop_MTGOweek_1920x1080_Wallpaper.jpg',1920,1080,1920,973,0,39);*/
-				bgStretch('http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1920x1080_Wallpaper.jpg',1920,1080,1920,973,0,39);
-        
-    };
+        var ran = Math.floor( Math.random() * ViewModel.backgrounds.length );   
+				var background = this.backgrounds[ran];
+				ViewModel.backgroundId = ran;
+				bgStretch( background.imgSrc, background.H, background.outerH, background.innerW, background.innerH, background.l, background.t );
+    
+		
+		};
     
     this.setAnimatedBanner = function() {
-        
-        /*ViewModel.bannerId += 1;
-        if( ViewModel.bannerId >= ViewModel.bannerImages.length ){
-            ViewModel.bannerId = 0;
-        }*/
+			
+				var currentBg = ViewModel.backgrounds[ ViewModel.backgroundId ];
+				var currentBanner = currentBg.banners[ ViewModel.bannerId ];
+				var banner = ViewModel.banners[ currentBanner ];
 				
 				var containerW = $('#foyer-banner').width();
 				var containerH = 150; //Static
         
-        var bannerSrc = 'url(' + ViewModel.bannerImages[ ViewModel.bannerId ] + ')';
-				
-				var bannerOuterW = 1024;
-				var bannerOuterH = 768;
-				var bannerInnerW = 830;
-				var bannerInnerH = 499;
-				var bannerLeft = 194;
-				var bannerTop = 67;
-				var reverse = true;
+        var bannerSrc = 'url(' + currentBanner + ')';
+				var bannerOuterW = banner.outerW;
+				var bannerOuterH = banner.outerH;
+				var bannerInnerW = banner.innerW;
+				var bannerInnerH = banner.innerH;
+				var bannerLeft = banner.l;
+				var bannerTop = banner.t;
+				var reverse = banner.reverse;
 				
 				var tmpH = (containerW * (bannerInnerH / bannerInnerW));
 				var tmpW = containerW;
@@ -93,6 +135,11 @@ var FoyerViewModel = function() {
 					newT = bannerEndT
 					bannerEndT = tmpReverse;
 				}
+				
+        ViewModel.bannerId += 1;
+        if( ViewModel.bannerId >= currentBg.banners.length ){
+            ViewModel.bannerId = 0;
+        }
 				
         $('#foyer-banner').css( {
             'background-image' : bannerSrc
@@ -186,24 +233,7 @@ var FoyerViewModel = function() {
         , new setQueue( "Limited Edition Beta", "LEB", "0/8", this )
         , new setQueue( "Limited Edition Alpha", "LEA", "0/8", this )
     ] );
-    
-		this.backgroundId = 0;
-    this.backgroundImages = [
-        'http://media.wizards.com/images/magic/daily/wallpapers/wp_timerev_1280x1024.jpg'
-        , 'http://media.wizards.com/images/magic/daily/wallpapers/MazeofIth_FTVRealms_1920x1080_Wallpaper.jpg'
-				, 'http://media.wizards.com/images/magic/daily/wallpapers/GroveoftheBurnwillows_FTVRealms_1920x1080_WallpaperTemplate.jpg'
-				, 'http://media.wizards.com/images/magic/daily/wallpapers/Mana_Vault_MTGOweek_1920x1080_Wallpaper.jpg'
-				, 'http://media.wizards.com/images/magic/daily/wallpapers/Mishras_Workshop_MTGOweek_1920x1080_Wallpaper.jpg'
-				, 'http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1920x1080_Wallpaper.jpg'
-    ];
-    
-    this.bannerId = 0;
-    this.bannerImages = [
-        /*'http://media.wizards.com/images/magic/daily/wallpapers/Jace_Architect_of_Thought_PW_1280x960_Wallpaper.jpg'
-        , 'http://media.wizards.com/images/magic/daily/wallpapers/Nice_Holiday_1280x960_Wallpaper.jpg'*/
-        /*,*/ 'http://media.wizards.com/images/magic/tcg/products/dka/wp_bonetoash_1024x768.jpg'
-    ];
-    
+		
 };
 
 var setQueue = function( name, abbr, size, foyer ) {
