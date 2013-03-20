@@ -1487,10 +1487,50 @@ input[type="range"]{
 #control-bar-buttons .btn-group {
 	line-height:12px;
 }
-	
-#add-land-btn img {
+
+#add-land-btn {
+	color:#000;
+}	
+
+#add-land-dropdown {
+	width:136px;
+	min-width:136px;
+}
+
+#add-land-dropdown li {
+	padding-left:20px;
+	padding-right:20px;
+	width:96px;
+}
+
+#add-land-dropdown img {
 	height:20px;
 	width:20px;
+}
+
+#add-land-dropdown .half-width {
+	width:50%;
+}
+
+#add-land-dropdown i {
+	position:relative;
+	top:2px;
+}
+
+#add-land-dropdown span {
+	padding-left:5px;
+}
+
+#add-land-dropdown button {
+	margin-top:4px;
+}
+
+#add-land-dropdown .text-center {
+	text-align:center;
+}
+
+#add-land-dropdown .add-land-dropdown-btns div {
+	width:48%;
 }
 
 #control-bar-setting-btn [class^="icon-"], [class*=" icon-"] {
