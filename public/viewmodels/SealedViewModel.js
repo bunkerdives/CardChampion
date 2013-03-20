@@ -64,9 +64,7 @@ var SealedViewModel = function( set ) {
         , new this.sortOption( 'type', 'by type' )
     ] );
     
-    //this.selectedSortOption = ko.observable( this.sortOptions()[0] );
     this.selectedSortOption = this.sortOptions()[0];
-    
     this.cardselect = null;
     
     this.selectSortOption = function( type ) {
@@ -90,7 +88,7 @@ var SealedViewModel = function( set ) {
     
     , this.addLandToMainboard = function() {
         
-        var colSortType = ViewModel.selectedSortOption().sortType;
+        var colSortType = ViewModel.selectedSortOption.sortType;
         
         // create number of lands per each type, according to the land counts
         for( var i = 0; i < this.whiteLandCount(); ++i ){

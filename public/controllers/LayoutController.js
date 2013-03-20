@@ -2,6 +2,7 @@ var LayoutController = function( template, options ) {
     
     // check cookies to see if user is logged in to an OpenID acct or as a guest
     var loggedIn = options.authOrGuest;
+    console.log("LayoutController loggedIn = " + loggedIn );
     
     var context;
     switch( template ) {
@@ -37,6 +38,7 @@ var LayoutController = function( template, options ) {
     }
 
     ViewModel = context;
+    ViewModel.socketController = new SocketController();
     
     if( template == 'Decks' ) {
         this.plugin = new ko.plugin( { template : 'foyer', context : context } );
@@ -95,6 +97,11 @@ var LayoutController = function( template, options ) {
     // show the login lightbox if at a view without login. Any views that require login will be redirected to the foyer/splash page
     if( template != 'Splash'  &&  !loggedIn ) {
         LoginController.displayLoginLightbox();
+    }
+    else if( template != 'Splash' && loggedIn ) {
+        console.log("Splash AND logged in");
+        //ViewModel.socketioHandshake();
+        ViewModel.socketController.socketioHandshake();
     }
     
 };
