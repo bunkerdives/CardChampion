@@ -94,7 +94,7 @@ var FoyerViewModel = function() {
         var ran = Math.floor( Math.random() * ViewModel.backgrounds.length );   
 				var background = this.backgrounds[ran];
 				ViewModel.backgroundId = ran;
-				bgStretch( background.imgSrc, background.H, background.outerH, background.innerW, background.innerH, background.l, background.t );
+				bgStretch( background.imgSrc, background.outerW, background.outerH, background.innerW, background.innerH, background.l, background.t );
     
 		
 		};
