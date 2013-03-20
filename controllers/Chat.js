@@ -1,32 +1,22 @@
 Chat = {
     
-    users : []
-    
-    , joinChat : function( data ) {
+    joinChat : function( data, username ) {
         
-        var username = data.username;
+        var json = JSON.parse(data);
+        var room = json.room;
         
-        //Chat.users.push( socket );
-        
+        console.log("\n\njoinChat: " + username + " in room " + room + "\n\n");
         
     }
     
-    , addUser : function(data) {
+    , newMsg : function( data, user ) {
+        
         var json = JSON.parse(data);
-        var nick = json['nick'];
-        Chat.users.push(nick);
-        var data = {
-            'users' : Chat.users
-        };
-        io.sockets.emit('newuser', JSON.stringify(data) );
-    }
-    
-    , newMsg : function(data) {
-        var json = JSON.parse(data);
-        var nick = json['nick'];
-        var msg = json['msg'];
-        var data = JSON.stringify( {'nick' : nick, 'msg' : msg} );
-        io.sockets.emit('newmsg', data);
+        var msg = json.msg;
+        console.log( "newMsg, data = " + msg )
+        
+        var data = JSON.stringify( { msg : msg, user : user } );
+        io.sockets.emit( 'newmsg', data );
     }
     
 };

@@ -1,5 +1,5 @@
 // Auto append to chat
-var interval = self.setInterval(appendChat,500);
+//var interval = self.setInterval(appendChat,500);
 var i = 0;
 function appendChat() {
 	var convo = $("#chat-convo-wrapper");

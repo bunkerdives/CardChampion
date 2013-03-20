@@ -25,6 +25,7 @@ var LoginController = {
                     LightboxController.closeLightbox();
                     $("#header-link-5").css( 'display', 'block' );
                     $("#header-link-5").attr( "href", "/" + data );
+                    ViewModel.socketioHandshake();
                 } else { // TODO display an error message here
                     console.log("Error logging in: " + data);
                 }
@@ -42,6 +43,7 @@ var LoginController = {
                 if( data != 'Error' ) {
                     LightboxController.closeLightbox();
                     $("#header-link-5").css( 'display', 'none');
+                    ViewModel.socketioHandshake();
                 } else { // TODO display an error message
                     console.log("Error logging in as a guest!");
                 }

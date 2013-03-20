@@ -10,6 +10,37 @@ var FoyerViewModel = function() {
     this.newEventVisible = ko.observable( false );
     this.joinDraftVisible = ko.observable( false );
     
+    this.socketioHandshake = function() {
+        
+        console.log("socketioHandshake")
+        var socket = io.connect('http://localhost');
+      
+        socket.on( "connect", function() {
+            socket.emit( 'joinChat', JSON.stringify({ room : 'generalChat' }) );
+        } );
+      
+        socket.on( "newmsg", function(data) {
+            
+            data = JSON.parse(data);
+            var user = data.user;
+            var msg = data.msg;
+            console.log(user + ": " + msg);
+            
+        	var convo = $("#chat-convo-wrapper");
+        	var convoInner = $("#chat-convo"); 
+        	var atBottom = ( convoInner.outerHeight() - convo.scrollTop() ) <=  convo.height();
+        	var msg = "<div class='chat-msg'><span class='chat-username' style='color:red;'>" + user + ":</span><span>" + msg + "</span></div>";
+        	convoInner.append(msg);
+        	if( atBottom ){
+        		convo.stop().animate({ scrollTop: convo[0].scrollHeight }, 300);
+        	}
+            
+        } );
+      
+        this.socket = socket;
+        
+    };
+    
     this.startSealed = function() {
         
         /*
@@ -30,11 +61,17 @@ var FoyerViewModel = function() {
     this.sendChatMsg = function() {
         
         // get the user's message
-        var newChat = $("#chat-msg").val();
+        var msg = $("#chat-msg").val();
         
-        //socket.emit()
+        // clear the chat msg box
+        $("#chat-msg").val('');
+        
+        console.log("sendChatMsg: " + msg );
+        
+        this.socket.emit( 'newmsg', JSON.stringify({ msg : msg }))
         
     };
+    
 		
 		this.backgroundId = 0;
 		this.backgrounds = [
@@ -269,18 +306,6 @@ ko.utils.extend( FoyerViewModel.prototype, {
         
       ViewModel.setBackgroundImage();
       ViewModel.setAnimatedBanner();
-      
-      var socket = io.connect('http://localhost');
-      
-      socket.on( "connect", function() {
-          socket.emit( 'joinChat', JSON.stringify({ room : 'generalChat' }) );
-      } );
-      
-      socket.on( "newChat", function(data) {
-          console.log("new chat: " + data);
-      } );
-      
-      ViewModel.socket = socket;
         
     }
     

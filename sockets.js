@@ -7,7 +7,7 @@ passportSocketIo = module.parent.exports.passportSocketIo;
 sessionStore = module.parent.exports.sessionStore;
 sessionOptions = module.parent.exports.sessionOptions;
 
-io.set( "authorization", passportSocketIo.authorize( {
+io.set( "authorization", passportSocketIo.authorize({
     
     key:    'test-session-key',       //the cookie where express (or connect) stores its session id.
     secret: 'asdasdsdas1312312', //the session secret to parse the cookie
@@ -22,16 +22,25 @@ io.set( "authorization", passportSocketIo.authorize( {
 }) );
 
 
-io.on( 'connection', function(socket) {
+io.sockets.on( 'connection', function(socket) {
     
-    console.log("user connected: ", socket.handshake.user.name);
+    var username = socket.handshake.user.username;
+    console.log("user connected: " + username);
     
-    socket.on( 'joinChat', function(data) {
-        Chat.joinChat( data );
-    } );
+    //socket.join('chat');
     
-    socket.on( 'newmsg', function(data) {
-        Chat.newMsg(data);
-    } );
+    ( function(socket, username){
+        socket.on( 'joinChat', function(data) {
+            Chat.joinChat( data, username );
+        } );
+    } ) (socket, username);
+    
+
+    
+    ( function(socket, username){
+        socket.on( 'newmsg', function(data) {
+            Chat.newMsg( data, username );
+        } );
+    } ) (socket, username);
     
 } );

@@ -374,7 +374,7 @@ var SealedViewModel = function( set ) {
 				var poolVerticalPadding = ViewModel.poolVerticalPadding;
 				var cardMarginTop = ViewModel.cardMarginTop;
 				
-				var cardPoolW = ( cardW + cardPadding ) * (sideboardNumCols + 1);
+				var cardPoolW = ( cardW + cardPadding ) * (sideboardNumCols);
 				var cardPoolH = ( sideboardNumRows * cardH ) + (( (sideboardNumRows - 1) * cardMarginTop ) + poolVerticalPadding);
 				
 				$("#card-pool-inner").css( {
@@ -382,7 +382,7 @@ var SealedViewModel = function( set ) {
 					, height : cardPoolH
 				} );
 				
-				cardPoolW = ( cardW + cardPadding ) * ( mainboardNumCols + 1 );
+				cardPoolW = ( cardW + cardPadding ) * ( mainboardNumCols);
 				cardPoolH = ( mainboardNumRows * cardH ) + ( ( mainboardNumRows - 1 ) * cardMarginTop ) + poolVerticalPadding;
 				
 				$("#deck-area-inner").css( {
