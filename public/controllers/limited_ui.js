@@ -201,9 +201,11 @@ function cardSizeChange(slideAmount) {
 	var standardW = 143; //standard card width
 	var newH = standardH * (slideAmount/100);
 	var newW = standardW * (slideAmount/100);
-	var marginTop = (newH * 0.894) * -1;
-	SealedViewModel.cardH = newH;
-	SealedViewModel.cardW = newW;
+	var marginTop = newH * -0.894;
+	
+	ViewModel.cardH = newH;
+	ViewModel.cardW = newW;
+	ViewModel.cardMarginTop = marginTop;
 	
 	$(".card").each(function() {//Change background size of cards to 0; add class .cardResize
 		$(this).addClass('cardResize');

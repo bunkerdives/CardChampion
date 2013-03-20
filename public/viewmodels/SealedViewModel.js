@@ -16,6 +16,10 @@ var SealedViewModel = function( set ) {
 	this.cardH = 198.7;
 	this.cardW = 143;
 	
+	this.cardPadding = 3;
+	this.cardMarginTop = (this.cardH * 0.894) * -1;
+	this.poolVerticalPadding = 3 * 2; // top and bottom
+	
 	this.yOffsetBool = false;
 	this.yOffsetDragStart = 0;
     
@@ -342,7 +346,7 @@ var SealedViewModel = function( set ) {
         
     };
     
-    this.setPoolSize = function() {
+    this.fixPoolSize = function() {
         
         // get number of columns and max column length (or # rows) in sideboard
         var sideboardNumCols = this.sideboard()[0].columns().length;
@@ -361,12 +365,31 @@ var SealedViewModel = function( set ) {
             if( mainboardNumRows < columnLen ) {
                 mainboardNumRows = columnLen;
             }
-        }
-        
-        console.log("setPoolSize");
-        console.log("setPoolSize sideboardNumCols = " + sideboardNumCols + ", sideboardNumRows = " + sideboardNumRows );
-        console.log("setPoolSize mainboardNumCols = " + mainboardNumCols + ", mainboardNumRows = " + mainboardNumRows );
-        
+        }        
+				
+				//Get current card size
+				var cardW = ViewModel.cardW;
+				var cardH = ViewModel.cardH;
+				var cardPadding = ViewModel.cardPadding;
+				var poolVerticalPadding = ViewModel.poolVerticalPadding;
+				var cardMarginTop = ViewModel.cardMarginTop;
+				
+				var cardPoolW = ( cardW + cardPadding ) * (sideboardNumCols + 1);
+				var cardPoolH = ( sideboardNumRows * cardH ) + (( (sideboardNumRows - 1) * cardMarginTop ) + poolVerticalPadding);
+				
+				$("#card-pool-inner").css( {
+					width : cardPoolW
+					, height : cardPoolH
+				} );
+				
+				cardPoolW = ( cardW + cardPadding ) * ( mainboardNumCols + 1 );
+				cardPoolH = ( mainboardNumRows * cardH ) + ( ( mainboardNumRows - 1 ) * cardMarginTop ) + poolVerticalPadding;
+				
+				$("#deck-area-inner").css( {
+					width : cardPoolW
+					, height : cardPoolH
+				} );
+				
     };
     
 };
@@ -389,6 +412,8 @@ ko.utils.extend( SealedViewModel.prototype, {
         // attach the mousemove event handler to the document element
         $(document).mousemove( ViewModel.mouseMoveCardDrag );
         $(document).mouseup( ViewModel.mouseUp );
+				
+				this.fixPoolSize();
         
     }
     

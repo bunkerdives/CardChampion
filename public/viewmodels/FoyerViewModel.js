@@ -131,7 +131,7 @@ var FoyerViewModel = function() {
 				var newT = (bannerTop * (newH / bannerOuterH)) * -1;
 				
 				var newInnerH = ((bannerInnerH / bannerOuterH) * newH);
-				var bannerEndT = (newT - (newInnerH-150) );
+				var bannerEndT = ( newT - (newInnerH-150) );
 				
 				if (reverse == true) {
 					tmpReverse = newT;
