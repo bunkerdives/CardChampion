@@ -66,8 +66,6 @@ var FoyerViewModel = function() {
         // clear the chat msg box
         $("#chat-msg").val('');
         
-        console.log("sendChatMsg: " + msg );
-        
         this.socket.emit( 'newmsg', JSON.stringify({ msg : msg }))
         
     };
