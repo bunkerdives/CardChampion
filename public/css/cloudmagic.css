@@ -1740,9 +1740,20 @@ input[type="range"]{
 }
 /* End limited template styles */
 
-#lightbox-container {
+#authlightbox {
 	position:fixed;
+	top:0;
+	left:0;
+	z-index:5999;
+	height:100%;
 	width:100%;
+}
+
+#authlightbox-container {
+	display:block !important;
+	position:fixed;
+	width:220px;
+	box-sizing:border-box;
 	top:100px;
 	max-width: 600px;
 	background: #fff;
@@ -1754,15 +1765,20 @@ input[type="range"]{
 }
 
 #lightbox-inner {
-	margin:10px;
+	padding:10px;
 	text-align:center;
-	height:400px;
+	height:auto;
 	width: -webkit-calc(100% - 20px);
 	width: -moz-calc(100% - 20px);
 	width: calc(100% - 20px);
 }
 
+#lightbox-txt-container h1 {
+	color:#000;
+}
+
 #lightbox-shadow {
+	display:block !important;
 	position:fixed;
 	top: 0;
 	left: 0;
