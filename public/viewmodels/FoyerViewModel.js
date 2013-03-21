@@ -85,9 +85,11 @@ var FoyerViewModel = function() {
 
     this.setBackgroundImage = function() {
         
-        var ran = Math.floor( Math.random() * ViewModel.backgrounds.length );   
+        console.log("setBackgroundImage")
+        
+        var ran = Math.floor( Math.random() * this.backgrounds.length );   
 				var background = this.backgrounds[ran];
-				ViewModel.backgroundId = ran;
+				this.backgroundId = ran;
 				bgStretch( background.imgSrc, background.outerW, background.outerH, background.innerW, background.innerH, background.l, background.t );
     
 		
@@ -258,8 +260,6 @@ ko.utils.extend( FoyerViewModel.prototype, {
     init: function() {
 	    foyerInit();
 			headerLayout();
-        
-        console.log("FoyerViewModel init!")
         
       ViewModel.setBackgroundImage();
       ViewModel.setAnimatedBanner();

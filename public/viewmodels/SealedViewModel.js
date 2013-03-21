@@ -441,10 +441,15 @@ var SealedViewModel = function( set ) {
 ko.utils.extend( SealedViewModel.prototype, {
     init: function( element, valueAccessor, allBindingsAccessor ) {
         
+        jQuery(document).ready(function ($) {
+            ( new FoyerViewModel() ).setBackgroundImage();
+            headerInit();
+            $("#header").css('display','block');
+        } );
+        
         limitedInit();
         cardSizeInit();
         console.log("SealedViewModel init")
-        headerInit();
         headerInit();
         
     	$("#add-land-dropdown").on("click", function(e){
