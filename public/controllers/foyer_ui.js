@@ -138,16 +138,13 @@ function showPreviewCard(t,c) {
 }
 
 function hidePreviewCard(t,c) {
-	console.log('hidePreviewCard function called.');
+	//console.log('hidePreviewCard function called.');
 	var target = t;
 	$('#card-preview-container').stop().animate({ opacity: 0 }, 300, function(){
 		$('#card-preview-container').css('display', 'none');
 		$('#card-preview-container').empty();
 		$('body').off('mousemove');
 	});
-	
-	
-	
 }
 
 function cardPreviewEvent() {
