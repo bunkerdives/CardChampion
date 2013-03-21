@@ -154,12 +154,8 @@ var SealedViewModel = function( set ) {
         this.greenLandCount(0);
     };
     
-    this.openLandDropdown = function() {
-        $("#add-land-dropdown").css( 'display', 'block' );
-    };
-    
     this.closeLandDropdown = function() {
-        $("#add-land-dropdown").css( 'display', 'none' );
+        $("body").trigger('click');
     };
     
     this.suggestLand = function() {
@@ -446,6 +442,7 @@ var SealedViewModel = function( set ) {
 
 ko.utils.extend( SealedViewModel.prototype, {
     init: function( element, valueAccessor, allBindingsAccessor ) {
+        
         limitedInit();
         cardSizeInit();
         console.log("SealedViewModel init")

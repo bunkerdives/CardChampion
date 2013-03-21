@@ -7,7 +7,7 @@ var RegisterController = {
             , { username : $("#login-nickname").val(), password : $("#login-password").val() }
             , function( data ) {
                 if( data != 'Error' ) {
-                    LightboxController.closeLightbox();
+                    LightboxController.closeAuthLightbox();
                     $("#header-link-5").attr( "href", "/" + data );
                     $("#header-link-5").css( 'display', 'block' );
                     ViewModel.socketController.socketioHandshake();

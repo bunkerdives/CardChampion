@@ -118,3 +118,75 @@ html(lang='en')
     script(src="../controllers/LightboxController.js")
     script(type="text/javascript")
       initLayout( !{templateName}, !{options} );
+    <div id="authlightbox" style="display:none;">
+    <div id="authlightbox-container">
+    <div id="lightbox-inner">
+    <div id="lightbox-login-register-container">
+    <div id="lightbox-txt-container" class="row-fluid">
+    <div class="span12">
+    <h1><span>Log In</span></h1>
+    </div>
+    </div>
+    <div id="login-username-container" class="row-fluid">
+    <div class="span12">
+    <input type="text" class="span12" id="login-nickname" placeholder="Username"/>
+    </div>
+    </div>
+    <div id="register-username-container" class="row-fluid" style="display:none;">
+    <div class="span12">
+    <input type="text" class="span12" id="register-nickname" placeholder="Username"/>
+    </div>
+    </div>
+    <div id="login-password-container" class="row-fluid">
+    <div class="span12">
+    <input type="password" class="span12" id="login-password" placeholder="Password"/>
+    </div>
+    </div>
+    <div id="register-password-container" class="row-fluid" style="display:none;">
+    <div class="span12">
+    <input type="password" class="span12" id="register-password-confirm" placeholder="Password"/>
+    </div>
+    </div>
+    <div id="register-password-confirm-container" class="row-fluid" style="display:none;">
+    <div class="span12">
+    <input type="password" class="span12" id="register-password-confirm" placeholder="Confirm Password"/>
+    </div>
+    </div>
+    <div id="register-email-container" class="row-fluid" style="display:none;">
+    <div class="span12">
+    <input type="text" class="span12" id="register-email" placeholder="Email Address"/>
+    </div>
+    </div>
+    <div id="register-email-confirm-container" class="row-fluid" style="display:none;">
+    <div class="span12">
+    <input type="text" class="span12" id="register-email" placeholder="Confirm Email Address"/>
+    </div>
+    </div>
+    <div id="register-view-register-btn" class="row-fluid" style="display:none;">
+    <div class="span12">
+    <button id="register-btn" onclick="RegisterController.sendRegisterRequest();" class="btn btn-small btn-primary span12">Register</button>
+    </div>
+    </div>
+    <div id="register-view-login-btn" class="row-fluid" style="display:none;">
+    <div class="span12">
+    <button id="register-btn" class="btn btn-small btn-success span12" onclick="showLoginForm();">Login</button>
+    </div>
+    </div>
+    <div id="login-view-login-btn" class="row-fluid">
+    <div class="span6">
+    <button id="login-btn" onclick="LoginController.sendLoginRequest();" class="btn btn-small btn-success span12">Login</button>
+    </div>
+    <div class="span6">
+    <button id="guest-btn" onclick="LoginController.sendGuestRequest();" class="btn btn-small btn-success span12">Guest</button>
+    </div>
+    </div>
+    <div id="login-view-register-btn" class="row-fluid">
+    <div class="span12">
+    <button id="register-show-btn" class="btn btn-small btn-primary span12" onclick="showRegisterForm();">Register</button>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+  <div id="lightbox-shadow"/>
+</div>

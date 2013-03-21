@@ -10,6 +10,7 @@ var SplashViewModel = function() {
 ko.utils.extend( SplashViewModel.prototype, {
     
     init: function() {
+        $("#authlightbox").css('display','none');
         console.log("SplashViewModel init!");
         $("#title").html('LimitedMTG');
 		splashInit();

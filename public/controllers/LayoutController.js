@@ -1,9 +1,5 @@
 var LayoutController = function( template, options ) {
     
-    // check cookies to see if user is logged in to an OpenID acct or as a guest
-    var loggedIn = options.authOrGuest;
-    console.log("LayoutController loggedIn = " + loggedIn );
-    
     var context;
     switch( template ) {
         case 'Splash':
@@ -94,12 +90,13 @@ var LayoutController = function( template, options ) {
         $("#header-link-5").css( 'display', 'none' );
     }
     
-    // show the login lightbox if at a view without login. Any views that require login will be redirected to the foyer/splash page
+    var loggedIn = options.authOrGuest;
     if( template != 'Splash'  &&  !loggedIn ) {
-        LoginController.displayLoginLightbox();
+        LightboxController.showAuthLightbox();
     }
     else if( template != 'Splash' && loggedIn ) {
         ViewModel.socketController.socketioHandshake();
+        LightboxController.closeAuthLightbox();
     }
     
 };
