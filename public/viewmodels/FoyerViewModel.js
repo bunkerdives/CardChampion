@@ -25,7 +25,9 @@ var FoyerViewModel = function() {
         // clear the chat msg box
         $("#chat-msg").val('');
         
-        this.socket.emit( 'newmsg', JSON.stringify({ msg : msg }))
+        if( msg.length > 0 ) {
+            this.socketController.socket.emit( 'newmsg', JSON.stringify({ msg : msg }));
+        }
         
     };
     
@@ -258,11 +260,20 @@ var setQueue = function( name, abbr, size, foyer ) {
 ko.utils.extend( FoyerViewModel.prototype, {
     
     init: function() {
-	    foyerInit();
-			headerLayout();
         
-      ViewModel.setBackgroundImage();
-      ViewModel.setAnimatedBanner();
+	    foyerInit();
+		headerLayout();
+        
+        ViewModel.setBackgroundImage();
+        ViewModel.setAnimatedBanner();
+     
+        jQuery(document).ready( function ($) {
+            $('input').live("keypress", function(e) {
+                if (e.keyCode == 13) {
+                    ViewModel.sendChatMsg(); 
+                }
+            } );
+        } );
         
     }
     

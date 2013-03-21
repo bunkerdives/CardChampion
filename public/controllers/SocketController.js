@@ -1,9 +1,12 @@
 var SocketController = function() {
+    
+    this.socket = '';
   
     this.socketioHandshake = function() {
         
         console.log("socketioHandshake")
         var socket = io.connect('http://localhost');
+        this.socket = socket;
       
         socket.on( "connect", function() {
             socket.emit( 'joinChat', JSON.stringify({ room : 'generalChat' }) );
@@ -25,8 +28,6 @@ var SocketController = function() {
         	}
             
         } );
-      
-        this.socket = socket;
         
     };
     
