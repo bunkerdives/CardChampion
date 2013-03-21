@@ -108,6 +108,55 @@ function profileLayout() {
 	
 }
 
+
+/* Card Preview Start */
+function positionPreviewCard() {
+	$('#card-preview-container').css( {
+  	'top' : event.pageY -20
+  	, 'left' : event.pageX + 20
+  });
+}
+
+function showPreviewCard(t,c) {
+	
+	var target = t;
+	
+	if (c === 'true') {
+		clearTimeout(ViewModel.hidePreviewTimeout);
+		ViewModel.hidePreviewTimeout = setTimeout(function() {
+			hidePreviewCard();
+		}, 5000);
+	}
+	$('#card-preview-container').css('display', 'block');
+	$('#card-preview-container').html(target);
+	positionPreviewCard();
+	$('body').mousemove(function(){
+		positionPreviewCard();
+	});
+	
+}
+
+function hidePreviewCard(t,c) {
+	console.log('hidePreviewCard function called.');
+	var target = t;
+	$('#card-preview-container').css('display', 'none');
+	$('#card-preview-container').empty();
+	$('body').off('mousemove');
+	
+}
+
+function cardPreviewEvent() {
+	$('.deck-view-section a').mouseenter(function() {
+		showPreviewCard(this.text,'false');
+	}).mouseleave(function(){
+		hidePreviewCard(this.text,'false');
+	}).click(function(){
+		showPreviewCard(this.text,'true');
+	});
+	
+}
+/* Card Preview End */
+
 function foyerInit(){ 
 	//foyerLayout();
 	var headerExists = $("#header").css("display");
@@ -116,6 +165,7 @@ function foyerInit(){
 		headerInit();
 	}
 	profileLayout();
+	cardPreviewEvent();
 }
 
 $(window).resize(function(){

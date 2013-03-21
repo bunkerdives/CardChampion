@@ -1,5 +1,6 @@
 var FoyerViewModel = function() {
-    
+	this.hidePreviewTimeout = 0; 
+		
     this.set = 'GTC';
     this.selectedSet = "GTC";
     this.socket = '';
