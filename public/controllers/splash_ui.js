@@ -72,5 +72,8 @@ $(window).resize( function() {
 } );
 
 $(window).ready( function() {
-	$("html").niceScroll( { scrollspeed : "10" } );
+	$("html").niceScroll({ 
+		zindex : "2000",
+		hidecursordelay : "100" 
+	});
 });

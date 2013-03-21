@@ -173,6 +173,13 @@ function offsetDragHandlers() {
 function limitedInit() {
 	limitedLayout();
 	offsetDragHandlers();
+	$("#card-pool-scroll").niceScroll({ 
+		hidecursordelay : "100"
+	});
+	$("#deck-area-scroll").niceScroll({ 
+		hidecursordelay : "100" 
+	});
+	$('.foyer-header').addClass('translucent-header');
 }
 
 $(document).ready(function(){

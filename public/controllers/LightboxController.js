@@ -26,7 +26,7 @@ var LightboxController = {
 					,'height': '30px'
 				}).animate({
 					opacity: '1'
-				}, 550);
+				}, 450);
 			});
 		
 			$('#login-view-login-btn').animate({
@@ -38,7 +38,7 @@ var LightboxController = {
 					'height': '30px'
 				}).animate({
 					opacity: '1'
-				}, 550);
+				}, 450);
 			});	
 				
 			
@@ -66,7 +66,7 @@ var LightboxController = {
 					'height':'30px'
 				}).animate({
 					opacity: '1'
-				}, 550);
+				}, 450);
 			});
 			
 			$('#register-view-login-btn').animate({
@@ -78,7 +78,7 @@ var LightboxController = {
 					'height':'30px'
 				}).animate({
 					opacity: '1'
-				}, 550);
+				}, 450);
 			});
 		}
     

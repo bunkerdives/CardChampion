@@ -141,6 +141,7 @@ function foyerInit(){
 	}
 	profileLayout();
 	cardPreviewEvent();
+	$('.foyer-header').removeClass('translucent-header');
 }
 
 $(window).resize(function(){
