@@ -2,39 +2,84 @@ var LightboxController = {
 	
 		positionAuthLightbox : function() {
 			//console.log('positionAuthLightbox function called.')
-			var lightboxW = 230;
+			var lightboxW = 350;
 			var lightboxLeft = ($(window).width()/2)-(lightboxW/2);
 			$('#authlightbox-container').css('left', lightboxLeft);
 	  }
 		
 		, showRegisterForm : function() {
-			$('#lightbox-txt-container span').text('Register');
 			$('#login-username-container').css('display', 'none');
-			$('#register-username-container').css('display', 'block');
 			$('#login-password-container').css('display', 'none');
+			$('#register-username-container').css('display', 'block');
 			$('#register-password-container').css('display', 'block');
-			$('#register-password-confirm-container').css('display', 'block');
-			$('#register-email-container').css('display','block');
-			$('#register-email-confirm-container').css('display','block');
-			$('#login-view-register-btn').css('display', 'none');
-			$('#register-view-register-btn').css('display', 'block');
-			$('#login-view-login-btn').css('display', 'none');
-			$('#register-view-login-btn').css('display', 'block');
+			
+			$('#register-animate-wrapper').animate({
+			    height: '111px'
+			}, 500);
+			
+			$('#login-view-register-btn').animate({
+				opacity: '0'
+			}, 250, function(){
+				$(this).css('display','none');
+				$('#register-view-register-btn').css({
+					'display':'block'
+					,'height': '30px'
+				}).animate({
+					opacity: '1'
+				}, 550);
+			});
+		
+			$('#login-view-login-btn').animate({
+				opacity: '0'
+			}, 250, function(){
+				$(this).css('display','none');
+				$('#register-view-login-btn').css({
+					'display': 'block',
+					'height': '30px'
+				}).animate({
+					opacity: '1'
+				}, 550);
+			});	
+				
+			
+			
+			
 		}
 
 		, showLoginForm : function() {
-			$('#lightbox-txt-container span').text('Log In');
-			$('#login-username-container').css('display', 'block');
+			
 			$('#register-username-container').css('display', 'none');
-			$('#login-password-container').css('display', 'block');
 			$('#register-password-container').css('display', 'none');
-			$('#register-password-confirm-container').css('display', 'none');
-			$('#register-email-container').css('display','none');
-			$('#register-email-confirm-container').css('display','none');
-			$('#login-view-register-btn').css('display', 'block');
-			$('#register-view-register-btn').css('display', 'none');
-			$('#login-view-login-btn').css('display', 'block');
-			$('#register-view-login-btn').css('display', 'none');
+			$('#login-username-container').css('display', 'block');
+			$('#login-password-container').css('display', 'block');
+			
+			$('#register-animate-wrapper').animate({
+			    height: '0px'
+			}, 500);
+			
+			$('#register-view-register-btn').animate({
+				opacity: '0'
+			}, 250, function(){
+				$(this).css('display','none');
+				$('#login-view-register-btn').css({
+					'display':'block',
+					'height':'30px'
+				}).animate({
+					opacity: '1'
+				}, 550);
+			});
+			
+			$('#register-view-login-btn').animate({
+				opacity: '0'
+			}, 250, function(){
+				$(this).css('display','none');
+				$('#login-view-login-btn').css({
+					'display':'block',
+					'height':'30px'
+				}).animate({
+					opacity: '1'
+				}, 550);
+			});
 		}
     
     // display the lightbox

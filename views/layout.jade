@@ -123,11 +123,6 @@ html(lang='en')
     <div id="authlightbox-container">
     <div id="lightbox-inner">
     <div id="lightbox-login-register-container">
-    <div id="lightbox-txt-container" class="row-fluid">
-    <div class="span12">
-    <h1><span>Log In</span></h1>
-    </div>
-    </div>
     <div id="login-username-container" class="row-fluid">
     <div class="span12">
     <input type="text" class="span12" id="login-nickname" placeholder="Username"/>
@@ -148,42 +143,44 @@ html(lang='en')
     <input type="password" class="span12" id="register-password" placeholder="Password"/>
     </div>
     </div>
-    <div id="register-password-confirm-container" class="row-fluid" style="display:none;">
+    <div id="register-animate-wrapper" style="height:0px;overflow:hidden;">
+    <div id="register-password-confirm-container" class="row-fluid" style="display:block;">
     <div class="span12">
     <input type="password" class="span12" id="register-password-confirm" placeholder="Confirm Password"/>
     </div>
     </div>
-    <div id="register-email-container" class="row-fluid" style="display:none;">
+    <div id="register-email-container" class="row-fluid" style="display:block;">
     <div class="span12">
     <input type="text" class="span12" id="register-email" placeholder="Email Address"/>
     </div>
     </div>
-    <div id="register-email-confirm-container" class="row-fluid" style="display:none;">
+    <div id="register-email-confirm-container" class="row-fluid" style="display:block;">
     <div class="span12">
     <input type="text" class="span12" id="register-email-confirm" placeholder="Confirm Email Address"/>
     </div>
     </div>
-    <div id="register-view-register-btn" class="row-fluid" style="display:none;">
+    </div>
+    <div id="register-view-register-btn" class="row-fluid" style="display:none;height:0px;overflow:hidden;">
     <div class="span12">
-    <button id="register-btn" onclick="RegisterController.sendRegisterRequest();" class="btn btn-small btn-primary span12">Register</button>
+    <button id="register-btn" onclick="RegisterController.sendRegisterRequest();" class="btn btn-small btn-primary span12">Sign Up</button>
     </div>
     </div>
-    <div id="register-view-login-btn" class="row-fluid" style="display:none;">
+    <div id="register-view-login-btn" class="row-fluid" style="display:block;height:0px;overflow:hidden;">
     <div class="span12">
-    <button id="register-btn" class="btn btn-small btn-success span12" onclick="LightboxController.showLoginForm();">Login</button>
+    <button id="register-btn" class="btn btn-small btn-success span12" onclick="LightboxController.showLoginForm();">Back</button>
     </div>
     </div>
     <div id="login-view-login-btn" class="row-fluid">
     <div class="span6">
-    <button id="login-btn" onclick="LoginController.sendLoginRequest();" class="btn btn-small btn-success span12">Login</button>
+    <button id="login-btn" onclick="LoginController.sendLoginRequest();" class="btn btn-small btn-success span12">Sign In</button>
     </div>
     <div class="span6">
-    <button id="guest-btn" onclick="LoginController.sendGuestRequest();" class="btn btn-small btn-success span12">Guest</button>
+    <button id="guest-btn" onclick="LoginController.sendGuestRequest();" class="btn btn-small btn-success span12">Sign In as Guest</button>
     </div>
     </div>
     <div id="login-view-register-btn" class="row-fluid">
     <div class="span12">
-    <button id="register-show-btn" class="btn btn-small btn-primary span12" onclick="LightboxController.showRegisterForm();">Register</button>
+    <button id="register-show-btn" class="btn btn-small btn-primary span12" onclick="LightboxController.showRegisterForm();">Sign Up</button>
     </div>
     </div>
     </div>

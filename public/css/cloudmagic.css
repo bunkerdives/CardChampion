@@ -1580,16 +1580,16 @@ body.ns-resize-cursor {
 }
 
 #control-bar-settings-btn .dropdown-menu {
-	width:190px;
-	min-width:190px;
+	width:170px;
+	min-width:170px;
 }
 
 #card-size-slider {
 	line-height:20px;
 	display:inline-block;
 	color:#000;
-	padding-left:20px;
-	padding-right:20px;
+	padding-left:10px;
+	padding-right:10px;
 	width:150px;
 }
 
@@ -1752,7 +1752,7 @@ input[type="range"]{
 #authlightbox-container {
 	display:block !important;
 	position:fixed;
-	width:220px;
+	width:300px;
 	box-sizing:border-box;
 	top:100px;
 	max-width: 600px;
@@ -1765,16 +1765,20 @@ input[type="range"]{
 }
 
 #lightbox-inner {
-	padding:10px;
+	padding:20px;
 	text-align:center;
 	height:auto;
-	width: -webkit-calc(100% - 20px);
-	width: -moz-calc(100% - 20px);
-	width: calc(100% - 20px);
+	width: -webkit-calc(100% - 40px);
+	width: -moz-calc(100% - 40px);
+	width: calc(100% - 40px);
 }
 
 #lightbox-txt-container h1 {
 	color:#000;
+	font-size:26px;
+	font-weight:200;
+	line-height:26px;
+	margin-top:0;
 }
 
 #lightbox-shadow {
@@ -1794,14 +1798,10 @@ input[type="range"]{
 }
 
 #lightbox-login-register-container {
-	max-width:250px;
+	max-width:300px;
 	margin-left:auto;
 	margin-right:auto;
 	color:#000;
-}
-
-#lightbox-txt-container {
-	text-align:right;
 }
 
 #lightbox-login-register-container input {
@@ -1810,9 +1810,26 @@ input[type="range"]{
 
 #register-view-register-btn {
 	margin-bottom:10px;
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+	
+}
+
+#register-view-login-btn {
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
 }
 
 #login-view-login-btn {
 	text-align:center;
 	margin-bottom:10px;
+	overflow:hidden;
+}
+
+#login-view-register-btn {
+	overflow:hidden;
 }
