@@ -224,9 +224,22 @@
 								<div id="profile-top-row" class="clearfix" style="background-color:#fff;">
 									<div id="profile-username" class="pull-left">A_User_Name</div>
 									<div id="profile-nav" class="pull-right clearfix row-fluid">
-										<ul class="nav nav-pills pull-right">
+										<ul class="nav nav-pills pull-right" style="display:none;">
 											<li class="active profile-link"><a href="#">Decks</a></li>
 										</ul>
+										<div id="deck-view-nav">
+											<div class="btn-group pull-right">
+											  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+											    <span class="down-arrow">Type</span>
+											  </a>
+											  <ul class="dropdown-menu pull-right" style="min-width:0px;">
+											    <li><a href="#">Type</a></li>
+													<li><a href="#">Color</a></li>
+													<li><a href="#">Rarity</a></li>
+													<li><a href="#">Cost</a></li>
+											  </ul>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div id="profile-bottom-row">
@@ -267,7 +280,7 @@
 									<div id="profile-right-col" class="pull-right">
 										<div id="profile-content-wrapper">
 											<div id="profile-content">
-												<div id="profile-deck-previews">
+												<div id="profile-deck-previews" style="display:none;">
 													
 													<!-- Deck preview -->
 													<div class="deck-preview clearfix">
@@ -304,195 +317,60 @@
 													<!-- End deck preview -->
 													
 													
-													
-													<div class="deck-preview clearfix">
-														<div class="deck-preview-left pull-left clearfix">
-															<div class="deck-preview-img pull-left">
-																<img src="../img/neutral-density.png"/>
+												</div>
+												
+												<div id="deck-view" style="clearfix" style="display:block;">
+													<div id="deck-view-title">
+														Naya Beatdown
+													</div>
+													<hr style="margin-top:7px;margin-bottom:15px;"/>
+													<div class="clearfix">
+														<div class="deck-view-left pull-left">
+															<div class="deck-view-section">
+																<h1>Land (<span>23</span>)</h1>
+																<p>4x <a href="#">Clifftop Retreat</a></p>
+																<p>4x <a href="#">Rootbound Crag</a></p>
+																<p>4x <a href="#">Sacred Foundry</a></p>
+																<p>3x <a href="#">Stomping Ground</a></p>
+																<p>4x <a href="#">Sunpetal Grove</a></p>
+																<p>4x <a href="#">Temple Grove</a></p>
 															</div>
-															<div class="deck-preview-mana pull-right">
-																<div id="deck-preview-white" class="deck-preview-color"/>
-																<div id="deck-preview-blue" class="deck-preview-color"/>
-																<div id="deck-preview-black" class="deck-preview-color"/>
-																<div id="deck-preview-red" class="deck-preview-color"/>
-																<div id="deck-preview-green" class="deck-preview-color"/>
+															<div class="deck-view-section">
+																<h1>Creature (<span>25</span>)</h1>
+																<p>1x <a href="#">Aurelia, the Warleader</a></p>
+																<p>4x <a href="#">Avacyn's Pilgrim</a></p>
+																<p>4x <a href="#">Boros Reckoner</a></p>
+																<p>2x <a href="#">Ghor-Clan Rampager</a></p>
+																<p>4x <a href="#">Hellrider</a></p>
+																<p>4x <a href="#">Silverblade Paladin</a></p>
+																<p>4x <a href="#">Thragtusk</a></p>
+																<p>2x <a href="#">Thundermaw Hellkite</a></p>
 															</div>
 														</div>
-														<div class="deck-preview-right pull-right clearfix">
-															<div class="deck-preview-info pull-left">
-																<div class="deck-preview-title">Boros Aggro</div>
-																<div class="deck-preview-format">GTC Sealed</div>
+														<div class="deck-view-right pull-right">	
+															<div class="deck-view-section">
+																<h1>Sorcery (<span>5</span>)</h1>
+																<p>2x <a href="#">Bonfire of the Damned</a></p>
+																<p>3x <a href="#">Farseek</a></p>
 															</div>
-															<div class="deck-preview-btns pull-right">
-																<div>
-																	<button id="deck-preview-view-btn" class="btn btn-primary"><i class="icon-white icon-eye-open"></i></button>
-																</div>
-																<div>
-																	<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
-																</div>
-																<div>
-																	<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
-																</div>
+															<div class="deck-view-section">
+																<h1>Instant (<span>4</span>)</h1>
+																<p>2x <a href="#">Boros Charm</a></p>
+																<p>2x <a href="#">Selesya Charm</a></p>
+															</div>
+															<div class="deck-view-section">
+																<h1>Planeswalker (<span>3</span>)</h1>
+																<p>2x <a href="#">Domri Rade</a></p>
+																<p>1x <a href="#">Gideon, Champion of Justice</a></p>
 															</div>
 														</div>
 													</div>
-													<div class="deck-preview clearfix">
-														<div class="deck-preview-left pull-left clearfix">
-															<div class="deck-preview-img pull-left">
-																<img src="../img/neutral-density.png"/>
-															</div>
-															<div class="deck-preview-mana pull-right">
-																<div id="deck-preview-white" class="deck-preview-color"/>
-																<div id="deck-preview-blue" class="deck-preview-color"/>
-																<div id="deck-preview-black" class="deck-preview-color"/>
-																<div id="deck-preview-red" class="deck-preview-color"/>
-																<div id="deck-preview-green" class="deck-preview-color"/>
-															</div>
-														</div>
-														<div class="deck-preview-right pull-right clearfix">
-															<div class="deck-preview-info pull-left">
-																<div class="deck-preview-title">Boros Aggro</div>
-																<div class="deck-preview-format">GTC Sealed</div>
-															</div>
-															<div class="deck-preview-btns pull-right">
-																<div>
-																	<button id="deck-preview-view-btn" class="btn btn-primary"><i class="icon-white icon-eye-open"></i></button>
-																</div>
-																<div>
-																	<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
-																</div>
-																<div>
-																	<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
-																</div>
-															</div>
-														</div>
+													<hr style="margin-top:0px;margin-bottom:18px;"/>
+													<div id="deck-view-description" class="deck-view-section" style="text-align:left;padding-left:4%;padding-right:4%;">
+														<h1>Description:</h1> 
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 													</div>
-													<div class="deck-preview clearfix">
-														<div class="deck-preview-left pull-left clearfix">
-															<div class="deck-preview-img pull-left">
-																<img src="../img/neutral-density.png"/>
-															</div>
-															<div class="deck-preview-mana pull-right">
-																<div id="deck-preview-white" class="deck-preview-color"/>
-																<div id="deck-preview-blue" class="deck-preview-color"/>
-																<div id="deck-preview-black" class="deck-preview-color"/>
-																<div id="deck-preview-red" class="deck-preview-color"/>
-																<div id="deck-preview-green" class="deck-preview-color"/>
-															</div>
-														</div>
-														<div class="deck-preview-right pull-right clearfix">
-															<div class="deck-preview-info pull-left">
-																<div class="deck-preview-title">Boros Aggro</div>
-																<div class="deck-preview-format">GTC Sealed</div>
-															</div>
-															<div class="deck-preview-btns pull-right">
-																<div>
-																	<button id="deck-preview-view-btn" class="btn btn-primary"><i class="icon-white icon-eye-open"></i></button>
-																</div>
-																<div>
-																	<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
-																</div>
-																<div>
-																	<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="deck-preview clearfix">
-														<div class="deck-preview-left pull-left clearfix">
-															<div class="deck-preview-img pull-left">
-																<img src="../img/neutral-density.png"/>
-															</div>
-															<div class="deck-preview-mana pull-right">
-																<div id="deck-preview-white" class="deck-preview-color"/>
-																<div id="deck-preview-blue" class="deck-preview-color"/>
-																<div id="deck-preview-black" class="deck-preview-color"/>
-																<div id="deck-preview-red" class="deck-preview-color"/>
-																<div id="deck-preview-green" class="deck-preview-color"/>
-															</div>
-														</div>
-														<div class="deck-preview-right pull-right clearfix">
-															<div class="deck-preview-info pull-left">
-																<div class="deck-preview-title">Boros Aggro</div>
-																<div class="deck-preview-format">GTC Sealed</div>
-															</div>
-															<div class="deck-preview-btns pull-right">
-																<div>
-																	<button id="deck-preview-view-btn" class="btn btn-primary"><i class="icon-white icon-eye-open"></i></button>
-																</div>
-																<div>
-																	<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
-																</div>
-																<div>
-																	<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="deck-preview clearfix">
-														<div class="deck-preview-left pull-left clearfix">
-															<div class="deck-preview-img pull-left">
-																<img src="../img/neutral-density.png"/>
-															</div>
-															<div class="deck-preview-mana pull-right">
-																<div id="deck-preview-white" class="deck-preview-color"/>
-																<div id="deck-preview-blue" class="deck-preview-color"/>
-																<div id="deck-preview-black" class="deck-preview-color"/>
-																<div id="deck-preview-red" class="deck-preview-color"/>
-																<div id="deck-preview-green" class="deck-preview-color"/>
-															</div>
-														</div>
-														<div class="deck-preview-right pull-right clearfix">
-															<div class="deck-preview-info pull-left">
-																<div class="deck-preview-title">Boros Aggro</div>
-																<div class="deck-preview-format">GTC Sealed</div>
-															</div>
-															<div class="deck-preview-btns pull-right">
-																<div>
-																	<button id="deck-preview-view-btn" class="btn btn-primary"><i class="icon-white icon-eye-open"></i></button>
-																</div>
-																<div>
-																	<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
-																</div>
-																<div>
-																	<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="deck-preview clearfix">
-														<div class="deck-preview-left pull-left clearfix">
-															<div class="deck-preview-img pull-left">
-																<img src="../img/neutral-density.png"/>
-															</div>
-															<div class="deck-preview-mana pull-right">
-																<div id="deck-preview-white" class="deck-preview-color"/>
-																<div id="deck-preview-blue" class="deck-preview-color"/>
-																<div id="deck-preview-black" class="deck-preview-color"/>
-																<div id="deck-preview-red" class="deck-preview-color"/>
-																<div id="deck-preview-green" class="deck-preview-color"/>
-															</div>
-														</div>
-														<div class="deck-preview-right pull-right clearfix">
-															<div class="deck-preview-info pull-left">
-																<div class="deck-preview-title">Boros Aggro</div>
-																<div class="deck-preview-format">GTC Sealed</div>
-															</div>
-															<div class="deck-preview-btns pull-right">
-																<div>
-																	<button id="deck-preview-view-btn" class="btn btn-primary"><i class="icon-white icon-eye-open"></i></button>
-																</div>
-																<div>
-																	<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
-																</div>
-																<div>
-																	<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
-																</div>
-															</div>
-														</div>
-													</div>
-													
-													
+													<hr style="margin-top:2px;margin-bottom:18px;"/>
 												</div>
 												<div id="profile-buddy-list" style="display:none;">
 												</div>
@@ -550,7 +428,7 @@
 			<div id="donate">
 				<div id="donate-quote">
 					<span>"Those who don't believe in magic will never find it."</span>
-					<small>-Roald Dahl</small>
+					<small>Roald Dahl</small>
 			  </div><!--End #donate-quote-->
 				<div id="donate-closer">
 					<span class="headline-txt">Those who do,</span>

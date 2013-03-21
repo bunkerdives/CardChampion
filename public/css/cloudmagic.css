@@ -848,6 +848,69 @@ body.ns-resize-cursor {
 	border-bottom-right-radius: 2px;
 }
 
+#foyer #deck-view-nav {
+	height:34px;
+	line-height:34px;
+	vertical-align:baseline;
+	max-height:34px;
+}
+
+#foyer #deck-view-nav .btn-group, #foyer #deck-view-nav .btn {
+	vertical-align:baseline;
+	max-height:34px;
+	margin-top:1px;
+}
+
+#foyer #deck-view-nav .dropdown-menu {
+	top:85%;
+}
+
+#foyer #deck-view-nav .btn-group + .btn-group {
+	margin-left: 0px;
+}
+
+#foyer #deck-view-title {
+	font-size:30px;
+	line-height:32px;
+	font-weight:400;
+	text-align:left;
+	padding-left:4%;
+}
+
+#foyer .deck-view-left {
+	width:44%;
+	padding-left:4%;
+}
+
+#foyer .deck-view-right {
+	width:44%;
+	padding-right:4%;
+}
+
+#foyer .deck-view-section {
+	text-align:right;
+	padding-bottom:20px;
+}
+
+#foyer .deck-view-section a {
+	color:#0088cc !important;
+}
+
+#foyer .deck-view-section h1 {
+	color:#000;
+	line-height:26px;
+	font-size:26px;
+	font-weight:200;
+	text-align:left;
+	margin-top:0;
+}
+
+#foyer .deck-view-section p {
+	line-height:14px;
+	margin-bottom:0;
+	text-align:left;
+}
+
 
 
 /*#foyer .vertical-rule {
@@ -1486,7 +1549,7 @@ body.ns-resize-cursor {
 	width:20px;
 }
 
-#add-land-dropdown .half-width {
+.half-width {
 	width:50%;
 }
 
