@@ -98,7 +98,7 @@ var CardSort = {
     }
     
     , typeSort : function( a, b ) {
-        console.log( "sortCardsByType" );
+        
     }
     
 };

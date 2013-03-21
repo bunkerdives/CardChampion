@@ -244,8 +244,6 @@ var SealedViewModel = function( set ) {
         
         var sortType = this.selectedSortOption.sortType;
         
-        console.log("sortPool sortType = " + sortType );
-        
         if( boardType == "sideboard" ) {
             this.sideboard()[0].sortPoolByType( sortType, "name" );
         }

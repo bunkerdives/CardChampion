@@ -1,17 +1,3 @@
-// Auto append to chat
-//var interval = self.setInterval(appendChat,500);
-var i = 0;
-function appendChat() {
-	var convo = $("#chat-convo-wrapper");
-	var convoInner = $("#chat-convo"); 
-	var atBottom = ( convoInner.outerHeight() - convo.scrollTop() ) <=  convo.height();
-	var msg = "<div class='chat-msg'><span class='chat-username' style='color:red;'>Username 1:</span><span>Test" + i + "</span></div>";
-	convoInner.append(msg);
-	if( atBottom ){
-		convo.stop().animate({ scrollTop: convo[0].scrollHeight }, 300);
-	}
-	++i;
-}
 
 /*function foyerLayout(){
 	console.log('foyerLayout function called.');
@@ -63,14 +49,15 @@ function appendChat() {
 }*/
 
 function profileLayout() {
+    
 	var contentW = $('#main-animate-wrapper').width();
-	//console.log('contentW: ' + contentW);
 	var leftColW = (contentW-20)*0.35;
 	var profileImgH = leftColW * 0.7252;
 	var imgBgW = leftColW * 1.2252;
 	var imgBgH = imgBgW * 1.39;
 	var imgBgTop = imgBgH * -0.1258;
 	var imgBgLeft = imgBgW * -0.091;
+    
 	$('#profile-image').css({
 		'height': profileImgH,
 		'background-size': imgBgW + "px " + imgBgH + "px",

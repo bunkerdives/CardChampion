@@ -12,7 +12,8 @@
 	}
 }*/
 
-function bgStretch(src,oW,oH,iW,iH,l,t){
+function bgStretch( src, oW, oH, iW, iH, l, t ) {
+    
 	var windowW = $(window).width();
 	var windowH = $(window).height();
 	var imgSrc = src;
@@ -28,16 +29,18 @@ function bgStretch(src,oW,oH,iW,iH,l,t){
 	if (tmpH < windowH) {
 		tmpW = (windowH * (imgInnerW / imgInnerH));
 	}
+    
 	var newW = ((imgOuterW / imgInnerW) * tmpW);
 	var newH = ((imgOuterH / imgOuterW) * newW);
 	var newL = (imgLeft * (newW / imgOuterW)) * -1;
 	var newT = (imgTop * (newH / imgOuterH)) * -1;
 	
-	$('body').css({
+	$('body').css( {
 		"background-image": "url('" + imgSrc +"')",
 		"background-size": newW + "px " + newH + "px",
 		"background-position": newL + "px " + newT + "px"
-	});
+	} );
+    
 }
 
 function iMacLayout(){
@@ -46,15 +49,14 @@ function iMacLayout(){
 	var screenshotW = iMacW * 0.92125;//screen W-iMac W ratio 
 	var screenshotH = screenshotW * 0.562432;//screen H-iMac H ratio
 	var screenshotTop = iMacH * -0.946982;//negative margin top
-	$("#imac-screenshot-wrapper").css({
+	$("#imac-screenshot-wrapper").css( {
 		"width": screenshotW,
 		"height": screenshotH,
 		"margin-top": screenshotTop
-	});
+	} );
 }
 
 function splashLayout() {
-	console.log('splashLayout function called.');
 	iMacLayout();
 }
 
@@ -62,14 +64,13 @@ function splashInit() {
 	splashLayout();
 }
 
-$(window).resize(function() {
+$(window).resize( function() {
 	var splashExists = $("#splash").length;
-	if (splashExists==1) {
+	if( splashExists == 1 ) {
 		splashLayout();
 	}
-	
-});
+} );
 
-$(window).ready(function() {
-	$("html").niceScroll({scrollspeed:"10"});
+$(window).ready( function() {
+	$("html").niceScroll( { scrollspeed : "10" } );
 });

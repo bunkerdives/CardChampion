@@ -6,7 +6,8 @@ var mongoose = require('mongoose')
 Auth = {
     
     Profile : new Schema( {
-        email : String
+        user : String
+        , email : String
         , thumb : String
         , joined : String
         , description : String
@@ -37,7 +38,15 @@ Auth = {
             
             var ProfileModel = mongoose.model( 'Profile', Auth.Profile, 'Profiles' )
             if( ! Auth.userExists( username, ProfileModel ) ) {
-                Auth.newUser( username, ProfileModel );
+                Auth.newUser( req.body, ProfileModel );
+            } else {
+                res.render( 'layout.jade', {
+                    templateName: JSON.stringify('Decks')
+                    , options: JSON.stringify( {
+                       'authOrGuest' : authOrGuest
+                       , 'user' : 'null'
+                    } )
+                } );
             }
 
             req.session.authOrGuest = true;
@@ -51,14 +60,51 @@ Auth = {
         
     }
     
-    , newUser : function( user, ProfileModel ) {
+    , newUser : function( data, ProfileModel ) {
+        
+        var user = data.username;
+        var email = data.email;
+        var thumb = '';
+        var joined = new Date();
+        var description = 'Magic fiend';
+        /*
+        var decks = [
+            {
+                'name' : 'Boros Aggro'
+                , 'thumb' : ''
+                , 'colors' : {
+                    'white' : true
+                    , 'blue' : false
+                    , 'black' : false
+                    , 'red' : true
+                    , 'green' : false
+                }
+                , 'format' : 'GTC Sealed'
+                , 'user' : username
+                , 'uuid' : 'vladdy'
+                , 'cards' : [
+                    {
+                        'name' : ''
+                        , 'rarity' : ''
+                        , 'type' : ''
+                        , 'color' : ''
+                        , 'cost' : ''
+                        , 'cmc' : ''
+                        , 'pt' : ''
+                        , 'multiverse' : ''
+                    }
+                ]
+            }
+        ] */
+        
         
         var userInstance = new ProfileModel( {
-            email : user
-            , thumb : ''
-            , joined : '3/10/13'
-            , description : 'Looooove magic!'
-            , decks : []
+            user : user
+            , email : email
+            , thumb : thumb
+            , joined : joined
+            , description : description
+            //, decks : decks
         } );
         
         userInstance.save( function(err) {
