@@ -26,7 +26,7 @@ var SealedViewModel = function( set ) {
 	this.yOffsetOld = 0;
     
     this.set = set;
-    this.imgSrc = ko.observable( 'img/cardback.jpg' );
+    this.imgSrc = ko.observable( '/static/img/cardback.jpg' );
     this.sideboard = ko.observableArray( [] );
     this.mainboard = ko.observableArray( [] );
     this.mainboardSize = ko.observable( 0 );

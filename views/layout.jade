@@ -2,16 +2,16 @@
 html(lang='en')
   head
     <title id="title">LimitedMTG</title>
-    <link href="../css/bootstrap.css" rel="stylesheet"></link>
-    <link href="../css/darkstrap-v0.9.0.css" rel="stylesheet"></link>
-    <link href="../css/cloudmagic.css" rel="stylesheet"></link>
+    <link href="../static/css/bootstrap.css" rel="stylesheet"></link>
+    <link href="../static/css/darkstrap-v0.9.0.css" rel="stylesheet"></link>
+    <link href="../static/css/cloudmagic.css" rel="stylesheet"></link>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Viga|Courgette|Orbitron:400,500' rel='stylesheet' type='text/css'>
-    script(src="../js/jquery-1.8.0.min.js")
+    script(src="../static/js/jquery-1.8.0.min.js")
     script(src="/socket.io/socket.io.js")
-    script(src="../js/knockout.js")
-    script(src="../js/koExternalTemplateEngine_all.min.js")
+    script(src="../static/js/knockout.js")
+    script(src="../static/js/koExternalTemplateEngine_all.min.js")
     script(src="../sets/gtc.js")
     script(src="../sets/2ED.js")
     script(src="../sets/3ED.js")
@@ -86,15 +86,15 @@ html(lang='en')
     script(src="../sets/WTH.js")
     script(src="../sets/WWK.js")
     script(src="../sets/ZEN.js")
-    script(src="../js/bootstrap.min.js")
-    script(src="../js/bootstrap-dropdown.js")
-    script(src="../js/bootstrap-collapse.js")
+    script(src="../static/js/bootstrap.min.js")
+    script(src="../static/js/bootstrap-dropdown.js")
+    script(src="../static/js/bootstrap-collapse.js")
     script(src="../controllers/header_ui.js")
     script(src="../controllers/splash_ui.js")
     script(src="../controllers/foyer_ui.js")
     script(src="../controllers/limited_ui.js")
-    script(src="../js/jquery.mousewheel.js")
-    script(src="../js/jquery.nicescroll.min.js")
+    script(src="../static/js/jquery.mousewheel.js")
+    script(src="../static/js/jquery.nicescroll.min.js")
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     script(src="../controllers/TemplatePluginController.js")
   body
@@ -104,8 +104,9 @@ html(lang='en')
     </div>
     script(src="../models/Land.js")
     script(src="../viewmodels/CardViewModel.js")
-    script(src="../viewmodels/CardSort.js")
+    script(src="../utilities/CardSort.js")
     script(src="../viewmodels/BoosterPack.js")
+    script(src="../viewmodels/DeckPreviewViewModel.js")
     script(src="../viewmodels/ColumnViewModel.js")
     script(src="../viewmodels/CardPoolViewModel.js")
     script(src="../viewmodels/SealedViewModel.js")
@@ -115,6 +116,7 @@ html(lang='en')
     script(src="../controllers/SocketController.js")
     script(src="../controllers/LoginController.js")
     script(src="../controllers/RegisterController.js")
+    script(src="../controllers/ChatController.js")
     script(src="../controllers/SetController.js")
     script(src="../controllers/LightboxController.js")
     script(type="text/javascript")

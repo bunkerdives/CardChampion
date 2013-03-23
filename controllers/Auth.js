@@ -1,21 +1,14 @@
-var mongoose = require('mongoose')
-, Schema = mongoose.Schema
-, ObjectId = Schema.ObjectId
-, Account = require('../models/Account.js')
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+var ObjectId = Schema.ObjectId;
+var Account = require('../models/Account.js');
+//var ProfileSchema = require('../schemas/ProfileSchema.js');
+var ProfileModel = require('../models/ProfileModel.js');
+var DeckContainerModel = require('../models/DeckContainerModel.js')
 
 Auth = {
     
-    Profile : new Schema( {
-        user : String
-        , email : String
-        , thumb : String
-        , joined : String
-        , description : String
-        , decks : []
-        , id : ObjectId
-    } )
-    
-    , guest : function( req, res ) {
+    guest : function( req, res ) {
         req.session.authOrGuest = true;
         res.send('null');
     }
@@ -32,13 +25,17 @@ Auth = {
         
         Account.register( new Account({ username : username }), password, function(err, account) {
             
-            if (err) {
+            if( err ) {
+                var data = {
+                    success : false
+                    , message : 'Error creating account!'
+                }
                 res.send("Error");
             }
             
-            var ProfileModel = mongoose.model( 'Profile', Auth.Profile, 'Profiles' )
-            if( ! Auth.userExists( username, ProfileModel ) ) {
-                Auth.newUser( req.body, ProfileModel );
+            var profileModel = ProfileModel.newProfileModel();
+            if( ! Auth.userExists( username, profileModel ) ) {
+                Auth.newUser( req.body, profileModel );
             } else {
                 res.render( 'layout.jade', {
                     templateName: JSON.stringify('Decks')
@@ -50,65 +47,55 @@ Auth = {
             }
 
             req.session.authOrGuest = true;
-
+            
             if( username == 'Guest' ){
                 username = 'null';
             }
+            
             res.send( username );
             
         } );
         
     }
     
-    , newUser : function( data, ProfileModel ) {
+    , newUser : function( data, profileModel ) {
         
         var user = data.username;
         var email = data.email;
-        var thumb = '';
+        var thumb = 'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=278058&type=card';
+        var fullName = '';
+        var location = 'Pittsburgh, PA';
         var joined = new Date();
-        var description = 'Magic fiend';
-        /*
-        var decks = [
-            {
-                'name' : 'Boros Aggro'
-                , 'thumb' : ''
-                , 'colors' : {
-                    'white' : true
-                    , 'blue' : false
-                    , 'black' : false
-                    , 'red' : true
-                    , 'green' : false
-                }
-                , 'format' : 'GTC Sealed'
-                , 'user' : username
-                , 'uuid' : 'vladdy'
-                , 'cards' : [
-                    {
-                        'name' : ''
-                        , 'rarity' : ''
-                        , 'type' : ''
-                        , 'color' : ''
-                        , 'cost' : ''
-                        , 'cmc' : ''
-                        , 'pt' : ''
-                        , 'multiverse' : ''
-                    }
-                ]
-            }
-        ] */
+        var description = 'Magic maniac!';
         
-        
-        var userInstance = new ProfileModel( {
+        var userInstance = new profileModel( {
             user : user
             , email : email
             , thumb : thumb
             , joined : joined
+            , fullName : fullName
             , description : description
-            //, decks : decks
+            , location : location
         } );
         
+        // create a pretend deck
+        var deckContainer = new DeckContainerModel( {
+            title : 'Orzhov Removal'
+            , thumb : 'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366452&type=card'
+            , user : user
+            , uuid : '1234567'
+            , format : 'GTC Draft'
+            , white : true
+            , blue : false
+            , black : true
+            , red : false
+            , green : false
+        } );
+        
+        userInstance.decks[0] = deckContainer;
+        
         userInstance.save( function(err) {
-            if(err) {
+            if( err ) {
                 console.log("Failed saving user.")
             } else {
                 console.log("Saved user " + user + " successfully!");
@@ -117,9 +104,9 @@ Auth = {
         
     }
     
-    , userExists : function( user, ProfileModel ) {
+    , userExists : function( user, profileModel ) {
         
-        ProfileModel.find( { email : user }, function(err, data) {
+        profileModel.find( { email : user }, function(err, data) {
             
             if( err ) {
                 return false;
@@ -133,6 +120,22 @@ Auth = {
             
         } );
         
+    }
+    
+    , authOrGuest : function( req ) {
+        if( req.session.authOrGuest == undefined ) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    
+    , getUsernameOrNull : function( req ) {
+        if( req.user != undefined ) {
+            return req.user.username;
+        } else {
+            return 'null';
+        }
     }
 
 };

@@ -1,15 +1,57 @@
-var FoyerViewModel = function() {
+var FoyerViewModel = function( data ) {
 	this.hidePreviewTimeout = 0; 
 		
     this.set = 'GTC';
     this.selectedSet = "GTC";
     this.socket = '';
     
-    this.decksVisible = ko.observable( true );
+    this.decksVisible = ko.observable( false );
     this.profileVisible = ko.observable( false );
     this.aboutVisible = ko.observable( false );
     this.newEventVisible = ko.observable( false );
     this.joinDraftVisible = ko.observable( false );
+    
+    this.subview;
+    
+    this.profileData;
+    this.profileUsername = ko.observable();
+    this.profileThumbSrc = ko.observable();
+    this.profileFullName = ko.observable();
+    this.profileLocation = ko.observable();
+    this.profileDateJoined = ko.observable();
+    this.profileDescription = ko.observable();
+    
+    this.profileDecks = ko.observableArray( [] );
+    
+    
+    this.populateSubViewData = function() {
+      
+        switch( this.subview ) {
+            case 'Profile' :
+                this.populateProfileViewData();
+        }
+        
+    };
+    
+    this.populateProfileViewData = function() {
+        
+        var profile = this.profileData;
+        
+        this.profileUsername( profile.user );
+        this.profileFullName( profile.fullName );
+        this.profileThumbSrc( profile.thumb );
+        this.profileDescription( profile.description );
+        this.profileLocation( profile.location );
+        this.profileDateJoined( profile.joined );
+        
+        $.each( profile.decks, function(index, deck) {
+            var deckPreviewViewModel = new DeckPreviewViewModel( deck );
+            ViewModel.profileDecks.push( deckPreviewViewModel );
+            console.log("populateProfileViewData, deck = ")
+            console.log(ViewModel.profileDecks()[0].title() )
+        } );
+        
+    };
     
     
     this.startSealed = function() {
@@ -17,144 +59,27 @@ var FoyerViewModel = function() {
         window.location.href = redirect;
     };
     
-    this.sendChatMsg = function() {
+    
+    this.showSubView = function() {
         
-        // get the user's message
-        var msg = $("#chat-msg").val();
-        
-        // clear the chat msg box
-        $("#chat-msg").val('');
-        
-        if( msg.length > 0 ) {
-            this.socketController.socket.emit( 'newmsg', JSON.stringify({ msg : msg }));
+        switch( this.subview ) {
+            case 'Profile' :
+                this.profileVisible(true);
+                break;
+            case 'About' :
+                this.aboutVisible(true);
+                break;
+            case 'Draft' :
+                this.joinDraftVisible(true);
+                break;
+            case 'NewEvent' :
+                this.newEventVisible(true);
+                break;
+            case 'Decks' :
+                this.decksVisible(true);
+                break;
         }
         
-    };
-    
-		
-		this.backgroundId = 0;
-		this.backgrounds = [
-			{
-				imgSrc : 'http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1920x1080_Wallpaper.jpg'
-				, outerW : 1920
-				, outerH : 1080
-				, innerW : 1920
-				, innerH : 973
-				, l : 0
-				, t : 39
-				, banners : [ 
-					'http://media.wizards.com/images/magic/tcg/products/dka/wp_bonetoash_1024x768.jpg'
-					, 'http://media.wizards.com/images/magic/daily/wallpapers/Nice_Holiday_1280x960_Wallpaper.jpg'
-					, 'http://media.wizards.com/images/magic/daily/wallpapers/AVR_1_1280x960_Wallpaper_m7lr3f99lv.jpg'
-				]
-			}
-		];
-		
-		this.bannerId = 0;
-		this.banners = {
-			
-			'http://media.wizards.com/images/magic/tcg/products/dka/wp_bonetoash_1024x768.jpg' : {
-				outerW : 1024
-				, outerH : 768
-				, innerW : 830
-				, innerH : 459
-				, l : 194
-				, t : 47
-				, reverse : true
-			}
-			
-			, 'http://media.wizards.com/images/magic/daily/wallpapers/Nice_Holiday_1280x960_Wallpaper.jpg' : {
-				outerW : 1280
-				, outerH : 960
-				, innerW : 1200
-				, innerH : 498
-				, l : 80
-				, t : 195
-				, reverse : false
-			}
-			
-			, 'http://media.wizards.com/images/magic/daily/wallpapers/AVR_1_1280x960_Wallpaper_m7lr3f99lv.jpg' : {
-				outerW : 1280
-				, outerH : 960
-				, innerW : 1126
-				, innerH : 450
-				, l : 154
-				, t : 317
-				, reverse : true
-			}
-			
-		};
-
-    this.setBackgroundImage = function() {
-        
-        console.log("setBackgroundImage")
-        
-        var ran = Math.floor( Math.random() * this.backgrounds.length );   
-				var background = this.backgrounds[ran];
-				this.backgroundId = ran;
-				bgStretch( background.imgSrc, background.outerW, background.outerH, background.innerW, background.innerH, background.l, background.t );
-    
-		
-		};
-    
-    this.setAnimatedBanner = function() {
-			
-				var currentBg = ViewModel.backgrounds[ ViewModel.backgroundId ];
-				var currentBanner = currentBg.banners[ ViewModel.bannerId ];
-				var banner = ViewModel.banners[ currentBanner ];
-				
-				var containerW = ($(window).width() * 0.95)-2;
-				if ( containerW > 1098 ) {
-					containerW = 1098;
-				}
-				var containerH = 150; //Static
-        
-        var bannerSrc = 'url(' + currentBanner + ')';
-				var bannerOuterW = banner.outerW;
-				var bannerOuterH = banner.outerH;
-				var bannerInnerW = banner.innerW;
-				var bannerInnerH = banner.innerH;
-				var bannerLeft = banner.l;
-				var bannerTop = banner.t;
-				var reverse = banner.reverse;
-				
-				var tmpH = (containerW * (bannerInnerH / bannerInnerW));
-				var tmpW = containerW;
-				if (tmpH < containerH) {
-					tmpW = (containerH * (bannerInnerW / bannerInnerH));
-				}
-				var newW = ((bannerOuterW / bannerInnerW) * tmpW);
-				var newH = ((bannerOuterH / bannerOuterW) * newW);
-				var newL = (bannerLeft * (newW / bannerOuterW)) * -1;
-				var newT = (bannerTop * (newH / bannerOuterH)) * -1;
-				
-				var newInnerH = ((bannerInnerH / bannerOuterH) * newH);
-				var bannerEndT = ( newT - (newInnerH-150) );
-				
-				if (reverse == true) {
-					tmpReverse = newT;
-					newT = bannerEndT
-					bannerEndT = tmpReverse;
-				}
-				
-        ViewModel.bannerId += 1;
-        if( ViewModel.bannerId >= currentBg.banners.length ){
-            ViewModel.bannerId = 0;
-        }
-				
-        $('#foyer-banner').css( {
-            'background-image' : bannerSrc
-						, 'background-size' : newW + 'px ' + newH + 'px'
-            , 'background-position' : newL + 'px ' + newT + 'px' //Starting position for banner image
-        } );
-        
-        $('#foyer-banner').animate(
-            { 'background-position-y' : bannerEndT } //End position for banner image
-            , 12400
-            , function() {
-                setTimeout( ViewModel.setAnimatedBanner, 8600 );
-            }
-        );
     };
     
     this.setQueues = ko.observableArray( [
@@ -234,8 +159,131 @@ var FoyerViewModel = function() {
         , new setQueue( "Limited Edition Beta", "LEB", "0/8", this )
         , new setQueue( "Limited Edition Alpha", "LEA", "0/8", this )
     ] );
+    
+	this.backgroundId = 0;
+	this.backgrounds = [
+		{
+			imgSrc : 'http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1920x1080_Wallpaper.jpg'
+			, outerW : 1920
+			, outerH : 1080
+			, innerW : 1920
+			, innerH : 973
+			, l : 0
+			, t : 39
+			, banners : [ 
+				'http://media.wizards.com/images/magic/tcg/products/dka/wp_bonetoash_1024x768.jpg'
+				, 'http://media.wizards.com/images/magic/daily/wallpapers/Nice_Holiday_1280x960_Wallpaper.jpg'
+				, 'http://media.wizards.com/images/magic/daily/wallpapers/AVR_1_1280x960_Wallpaper_m7lr3f99lv.jpg'
+			]
+		}
+	];
+	
+	this.bannerId = 0;
+	this.banners = {
+		
+		'http://media.wizards.com/images/magic/tcg/products/dka/wp_bonetoash_1024x768.jpg' : {
+			outerW : 1024
+			, outerH : 768
+			, innerW : 830
+			, innerH : 459
+			, l : 194
+			, t : 47
+			, reverse : true
+		}
+		
+		, 'http://media.wizards.com/images/magic/daily/wallpapers/Nice_Holiday_1280x960_Wallpaper.jpg' : {
+			outerW : 1280
+			, outerH : 960
+			, innerW : 1200
+			, innerH : 498
+			, l : 80
+			, t : 195
+			, reverse : false
+		}
+		
+		, 'http://media.wizards.com/images/magic/daily/wallpapers/AVR_1_1280x960_Wallpaper_m7lr3f99lv.jpg' : {
+			outerW : 1280
+			, outerH : 960
+			, innerW : 1126
+			, innerH : 450
+			, l : 154
+			, t : 317
+			, reverse : true
+		}
+		
+	};
+
+    this.setBackgroundImage = function() {
+    
+        var ran = Math.floor( Math.random() * this.backgrounds.length );   
+    	var background = this.backgrounds[ran];
+    	this.backgroundId = ran;
+    	bgStretch( background.imgSrc, background.outerW, background.outerH, background.innerW, background.innerH, background.l, background.t );
+
+    };
+
+    this.setAnimatedBanner = function() {
+		
+    			var currentBg = ViewModel.backgrounds[ ViewModel.backgroundId ];
+    			var currentBanner = currentBg.banners[ ViewModel.bannerId ];
+    			var banner = ViewModel.banners[ currentBanner ];
+			
+    			var containerW = ($(window).width() * 0.95)-2;
+    			if ( containerW > 1098 ) {
+    				containerW = 1098;
+    			}
+    			var containerH = 150; //Static
+    
+        var bannerSrc = 'url(' + currentBanner + ')';
+    			var bannerOuterW = banner.outerW;
+    			var bannerOuterH = banner.outerH;
+    			var bannerInnerW = banner.innerW;
+    			var bannerInnerH = banner.innerH;
+    			var bannerLeft = banner.l;
+    			var bannerTop = banner.t;
+    			var reverse = banner.reverse;
+			
+    			var tmpH = (containerW * (bannerInnerH / bannerInnerW));
+    			var tmpW = containerW;
+    			if (tmpH < containerH) {
+    				tmpW = (containerH * (bannerInnerW / bannerInnerH));
+    			}
+    			var newW = ((bannerOuterW / bannerInnerW) * tmpW);
+    			var newH = ((bannerOuterH / bannerOuterW) * newW);
+    			var newL = (bannerLeft * (newW / bannerOuterW)) * -1;
+    			var newT = (bannerTop * (newH / bannerOuterH)) * -1;
+			
+    			var newInnerH = ((bannerInnerH / bannerOuterH) * newH);
+    			var bannerEndT = ( newT - (newInnerH-150) );
+			
+    			if (reverse == true) {
+    				tmpReverse = newT;
+    				newT = bannerEndT
+    				bannerEndT = tmpReverse;
+    			}
+			
+        ViewModel.bannerId += 1;
+        if( ViewModel.bannerId >= currentBg.banners.length ){
+            ViewModel.bannerId = 0;
+        }
+			
+        $('#foyer-banner').css( {
+            'background-image' : bannerSrc
+    					, 'background-size' : newW + 'px ' + newH + 'px'
+            , 'background-position' : newL + 'px ' + newT + 'px' //Starting position for banner image
+        } );
+    
+        $('#foyer-banner').animate(
+            { 'background-position-y' : bannerEndT } //End position for banner image
+            , 12400
+            , function() {
+                setTimeout( ViewModel.setAnimatedBanner, 8600 );
+            }
+        );
+    };
 		
 };
+
 
 var setQueue = function( name, abbr, size, foyer ) {
     
@@ -261,19 +309,16 @@ ko.utils.extend( FoyerViewModel.prototype, {
     
     init: function() {
         
+        ViewModel.showSubView();
+        ViewModel.populateSubViewData();
+        
 	    foyerInit();
 		headerLayout();
         
         ViewModel.setBackgroundImage();
         ViewModel.setAnimatedBanner();
-     
-        jQuery(document).ready( function ($) {
-            $('input').live("keypress", function(e) {
-                if (e.keyCode == 13) {
-                    ViewModel.sendChatMsg(); 
-                }
-            } );
-        } );
+        
+        ChatController.bindEnterKeyForChat();
         
     }
     

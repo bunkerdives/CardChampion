@@ -6,6 +6,7 @@ var LoginController = {
             '/login'
             , { username : $("#login-nickname").val(), password : $("#login-password").val() }
             , function( data ) {
+                console.log("LoginController data = " + data );
                 if( data != 'Error' ) {
                     LightboxController.closeAuthLightbox();
                     $("#header-link-5").css( 'display', 'block' );

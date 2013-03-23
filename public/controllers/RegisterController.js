@@ -50,6 +50,7 @@ var RegisterController = {
             '/register'
             , { username : username, password : pass1, email : email1 }
             , function( data ) {
+                console.log("RegisterController data = " + data)
                 if( data != 'Error' ) {
                     LightboxController.closeAuthLightbox();
                     $("#header-link-5").attr( "href", "/" + data );

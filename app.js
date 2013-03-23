@@ -60,12 +60,13 @@ passport.serializeUser( Account.serializeUser() );
 passport.deserializeUser( Account.deserializeUser() );
 
 // Connect mongoose
-mongoose.connect('mongodb://localhost/LimitedMTG');
+var database = mongoose.connect('mongodb://localhost/LimitedMTG');
 
 server.listen(3000);
 
 module.exports.app = app;
 module.exports.server = server;
+module.exports.database = database;
 module.exports.passport = passport;
 module.exports.passportSocketIo = passportSocketIo;
 module.exports.sessionStore = sessionStore;

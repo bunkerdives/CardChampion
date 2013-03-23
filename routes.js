@@ -1,31 +1,25 @@
 // get the main controller
 var Auth = require( './controllers/Auth.js' );
+var mongoose = require('mongoose');
+
+var ProfileSchema = require('./schemas/ProfileSchema.js');
 
 // get the express object
 app = module.parent.exports.app;
+database = module.parent.exports.database;
 passport = require('passport');
-
 
 // '/' - show the Splash view to the user
 app.get( '/', function(req, res) {
     
-    var authOrGuest = true;
-    if( req.session.authOrGuest == undefined ) {
-        authOrGuest = false;
-    }
-    
-    var user;
-    if( req.user != undefined ){
-        user = req.user.username;
-    } else {
-        user = 'null'
-    }
+    var auth = Auth.authOrGuest( req );
+    var user = Auth.getUsernameOrNull( req );
     
     res.render( 'layout.jade', {
         templateName: JSON.stringify('Splash')
         , options: JSON.stringify( {
-           'authOrGuest' : authOrGuest
-           , 'user' : user
+            'authOrGuest' : auth
+            , 'user' : user
         } )
         
     } );
@@ -35,23 +29,15 @@ app.get( '/', function(req, res) {
 // '/decks' - show the Foyer view to the user with decks visible
 app.get( '/decks', function(req, res) {
     
-    var authOrGuest = true;
-    if( req.session.authOrGuest == undefined ) {
-        authOrGuest = false;
-    }
-    
-    var user;
-    if( req.user != undefined ){
-        user = req.user.username;
-    } else {
-        user = 'null'
-    }
+    var auth = Auth.authOrGuest( req );
+    var user = Auth.getUsernameOrNull( req );
     
     res.render( 'layout.jade', {
-        templateName: JSON.stringify('Decks')
+        templateName: JSON.stringify('Foyer')
         , options: JSON.stringify( {
-           'authOrGuest' : authOrGuest
-           , 'user' : user
+            'subview' : 'Decks'
+            , 'authOrGuest' : auth
+            , 'user' : user
         } )
     } );
 } );
@@ -59,23 +45,15 @@ app.get( '/decks', function(req, res) {
 // '/newevent' - show the Foyer view to the user with new event visible
 app.get( '/newevent', function(req, res) {
     
-    var authOrGuest = true;
-    if( req.session.authOrGuest == undefined ) {
-        authOrGuest = false;
-    }
-    
-    var user;
-    if( req.user != undefined ){
-        user = req.user.username;
-    } else {
-        user = 'null'
-    }
+    var auth = Auth.authOrGuest( req );
+    var user = Auth.getUsernameOrNull( req );
     
     res.render( 'layout.jade', {
-        templateName: JSON.stringify('NewEvent')
+        templateName: JSON.stringify('Foyer')
         , options: JSON.stringify( {
-           'authOrGuest' : authOrGuest
-           , 'user' : user
+            'subview' : 'NewEvent'
+            , 'authOrGuest' : auth
+            , 'user' : user
         } )
         
     } );
@@ -84,23 +62,15 @@ app.get( '/newevent', function(req, res) {
 // '/draft' - show the Foyer view to the user with new draft visible
 app.get( '/draft', function(req, res) {
     
-    var authOrGuest = true;
-    if( req.session.authOrGuest == undefined ) {
-        authOrGuest = false;
-    }
-    
-    var user;
-    if( req.user != undefined ){
-        user = req.user.username;
-    } else {
-        user = 'null'
-    }
+    var auth = Auth.authOrGuest( req );
+    var user = Auth.getUsernameOrNull( req );
     
     res.render( 'layout.jade', {
-        templateName: JSON.stringify('Draft')
+        templateName: JSON.stringify('Foyer')
         , options: JSON.stringify( {
-           'authOrGuest' : authOrGuest
-           , 'user' : user
+            'subview' : 'Draft'
+            , 'authOrGuest' : auth
+            , 'user' : user
         } )
         
     } );
@@ -109,78 +79,70 @@ app.get( '/draft', function(req, res) {
 // '/about' - show the Foyer view to the user with new draft visible
 app.get( '/about', function(req, res) {
     
-    var authOrGuest = true;
-    if( req.session.authOrGuest == undefined ) {
-        authOrGuest = false;
-    }
-    
-    var user;
-    if( req.user != undefined ){
-        user = req.user.username;
-    } else {
-        user = 'null'
-    }
+    var auth = Auth.authOrGuest( req );
+    var user = Auth.getUsernameOrNull( req );
     
     res.render( 'layout.jade', {
-        templateName: JSON.stringify('About')
+        templateName: JSON.stringify('Foyer')
         , options: JSON.stringify( {
-           'authOrGuest' : authOrGuest
-           , 'user' : user
+            'subview' : 'About'
+            , 'authOrGuest' : auth
+            , 'user' : user
         } )
     } );
+    
 } );
 
 
 // '/sealed/:set' - show the Sealed View with the specified set to the user
 app.get( '/sealed', function(req, res) {
     
-    var authOrGuest = true;
-    if( req.session.authOrGuest == undefined ) {
-        authOrGuest = false;
-    }
-    
-    var user;
-    if( req.user != undefined ){
-        user = req.user.username;
-    } else {
-        user = 'null'
-    }
+    var auth = Auth.authOrGuest( req );
+    var user = Auth.getUsernameOrNull( req );
     
     res.render( 'layout.jade', {
         templateName : JSON.stringify('Limited')
         , options : JSON.stringify( {
-            'authOrGuest' : authOrGuest
+            'authOrGuest' : auth
             , 'format' : 'sealed'
             , 'set' : req.query['set']
             , 'user' : user
         } )
     } );
+    
 } );
 
 
 app.get( '/:username', function(req, res){
     
-    var authOrGuest = true;
-    if( req.session.authOrGuest == undefined ) {
-        authOrGuest = false;
+    var username = req.params.username;
+    switch( username ) {
+        case 'null':
+            return;
     }
     
-    var user;
-    if( req.user != undefined ){
-        user = req.user.username;
-    } else {
-        user = 'null'
-    }
+    var auth = Auth.authOrGuest( req );
+    var user = Auth.getUsernameOrNull( req );
     
-    // route the client to the profile page of the given user
-    res.render( 'layout.jade', {
-        templateName : JSON.stringify('Profile')
-        , options : JSON.stringify( {
-            'authOrGuest' : authOrGuest
-            , 'username' : req.params.username
-            , 'user' : user
-        } )
+    mongoose.model( 'Profile', ProfileSchema, 'Profiles' );
+    
+    var ProfileModel = database.model('Profile');
+    ProfileModel.findOne( { user : username }, function(err, doc) {
+        
+        // route the client to the profile page of the given user
+        res.render( 'layout.jade', {
+            templateName : JSON.stringify('Foyer')
+            , options : JSON.stringify( {
+                'subview' : 'Profile'
+                , 'authOrGuest' : auth
+                , 'username' : user
+                , 'user' : username
+                , 'profile' : doc
+            } )
+        } );
+        
     } );
+    
 } );
 
 

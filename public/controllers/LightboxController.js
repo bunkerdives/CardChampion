@@ -8,6 +8,7 @@ var LightboxController = {
 	  }
 		
 		, showRegisterForm : function() {
+            
 			$('#login-username-container').css('display', 'none');
 			$('#login-password-container').css('display', 'none');
 			$('#register-username-container').css('display', 'block');
@@ -39,10 +40,7 @@ var LightboxController = {
 				}).animate({
 					opacity: '1'
 				}, 450);
-			});	
-				
-			
-			
+			});
 			
 		}
 
