@@ -572,7 +572,7 @@ input[readonly] {
 	line-height:34px;
 	white-space:pre-wrap;
 	font-weight:400;
-	font-family: 'Courgette', cursive;
+	font-family: 'Viga', sans-serif;
 	color:#373737;
 }
 
@@ -615,6 +615,18 @@ input[readonly] {
 	line-height:14px;
 	font-family: 'Open Sans', sans-serif;
 	padding-top:10px;
+}
+
+#foyer #profile-info > .clearfix > .pull-left {
+	font-family: 'Viga', sans-serif;
+	color:#0088cc;
+	width:44%;
+	text-align:right;
+}
+
+#foyer #profile-info > .clearfix > .pull-right {
+	width:54%;
+	text-align:left;
 }
 
 #foyer #profile-image {
@@ -874,6 +886,7 @@ input[readonly] {
 
 #foyer #deck-view-nav .dropdown-menu {
 	top:85%;
+	min-width:0px;
 }
 
 #foyer #deck-view-nav .btn-group + .btn-group {
@@ -897,12 +910,18 @@ input[readonly] {
 	background-color:#000;
 	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366369&type=card');
 	border:1px solid #444;
+	width:50px;
+	height:36px;
 }
 
 #foyer #deck-view-title-right {
 	width: -webkit-calc(100% - 57px);
 	width: -moz-calc(100% - 57px);
 	width: calc(100% - 57px);
+}
+
+#deck-view-mana {
+	margin-top:2px;
 }
 
 #foyer .deck-view-left {
@@ -939,6 +958,24 @@ input[readonly] {
 	line-height:14px;
 	margin-bottom:0;
 	text-align:left;
+}
+
+#foyer #deck-view-description {
+	text-align:left;
+	padding-left:4%;
+	padding-right:4%;
+}
+
+#foyer #share-deck-wrapper {
+	margin-bottom:30px;
+}
+
+#foyer #share-deck-wrapper > .deck-view-section {
+	padding-bottom:0px;
+}
+
+#foyer #share-deck-wrapper input {
+	margin-left:6%;margin-right:6%;width:86%;
 }
 
 
