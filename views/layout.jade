@@ -7,7 +7,7 @@ html(lang='en')
     <link href="../css/cloudmagic.css" rel="stylesheet"></link>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Viga|Courgette|Orbitron:400,500' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Viga|Courgette|Orbitron:200,300,400,500' rel='stylesheet' type='text/css'>
     script(src="../js/jquery-1.8.0.min.js")
     script(src="/socket.io/socket.io.js")
     script(src="../js/knockout.js")
@@ -89,6 +89,7 @@ html(lang='en')
     script(src="../js/bootstrap.min.js")
     script(src="../js/bootstrap-dropdown.js")
     script(src="../js/bootstrap-collapse.js")
+    script(src="../js/bootstrap-typeahead.js")
     script(src="../controllers/header_ui.js")
     script(src="../controllers/splash_ui.js")
     script(src="../controllers/foyer_ui.js")
@@ -122,7 +123,7 @@ html(lang='en')
     <div id="authlightbox" style="display:none;">
     <div id="authlightbox-container">
     <div id="lightbox-inner">
-    <div id="lightbox-login-register-container">
+    <div id="lightbox-login-register-container" style="display:block;">
     <div id="login-username-container" class="row-fluid">
     <div class="span12">
     <input type="text" class="span12" id="login-nickname" placeholder="Username"/>
@@ -182,6 +183,29 @@ html(lang='en')
     <div id="login-view-register-btn" class="row-fluid">
     <div class="span12">
     <button id="register-show-btn" class="btn btn-small btn-primary span12" onclick="LightboxController.showRegisterForm();">Sign Up</button>
+    </div>
+    </div>
+    </div>
+    <div id="profile-settings-form" style="display:none;">
+    <div class="row-fluid"><div class="span12"><h6 style="margin-top:0;">Profile Settings</h6></div></div>
+    <div class="row-fluid">
+    <div class="span12">
+    <input type="text" class="span12" id="" placeholder="Full Name"/>
+    </div>
+    </div>	
+    <div class="row-fluid">
+    <div class="span12">
+    <input type="text" class="span12" id="" placeholder="Location"/>
+    </div>
+    </div>	
+    <div class="row-fluid">
+    <div class="span12">
+    <input type="text" class="span12" id="" placeholder="Description"/>
+    </div>
+    </div>	
+    <div class="row-fluid">
+    <div class="span12">
+    <button class="btn btn-success btn-small span12">Save Changes</button>
     </div>
     </div>
     </div>

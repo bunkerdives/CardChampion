@@ -227,7 +227,7 @@
 										<ul class="nav nav-pills pull-right" style="display:none;">
 											<li class="active profile-link"><a href="#">Decks</a></li>
 										</ul>
-										<div id="deck-view-nav">
+										<div id="deck-view-nav" style="display:none;">
 											<div class="btn-group pull-right">
 											  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
 											    <span class="down-arrow">Type</span>
@@ -321,7 +321,14 @@
 												
 												<div id="deck-view" style="clearfix" style="display:block;">
 													<div id="deck-view-title">
-														Naya Beatdown
+														<span>Naya Beatdown</span><span>&nbsp;(&nbsp;</span><span>60</span><span>&nbsp;)&nbsp;</span>
+													</div>
+													<div id="view-deck-mana" class="clearfix" style="margin-left:4%;margin-top:2px;">
+														<span id="deck-preview-white" class="deck-preview-color"></span>
+														<span id="deck-preview-blue" class="deck-preview-color"></span>
+														<span id="deck-preview-black" class="deck-preview-color"></span>
+														<span id="deck-preview-red" class="deck-preview-color"></span>
+														<span id="deck-preview-green" class="deck-preview-color"></span>
 													</div>
 													<hr style="margin-top:7px;margin-bottom:15px;"/>
 													<div class="clearfix">
@@ -372,6 +379,10 @@
 														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 													</div>
 													<hr style="margin-top:2px;margin-bottom:18px;"/>
+													<div id="share-deck-wrapper" style="margin-bottom:30px;">
+														<div class="deck-view-section" style="padding-bottom:0px;"><h1 style="text-align:center;">Share this deck</h1></div>
+											  		<input type="text" style="margin-left:6%;margin-right:6%;width:86%;" readonly/>
+													</div>
 												</div>
 												<div id="profile-buddy-list" style="display:none;">
 												</div>
@@ -390,20 +401,29 @@
 				</div><!--End #main-animate-wrapper-->
       </div><!--End #left-pane-->
       <div id="portal-right-pane" class="pull-left clearfix">
-        <div id="chat" class="pull-right">
+        <div id="chat" class="pull-right" style="display:block;">
           <div id="chat-convo-wrapper">
             <div id="chat-convo">
               <div class="chat-msg">
-                <div style="margin-top:5px;">Welcome to LimitedMTG.com!</div>
+                <div style="margin-top:10px;">Welcome to LimitedMTG.com!</div>
               </div>
             </div><!--End #chat-convo-->
           </div><!--End #chat-convo-wrapper-->
         </div><!--End #chat-->
-	  		<div id="userlist" class="pull-right"/>
+	  		<div id="userlist" class="pull-right" style="display:none;">
+					<div style="padding:10px 0px;width:70%;margin-left:auto;margin-right:auto;">
+						<div id="chat-user-total" class="pull-left" style="display:none;">
+							<span>Users&nbsp;(&nbsp;</span><span>3</span><span>&nbsp;)</span>
+						</div>
+						<div class="chat-username row-fluid"><div class="span12"><span class="chat-user">Username</span><span class="chat-status">GTC Sealed</span></div></div>
+						<div class="chat-username row-fluid"><div class="span12"><span class="chat-user">Username324</span><span class="chat-status">GTC Sealed</span></div></div>
+						<div class="chat-username row-fluid"><div class="span12"><span class="chat-user">Usee</span><span class="chat-status">GTC Sealed</span></div></div>
+					</div>
+				</div>
         <div id="chat-input" class="clearfix">
         	<input id="chat-msg" class="pull-left" type="text"/>
           <button id="chat-send-btn" class="btn btn-small pull-left appended" data-bind="event: { click: sendChatMsg }">Send</button>
-					<button class="btn btn-small pull-right" style="margin-left:5px;"><i class="icon-user"></i></button>
+					<button id="userlist-toggle-btn" class="btn btn-small pull-right" style="margin-left:5px;" onclick="showChatUserlist();"><i class="icon-user"></i></button>
         </div><!--End #chat-input-->
 		  </div><!--End #right-pane-->
     </div><!--End #portal-container-->

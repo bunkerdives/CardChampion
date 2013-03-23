@@ -68,6 +68,10 @@ body.ns-resize-cursor {
           border-radius: 0 4px 4px 0;
 }
 
+input[readonly] {
+	cursor:auto;
+}
+
 /* General classes and styles end */
 
 
@@ -735,7 +739,7 @@ body.ns-resize-cursor {
 }
 
 #foyer #recent-decks-mana {
-	height:37;
+	height:37px;
 	padding-top:1px;
 }
 
@@ -875,9 +879,10 @@ body.ns-resize-cursor {
 #foyer #deck-view-title {
 	font-size:30px;
 	line-height:32px;
-	font-weight:400;
+	font-weight:600;
 	text-align:left;
 	padding-left:4%;
+	
 }
 
 #foyer .deck-view-left {
@@ -902,10 +907,12 @@ body.ns-resize-cursor {
 #foyer .deck-view-section h1 {
 	color:#000;
 	line-height:26px;
-	font-size:26px;
+	font-size:22px;
 	font-weight:200;
 	text-align:left;
 	margin-top:0;
+	font-family: 'Viga', sans-serif;
+	color:#444;
 }
 
 #foyer .deck-view-section p {
@@ -950,15 +957,15 @@ body.ns-resize-cursor {
 	font-weight:600;
 	padding-right:5px;
 	line-height:14px;
-	padding-left:5px;
+	color:#0088cc !important;
 }
 
 #foyer .chat-msg {
-	padding-left:5px;
-	padding-right:5px;
+	padding-left:10px;
+	padding-right:10px;
 	padding-top:5px;
 	font-size:14px;
-	font-weight:400;
+	font-weight:200;
 	line-height:14px;
 }
 
@@ -973,6 +980,7 @@ body.ns-resize-cursor {
 #foyer #chat #chat-convo {
 	width:100%;
 	padding-bottom:20px;
+	font-family: 'Viga', sans-serif;
 }
 
 #foyer #chat-input {
@@ -997,9 +1005,9 @@ body.ns-resize-cursor {
 }
 
 #foyer #chat-input input {
-	width: -webkit-calc(100% - 91px);
-	width: -moz-calc(100% - 91px);
-	width: calc(100% - 91px);
+	width: -webkit-calc(100% - 96px);
+	width: -moz-calc(100% - 96px);
+	width: calc(100% - 96px);
 	height:24px;
 	margin:0px;
 	padding:0px;
@@ -1013,11 +1021,13 @@ body.ns-resize-cursor {
 	margin-top:5px;
 	background-color:#eee;
 	color:#000;
+	padding-left:5px;
 }
 
 #foyer #chat-input button {
 	line-height:18px;
 	margin-top:5px;
+	font-family: 'Viga', sans-serif;
 }
 
 #foyer .appended {
@@ -1044,16 +1054,29 @@ body.ns-resize-cursor {
 
 #foyer #userlist {
 	margin-left:0px;
-	height:419px;
+	height:425px;
 	overflow:auto;
+	width:100%;
+	text-align:left;
+}
+
+#foyer #chat-user-total {
+	line-height:35px;
+	font-size:22px;
+	font-family: 'Viga', sans-serif;
+	font-weight:400;
+	color:#444;
+	width: 100%;
+	text-align:center;
+	padding-bottom:10px;
 }
 
 #foyer .chat-user {
 	padding-right:5px;
-	padding-left:5px;
+	color:#0088cc;
 }
 
-#foyer .chat-user:hover {
+#foyer .chat-user:hover, #foyer .chat-username:hover {
 	cursor:pointer;
 }
 
@@ -1061,6 +1084,7 @@ body.ns-resize-cursor {
 	font-size:10px;
 	font-weight:200px;
 	font-style:italic;
+	color:#000;
 }
 
 #foyer #foyer-subcontent {

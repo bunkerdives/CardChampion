@@ -82,6 +82,18 @@ function profileLayout() {
 }
 
 
+function showChatUserlist() {
+	$('#chat').toggle();
+	$('#userlist').toggle();
+	$('#chat-msg').toggle();
+	$('#chat-send-btn').toggle();
+	$('#chat-user-total').toggle();
+	$('#userlist-toggle-btn i').toggleClass('icon-user');
+	$('#userlist-toggle-btn i').toggleClass('icon-comment');
+}
+
+
+
 /* Card Preview Start */
 function positionPreviewCard() {
 	$('#card-preview-container').css( {

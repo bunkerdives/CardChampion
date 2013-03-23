@@ -146,6 +146,7 @@ var LightboxController = {
 };
 
 //Temporary, so I can remember where this is. 
+
 $(document).ready(function(){
 	$('.alert').alert();//Turn on 'close' buttons for alerts
 	
@@ -161,4 +162,5 @@ $(document).ready(function(){
 	    	});
 	    });
 	});
+	
 });
