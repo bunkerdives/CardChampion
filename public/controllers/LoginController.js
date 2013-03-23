@@ -2,7 +2,7 @@ var LoginController = {
     
     sendLoginRequest : function() {
         
-        $.post(
+        var loginRequest = $.post(
             '/login'
             , { username : $("#login-nickname").val(), password : $("#login-password").val() }
             , function( data ) {
@@ -12,17 +12,18 @@ var LoginController = {
                     $("#header-link-5").css( 'display', 'block' );
                     $("#header-link-5").attr( "href", "/" + data );
                     ViewModel.socketController.socketioHandshake();
-                } else { // TODO display an error message here
-                    console.log("Error logging in: " + data);
                 }
             }
         );
+				loginRequest.error( function( jqxhr, status, error ) {
+					LightboxController.showAuthError(error);
+				} );
         
     }
     
     , sendGuestRequest : function() {
         
-        $.post(
+        var guestRequest = $.post(
             '/guest'
             , { username : 'Guest', password : 'Guest' }
             , function(data) {
@@ -30,12 +31,12 @@ var LoginController = {
                     LightboxController.closeAuthLightbox();
                     $("#header-link-5").css( 'display', 'none');
                     ViewModel.socketController.socketioHandshake();
-                } else { // TODO display an error message
-                    console.log("Error logging in as a guest!");
                 }
             }
         );
-        
+				guestRequest.error( function( jqxhr, status, error ) {
+					LightboxController.showAuthError(error);
+				} );
     }
     
 };

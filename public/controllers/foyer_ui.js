@@ -52,7 +52,8 @@ function profileLayout() {
     
 	var contentW = $('#main-animate-wrapper').width();
 	var leftColW = (contentW-20)*0.35;
-	var profileImgH = leftColW * 0.7252;
+	
+	/*var profileImgH = leftColW * 0.7252;
 	var imgBgW = leftColW * 1.2252;
 	var imgBgH = imgBgW * 1.39;
 	var imgBgTop = imgBgH * -0.1258;
@@ -62,7 +63,10 @@ function profileLayout() {
 		'height': profileImgH,
 		'background-size': imgBgW + "px " + imgBgH + "px",
 		'background-position': imgBgLeft + "px " + imgBgTop + "px"
-	});
+	});*/
+	
+	var target = '#profile-image';
+	cardToThumbnail(leftColW,target);
 	
 	var deckImgH = 174.812;
 	var deckImgW = deckImgH * 0.71935;
@@ -79,7 +83,36 @@ function profileLayout() {
 	  $(this).css("margin-left", navSpacerW);
 	});*/
 	
+	cardToThumbnail(50,'#deck-view-thumbnail');
 }
+
+function cardToThumbnail(w,t) {
+	var imgW = w;
+	var target = t;
+	var profileImgH = imgW * 0.7252;
+	var imgBgW = imgW * (1.2252+.1);
+	var imgBgH = imgBgW * 1.39;
+	var imgBgTop = imgBgH * (-0.1258-.01);
+	var imgBgLeft = imgBgW * -0.091;
+    
+	$(target).css({
+		'height': profileImgH,
+		'background-size': imgBgW + "px " + imgBgH + "px",
+		'background-position': imgBgLeft + "px " + imgBgTop + "px"
+	});
+}
+
+
+function showChatUserlist() {
+	$('#chat').toggle();
+	$('#userlist').toggle();
+	$('#chat-msg').toggle();
+	$('#chat-send-btn').toggle();
+	$('#chat-user-total').toggle();
+	$('#userlist-toggle-btn i').toggleClass('icon-user');
+	$('#userlist-toggle-btn i').toggleClass('icon-comment');
+}
+
 
 
 /* Card Preview Start */

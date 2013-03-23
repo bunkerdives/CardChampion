@@ -222,16 +222,19 @@
 							<div id="profile-inner">
 								<div id="profile-top-row" class="clearfix" style="background-color:#fff;">
 									<div id="profile-username" class="pull-left" data-bind="text: profileUsername">A_User_Name</div>
+								
+								<div id="profile-top-row" class="clearfix">
+									<div id="profile-username" class="pull-left">A_User_Name</div>
 									<div id="profile-nav" class="pull-right clearfix row-fluid">
 										<ul class="nav nav-pills pull-right" style="display:none;">
 											<li class="active profile-link"><a href="#">Decks</a></li>
 										</ul>
-										<div id="deck-view-nav">
+										<div id="deck-view-nav" style="display:none;">
 											<div class="btn-group pull-right">
 											  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
 											    <span class="down-arrow">Type</span>
 											  </a>
-											  <ul class="dropdown-menu pull-right" style="min-width:0px;">
+											  <ul class="dropdown-menu pull-right">
 											    <li><a href="#">Type</a></li>
 													<li><a href="#">Color</a></li>
 													<li><a href="#">Rarity</a></li>
@@ -249,27 +252,33 @@
 												<img src="../static/img/neutral-density.png" data-bind="attr: { src : profileThumbSrc }"/>
 											</div>
 											<div class="clearfix">
-												<div class="pull-left" style="color:#0088cc;width:44%;text-align:right;">
+												<div class="pull-left">
 													<div>Full Name:</div>
 												</div>
 												<div class="pull-right" style="width:54%;text-align:left;">
 													<div data-bind="text: profileFullName">Jonathan Doe</div>
+												<div class="pull-right">
+													<div>Jonathan Doe</div>
 												</div>
 											</div>
 											<div class="clearfix">
-												<div class="pull-left" style="color:#0088cc;width:44%;text-align:right;">
+												<div class="pull-left">
 													<div>Location:</div>
 												</div>
 												<div class="pull-right" style="width:54%;text-align:left;">
 													<div data-bind="text: profileLocation">Pittsburgh, PA</div>
+												<div class="pull-right">
+													<div>Pittsburgh, PA</div>
 												</div>
 											</div>
 											<div class="clearfix">
-												<div class="pull-left" style="color:#0088cc;width:44%;text-align:right;">
+												<div class="pull-left">
 													<div>Date Joined:</div>
 												</div>
 												<div class="pull-right" style="width:54%;text-align:left;">
 													<div data-bind="text: profileDateJoined">03/01/13</div>
+												<div class="pull-right">
+													<div>03/01/13</div>
 												</div>
 											</div>
 											<div id="profile-description" data-bind="text: profileDescription">This is a description. Lorem ipsum, etc., awiodbawjklbflkawnfl. asdfghjkl;asdfghjkl; asdfghjkl;</div>
@@ -316,11 +325,24 @@
 													</div><!-- End deck preview -->
 												</div><!-- End profile with Decklist -->
 												
-                        
-												<div id="deck-view" class="clearfix" style="display: none;">
+                        <div id="deck-view" class="clearfix" style="display: none;">
 													<div id="deck-view-title">
 														Naya Beatdown
+												<div id="deck-view" style="clearfix" style="display:block;">
+													<div id="deck-view-title" class="clearfix">
+														<div id="deck-view-thumbnail" class="pull-left"/>
+														<div id="deck-view-title-right" class="pull-right">
+															<span style="text-align:right;" class="pull-right">Naya Humans Beatdown</span><br/>
+															<div id="deck-view-mana" class="clearfix">
+																<span id="deck-preview-white" class="deck-preview-color"></span>
+																<span id="deck-preview-blue" class="deck-preview-color"></span>
+																<span id="deck-preview-black" class="deck-preview-color"></span>
+																<span id="deck-preview-red" class="deck-preview-color"></span>
+																<span id="deck-preview-green" class="deck-preview-color"></span>
+															</div>
+														</div>
 													</div>
+													
 													<hr style="margin-top:7px;margin-bottom:15px;"/>
 													<div class="clearfix">
 														<div class="deck-view-left pull-left">
@@ -365,11 +387,15 @@
 													</div>
                           
 													<hr style="margin-top:0px;margin-bottom:18px;"/>
-													<div id="deck-view-description" class="deck-view-section" style="text-align:left;padding-left:4%;padding-right:4%;">
+													<div id="deck-view-description" class="deck-view-section">
 														<h1>Description</h1> 
 														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 													</div>
 													<hr style="margin-top:2px;margin-bottom:18px;"/>
+													<div id="share-deck-wrapper">
+														<div class="deck-view-section"><h1 style="text-align:center;">Share this deck</h1></div>
+											  		<input type="text" readonly/>
+													</div>
 												</div>
 												<div id="profile-buddy-list" style="display:none;">
 												</div>
@@ -388,20 +414,31 @@
 				</div><!--End #main-animate-wrapper-->
       </div><!--End #left-pane-->
       <div id="portal-right-pane" class="pull-left clearfix">
-        <div id="chat" class="pull-right">
+        <div id="chat" class="pull-right" style="display:block;">
           <div id="chat-convo-wrapper">
             <div id="chat-convo">
               <div class="chat-msg">
-                <div style="margin-top:5px;">Welcome to LimitedMTG.com!</div>
+                <div style="margin-top:10px;">Welcome to LimitedMTG.com!</div>
               </div>
             </div><!--End #chat-convo-->
           </div><!--End #chat-convo-wrapper-->
         </div><!--End #chat-->
-	  		<div id="userlist" class="pull-right"/>
+	  		<div id="userlist" class="pull-right" style="display:none;">
+					<div style="padding:10px 0px;width:70%;margin-left:auto;margin-right:auto;">
+						<div id="chat-user-total" class="pull-left" style="display:none;">
+							<span>Users&nbsp;(&nbsp;</span><span>3</span><span>&nbsp;)</span>
+						</div>
+						<div class="chat-username row-fluid"><div class="span12"><span class="chat-user">Username</span><span class="chat-status">GTC Sealed</span></div></div>
+						<div class="chat-username row-fluid"><div class="span12"><span class="chat-user">Username324</span><span class="chat-status">GTC Sealed</span></div></div>
+						<div class="chat-username row-fluid"><div class="span12"><span class="chat-user">Usee</span><span class="chat-status">GTC Sealed</span></div></div>
+					</div>
+				</div>
         <div id="chat-input" class="clearfix">
         	<input id="chat-msg" class="pull-left" type="text"/>
           <button id="chat-send-btn" class="btn btn-small pull-left appended" data-bind="event: { click: ChatController.sendChatMsg }">Send</button>
 					<button class="btn btn-small pull-right" style="margin-left:5px;"><i class="icon-user"></i></button>
+          <button id="chat-send-btn" class="btn btn-small pull-left appended" data-bind="event: { click: sendChatMsg }">Send</button>
+					<button id="userlist-toggle-btn" class="btn btn-small pull-right" style="margin-left:5px;" onclick="showChatUserlist();"><i class="icon-user"></i></button>
         </div><!--End #chat-input-->
 		  </div><!--End #right-pane-->
     </div><!--End #portal-container-->

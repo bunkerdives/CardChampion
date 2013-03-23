@@ -8,7 +8,9 @@ var LightboxController = {
 	  }
 		
 		, showRegisterForm : function() {
-            
+			
+			$('.alert .close').trigger('click');//close error alerts
+			
 			$('#login-username-container').css('display', 'none');
 			$('#login-password-container').css('display', 'none');
 			$('#register-username-container').css('display', 'block');
@@ -16,7 +18,8 @@ var LightboxController = {
 			
 			$('#register-animate-wrapper').animate({
 			    height: '111px'
-			}, 500);
+					, opacity: '1'
+			}, 600);
 			
 			$('#login-view-register-btn').animate({
 				opacity: '0'
@@ -46,6 +49,8 @@ var LightboxController = {
 
 		, showLoginForm : function() {
 			
+			$('.alert .close').trigger('click');//close error alerts
+			
 			$('#register-username-container').css('display', 'none');
 			$('#register-password-container').css('display', 'none');
 			$('#login-username-container').css('display', 'block');
@@ -53,6 +58,7 @@ var LightboxController = {
 			
 			$('#register-animate-wrapper').animate({
 			    height: '0px'
+					, opacity: '0'
 			}, 500);
 			
 			$('#register-view-register-btn').animate({
@@ -97,6 +103,33 @@ var LightboxController = {
 				
 				
     }
+		
+    // show an error message between inputs and buttons
+    , showAuthError : function( message ) {
+				console.log('showAuthError function called.');
+				var errorMessage = message;
+				
+				if ( errorMessage === "Unauthorized" ) {
+					errorMessage = "Invalid Password";
+				}
+				
+				$('#auth-error span').html(errorMessage);//Update error message
+				
+				var alertWrapper = $('#auth-error-wrapper');
+				
+				alertWrapper.show();
+				
+				var animateH = $('#auth-error').outerHeight(true);
+				
+				alertWrapper.animate(
+					{ 'height' : animateH }
+					, 600
+					, function() {
+						alertWrapper.animate( 
+							{ 'opacity' : 1 }
+							, 200);
+					} );
+    }
 
     // close the lightbox
     , closeAuthLightbox : function() {
@@ -108,3 +141,23 @@ var LightboxController = {
     }
     
 };
+
+//Temporary, so I can remember where this is. 
+
+$(document).ready(function(){
+	$('.alert').alert();//Turn on 'close' buttons for alerts
+	
+	$('.alert .close').on("click", function(e) {
+			
+	    $(this).parent().parent().animate({
+	    	"opacity":"0"
+	    }, 200, function(){
+	    	$(this).animate({
+	    		"height" : "0px"
+	    	}, 400, function(){
+					$(this).hide();
+	    	});
+	    });
+	});
+	
+});

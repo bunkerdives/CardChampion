@@ -71,9 +71,93 @@ $(window).resize( function() {
 	}
 } );
 
-$(window).ready( function() {
-	$("html").niceScroll({ 
+/*var multiverseid;
+var cards;
+var map;
+
+var colors = ["red", "blue", "green", "yellow", "brown", "black"];*/
+
+
+
+$('#splash').ready( function() {
+	
+	/*$("html").niceScroll({ 
 		zindex : "2000",
 		hidecursordelay : "100" 
+	});*/
+	
+	
+	
+	//TYPEAHEAD
+	//console.log('typeahead set.')
+	
+	
+	//$('.typeahead').typeahead( {source: colors} );
+	//console.log(colors)
+	/*
+	$('.typeahead').attr('data-source', colors);
+	
+	
+	$('.typeahead').typeahead({                                
+	  name: 'countries',                                                          
+	  prefetch: '../data/countries.json',                                         
+	  limit: 10                                                                   
 	});
+	*/
+	
+	/*$('#typeahead-test').typeahead({                                   
+	  name: 'arabic',                                                             
+	  local: [
+		'Abe',
+		'Dean',
+		'Jesse',
+		'Zach'
+	  ]                                                                           
+	});*/
+	
+	/*
+	$('#profile-image-input').typeahead({
+
+			
+			source: function (query, process) {
+				console.log("source")
+				
+			    cards = [];
+			    map = {};
+					
+					var setData = SetController.getSet('GTC');
+					var cardData = setData.card_data;
+			    var data = [ ];
+					
+					$.each( cardData, function( index, value ) {
+							var cardObj = { cardName : value.name, multiverse : value.multiverse };
+							data.push( cardObj );
+					} );
+					
+					console.log(data);
+ 
+			    $.each( data, function (key, cardObj) {
+			        map[ cardObj.cardName ] = cardObj;
+			        cards.push( cardObj.cardName );
+			    } );
+ 
+			    process(states);
+			}
+			
+			, updater: function (item) {
+				
+				multiverseid = map[item].multiverse;
+				console.log("updater item = " + item)
+				return item;
+							
+				//selectedProfileImg = profileImgMap[item];
+				//return profileImgMap[item];
+	    }
+		
+	});
+	*/
+	
+	
+	
+	
 });
