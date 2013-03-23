@@ -220,11 +220,8 @@
 					<div id="main-slide-5" class="main-slide" data-bind="if: profileVisible">
 						<div id="profile-container">
 							<div id="profile-inner">
-								<div id="profile-top-row" class="clearfix" style="background-color:#fff;">
-									<div id="profile-username" class="pull-left" data-bind="text: profileUsername">A_User_Name</div>
-								
 								<div id="profile-top-row" class="clearfix">
-									<div id="profile-username" class="pull-left">A_User_Name</div>
+									<div id="profile-username" class="pull-left" data-bind="text: profileUsername">A_User_Name</div>
 									<div id="profile-nav" class="pull-right clearfix row-fluid">
 										<ul class="nav nav-pills pull-right" style="display:none;">
 											<li class="active profile-link"><a href="#">Decks</a></li>
@@ -245,52 +242,43 @@
 									</div>
 								</div>
 								<div id="profile-bottom-row">
-                  
 									<div id="profile-left-col" class="pull-left">
 										<div id="profile-info" class="clearfix">
-											<div id="profile-image">
-												<img src="../static/img/neutral-density.png" data-bind="attr: { src : profileThumbSrc }"/>
+											<div id="profile-image" data-bind="attr: { src : profileThumbSrc }">
+												<img src="../static/img/neutral-density.png"/>
 											</div>
 											<div class="clearfix">
 												<div class="pull-left">
 													<div>Full Name:</div>
 												</div>
-												<div class="pull-right" style="width:54%;text-align:left;">
-													<div data-bind="text: profileFullName">Jonathan Doe</div>
 												<div class="pull-right">
-													<div>Jonathan Doe</div>
+													<div data-bind="text: profileFullName">Jonathan Doe</div>
 												</div>
 											</div>
 											<div class="clearfix">
 												<div class="pull-left">
 													<div>Location:</div>
 												</div>
-												<div class="pull-right" style="width:54%;text-align:left;">
-													<div data-bind="text: profileLocation">Pittsburgh, PA</div>
 												<div class="pull-right">
-													<div>Pittsburgh, PA</div>
+													<div data-bind="text: profileLocation">Pittsburgh, PA</div>
 												</div>
 											</div>
 											<div class="clearfix">
 												<div class="pull-left">
 													<div>Date Joined:</div>
 												</div>
-												<div class="pull-right" style="width:54%;text-align:left;">
-													<div data-bind="text: profileDateJoined">03/01/13</div>
 												<div class="pull-right">
-													<div>03/01/13</div>
+													<div data-bind="text: profileDateJoined">03/01/13</div>
 												</div>
 											</div>
 											<div id="profile-description" data-bind="text: profileDescription">This is a description. Lorem ipsum, etc., awiodbawjklbflkawnfl. asdfghjkl;asdfghjkl; asdfghjkl;</div>
 										</div>
 									</div>
-                  
 									<div id="profile-right-col" class="pull-right">
 										<div id="profile-content-wrapper">
 											<div id="profile-content">
-                        
                         <!-- Start profile with Decklist -->
-												<div id="profile-deck-previews" style="display:block;">
+												<div id="profile-deck-previews" data-bind="if: profileDecksVisible">
 													<!-- Deck preview -->
 													<div class="deck-preview clearfix">
 														<div class="deck-preview-left pull-left clearfix">
@@ -324,11 +312,7 @@
 														</div>
 													</div><!-- End deck preview -->
 												</div><!-- End profile with Decklist -->
-												
-                        <div id="deck-view" class="clearfix" style="display: none;">
-													<div id="deck-view-title">
-														Naya Beatdown
-												<div id="deck-view" style="clearfix" style="display:block;">
+												<div id="deck-view" style="clearfix" data-bind="if: profileDeckListVisible">
 													<div id="deck-view-title" class="clearfix">
 														<div id="deck-view-thumbnail" class="pull-left"/>
 														<div id="deck-view-title-right" class="pull-right">
@@ -342,7 +326,6 @@
 															</div>
 														</div>
 													</div>
-													
 													<hr style="margin-top:7px;margin-bottom:15px;"/>
 													<div class="clearfix">
 														<div class="deck-view-left pull-left">
@@ -385,7 +368,6 @@
 															</div>
 														</div>
 													</div>
-                          
 													<hr style="margin-top:0px;margin-bottom:18px;"/>
 													<div id="deck-view-description" class="deck-view-section">
 														<h1>Description</h1> 
@@ -402,18 +384,13 @@
 											</div>
 										</div>
 									</div>
-                  
 								</div>
-								
-								
-								
 							</div>
 						</div>
 					</div><!--End #main-slide-5-->
-					
 				</div><!--End #main-animate-wrapper-->
       </div><!--End #left-pane-->
-      <div id="portal-right-pane" class="pull-left clearfix">
+      <div id="portal-right-pane" class="pull-right clearfix">
         <div id="chat" class="pull-right" style="display:block;">
           <div id="chat-convo-wrapper">
             <div id="chat-convo">
@@ -436,11 +413,9 @@
         <div id="chat-input" class="clearfix">
         	<input id="chat-msg" class="pull-left" type="text"/>
           <button id="chat-send-btn" class="btn btn-small pull-left appended" data-bind="event: { click: ChatController.sendChatMsg }">Send</button>
-					<button class="btn btn-small pull-right" style="margin-left:5px;"><i class="icon-user"></i></button>
-          <button id="chat-send-btn" class="btn btn-small pull-left appended" data-bind="event: { click: sendChatMsg }">Send</button>
 					<button id="userlist-toggle-btn" class="btn btn-small pull-right" style="margin-left:5px;" onclick="showChatUserlist();"><i class="icon-user"></i></button>
         </div><!--End #chat-input-->
-		  </div><!--End #right-pane-->
+		  </div><!--End #portal-right-pane-->
     </div><!--End #portal-container-->
 		
 	  <div id="foyer-subcontent">

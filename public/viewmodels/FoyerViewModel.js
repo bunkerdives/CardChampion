@@ -11,6 +11,9 @@ var FoyerViewModel = function( data ) {
     this.newEventVisible = ko.observable( false );
     this.joinDraftVisible = ko.observable( false );
     
+    this.profileDecksVisible = ko.observable( false );
+    this.profileDeckListVisible = ko.observable( false );
+    
     this.subview;
     
     this.profileData;
@@ -29,6 +32,7 @@ var FoyerViewModel = function( data ) {
         switch( this.subview ) {
             case 'Profile' :
                 this.populateProfileViewData();
+                this.profileDecksVisible( true );
         }
         
     };
