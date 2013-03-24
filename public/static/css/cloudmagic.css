@@ -763,23 +763,23 @@ input[readonly] {
 }
 
 #foyer #deck-preview-white {
-	background-image:url('../static/img/white-mana.jpg');
+	background-image:url('/static/img/white-mana.jpg');
 }
 
 #foyer #deck-preview-blue {
-	background-image:url('../static/img/blue-mana.jpg');
+	background-image:url('/static/img/blue-mana.jpg');
 }
 
 #foyer #deck-preview-black {
-	background-image:url('../static/img/black-mana.jpg');
+	background-image:url('/static/img/black-mana.jpg');
 }
 
 #foyer #deck-preview-red {
-	background-image:url('../static/img/red-mana.jpg');
+	background-image:url('/static/img/red-mana.jpg');
 }
 
 #foyer #deck-preview-green {
-	background-image:url('../static/img/green-mana.jpg');
+	background-image:url('/static/img/green-mana.jpg');
 }
 
 #foyer .deck-preview-right {

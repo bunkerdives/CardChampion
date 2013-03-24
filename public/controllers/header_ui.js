@@ -59,14 +59,12 @@ function navEvents(){
 function headerLayout(){
 	console.log('headerLayout function called.');
 	var windowWidth = $(window).width();
-	var headerContainerW = windowWidth*0.95;
-	if (headerContainerW>1080) {
-		headerContainerW=1080;
-	}
+	var foyerContW = $('#foyer-content-container').outerWidth();
+	var headerContainerW = foyerContW*0.95;
 	$("#header-container").css("width", headerContainerW);
 	var headerLinksW = 0;
 	var headerLinksNum = 0;
-	$('a.header-link').each(function() {
+	$('.header-link').each(function() {
 		headerLinksW += $(this).width();
 		headerLinksNum++;
 		//console.log('headerLinksW: ' + headerLinksW);
@@ -78,6 +76,7 @@ function headerLayout(){
 	} else {
 		$(".header-link-spacer").css("width", 10);
 	}
+	
 }
 
 function headerInit(){
