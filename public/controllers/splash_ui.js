@@ -112,6 +112,8 @@ $(document).ready( function() {
 			, updater: function (item) {
 				
 				//console.log('Typeahead updater');
+				$('#profile-settings-image-input').tooltip('hide');
+				
 				var multiverse = map[item].multiverse;
 				$('.typeahead').attr('data-multiverse', multiverse);
 				var multiverseURL = "url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=" + multiverse + "&type=card')";
