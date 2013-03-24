@@ -112,17 +112,18 @@ app.get( '/sealed', function(req, res) {
     
 } );
 
-app.get( '/decklist', function(req, res) {
-    
+app.get( '/decklists', function(req, res) {
     
     console.log("deckName callback begin")
     
     var username = req.query.user;
+    var deckname = req.query.deck;
+    
     var auth = Auth.authOrGuest( req );
     var user = Auth.getUsernameOrNull( req );
     
     // get the deck object
-    var deckCardData = Auth.newDeckList();
+    //var deckCardData = Auth.newDeckList();
     
     // get the profile object
     mongoose.model( 'Profile', ProfileSchema, 'Profiles' );
@@ -130,6 +131,7 @@ app.get( '/decklist', function(req, res) {
     ProfileModel.findOne( { user : username }, function(err, doc) {
         
         // route the client to the profile page of the given user
+        console.log("Decklists findOne")
         
         res.render( 'layout.jade', {
             templateName : JSON.stringify('Foyer')
@@ -139,11 +141,9 @@ app.get( '/decklist', function(req, res) {
                 , 'username' : user
                 , 'user' : username
                 , 'profile' : doc
-                , 'deckData' : deckCardData
+                , 'deckname' : deckname
             } )
         } );
-        
-        console.log("FOUND ONE!!!!!!!!")
         
         
     } );

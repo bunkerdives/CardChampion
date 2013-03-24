@@ -2,7 +2,6 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var ObjectId = Schema.ObjectId;
 var Account = require('../models/Account.js');
-//var ProfileSchema = require('../schemas/ProfileSchema.js');
 var ProfileModel = require('../models/ProfileModel.js');
 var DeckContainerModel = require('../models/DeckContainerModel.js')
 var DeckList = require('../models/DeckContainerModel.js')
@@ -83,9 +82,10 @@ Auth = {
         var deckContainer = new DeckContainerModel( {
             title : 'Naya Aggro'
             , thumb : 'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366467&type=card'
+            , deckUrl : '/decklists?user=' + user + '&deck=NayaAggro'
             , user : user
             , uuid : '12345678'
-            , format : 'GTC Draft'
+            , format : 'Standard'
             , date : new Date()
             , white : true
             , blue : false
@@ -94,9 +94,27 @@ Auth = {
             , green : true
         } );
         
+        var deckContainer1 = new DeckContainerModel( {
+            title : 'Jund'
+            , thumb : 'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262847&type=card'
+            , deckUrl : '/decklists?user=' + user + '&deck=Jund'
+            , user : user
+            , uuid : '123456789'
+            , format : 'Standard'
+            , date : new Date()
+            , white : false
+            , blue : false
+            , black : true
+            , red : true
+            , green : true
+        } );
+        
+        
+        
         //var deckList = this.newDeckList();
         
         userInstance.decks[0] = deckContainer;
+        userInstance.decks[1] = deckContainer1;
         
         userInstance.save( function(err) {
             if( err ) {
@@ -142,7 +160,16 @@ Auth = {
         }
     }
     
-    , newDeckList : function() {
+    , newDeckList : function(deck) {
+        
+        switch( deck ) {
+            case 'NayaAggro':
+                return this.newNayaAggroDeck();
+        }
+        
+    }
+    
+    , newNayaAggroDeck : function() {
             
         var deckList = new DeckList( {
         
@@ -341,6 +368,98 @@ Auth = {
                         , 'multiverse' : '278058'
                         , 'type' : 'Land'
                         , 'pt' : ''
+                    }
+                }
+            ]
+        
+        } );
+            
+        return deckList;
+        
+    }
+    
+    , newNayaAggroDeck : function() {
+            
+        var deckList = new DeckList( {
+        
+            uuid : '123456789'
+            , cards : [
+                {
+                    total : 4
+                    , card : {
+                        'name' : 'Burning-Tree Emissary'
+                        , 'rarity' : 'U'
+                        , 'color' : 'M'
+                        , 'cost' : '(R/G)(R/G)'
+                        , 'cmc' : '2'
+                        , 'multiverse' : '366467'
+                        , 'type' : 'Creature  ‚Äî Human Shaman'
+                        , 'pt' : '(2/2)'
+                    }
+                }
+                , {
+                    total : 4
+                    , card : {
+                        'name' : 'Experiment One'
+                        , 'rarity' : 'U'
+                        , 'color' : 'G'
+                        , 'cost' : 'G'
+                        , 'cmc' : '1'
+                        , 'multiverse' : '366441'
+                        , 'type' : 'Creature  ‚Äî Human Ooze'
+                        , 'pt' : '(1/1)'
+                    }
+                }
+                , {
+                    total : 4
+                    , card : {
+                        'name' : 'Ghor-Clan Rampager'
+                        , 'rarity' : 'U'
+                        , 'color' : 'M'
+                        , 'cost' : '2RG'
+                        , 'cmc' : '4'
+                        , 'multiverse' : '366287'
+                        , 'type' : 'Creature  ‚Äî Beast'
+                        , 'pt' : '(4/4)'
+                    }
+                }
+                , {
+                    total : 4
+                    , card : {
+                        'name' : 'Stomping Ground'
+                        , 'rarity' : 'R'
+                        , 'color' : 'A'
+                        , 'cost' : ''
+                        , 'cmc' : '0'
+                        , 'multiverse' : '366232'
+                        , 'type' : 'Land  ‚Äî Mountain Forest'
+                        , 'pt' : ''
+                    }
+                }
+                , {
+                    total : 3
+                    , card : {
+                        'name' : 'Dreg Mangler'
+                        , 'rarity' : 'U'
+                        , 'color' : 'M'
+                        , 'cost' : '1BG'
+                        , 'cmc' : '3'
+                        , 'multiverse' : '253509'
+                        , 'type' : 'Creature  — Plant Zombie'
+                        , 'pt' : '(3/3)'
+                    }
+                }
+                , {
+                    total : 4
+                    , card : {
+                        'name' : 'Rakdos Cackler'
+                        , 'rarity' : 'U'
+                        , 'color' : 'M'
+                        , 'cost' : '(B/R)'
+                        , 'cmc' : '1'
+                        , 'multiverse' : '253596'
+                        , 'type' : 'Creature  — Devil'
+                        , 'pt' : '(1/1)'
                     }
                 }
             ]

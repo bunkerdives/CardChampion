@@ -27,14 +27,17 @@ var FoyerViewModel = function( data ) {
     this.profileDeckPreviews = ko.observableArray( [] );
     
     this.deckData;
+    this.deckName;
     this.deckListTitle = ko.observable();
-    this.deckListWhite = ko.observable();
+    this.deckListUrl = ko.observable();
     this.deckListBlue = ko.observable();
     this.deckListBlack = ko.observable();
     this.deckListRed = ko.observable();
     this.deckListGreen = ko.observable();
     this.deckListDesc = ko.observable();
     
+    this.nayaVisible = ko.observable(false);
+    this.jundVisible = ko.observable(false);
     
     
     this.populateSubViewData = function() {
@@ -44,7 +47,8 @@ var FoyerViewModel = function( data ) {
                 this.populateProfileViewData();
                 this.populateDeckPreviewModels();
                 this.profileDecksVisible( true );
-                jQuery(document).ready( function(){
+                this.profileDeckUrl( this.profileData.deckUrl );
+                jQuery(document).ready( function($){
                     profileLayout();
                 });
                 break;
@@ -53,9 +57,10 @@ var FoyerViewModel = function( data ) {
                 this.populateProfileViewData();
                 this.populateDeckListViewModel();
                 this.profileDeckListVisible( true );
+                this.nayaVisible( true );
                 console.log("profileDeckListVisible = " + this.profileDeckListVisible() )
                 console.log("decksVisible = " + this.decksVisible() );
-                jQuery(document).ready( function(){
+                jQuery(document).ready( function($){
                     profileLayout();
                 });
                 break;
@@ -63,20 +68,31 @@ var FoyerViewModel = function( data ) {
         
     };
     
+    this.setDeckList = function() {
+        
+        var deckName = this.deckName;
+        
+        if( deckName == 'NayaAggro' ){
+            this.nayaVisible(true);
+        } else if( deckName == 'Jund' ) {
+            this.jundVisible(true);
+        }
+    }
+    
     this.populateProfileViewData = function() {
         
         var profile = this.profileData;
         
-        this.profileUsername( profile.user );
-        this.profileFullName( profile.fullName );
-        this.profileThumbSrc( profile.thumb );
-        this.profileDescription( profile.description );
-        this.profileLocation( profile.location );
-        this.profileDateJoined( profile.joined );
+        ViewModel.profileUsername( profile.user );
+        ViewModel.profileFullName( profile.fullName );
+        ViewModel.profileThumbSrc( profile.thumb );
+        ViewModel.profileDescription( profile.description );
+        ViewModel.profileLocation( profile.location );
+        ViewModel.profileDateJoined( profile.joined );
         
         $("#profile-header-button").attr("href", '/' + profile.user );
         
-        console.log("populateProfileViewData profileUsername = " + this.profileUsername())
+        console.log("populateProfileViewData profileUsername = " + ViewModel.profileUsername())
         
     };
     
@@ -96,8 +112,7 @@ var FoyerViewModel = function( data ) {
     };
     
     this.populateDeckListViewModel = function() {
-        
-        
+
         
     }
     
@@ -140,7 +155,7 @@ var FoyerViewModel = function( data ) {
         }
         
 
-        jQuery(document).ready( function(){
+        jQuery(document).ready( function($){
             profileLayout();
         });
         
@@ -388,6 +403,12 @@ ko.utils.extend( FoyerViewModel.prototype, {
         ViewModel.populateSubViewData();
         console.log("end FoyerViewModel init")
         
+        
+        jQuery(document).ready( function($){
+            profileLayout();
+        });
+        
+        profileLayout();
         
     }
     

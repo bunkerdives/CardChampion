@@ -18,6 +18,7 @@ var LayoutController = function( template, options ) {
             context.profileData = options.profile;
             context.deckData = options.deckData;
             context.subview = options.subview;
+            context.deckName = options.deckname;
             console.log( "Foyer Layout COntroller, subView = " + options.subview );
             break;
         default:
@@ -42,6 +43,12 @@ var LayoutController = function( template, options ) {
     else if( template != 'Splash' && loggedIn ) {
         ViewModel.socketController.socketioHandshake();
         LightboxController.closeAuthLightbox();
+    }
+    
+    if( template == 'Foyer' ) {
+        jQuery(document).ready( function($){
+            profileLayout();
+        });
     }
     
     console.log("end LayoutController")

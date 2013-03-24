@@ -19,6 +19,8 @@ var ChatController = {
     
     , bindEnterKeyForChat : function() {
         
+        var socket = ViewModel.socketController.socket;
+        
         jQuery(document).ready( function ($) {
             $('input').live("keypress", function(e) {
                 if( e.keyCode == 13 ){
