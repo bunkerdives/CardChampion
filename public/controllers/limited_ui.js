@@ -92,6 +92,8 @@ var delta = 500;
 
 function cardSizeChange(slideAmount) {
 	
+	
+	
 	var standardH = 198.7; // standard card height
 	var standardW = 143; // standard card width
 	var newH = standardH * (slideAmount/100);
@@ -101,6 +103,8 @@ function cardSizeChange(slideAmount) {
 	ViewModel.cardH = newH;
 	ViewModel.cardW = newW;
 	ViewModel.cardMarginTop = marginTop;
+	
+	ViewModel.fixPoolSize();
 	
 	$(".card").each( function() { //Change background size of cards to 0; add class .cardResize
 		$(this).addClass('cardResize');
@@ -144,6 +148,8 @@ function cardSizeChangeEnd() {
 }
 
 
+
+
 function offsetDragHandlers() {
 	$('#drag-offset-y').mousedown(function(e){
 		ViewModel.yOffsetBool=true;
@@ -173,13 +179,15 @@ function offsetDragHandlers() {
 function limitedInit() {
 	limitedLayout();
 	offsetDragHandlers();
-	$("#card-pool-scroll").niceScroll({ 
+	/*$("#card-pool-scroll").niceScroll({ 
 		hidecursordelay : "100"
-	});
-	$("#deck-area-scroll").niceScroll({ 
+		,cursorwidth : "10px"
+	});*/
+	/*$("#deck-area-scroll").niceScroll({ 
 		hidecursordelay : "100" 
-	});
+	});*/
 	$('.foyer-header').addClass('translucent-header');
+	headerLayout();
 }
 
 $(document).ready(function(){
@@ -188,6 +196,8 @@ $(document).ready(function(){
 		//do something
 	  e.stopPropagation();
 	});
+	
+	$('.card').on('touchStart', CardViewModel.cardSelect);
 });
 
 $(window).resize(function() {

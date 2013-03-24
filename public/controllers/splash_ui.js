@@ -1,17 +1,3 @@
-/*function fullscreen(){
-	//var docElm = document.documentElement;//Document fullscreen
-	var docElm = document.getElementById('fullscreen-image');//Element fullscreen
-	if (docElm.requestFullscreen) {
-	    docElm.requestFullscreen();
-	}
-	else if (docElm.mozRequestFullScreen) {
-	    docElm.mozRequestFullScreen();
-	}
-	else if (docElm.webkitRequestFullScreen) {
-	    docElm.webkitRequestFullScreen();
-	}
-}*/
-
 function bgStretch( src, oW, oH, iW, iH, l, t ) {
     
 	var windowW = $(window).width();
@@ -24,18 +10,17 @@ function bgStretch( src, oW, oH, iW, iH, l, t ) {
 	var imgLeft = l;
 	var imgTop = t;
 	
-	var tmpH = (windowW * (imgInnerH / imgInnerW));
+	var tmpH = ( windowW * ( imgInnerH / imgInnerW ) );
 	var tmpW = windowW;
-	if (tmpH < windowH) {
-		tmpW = (windowH * (imgInnerW / imgInnerH));
-	}
+	if ( tmpH < windowH ) tmpW = ( windowH * ( imgInnerW / imgInnerH ) );
+
     
-	var newW = ((imgOuterW / imgInnerW) * tmpW);
-	var newH = ((imgOuterH / imgOuterW) * newW);
-	var newL = (imgLeft * (newW / imgOuterW)) * -1;
-	var newT = (imgTop * (newH / imgOuterH)) * -1;
+	var newW = ( (imgOuterW / imgInnerW) * tmpW );
+	var newH = ( (imgOuterH / imgOuterW) * newW );
+	var newL = -(imgLeft * (newW / imgOuterW));
+	var newT = -(imgTop * (newH / imgOuterH));
 	
-	$('body').css( {
+	$('#background-wrap').css( {
 		"background-image": "url('" + imgSrc +"')",
 		"background-size": newW + "px " + newH + "px",
 		"background-position": newL + "px " + newT + "px"
@@ -71,91 +56,111 @@ $(window).resize( function() {
 	}
 } );
 
-/*var multiverseid;
-var cards;
-var map;
-
-var colors = ["red", "blue", "green", "yellow", "brown", "black"];*/
 
 
+var cards = [];
+var map = {};
 
-$('#splash').ready( function() {
+$(document).ready( function() {
 	
 	/*$("html").niceScroll({ 
 		zindex : "2000",
 		hidecursordelay : "100" 
 	});*/
 	
-	
+	$(document).off('touchstart.dropdown.data-api');
 	
 	//TYPEAHEAD
-	//console.log('typeahead set.')
 	
 	
-	//$('.typeahead').typeahead( {source: colors} );
-	//console.log(colors)
-	/*
-	$('.typeahead').attr('data-source', colors);
-	
-	
-	$('.typeahead').typeahead({                                
-	  name: 'countries',                                                          
-	  prefetch: '../data/countries.json',                                         
-	  limit: 10                                                                   
-	});
-	*/
-	
-	/*$('#typeahead-test').typeahead({                                   
-	  name: 'arabic',                                                             
-	  local: [
-		'Abe',
-		'Dean',
-		'Jesse',
-		'Zach'
-	  ]                                                                           
-	});*/
-	
-	/*
-	$('#profile-image-input').typeahead({
+	$('#profile-settings-image-input').typeahead({
 
 			
 			source: function (query, process) {
-				console.log("source")
+				//console.log("source")
 				
 			    cards = [];
 			    map = {};
 					
-					var setData = SetController.getSet('GTC');
-					var cardData = setData.card_data;
+					var setList = ["GTC", "RTR", "M13", "ISD", "AVR", "DKA"];
+					
+					var setData;
+					var cardData;
 			    var data = [ ];
 					
-					$.each( cardData, function( index, value ) {
-							var cardObj = { cardName : value.name, multiverse : value.multiverse };
-							data.push( cardObj );
+					$.each( setList, function ( i, setID ) {
+						
+						setData = SetController.getSet(setID);
+						cardData = setData.card_data;
+					
+						$.each( cardData, function( index, value ) {
+								var cardObj = { cardName : value.name, multiverse : value.multiverse };
+								data.push( cardObj );
+						} );
+						
 					} );
 					
-					console.log(data);
  
 			    $.each( data, function (key, cardObj) {
 			        map[ cardObj.cardName ] = cardObj;
 			        cards.push( cardObj.cardName );
 			    } );
  
-			    process(states);
+			    process(cards);
 			}
 			
 			, updater: function (item) {
 				
-				multiverseid = map[item].multiverse;
-				console.log("updater item = " + item)
+				//console.log('Typeahead updater');
+				$('#profile-settings-image-input').tooltip('hide');
+				
+				var multiverse = map[item].multiverse;
+				$('.typeahead').attr('data-multiverse', multiverse);
+				var multiverseURL = "url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=" + multiverse + "&type=card')";
+				//console.log(multiverseURL);
+			
+				var target = $('#profile-settings-thumbnail-wrapper');
+			
+				var targetH = target.height();
+			
+				if (targetH > 0) {
+					console.log('#profile-settings-thumbnail open');
+					target.animate({
+						'opacity' : 0 
+					}
+					,200
+					,function(){
+						$('#profile-settings-thumbnail').css('background-image', multiverseURL);
+						target.animate({
+							'opacity' : 1
+						});
+					});
+				} else {
+					$('#profile-settings-thumbnail').css('background-image', multiverseURL);
+					target.animate( {
+						height : '201px'
+					}
+					, 600
+					, function() {
+				
+						console.log('animate callback');
+						target.animate( {
+							'opacity' : '1'
+						}
+						, 400
+						, function() {
+					
+							console.log('animate callback 2');
+					
+						} );
+				
+					} );
+				}
+				
 				return item;
-							
-				//selectedProfileImg = profileImgMap[item];
-				//return profileImgMap[item];
 	    }
 		
 	});
-	*/
 	
 	
 	

@@ -1,4 +1,4 @@
-function mainSlide(str,arr){
+/*function mainSlide(str,arr){
 	//console.log('mainSlide function called. arg1=' + str + ' arg2=' + arr);
 	navEvents();//Turn on all link click handlers
 	var linkName = "#header-link-" + str;//Most recently fired link click handler
@@ -54,19 +54,18 @@ function navEvents(){
 			navClick(p);//
 		});
 	});
-}
+}*/
 
 function headerLayout(){
 	console.log('headerLayout function called.');
 	var windowWidth = $(window).width();
-	var headerContainerW = windowWidth*0.95;
-	if (headerContainerW>1080) {
-		headerContainerW=1080;
-	}
+	var tmpW = windowWidth * 0.95;
+	if (tmpW>1080) tmpW=1080;
+	var headerContainerW = tmpW*0.95;
 	$("#header-container").css("width", headerContainerW);
 	var headerLinksW = 0;
 	var headerLinksNum = 0;
-	$('a.header-link').each(function() {
+	$('.header-link').each(function() {
 		headerLinksW += $(this).width();
 		headerLinksNum++;
 		//console.log('headerLinksW: ' + headerLinksW);
@@ -78,13 +77,13 @@ function headerLayout(){
 	} else {
 		$(".header-link-spacer").css("width", 10);
 	}
+	
 }
 
 function headerInit(){
     console.log("headerInit")
 	headerLayout();
 	//navEvents();
-	$('#header-link-1').off();//#main-pane-1 is shown on init, ergo turn off click handler for its link
 }
 
 $(window).resize(function() {

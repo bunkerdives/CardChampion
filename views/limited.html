@@ -10,7 +10,7 @@
          <div data-bind="foreach: sideboard">
            <div data-bind="foreach: columns">
              <div class="column" data-bind="foreach: cards, event: { mouseover: mouseOver }">
-               <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(data,event){ mouseDownHandler('sideboard', event); }, mouseup: mouseUpHandler, mouseover: function(){ cardZoom($root); }, click: cardHighlight, dblclick: function(){ cardSelect('sideboard'); } }"/>
+               <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, mouseover: function(){  }, click: function(){   cardSelect('sideboard');cardZoom($root);} "/><!---->
              </div>
            </div>
          </div>
@@ -35,41 +35,38 @@
 			
 			<div id="limited-control-bar-right" class="pull-right clearfix">
 		
-				<div id="offset-y-container" class="pull-left">
+				<!--<div id="offset-y-container" class="pull-left">
 					<div id="drag-offset-y" style="margin-left:auto;margin-right:auto;">
 						<i class="icon-align-justify icon-white"></i>
 					</div>
-				</div>
+				</div>-->
 		
-				<div id="control-bar-buttons" class="btn-toolbar pull-right">
-					<div id="sort-btn" class="btn-group pull-left">
-						<button class="btn btn-group pull-left">
-	            <a class="btn btn-mini btn-primary dropdown-toggle" data-toggle="dropdown">
-								Sort
-	            </a>
-	            <ul class="dropdown-menu pull-right" style="width:auto;min-width:0px;">
-	              <li>
-	                <a tabindex="-1" data-bind="event: { click: function(){ sortPool('sideboard'); } }">Sideboard</a>
-	              </li>
-	              <li>
-	                <a tabindex="-1" data-bind="event: { click: function(){ sortPool('mainboard'); } }">Mainboard</a>
-	              </li>
-						                
-	            </ul>
-	        	</button>
-		        <button class="btn btn-group pull-left">
-	            <a id="aSortDisplay" class="btn btn-mini btn-primary dropdown-toggle" data-toggle="dropdown">
-								by cost
-	            </a>
+				<div id="control-bar-buttons" class="pull-right">
+					<div class="pull-left btn-group">
+						<button class="btn btn-mini btn-primary dropdown-toggle" data-toggle="dropdown" style="-webkit-border-radius: 4px 0 0 4px;-moz-border-radius: 4px 0 0 4px;border-radius: 4px 0 0 4px;">
+							Sort<!--data-bind="event: { click : clearMainboard }"-->
+						</button>
+            <ul class="dropdown-menu pull-right" style="width:auto;min-width:0px;">
+              <li>
+                <a tabindex="-1" data-bind="event: { click: function(){ sortPool('sideboard'); } }">Sideboard</a>
+              </li>
+              <li>
+                <a tabindex="-1" data-bind="event: { click: function(){ sortPool('mainboard'); } }">Mainboard</a>
+              </li>
+					                
+            </ul>
+					</div>	
+						
+					<div class="pull-left btn-group" style="margin-left:0;">	
+		        <button class="btn pull-left btn-mini btn-primary dropdown-toggle" data-toggle="dropdown" style="-webkit-border-radius: 0 4px 4px 0;-moz-border-radius: 0 4px 4px 0;border-radius: 0 4px 4px 0;">
+								<span id="aSortDisplay">by cost</span></button>
 	            <ul class="dropdown-menu" style="width:auto;min-width:0;">
 						    <li><a data-bind="event: { click: function(){ selectSortOption('cmc'); } }">by cost</a></li>
 								<li><a data-bind="event: { click: function(){ selectSortOption('color'); } }">by color</a></li>
                 <li><a data-bind="event: { click: function(){ selectSortOption('rarity'); } }">by rarity</a></li>
-								<li><a>by type</a></li>
+								<li style="display:none;"><a>by type</a></li>
 	            </ul>
-		        </button>
-					</div>
-					
+						</div>
 					<div id="add-land-btn" class="btn-group pull-left">
 		        <button id="addland" class="btn btn-mini btn-success dropdown-toggle" data-toggle="dropdown">Add Land</button>
 			        <ul id="add-land-dropdown" class="dropdown-menu pull-right">
@@ -163,7 +160,7 @@
 										</div>
 									</div>
 								</li>
-			          <li>
+			          <li style="display:none;">
 									<div class="text-center">
 			            	<button class="btn btn-mini btn-primary" data-bind="event: { click : suggestLand }">Suggest</button>
 									</div>
@@ -220,7 +217,7 @@
         <div data-bind="foreach: mainboard">
           <div data-bind="foreach: columns">
             <div class="column" data-bind="foreach: cards, event: { mouseover: mouseOver }">
-              <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(data,event){ mouseDownHandler('mainboard', event); }, mouseup: mouseUpHandler, mouseover: function(){ cardZoom($root); }, click: cardHighlight, dblclick: function(){ cardSelect('mainboard'); } }"/>
+              <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(data,event){ mouseDownHandler('mainboard', event); }, mouseup: mouseUpHandler, mouseover: function(){ cardZoom($root); }, click: function(){ cardSelect('mainboard'); }, dblclick: function(){ cardSelect('mainboard'); } }"/>
             </div>
           </div>
         </div>

@@ -1,11 +1,24 @@
 /* General classes and styles */
 
 body {
+	
+}
+
+#background-wrap {
 	/*background-image:url('http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1920x1080_Wallpaper.jpg');*/
 	background-repeat:no-repeat;
 	background-attachment:fixed;
+	-webkit-background-attachment:fixed;
 	/*background-position:-50px -50px;*/
 	background-color:transparent !important;
+	
+	z-index: -1;
+	position: fixed;
+	    top: 0;
+	    left: 0;
+	    height: 100%;
+	    width: 100%;
+	    background-attachment: fixed;
 }
 
 textarea {
@@ -54,22 +67,22 @@ body.ns-resize-cursor {
 }
 
 .btn-group.btn {   border: 0;   padding: 0; }
-.btn-group.btn > .btn { border-radius: 0; }
+/*.btn-group.btn > .btn { border-radius: 0; }*/
 .btn-group.btn > .dropdown-menu {  text-align: left; }
-.btn-group.btn:first-child > .btn {
-  -webkit-border-radius: 4px 0 0 4px;
-     -moz-border-radius: 4px 0 0 4px;
-          border-radius: 4px 0 0 4px;
+/*.btn-joined-group:first-child > .btn {
+  -webkit-border-radius: 4px 0 0 4px;-moz-border-radius: 4px 0 0 4px;border-radius: 4px 0 0 4px;
 }
 
-.btn-group.btn:last-child > .btn {
-  -webkit-border-radius: 0 4px 4px 0;
-     -moz-border-radius: 0 4px 4px 0;
-          border-radius: 0 4px 4px 0;
-}
+.btn-joined-group:last-child > .btn {
+  -webkit-border-radius: 0 4px 4px 0;-moz-border-radius: 0 4px 4px 0;border-radius: 0 4px 4px 0;
+}/*
 
 input[readonly] {
 	cursor:auto;
+}
+
+.typeahead {
+	z-index:9999;
 }
 
 /* General classes and styles end */
@@ -228,64 +241,35 @@ input[readonly] {
 
 /* Splash */
 #splash {
-
-}
-
-#splash #screenshot-carousel {
-	overflow:hidden;
-	margin-bottom:0px;
-}
-
-#splash #screenshot-carousel .screenshot {
-	min-width:1200px;
+	display:block;
+	background-color:#fff;
 	width:100%;
-	position:relative;
-	top:0px;
+	height:auto;
+	margin-top:-30px;
 }
 
-#splash #tagline {
-	background-color: #fafafa;
-	background-image: -moz-linear-gradient(top, #fff, #bbb);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#bbb));
-	background-image: -webkit-linear-gradient(top, #fff, #bbb);
-	background-image: -o-linear-gradient(top, #fff, #bbb);
-	background-image: linear-gradient(to bottom, #fff, #bbb);
-	background-repeat: repeat-x;
-	
-	position:relative;
-	clear:both;
-	z-index:1028;
-	overflow:auto;
-	
-	-moz-border-radius: 20px;
-	border-radius: 20px;
-	
-	-webkit-box-shadow: 0px 5px 15px #111, inset 0px 1px 10px #fff;
-	-moz-box-shadow:    0px 5px 15px #111, inset 0px 1px 10px #fff;
-	box-shadow:         0px 5px 15px #111, inset 0px 1px 10px #fff;
-	
-	color:#444;
+#splash-content-container {
+	max-width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:50px;
+	padding-top:20px;
 	text-align:center;
-	font-size:48px;
-	font-weight:200;
-	line-height:52px;
-	text-shadow: -1px -1px 1px #000, 0px 1px 1px #999; /* Bevel text */
-	
-	border:1px solid #888;
 }
 
-#splash #launch-btn {
-	padding: 16px 24px;
-	font-size: 20px;
-	position:relative;
-	top:20px;
-}
-
-#splash #splash-footer {
-	height:300px;
-	background-color:#ccc;
+#splash #imac-wrapper {
 	width:100%;
-	border-top:1px solid #fff;
+}
+
+#splash #imac-screenshot-wrapper {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#splash .imac-screenshot {
+	width:100%;
+	height:100%;
+	display:none;
 }
 /* Splash End */
 
@@ -1829,17 +1813,8 @@ input[type="range"]{
 }
 /* End limited template styles */
 
-#authlightbox {
-	position:fixed;
-	top:0;
-	left:0;
-	z-index:5999;
-	height:100%;
-	width:100%;
-}
-
-#authlightbox-container {
-	display:block !important;
+#lightbox-container {
+	display:none;
 	position:fixed;
 	width:300px;
 	box-sizing:border-box;
@@ -1871,8 +1846,10 @@ input[type="range"]{
 }
 
 #lightbox-shadow {
-	display:block !important;
+	display:none;
 	position:fixed;
+
+	z-index: 3000;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -1882,8 +1859,6 @@ input[type="range"]{
 	-moz-opacity: 0.85;
 	-khtml-opacity: 0.85;
 	opacity: 0.85;
-	z-index: 5000;
-	display: none;
 }
 
 #lightbox-login-register-container {
@@ -1942,4 +1917,19 @@ input[type="range"]{
 
 #login-view-register-btn {
 	overflow:hidden;
+}
+
+#profile-settings-thumbnail {
+	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366305&type=card');
+	background-repeat:no-repeat;
+	width: -webkit-calc(100% - 2px);
+	width: -moz-calc(100% - 2px);
+	width: calc(100% - 2px);
+	height:188px;
+	/*background-color:#000;*/
+	margin-bottom:10px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border:1px solid #444;
 }
