@@ -64,7 +64,7 @@ var CardViewModel = function( cardData ) {
         ViewModel.mousedown = false;
     };
     
-    this.cardZoom = function( view ) {
+    this.cardZoom = function( view, selecting ) {
         
         var url = 'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid='
                 + this.multiverse
@@ -72,14 +72,17 @@ var CardViewModel = function( cardData ) {
         
         ViewModel.imgSrc( url );
 				
-        var element = $(event.target);
+				if (selecting === true){
+				
+	        var element = $(event.target);
         
-        if( ViewModel.cardselect != null ) {
-            ViewModel.cardselect.removeClass("select");
-        }
+	        if( ViewModel.cardselect != null ) {
+	            ViewModel.cardselect.removeClass("select");
+	        }
         
-        element.addClass("select");
-        ViewModel.cardselect = element;
+	        element.addClass("select");
+	        ViewModel.cardselect = element;
+				}
 				
 				
         
