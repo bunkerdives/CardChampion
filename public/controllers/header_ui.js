@@ -59,8 +59,9 @@ function navEvents(){
 function headerLayout(){
 	console.log('headerLayout function called.');
 	var windowWidth = $(window).width();
-	var foyerContW = $('#foyer-content-container').outerWidth();
-	var headerContainerW = foyerContW*0.95;
+	var tmpW = windowWidth * 0.95;
+	if (tmpW>1080) tmpW=1080;
+	var headerContainerW = tmpW*0.95;
 	$("#header-container").css("width", headerContainerW);
 	var headerLinksW = 0;
 	var headerLinksNum = 0;

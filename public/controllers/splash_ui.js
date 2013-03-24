@@ -68,7 +68,7 @@ $(document).ready( function() {
 		hidecursordelay : "100" 
 	});*/
 	
-	
+	$(document).off('touchstart.dropdown.data-api');
 	
 	//TYPEAHEAD
 	

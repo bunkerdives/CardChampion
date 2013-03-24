@@ -195,20 +195,17 @@
 					</div>
 					
 					<div id="main-slide-2" class="main-slide" data-bind="if: newEventVisible">
-		        <div id="sets">
-		          <table class="table">
+		        <div id="sets" style="display:none;">
+		          <!--<table class="table">
 		            <tbody data-bind="foreach: setQueues">
 		              <tr data-bind="click: selectSet">
 		                <td class="set-title set-td" data-bind="text: title"/>
 		                <td class="set-queue set-td" data-bind="text: size"/>
 		              </tr>
 								</tbody>
-		          </table>
+		          </table>-->
 		        </div><!--End #sets-->
-		        <div id="set-select">
-		          <button id="select-draft-button" class="btn btn-small">Draft</button>
-		          <button id="select-sealed-button" class="btn btn-small" data-bind="click: startSealed">Sealed</button>
-		        </div><!--End #set-select-->
+		          <button id="select-sealed-button" class="btn btn-large" style="margin-top:200px;" data-bind="click: startSealed">Start GTC Sealed</button>
 					</div><!--End #main-slide-2-->
 					
 					<div id="main-slide-3" class="main-slide" data-bind="if: joinDraftVisible">Join an open draft queue.

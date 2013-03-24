@@ -71,10 +71,23 @@ var CardViewModel = function( cardData ) {
                 + '&type=card';
         
         ViewModel.imgSrc( url );
+				
+        var element = $(event.target);
+        
+        if( ViewModel.cardselect != null ) {
+            ViewModel.cardselect.removeClass("select");
+        }
+        
+        element.addClass("select");
+        ViewModel.cardselect = element;
+				
+				
         
     };
     
     this.cardHighlight = function( data, event ) {
+			
+			
         
         var element = $(event.target);
         
@@ -88,6 +101,13 @@ var CardViewModel = function( cardData ) {
     };
     
     this.cardSelect = function( poolType ) {
+			
+			console.log('cardSelect')
+			
+			var element = $(event.target);
+			var selected = element.hasClass('select');
+			if (selected === true) {
+				console.log('already highlighted')
         
         var sideboard = ViewModel.sideboard()[0];
         var mainboard = ViewModel.mainboard()[0];
@@ -116,6 +136,8 @@ var CardViewModel = function( cardData ) {
         }
         
         ViewModel.fixPoolSize();
+				
+			}
         
     };
     

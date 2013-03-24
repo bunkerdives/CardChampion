@@ -173,13 +173,15 @@ function offsetDragHandlers() {
 function limitedInit() {
 	limitedLayout();
 	offsetDragHandlers();
-	$("#card-pool-scroll").niceScroll({ 
+	/*$("#card-pool-scroll").niceScroll({ 
 		hidecursordelay : "100"
-	});
-	$("#deck-area-scroll").niceScroll({ 
+		,cursorwidth : "10px"
+	});*/
+	/*$("#deck-area-scroll").niceScroll({ 
 		hidecursordelay : "100" 
-	});
+	});*/
 	$('.foyer-header').addClass('translucent-header');
+	headerLayout();
 }
 
 $(document).ready(function(){
@@ -188,6 +190,8 @@ $(document).ready(function(){
 		//do something
 	  e.stopPropagation();
 	});
+	
+	$('.card').on('touchStart', CardViewModel.cardSelect);
 });
 
 $(window).resize(function() {
