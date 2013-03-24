@@ -284,6 +284,12 @@ var SealedViewModel = function( set ) {
     };
     
     this.clearMainboard = function() {
+			
+	    this.mainboardSize(this.mainboardSize() - (this.mainboardSize()));
+    
+	    this.numMainboardCreatures(this.numMainboardCreatures() - (this.numMainboardCreatures()));
+	    this.numMainboardLands(this.numMainboardLands() - (this.numMainboardLands()));
+			
         
         var mainboard = ViewModel.mainboard()[0];
         var sideboard = ViewModel.sideboard()[0];
@@ -314,6 +320,12 @@ var SealedViewModel = function( set ) {
     };
     
     this.clearMainboardLands = function() {
+			
+			
+			this.mainboardSize(this.mainboardSize()-this.numMainboardLands());
+			this.numMainboardLands(this.numMainboardLands()-this.numMainboardLands());
+			
+			this.numMainboardLands(this.numMainboardLands() - (this.numMainboardLands()));
         
         var mainboard = ViewModel.mainboard()[0];
         var sideboard = ViewModel.sideboard()[0];
@@ -389,6 +401,8 @@ var SealedViewModel = function( set ) {
     };
     
     this.fixPoolSize = function() {
+			
+			console.log('fixPoolSize');
         
         // get number of columns and max column length (or # rows) in sideboard
         var sideboardNumCols = this.sideboard()[0].columns().length;

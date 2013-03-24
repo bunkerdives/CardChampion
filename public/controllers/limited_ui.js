@@ -92,6 +92,8 @@ var delta = 500;
 
 function cardSizeChange(slideAmount) {
 	
+	
+	
 	var standardH = 198.7; // standard card height
 	var standardW = 143; // standard card width
 	var newH = standardH * (slideAmount/100);
@@ -101,6 +103,8 @@ function cardSizeChange(slideAmount) {
 	ViewModel.cardH = newH;
 	ViewModel.cardW = newW;
 	ViewModel.cardMarginTop = marginTop;
+	
+	ViewModel.fixPoolSize();
 	
 	$(".card").each( function() { //Change background size of cards to 0; add class .cardResize
 		$(this).addClass('cardResize');
@@ -142,6 +146,8 @@ function cardSizeChangeEnd() {
 		});
 	}
 }
+
+
 
 
 function offsetDragHandlers() {
