@@ -4,6 +4,7 @@ var RegisterController = {
         
         var username = $("#register-nickname").val();
         var pass1 = $("#register-password").val();
+				console.log(pass1);
         var pass2 = $("#register-password-confirm").val();
         var email1 = $("#register-email").val();
         var email2 = $("#register-email-confirm").val();
@@ -21,12 +22,16 @@ var RegisterController = {
             return null;
         }
         
-        if( ! pass1.match(alphanumera) || !pass1.match(alphanumera) || spaceRegex.test(pass1) || pass1.length > 16  ){
+        if( ! pass1.match(alphanumera) || !pass1.match(alphanumera) /*|| spaceRegex.test(pass1)*/ || pass1.length > 16  ){
             console.log("Bad pass1!")
+						console.log("Conditional 1: " + ! pass1.match(alphanumera));
+						console.log("Conditional 2: " + !pass1.match(alphanumera));
+						console.log("Conditional 3: " + spaceRegex.test(pass1));
+						console.log("Conditional 4: " + pass1.length);
             return null;
         }
         
-        if( ! pass2.match(alphanumera) || !pass2.match(alphanumera) || spaceRegex.test(pass2) || pass2.length > 16  ){
+        if( ! pass2.match(alphanumera) || !pass2.match(alphanumera) /*|| spaceRegex.test(pass2)*/ || pass2.length > 16  ){
             console.log("Bad pass2")
             return null;
         }
@@ -52,7 +57,9 @@ var RegisterController = {
             , function( data ) {
                 console.log("RegisterController data = " + data)
                 if( data != 'Error' ) {
-                    LightboxController.closeAuthLightbox();
+                    //LightboxController.closeAuthLightbox();
+										$('#lightbox-login-register-container').toggle();
+										$('#profile-settings-form').toggle();
                     $("#header-link-5").attr( "href", "/" + data );
                     $("#header-link-5").css( 'display', 'block' );
                     ViewModel.socketController.socketioHandshake();
