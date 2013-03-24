@@ -9,7 +9,8 @@ var RegisterController = {
         var email2 = $("#register-email-confirm").val();
         
         var alphanumera = new RegExp('[0-9a-zA-Z]');
-        var spaceRegex = /s/g;
+        var spaceRegex = /\s/g;
+        
         
         if( !username.match(alphanumera) || spaceRegex.test(username) || username.length > 13 ){
             console.log("Bad username!")

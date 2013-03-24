@@ -16,7 +16,9 @@ var LayoutController = function( template, options ) {
         case 'Foyer':
             context = new FoyerViewModel( options.subview );
             context.profileData = options.profile;
+            context.deckData = options.deckData;
             context.subview = options.subview;
+            console.log( "Foyer Layout COntroller, subView = " + options.subview );
             break;
         default:
             window.location.replace('/'); // TODO make a 404 page
@@ -41,6 +43,8 @@ var LayoutController = function( template, options ) {
         ViewModel.socketController.socketioHandshake();
         LightboxController.closeAuthLightbox();
     }
+    
+    console.log("end LayoutController")
     
 };
 

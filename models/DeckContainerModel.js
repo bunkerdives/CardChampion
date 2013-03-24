@@ -5,7 +5,9 @@ var DeckContainerModel = function( deckData ) {
   this.thumb = deckData.thumb;
   this.user = deckData.user;
   this.uuid = deckData.uuid;
-  this.format = deckData.format;  
+  this.format = deckData.format;
+  this.date = deckData.date;
+  
   this.colors = {
       white : deckData.white
       , blue : deckData.blue

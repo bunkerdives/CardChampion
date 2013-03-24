@@ -112,14 +112,66 @@ app.get( '/sealed', function(req, res) {
     
 } );
 
+app.get( '/decklist', function(req, res) {
+    
+    
+    console.log("deckName callback begin")
+    
+    var username = req.query.user;
+    var auth = Auth.authOrGuest( req );
+    var user = Auth.getUsernameOrNull( req );
+    
+    // get the deck object
+    var deckCardData = Auth.newDeckList();
+    
+    // get the profile object
+    mongoose.model( 'Profile', ProfileSchema, 'Profiles' );
+    var ProfileModel = database.model('Profile');
+    ProfileModel.findOne( { user : username }, function(err, doc) {
+        
+        // route the client to the profile page of the given user
+        
+        res.render( 'layout.jade', {
+            templateName : JSON.stringify('Foyer')
+            , options : JSON.stringify( {
+                'subview' : 'DeckList'
+                , 'authOrGuest' : auth
+                , 'username' : user
+                , 'user' : username
+                , 'profile' : doc
+                , 'deckData' : deckCardData
+            } )
+        } );
+        
+        console.log("FOUND ONE!!!!!!!!")
+        
+        
+    } );
+    
+} );
 
-app.get( '/:username', function(req, res){
+
+app.get( '/:username', function(req, res, next){
+    
+    if( req.params.username == 'decks' ){
+        return;
+    }
+    
+    if( req.params.deckId ) {
+        console.log("Invalid /:username !");
+        next();
+    }
     
     var username = req.params.username;
     switch( username ) {
         case 'null':
             return;
     }
+    
+    console.log('\n\n/:username\n\n');
+    console.log(req.params.username)
+    
+    var deckCardData = Auth.newDeckList();
     
     var auth = Auth.authOrGuest( req );
     var user = Auth.getUsernameOrNull( req );
@@ -144,6 +196,10 @@ app.get( '/:username', function(req, res){
     } );
     
 } );
+
+
+
+
 
 
 app.post( '/register', Auth.register );

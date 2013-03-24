@@ -24,7 +24,17 @@ var FoyerViewModel = function( data ) {
     this.profileDateJoined = ko.observable();
     this.profileDescription = ko.observable();
     
-    this.profileDecks = ko.observableArray( [] );
+    this.profileDeckPreviews = ko.observableArray( [] );
+    
+    this.deckData;
+    this.deckListTitle = ko.observable();
+    this.deckListWhite = ko.observable();
+    this.deckListBlue = ko.observable();
+    this.deckListBlack = ko.observable();
+    this.deckListRed = ko.observable();
+    this.deckListGreen = ko.observable();
+    this.deckListDesc = ko.observable();
+    
     
     
     this.populateSubViewData = function() {
@@ -32,7 +42,23 @@ var FoyerViewModel = function( data ) {
         switch( this.subview ) {
             case 'Profile' :
                 this.populateProfileViewData();
+                this.populateDeckPreviewModels();
                 this.profileDecksVisible( true );
+                jQuery(document).ready( function(){
+                    profileLayout();
+                });
+                break;
+            case 'DeckList' :
+                console.log("populateSubViewData DeckList")
+                this.populateProfileViewData();
+                this.populateDeckListViewModel();
+                this.profileDeckListVisible( true );
+                console.log("profileDeckListVisible = " + this.profileDeckListVisible() )
+                console.log("decksVisible = " + this.decksVisible() );
+                jQuery(document).ready( function(){
+                    profileLayout();
+                });
+                break;
         }
         
     };
@@ -48,12 +74,34 @@ var FoyerViewModel = function( data ) {
         this.profileLocation( profile.location );
         this.profileDateJoined( profile.joined );
         
+        console.log("populateProfileViewData profileUsername = " + this.profileUsername())
+        
+    };
+    
+    this.populateDeckPreviewModels = function() {
+        
+        console.log("populateDeckPreviewModels")
+        
+        var profile = this.profileData;
+        
         $.each( profile.decks, function(index, deck) {
             var deckPreviewViewModel = new DeckPreviewViewModel( deck );
-            ViewModel.profileDecks.push( deckPreviewViewModel );
-            console.log("populateProfileViewData, deck = ")
-            console.log(ViewModel.profileDecks()[0].title() )
+            ViewModel.profileDeckPreviews.push( deckPreviewViewModel );
+            console.log("populateProfileViewData, deck = " + deck )
+            console.log(ViewModel.profileDeckPreviews()[0].title() )
         } );
+        
+    };
+    
+    this.populateDeckListViewModel = function() {
+        
+        
+        
+    }
+    
+    , this.populateDeckListViewData = function() {
+      
+        var deckData = this.deckData;
         
     };
     
@@ -66,8 +114,13 @@ var FoyerViewModel = function( data ) {
     
     this.showSubView = function() {
         
+        console.log("showSubView subview = " + this.subview)
+        
         switch( this.subview ) {
             case 'Profile' :
+                this.profileVisible(true);
+                break;
+            case 'DeckList' :
                 this.profileVisible(true);
                 break;
             case 'About' :
@@ -313,8 +366,7 @@ ko.utils.extend( FoyerViewModel.prototype, {
     
     init: function() {
         
-        ViewModel.showSubView();
-        ViewModel.populateSubViewData();
+        console.log("FoyerViewModel init")
         
 	    foyerInit();
 		headerLayout();
@@ -323,6 +375,12 @@ ko.utils.extend( FoyerViewModel.prototype, {
         ViewModel.setAnimatedBanner();
         
         ChatController.bindEnterKeyForChat();
+        
+        console.log("after bindEnterKeyFOrChat in FoyerViewModel")
+        ViewModel.showSubView();
+        ViewModel.populateSubViewData();
+        console.log("end FoyerViewModel init")
+        
         
     }
     

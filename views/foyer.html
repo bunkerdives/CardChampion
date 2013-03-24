@@ -274,49 +274,58 @@
 											<div id="profile-description" data-bind="text: profileDescription">This is a description. Lorem ipsum, etc., awiodbawjklbflkawnfl. asdfghjkl;asdfghjkl; asdfghjkl;</div>
 										</div>
 									</div>
+                  
+                  
 									<div id="profile-right-col" class="pull-right">
 										<div id="profile-content-wrapper">
 											<div id="profile-content">
+                        
                         <!-- Start profile with Decklist -->
-												<div id="profile-deck-previews" data-bind="if: profileDecksVisible">
-													<!-- Deck preview -->
-													<div class="deck-preview clearfix">
-														<div class="deck-preview-left pull-left clearfix">
-															<div class="deck-preview-img pull-left">
-																<img src="../static/img/neutral-density.png"/>
-															</div>
-															<div class="deck-preview-mana pull-right">
-																<div id="deck-preview-white" class="deck-preview-color"/>
-																<div id="deck-preview-blue" class="deck-preview-color"/>
-																<div id="deck-preview-black" class="deck-preview-color"/>
-																<div id="deck-preview-red" class="deck-preview-color"/>
-																<div id="deck-preview-green" class="deck-preview-color"/>
-															</div>
-														</div>
-														<div class="deck-preview-right pull-right clearfix">
-															<div class="deck-preview-info pull-left">
-																<div class="deck-preview-title">Boros Aggro</div>
-																<div class="deck-preview-format">GTC Sealed</div>
-															</div>
-															<div class="deck-preview-btns pull-right">
-																<div>
-																	<button id="deck-preview-view-btn" class="btn btn-primary"><i class="icon-white icon-eye-open"></i></button>
-																</div>
-																<div>
-																	<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
-																</div>
-																<div>
-																	<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
-																</div>
-															</div>
-														</div>
-													</div><!-- End deck preview -->
-												</div><!-- End profile with Decklist -->
+                        <div id="profile-deck-previews" data-bind="if: profileDecksVisible">
+                          <div data-bind="foreach: profileDeckPreviews">
+                            <div class="deck-preview clearfix">
+  														<div class="deck-preview-left pull-left clearfix">
+  															<div class="deck-preview-img pull-left" data-bind="attr: {src: thumb}">
+  																<img src="../static/img/neutral-density.png"/>
+  															</div>
+  															<div class="deck-preview-mana pull-right">
+  																<div id="deck-preview-white" class="deck-preview-color" data-bind="if: white"/>
+  																<div id="deck-preview-blue" class="deck-preview-color" data-bind="if: blue"/>
+  																<div id="deck-preview-black" class="deck-preview-color" data-bind="if: black"/>
+  																<div id="deck-preview-red" class="deck-preview-color" data-bind="if: red"/>
+  																<div id="deck-preview-green" class="deck-preview-color" data-bind="if: green"/>
+  															</div>
+  														</div>
+  														<div class="deck-preview-right pull-right clearfix">
+  															<div class="deck-preview-info pull-left">
+  																<div class="deck-preview-title" data-bind="text: title">
+                                    <a href="/decklist?user=IcY&deck=NayaAggro">
+  																</div>
+  																<div class="deck-preview-format" data-bind="text: format"></div>
+  															</div>
+  															<div class="deck-preview-btns pull-right">
+  																<div>
+  																	<button id="deck-preview-view-btn" class="btn btn-primary"><i class="icon-white icon-eye-open"></i></button>
+  																</div>
+  																<div>
+  																	<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
+  																</div>
+  																<div>
+  																	<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
+  																</div>
+  															</div>
+  														</div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        
+                        
 												<div id="deck-view" style="clearfix" data-bind="if: profileDeckListVisible">
 													<div id="deck-view-title" class="clearfix">
 														<div id="deck-view-thumbnail" class="pull-left"/>
 														<div id="deck-view-title-right" class="pull-right">
-															<span style="text-align:right;" class="pull-right">Naya Humans Beatdown</span><br/>
+															<span style="text-align:right;" class="pull-right">Naya Humans</span><br/>
 															<div id="deck-view-mana" class="clearfix">
 																<span id="deck-preview-white" class="deck-preview-color"></span>
 																<span id="deck-preview-blue" class="deck-preview-color"></span>
@@ -379,6 +388,10 @@
 											  		<input type="text" readonly/>
 													</div>
 												</div>
+                        
+                        
+												
+                        
 												<div id="profile-buddy-list" style="display:none;">
 												</div>
 											</div>
