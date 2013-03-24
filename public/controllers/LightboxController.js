@@ -165,6 +165,6 @@ $(document).ready(function(){
 	
 	cardToThumbnail('260','#profile-settings-thumbnail');
 	
-	$('#profile-settings-image-input input').tooltip();
+	$('#profile-settings-image-input').tooltip();
 	
 });
