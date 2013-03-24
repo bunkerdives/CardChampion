@@ -72,6 +72,10 @@ input[readonly] {
 	cursor:auto;
 }
 
+.typeahead {
+	z-index:9999;
+}
+
 /* General classes and styles end */
 
 
@@ -194,14 +198,14 @@ input[readonly] {
 }
 
 .down-arrow {
-	background-image: url('/static/img/downArrow.png');
+	background-image: url('/img/downArrow.png');
 	background-repeat: no-repeat;
 	background-position: center right;
 	padding: 0 9px 0 0;
 }
 
 .down-arrow-white {
-	background-image: url('/static/img/down-arrow-white.png');
+	background-image: url('/img/down-arrow-white.png');
 	background-repeat: no-repeat;
 	background-position: center right;
 	padding: 0 9px 0 0;
@@ -228,64 +232,35 @@ input[readonly] {
 
 /* Splash */
 #splash {
-
-}
-
-#splash #screenshot-carousel {
-	overflow:hidden;
-	margin-bottom:0px;
-}
-
-#splash #screenshot-carousel .screenshot {
-	min-width:1200px;
+	display:block;
+	background-color:#fff;
 	width:100%;
-	position:relative;
-	top:0px;
+	height:auto;
+	margin-top:-30px;
 }
 
-#splash #tagline {
-	background-color: #fafafa;
-	background-image: -moz-linear-gradient(top, #fff, #bbb);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#bbb));
-	background-image: -webkit-linear-gradient(top, #fff, #bbb);
-	background-image: -o-linear-gradient(top, #fff, #bbb);
-	background-image: linear-gradient(to bottom, #fff, #bbb);
-	background-repeat: repeat-x;
-	
-	position:relative;
-	clear:both;
-	z-index:1028;
-	overflow:auto;
-	
-	-moz-border-radius: 20px;
-	border-radius: 20px;
-	
-	-webkit-box-shadow: 0px 5px 15px #111, inset 0px 1px 10px #fff;
-	-moz-box-shadow:    0px 5px 15px #111, inset 0px 1px 10px #fff;
-	box-shadow:         0px 5px 15px #111, inset 0px 1px 10px #fff;
-	
-	color:#444;
+#splash-content-container {
+	max-width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:50px;
+	padding-top:20px;
 	text-align:center;
-	font-size:48px;
-	font-weight:200;
-	line-height:52px;
-	text-shadow: -1px -1px 1px #000, 0px 1px 1px #999; /* Bevel text */
-	
-	border:1px solid #888;
 }
 
-#splash #launch-btn {
-	padding: 16px 24px;
-	font-size: 20px;
-	position:relative;
-	top:20px;
-}
-
-#splash #splash-footer {
-	height:300px;
-	background-color:#ccc;
+#splash #imac-wrapper {
 	width:100%;
-	border-top:1px solid #fff;
+}
+
+#splash #imac-screenshot-wrapper {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#splash .imac-screenshot {
+	width:100%;
+	height:100%;
+	display:none;
 }
 /* Splash End */
 
@@ -312,7 +287,7 @@ input[readonly] {
 	margin-top:-1px;
 	
 	background-color:transparent;
-	background-image:url('/static/img/transparent-foyer-bg.png');
+	background-image:url('/img/transparent-foyer-bg.png');
 	background-repeat:repeat;
 	
 	-moz-border-bottom-left-radius:10px;
@@ -775,23 +750,23 @@ input[readonly] {
 }
 
 #foyer #deck-preview-white {
-	background-image:url('/static/img/white-mana.jpg');
+	background-image:url('../img/white-mana.jpg');
 }
 
 #foyer #deck-preview-blue {
-	background-image:url('/static/img/blue-mana.jpg');
+	background-image:url('../img/blue-mana.jpg');
 }
 
 #foyer #deck-preview-black {
-	background-image:url('/static/img/black-mana.jpg');
+	background-image:url('../img/black-mana.jpg');
 }
 
 #foyer #deck-preview-red {
-	background-image:url('/static/img/red-mana.jpg');
+	background-image:url('../img/red-mana.jpg');
 }
 
 #foyer #deck-preview-green {
-	background-image:url('/static/img/green-mana.jpg');
+	background-image:url('../img/green-mana.jpg');
 }
 
 #foyer .deck-preview-right {
@@ -1266,7 +1241,7 @@ input[readonly] {
 /* Draft View Divs and Classes */
 #draft {
 	width:100%;
-	background-image:url('/static/img/retina_wood.png');
+	background-image:url('/img/retina_wood.png');
 	background-repeat: repeat;
 }
 
@@ -1293,7 +1268,7 @@ input[readonly] {
 	width:100%;
 	height:auto;
 	position:fixed;
-	background-image:url('/static/img/retina_wood.png');
+	background-image:url('/img/retina_wood.png');
 	background-repeat: repeat;
 	padding-top:5px;
 }
@@ -1303,7 +1278,7 @@ input[readonly] {
 }
 
 #draft #pack-screen #preview {
-	background-image:url('/static/img/cardback.jpg');
+	background-image:url('/img/cardback.jpg');
 	background-repeat: no-repeat;
 	-moz-border-radius: 5.5%;
 	-webkit-border-radius: 5.5%;
@@ -1374,7 +1349,7 @@ input[readonly] {
  		font-size:28px;
  		padding-right:3px;
  		padding-top:5px;
- 		background-image:url('/static/img/gtc_symbol.png');
+ 		background-image:url('/img/gtc_symbol.png');
  		background-repeat:no-repeat;
  		background-size:60px 36px;
  		color:#fff;
@@ -1808,7 +1783,7 @@ input[type="range"]{
 	position:relative;
 	/* z-index:-1; */
 		
-	background-image:url('/static/img/cardback.jpg');
+	background-image:url('/img/cardback.jpg');
 }
 
 #drag-drop-card {
@@ -1829,17 +1804,8 @@ input[type="range"]{
 }
 /* End limited template styles */
 
-#authlightbox {
-	position:fixed;
-	top:0;
-	left:0;
-	z-index:5999;
-	height:100%;
-	width:100%;
-}
-
-#authlightbox-container {
-	display:block !important;
+#lightbox-container {
+	display:none;
 	position:fixed;
 	width:300px;
 	box-sizing:border-box;
@@ -1871,8 +1837,10 @@ input[type="range"]{
 }
 
 #lightbox-shadow {
-	display:block !important;
+	display:none;
 	position:fixed;
+
+	z-index: 3000;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -1882,8 +1850,6 @@ input[type="range"]{
 	-moz-opacity: 0.85;
 	-khtml-opacity: 0.85;
 	opacity: 0.85;
-	z-index: 5000;
-	display: none;
 }
 
 #lightbox-login-register-container {
@@ -1942,4 +1908,19 @@ input[type="range"]{
 
 #login-view-register-btn {
 	overflow:hidden;
+}
+
+#profile-settings-thumbnail {
+	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366305&type=card');
+	background-repeat:no-repeat;
+	width: -webkit-calc(100% - 2px);
+	width: -moz-calc(100% - 2px);
+	width: calc(100% - 2px);
+	height:188px;
+	/*background-color:#000;*/
+	margin-bottom:10px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border:1px solid #444;
 }

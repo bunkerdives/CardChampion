@@ -4,7 +4,7 @@ var LightboxController = {
 			//console.log('positionAuthLightbox function called.')
 			var lightboxW = 350;
 			var lightboxLeft = ($(window).width()/2)-(lightboxW/2);
-			$('#authlightbox-container').css('left', lightboxLeft);
+			$('#lightbox-container').css('left', lightboxLeft);
 	  }
 		
 		, showRegisterForm : function() {
@@ -88,13 +88,15 @@ var LightboxController = {
     
     // display the lightbox
     , showAuthLightbox : function( content ) {
+			
+			console.log('showAuthLightbox');
     	
     	// display the lightbox
-			$('#lightbox-shadow').show();
-    	$('#authlightbox-container').show();
+			$('#lightbox-shadow').css('display','block');
+    	$('#lightbox-container').css('display','block');
         
       jQuery(document).ready(function ($) {
-      	$("#authlightbox").css('display','block');
+      	$("#lightboxcontainer").css('display','block');
 				LightboxController.positionAuthLightbox();
 				$(window).resize(function(){
 					LightboxController.positionAuthLightbox();
@@ -135,7 +137,8 @@ var LightboxController = {
     , closeAuthLightbox : function() {
 				
         jQuery(document).ready(function ($) {
-            $("#authlightbox").css('display','none');
+            $("#lightbox-container").css('display','none');
+						$("#lightbox-shadow").css('display', 'none');
         } );
 				
     }
@@ -159,5 +162,9 @@ $(document).ready(function(){
 	    	});
 	    });
 	});
+	
+	cardToThumbnail('260','#profile-settings-thumbnail');
+	
+	$('#profile-settings-image-input input').tooltip();
 	
 });
