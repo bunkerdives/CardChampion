@@ -20,7 +20,7 @@ function bgStretch( src, oW, oH, iW, iH, l, t ) {
 	var newL = -(imgLeft * (newW / imgOuterW));
 	var newT = -(imgTop * (newH / imgOuterH));
 	
-	$('body').css( {
+	$('#background-wrap').css( {
 		"background-image": "url('" + imgSrc +"')",
 		"background-size": newW + "px " + newH + "px",
 		"background-position": newL + "px " + newT + "px"

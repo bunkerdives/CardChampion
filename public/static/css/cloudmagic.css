@@ -1,11 +1,24 @@
 /* General classes and styles */
 
 body {
+	
+}
+
+#background-wrap {
 	/*background-image:url('http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1920x1080_Wallpaper.jpg');*/
 	background-repeat:no-repeat;
 	background-attachment:fixed;
+	-webkit-background-attachment:fixed;
 	/*background-position:-50px -50px;*/
 	background-color:transparent !important;
+	
+	z-index: -1;
+	position: fixed;
+	    top: 0;
+	    left: 0;
+	    height: 100%;
+	    width: 100%;
+	    background-attachment: fixed;
 }
 
 textarea {
@@ -198,14 +211,14 @@ input[readonly] {
 }
 
 .down-arrow {
-	background-image: url('/img/downArrow.png');
+	background-image: url('/static/img/downArrow.png');
 	background-repeat: no-repeat;
 	background-position: center right;
 	padding: 0 9px 0 0;
 }
 
 .down-arrow-white {
-	background-image: url('/img/down-arrow-white.png');
+	background-image: url('/static/img/down-arrow-white.png');
 	background-repeat: no-repeat;
 	background-position: center right;
 	padding: 0 9px 0 0;
@@ -287,7 +300,7 @@ input[readonly] {
 	margin-top:-1px;
 	
 	background-color:transparent;
-	background-image:url('/img/transparent-foyer-bg.png');
+	background-image:url('/static/img/transparent-foyer-bg.png');
 	background-repeat:repeat;
 	
 	-moz-border-bottom-left-radius:10px;
@@ -750,23 +763,23 @@ input[readonly] {
 }
 
 #foyer #deck-preview-white {
-	background-image:url('../img/white-mana.jpg');
+	background-image:url('../static/img/white-mana.jpg');
 }
 
 #foyer #deck-preview-blue {
-	background-image:url('../img/blue-mana.jpg');
+	background-image:url('../static/img/blue-mana.jpg');
 }
 
 #foyer #deck-preview-black {
-	background-image:url('../img/black-mana.jpg');
+	background-image:url('../static/img/black-mana.jpg');
 }
 
 #foyer #deck-preview-red {
-	background-image:url('../img/red-mana.jpg');
+	background-image:url('../static/img/red-mana.jpg');
 }
 
 #foyer #deck-preview-green {
-	background-image:url('../img/green-mana.jpg');
+	background-image:url('../static/img/green-mana.jpg');
 }
 
 #foyer .deck-preview-right {
@@ -1241,7 +1254,7 @@ input[readonly] {
 /* Draft View Divs and Classes */
 #draft {
 	width:100%;
-	background-image:url('/img/retina_wood.png');
+	background-image:url('/static/img/retina_wood.png');
 	background-repeat: repeat;
 }
 
@@ -1268,7 +1281,7 @@ input[readonly] {
 	width:100%;
 	height:auto;
 	position:fixed;
-	background-image:url('/img/retina_wood.png');
+	background-image:url('/static/img/retina_wood.png');
 	background-repeat: repeat;
 	padding-top:5px;
 }
@@ -1278,7 +1291,7 @@ input[readonly] {
 }
 
 #draft #pack-screen #preview {
-	background-image:url('/img/cardback.jpg');
+	background-image:url('/static/img/cardback.jpg');
 	background-repeat: no-repeat;
 	-moz-border-radius: 5.5%;
 	-webkit-border-radius: 5.5%;
@@ -1349,7 +1362,7 @@ input[readonly] {
  		font-size:28px;
  		padding-right:3px;
  		padding-top:5px;
- 		background-image:url('/img/gtc_symbol.png');
+ 		background-image:url('/static/img/gtc_symbol.png');
  		background-repeat:no-repeat;
  		background-size:60px 36px;
  		color:#fff;
@@ -1783,7 +1796,7 @@ input[type="range"]{
 	position:relative;
 	/* z-index:-1; */
 		
-	background-image:url('/img/cardback.jpg');
+	background-image:url('/static/img/cardback.jpg');
 }
 
 #drag-drop-card {
