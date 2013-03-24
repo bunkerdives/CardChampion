@@ -1,4 +1,4 @@
-function mainSlide(str,arr){
+/*function mainSlide(str,arr){
 	//console.log('mainSlide function called. arg1=' + str + ' arg2=' + arr);
 	navEvents();//Turn on all link click handlers
 	var linkName = "#header-link-" + str;//Most recently fired link click handler
@@ -54,7 +54,7 @@ function navEvents(){
 			navClick(p);//
 		});
 	});
-}
+}*/
 
 function headerLayout(){
 	console.log('headerLayout function called.');
@@ -84,7 +84,6 @@ function headerInit(){
     console.log("headerInit")
 	headerLayout();
 	//navEvents();
-	$('#header-link-1').off();//#main-pane-1 is shown on init, ergo turn off click handler for its link
 }
 
 $(window).resize(function() {

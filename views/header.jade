@@ -2,14 +2,13 @@
   #header-container
     a#logo.pull-left
       img(src="/static/img/logo.png")
-    #header-links
+    #header-links.clearfix
       span.header-link-spacer
-      a#header-link-1.header-link(href="/decks") Decks
+      a.header-link(href="/decks") Decks
       span.header-link-spacer
-      a#header-link-2.header-link(href="/newevent") Sealed
+      a.header-link(href="/decks") Deck Builder
       span.header-link-spacer
-      a#header-link-3.header-link(href="/draft") Draft
+      a.header-link(href="/newevent") Sealed
       span.header-link-spacer
-      a#header-link-4.header-link.down-arrow(href="/about") About
-      span.header-link-spacer
-      a#header-link-5.header-link Profile
+      a.header-link.btn.btn-mini.btn-primary.pull-right(href="#")
+        i.icon-user.icon-white
