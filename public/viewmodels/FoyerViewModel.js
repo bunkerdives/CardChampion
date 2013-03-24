@@ -74,6 +74,8 @@ var FoyerViewModel = function( data ) {
         this.profileLocation( profile.location );
         this.profileDateJoined( profile.joined );
         
+        $("#profile-header-button").attr("href", '/' + profile.user );
+        
         console.log("populateProfileViewData profileUsername = " + this.profileUsername())
         
     };
@@ -136,6 +138,11 @@ var FoyerViewModel = function( data ) {
                 this.decksVisible(true);
                 break;
         }
+        
+
+        jQuery(document).ready( function(){
+            profileLayout();
+        });
         
     };
     

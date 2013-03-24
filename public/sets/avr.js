@@ -882,6 +882,8 @@ AVR = {
                     , 'type' : 'Land'
                     , 'pt' : ''
                 }
+                
+                
             
                 , '193' : {
                     'name' : 'Soul of the Harvest'
@@ -2059,8 +2061,19 @@ AVR = {
                     , 'type' : 'Creature  — Spirit'
                     , 'pt' : '(5/5)'
                 }
-            
+                
                 , '79' : {
+                    'name' : 'Tamiyo, the Moon Sage'
+                    , 'rarity' : 'M'
+                    , 'color' : 'U'
+                    , 'cost' : '3UU'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '240070'
+                    , 'type' : 'Planeswalker  — Tamiyo'
+                    , 'pt' : ''
+                }
+            
+                , '80' : {
                     'name' : 'Tandem Lookout'
                     , 'rarity' : 'U'
                     , 'color' : 'U'
