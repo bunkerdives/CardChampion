@@ -81,7 +81,8 @@ Auth = {
         // create a pretend deck
         var deckContainer = new DeckContainerModel( {
             title : 'Naya Aggro'
-            , thumb : 'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366467&type=card'
+            , thumb : "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366467&type=card"
+						,	_thumb : "url(http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366467&type=card)"
             , deckUrl : '/decklists?user=' + user + '&deck=NayaAggro'
             , user : user
             , uuid : '12345678'
@@ -96,7 +97,8 @@ Auth = {
         
         var deckContainer1 = new DeckContainerModel( {
             title : 'Jund'
-            , thumb : 'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262847&type=card'
+            , thumb : "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262847&type=card"
+						, _thumb : "url(http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262847&type=card)"
             , deckUrl : '/decklists?user=' + user + '&deck=Jund'
             , user : user
             , uuid : '123456789'

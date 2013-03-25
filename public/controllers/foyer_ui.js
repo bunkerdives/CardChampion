@@ -177,6 +177,10 @@ function foyerInit(){
 	$('.foyer-header').removeClass('translucent-header');
 }
 
+$(document).ready(function($){
+	cardToThumbnail(50,'.deck-preview-img');
+});
+
 $(window).resize(function(){
 	/*var foyerExists = $("#foyer").length;
 	if (foyerExists==1) {

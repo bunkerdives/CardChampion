@@ -15,6 +15,13 @@ var FoyerViewModel = function( data ) {
     this.profileDeckListVisible = ko.observable( false );
     
     this.subview;
+		
+		this.deckPreviewThumb = ko.observable();
+		
+		this.thumb = ko.observable();
+		
+		//this.deckPreviewThumb = ko.observable("url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366467&type=card')");
+		//this.jundThumb = ko.observable("url(http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262847&type=card)");
     
     this.profileData;
     this.profileUsername = ko.observable();
@@ -47,7 +54,7 @@ var FoyerViewModel = function( data ) {
                 this.populateProfileViewData();
                 this.populateDeckPreviewModels();
                 this.profileDecksVisible( true );
-                this.profileDeckUrl( this.profileData.deckUrl );
+                //this.profileDeckUrl( this.profileData.deckUrl );
                 jQuery(document).ready( function($){
                     profileLayout();
                 });
@@ -71,11 +78,17 @@ var FoyerViewModel = function( data ) {
     this.setDeckList = function() {
         
         var deckName = this.deckName;
-        
+        console.log("setDeckList " + deckName)
         if( deckName == 'NayaAggro' ){
-            this.nayaVisible(true);
+            //this.nayaVisible(true);
+						$('#naya-deck-view').css('display', 'block');
+						$('#jund-deck-view').css('display', 'none');
+						this.deckPreviewThumb( "url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366467&type=card')" );
         } else if( deckName == 'Jund' ) {
-            this.jundVisible(true);
+            //this.jundVisible(true);
+						$('#jund-deck-view').css('display', 'block');
+						$('#naya-deck-view').css('display', 'none');
+						this.deckPreviewThumb( "url(http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262847&type=card)" );
         }
     }
     
@@ -105,8 +118,9 @@ var FoyerViewModel = function( data ) {
         $.each( profile.decks, function(index, deck) {
             var deckPreviewViewModel = new DeckPreviewViewModel( deck );
             ViewModel.profileDeckPreviews.push( deckPreviewViewModel );
-            console.log("populateProfileViewData, deck = " + deck )
-            console.log(ViewModel.profileDeckPreviews()[0].title() )
+            console.log( "populateProfileViewData, deck = " + deck )
+            console.log( ViewModel.profileDeckPreviews()[0].title() )
+						
         } );
         
     };
@@ -403,9 +417,9 @@ ko.utils.extend( FoyerViewModel.prototype, {
         ViewModel.populateSubViewData();
         console.log("end FoyerViewModel init")
         
-        
         jQuery(document).ready( function($){
             profileLayout();
+						ViewModel.setDeckList();
         });
         
         profileLayout();
