@@ -1,6 +1,8 @@
 var RegisterController = {
     
     sendRegisterRequest : function() {
+		
+		LoadingWheelController.start('darker');
         
         var username = $("#register-nickname").val();
         var pass1 = $("#register-password").val();
@@ -58,6 +60,7 @@ var RegisterController = {
             , function( data ) {
                 console.log("RegisterController data = " + data)
                 if( data != 'Error' ) {
+					LoadingWheelController.stop();
                     //LightboxController.closeAuthLightbox();
 										$('#lightbox-login-register-container').toggle();
 										$('#profile-settings-form').toggle();
@@ -65,6 +68,7 @@ var RegisterController = {
                     $("#header-link-5").css( 'display', 'block' );
                     ViewModel.socketController.socketioHandshake();
                 } else { // TODO display an error message here
+					LoadingWheelController.stop();
                     console.log("Error logging in: " + data);
                 }
             }
