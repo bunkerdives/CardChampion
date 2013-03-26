@@ -16,14 +16,11 @@ var FoyerViewModel = function( data ) {
     
     this.subview;
 		
-		this.deckPreviewThumb = ko.observable();
+	this.deckPreviewThumb = ko.observable();
 		
-		this.thumb = ko.observable();
-		
-		//this.deckPreviewThumb = ko.observable("url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366467&type=card')");
-		//this.jundThumb = ko.observable("url(http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262847&type=card)");
+	this.thumb = ko.observable();
     
-    this.profileData;
+	this.profileData;
     this.profileUsername = ko.observable();
     this.profileThumbSrc = ko.observable();
     this.profileFullName = ko.observable();
@@ -31,20 +28,13 @@ var FoyerViewModel = function( data ) {
     this.profileDateJoined = ko.observable();
     this.profileDescription = ko.observable();
     
+    this.profileGeneralViewModel = ko.observable( [] );
+    
+    
+    
+    
     this.profileDeckPreviews = ko.observableArray( [] );
-    
-    this.deckData;
     this.deckName;
-    this.deckListTitle = ko.observable();
-    this.deckListUrl = ko.observable();
-    this.deckListBlue = ko.observable();
-    this.deckListBlack = ko.observable();
-    this.deckListRed = ko.observable();
-    this.deckListGreen = ko.observable();
-    this.deckListDesc = ko.observable();
-    
-    this.nayaVisible = ko.observable(false);
-    this.jundVisible = ko.observable(false);
     
     
     this.populateSubViewData = function() {
@@ -54,43 +44,15 @@ var FoyerViewModel = function( data ) {
                 this.populateProfileViewData();
                 this.populateDeckPreviewModels();
                 this.profileDecksVisible( true );
-                //this.profileDeckUrl( this.profileData.deckUrl );
-                jQuery(document).ready( function($){
-                    profileLayout();
-                });
                 break;
             case 'DeckList' :
-                console.log("populateSubViewData DeckList")
                 this.populateProfileViewData();
-                this.populateDeckListViewModel();
+                this.populateDeckListViewData();
                 this.profileDeckListVisible( true );
-                this.nayaVisible( true );
-                console.log("profileDeckListVisible = " + this.profileDeckListVisible() )
-                console.log("decksVisible = " + this.decksVisible() );
-                jQuery(document).ready( function($){
-                    profileLayout();
-                });
                 break;
         }
         
     };
-    
-    this.setDeckList = function() {
-        
-        var deckName = this.deckName;
-        console.log("setDeckList " + deckName)
-        if( deckName == 'NayaAggro' ){
-            //this.nayaVisible(true);
-						$('#naya-deck-view').css('display', 'block');
-						$('#jund-deck-view').css('display', 'none');
-						this.deckPreviewThumb( "url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366467&type=card')" );
-        } else if( deckName == 'Jund' ) {
-            //this.jundVisible(true);
-						$('#jund-deck-view').css('display', 'block');
-						$('#naya-deck-view').css('display', 'none');
-						this.deckPreviewThumb( "url(http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262847&type=card)" );
-        }
-    }
     
     this.populateProfileViewData = function() {
         
@@ -105,34 +67,18 @@ var FoyerViewModel = function( data ) {
         
         $("#profile-header-button").attr("href", '/' + profile.user );
         
-        console.log("populateProfileViewData profileUsername = " + ViewModel.profileUsername())
-        
     };
     
     this.populateDeckPreviewModels = function() {
         
-        console.log("populateDeckPreviewModels")
-        
-        var profile = this.profileData;
-        
-        $.each( profile.decks, function(index, deck) {
+        $.each( this.profileData.decks, function(index, deck) {
             var deckPreviewViewModel = new DeckPreviewViewModel( deck );
             ViewModel.profileDeckPreviews.push( deckPreviewViewModel );
-            console.log( "populateProfileViewData, deck = " + deck )
-            console.log( ViewModel.profileDeckPreviews()[0].title() )
-						
         } );
         
     };
     
-    this.populateDeckListViewModel = function() {
-
-        
-    }
-    
-    , this.populateDeckListViewData = function() {
-      
-        var deckData = this.deckData;
+    this.populateDeckListViewData = function() {
         
     };
     
@@ -144,8 +90,6 @@ var FoyerViewModel = function( data ) {
     
     
     this.showSubView = function() {
-        
-        console.log("showSubView subview = " + this.subview)
         
         switch( this.subview ) {
             case 'Profile' :
@@ -168,11 +112,20 @@ var FoyerViewModel = function( data ) {
                 break;
         }
         
-
-        jQuery(document).ready( function($){
-            profileLayout();
-        });
+    };
+    
+    this.setDeckList = function() {
         
+        var deckName = this.deckName;
+        if( deckName == 'NayaAggro' ){
+			$('#naya-deck-view').css('display', 'block');
+			$('#jund-deck-view').css('display', 'none');
+            $("#deck-view-thumbnail").css('backgroundImage',"url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366467&type=card')")
+        } else if( deckName == 'Jund' ) {
+			$('#jund-deck-view').css('display', 'block');
+			$('#naya-deck-view').css('display', 'none');
+            $("#deck-view-thumbnail").css('backgroundImage',"url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262847&type=card)'");
+        }
     };
     
     this.setQueues = ko.observableArray( [

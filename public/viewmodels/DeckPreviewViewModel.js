@@ -3,18 +3,16 @@ var DeckPreviewViewModel = function( options ) {
     
     this.title = ko.observable( options.title );
     this.thumb = ko.observable( options.thumb );
+    this.deckUrl = ko.observable( options.deckUrl );
     this.user = ko.observable( options.user );
     this.uuid = ko.observable( options.uuid );
     this.format = ko.observable( options.format );
-    
-    
-    var colors = options.colors;
-    
-    this.white = ko.observable( colors.white );
-    this.blue = ko.observable( colors.blue );
-    this.black = ko.observable( colors.black );
-    this.red = ko.observable( colors.red );
-    this.green = ko.observable( colors.green );
+    this.date = ko.observable( options.date );
+    this.white = ko.observable( options.white );
+    this.blue = ko.observable( options.blue );
+    this.black = ko.observable( options.black );
+    this.red = ko.observable( options.red );
+    this.green = ko.observable( options.green );
     
 };
 

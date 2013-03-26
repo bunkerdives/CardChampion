@@ -1,0 +1,5 @@
+var ProfileDecksViewModel = function() {
+    
+    
+    
+}

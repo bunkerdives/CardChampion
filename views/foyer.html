@@ -1,4 +1,4 @@
-<div id="foyer" onload="headerLayout()" style="display:;">
+<div id="foyer" onload="headerLayout()">
 	<div id="foyer-content-container">
 		
 		<div id="foyer-banner-container">
@@ -50,7 +50,7 @@
 										<div class="recent-deck-right pull-right clearfix">
 											<div class="deck-preview-info pull-left clearfix">
 												<div class="deck-preview-info-left pull-left">
-													<div class="deck-preview-title"><a href="http://localhost:4000/decklists?user=Guest&deck=NayaAggro">Naya Aggro</a></div>
+													<div class="deck-preview-title"><a href="/decklists?user=Guest&deck=NayaAggro">Naya Aggro</a></div>
 													<div id="recent-decks-mana">
 														<span id="deck-preview-white" class="deck-preview-color"/>
 														<span id="deck-preview-red" class="deck-preview-color"/>
@@ -85,7 +85,7 @@
 										<div class="recent-deck-right pull-right clearfix">
 											<div class="deck-preview-info pull-left clearfix">
 												<div class="deck-preview-info-left pull-left">
-													<div class="deck-preview-title"><a href="http://localhost:4000/decklists?user=Guest&deck=Jund">Jund</a></div>
+													<div class="deck-preview-title"><a href="/decklists?user=Guest&deck=Jund">Jund</a></div>
 													<div id="recent-decks-mana">
 														<span id="deck-preview-black" class="deck-preview-color"/>
 														<span id="deck-preview-red" class="deck-preview-color"/>
@@ -168,7 +168,7 @@
 								<div id="profile-bottom-row">
 									<div id="profile-left-col" class="pull-left">
 										<div id="profile-info" class="clearfix">
-											<div id="profile-image" data-bind="attr: { src : thumb }">
+											<div id="profile-image" data-bind="style: { backgroundImage : profileThumbSrc }">
 												<img src="../static/img/neutral-density.png"/>
 											</div>
 											<div class="clearfix">
@@ -209,7 +209,7 @@
                           <div data-bind="foreach: profileDeckPreviews">
                             <div class="deck-preview clearfix">
   														<div class="deck-preview-left pull-left clearfix">
-  															<div class="deck-preview-img pull-left" data-bind="attr: {backgroundImage: _thumb}">
+  															<div class="deck-preview-img pull-left" data-bind="style: {backgroundImage: thumb}">
   																<img src="../static/img/neutral-density.png"/>
   															</div>
   															<div class="deck-preview-mana pull-right">

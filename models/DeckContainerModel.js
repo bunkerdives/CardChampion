@@ -1,20 +1,18 @@
 
 var DeckContainerModel = function( deckData ) {
     
-  this.title = deckData.title;
-  this.thumb = deckData.thumb;
-  this.user = deckData.user;
-  this.uuid = deckData.uuid;
-  this.format = deckData.format;
-  this.date = deckData.date;
-  
-  this.colors = {
-      white : deckData.white
-      , blue : deckData.blue
-      , black : deckData.black
-      , red : deckData.red
-      , green : deckData.green
-  };
+    this.title = deckData.title;
+    this.thumb = deckData.thumb;
+    this.deckUrl = deckData.deckUrl;
+    this.user = deckData.user;
+    this.uuid = deckData.uuid;
+    this.format = deckData.format;
+    this.date = deckData.date;
+    this.white = deckData.white;
+    this.blue = deckData.blue;
+    this.black = deckData.black;
+    this.red = deckData.red;
+    this.green = deckData.green;
     
 };
 
