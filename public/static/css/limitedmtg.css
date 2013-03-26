@@ -150,6 +150,37 @@ input[readonly] {
 	margin:0;
 }
 
+#header-profile-btn {
+	height:26px !important;
+	width:36px !important;
+	margin-top:1px;
+	background-repeat:no-repeat;
+	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=278058&type=card');
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #000;
+}
+
+#header-profile-btn img {
+	height:100%;
+	width:100%;
+	float:left;
+	margin-top:0;
+}
+#header-profile-btn .btn {
+	height:26px;
+	width:36px;
+	border:0;
+	margin:0;
+	padding:0;
+	margin-top:0 !important;
+}
+
+#header .btn-group.open .btn.dropdown-toggle {
+	background-color: transparent;
+}
+
 /*#header #open a {
 	padding-left:40px;
 	
@@ -185,7 +216,7 @@ input[readonly] {
 }
 
 #header li {
-	margin-left:2px;
+	
 }
 
 .nav-pills > .active > a, .nav-pills > .active > a:hover {
@@ -203,7 +234,7 @@ input[readonly] {
 }
 
 #header-links .header-link {
-	float:left;
+	
 }
 
 #header-links .header-link-spacer {
@@ -214,6 +245,11 @@ input[readonly] {
 
 #header-links .btn {
 	margin-top:3px;
+}
+
+#header-links .dropdown-menu {
+	font-family: 'Open Sans', sans-serif;
+	min-width:0;
 }
 
 .down-arrow {
@@ -230,7 +266,7 @@ input[readonly] {
 	padding: 0 9px 0 0;
 }
 
-#header #header-links a {
+a.header-link {
 	color:#000;
 	text-decoration:none;
 }

@@ -71,12 +71,14 @@ function headerLayout(){
 		//console.log('headerLinksW: ' + headerLinksW);
 	});
 	var logoW = $("#logo").outerWidth();
-	var headerLinksSpacer = ((headerContainerW-headerLinksW)-logoW)/(headerLinksNum+1);
+	var headerLinksSpacer = ((headerContainerW-headerLinksW)-logoW)/(headerLinksNum+1)-38;
 	if (headerLinksSpacer>=10){
 		$(".header-link-spacer").css("width", headerLinksSpacer);
 	} else {
 		$(".header-link-spacer").css("width", 10);
 	}
+	
+	cardToThumbnail(36,'#header-profile-btn');
 	
 }
 

@@ -4,9 +4,12 @@
       img(src="/static/img/logo.png")
     #header-links.clearfix
       span.header-link-spacer
-      a.header-link(href="/decks") Decks
+      a.header-link.pull-left(href="/decks") Decks
       span.header-link-spacer
-      a.header-link(onclick="var redirect = '/sealed?set=GTC';window.location.href = redirect;") Sealed
+      a.header-link.pull-left(onclick="var redirect = '/sealed?set=GTC';window.location.href = redirect;") Sealed
       span.header-link-spacer
-      #profile-header-button.a.header-link.btn.btn-mini.btn-primary(onclick="showProfile();")
-        i.icon-user.icon-white
+      #header-profile-btn.pull-right.btn-group
+        a.btn.btn-link.dropdown-toggle(data-toggle="dropdown",href="#")
+        ul.dropdown-menu
+          li
+            <a href="#">Sign Out</a>
