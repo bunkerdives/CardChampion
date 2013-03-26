@@ -75,7 +75,7 @@ body.ns-resize-cursor {
 
 .btn-joined-group:last-child > .btn {
   -webkit-border-radius: 0 4px 4px 0;-moz-border-radius: 0 4px 4px 0;border-radius: 0 4px 4px 0;
-}/*
+}*/
 
 input[readonly] {
 	cursor:auto;
@@ -83,6 +83,16 @@ input[readonly] {
 
 .typeahead {
 	z-index:9999;
+}
+
+#loading {
+	height:100%;
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:99999;
+	display:none;
 }
 
 /* General classes and styles end */
@@ -664,7 +674,7 @@ input[readonly] {
 }
 
 #foyer #profile-deck-previews {
-	padding-bottom:75px;
+	
 }
 
 #foyer .deck-preview {
@@ -692,7 +702,7 @@ input[readonly] {
 }
 
 #foyer .deck-preview-left {
-	width99px;
+
 }
 
 #foyer .deck-preview-img {
@@ -805,11 +815,12 @@ input[readonly] {
 }
 
 #foyer .deck-preview-info {
-	width: -webkit-calc(100% - 30px);
-	width: -moz-calc(100% - 30px);
-	width: calc(100% - 30px);
-	text-align:center;
+	width: -webkit-calc(100% - 40px);
+	width: -moz-calc(100% - 40px);
+	width: calc(100% - 40px);
+	text-align:left;
 	line-height:25px;
+	padding-left:10px;
 }
 
 #foyer .deck-preview-info-left {
@@ -964,7 +975,9 @@ input[readonly] {
 }
 
 #foyer #share-deck-wrapper input {
-	margin-left:6%;margin-right:6%;width:86%;
+	margin-left:6%;
+	margin-right:6%;
+	width:86%;
 }
 
 
@@ -1818,8 +1831,9 @@ input[type="range"]{
 	position:fixed;
 	width:300px;
 	box-sizing:border-box;
-	top:100px;
-	max-width: 600px;
+	top:150px;
+	left:50%;
+	margin-left:-150px;
 	background: #fff;
 	z-index: 6000;
 	display: none;

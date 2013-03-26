@@ -2,9 +2,9 @@ var LightboxController = {
 	
 		positionAuthLightbox : function() {
 			//console.log('positionAuthLightbox function called.')
-			var lightboxW = 350;
+			/*var lightboxW = 350;
 			var lightboxLeft = ($(window).width()/2)-(lightboxW/2);
-			$('#lightbox-container').css('left', lightboxLeft);
+			$('#lightbox-container').css('left', lightboxLeft);*/
 	  }
 		
 		, showRegisterForm : function() {
