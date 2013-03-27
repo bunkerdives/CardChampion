@@ -11,9 +11,13 @@ var connect = require('connect');
 
 var LocalStrategy = require('passport-local').Strategy;
 
-var sessionStore    = new connect.session.MemoryStore();
-var sessionSecret  = 'asdasdsdas1312312';
-var sessionKey    = 'test-session-key';
+var sessionSecret  = 'SaulGoodman';
+var sessionKey    = 'express.sid';
+
+//var sessionStore    = new connect.session.MemoryStore( { key : sessionKey } );
+var MemoryStore = express.session.MemoryStore;
+var sessionStore = new MemoryStore();
+
 var sessionOptions = {
     store:  sessionStore,
     key:    sessionKey,
@@ -30,14 +34,16 @@ app.configure( function(){
 
     app.use( express.logger() );
     app.use( express.bodyParser() );
-    app.use( express.methodOverride() );
     
     app.use( express.cookieParser() );
     app.use( express.session(sessionOptions) );
+    
+    app.use( express.methodOverride() );
 
     app.use( passport.initialize() );
     app.use( passport.session() );
     
+    app.use( express.cookieParser() );
     app.use( app.router );
     
 } );

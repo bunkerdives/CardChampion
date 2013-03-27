@@ -4,6 +4,10 @@ var RecentDeckPreViewModel = function() {
     this.format = ko.observable( '' );
     this.author = ko.observable( '' );
     this.thumb = ko.observable( '' );
+    this.deckUrl = ko.observable( '' );
+    this.profileUrl = ko.computed( function() {
+        return "/" + this.author();
+    }, this );
     
     this.white = ko.observable( false );
     this.blue = ko.observable( false );
@@ -22,6 +26,8 @@ var RecentDeckPreViewModel = function() {
         this.thumb( deck.thumb );
         this.author( deck.user );
         this.format( deck.format );
+        this.deckUrl( deck.deckUrl );
+        
         this.white( deck.white );
         this.blue( deck.blue );
         this.black( deck.black );

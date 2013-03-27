@@ -8,12 +8,7 @@ var DeckList = require('../models/DeckContainerModel.js')
 
 Auth = {
     
-    guest : function( req, res ) {
-        req.session.authOrGuest = true;
-        res.send('null');
-    }
-    
-    , login : function( req, res ) {
+    login : function( req, res ) {
         req.session.authOrGuest = true;
         res.send( req.user.username );
     }
@@ -22,8 +17,6 @@ Auth = {
             
         var username = req.body.username;
         var password = req.body.password;
-        
-        console.log("register username = " + username + ", password = " + password)
         
         Account.register( new Account({ username : username }), password, function(err, account) {
             
@@ -49,10 +42,6 @@ Auth = {
             }
 
             req.session.authOrGuest = true;
-            
-            if( username == 'Guest' ){
-                username = 'null';
-            }
             
             res.send( username );
             

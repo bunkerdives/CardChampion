@@ -2,9 +2,14 @@ var ProfileDeckItemViewModel = function( cardWrapper ) {
     
     this.total = ko.observable( '' );
     this.name = ko.observable( '' );
+    this.multiverse = ko.observable( '' );
+    
+    this.imgUrl = ko.computed( function() {
+        return "url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=" + this.multiverse() + "&type=card')";
+    }, this );
     
     this.title = ko.computed( function() {
-        return this.total() + "x <a>" + this.name() + "</a>";
+        return this.total() + 'x <a data-img="' + this.imgUrl() + '">' + this.name() + '</a>';
     }, this );
     
     this.initProfileDeckItem = function( cardWrapper ) {
@@ -15,6 +20,7 @@ var ProfileDeckItemViewModel = function( cardWrapper ) {
         
         this.total( cardWrapper.total );
         this.name( cardWrapper.card.name );
+        this.multiverse( cardWrapper.card.multiverse );
         
     }
     

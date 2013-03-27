@@ -49,7 +49,7 @@
   											<div class="deck-preview-info pull-left clearfix">
   												<div class="deck-preview-info-left pull-left">
   													<div class="deck-preview-title">
-                              <a href="" data-bind="text: title"></a>
+                              <a data-bind="text: title, attr: {href:deckUrl}"></a>
                             </div>
   													<div id="recent-decks-mana">
   														<span id="deck-preview-white" class="deck-preview-color" data-bind="visible: white"/>
@@ -62,7 +62,9 @@
   												<div class="deck-preview-info-right pull-right">
   													<div class="deck-preview-format" data-bind="text: format"></div>
   													<div class="deck-preview-author" style="color:#0088cc;">
-                              <i class="icon-user" style="margin-right:3px;"></i>Guest</div>
+                              <i class="icon-user" style="margin-right:3px;"/>
+                              <a data-bind="text: author, attr: {href:profileUrl}"/>
+                            </div>
   												</div>
   											</div>
   											<div class="deck-preview-btns pull-right">

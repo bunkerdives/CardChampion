@@ -127,7 +127,7 @@ function showPreviewCard(t,c) {
 	
 	var target = t;
 	
-	if (c === 'true') {
+	if( c == true) {
 		clearTimeout(ViewModel.hidePreviewTimeout);
 		ViewModel.hidePreviewTimeout = setTimeout(function() {
 			hidePreviewCard();
@@ -135,7 +135,15 @@ function showPreviewCard(t,c) {
 	}
 	$('#card-preview-container').css('display', 'block');
 	$('#card-preview-container').stop().animate({ opacity: 1 }, 300);
-	$('#card-preview-container').html(target);
+    
+    //var imgUrl = target.css("background-image");
+    //console.log("showPreviewCard imgUrl = " + imgUrl)
+    //var newHtml = $('<div style="background-image:' + imgUrl + '"></div>');
+    
+	//$('#card-preview-container').html(target);
+    $('#card-preview-container').css("background-image", target);
+    //$('#card-preview-container').html( newHtml );
+    
 	positionPreviewCard();
 	$('body').mousemove(function(){
 		positionPreviewCard();
@@ -143,9 +151,7 @@ function showPreviewCard(t,c) {
 	
 }
 
-function hidePreviewCard(t,c) {
-	//console.log('hidePreviewCard function called.');
-	var target = t;
+function hidePreviewCard() {
 	$('#card-preview-container').stop().animate({ opacity: 0 }, 300, function(){
 		$('#card-preview-container').css('display', 'none');
 		$('#card-preview-container').empty();
@@ -155,11 +161,12 @@ function hidePreviewCard(t,c) {
 
 function cardPreviewEvent() {
 	$('.deck-view-section a').mouseenter(function() {
-		showPreviewCard(this.text,'false');
+        console.log("cardPreviewEvent " + $(this).attr("data-img"))
+		showPreviewCard( $(this).attr("data-img"), false );
 	}).mouseleave(function(){
-		hidePreviewCard(this.text,'false');
+		hidePreviewCard();
 	}).click(function(){
-		showPreviewCard(this.text,'true');
+		showPreviewCard( $(this).attr("data-img"), true );
 	});
 	
 }

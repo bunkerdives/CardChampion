@@ -8,12 +8,9 @@ var LoginController = {
             '/login'
             , { username : $("#login-nickname").val(), password : $("#login-password").val() }
             , function( data ) {
-                console.log("LoginController data = " + data );
                 if( data != 'Error' ) {
 					LoadingWheelController.stop();
                     LightboxController.closeAuthLightbox();
-                    $("#header-link-5").css( 'display', 'block' );
-                    $("#header-link-5").attr( "href", "/" + data );
                     ViewModel.socketController.socketioHandshake();
                 }
             }
@@ -31,13 +28,12 @@ var LoginController = {
 	    LoadingWheelController.start('darker');
         
         var guestRequest = $.post(
-            '/guest'
+            '/login'
             , { username : 'Guest', password : 'Guest' }
             , function(data) {
                 if( data != 'Error' ) {
 					LoadingWheelController.stop();
                     LightboxController.closeAuthLightbox();
-                    $("#header-link-5").css( 'display', 'none');
                     ViewModel.socketController.socketioHandshake();
                 }
             }

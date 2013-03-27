@@ -59,15 +59,12 @@ var RegisterController = {
             , function( data ) {
                 if( data != 'Error' ) {
 					LoadingWheelController.stop();
-                    //LightboxController.closeAuthLightbox();
-					$('#lightbox-login-register-container').toggle();
-					$('#profile-settings-form').toggle();
-                    $("#header-link-5").attr( "href", "/" + data );
-                    $("#header-link-5").css( 'display', 'block' );
+                    LightboxController.closeAuthLightbox();
+					//$('#lightbox-login-register-container').toggle();
+					//$('#profile-settings-form').toggle();
                     ViewModel.socketController.socketioHandshake();
                 } else { // TODO display an error message here
 					LoadingWheelController.stop();
-                    console.log("Error logging in: " + data);
                 }
             }
         );
