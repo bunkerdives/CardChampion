@@ -83,7 +83,7 @@ function profileLayout() {
 	  $(this).css("margin-left", navSpacerW);
 	});*/
 	
-	cardToThumbnail(50,'#deck-view-thumbnail');
+	cardToThumbnail(67,'#deck-view-thumbnail');
 }
 
 function cardToThumbnail(w,t) {

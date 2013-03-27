@@ -453,7 +453,10 @@ a.header-link {
 }
 
 #foyer #recent-decks-top {
-	width:100%;
+	width: -webkit-calc(100% - 1px);
+	width: -moz-calc(100% - 1px);
+	width: calc(100% - 1px);
+	
 	
 	height:34px;
 	
@@ -579,7 +582,10 @@ a.header-link {
 }
 
 #foyer #profile-top-row {
-	width:100%;
+	width: -webkit-calc(100% - 1px);
+	width: -moz-calc(100% - 1px);
+	width: calc(100% - 1px);
+	
 	
 	text-align:center;
 	/*background-color:#aaa;*/
@@ -957,14 +963,14 @@ a.header-link {
 	background-color:#000;
 	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366369&type=card');
 	border:1px solid #444;
-	width:50px;
-	height:36px;
+	width:67px;
+	height:50px;
 }
 
 #foyer #deck-view-title-right {
-	width: -webkit-calc(100% - 57px);
-	width: -moz-calc(100% - 57px);
-	width: calc(100% - 57px);
+	width: -webkit-calc(100% - 70px);
+	width: -moz-calc(100% - 70px);
+	width: calc(100% - 70px);
 }
 
 #deck-view-mana {

@@ -11,6 +11,9 @@ ko.utils.extend( BuilderViewModel.prototype, {
     init: function( element, valueAccessor, allBindingsAccessor ) {
         
         builderLayout();
+		
+		builderTypeahead();
+		
         
     }
     
