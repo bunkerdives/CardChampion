@@ -2,6 +2,9 @@ var FoyerViewModel = function() {
     
 	this.hidePreviewTimeout = 0;
     
+    this.subview = '';
+	this.profileData = '';
+    this.deckCardData = '';
     this.socket = '';
     
     this.decksVisible = ko.observable( false );
@@ -9,11 +12,6 @@ var FoyerViewModel = function() {
     this.aboutVisible = ko.observable( false );
     this.newEventVisible = ko.observable( false );
     this.joinDraftVisible = ko.observable( false );
-    
-    this.subview = '';
-	this.profileData = '';
-    this.deckCardData = '';
-    this.recentDecks = '';
     
     this.RecentDecksViewModel = ko.observable( '' );
     this.ProfileViewModel = ko.observable( '' );
@@ -55,7 +53,9 @@ var FoyerViewModel = function() {
     this.initDecksViewModel = function() {
         
         var recentDecksViewModel = new RecentDecksViewModel();
-        recentDecksViewModel.initRecentDecksView( this.profileData.decks );
+        if( this.profileData ) {
+            recentDecksViewModel.initRecentDecksView( this.profileData.decks );
+        }
         this.RecentDecksViewModel( recentDecksViewModel );
         
     };
@@ -115,14 +115,14 @@ ko.utils.extend( FoyerViewModel.prototype, {
     
     init: function() {
         
-	    foyerInit();
-		headerLayout();
-        profileLayout();
-        
-        BackgroundController.setBackgroundImage();
-        BannerController.setAnimatedBanner();
-        
-        ChatController.bindEnterKeyForChat();
+        jQuery(document).ready( function ($) {
+            BackgroundController.setBackgroundImage();
+            BannerController.setAnimatedBanner();
+            ChatController.bindEnterKeyForChat();
+    	    foyerInit();
+    		headerLayout();
+            profileLayout();
+        } );
         
     }
     

@@ -2,7 +2,7 @@ var LoginController = {
     
     sendLoginRequest : function() {
         
-				LoadingWheelController.start('darker');
+		LoadingWheelController.start('darker');
 				
         var loginRequest = $.post(
             '/login'
@@ -10,7 +10,7 @@ var LoginController = {
             , function( data ) {
                 console.log("LoginController data = " + data );
                 if( data != 'Error' ) {
-										LoadingWheelController.stop();
+					LoadingWheelController.stop();
                     LightboxController.closeAuthLightbox();
                     $("#header-link-5").css( 'display', 'block' );
                     $("#header-link-5").attr( "href", "/" + data );
@@ -18,33 +18,36 @@ var LoginController = {
                 }
             }
         );
-				loginRequest.error( function( jqxhr, status, error ) {
-					LoadingWheelController.stop();
-					LightboxController.showAuthError(error);
-				} );
+        
+		loginRequest.error( function( jqxhr, status, error ) {
+			LoadingWheelController.stop();
+			LightboxController.showAuthError(error);
+		} );
         
     }
     
     , sendGuestRequest : function() {
 			
-				LoadingWheelController.start('darker');
+	    LoadingWheelController.start('darker');
         
         var guestRequest = $.post(
             '/guest'
             , { username : 'Guest', password : 'Guest' }
             , function(data) {
                 if( data != 'Error' ) {
-										LoadingWheelController.stop();
+					LoadingWheelController.stop();
                     LightboxController.closeAuthLightbox();
                     $("#header-link-5").css( 'display', 'none');
                     ViewModel.socketController.socketioHandshake();
                 }
             }
         );
-				guestRequest.error( function( jqxhr, status, error ) {
-					LoadingWheelController.stop();
-					LightboxController.showAuthError(error);
-				} );
+        
+		guestRequest.error( function( jqxhr, status, error ) {
+			LoadingWheelController.stop();
+			LightboxController.showAuthError(error);
+		} );
+        
     }
     
 };

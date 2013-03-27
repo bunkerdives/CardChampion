@@ -13,8 +13,6 @@ var RecentDecksViewModel = function() {
         
         ( function(self) {
             $.each( decks, function( index, deck ) {
-                console.log("initRecentDecksView deck = ")
-                console.log(deck)
                 var recentDeckPreview = new RecentDeckPreViewModel();
                 recentDeckPreview.initRecentDeckPreview( deck );
                 self.RecentDeckPreviews()[ index ] = recentDeckPreview;

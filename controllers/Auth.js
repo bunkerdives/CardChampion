@@ -62,13 +62,16 @@ Auth = {
     
     , newUser : function( data, profileModel ) {
         
+        var date = new Date();
+        var curDate = ( date.getMonth() + 1 ) + "/" + date.getDate() + "/" + date.getFullYear();
+        
         var user = data.username;
         var email = data.email;
         var thumb = 'url(http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=278058&type=card)';
-        var fullName = '';
+        var fullName = 'Jace Beleren';
         var location = 'Pittsburgh, PA';
-        var joined = new Date();
         var description = 'Magic maniac!';
+        var joined = curDate;
         
         var userInstance = new profileModel( {
             user : user
@@ -78,6 +81,7 @@ Auth = {
             , fullName : fullName
             , description : description
             , location : location
+            , decks : []
         } );
         
         // create a pretend deck
@@ -88,7 +92,7 @@ Auth = {
             , user : user
             , uuid : '12345678'
             , format : 'Standard'
-            , date : new Date()
+            , date : curDate
             , white : true
             , blue : false
             , black : false
@@ -103,7 +107,7 @@ Auth = {
             , user : user
             , uuid : '123456789'
             , format : 'Standard'
-            , date : new Date()
+            , date : curDate
             , white : false
             , blue : false
             , black : true
@@ -111,8 +115,40 @@ Auth = {
             , green : true
         } );
         
+        var deckContainer2 = new DeckContainerModel( {
+            title : 'Wolf Run Bant'
+			, thumb : "url(http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=233256&type=card)"
+            , deckUrl : '/decklists?user=' + user + '&deck=WolfRunBant'
+            , user : user
+            , uuid : '123456789'
+            , format : 'Standard'
+            , date : curDate
+            , white : true
+            , blue : true
+            , black : false
+            , red : true
+            , green : true
+        } );
+        
+        var deckContainer3 = new DeckContainerModel( {
+            title : 'Delver'
+			, thumb : "url(http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=226749&type=card)"
+            , deckUrl : '/decklists?user=' + user + '&deck=Delver'
+            , user : user
+            , uuid : '123456789'
+            , format : 'Pauper'
+            , date : curDate
+            , white : false
+            , blue : true
+            , black : false
+            , red : true
+            , green : false
+        } );
+        
         userInstance.decks[0] = deckContainer;
         userInstance.decks[1] = deckContainer1;
+        userInstance.decks[2] = deckContainer2;
+        userInstance.decks[3] = deckContainer3;
         
         userInstance.save( function(err) {
             if( err ) {
@@ -163,8 +199,6 @@ Auth = {
         switch( deck ) {
             case 'NayaAggro':
                 return this.newNayaAggroDeck();
-            case 'Jund':
-                return this.newJundDeck();
         }
         
     }
@@ -174,305 +208,244 @@ Auth = {
         var deckList = {
         
             uuid : '12345678'
+            , title : 'Naya Aggro'
+            , author : 'Guest'
+            , description : 'Standard Naya Aggro'
             , white : true
             , blue : false
             , black : false
             , red : true
             , green : true
-            , cards : [
-                {
-                    total : 4
-                    , card : {
-                        'name' : 'Boros Elite'
-                        , 'rarity' : 'U'
-                        , 'color' : 'W'
-                        , 'cost' : 'W'
-                        , 'cmc' : '1'
-                        , 'multiverse' : '366369'
-                        , 'type' : 'Creature  ‚Äî Human Soldier'
-                        , 'pt' : '(1/1)'
-                    }
-                }
-                , {
-                    total : 4
-                    , card : {
-                        'name' : 'Burning-Tree Emissary'
-                        , 'rarity' : 'U'
-                        , 'color' : 'M'
-                        , 'cost' : '(R/G)(R/G)'
-                        , 'cmc' : '2'
-                        , 'multiverse' : '366467'
-                        , 'type' : 'Creature  ‚Äî Human Shaman'
-                        , 'pt' : '(2/2)'
-                    }
-                }
-                , {
-                    total : 4
-                    , card : {
-                        'name' : 'Experiment One'
-                        , 'rarity' : 'U'
-                        , 'color' : 'G'
-                        , 'cost' : 'G'
-                        , 'cmc' : '1'
-                        , 'multiverse' : '366441'
-                        , 'type' : 'Creature  ‚Äî Human Ooze'
-                        , 'pt' : '(1/1)'
-                    }
-                }
-                , {
-                    total : 3
-                    , card : {
-                        'name' : 'Frontline Medic'
-                        , 'rarity' : 'R'
-                        , 'color' : 'W'
-                        , 'cost' : '2W'
-                        , 'cmc' : '3'
-                        , 'multiverse' : '366460'
-                        , 'type' : 'Creature  ‚Äî Human Cleric'
-                        , 'pt' : '(3/3)'
-                    }
-                }
-                , {
-                    total : 4
-                    , card : {
-                        'name' : 'Sacred Foundry'
-                        , 'rarity' : 'R'
-                        , 'color' : 'A'
-                        , 'cost' : ''
-                        , 'cmc' : '0'
-                        , 'multiverse' : '366439'
-                        , 'type' : 'Land  ‚Äî Mountain Plains'
-                        , 'pt' : ''
-                    }
-                }
-                , {
-                    total : 4
-                    , card : {
-                        'name' : 'Stomping Ground'
-                        , 'rarity' : 'R'
-                        , 'color' : 'A'
-                        , 'cost' : ''
-                        , 'cmc' : '0'
-                        , 'multiverse' : '366232'
-                        , 'type' : 'Land  ‚Äî Mountain Forest'
-                        , 'pt' : ''
-                    }
-                }
-                , {
-                    total : 4
-                    , card : {
-                        'name' : 'Temple Garden'
-                        , 'rarity' : 'R'
-                        , 'color' : 'A'
-                        , 'cost' : ''
-                        , 'cmc' : '0'
-                        , 'multiverse' : '253681'
-                        , 'type' : 'Land  — Forest Plains'
-                        , 'pt' : ''
-                    }
-                }
-                , {
-                    total : 4
-                    , card : {
-                        'name' : 'Giant Growth'
-                        , 'rarity' : 'C'
-                        , 'color' : 'G'
-                        , 'cost' : 'G'
-                        , 'cmc' : '1'
-                        , 'multiverse' : '289213'
-                        , 'type' : 'Instant'
-                        , 'pt' : ''
-                    }
-                }
-                , {
-                    total : 4
-                    , card : {
-                        'name' : 'Champion of the Parish'
-                        , 'rarity' : 'R'
-                        , 'color' : 'W'
-                        , 'cost' : 'W'
-                        , 'cmc' : '1'
-                        , 'multiverse' : '262861'
-                        , 'type' : 'Creature  — Human Soldier'
-                        , 'pt' : '(1/1)'
-                    }
-                }
-                , {
-                    total : 4
-                    , card : {
-                        'name' : 'Mayor of Avabruck'
-                        , 'rarity' : 'R'
-                        , 'color' : 'G'
-                        , 'cost' : '1G'
-                        , 'cmc' : '2'
-                        , 'multiverse' : '222189'
-                        , 'type' : 'Creature  — Human Advisor Werewolf'
-                        , 'pt' : '(1/1)'
-                    }
-                }
-                , {
-                    total : 4
-                    , card : {
-                        'name' : 'Sunpetal Grove'
-                        , 'rarity' : 'R'
-                        , 'color' : 'A'
-                        , 'cost' : ''
-                        , 'cmc' : '0'
-                        , 'multiverse' : '249736'
-                        , 'type' : 'Land'
-                        , 'pt' : ''
-                    }
-                }
-                , {
-                    total : 1
-                    , card : {
-                        'name' : 'Rootbound Crag'
-                        , 'rarity' : 'R'
-                        , 'color' : 'A'
-                        , 'cost' : ''
-                        , 'cmc' : '0'
-                        , 'multiverse' : '249735'
-                        , 'type' : 'Land'
-                        , 'pt' : ''
-                    }
-                }
-                , {
-                    total : 4
-                    , card : {
-                        'name' : 'Rancor'
-                        , 'rarity' : 'U'
-                        , 'color' : 'G'
-                        , 'cost' : 'G'
-                        , 'cmc' : '1'
-                        , 'multiverse' : '253686'
-                        , 'type' : 'Enchantment  — Aura'
-                        , 'pt' : ''
-                    }
-                }
-                , {
-                    total : 4
-                    , card : {
-                        'name' : 'Lightning Mauler'
-                        , 'rarity' : 'U'
-                        , 'color' : 'R'
-                        , 'cost' : '1R'
-                        , 'cmc' : '2'
-                        , 'multiverse' : '271119'
-                        , 'type' : 'Creature  — Human Berserker'
-                        , 'pt' : '(2/1)'
-                    }
-                }
-                , {
-                    total : 4
-                    , card : {
-                        'name' : 'Cavern of Souls'
-                        , 'rarity' : 'R'
-                        , 'color' : 'A'
-                        , 'cost' : ''
-                        , 'cmc' : '0'
-                        , 'multiverse' : '278058'
-                        , 'type' : 'Land'
-                        , 'pt' : ''
-                    }
-                }
-            ]
-        
-        };
             
-        return deckList;
-        
-    }
-    
-    , newJundDeck : function() {
-            
-        var deckList = {
-        
-            uuid : '123456789'
-            , white : false
-            , blue : false
-            , black : true
-            , red : true
-            , green : true
-            , cards : [
-                {
-                    total : 4
-                    , card : {
-                        'name' : 'Burning-Tree Emissary'
-                        , 'rarity' : 'U'
-                        , 'color' : 'M'
-                        , 'cost' : '(R/G)(R/G)'
-                        , 'cmc' : '2'
-                        , 'multiverse' : '366467'
-                        , 'type' : 'Creature  ‚Äî Human Shaman'
-                        , 'pt' : '(2/2)'
+            , mainboard : {
+                
+                creatures : [
+                    {
+                        total : 4
+                        , card : {
+                            'name' : 'Boros Elite'
+                            , 'rarity' : 'U'
+                            , 'color' : 'W'
+                            , 'cost' : 'W'
+                            , 'cmc' : '1'
+                            , 'multiverse' : '366369'
+                            , 'type' : 'Creature  ‚Äî Human Soldier'
+                            , 'pt' : '(1/1)'
+                        }
                     }
-                }
-                , {
-                    total : 4
-                    , card : {
-                        'name' : 'Experiment One'
-                        , 'rarity' : 'U'
-                        , 'color' : 'G'
-                        , 'cost' : 'G'
-                        , 'cmc' : '1'
-                        , 'multiverse' : '366441'
-                        , 'type' : 'Creature  ‚Äî Human Ooze'
-                        , 'pt' : '(1/1)'
+                    , {
+                        total : 4
+                        , card : {
+                            'name' : 'Burning-Tree Emissary'
+                            , 'rarity' : 'U'
+                            , 'color' : 'M'
+                            , 'cost' : '(R/G)(R/G)'
+                            , 'cmc' : '2'
+                            , 'multiverse' : '366467'
+                            , 'type' : 'Creature  ‚Äî Human Shaman'
+                            , 'pt' : '(2/2)'
+                        }
                     }
-                }
-                , {
-                    total : 4
-                    , card : {
-                        'name' : 'Ghor-Clan Rampager'
-                        , 'rarity' : 'U'
-                        , 'color' : 'M'
-                        , 'cost' : '2RG'
-                        , 'cmc' : '4'
-                        , 'multiverse' : '366287'
-                        , 'type' : 'Creature  ‚Äî Beast'
-                        , 'pt' : '(4/4)'
+                    , {
+                        total : 4
+                        , card : {
+                            'name' : 'Champion of the Parish'
+                            , 'rarity' : 'R'
+                            , 'color' : 'W'
+                            , 'cost' : 'W'
+                            , 'cmc' : '1'
+                            , 'multiverse' : '262861'
+                            , 'type' : 'Creature  — Human Soldier'
+                            , 'pt' : '(1/1)'
+                        }
                     }
-                }
-                , {
-                    total : 4
-                    , card : {
-                        'name' : 'Stomping Ground'
-                        , 'rarity' : 'R'
-                        , 'color' : 'A'
-                        , 'cost' : ''
-                        , 'cmc' : '0'
-                        , 'multiverse' : '366232'
-                        , 'type' : 'Land  ‚Äî Mountain Forest'
-                        , 'pt' : ''
+                    , {
+                        total : 4
+                        , card : {
+                            'name' : 'Experiment One'
+                            , 'rarity' : 'U'
+                            , 'color' : 'G'
+                            , 'cost' : 'G'
+                            , 'cmc' : '1'
+                            , 'multiverse' : '366441'
+                            , 'type' : 'Creature  ‚Äî Human Ooze'
+                            , 'pt' : '(1/1)'
+                        }
                     }
-                }
-                , {
-                    total : 3
-                    , card : {
-                        'name' : 'Dreg Mangler'
-                        , 'rarity' : 'U'
-                        , 'color' : 'M'
-                        , 'cost' : '1BG'
-                        , 'cmc' : '3'
-                        , 'multiverse' : '253509'
-                        , 'type' : 'Creature  — Plant Zombie'
-                        , 'pt' : '(3/3)'
+                    , {
+                        total : 4
+                        , card : {
+                            'name' : 'Flinthoof Boar'
+                            , 'rarity' : 'U'
+                            , 'color' : 'G'
+                            , 'cost' : '1G'
+                            , 'cmc' : '2'
+                            , 'multiverse' : '249712'
+                            , 'type' : 'Creature  — Boar'
+                            , 'pt' : '(2/2)'
+                        }
                     }
-                }
-                , {
-                    total : 4
-                    , card : {
-                        'name' : 'Rakdos Cackler'
-                        , 'rarity' : 'U'
-                        , 'color' : 'M'
-                        , 'cost' : '(B/R)'
-                        , 'cmc' : '1'
-                        , 'multiverse' : '253596'
-                        , 'type' : 'Creature  — Devil'
-                        , 'pt' : '(1/1)'
+                    , {
+                        total : 3
+                        , card : {
+                            'name' : 'Frontline Medic'
+                            , 'rarity' : 'R'
+                            , 'color' : 'W'
+                            , 'cost' : '2W'
+                            , 'cmc' : '3'
+                            , 'multiverse' : '366460'
+                            , 'type' : 'Creature  ‚Äî Human Cleric'
+                            , 'pt' : '(3/3)'
+                        }
                     }
-                }
-            ]
+                    , {
+                        total : 4
+                        , card : {
+                            'name' : 'Lightning Mauler'
+                            , 'rarity' : 'U'
+                            , 'color' : 'R'
+                            , 'cost' : '1R'
+                            , 'cmc' : '2'
+                            , 'multiverse' : '271119'
+                            , 'type' : 'Creature  — Human Berserker'
+                            , 'pt' : '(2/1)'
+                        }
+                    }
+                    , {
+                        total : 4
+                        , card : {
+                            'name' : 'Mayor of Avabruck'
+                            , 'rarity' : 'R'
+                            , 'color' : 'G'
+                            , 'cost' : '1G'
+                            , 'cmc' : '2'
+                            , 'multiverse' : '222189'
+                            , 'type' : 'Creature  — Human Advisor Werewolf'
+                            , 'pt' : '(1/1)'
+                        }
+                    }
+                ]
+                
+                , lands : [
+                    {
+                        total : 4
+                        , card : {
+                            'name' : 'Cavern of Souls'
+                            , 'rarity' : 'R'
+                            , 'color' : 'A'
+                            , 'cost' : ''
+                            , 'cmc' : '0'
+                            , 'multiverse' : '278058'
+                            , 'type' : 'Land'
+                            , 'pt' : ''
+                        }
+                    }
+                    , {
+                        total : 1
+                        , card : {
+                            'name' : 'Rootbound Crag'
+                            , 'rarity' : 'R'
+                            , 'color' : 'A'
+                            , 'cost' : ''
+                            , 'cmc' : '0'
+                            , 'multiverse' : '249735'
+                            , 'type' : 'Land'
+                            , 'pt' : ''
+                        }
+                    }
+                    , {
+                        total : 4
+                        , card : {
+                            'name' : 'Sacred Foundry'
+                            , 'rarity' : 'R'
+                            , 'color' : 'A'
+                            , 'cost' : ''
+                            , 'cmc' : '0'
+                            , 'multiverse' : '366439'
+                            , 'type' : 'Land  ‚Äî Mountain Plains'
+                            , 'pt' : ''
+                        }
+                    }
+                    , {
+                        total : 4
+                        , card : {
+                            'name' : 'Stomping Ground'
+                            , 'rarity' : 'R'
+                            , 'color' : 'A'
+                            , 'cost' : ''
+                            , 'cmc' : '0'
+                            , 'multiverse' : '366232'
+                            , 'type' : 'Land  ‚Äî Mountain Forest'
+                            , 'pt' : ''
+                        }
+                    }
+                    , {
+                        total : 4
+                        , card : {
+                            'name' : 'Sunpetal Grove'
+                            , 'rarity' : 'R'
+                            , 'color' : 'A'
+                            , 'cost' : ''
+                            , 'cmc' : '0'
+                            , 'multiverse' : '249736'
+                            , 'type' : 'Land'
+                            , 'pt' : ''
+                        }
+                    }
+                    , {
+                        total : 4
+                        , card : {
+                            'name' : 'Temple Garden'
+                            , 'rarity' : 'R'
+                            , 'color' : 'A'
+                            , 'cost' : ''
+                            , 'cmc' : '0'
+                            , 'multiverse' : '253681'
+                            , 'type' : 'Land  — Forest Plains'
+                            , 'pt' : ''
+                        }
+                    }
+                ]
+                
+                , instants : [
+                    {
+                        total : 4
+                        , card : {
+                            'name' : 'Giant Growth'
+                            , 'rarity' : 'C'
+                            , 'color' : 'G'
+                            , 'cost' : 'G'
+                            , 'cmc' : '1'
+                            , 'multiverse' : '289213'
+                            , 'type' : 'Instant'
+                            , 'pt' : ''
+                        }
+                    }
+                ]
+                
+                , sorceries : []
+                
+                , enchantments : [
+                    {
+                        total : 4
+                        , card : {
+                            'name' : 'Rancor'
+                            , 'rarity' : 'U'
+                            , 'color' : 'G'
+                            , 'cost' : 'G'
+                            , 'cmc' : '1'
+                            , 'multiverse' : '253686'
+                            , 'type' : 'Enchantment  — Aura'
+                            , 'pt' : ''
+                        }
+                    }
+                ]
+                
+                , artifacts : []
+                
+                , planeswalkers : []
+                
+            }
         
         };
             

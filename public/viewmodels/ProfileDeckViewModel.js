@@ -1,6 +1,7 @@
 var ProfileDeckViewModel = function() {
     
     this.title = ko.observable( '' );
+    this.author = ko.observable( '' );
     this.description = ko.observable( '' );
     
     this.white = ko.observable( false );
@@ -12,6 +13,7 @@ var ProfileDeckViewModel = function() {
     this.leftColumn = ko.observableArray( [] );
     this.rightColumn = ko.observableArray( [] );
     
+    
     this.initProfileDeckView = function( deck ) {
         
         if( deck == undefined ) {
@@ -19,6 +21,7 @@ var ProfileDeckViewModel = function() {
         }
         
         this.title( deck.title );
+        this.author( deck.author );
         this.description( deck.description );
         
         this.white( deck.white );
@@ -27,6 +30,35 @@ var ProfileDeckViewModel = function() {
         this.red( deck.red );
         this.green( deck.green );
         
-    }
+        this.populateMainboard( deck );
+        
+    };
+    
+    
+    this.populateMainboard = function( deck ) {
+        
+        var mainboard = deck.mainboard;
+        
+        this.populateTypeCardsIntoBoard( 'Creatures', mainboard.creatures, this.leftColumn );
+        this.populateTypeCardsIntoBoard( 'Lands', mainboard.lands, this.leftColumn );
+        
+        this.populateTypeCardsIntoBoard( 'Instants', mainboard.instants, this.rightColumn );
+        this.populateTypeCardsIntoBoard( 'Sorceries', mainboard.sorceries, this.rightColumn );
+        this.populateTypeCardsIntoBoard( 'Enchantments', mainboard.enchantments, this.rightColumn );
+        this.populateTypeCardsIntoBoard( 'Artifacts', mainboard.artifacts, this.rightColumn );
+        this.populateTypeCardsIntoBoard( 'Planeswalkers', mainboard.planeswalkers, this.rightColumn );
+        
+    };
+    
+    
+    this.populateTypeCardsIntoBoard = function( cardType, cardTypeArray, column ) {
+        
+        if( cardTypeArray.length > 0 ) {
+            var profileDeckViewCardTypeViewModel = new ProfileDeckViewCardTypeGroupViewModel();
+            profileDeckViewCardTypeViewModel.initCardTypeGroupView( cardType, cardTypeArray );
+            column.push( profileDeckViewCardTypeViewModel );
+        }
+        
+    };
     
 };

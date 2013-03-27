@@ -18,7 +18,7 @@ var LayoutController = function( template, options ) {
             context.profileData = options.profile;
             context.subview = options.subview;
             context.deckName = options.deckname;
-            context.deckCardData = options.deckCardData;
+            context.deckCardData = options.deckData;
             context.showSubView();
             break;
         default:
@@ -30,34 +30,16 @@ var LayoutController = function( template, options ) {
     
     this.plugin = new ko.plugin( { template : template, context : context } );
     
-    if( options.user != 'null' ) {
-        $("#header-link-5").attr( 'href', options.user );
-    } else {
-        $("#header-link-5").css( 'display', 'none' );
-    }
-    
     var loggedIn = options.authOrGuest;
+    
     if( template != 'Splash'  &&  !loggedIn ) {
         LightboxController.showAuthLightbox();
-    } else if( template != 'Splash' && loggedIn ) {
+    }
+    else if( template != 'Splash' && loggedIn ) {
         ViewModel.socketController.socketioHandshake();
         LightboxController.closeAuthLightbox();
     }
     
-    if( template == 'Foyer' ) {
-        jQuery(document).ready( function($){
-            profileLayout();
-        } );
-    }
-    
-};
-
-var hideFoyerSubViews = function() {
-    ViewModel.decksVisible = ko.observable( false );
-    ViewModel.profileVisible( false );
-    ViewModel.aboutVisible( false );
-    ViewModel.newEventVisible( false );
-    ViewModel.joinDraftVisible( false );
 };
 
 var initLayout = function( template, options ) {

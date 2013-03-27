@@ -1,12 +1,9 @@
 var RegisterController = {
     
     sendRegisterRequest : function() {
-		
-		LoadingWheelController.start('darker');
         
         var username = $("#register-nickname").val();
         var pass1 = $("#register-password").val();
-				console.log(pass1);
         var pass2 = $("#register-password-confirm").val();
         var email1 = $("#register-email").val();
         var email2 = $("#register-email-confirm").val();
@@ -54,16 +51,17 @@ var RegisterController = {
             return null;
         }
         
+        LoadingWheelController.start('darker');
+        
         $.post(
             '/register'
             , { username : username, password : pass1, email : email1 }
             , function( data ) {
-                console.log("RegisterController data = " + data)
                 if( data != 'Error' ) {
 					LoadingWheelController.stop();
                     //LightboxController.closeAuthLightbox();
-										$('#lightbox-login-register-container').toggle();
-										$('#profile-settings-form').toggle();
+					$('#lightbox-login-register-container').toggle();
+					$('#profile-settings-form').toggle();
                     $("#header-link-5").attr( "href", "/" + data );
                     $("#header-link-5").css( 'display', 'block' );
                     ViewModel.socketController.socketioHandshake();

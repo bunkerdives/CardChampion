@@ -91,54 +91,39 @@ var SealedViewModel = function( set ) {
         var colSortType = ViewModel.selectedSortOption.sortType;
         
         // create number of lands per each type, according to the land counts
-        for( var i = 0; i < this.whiteLandCount(); ++i ){
-            
+        for( var i = 0; i < this.whiteLandCount(); ++i ) {
             var land = new Land('W');
             var landCard = new CardViewModel(land);
-            
             this.mainboard()[0].addCardToPool( landCard, colSortType, "name" );
             this.adjustCardCounterUI( landCard, 1);
-            
         }
         
-        for( var i = 0; i < this.blueLandCount(); ++i ){
-            
+        for( var i = 0; i < this.blueLandCount(); ++i ) {
             var land = new Land('U');
             var landCard = new CardViewModel(land);
-            
             this.mainboard()[0].addCardToPool( landCard, colSortType, "name" );
             this.adjustCardCounterUI( landCard, 1);
-            
         }
         
-        for( var i = 0; i < this.blackLandCount(); ++i ){
-            
+        for( var i = 0; i < this.blackLandCount(); ++i ) {
             var land = new Land('B');
             var landCard = new CardViewModel(land);
-            
             this.mainboard()[0].addCardToPool( landCard, colSortType, "name" );
             this.adjustCardCounterUI( landCard, 1);
-            
         }
         
-        for( var i = 0; i < this.redLandCount(); ++i ){
-            
+        for( var i = 0; i < this.redLandCount(); ++i ) {
             var land = new Land('R');
             var landCard = new CardViewModel(land);
-            
             this.mainboard()[0].addCardToPool( landCard, colSortType, "name" );
             this.adjustCardCounterUI( landCard, 1);
-            
         }
         
-        for( var i = 0; i < this.greenLandCount(); ++i ){
-            
+        for( var i = 0; i < this.greenLandCount(); ++i ) {
             var land = new Land('G');
             var landCard = new CardViewModel(land);
-            
             this.mainboard()[0].addCardToPool( landCard, colSortType, "name" );
             this.adjustCardCounterUI( landCard, 1);
-            
         }
         
         this.resetLandCounters();
@@ -169,11 +154,9 @@ var SealedViewModel = function( set ) {
             this.mainboardSize( count );
         }
         
-        var type = card.type;
-        if( ( /Creature/g ).test( type ) ){
+        if( ( /Creature/g ).test( card.type ) ){
             this.numMainboardCreatures( this.numMainboardCreatures() + magnitude );
-        }
-        else if( ( /Land/g ).test( type ) ){
+        } else if( ( /Land/g ).test( card.type ) ){
             this.numMainboardLands( this.numMainboardLands() + magnitude );
         }
     
@@ -183,61 +166,50 @@ var SealedViewModel = function( set ) {
         switch( color ) {
             case 'W' :
                 this.whiteLandCount( this.whiteLandCount() + 1 );
-                break;
+                return;
             case 'U' :
                 this.blueLandCount( this.blueLandCount() + 1 );
-                break;
+                return;
             case 'B' :
                 this.blackLandCount( this.blackLandCount() + 1 );
-                break;
+                return;
             case 'R' :
                 this.redLandCount( this.redLandCount() + 1 );
-                break;
+                return;
             case 'G' :
                 this.greenLandCount( this.greenLandCount() + 1 );
-                break;
-            default :
-                break;
+                return;
         }
-        return;
     };
     
     this.decrLandCount = function( color ) {
         switch( color ) {
             case 'W' :
-                var landCount = this.whiteLandCount();
-                if( landCount > 0 ) {
+                if( this.whiteLandCount() > 0 ) {
                     this.whiteLandCount( landCount - 1 );
                 }
-                break;
+                return;
             case 'U' :
-                var landCount = this.blueLandCount();
-                if( landCount > 0 ) {
+                if( this.blueLandCount() > 0 ) {
                     this.blueLandCount( landCount - 1 );
                 }
-                break;
+                return;
             case 'B' :
-                var landCount = this.blackLandCount();
-                if( landCount > 0 ) {
+                if( this.blackLandCount() > 0 ) {
                     this.blackLandCount( landCount - 1 );
                 }
-                break;
+                return;
             case 'R' :
-                var landCount = this.redLandCount();
-                if( landCount > 0 ) {
+                if( this.redLandCount() > 0 ) {
                     this.redLandCount( landCount - 1 );
                 }
-                break;
+                return;
             case 'G' :
-                var landCount = this.greenLandCount();
-                if( landCount > 0 ) {
+                if( this.greenLandCount() > 0 ) {
                     this.greenLandCount( landCount - 1 );
                 }
-                break;
-            default :
-                break;
+                return;
         }
-        return;
     };
     
     this.sortPool = function( boardType ) {
@@ -246,8 +218,7 @@ var SealedViewModel = function( set ) {
         
         if( boardType == "sideboard" ) {
             this.sideboard()[0].sortPoolByType( sortType, "name" );
-        }
-        else if( boardType == "mainboard" ) {
+        } else if( boardType == "mainboard" ) {
             this.mainboard()[0].sortPoolByType( sortType, "name" );
         }
         
@@ -285,12 +256,11 @@ var SealedViewModel = function( set ) {
     
     this.clearMainboard = function() {
 			
-	    this.mainboardSize(this.mainboardSize() - (this.mainboardSize()));
+	    this.mainboardSize( this.mainboardSize() - this.mainboardSize() );
     
-	    this.numMainboardCreatures(this.numMainboardCreatures() - (this.numMainboardCreatures()));
-	    this.numMainboardLands(this.numMainboardLands() - (this.numMainboardLands()));
-			
-        
+	    this.numMainboardCreatures( this.numMainboardCreatures() - this.numMainboardCreatures() );
+	    this.numMainboardLands( this.numMainboardLands() - this.numMainboardLands() );
+		
         var mainboard = ViewModel.mainboard()[0];
         var sideboard = ViewModel.sideboard()[0];
         var sortType = ViewModel.selectedSortOption.sortType;
@@ -306,13 +276,9 @@ var SealedViewModel = function( set ) {
             var numCards = column.cards().length;
             
             for( var j = numCards - 1; j >= 0; --j ) {
-                
                 var cardView = column.cards()[j];
-                
                 cards.remove( cardView );
-                
                 sideboard.addCardToPool( cardView, sortType, 'name' );
-                
             }
             
         }
@@ -322,10 +288,10 @@ var SealedViewModel = function( set ) {
     this.clearMainboardLands = function() {
 			
 			
-			this.mainboardSize(this.mainboardSize()-this.numMainboardLands());
-			this.numMainboardLands(this.numMainboardLands()-this.numMainboardLands());
-			
-			this.numMainboardLands(this.numMainboardLands() - (this.numMainboardLands()));
+		this.mainboardSize( this.mainboardSize() - this.numMainboardLands() );
+		this.numMainboardLands( this.numMainboardLands() - this.numMainboardLands() );
+		
+		this.numMainboardLands( this.numMainboardLands() - this.numMainboardLands() );
         
         var mainboard = ViewModel.mainboard()[0];
         var sideboard = ViewModel.sideboard()[0];
@@ -401,8 +367,6 @@ var SealedViewModel = function( set ) {
     };
     
     this.fixPoolSize = function() {
-			
-			console.log('fixPoolSize');
         
         // get number of columns and max column length (or # rows) in sideboard
         var sideboardNumCols = this.sideboard()[0].columns().length;
@@ -423,28 +387,28 @@ var SealedViewModel = function( set ) {
             }
         }        
 				
-				//Get current card size
-				var cardW = ViewModel.cardW;
-				var cardH = ViewModel.cardH;
-				var cardPadding = ViewModel.cardPadding;
-				var poolVerticalPadding = ViewModel.poolVerticalPadding;
-				var cardMarginTop = ViewModel.cardMarginTop;
-				
-				var cardPoolW = ( cardW + cardPadding ) * (sideboardNumCols);
-				var cardPoolH = ( sideboardNumRows * cardH ) + (( (sideboardNumRows - 1) * cardMarginTop ) + poolVerticalPadding);
-				
-				$("#card-pool-inner").css( {
-					width : cardPoolW
-					, height : cardPoolH
-				} );
-				
-				cardPoolW = ( cardW + cardPadding ) * ( mainboardNumCols);
-				cardPoolH = ( mainboardNumRows * cardH ) + ( ( mainboardNumRows - 1 ) * cardMarginTop ) + poolVerticalPadding;
-				
-				$("#deck-area-inner").css( {
-					width : cardPoolW
-					, height : cardPoolH
-				} );
+		//Get current card size
+		var cardW = ViewModel.cardW;
+		var cardH = ViewModel.cardH;
+		var cardPadding = ViewModel.cardPadding;
+		var poolVerticalPadding = ViewModel.poolVerticalPadding;
+		var cardMarginTop = ViewModel.cardMarginTop;
+		
+		var cardPoolW = ( cardW + cardPadding ) * (sideboardNumCols);
+		var cardPoolH = ( sideboardNumRows * cardH ) + (( (sideboardNumRows - 1) * cardMarginTop ) + poolVerticalPadding);
+		
+		$("#card-pool-inner").css( {
+			width : cardPoolW
+			, height : cardPoolH
+		} );
+		
+		cardPoolW = ( cardW + cardPadding ) * ( mainboardNumCols);
+		cardPoolH = ( mainboardNumRows * cardH ) + ( ( mainboardNumRows - 1 ) * cardMarginTop ) + poolVerticalPadding;
+		
+		$("#deck-area-inner").css( {
+			width : cardPoolW
+			, height : cardPoolH
+		} );
 				
     };
     

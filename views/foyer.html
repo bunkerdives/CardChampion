@@ -1,16 +1,11 @@
-<div id="foyer" onload="headerLayout()">
+<div id="foyer">
 	<div id="foyer-content-container">
-		
 		<div id="foyer-banner-container">
 			<div id="foyer-banner"></div><!--End #foyer-banner-->
 		</div><!--End #foyer-banner-wrapper-->
-		
-		<!--<div id="foyer-links"/>--><!--End #foyer-links-->
-		
     <div id="portal-container" class="clearfix">
       <div id="portal-left-pane" class="pull-left">
 				<div id="main-animate-wrapper">
-          
           
 					<div id="main-slide-1" class="main-slide" data-bind="if: decksVisible">
             <div>
@@ -42,7 +37,6 @@
   									</div>
   								</div>
   							</div>	
-							
   							<div id="recent-decks-content" class="clearfix" data-bind="with: RecentDecksViewModel">
   								<div id="recent-decks-list" data-bind="foreach: RecentDeckPreviews">
   									<div class="deck-preview clearfix">
@@ -93,7 +87,6 @@
             </div>
 					</div>
 					
-          
 					<div id="main-slide-2" class="main-slide" data-bind="if: newEventVisible">
 		        <div id="sets" style="display:none;">
               <div data-bind="foreach: NewSealedViewModel">
@@ -110,19 +103,15 @@
 		        <button id="select-sealed-button" class="btn btn-large" style="margin-top:200px;" data-bind="click: startSealed">Start GTC Sealed</button>
 					</div><!--End #main-slide-2-->
 					
-          
 					<div id="main-slide-3" class="main-slide" data-bind="if: joinDraftVisible">Join an open draft queue.
 					</div><!--End #main-slide-3-->
 					
-          
 					<div id="main-slide-4" class="main-slide" data-bind="if: aboutVisible">About Us, About LimitedMTG.com, Mission Statement.
 					</div><!--End #main-slide-4-->
-          
           
 					<div id="main-slide-5" class="main-slide" data-bind="if: profileVisible">
 						<div id="profile-container" data-bind="with: ProfileViewModel">
 							<div id="profile-inner">
-                
 								<div id="profile-top-row" class="clearfix" data-bind="with: ProfileGeneralView">
 									<div id="profile-username" class="pull-left" data-bind="text: profileUsername"></div>
 									<div id="profile-nav" class="pull-right clearfix row-fluid">
@@ -145,7 +134,6 @@
 									</div>
 								</div>
 								<div id="profile-bottom-row">
-                  
 									<div id="profile-left-col" class="pull-left" data-bind="with: ProfileGeneralView">
 										<div id="profile-info" class="clearfix">
 											<div id="profile-image" data-bind="style: { backgroundImage : profileThumbSrc }">
@@ -178,11 +166,9 @@
 											<div id="profile-description" data-bind="text: profileDescription"></div>
 										</div>
 									</div>
-                  
 									<div id="profile-right-col" class="pull-right">
 										<div id="profile-content-wrapper">
 											<div id="profile-content">
-                        
                         <!-- Start profile with Decklist -->
                         <div data-bind="if: ProfileDeckListVisible">
                           <div id="profile-deck-previews" data-bind="with: ProfileDeckListViewModel">
@@ -223,7 +209,6 @@
                             </div>
                           </div>
                         </div>
-                        
                         <div data-bind="if: ProfileDeckVisible">
                           <div class="deck-view" class="clearfix" data-bind="with: ProfileDeckViewModel">
                             <div id="deck-view-title" class="clearfix">
@@ -242,24 +227,30 @@
   													<hr style="margin-top:7px;margin-bottom:15px;"/>
   													<div class="clearfix">
   														<div class="deck-view-left pull-left">
-  															<div class="deck-view-section">
-  																<h1>Land (<span>23</span>)</h1>
-  																<p>4x <a href="#">Clifftop Retreat</a></p>
-  																<p>4x <a href="#">Rootbound Crag</a></p>
-  																<p>4x <a href="#">Sacred Foundry</a></p>
-  																<p>3x <a href="#">Stomping Ground</a></p>
-  																<p>4x <a href="#">Sunpetal Grove</a></p>
-  																<p>4x <a href="#">Temple Grove</a></p>
-  															</div>
+                                <div data-bind="foreach: leftColumn">
+    															<div class="deck-view-section">
+    																<h1 data-bind="html: cardTypeGroupTitle"/>
+                                    <div data-bind="foreach: cards">
+    																  <p data-bind="html: title"/>
+                                    </div>
+    															</div>
+                                </div>
   														</div>
                               <div class="deck-view-right pull-right">
-                                
+                                <div data-bind="foreach: rightColumn">
+    															<div class="deck-view-section">
+    																<h1 data-bind="html: cardTypeGroupTitle"/>
+                                    <div data-bind="foreach: cards">
+    																  <p data-bind="html: title"/>
+                                    </div>
+    															</div>
+                                </div>
                               </div>
   													</div>
   													<hr style="margin-top:0px;margin-bottom:18px;"/>
   													<div id="deck-view-description" class="deck-view-section">
   														<h1>Description</h1> 
-  														<p data-bind="text: description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  														<p data-bind="text: description"></p>
   													</div>
   													<hr style="margin-top:2px;margin-bottom:18px;"/>
   													<div id="share-deck-wrapper">
@@ -268,7 +259,6 @@
   													</div>
                           </div>
                         </div>
-                        
 											</div>
 										</div>
 									</div>
@@ -305,7 +295,6 @@
         </div><!--End #chat-input-->
 		  </div><!--End #portal-right-pane-->
     </div><!--End #portal-container-->
-		
 	  <div id="foyer-subcontent">
 	  	<div id="share">
 		  	<div id="share-msg" class="headline-txt">

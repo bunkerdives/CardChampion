@@ -30,7 +30,7 @@ var LoadingWheelController = {
 		
 	}
 	
-	, stop : function() { 
+	, stop : function() {
 		
 		this.target.spin(false);
 		this.target.hide();

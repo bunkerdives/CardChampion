@@ -130,7 +130,7 @@ app.get( '/decklists', function(req, res) {
     var user = Auth.getUsernameOrNull( req );
     
     // get the deck object
-    var deckCardData = Auth.newDeckList( deckname );
+    var deckCardData = Auth.newDeckList( "NayaAggro" );
     
     // get the profile object
     mongoose.model( 'Profile', ProfileSchema, 'Profiles' );
@@ -143,14 +143,10 @@ app.get( '/decklists', function(req, res) {
             , options : JSON.stringify( {
                 'subview' : 'ProfileDeck'
                 , 'authOrGuest' : auth
-                , 'username' : user
-                , 'user' : username
                 , 'profile' : doc
-                , 'deckname' : deckname
                 , 'deckData' : deckCardData
             } )
         } );
-        
         
     } );
     
@@ -190,9 +186,6 @@ app.get( '/:username', function( req, res ){
     } );
     
 } );
-
-
-
 
 
 

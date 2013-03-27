@@ -88,10 +88,6 @@ html(lang='en')
     script(src="/sets/WWK.js")
     script(src="/sets/ZEN.js")
     script(src="/static/js/bootstrap.min.js")
-    script(src="/controllers/header_ui.js")
-    script(src="/controllers/splash_ui.js")
-    script(src="/controllers/foyer_ui.js")
-    script(src="/controllers/limited_ui.js")
     script(src="/static/js/jquery.mousewheel.js")
     script(src="/static/js/jquery.nicescroll.min.js")
     script(src="/static/js/spin.min.js")
@@ -106,10 +102,18 @@ html(lang='en')
     <div id="loading"></div>
     <div data-bind="plugin: plugin"></div>
     </div>
+    
+    script(src="/viewcontrollers/header_ui.js")
+    script(src="/viewcontrollers/splash_ui.js")
+    script(src="/viewcontrollers/foyer_ui.js")
+    script(src="/viewcontrollers/limited_ui.js")
+    
     script(src="/models/Land.js")
-    script(src="/viewmodels/CardViewModel.js")
+    
     script(src="/utilities/CardSort.js")
-    script(src="/viewmodels/BoosterPack.js")
+    script(src="/utilities/BoosterPack.js")
+    
+    script(src="/viewmodels/CardViewModel.js")
     script(src="/viewmodels/ColumnViewModel.js")
     script(src="/viewmodels/CardPoolViewModel.js")
     script(src="/viewmodels/SealedViewModel.js")
@@ -122,7 +126,8 @@ html(lang='en')
     script(src="/viewmodels/ProfileDeckPreViewModel.js")
     script(src="/viewmodels/ProfileDeckListViewModel.js")
     script(src="/viewmodels/ProfileDeckViewModel.js")
-
+    script(src="/viewmodels/ProfileDeckViewCardTypeGroupViewModel.js")
+    script(src="/viewmodels/ProfileDeckItemViewModel.js")
     script(src="/viewmodels/RecentDecksViewModel.js")
     script(src="/viewmodels/RecentDeckPreViewModel.js")
     script(src="/viewmodels/NewSealedViewModel.js")
@@ -137,5 +142,6 @@ html(lang='en')
     script(src="/controllers/LoadingWheelController.js")
     script(src="/controllers/BackgroundController.js")
     script(src="/controllers/BannerController.js")
+    
     script(type="text/javascript")
       initLayout( !{templateName}, !{options} );

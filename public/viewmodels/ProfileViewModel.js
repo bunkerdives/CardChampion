@@ -31,7 +31,6 @@ var ProfileViewModel = function() {
         
     };
     
-    
     this.initDeckListView = function( decks ) {
         
         // create a ProfileDeckListViewModel with the deck preview list data
@@ -52,7 +51,6 @@ var ProfileViewModel = function() {
         
     };
     
-    
     this.displayProfileDeckList = function() {
         this.ProfileDeckListVisible( true );
     };
@@ -60,7 +58,5 @@ var ProfileViewModel = function() {
     this.displayProfileDeckView = function() {
         this.ProfileDeckVisible( true );
     };
-    
-    
     
 };
