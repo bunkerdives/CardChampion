@@ -15,10 +15,10 @@ function builderLayout() {
 	
 	var halfScreenWidth = windowWidth;
 	
-	var yOffsetNum = yOffset;
+	//var yOffsetNum = yOffset;
 	//console.log("yOffsetNum: " + yOffsetNum);
-	var topScreenHeight = (halfScreenHeight + (templateH/7))-yOffsetNum;
-	var bottomScreenHeight= (halfScreenHeight - (templateH/7))+yOffsetNum; 	
+	var topScreenHeight = (halfScreenHeight + (templateH/7));     //-yOffsetNum;
+	var bottomScreenHeight= (halfScreenHeight - (templateH/7));    //+yOffsetNum; 	
 	
 	$('#top-screen').css({
 		"height" : topScreenHeight

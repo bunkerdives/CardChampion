@@ -121,6 +121,23 @@ app.get( '/sealed', function(req, res) {
     
 } );
 
+
+app.get( '/builder', function(req, res) {
+    
+    var auth = Auth.authOrGuest( req );
+    var user = Auth.getUsernameOrNull( req );
+    
+    res.render( 'layout.jade', {
+        templateName : JSON.stringify('Builder')
+        , options : JSON.stringify( {
+            'authOrGuest' : auth
+            , 'user' : user
+        } )
+    } );
+    
+} );
+
+
 app.get( '/decklists', function(req, res) {
     
     var username = req.query.user;

@@ -201,6 +201,6 @@ $(window).resize(function(){
 	//Temporary bg resize
 	var bgSrc = $("body").css("background-image");
 	if ( bgSrc === "url(http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1920x1080_Wallpaper.jpg)") {
-		bgStretch('http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1920x1080_Wallpaper.jpg',1920,1080,1920,973,0,39);
+		BackgroundController.stretchBackground('http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1920x1080_Wallpaper.jpg',1920,1080,1920,973,0,39);
 	}
 });

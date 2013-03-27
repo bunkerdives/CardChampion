@@ -5,6 +5,7 @@ var RecentDeckPreViewModel = function() {
     this.author = ko.observable( '' );
     this.thumb = ko.observable( '' );
     this.deckUrl = ko.observable( '' );
+    
     this.profileUrl = ko.computed( function() {
         return "/" + this.author();
     }, this );
@@ -33,7 +34,6 @@ var RecentDeckPreViewModel = function() {
         this.black( deck.black );
         this.red( deck.red );
         this.green( deck.green );
-        
         
     }
     

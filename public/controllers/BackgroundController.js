@@ -22,10 +22,34 @@ var BackgroundController = {
     , setBackgroundImage : function() {
     
         var ran = Math.floor( Math.random() * this.backgrounds.length );   
-    	var background = this.backgrounds[ran];
     	this.backgroundId = ran;
-    	bgStretch( background.imgSrc, background.outerW, background.outerH, background.innerW, background.innerH, background.l, background.t );
+        
+        var background = this.backgrounds[ran];
+    	this.stretchBackground( background.imgSrc, background.outerW, background.outerH, background.innerW, background.innerH, background.l, background.t );
 
+    }
+    
+    , stretchBackground : function( imgSrc, imgOuterW, imgOuterH, imgInnerW, imgInnerH, imgLeft, imgTop ) {
+    
+    	var windowW = $(window).width();
+    	var windowH = $(window).height();
+	
+    	var tmpH = ( windowW * ( imgInnerH / imgInnerW ) );
+    	var tmpW = windowW;
+    	if ( tmpH < windowH ) tmpW = ( windowH * ( imgInnerW / imgInnerH ) );
+
+    
+    	var newW = ( (imgOuterW / imgInnerW) * tmpW );
+    	var newH = ( (imgOuterH / imgOuterW) * newW );
+    	var newL = - ( imgLeft * (newW / imgOuterW) );
+    	var newT = - ( imgTop * (newH / imgOuterH) );
+	
+    	$('#background-wrap').css( {
+    		"background-image": "url('" + imgSrc + "')",
+    		"background-size": newW + "px " + newH + "px",
+    		"background-position": newL + "px " + newT + "px"
+    	} );
+    
     }
     
 }
