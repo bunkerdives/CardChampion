@@ -971,11 +971,12 @@ a.header-link {
 	width: -webkit-calc(100% - 70px);
 	width: -moz-calc(100% - 70px);
 	width: calc(100% - 70px);
+	
 }
 
 #deck-view-mana {
 	margin-top:2px;
-	float:right;
+	float:left;
 }
 
 #foyer .deck-view-left {
