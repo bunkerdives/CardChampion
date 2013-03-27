@@ -18,5 +18,6 @@
     , "passport.socketio" : "latest"
     , "connect" : "latest"
     , "xtend" : "latest"
+    , "node-uuid" : "latest"
   }
 }

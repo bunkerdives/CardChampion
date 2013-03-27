@@ -1,0 +1,3 @@
+# Files to ignore from repo updates
+node_modules*
+
