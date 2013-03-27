@@ -67,6 +67,7 @@ var SealedViewModel = function( set ) {
     this.selectedSortOption = this.sortOptions()[0];
     this.cardselect = null;
     
+    
     this.selectSortOption = function( type ) {
     
         switch( type ) {
@@ -92,36 +93,31 @@ var SealedViewModel = function( set ) {
         
         // create number of lands per each type, according to the land counts
         for( var i = 0; i < this.whiteLandCount(); ++i ) {
-            var land = new Land('W');
-            var landCard = new CardViewModel(land);
+            var landCard = new CardViewModel( new Land('W') );
             this.mainboard()[0].addCardToPool( landCard, colSortType, "name" );
             this.adjustCardCounterUI( landCard, 1);
         }
         
         for( var i = 0; i < this.blueLandCount(); ++i ) {
-            var land = new Land('U');
-            var landCard = new CardViewModel(land);
+            var landCard = new CardViewModel( new Land('U') );
             this.mainboard()[0].addCardToPool( landCard, colSortType, "name" );
             this.adjustCardCounterUI( landCard, 1);
         }
         
         for( var i = 0; i < this.blackLandCount(); ++i ) {
-            var land = new Land('B');
-            var landCard = new CardViewModel(land);
+            var landCard = new CardViewModel( new Land('B') );
             this.mainboard()[0].addCardToPool( landCard, colSortType, "name" );
             this.adjustCardCounterUI( landCard, 1);
         }
         
         for( var i = 0; i < this.redLandCount(); ++i ) {
-            var land = new Land('R');
-            var landCard = new CardViewModel(land);
+            var landCard = new CardViewModel( new Land('R') );
             this.mainboard()[0].addCardToPool( landCard, colSortType, "name" );
             this.adjustCardCounterUI( landCard, 1);
         }
         
         for( var i = 0; i < this.greenLandCount(); ++i ) {
-            var land = new Land('G');
-            var landCard = new CardViewModel(land);
+            var landCard = new CardViewModel( new Land('G') );
             this.mainboard()[0].addCardToPool( landCard, colSortType, "name" );
             this.adjustCardCounterUI( landCard, 1);
         }
@@ -256,10 +252,9 @@ var SealedViewModel = function( set ) {
     
     this.clearMainboard = function() {
 			
-	    this.mainboardSize( this.mainboardSize() - this.mainboardSize() );
-    
-	    this.numMainboardCreatures( this.numMainboardCreatures() - this.numMainboardCreatures() );
-	    this.numMainboardLands( this.numMainboardLands() - this.numMainboardLands() );
+	    this.mainboardSize( 0 );
+	    this.numMainboardCreatures( 0 );
+	    this.numMainboardLands( 0 );
 		
         var mainboard = ViewModel.mainboard()[0];
         var sideboard = ViewModel.sideboard()[0];
@@ -286,12 +281,9 @@ var SealedViewModel = function( set ) {
     };
     
     this.clearMainboardLands = function() {
-			
-			
-		this.mainboardSize( this.mainboardSize() - this.numMainboardLands() );
-		this.numMainboardLands( this.numMainboardLands() - this.numMainboardLands() );
 		
-		this.numMainboardLands( this.numMainboardLands() - this.numMainboardLands() );
+		this.mainboardSize( this.mainboardSize() - this.numMainboardLands() );
+		this.numMainboardLands( 0 );
         
         var mainboard = ViewModel.mainboard()[0];
         var sideboard = ViewModel.sideboard()[0];
@@ -419,25 +411,30 @@ var SealedViewModel = function( set ) {
 ko.utils.extend( SealedViewModel.prototype, {
     init: function( element, valueAccessor, allBindingsAccessor ) {
         
-        jQuery(document).ready(function ($) {
+        var self = this;
+        
+        jQuery(document).ready( function ($) {
             BackgroundController.setBackgroundImage();
             headerInit();
             $("#header").css('display','block');
-        } );
+            
+            limitedInit();
+            cardSizeInit();
+            headerInit();
+            
+        	$("#add-land-dropdown").on("click", function(e){
+        	  e.stopPropagation();
+        	});
         
-        limitedInit();
-        cardSizeInit();
-        headerInit();
-        
-    	$("#add-land-dropdown").on("click", function(e){
-    	  e.stopPropagation();
-    	});
-        
-        // attach the mousemove event handler to the document element
-        $(document).mousemove( ViewModel.mouseMoveCardDrag );
-        $(document).mouseup( ViewModel.mouseUp );
+            // attach the mousemove event handler to the document element
+            $(document).mousemove( ViewModel.mouseMoveCardDrag );
+            $(document).mouseup( ViewModel.mouseUp );
 				
-		this.fixPoolSize();
+    		self.fixPoolSize();
+            
+            $("#template-plugin").css("display", "block");
+            
+        }, self );
         
     }
     
