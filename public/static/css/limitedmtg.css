@@ -736,10 +736,15 @@ a.header-link {
 	
 	border: 2px solid #000;
 	
-	min-width:350px;
+	min-width:450px;
 	
 	-webkit-box-shadow: 0px 1px 3px 1px #777;
 	box-shadow: 0px 1px 3px 1px #777;
+}
+
+#foyer .deck-preview a {
+	text-decoration:underline !important;
+	color:#0088cc !important;
 }
 
 #foyer .deck-preview-left {
@@ -843,9 +848,9 @@ a.header-link {
 }
 
 #foyer .recent-deck-right {
-	width: -webkit-calc(100% - 80px);
-	width: -moz-calc(100% - 80px);
-	width: calc(100% - 80px);
+	width: -webkit-calc(100% - 77px);
+	width: -moz-calc(100% - 77px);
+	width: calc(100% - 77px);
 	text-align:left;
 	-webkit-border-top-right-radius: 2px;
 	-moz-border-top-right-radius: 2px;
@@ -856,12 +861,13 @@ a.header-link {
 }
 
 #foyer .deck-preview-info {
-	width: -webkit-calc(100% - 40px);
-	width: -moz-calc(100% - 40px);
-	width: calc(100% - 40px);
+	width: -webkit-calc(100% - 50px);
+	width: -moz-calc(100% - 50px);
+	width: calc(100% - 50px);
 	text-align:left;
-	line-height:25px;
+	line-height:35px;
 	padding-left:10px;
+	padding-right:10px;
 }
 
 #foyer .deck-preview-info-left {
@@ -875,14 +881,15 @@ a.header-link {
 }
 
 #foyer .deck-preview-info-right {
-	line-height:37px;
-	margin-right:5px;
+	line-height:35px;
+	text-align:right;
 }
 
 #foyer .deck-preview-format {
 	font-weight:300;
 	font-size:18px;
 	font-style:italic;
+	margin-top:3px;
 }
 
 #foyer .deck-preview-btns {
@@ -1866,6 +1873,12 @@ input[type="range"]{
 	box-shadow:inset 0px 0px 1px 7px #000;
 }
 /* End limited template styles */
+
+/* Start builder template styles */
+
+
+
+/* End builder template styles */
 
 #lightbox-container {
 	display:none;
