@@ -1,0 +1,41 @@
+<div id="builder" style="display:none;">
+	
+  <div id="top-screen" class="clearfix">
+    <div id="preview-wrapper" class="well pull-left">
+      <div id="img-preview" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }"></div>
+    </div>
+    <div id="card-pool" class="well pull-left">
+      <div id="card-pool-scroll" class="clearfix">
+        <div id="card-pool-inner" class="pull-left clearfix"></div>
+      </div>
+    </div>
+  </div><!-- End #top-screen -->
+	
+  <div id="control-bar-container">
+		<div id="limited-control-bar" class="clearfix" style="width:100%;">
+	    <div id="limited-control-bar-left" class="pull-left">
+			</div>
+			<div id="limited-control-bar-right" class="pull-right clearfix">
+				<div id="offset-y-container" class="pull-left">
+					<div id="drag-offset-y" style="margin-left:auto;margin-right:auto;">
+						<i class="icon-align-justify icon-white"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+  </div><!-- End #control-bar -->
+	
+  <div id="bottom-screen" class="clearfix">
+    <div id="builder-card-search" class="well pull-left" style="margin-left:5px;">
+    </div>
+    <div id="deck-area" class="well pull-right" style="margin-right:5px;">
+      <div id="deck-area-scroll">
+       <div id="deck-area-inner">
+        
+       </div>
+      </div>
+    </div>
+  </div><!-- End #bottom-screen -->
+	<div id="drag-drop-card" style="display:none;position:absolute;z-index:4000;"></div>
+</div>
