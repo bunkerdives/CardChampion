@@ -7,6 +7,7 @@ var ProfileDeckPreViewModel = function() {
     this.uuid = ko.observable( '' );
     this.format = ko.observable( '' );
     this.date = ko.observable( '' );
+    this.deckUrl = ko.observable( '' );
     
     this.white = ko.observable( false );
     this.blue = ko.observable( false );
@@ -27,6 +28,7 @@ var ProfileDeckPreViewModel = function() {
         this.uuid( deckPreview.uuid );
         this.format( deckPreview.format );
         this.date( deckPreview.date );
+        this.deckUrl( deckPreview.deckUrl );
         
         this.white( deckPreview.white );
         this.blue( deckPreview.blue );
