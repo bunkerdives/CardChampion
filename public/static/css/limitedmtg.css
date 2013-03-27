@@ -1305,6 +1305,15 @@ a.header-link {
 #foyer #foyer-disclaimer small {
 	display:block;
 }
+
+#foyer #card-preview-container {
+	width:223px;
+	height:310px;
+	background-size:223px 310px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
 /* Foyer end */
 
 
