@@ -14,11 +14,12 @@ var LayoutController = function( template, options ) {
             }
             break;
         case 'Foyer':
-            context = new FoyerViewModel( options.subview );
+            context = new FoyerViewModel();
             context.profileData = options.profile;
             context.subview = options.subview;
             context.deckName = options.deckname;
-            console.log( "Foyer Layout COntroller, subView = " + options.subview );
+            context.deckCardData = options.deckCardData;
+            context.showSubView();
             break;
         default:
             window.location.replace('/'); // TODO make a 404 page
@@ -38,8 +39,7 @@ var LayoutController = function( template, options ) {
     var loggedIn = options.authOrGuest;
     if( template != 'Splash'  &&  !loggedIn ) {
         LightboxController.showAuthLightbox();
-    }
-    else if( template != 'Splash' && loggedIn ) {
+    } else if( template != 'Splash' && loggedIn ) {
         ViewModel.socketController.socketioHandshake();
         LightboxController.closeAuthLightbox();
     }
@@ -47,10 +47,8 @@ var LayoutController = function( template, options ) {
     if( template == 'Foyer' ) {
         jQuery(document).ready( function($){
             profileLayout();
-        });
+        } );
     }
-    
-    console.log("end LayoutController")
     
 };
 
@@ -61,7 +59,6 @@ var hideFoyerSubViews = function() {
     ViewModel.newEventVisible( false );
     ViewModel.joinDraftVisible( false );
 };
-
 
 var initLayout = function( template, options ) {
     ko.applyBindings( new LayoutController( template, options ) );

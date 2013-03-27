@@ -92,8 +92,6 @@ var delta = 500;
 
 function cardSizeChange(slideAmount) {
 	
-	
-	
 	var standardH = 198.7; // standard card height
 	var standardW = 143; // standard card width
 	var newH = standardH * (slideAmount/100);
@@ -126,6 +124,7 @@ function cardSizeChange(slideAmount) {
       timeout = true;
       setTimeout(cardSizeChangeEnd, delta);
   }
+  
 }
 
 function cardSizeChangeEnd() {
@@ -164,6 +163,7 @@ function offsetDragHandlers() {
 			$("body").removeClass("no-select");
 			$("body").removeClass("ns-resize-cursor");
 			ViewModel.yOffsetOld = ViewModel.yOffset;
+            ViewModel.fixPoolSize();
 		}
 	}).mousemove(function(e){
 		if (ViewModel.yOffsetBool == true) {
@@ -172,8 +172,10 @@ function offsetDragHandlers() {
 			var yOffsetDelta = yOffsetStart - yOffsetEnd;
 			ViewModel.yOffset = ViewModel.yOffsetOld + yOffsetDelta;
 			limitedLayout();
+            ViewModel.fixPoolSize();
 		}
 	});
+    
 }
 
 function limitedInit() {

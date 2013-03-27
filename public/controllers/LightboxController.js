@@ -88,49 +88,46 @@ var LightboxController = {
     
     // display the lightbox
     , showAuthLightbox : function( content ) {
-			
-			console.log('showAuthLightbox');
     	
     	// display the lightbox
-			$('#lightbox-shadow').css('display','block');
-    	$('#lightbox-container').css('display','block');
+	    $('#lightbox-shadow').css('display','block');
+        $('#lightbox-container').css('display','block');
         
-      jQuery(document).ready(function ($) {
-      	$("#lightboxcontainer").css('display','block');
+        jQuery(document).ready( function ($) {
+      	    $("#lightboxcontainer").css('display','block');
 				LightboxController.positionAuthLightbox();
 				$(window).resize(function(){
 					LightboxController.positionAuthLightbox();
 				});
-      });
+        } );
 				
 				
     }
 		
     // show an error message between inputs and buttons
     , showAuthError : function( message ) {
-				console.log('showAuthError function called.');
-				var errorMessage = message;
-				
-				if ( errorMessage === "Unauthorized" ) {
-					errorMessage = "Invalid Password";
-				}
-				
-				$('#auth-error span').html(errorMessage);//Update error message
-				
-				var alertWrapper = $('#auth-error-wrapper');
-				
-				alertWrapper.show();
-				
-				var animateH = $('#auth-error').outerHeight(true);
-				
-				alertWrapper.animate(
-					{ 'height' : animateH }
-					, 600
-					, function() {
-						alertWrapper.animate( 
-							{ 'opacity' : 1 }
-							, 200);
-					} );
+        
+		var errorMessage = message;
+		
+		if ( errorMessage === "Unauthorized" ) {
+			errorMessage = "Invalid Password";
+		}
+		
+		$('#auth-error span').html(errorMessage);//Update error message
+		
+		var alertWrapper = $('#auth-error-wrapper');
+		
+		alertWrapper.show();
+		
+		var animateH = $('#auth-error').outerHeight(true);
+		
+		alertWrapper.animate(
+			{ 'height' : animateH }
+			, 600
+			, function() {
+				alertWrapper.animate( { 'opacity' : 1 }, 200);
+		    }
+        );
     }
 
     // close the lightbox
@@ -138,7 +135,7 @@ var LightboxController = {
 				
         jQuery(document).ready(function ($) {
             $("#lightbox-container").css('display','none');
-						$("#lightbox-shadow").css('display', 'none');
+			$("#lightbox-shadow").css('display', 'none');
         } );
 				
     }

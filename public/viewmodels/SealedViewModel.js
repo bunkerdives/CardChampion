@@ -456,7 +456,7 @@ ko.utils.extend( SealedViewModel.prototype, {
     init: function( element, valueAccessor, allBindingsAccessor ) {
         
         jQuery(document).ready(function ($) {
-            ( new FoyerViewModel() ).setBackgroundImage();
+            BackgroundController.setBackgroundImage();
             headerInit();
             $("#header").css('display','block');
         } );
@@ -466,7 +466,6 @@ ko.utils.extend( SealedViewModel.prototype, {
         headerInit();
         
     	$("#add-land-dropdown").on("click", function(e){
-    		//do something
     	  e.stopPropagation();
     	});
         
@@ -474,7 +473,7 @@ ko.utils.extend( SealedViewModel.prototype, {
         $(document).mousemove( ViewModel.mouseMoveCardDrag );
         $(document).mouseup( ViewModel.mouseUp );
 				
-				this.fixPoolSize();
+		this.fixPoolSize();
         
     }
     

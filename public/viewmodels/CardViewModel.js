@@ -19,8 +19,6 @@ var CardViewModel = function( cardData ) {
     
     this.mouseDownHandler = function( poolType, event ) {
         
-        //console.log("mouseDownHandler " + poolType);
-        
         // save the column view that this card is in
         var pool;
         if( poolType == 'sideboard' ){
@@ -105,12 +103,9 @@ var CardViewModel = function( cardData ) {
     
     this.cardSelect = function( poolType ) {
 			
-			console.log('cardSelect')
-			
 			var element = $(event.target);
 			var selected = element.hasClass('select');
 			if (selected === true) {
-				console.log('already highlighted')
         
         var sideboard = ViewModel.sideboard()[0];
         var mainboard = ViewModel.mainboard()[0];

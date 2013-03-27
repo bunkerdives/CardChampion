@@ -163,13 +163,15 @@ Auth = {
         switch( deck ) {
             case 'NayaAggro':
                 return this.newNayaAggroDeck();
+            case 'Jund':
+                return this.newJundDeck();
         }
         
     }
     
     , newNayaAggroDeck : function() {
             
-        var deckList = new DeckList( {
+        var deckList = {
         
             uuid : '12345678'
             , cards : [
@@ -370,15 +372,15 @@ Auth = {
                 }
             ]
         
-        } );
+        };
             
         return deckList;
         
     }
     
-    , newNayaAggroDeck : function() {
+    , newJundDeck : function() {
             
-        var deckList = new DeckList( {
+        var deckList = {
         
             uuid : '123456789'
             , cards : [
@@ -462,7 +464,7 @@ Auth = {
                 }
             ]
         
-        } );
+        };
             
         return deckList;
         

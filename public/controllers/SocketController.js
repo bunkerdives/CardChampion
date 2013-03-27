@@ -4,7 +4,6 @@ var SocketController = function() {
   
     this.socketioHandshake = function() {
         
-        console.log("socketioHandshake")
         var socket = io.connect('http://localhost');
         this.socket = socket;
       

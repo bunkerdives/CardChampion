@@ -10,129 +10,103 @@
     <div id="portal-container" class="clearfix">
       <div id="portal-left-pane" class="pull-left">
 				<div id="main-animate-wrapper">
-					
+          
+          
 					<div id="main-slide-1" class="main-slide" data-bind="if: decksVisible">
-						<div id="recent-decks">
-							<div id="recent-decks-top" class="clearfix">
-								<div id="recent-decks-title" class="pull-left">Recent Decks</div>
-								<div id="recent-decks-filters" class="pull-right">
-									<div class="btn-group" style="display:none;">
-									  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-									    <span class="down-arrow">All Sets</span>
-									  </a>
-									  <ul class="dropdown-menu pull-right">
-									    <li><a href="">GTC</a></li>
-											<li><a href="">RTR</a></li>
-									  </ul>
-									</div>
-									<div class="btn-group">
-									  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="display:none;">
-									    <span class="down-arrow">All Formats</span>
-									  </a>
-									  <ul class="dropdown-menu pull-right">
-									    <li><a href="">Standard</a></li>
-											<li><a href="">Modern</a></li>
-											<li><a href="">Commander</a></li>
-											<li><a href="">Pauper</a></li>
-											<li><a href="">Draft</a></li>
-											<li><a href="">Sealed</a></li>
-									  </ul>
-									</div>
-								</div>
-							</div>	
+            <div>
+  						<div id="recent-decks">
+  							<div id="recent-decks-top" class="clearfix">
+  								<div id="recent-decks-title" class="pull-left">Recent Decks</div>
+  								<div id="recent-decks-filters" class="pull-right">
+  									<div class="btn-group" style="display:none;">
+  									  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+  									    <span class="down-arrow">All Sets</span>
+  									  </a>
+  									  <ul class="dropdown-menu pull-right">
+  									    <li><a href="">GTC</a></li>
+  											<li><a href="">RTR</a></li>
+  									  </ul>
+  									</div>
+  									<div class="btn-group">
+  									  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="display:none;">
+  									    <span class="down-arrow">All Formats</span>
+  									  </a>
+  									  <ul class="dropdown-menu pull-right">
+  									    <li><a href="">Standard</a></li>
+  											<li><a href="">Modern</a></li>
+  											<li><a href="">Commander</a></li>
+  											<li><a href="">Pauper</a></li>
+  											<li><a href="">Draft</a></li>
+  											<li><a href="">Sealed</a></li>
+  									  </ul>
+  									</div>
+  								</div>
+  							</div>	
 							
-							<div id="recent-decks-content" class="clearfix">
-								<div id="recent-decks-list">
-									<div class="deck-preview clearfix">
-										<div class="deck-preview-left pull-left clearfix">
-											<div class="deck-preview-img pull-left" style="background-image: url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366467&type=card');"><img src="../static/img/neutral-density.png"/></div>
-										</div>
-										<div class="recent-deck-right pull-right clearfix">
-											<div class="deck-preview-info pull-left clearfix">
-												<div class="deck-preview-info-left pull-left">
-													<div class="deck-preview-title"><a href="/decklists?user=Guest&deck=NayaAggro">Naya Aggro</a></div>
-													<div id="recent-decks-mana">
-														<span id="deck-preview-white" class="deck-preview-color"/>
-														<span id="deck-preview-red" class="deck-preview-color"/>
-														<span id="deck-preview-green" class="deck-preview-color"/>
-													</div>
-												</div>
-												<div class="deck-preview-info-right pull-right">
-													<div class="deck-preview-format">Standard</div>
-													<div class="deck-preview-author" style="color:#0088cc;"><i class="icon-user" style="margin-right:3px;"></i>Guest</div>
-												</div>
-											</div>
-											<div class="deck-preview-btns pull-right">
-												<div>
-													<button id="deck-preview-view-btn" class="btn btn-primary"><i class="icon-white icon-eye-open"></i></button>
-												</div>
-												<div>
-													<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
-												</div>
-												<div>
-													<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div class="deck-preview clearfix">
-										<div class="deck-preview-left pull-left clearfix">
-											<div class="deck-preview-img pull-left" style="background-image: url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262847&type=card');"><img src="../static/img/neutral-density.png"/></div>
-										</div>
-										<div class="recent-deck-right pull-right clearfix">
-											<div class="deck-preview-info pull-left clearfix">
-												<div class="deck-preview-info-left pull-left">
-													<div class="deck-preview-title"><a href="/decklists?user=Guest&deck=Jund">Jund</a></div>
-													<div id="recent-decks-mana">
-														<span id="deck-preview-black" class="deck-preview-color"/>
-														<span id="deck-preview-red" class="deck-preview-color"/>
-														<span id="deck-preview-green" class="deck-preview-color"/>
-													</div>
-												</div>
-												<div class="deck-preview-info-right pull-right">
-													<div class="deck-preview-format">Standard</div>
-													<div class="deck-preview-author" style="color:#0088cc;"><i class="icon-user" style="margin-right:3px;"></i>Guest</div>
-												</div>
-											</div>
-											<div class="deck-preview-btns pull-right">
-												<div>
-													<button id="deck-preview-view-btn" class="btn btn-primary"><i class="icon-white icon-eye-open"></i></button>
-												</div>
-												<div>
-													<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
-												</div>
-												<div>
-													<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									
-									
-									<div id="recent-decks-load-more" style="display:none;">
-										<button class="btn btn-large">Load More</button>
-									</div>
-								</div>
-							</div>
-						</div>
+  							<div id="recent-decks-content" class="clearfix" data-bind="with: RecentDecksViewModel">
+  								<div id="recent-decks-list" data-bind="foreach: RecentDeckPreviews">
+  									<div class="deck-preview clearfix">
+  										<div class="deck-preview-left pull-left clearfix">
+  											<div class="deck-preview-img pull-left" data-bind="style: {backgroundImage: thumb}">
+                          <img src="../static/img/neutral-density.png"/>
+                        </div>
+  										</div>
+  										<div class="recent-deck-right pull-right clearfix">
+  											<div class="deck-preview-info pull-left clearfix">
+  												<div class="deck-preview-info-left pull-left">
+  													<div class="deck-preview-title">
+                              <a href="" data-bind="text: title"></a>
+                            </div>
+  													<div id="recent-decks-mana">
+  														<span id="deck-preview-white" class="deck-preview-color" data-bind="visible: white"/>
+                              <span id="deck-preview-blue" class="deck-preview-color" data-bind="visible: blue"/>
+                              <span id="deck-preview-black" class="deck-preview-color" data-bind="visible: black"/>
+  														<span id="deck-preview-red" class="deck-preview-color" data-bind="visible: red"/>
+  														<span id="deck-preview-green" class="deck-preview-color" data-bind="visible: green"/>
+  													</div>
+  												</div>
+  												<div class="deck-preview-info-right pull-right">
+  													<div class="deck-preview-format" data-bind="text: format"></div>
+  													<div class="deck-preview-author" style="color:#0088cc;">
+                              <i class="icon-user" style="margin-right:3px;"></i>Guest</div>
+  												</div>
+  											</div>
+  											<div class="deck-preview-btns pull-right">
+  												<div>
+  													<button id="deck-preview-view-btn" class="btn btn-primary"><i class="icon-white icon-eye-open"></i></button>
+  												</div>
+  												<div>
+  													<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
+  												</div>
+  												<div>
+  													<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
+  												</div>
+  											</div>
+  										</div>
+  									</div>
+  									<div id="recent-decks-load-more" style="display:none;">
+  										<button class="btn btn-large">Load More</button>
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+            </div>
 					</div>
 					
 					<div id="main-slide-2" class="main-slide" data-bind="if: newEventVisible">
 		        <div id="sets" style="display:none;">
-		          <!--<table class="table">
-		            <tbody data-bind="foreach: setQueues">
-		              <tr data-bind="click: selectSet">
-		                <td class="set-title set-td" data-bind="text: title"/>
-		                <td class="set-queue set-td" data-bind="text: size"/>
-		              </tr>
-								</tbody>
-		          </table>-->
+              <div data-bind="foreach: NewSealedViewModel">
+  		          <table class="table">
+  		            <tbody data-bind="foreach: setQueues">
+  		              <tr data-bind="click: selectSet">
+  		                <td class="set-title set-td" data-bind="text: title"/>
+  		                <td class="set-queue set-td" data-bind="text: size"/>
+  		              </tr>
+  								</tbody>
+  		          </table>
+              </div>
 		        </div><!--End #sets-->
-		          <button id="select-sealed-button" class="btn btn-large" style="margin-top:200px;" data-bind="click: startSealed">Start GTC Sealed</button>
+		        <button id="select-sealed-button" class="btn btn-large" style="margin-top:200px;" data-bind="click: startSealed">Start GTC Sealed</button>
 					</div><!--End #main-slide-2-->
 					
 					<div id="main-slide-3" class="main-slide" data-bind="if: joinDraftVisible">Join an open draft queue.
@@ -140,12 +114,12 @@
 					
 					<div id="main-slide-4" class="main-slide" data-bind="if: aboutVisible">About Us, About LimitedMTG.com, Mission Statement.
 					</div><!--End #main-slide-4-->
-					
+          
 					<div id="main-slide-5" class="main-slide" data-bind="if: profileVisible">
-						<div id="profile-container">
+						<div id="profile-container" data-bind="with: ProfileViewModel">
 							<div id="profile-inner">
-								<div id="profile-top-row" class="clearfix">
-									<div id="profile-username" class="pull-left" data-bind="text: profileUsername">A_User_Name</div>
+								<div id="profile-top-row" class="clearfix" data-bind="with: ProfileGeneralView">
+									<div id="profile-username" class="pull-left" data-bind="text: profileUsername"></div>
 									<div id="profile-nav" class="pull-right clearfix row-fluid">
 										<ul class="nav nav-pills pull-right" style="display:none;">
 											<li class="active profile-link"><a href="#">Decks</a></li>
@@ -166,7 +140,7 @@
 									</div>
 								</div>
 								<div id="profile-bottom-row">
-									<div id="profile-left-col" class="pull-left">
+									<div id="profile-left-col" class="pull-left" data-bind="with: ProfileGeneralView">
 										<div id="profile-info" class="clearfix">
 											<div id="profile-image" data-bind="style: { backgroundImage : profileThumbSrc }">
 												<img src="../static/img/neutral-density.png"/>
@@ -176,7 +150,7 @@
 													<div>Full Name:</div>
 												</div>
 												<div class="pull-right">
-													<div data-bind="text: profileFullName">Jonathan Doe</div>
+													<div data-bind="text: profileFullName"></div>
 												</div>
 											</div>
 											<div class="clearfix">
@@ -184,7 +158,7 @@
 													<div>Location:</div>
 												</div>
 												<div class="pull-right">
-													<div data-bind="text: profileLocation">Pittsburgh, PA</div>
+													<div data-bind="text: profileLocation"></div>
 												</div>
 											</div>
 											<div class="clearfix">
@@ -192,38 +166,35 @@
 													<div>Date Joined:</div>
 												</div>
 												<div class="pull-right">
-													<div data-bind="text: profileDateJoined">03/01/13</div>
+													<div data-bind="text: profileDateJoined"></div>
 												</div>
 											</div>
-											<div id="profile-description" data-bind="text: profileDescription">This is a description. Lorem ipsum, etc., awiodbawjklbflkawnfl. asdfghjkl;asdfghjkl; asdfghjkl;</div>
+											<div id="profile-description" data-bind="text: profileDescription"></div>
 										</div>
 									</div>
-                  
-                  
 									<div id="profile-right-col" class="pull-right">
 										<div id="profile-content-wrapper">
 											<div id="profile-content">
-                        
                         <!-- Start profile with Decklist -->
-                        <div id="profile-deck-previews" data-bind="if: profileDecksVisible">
-                          <div data-bind="foreach: profileDeckPreviews">
+                        <div id="profile-deck-previews" data-bind="with: ProfileDeckListViewModel">
+                          <div data-bind="foreach: ProfileDeckPreviews">
                             <div class="deck-preview clearfix">
   														<div class="deck-preview-left pull-left clearfix">
   															<div class="deck-preview-img pull-left" data-bind="style: {backgroundImage: thumb}">
   																<img src="../static/img/neutral-density.png"/>
   															</div>
   															<div class="deck-preview-mana pull-right">
-  																<div id="deck-preview-white" class="deck-preview-color" data-bind="if: white"/>
-  																<div id="deck-preview-blue" class="deck-preview-color" data-bind="if: blue"/>
-  																<div id="deck-preview-black" class="deck-preview-color" data-bind="if: black"/>
-  																<div id="deck-preview-red" class="deck-preview-color" data-bind="if: red"/>
-  																<div id="deck-preview-green" class="deck-preview-color" data-bind="if: green"/>
+  																<div id="deck-preview-white" class="deck-preview-color" data-bind="visible: white"/>
+  																<div id="deck-preview-blue" class="deck-preview-color" data-bind="visible: blue"/>
+  																<div id="deck-preview-black" class="deck-preview-color" data-bind="visible: black"/>
+  																<div id="deck-preview-red" class="deck-preview-color" data-bind="visible: red"/>
+  																<div id="deck-preview-green" class="deck-preview-color" data-bind="visible: green"/>
   															</div>
   														</div>
   														<div class="deck-preview-right pull-right clearfix">
   															<div class="deck-preview-info pull-left">
   																<div class="deck-preview-title" data-bind="text: title">
-                                    <a href="/decklists?user=Guest&deck=NayaAggro">
+                                    <a/>
   																</div>
   																<div class="deck-preview-format" data-bind="text: format"></div>
   															</div>
@@ -241,143 +212,7 @@
   														</div>
                             </div>
                           </div>
-                          
-                          
                         </div>
-                        
-                        
-                        
-												<div class="deck-view" id="naya-deck-view" class="clearfix" style="display:none;">
-													<div id="deck-view-title" class="clearfix">
-														<div id="deck-view-thumbnail" class="pull-left"/>
-														<div id="deck-view-title-right" class="pull-right">
-															<span style="text-align:right;" class="pull-right">Naya Aggro</span><br/>
-															<div id="deck-view-mana" class="clearfix">
-																<span id="deck-preview-white" class="deck-preview-color"></span>
-																<span id="deck-preview-red" class="deck-preview-color"></span>
-																<span id="deck-preview-green" class="deck-preview-color"></span>
-															</div>
-														</div>
-													</div>
-													<hr style="margin-top:7px;margin-bottom:15px;"/>
-													<div class="clearfix">
-														<div class="deck-view-left pull-left">
-															<div class="deck-view-section">
-																<h1>Land (<span>23</span>)</h1>
-																<p>4x <a href="#">Clifftop Retreat</a></p>
-																<p>4x <a href="#">Rootbound Crag</a></p>
-																<p>4x <a href="#">Sacred Foundry</a></p>
-																<p>3x <a href="#">Stomping Ground</a></p>
-																<p>4x <a href="#">Sunpetal Grove</a></p>
-																<p>4x <a href="#">Temple Grove</a></p>
-															</div>
-															<div class="deck-view-section">
-																<h1>Creature (<span>25</span>)</h1>
-																<p>1x <a href="#">Aurelia, the Warleader</a></p>
-																<p>4x <a href="#">Avacyn's Pilgrim</a></p>
-																<p>4x <a href="#">Boros Reckoner</a></p>
-																<p>2x <a href="#">Ghor-Clan Rampager</a></p>
-																<p>4x <a href="#">Hellrider</a></p>
-																<p>4x <a href="#">Silverblade Paladin</a></p>
-																<p>4x <a href="#">Thragtusk</a></p>
-																<p>2x <a href="#">Thundermaw Hellkite</a></p>
-															</div>
-														</div>
-														<div class="deck-view-right pull-right">	
-															<div class="deck-view-section">
-																<h1>Sorcery (<span>5</span>)</h1>
-																<p>2x <a href="#">Bonfire of the Damned</a></p>
-																<p>3x <a href="#">Farseek</a></p>
-															</div>
-															<div class="deck-view-section">
-																<h1>Instant (<span>4</span>)</h1>
-																<p>2x <a href="#">Boros Charm</a></p>
-																<p>2x <a href="#">Selesya Charm</a></p>
-															</div>
-															<div class="deck-view-section">
-																<h1>Planeswalker (<span>3</span>)</h1>
-																<p>2x <a href="#">Domri Rade</a></p>
-																<p>1x <a href="#">Gideon, Champion of Justice</a></p>
-															</div>
-														</div>
-													</div>
-													<hr style="margin-top:0px;margin-bottom:18px;"/>
-													<div id="deck-view-description" class="deck-view-section">
-														<h1>Description</h1> 
-														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-													</div>
-													<hr style="margin-top:2px;margin-bottom:18px;"/>
-													<div id="share-deck-wrapper">
-														<div class="deck-view-section"><h1 style="text-align:center;">Share this deck</h1></div>
-											  		<input type="text" readonly/>
-													</div>
-												</div>
-                        
-												<div class="deck-view" id="jund-deck-view" class="clearfix" style="display:none;">
-													<div id="deck-view-title" class="clearfix">
-														<div id="deck-view-thumbnail" class="pull-left"/>
-														<div id="deck-view-title-right" class="pull-right">
-															<span style="text-align:right;" class="pull-right">Jund</span><br/>
-															<div id="deck-view-mana" class="clearfix">
-																<span id="deck-preview-black" class="deck-preview-color"></span>
-																<span id="deck-preview-red" class="deck-preview-color"></span>
-																<span id="deck-preview-green" class="deck-preview-color"></span>
-															</div>
-														</div>
-													</div>
-													<hr style="margin-top:7px;margin-bottom:15px;"/>
-													<div class="clearfix">
-														<div class="deck-view-left pull-left">
-															<div class="deck-view-section">
-																<h1>Land (<span>22</span>)</h1>
-																<p>4x <a href="#">Blood Crypt</a></p>
-																<p>2x <a href="#">Dragonskull Summit</a></p>
-																<p>4x <a href="#">Overgrown Tomb</a></p>
-																<p>3x <a href="#">Rootbound Crag</a></p>
-																<p>4x <a href="#">Stomping Ground</a></p>
-																<p>2x <a href="#">Woodland Cemetary</a></p>
-																<p>2x <a href="#">Forest</a></p>
-																<p>1x <a href="#">Mountain</a></p>
-															</div>
-															<div class="deck-view-section">
-																<h1>Creature (<span>31</span>)</h1>
-																<p>4x <a href="#">Burning-Tree Emissary</a></p>
-																<p>3x <a href="#">Dreg Mangler</a></p>
-																<p>4x <a href="#">Experiment One</a></p>
-																<p>4x <a href="#">Falkenrath Aristocrat</a></p>
-																<p>4x <a href="#">Flinthoof Boar</a></p>
-																<p>4x <a href="#">Ghor-Clan Rampager</a></p>
-																<p>4x <a href="#">Mogg Flunkies</a></p>
-																<p>4x <a href="#">Rakdos Cackler</a></p>
-															</div>
-														</div>
-														<div class="deck-view-right pull-right">	
-															<div class="deck-view-section">
-																<h1>Sorcery (<span>3</span>)</h1>
-																<p>3x <a href="#">Dreadbore</a></p>
-															</div>
-															<div class="deck-view-section">
-																<h1>Instant (<span>4</span>)</h1>
-																<p>2x <a href="#">Abrupt Decay</a></p>
-																<p>2x <a href="#">Searing Spear</a></p>
-															</div>
-														</div>
-													</div>
-													<hr style="margin-top:0px;margin-bottom:18px;"/>
-													<div id="deck-view-description" class="deck-view-section">
-														<h1>Description</h1> 
-														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-													</div>
-													<hr style="margin-top:2px;margin-bottom:18px;"/>
-													<div id="share-deck-wrapper">
-														<div class="deck-view-section"><h1 style="text-align:center;">Share this deck</h1></div>
-											  		<input type="text" readonly/>
-													</div>
-												</div>
-												
-                        
-												<div id="profile-buddy-list" style="display:none;">
-												</div>
 											</div>
 										</div>
 									</div>
@@ -404,7 +239,7 @@
 						</div>
 						<div class="chat-username row-fluid"><div class="span12"><span class="chat-user">Username</span><span class="chat-status">GTC Sealed</span></div></div>
 						<div class="chat-username row-fluid"><div class="span12"><span class="chat-user">Username324</span><span class="chat-status">GTC Sealed</span></div></div>
-						<div class="chat-username row-fluid"><div class="span12"><span class="chat-user">Usee</span><span class="chat-status">GTC Sealed</span></div></div>
+						<div class="chat-username row-fluid"><div class="span12"><span class="chat-user">User</span><span class="chat-status">GTC Sealed</span></div></div>
 					</div>
 				</div>
         <div id="chat-input" class="clearfix">
