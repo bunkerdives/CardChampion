@@ -147,7 +147,7 @@ app.get( '/decklists', function(req, res) {
     var user = Auth.getUsernameOrNull( req );
     
     // get the deck object
-    var deckCardData = Auth.newDeckList( "NayaAggro" );
+    var deckCardData = Auth.newDeckList( deckname );
     
     // get the profile object
     mongoose.model( 'Profile', ProfileSchema, 'Profiles' );

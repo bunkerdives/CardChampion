@@ -3,6 +3,7 @@ var ProfileDeckViewModel = function() {
     this.title = ko.observable( '' );
     this.author = ko.observable( '' );
     this.description = ko.observable( '' );
+    this.thumb = ko.observable( '' );
     
     this.white = ko.observable( false );
     this.blue = ko.observable( false );
@@ -23,6 +24,7 @@ var ProfileDeckViewModel = function() {
         this.title( deck.title );
         this.author( deck.author );
         this.description( deck.description );
+        this.thumb( deck.thumb );
         
         this.white( deck.white );
         this.blue( deck.blue );
