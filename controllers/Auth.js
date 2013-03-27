@@ -174,6 +174,11 @@ Auth = {
         var deckList = {
         
             uuid : '12345678'
+            , white : true
+            , blue : false
+            , black : false
+            , red : true
+            , green : true
             , cards : [
                 {
                     total : 4
@@ -383,6 +388,11 @@ Auth = {
         var deckList = {
         
             uuid : '123456789'
+            , white : false
+            , blue : false
+            , black : true
+            , red : true
+            , green : true
             , cards : [
                 {
                     total : 4

@@ -93,6 +93,7 @@
             </div>
 					</div>
 					
+          
 					<div id="main-slide-2" class="main-slide" data-bind="if: newEventVisible">
 		        <div id="sets" style="display:none;">
               <div data-bind="foreach: NewSealedViewModel">
@@ -109,15 +110,19 @@
 		        <button id="select-sealed-button" class="btn btn-large" style="margin-top:200px;" data-bind="click: startSealed">Start GTC Sealed</button>
 					</div><!--End #main-slide-2-->
 					
+          
 					<div id="main-slide-3" class="main-slide" data-bind="if: joinDraftVisible">Join an open draft queue.
 					</div><!--End #main-slide-3-->
 					
+          
 					<div id="main-slide-4" class="main-slide" data-bind="if: aboutVisible">About Us, About LimitedMTG.com, Mission Statement.
 					</div><!--End #main-slide-4-->
+          
           
 					<div id="main-slide-5" class="main-slide" data-bind="if: profileVisible">
 						<div id="profile-container" data-bind="with: ProfileViewModel">
 							<div id="profile-inner">
+                
 								<div id="profile-top-row" class="clearfix" data-bind="with: ProfileGeneralView">
 									<div id="profile-username" class="pull-left" data-bind="text: profileUsername"></div>
 									<div id="profile-nav" class="pull-right clearfix row-fluid">
@@ -140,6 +145,7 @@
 									</div>
 								</div>
 								<div id="profile-bottom-row">
+                  
 									<div id="profile-left-col" class="pull-left" data-bind="with: ProfileGeneralView">
 										<div id="profile-info" class="clearfix">
 											<div id="profile-image" data-bind="style: { backgroundImage : profileThumbSrc }">
@@ -172,47 +178,97 @@
 											<div id="profile-description" data-bind="text: profileDescription"></div>
 										</div>
 									</div>
+                  
 									<div id="profile-right-col" class="pull-right">
 										<div id="profile-content-wrapper">
 											<div id="profile-content">
+                        
                         <!-- Start profile with Decklist -->
-                        <div id="profile-deck-previews" data-bind="with: ProfileDeckListViewModel">
-                          <div data-bind="foreach: ProfileDeckPreviews">
-                            <div class="deck-preview clearfix">
-  														<div class="deck-preview-left pull-left clearfix">
-  															<div class="deck-preview-img pull-left" data-bind="style: {backgroundImage: thumb}">
-  																<img src="../static/img/neutral-density.png"/>
-  															</div>
-  															<div class="deck-preview-mana pull-right">
-  																<div id="deck-preview-white" class="deck-preview-color" data-bind="visible: white"/>
-  																<div id="deck-preview-blue" class="deck-preview-color" data-bind="visible: blue"/>
-  																<div id="deck-preview-black" class="deck-preview-color" data-bind="visible: black"/>
-  																<div id="deck-preview-red" class="deck-preview-color" data-bind="visible: red"/>
-  																<div id="deck-preview-green" class="deck-preview-color" data-bind="visible: green"/>
-  															</div>
-  														</div>
-  														<div class="deck-preview-right pull-right clearfix">
-  															<div class="deck-preview-info pull-left">
-  																<div class="deck-preview-title" data-bind="text: title">
-                                    <a/>
-  																</div>
-  																<div class="deck-preview-format" data-bind="text: format"></div>
-  															</div>
-  															<div class="deck-preview-btns pull-right">
-  																<div>
-  																	<button id="deck-preview-view-btn" class="btn btn-primary"><i class="icon-white icon-eye-open"></i></button>
-  																</div>
-  																<div>
-  																	<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
-  																</div>
-  																<div>
-  																	<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
-  																</div>
-  															</div>
-  														</div>
+                        <div data-bind="if: ProfileDeckListVisible">
+                          <div id="profile-deck-previews" data-bind="with: ProfileDeckListViewModel">
+                            <div data-bind="foreach: ProfileDeckPreviews">
+                              <div class="deck-preview clearfix">
+    														<div class="deck-preview-left pull-left clearfix">
+    															<div class="deck-preview-img pull-left" data-bind="style: {backgroundImage: thumb}">
+    																<img src="../static/img/neutral-density.png"/>
+    															</div>
+    															<div class="deck-preview-mana pull-right">
+    																<div id="deck-preview-white" class="deck-preview-color" data-bind="visible: white"/>
+    																<div id="deck-preview-blue" class="deck-preview-color" data-bind="visible: blue"/>
+    																<div id="deck-preview-black" class="deck-preview-color" data-bind="visible: black"/>
+    																<div id="deck-preview-red" class="deck-preview-color" data-bind="visible: red"/>
+    																<div id="deck-preview-green" class="deck-preview-color" data-bind="visible: green"/>
+    															</div>
+    														</div>
+    														<div class="deck-preview-right pull-right clearfix">
+    															<div class="deck-preview-info pull-left">
+    																<div class="deck-preview-title" data-bind="text: title">
+                                      <a/>
+    																</div>
+    																<div class="deck-preview-format" data-bind="text: format"></div>
+    															</div>
+    															<div class="deck-preview-btns pull-right">
+    																<div>
+    																	<button id="deck-preview-view-btn" class="btn btn-primary"><i class="icon-white icon-eye-open"></i></button>
+    																</div>
+    																<div>
+    																	<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
+    																</div>
+    																<div>
+    																	<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
+    																</div>
+    															</div>
+    														</div>
+                              </div>
                             </div>
                           </div>
                         </div>
+                        
+                        <div data-bind="if: ProfileDeckVisible">
+                          <div class="deck-view" class="clearfix" data-bind="with: ProfileDeckViewModel">
+                            <div id="deck-view-title" class="clearfix">
+  														<div id="deck-view-thumbnail" class="pull-left"/>
+  														<div id="deck-view-title-right" class="pull-right">
+  															<span style="text-align:right;" class="pull-right" data-bind="text: title"/><br/>
+  															<div id="deck-view-mana" class="clearfix">
+  																<span id="deck-preview-white" class="deck-preview-color" data-bind="visible: white"/>
+  																<span id="deck-preview-blue" class="deck-preview-color" data-bind="visible: blue"/>
+  																<span id="deck-preview-black" class="deck-preview-color" data-bind="visible: black"/>
+  																<span id="deck-preview-red" class="deck-preview-color" data-bind="visible: red"/>
+  																<span id="deck-preview-green" class="deck-preview-color" data-bind="visible: green"/>
+  															</div>
+  														</div>
+  													</div>
+  													<hr style="margin-top:7px;margin-bottom:15px;"/>
+  													<div class="clearfix">
+  														<div class="deck-view-left pull-left">
+  															<div class="deck-view-section">
+  																<h1>Land (<span>23</span>)</h1>
+  																<p>4x <a href="#">Clifftop Retreat</a></p>
+  																<p>4x <a href="#">Rootbound Crag</a></p>
+  																<p>4x <a href="#">Sacred Foundry</a></p>
+  																<p>3x <a href="#">Stomping Ground</a></p>
+  																<p>4x <a href="#">Sunpetal Grove</a></p>
+  																<p>4x <a href="#">Temple Grove</a></p>
+  															</div>
+  														</div>
+                              <div class="deck-view-right pull-right">
+                                
+                              </div>
+  													</div>
+  													<hr style="margin-top:0px;margin-bottom:18px;"/>
+  													<div id="deck-view-description" class="deck-view-section">
+  														<h1>Description</h1> 
+  														<p data-bind="text: description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  													</div>
+  													<hr style="margin-top:2px;margin-bottom:18px;"/>
+  													<div id="share-deck-wrapper">
+  														<div class="deck-view-section"><h1 style="text-align:center;">Share this deck</h1></div>
+  											  		<input type="text" readonly/>
+  													</div>
+                          </div>
+                        </div>
+                        
 											</div>
 										</div>
 									</div>
