@@ -177,6 +177,11 @@ input[readonly] {
 	margin-top:0 !important;
 }
 
+#header-profile-btn ul {
+	min-width:0;
+	text-align:center;
+}
+
 #header .btn-group.open .btn.dropdown-toggle {
 	background-color: transparent;
 }
