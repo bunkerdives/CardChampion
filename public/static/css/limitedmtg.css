@@ -953,13 +953,14 @@ a.header-link {
 	text-align:left;
 	padding-left:4%;
 	padding-right:4%;
+	
 }
 
 #foyer #deck-view-thumbnail {
 	background-repeat:no-repeat;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 	background-color:#000;
 	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366369&type=card');
 	border:1px solid #444;

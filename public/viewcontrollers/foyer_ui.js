@@ -123,16 +123,20 @@ function positionPreviewCard() {
   });
 }
 
+
 function showPreviewCard(t,c) {
 	
 	var target = t;
 	
-	if( c == true) {
+	if (touchevent == true) {
 		clearTimeout(ViewModel.hidePreviewTimeout);
+		//hidePreviewCard();
 		ViewModel.hidePreviewTimeout = setTimeout(function() {
 			hidePreviewCard();
-		}, 5000);
+		}, 1000);
 	}
+	
+	$('#card-preview-container').css("background-image", target);
 	$('#card-preview-container').css('display', 'block');
 	$('#card-preview-container').stop().animate({ opacity: 1 }, 300);
     
@@ -141,33 +145,58 @@ function showPreviewCard(t,c) {
     //var newHtml = $('<div style="background-image:' + imgUrl + '"></div>');
     
 	//$('#card-preview-container').html(target);
-    $('#card-preview-container').css("background-image", target);
+    
     //$('#card-preview-container').html( newHtml );
     
-	positionPreviewCard();
-	$('body').mousemove(function(){
+	if ( c == false ) {
 		positionPreviewCard();
-	});
+		$('body').mousemove(function(){
+			positionPreviewCard();
+		});
+	}
+	
+	
+	
 	
 }
 
 function hidePreviewCard() {
 	$('#card-preview-container').stop().animate({ opacity: 0 }, 300, function(){
 		$('#card-preview-container').css('display', 'none');
-		$('#card-preview-container').empty();
 		$('body').off('mousemove');
+		touchEvent = false;
 	});
 }
 
+
+function tabletPreviewEvent(t,c) {
+	clearTimeout(ViewModel.hidePreviewTimeout);
+	//hidePreviewCard();
+	ViewModel.hidePreviewTimeout = setTimeout(function() {
+		hidePreviewCard();
+	}, 1000);
+	$('#card-preview-container').css( {
+  		'top' : event.pageY - 20
+  		, 'left' : event.pageX + 20
+  	});
+	showPreviewCard( t, c );
+}
+
+var touchEvent;
 function cardPreviewEvent() {
+	
+	
 	$('.deck-view-section a').mouseenter(function() {
         console.log("cardPreviewEvent " + $(this).attr("data-img"))
 		showPreviewCard( $(this).attr("data-img"), false );
 	}).mouseleave(function(){
 		hidePreviewCard();
-	}).click(function(){
-		showPreviewCard( $(this).attr("data-img"), true );
 	});
+	
+	//.on('touchstart', function(e) {
+    //	touchEvent = true;
+	//} );
+	
 	
 }
 /* Card Preview End */
