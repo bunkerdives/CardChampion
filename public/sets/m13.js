@@ -1483,8 +1483,19 @@ M13 = {
                     , 'type' : 'Creature  — Human Cleric'
                     , 'pt' : '(2/2)'
                 }
-            
+                
                 , '56' : {
+                    'name' : "Jace, Memory Adept"
+                    , 'rarity' : 'M'
+                    , 'color' : 'U'
+                    , 'cost' : '3UU'
+                    , 'cmc' : '5'
+                    , 'multiverse' : '254107'
+                    , 'type' : 'Planeswalker  — Jace'
+                    , 'pt' : ''
+                }
+            
+                , '58' : {
                     'name' : 'Kraken Hatchling'
                     , 'rarity' : 'C'
                     , 'color' : 'U'
