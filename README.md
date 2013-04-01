@@ -1,2 +1,2 @@
-LimitedMTG
-==========
+LimitedMTG - GitHub
+=================
