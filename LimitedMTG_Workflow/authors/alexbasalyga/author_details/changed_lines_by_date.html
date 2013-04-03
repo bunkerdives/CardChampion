@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GitStats - limitedMTG</title>
+    <link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <style>
+      body { padding-top: 60px; }
+    </style>
+    <link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css'>
+    <script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+    <script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+    <script src='../../../assets/highstock.js' type='text/javascript'></script>
+  </head>
+  <body>
+    <div class='navbar navbar-fixed-top'>
+      <div class='navbar-inner'>
+        <div class='container'>
+          <a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </a>
+          <a class='brand' href='../../../index.html'>GitStats - limitedMTG</a>
+          <div class='nav-collapse collapse'>
+            <ul class='nav'>
+              <li class=''>
+                <a href='../../../general.html'>General</a>
+              </li>
+              <li class=''>
+                <a href='../../../activity/by_date.html'>Activity</a>
+              </li>
+              <li class='active'>
+                <a href='../../best_authors.html'>Authors</a>
+              </li>
+              <li class=''>
+                <a href='../../../files/by_date.html'>Files</a>
+              </li>
+              <li class='active'>
+                <a href='../../../lines/by_date.html'>Lines</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='tabbable tabs-left'>
+        <ul class='nav nav-tabs'>
+          <li class=''>
+            <a href='commits_by_date.html'>Commits by date</a>
+          </li>
+          <li class='active'>
+            <a href='changed_lines_by_date.html'>Changed lines by date</a>
+          </li>
+          <li class=''>
+            <a href='insertions_by_date.html'>Lines added by date</a>
+          </li>
+          <li class=''>
+            <a href='deletions_by_date.html'>Lines deleted by date</a>
+          </li>
+        </ul>
+        <div class='tab-content'>
+          <div class='tab-pane active'>
+            <div class='page-header'>
+              <h1 class='pagination-centered'>Changed lines by date</h1>
+            </div>
+                    <script type="text/javascript">
+                    (function() {
+                      var onload = window.onload;
+                      window.onload = function(){
+                        if (typeof onload == "function") onload();
+                                var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "alexbasalyga","type": "spline","data": [ [ 1358457284000,100 ],[ 1358457518000,196 ],[ 1358543041000,210 ],[ 1358543227000,210 ],[ 1358543812000,255 ],[ 1358556864000,279 ],[ 1358557386000,319 ],[ 1358568397000,559 ],[ 1358571657000,646 ],[ 1358573517000,659 ],[ 1358575873000,688 ],[ 1358582772000,768 ],[ 1358593179000,871 ],[ 1358630506000,1053 ],[ 1358640432000,1214 ],[ 1358645812000,1340 ],[ 1358705776000,1482 ],[ 1358708130000,1482 ],[ 1358803947000,1850 ],[ 1358808641000,2203 ],[ 1358817646000,2315 ],[ 1358819806000,2558 ],[ 1358830226000,2621 ],[ 1358966494000,2653 ],[ 1359013710000,2760 ],[ 1359015091000,2764 ],[ 1359059706000,2778 ],[ 1359066675000,2815 ],[ 1359069850000,2828 ],[ 1359070061000,2830 ],[ 1359074401000,2867 ],[ 1359076410000,2921 ],[ 1359078527000,2935 ],[ 1359143988000,2954 ],[ 1359411711000,3430 ],[ 1359418118000,3502 ],[ 1359669496000,4022 ],[ 1359756149000,4125 ],[ 1359762719000,4164 ],[ 1360018681000,4425 ],[ 1360018817000,4427 ],[ 1360111058000,4753 ],[ 1360127515000,4763 ],[ 1360202737000,6157 ],[ 1361386042000,6582 ],[ 1361386178000,6582 ],[ 1361403443000,6625 ],[ 1361404977000,6656 ],[ 1361490999000,6837 ],[ 1361494018000,6858 ],[ 1361497082000,6866 ],[ 1361822859000,6897 ],[ 1361829741000,6904 ],[ 1361837581000,6905 ],[ 1361842900000,6963 ],[ 1361921352000,6966 ],[ 1361921716000,6972 ],[ 1361934079000,6991 ],[ 1362015045000,7290 ],[ 1362022092000,7348 ],[ 1362022783000,7353 ],[ 1362028762000,7387 ],[ 1362078048000,7474 ],[ 1362350041000,9194 ],[ 1362420224000,9584 ],[ 1362424188000,10625 ],[ 1362429535000,10882 ],[ 1362438571000,10988 ],[ 1362599983000,10999 ],[ 1362690578000,10999 ],[ 1363034852000,11720 ],[ 1363042034000,11789 ],[ 1363045177000,11820 ],[ 1363050569000,11958 ],[ 1363206909000,12130 ],[ 1363209466000,12159 ],[ 1363225536000,12314 ],[ 1363330255000,12453 ],[ 1363330353000,12664 ],[ 1363332766000,12715 ],[ 1363382414000,12850 ],[ 1363387289000,12894 ],[ 1363733928000,13322 ],[ 1363737659000,13459 ],[ 1363740017000,13498 ],[ 1363741893000,13507 ],[ 1363756791000,13623 ],[ 1363766182000,13806 ],[ 1363808909000,13996 ],[ 1363816073000,14127 ],[ 1363816094000,14127 ],[ 1363816901000,14132 ],[ 1363840318000,14439 ],[ 1363849046000,14495 ],[ 1363850002000,14508 ],[ 1363851147000,14612 ],[ 1363851224000,14614 ],[ 1363853558000,14766 ],[ 1363895812000,14925 ],[ 1363900164000,14975 ],[ 1363994645000,15116 ],[ 1364018059000,15657 ],[ 1364021320000,15728 ],[ 1364022135000,15795 ],[ 1364134101000,19559 ],[ 1364134393000,19561 ],[ 1364134571000,19563 ],[ 1364135296000,19576 ],[ 1364136141000,19620 ],[ 1364136990000,19640 ],[ 1364137530000,19661 ],[ 1364141871000,21769 ],[ 1364144636000,21856 ],[ 1364150202000,23816 ],[ 1364150361000,25751 ],[ 1364151293000,25753 ],[ 1364179153000,25817 ],[ 1364256149000,25958 ],[ 1364258614000,26015 ],[ 1364400387000,26169 ],[ 1364402533000,26215 ],[ 1364403048000,26216 ],[ 1364403977000,26230 ],[ 1364404469000,26241 ],[ 1364410243000,26346 ],[ 1364410522000,26355 ],[ 1364413289000,26409 ] ] }] };
+                    
+                    window.chart_charts.changed_lines_by_author_by_date = new Highcharts.StockChart(options);
+            
+                      };
+                    })()
+                    </script>
+            <div id="charts.changed_lines_by_author_by_date"></div>
+            <small>
+              <center>5 best authors shown</center>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
