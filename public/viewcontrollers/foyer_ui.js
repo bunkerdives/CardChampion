@@ -128,13 +128,13 @@ function showPreviewCard(t,c) {
 	
 	var target = t;
 	
-	if (touchevent == true) {
+	/*if (touchevent == true) {
 		clearTimeout(ViewModel.hidePreviewTimeout);
 		//hidePreviewCard();
 		ViewModel.hidePreviewTimeout = setTimeout(function() {
 			hidePreviewCard();
 		}, 1000);
-	}
+	}*/
 	
 	$('#card-preview-container').css("background-image", target);
 	$('#card-preview-container').css('display', 'block');
@@ -148,12 +148,12 @@ function showPreviewCard(t,c) {
     
     //$('#card-preview-container').html( newHtml );
     
-	if ( c == false ) {
+	
 		positionPreviewCard();
 		$('body').mousemove(function(){
 			positionPreviewCard();
 		});
-	}
+	
 	
 	
 	

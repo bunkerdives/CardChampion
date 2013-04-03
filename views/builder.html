@@ -6,7 +6,15 @@
     </div>
     <div id="card-pool" class="well pull-left">
       <div id="card-pool-scroll" class="clearfix">
-        <div id="card-pool-inner" class="pull-left clearfix"></div>
+        <div id="card-pool-inner" class="pull-left clearfix">
+          <div data-bind="foreach: sideboard">
+            <div data-bind="foreach: columns">
+              <div class="column" data-bind="foreach: cards, event: { mouseover: mouseOver }">
+                <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(data,event){ mouseDownHandler('sideboard', event); }, mouseup: mouseUpHandler, mouseover: function(){ cardZoom($root,false) }, click: function(){ cardSelect('sideboard');cardZoom($root,true); }, dblclick: function(){ cardSelect('sideboard'); } }"/><!---->
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div><!-- End #top-screen -->
@@ -29,12 +37,20 @@
 	
   <div id="bottom-screen" class="clearfix">
     <div id="builder-card-search" class="pull-left" style="margin-left:5px;">
+      <!-- <button data-bind="event: {click: addChosenCardToMainboard}">Add card to mainboard</button>
+      <button data-bind="event: {click: addChosenCardToSideboard}">Add card to sideboard</button> -->
     </div>
     <div id="deck-area" class="well pull-right" style="margin-right:5px;">
       <div id="deck-area-scroll">
-       <div id="deck-area-inner">
-        
-       </div>
+        <div id="deck-area-inner">
+          <div data-bind="foreach: mainboard">
+            <div data-bind="foreach: columns">
+              <div class="column" data-bind="foreach: cards, event: { mouseover: mouseOver }">
+                <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(data,event){ mouseDownHandler('mainboard', event); }, mouseup: mouseUpHandler, mouseover: function(){ cardZoom($root,false) }, click: function(){ cardSelect('mainboard');cardZoom($root,true); }, dblclick: function(){ cardSelect('mainboard'); } }"/>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div><!-- End #bottom-screen -->

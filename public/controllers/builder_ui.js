@@ -4,74 +4,7 @@ function showBuilder() {
 	builderLayout();
 }
 
-function builderTypeahead() {
-	$('#builder-input').typeahead({
 
-		
-			source: function (query, process) {
-				console.log("source")
-			
-			    cards = [];
-			    map = {};
-				
-				//var setList = ["GTC", "RTR", "M13", "ISD", "AVR", "DKA"];
-				
-				var setData;
-				var cardData;
-			    var data = [ ];
-				
-				var setListObject = SetController.setList;
-				
-				/*
-				var setList = [ ];
-				for(var key in setListObject) {
-				  if(setListObject.hasOwnProperty(key)) { //to be safe
-				    setList.push(key);
-				  }
-				}
-				*/
-				
-				$.each( setListObject, function(key, setObj) {
-					
-					var cardData = setObj.card_data;
-					
-					$.each( cardData, function( index, value ) {
-							var cardObj = { cardName : value.name, multiverse : value.multiverse };
-							data.push( cardObj );
-					} );
-					
-				} );
-				
-				/*
-				$.each( setList, function ( i, setID ) {
-				
-					setData = SetController.getSet(setID);
-					cardData = setData.card_data;
-			
-					$.each( cardData, function( index, value ) {
-							var cardObj = { cardName : value.name, multiverse : value.multiverse };
-							data.push( cardObj );
-					} );
-				
-				} );
-				*/
-				
-
-			    $.each( data, function (key, cardObj) {
-			        map[ cardObj.cardName ] = cardObj;
-			        cards.push( cardObj.cardName );
-			    } );
-
-			    process(cards);
-			}
-		
-			, updater: function (item) {
-			
-				return item;
-	    }
-	
-	});
-}
 
 function builderLayout() {
 	//console.log('limitedLayout function called.');

@@ -1,3 +1,4 @@
 # Files to ignore from repo updates
 node_modules*
+.DS_Store
 

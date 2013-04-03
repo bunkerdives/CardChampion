@@ -15,6 +15,7 @@ app.get( '/', function(req, res) {
     var auth = Auth.authOrGuest( req );
     var user = Auth.getUsernameOrNull( req );
     
+    /*
     res.render( 'layout.jade', {
         templateName: JSON.stringify('Splash')
         , options: JSON.stringify( {
@@ -23,6 +24,25 @@ app.get( '/', function(req, res) {
         } )
         
     } );
+    */
+    
+    mongoose.model( 'Profile', ProfileSchema, 'Profiles' );
+    var ProfileModel = database.model('Profile');
+    
+    ProfileModel.findOne( { user : 'Guest' }, function(err, doc) {
+    
+        res.render( 'layout.jade', {
+            templateName: JSON.stringify('Foyer')
+            , options: JSON.stringify( {
+                'subview' : 'Decks'
+                , 'authOrGuest' : auth
+                , 'user' : user
+                , 'profile' : doc
+            } )
+        } );
+    
+    } );
+    
 } );
 
 

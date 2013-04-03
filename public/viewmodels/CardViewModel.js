@@ -70,7 +70,7 @@ var CardViewModel = function( cardData ) {
         
         ViewModel.imgSrc( url );
 				
-				if (selecting === true){
+		if( selecting == true ) {
 				
 	        var element = $(event.target);
         
@@ -80,16 +80,12 @@ var CardViewModel = function( cardData ) {
         
 	        element.addClass("select");
 	        ViewModel.cardselect = element;
-				}
-				
-				
-        
+		}
+		
     };
     
     this.cardHighlight = function( data, event ) {
 			
-			
-        
         var element = $(event.target);
         
         if( ViewModel.cardselect != null ) {
@@ -103,39 +99,39 @@ var CardViewModel = function( cardData ) {
     
     this.cardSelect = function( poolType ) {
 			
-			var element = $(event.target);
-			var selected = element.hasClass('select');
-			if (selected === true) {
+		var element = $(event.target);
+		var selected = element.hasClass('select');
+		if (selected === true) {
         
-        var sideboard = ViewModel.sideboard()[0];
-        var mainboard = ViewModel.mainboard()[0];
+            var sideboard = ViewModel.sideboard()[0];
+            var mainboard = ViewModel.mainboard()[0];
         
-        var colSortType = ViewModel.selectedSortOption.sortType;
+            var colSortType = ViewModel.selectedSortOption.sortType;
         
-        if( poolType == 'sideboard' ) {
+            if( poolType == 'sideboard' ) {
             
-            var col = this.cardColumn( sideboard, this );
+                var col = this.cardColumn( sideboard, this );
             
-            sideboard.removeCardFromPool( this, col );
-            mainboard.addCardToPool( this, colSortType, "name" );
+                sideboard.removeCardFromPool( this, col );
+                mainboard.addCardToPool( this, colSortType, "name" );
             
-            ViewModel.adjustCardCounterUI( this, 1 );
+                ViewModel.adjustCardCounterUI( this, 1 );
             
-        }
-        else if( poolType == 'mainboard' ) {
+            }
+            else if( poolType == 'mainboard' ) {
             
-            var col = this.cardColumn( mainboard, this );
+                var col = this.cardColumn( mainboard, this );
             
-            mainboard.removeCardFromPool( this, col );
-            sideboard.addCardToPool( this, colSortType, "name" );
+                mainboard.removeCardFromPool( this, col );
+                sideboard.addCardToPool( this, colSortType, "name" );
             
-            ViewModel.adjustCardCounterUI( this, -1 );
+                ViewModel.adjustCardCounterUI( this, -1 );
             
-        }
+            }
         
-        ViewModel.fixPoolSize();
+            ViewModel.fixPoolSize();
 				
-			}
+		}
         
     };
     

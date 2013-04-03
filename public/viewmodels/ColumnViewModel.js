@@ -61,8 +61,6 @@ var ColumnViewModel = function( cards ) {
     
     this.columnMouseUpDropCard = function() {
       
-        console.log("columnMouseUpDropCard")
-      
         if( ViewModel.mousedown == true ) {
             
             // hide drag-drop-card
@@ -80,11 +78,7 @@ var ColumnViewModel = function( cards ) {
     this.mouseOver = function() {
         
         if( ViewModel.mousedown == true ) {
-            
-            console.log("mouseOver");
-            
             ViewModel.dragDropNewCol = this;
-            
         }
     }
     
