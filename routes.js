@@ -205,7 +205,7 @@ app.get( '/:username', function( req, res ){
     
     mongoose.model( 'Profile', ProfileSchema, 'Profiles' );
     
-    var ProfileModel = database.model('Profile'
+    var ProfileModel = database.model('Profile');
     ProfileModel.findOne( { user : username }, function(err, doc) {
         
         // route the client to the profile page of the given user
