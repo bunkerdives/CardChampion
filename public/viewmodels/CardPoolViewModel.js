@@ -15,8 +15,6 @@ var CardPoolViewModel = function( type ) {
     
     this.addCardToPool = function( card, colSortType, cardSortType ) {
         
-        console.log("addCardToPool card = " + card );
-        
         if( this.columns().length == 0 ){
             var newColumn = new ColumnViewModel( [ card ] );
             newColumn.setCmc( card.cmc );

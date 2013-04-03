@@ -48,10 +48,10 @@
 						</button>
             <ul class="dropdown-menu pull-right" style="width:auto;min-width:0px;">
               <li>
-                <a tabindex="-1" data-bind="event: { click: function(){ sortPool('sideboard'); } }">Sideboard</a>
+                <a tabindex="-1" data-bind="event: { click: function(){ poolSortController.sortPool('sideboard'); } }">Sideboard</a>
               </li>
               <li>
-                <a tabindex="-1" data-bind="event: { click: function(){ sortPool('mainboard'); } }">Mainboard</a>
+                <a tabindex="-1" data-bind="event: { click: function(){ poolSortController.sortPool('mainboard'); } }">Mainboard</a>
               </li>
 					                
             </ul>
@@ -61,9 +61,9 @@
 		        <button class="btn pull-left btn-mini btn-primary dropdown-toggle" data-toggle="dropdown" style="-webkit-border-radius: 0 4px 4px 0;-moz-border-radius: 0 4px 4px 0;border-radius: 0 4px 4px 0;">
 								<span id="aSortDisplay">by cost</span></button>
 	            <ul class="dropdown-menu" style="width:auto;min-width:0;">
-						    <li><a data-bind="event: { click: function(){ selectSortOption('cmc'); } }">by cost</a></li>
-								<li><a data-bind="event: { click: function(){ selectSortOption('color'); } }">by color</a></li>
-                <li><a data-bind="event: { click: function(){ selectSortOption('rarity'); } }">by rarity</a></li>
+						    <li><a data-bind="event: { click: function(){ poolSortController.selectSortOption('cmc'); } }">by cost</a></li>
+								<li><a data-bind="event: { click: function(){ poolSortController.selectSortOption('color'); } }">by color</a></li>
+                <li><a data-bind="event: { click: function(){ poolSortController.selectSortOption('rarity'); } }">by rarity</a></li>
 								<li style="display:none;"><a>by type</a></li>
 	            </ul>
 						</div>
@@ -73,7 +73,7 @@
 								<li class="clearfix">
 									<div class="pull-left clearfix half-width">
 										<div class="pull-left clearfix">
-											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ incrLandCount('W'); } }"/>
+											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ addLandController.incrLandCount('W'); } }"/>
 										</div>
 										<div class="pull-right">
 											<img src="/static/img/white-mana.jpg">
@@ -84,14 +84,14 @@
 											<span data-bind="text: whiteLandCount">0</span>
 										</div>
 										<div class="pull-right clearfix">
-											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ decrLandCount('W'); } }"/>
+											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ addLandController.decrLandCount('W'); } }"/>
 										</div>
 									</div>
 								</li>
 								<li class="clearfix">
 									<div class="pull-left clearfix half-width">
 										<div class="pull-left clearfix">
-											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ incrLandCount('U'); } }"/>
+											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ addLandController.incrLandCount('U'); } }"/>
 										</div>
 										<div class="pull-right">
 											<img src="/static/img/blue-mana.jpg">
@@ -102,14 +102,14 @@
 											<span data-bind="text: blueLandCount">0</span>
 										</div>
 										<div class="pull-right clearfix">
-											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ decrLandCount('U'); } }"/>
+											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ addLandController.decrLandCount('U'); } }"/>
 										</div>
 									</div>
 								</li>
 								<li class="clearfix">
 									<div class="pull-left clearfix half-width">
 										<div class="pull-left clearfix">
-											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ incrLandCount('B'); } }"/>
+											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ addLandController.incrLandCount('B'); } }"/>
 										</div>
 										<div class="pull-right">
 											<img src="/static/img/black-mana.jpg">
@@ -120,14 +120,14 @@
 											<span data-bind="text: blackLandCount">0</span>
 										</div>
 										<div class="pull-right clearfix">
-											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ decrLandCount('B'); } }"/>
+											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ addLandController.decrLandCount('B'); } }"/>
 										</div>
 									</div>
 								</li>
 								<li class="clearfix">
 									<div class="pull-left clearfix half-width">
 										<div class="pull-left clearfix">
-											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ incrLandCount('R'); } }"/>
+											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ addLandController.incrLandCount('R'); } }"/>
 										</div>
 										<div class="pull-right">
 											<img src="/static/img/red-mana.jpg">
@@ -138,14 +138,14 @@
 											<span data-bind="text: redLandCount">0</span>
 										</div>
 										<div class="pull-right clearfix">
-											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ decrLandCount('R'); } }"/>
+											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ addLandController.decrLandCount('R'); } }"/>
 										</div>
 									</div>
 								</li>
 								<li class="clearfix">
 									<div class="pull-left clearfix half-width">
 										<div class="pull-left clearfix">
-											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ incrLandCount('G'); } }"/>
+											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ addLandController.incrLandCount('G'); } }"/>
 										</div>
 										<div class="pull-right">
 											<img src="/static/img/green-mana.jpg">
@@ -156,21 +156,21 @@
 											<span data-bind="text: greenLandCount">0</span>
 										</div>
 										<div class="pull-right clearfix">
-											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ decrLandCount('G'); } }"/>
+											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ addLandController.decrLandCount('G'); } }"/>
 										</div>
 									</div>
 								</li>
 			          <li style="display:none;">
 									<div class="text-center">
-			            	<button class="btn btn-mini btn-primary" data-bind="event: { click : suggestLand }">Suggest</button>
+			            	<button class="btn btn-mini btn-primary" data-bind="event: { click : landController.suggestLand }">Suggest</button>
 									</div>
 								</li>
 								<li class="add-land-dropdown-btns clearfix">
 									<div class="half-width pull-left">
-			            	<button class="btn btn-mini btn-success pull-right" data-bind="event: { click: addLandToMainboard }">Add</button>
+			            	<button class="btn btn-mini btn-success pull-right" data-bind="event: { click: addLandController.addLandToMainboard }">Add</button>
 									</div>
 									<div class="half-width pull-right">
-										<button class="btn btn-mini btn-danger pull-left" data-bind="event: { click : resetLandCounters }">Reset</button>
+										<button class="btn btn-mini btn-danger pull-left" data-bind="event: { click : addLandController.resetLandCounters }">Reset</button>
 									</div>
 			          </li>
 					 	 	</ul>
@@ -197,11 +197,11 @@
 					</div>
 					<div id="reset-btn" class="btn-group pull-left">
 						<button class="btn btn-mini btn-danger dropdown-toggle" data-toggle="dropdown">
-							<i class="icon-white icon-remove"></i><!--data-bind="event: { click : clearMainboard }"-->
+							<i class="icon-white icon-remove"></i>
 						</button>
 							<ul class="dropdown-menu pull-right">
-								<li><a data-bind="event: { click : clearMainboard }">Reset All</a></li>
-								<li><a data-bind="event: { click : clearMainboardLands }">Reset Land</a></li>
+								<li><a data-bind="event: { click : poolClearController.clearMainboard }">Reset All</a></li>
+								<li><a data-bind="event: { click : poolClearController.clearMainboardLands }">Reset Land</a></li>
 							</ul>
 					</div>
 				</div><!--End #control-bar-buttons-->
