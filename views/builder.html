@@ -32,6 +32,180 @@
 						<i class="icon-align-justify icon-white"></i>
 					</div>
 				</div>
+				
+				<div id="mainboard-breakdown" class="pull-left">
+		      <span id="mainboard-total" data-bind="text: mainboardSize"></span>
+		      <span>/40</span>
+		      <span style="margin-left:17px;">Creatures:</span>
+		      <span id="mainboard-creatures" data-bind="text: numMainboardCreatures"></span>
+		      <span style="margin-left:17px;">Lands:</span>
+		      <span id="mainboard-lands" data-bind="text: numMainboardLands"></span>
+		    </div><!-- End #mainboard-breakdown -->
+				
+				<div id="control-bar-buttons" class="pull-right">
+					<div class="pull-left btn-group">
+						<button class="btn btn-mini btn-primary dropdown-toggle" data-toggle="dropdown" style="-webkit-border-radius: 4px 0 0 4px;-moz-border-radius: 4px 0 0 4px;border-radius: 4px 0 0 4px;">
+							Sort<!--data-bind="event: { click : clearMainboard }"-->
+						</button>
+            <ul class="dropdown-menu pull-right" style="width:auto;min-width:0px;">
+              <li>
+                <a tabindex="-1" data-bind="event: { click: function(){ poolSortController.sortPool('mainboard'); } }">Mainboard</a>
+              </li>
+              <li>
+                <a tabindex="-1" data-bind="event: { click: function(){ poolSortController.sortPool('sideboard'); } }">Sideboard</a>
+              </li>   
+            </ul>
+					</div>	
+						
+					<div class="pull-left btn-group" style="margin-left:0;">	
+		        <button class="btn pull-left btn-mini btn-primary dropdown-toggle" data-toggle="dropdown" style="-webkit-border-radius: 0 4px 4px 0;-moz-border-radius: 0 4px 4px 0;border-radius: 0 4px 4px 0;">
+								<span id="aSortDisplay">by cost</span></button>
+	            <ul class="dropdown-menu" style="width:auto;min-width:0;">
+						    <li><a data-bind="event: { click: function(){ poolSortController.selectSortOption('cmc'); } }">by cost</a></li>
+								<li><a data-bind="event: { click: function(){ poolSortController.selectSortOption('color'); } }">by color</a></li>
+                <li><a data-bind="event: { click: function(){ poolSortController.selectSortOption('rarity'); } }">by rarity</a></li>
+								<li style="display:none;"><a>by type</a></li>
+	            </ul>
+						</div>
+					<div id="add-land-btn" class="btn-group pull-left">
+		        <button id="addland" class="btn btn-mini btn-success dropdown-toggle" data-toggle="dropdown">Add Land</button>
+			        <ul id="add-land-dropdown" class="dropdown-menu pull-right">
+								<li class="clearfix">
+									<div class="pull-left clearfix half-width">
+										<div class="pull-left clearfix">
+											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ addLandController.incrLandCount('W'); } }"/>
+										</div>
+										<div class="pull-right">
+											<img src="/static/img/white-mana.jpg">
+										</div>
+									</div>
+									<div class="pull-right clearfix half-width">
+										<div class="pull-left">
+											<span data-bind="text: whiteLandCount">0</span>
+										</div>
+										<div class="pull-right clearfix">
+											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ addLandController.decrLandCount('W'); } }"/>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="pull-left clearfix half-width">
+										<div class="pull-left clearfix">
+											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ addLandController.incrLandCount('U'); } }"/>
+										</div>
+										<div class="pull-right">
+											<img src="/static/img/blue-mana.jpg">
+										</div>
+									</div>
+									<div class="pull-right clearfix half-width">
+										<div class="pull-left">
+											<span data-bind="text: blueLandCount">0</span>
+										</div>
+										<div class="pull-right clearfix">
+											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ addLandController.decrLandCount('U'); } }"/>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="pull-left clearfix half-width">
+										<div class="pull-left clearfix">
+											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ addLandController.incrLandCount('B'); } }"/>
+										</div>
+										<div class="pull-right">
+											<img src="/static/img/black-mana.jpg">
+										</div>
+									</div>
+									<div class="pull-right clearfix half-width">
+										<div class="pull-left">
+											<span data-bind="text: blackLandCount">0</span>
+										</div>
+										<div class="pull-right clearfix">
+											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ addLandController.decrLandCount('B'); } }"/>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="pull-left clearfix half-width">
+										<div class="pull-left clearfix">
+											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ addLandController.incrLandCount('R'); } }"/>
+										</div>
+										<div class="pull-right">
+											<img src="/static/img/red-mana.jpg">
+										</div>
+									</div>
+									<div class="pull-right clearfix half-width">
+										<div class="pull-left">
+											<span data-bind="text: redLandCount">0</span>
+										</div>
+										<div class="pull-right clearfix">
+											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ addLandController.decrLandCount('R'); } }"/>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="pull-left clearfix half-width">
+										<div class="pull-left clearfix">
+											<i class="icon-plus-sign pull-right" data-bind="event: { click: function(){ addLandController.incrLandCount('G'); } }"/>
+										</div>
+										<div class="pull-right">
+											<img src="/static/img/green-mana.jpg">
+										</div>
+									</div>
+									<div class="pull-right clearfix half-width">
+										<div class="pull-left">
+											<span data-bind="text: greenLandCount">0</span>
+										</div>
+										<div class="pull-right clearfix">
+											<i class="icon-minus-sign pull-left" data-bind="event: { click: function(){ addLandController.decrLandCount('G'); } }"/>
+										</div>
+									</div>
+								</li>
+			          <li style="display:none;">
+									<div class="text-center">
+			            	<button class="btn btn-mini btn-primary">Suggest</button>
+									</div>
+								</li>
+								<li class="add-land-dropdown-btns clearfix">
+									<div class="half-width pull-left">
+			            	<button class="btn btn-mini btn-success pull-right">Add</button>
+									</div>
+									<div class="half-width pull-right">
+										<button class="btn btn-mini btn-danger pull-left">Reset</button>
+									</div>
+			          </li>
+					 	 	</ul>
+					</div>
+					<div id="control-bar-settings-btn" class="btn-group pull-left">
+						<button class="btn btn-mini btn-warning dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-white icon-cog"></i>
+						</button>
+							<ul class="dropdown-menu pull-right">
+								<li id="card-size-slider" class="clearfix">
+									<div id="card-size-slider-left" class="pull-left clearfix">
+										<div id="card-size-slider-left-left" class="pull-left">
+											<img src="../static/img/grey-card.png" class="pull-right"/>
+										</div>
+										<div id="card-size-slider-left-right" class="pull-right">
+						      		<input id="slide" type="range" min="70" max="130" step="1" value="100" onchange="cardSizeChange(this.value);"/><!-- Todo onchange callback-->
+										</div>
+									</div>
+									<div id="card-size-slider-right" class="pull-right clearfix">
+										<img src="../static/img/grey-card.png" class="pull-right"/>
+									</div>
+								</li><!-- End #card-size-slider -->
+							</ul>
+					</div>
+					<div id="reset-btn" class="btn-group pull-left">
+						<button class="btn btn-mini btn-danger dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-white icon-remove"></i>
+						</button>
+							<ul class="dropdown-menu pull-right">
+								<li><a data-bind="">Reset All</a></li>
+								<li><a data-bind="">Reset Land</a></li>
+							</ul>
+					</div>
+				</div><!--End #control-bar-buttons-->
+				
 			</div>
 		</div>
 		
