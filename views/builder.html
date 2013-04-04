@@ -4,28 +4,30 @@
     <div id="preview-wrapper" class="well pull-left">
       <div id="img-preview" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }"></div>
     </div>
-    <div id="card-pool" class="well pull-left">
+    <div id="card-pool" class="well pull-left" style="position:relative;">
       <div id="card-pool-scroll" class="clearfix">
-        <div id="card-pool-inner" class="pull-left clearfix">
-          <div data-bind="foreach: sideboard">
-            <div data-bind="foreach: columns">
-              <div class="column" data-bind="foreach: cards, event: { mouseover: mouseOver }">
-                <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(data,event){ mouseDownHandler('sideboard', event); }, mouseup: mouseUpHandler, mouseover: function(){ cardZoom($root,false) }, click: function(){ cardSelect('sideboard');cardZoom($root,true); }, dblclick: function(){ cardSelect('sideboard'); } }"/><!---->
-              </div>
+        <div id="card-pool-inner" class="pull-left clearfix"><div data-bind="foreach: mainboard">
+          <div data-bind="foreach: columns">
+            <div class="column" data-bind="foreach: cards, event: { mouseover: mouseOver }">
+              <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(data,event){ mouseDownHandler('mainboard', event); }, mouseup: mouseUpHandler, mouseover: function(){ cardZoom($root,false) }, click: function(){ cardSelect('mainboard');cardZoom($root,true); }, dblclick: function(){ cardSelect('mainboard'); } }"/>
             </div>
           </div>
         </div>
-      </div>
+        </div>
+			</div>
+			<div id="mainboard-select-prompt" class="board-select-prompt">
+				<h1><span>Add # CardName to Mainboard</span></h1>
+			</div>
     </div>
   </div><!-- End #top-screen -->
 	
   <div id="control-bar-container">
 		<div id="builder-control-bar" class="clearfix" style="width:100%;">
 	    <div id="builder-control-bar-left" class="pull-left">
-				<input id="builder-input" type="text" data-provide="typeahead" placeholder="Card Name"/>
+				<input id="builder-input" type="text" data-provide="typeahead" data-items="12" placeholder="Card Name" style="color:#fff;"/><!-- style="background-image:url('/static/img/lighter-filter.png');background-repeat:repeat;"-->
 			</div>
 			<div id="builder-control-bar-right" class="pull-right clearfix">
-				<div id="offset-y-container" class="pull-left">
+				<div id="offset-y-container" class="pull-left" style="display:none;">
 					<div id="drag-offset-y" style="margin-left:auto;margin-right:auto;">
 						<i class="icon-align-justify icon-white"></i>
 					</div>
@@ -36,22 +38,66 @@
   </div><!-- End #control-bar -->
 	
   <div id="bottom-screen" class="clearfix">
-    <div id="builder-card-search" class="pull-left" style="margin-left:5px;">
-      <!-- <button data-bind="event: {click: addChosenCardToMainboard}">Add card to mainboard</button>
-      <button data-bind="event: {click: addChosenCardToSideboard}">Add card to sideboard</button> -->
-    </div>
-    <div id="deck-area" class="well pull-right" style="margin-right:5px;">
+		<div id="bottom-screen-left" class="pull-left clearfix">
+	    <div id="builder-card-search" class="pull-left well" style="margin-left:5px;"><!--style="background-image:url('/static/img/lighter-filter.png');background-repeat:repeat;"-->
+				<div id="builder-card-list-marker" style="height:0;"/>
+				<div id="builder-add-card-prompt" class="clearfix" style="display:none;">
+					<button type="button" class="close" style="color:#fff;margin-right:5px;text-shadow:none;opacity:1;" data-bind="event: {click: hideAddCardPrompt}">&times;</button>
+					<div class="pull-left" style="width:50%;">
+						<div style="width:90%;margin-left:auto;margin-right:auto;">
+							<div id="add-card-thumbnail" data-bind="style: { backgroundImage: 'url(' + thumbSrc() + ')' }, event: { mouseover: showThumbAsPreview }" style="width:100%;background-image:url('/static/img/cardback.jpg');border-radius:10px;">
+							</div>
+						</div>
+					</div>
+					<div class="pull-right" style="width:50%;text-align:center;">
+						<div id="add-card-btns" style="width:90%;margin-left:auto:margin-right:auto;">
+							<div style="font-weight:600;font-size:18px;">
+								Mainboard
+							</div>
+							<div>
+								<span>
+									<i class="icon-plus icon-white" data-bind="event: {click: function(){setMainMagnitude(1);}}"/>
+								</span>
+								<span data-bind="text: mainMagnitude"/>
+								<span>
+									<i class="icon-minus icon-white" data-bind="event: {click: function(){setMainMagnitude(-1);}}"/>
+								</span>
+							</div>
+							<div style="font-weight:600;font-size:18px;margin-top:10px;">
+								Sideboard
+							</div>
+							<div>
+								<span>
+									<i class="icon-plus icon-white" data-bind="event: {click: function(){setSideMagnitude(1);}}"/>
+								</span>
+								<span data-bind="text: sideMagnitude"/>
+								<span>
+									<i class="icon-minus icon-white" data-bind="event: {click: function(){setSideMagnitude(-1);}}"/>
+								</span>
+							</div>
+							<div style="margin-top:10px;">
+								<button class="btn btn-success" data-bind="event: {click: addChosenCardToBoards}">Add to Deck</button>
+							</div>
+						</div>
+					</div>
+				</div>
+	    </div>
+		</div>
+    <div id="deck-area" class="well pull-right" style="margin-right:5px;position:relative;">
       <div id="deck-area-scroll">
-        <div id="deck-area-inner">
-          <div data-bind="foreach: mainboard">
-            <div data-bind="foreach: columns">
-              <div class="column" data-bind="foreach: cards, event: { mouseover: mouseOver }">
-                <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(data,event){ mouseDownHandler('mainboard', event); }, mouseup: mouseUpHandler, mouseover: function(){ cardZoom($root,false) }, click: function(){ cardSelect('mainboard');cardZoom($root,true); }, dblclick: function(){ cardSelect('mainboard'); } }"/>
-              </div>
-            </div>
-          </div>
-        </div>
+       <div id="deck-area-inner">
+         <div data-bind="foreach: sideboard">
+           <div data-bind="foreach: columns">
+             <div class="column" data-bind="foreach: cards, event: { mouseover: mouseOver }">
+               <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(data,event){ mouseDownHandler('sideboard', event); }, mouseup: mouseUpHandler, mouseover: function(){ cardZoom($root,false) }, click: function(){ cardSelect('sideboard');cardZoom($root,true); }, dblclick: function(){ cardSelect('sideboard'); } }"/><!---->
+             </div>
+           </div>
+         </div>
+       </div>
       </div>
+			<div id="sideboard-select-prompt" class="board-select-prompt">
+				<h1><span>Add # CardName to Sideboard</span></h1>
+			</div>
     </div>
   </div><!-- End #bottom-screen -->
 	<div id="drag-drop-card" style="display:none;position:absolute;z-index:4000;"></div>

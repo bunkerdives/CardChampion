@@ -1969,7 +1969,6 @@
  * limitations under the License.
  * ============================================================ */
 
-
 !function($){
 
   "use strict"; // jshint ;_;
@@ -1981,6 +1980,18 @@
   var Typeahead = function (element, options) {
     this.$element = $(element)
     this.options = $.extend({}, $.fn.typeahead.defaults, options)
+	//!!!
+	this.select = this.options.select || this.select
+	this.show = this.options.show || this.show
+	this.hide = this.options.hide || this.hide
+	this.lookup = this.options.lookup || this.lookup
+	this.process = this.options.process || this.process
+	this.render = this.options.render || this.render
+	this.next = this.options.next || this.next
+	this.prev = this.options.prev || this.prev
+	this.listen = this.options.listen || this.listen
+	this.mouseenter = this.options.mouseenter || this.mouseenter
+	//!!!
     this.matcher = this.options.matcher || this.matcher
     this.sorter = this.options.sorter || this.sorter
     this.highlighter = this.options.highlighter || this.highlighter
@@ -1996,18 +2007,24 @@
     constructor: Typeahead
 
   , select: function () {
+	  console.log('Typeahead select in bootstrap.js')
+	  
       var val = this.$menu.find('.active').attr('data-value')
       this.$element
-        .val(this.updater(val))
+        .val(this.updater(val))//Updates text in html input
         .change()
       return this.hide()
     }
 
   , updater: function (item) {
+	  console.log('Typeahead updater in bootstrap.js')
+	  
       return item
     }
 
   , show: function () {
+	  console.log('Typeahead show in bootstrap.js')
+	  
       var pos = $.extend({}, this.$element.position(), {
         height: this.$element[0].offsetHeight
       })
@@ -2025,12 +2042,16 @@
     }
 
   , hide: function () {
+	  console.log('Typeahead hide in bootstrap.js')
+	  
       this.$menu.hide()
       this.shown = false
       return this
     }
 
   , lookup: function (event) {
+	  console.log('Typeahead lookup in bootstrap.js')
+	  
       var items
 
       this.query = this.$element.val()
@@ -2045,6 +2066,8 @@
     }
 
   , process: function (items) {
+	  console.log('Typeahead process in bootstrap.js')
+	  
       var that = this
 
       items = $.grep(items, function (item) {
@@ -2065,6 +2088,8 @@
     }
 
   , sorter: function (items) {
+	  console.log('Typeahead sorter in bootstrap.js')
+	  
       var beginswith = []
         , caseSensitive = []
         , caseInsensitive = []
@@ -2080,6 +2105,8 @@
     }
 
   , highlighter: function (item) {
+	  console.log('Typeahead highlighter in bootstrap.js')
+	  
       var query = this.query.replace(/[\-\[\]{}()*+?.,\\\^$|#\s]/g, '\\$&')
       return item.replace(new RegExp('(' + query + ')', 'ig'), function ($1, match) {
         return '<strong>' + match + '</strong>'
@@ -2087,6 +2114,8 @@
     }
 
   , render: function (items) {
+	  console.log('Typeahead render in bootstrap.js')
+	  
       var that = this
 
       items = $(items).map(function (i, item) {
@@ -2101,6 +2130,8 @@
     }
 
   , next: function (event) {
+	  console.log('Typeahead next in bootstrap.js')
+	  
       var active = this.$menu.find('.active').removeClass('active')
         , next = active.next()
 
@@ -2112,6 +2143,8 @@
     }
 
   , prev: function (event) {
+	  console.log('Typeahead prev in bootstrap.js')
+	  
       var active = this.$menu.find('.active').removeClass('active')
         , prev = active.prev()
 
@@ -2123,6 +2156,8 @@
     }
 
   , listen: function () {
+	  console.log('Typeahead listen in bootstrap.js')
+	  
       this.$element
         .on('focus',    $.proxy(this.focus, this))
         .on('blur',     $.proxy(this.blur, this))

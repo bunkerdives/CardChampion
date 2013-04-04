@@ -3,11 +3,14 @@ var BuilderViewModel = function() {
     this.mainboard = ko.observableArray( [] );
     this.sideboard = ko.observableArray( [] );
     
-    this.chosenMagn = ko.observable();
+    //this.chosenMagnitude = ko.observable();
+	this.mainMagnitude = ko.observable( 4 );
+	this.sideMagnitude = ko.observable( 0 );
     
     this.typeaheadController = TypeaheadController;
     
     this.imgSrc = ko.observable( '/static/img/cardback.jpg' );
+	this.thumbSrc = ko.observable( '/static/img/cardback.jpg' );
     
     this.mainboardSize = ko.observable( 0 );
     
@@ -48,23 +51,71 @@ var BuilderViewModel = function() {
     };
     
     // setChosenCardMagnitude(magnitude) - set the magnitude observable to the specified amount
-    this.setChosenCardMagnitude = function( magnitude ) {
-        this.chosenMagn( magnitude );
+    this.setMainMagnitude = function( magnitude ) {
+		//magnitude = parseInt( magnitude );
+		console.log(magnitude)
+		if ( magnitude < 0) {//If decrement
+			console.log('main decrement')
+			if (this.mainMagnitude() > 0) {
+				
+				this.mainMagnitude( this.mainMagnitude() - 1);
+			} 
+		} else {
+			this.mainMagnitude( this.mainMagnitude() + 1);
+		}
+		
     };
-    
-    // addChosenCardToMainboard - add the chosen card to the mainboard
-    this.addChosenCardToMainboard = function() {
-        if( this.typeaheadController.chosenCard != '' ) {
-            this.mainboard()[0].addCardToPool( this.typeaheadController.chosenCard, "cmc", "name" );
-        }
+	
+    this.setSideMagnitude = function( magnitude ) {
+        
+		if ( magnitude < 0) {//If decrement
+			if (this.sideMagnitude() > 0) {
+				this.sideMagnitude( this.sideMagnitude() - 1);
+			} 
+		} else {
+			this.sideMagnitude( this.sideMagnitude() + 1);
+		}
+		
     };
-    
-    // addChosenCardToSideboard() - add the chosen card to the sideboard
-    this.addChosenCardToSideboard = function() {
-        if( this.typeaheadController.chosenCard != '' ) {
-            this.sideboard()[0].addCardToPool( this.typeaheadController.chosenCard, "cmc", "name" );
-        }
-    };
+	
+	this.addChosenCardToBoards = function() {
+		
+		if( ViewModel.typeaheadController.chosenCard == '' ) {
+			return;
+		}
+		
+		$('#builder-add-card-prompt').hide();
+		$('#builder-input').val('').change();
+		
+		var numMainBoard = this.mainMagnitude();
+		var numSideBoard = this.sideMagnitude();
+		
+		for (var i = 0; i < numMainBoard; i++) {
+			ViewModel.mainboard()[0].addCardToPool( TypeaheadController.chosenCard, "cmc", "name" );
+		}
+		
+		for (var i = 0; i < numSideBoard; i++) {
+			this.sideboard()[0].addCardToPool( this.typeaheadController.chosenCard, "cmc", "name" );
+		}
+	};
+	
+	this.updatePreviewImage = function (multiverseID) {
+		this.imgSrc("http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=" + multiverseID + "&type=card");
+	};
+	
+	this.updateThumbImage = function (multiverseID) {
+		this.thumbSrc("http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=" + multiverseID + "&type=card");
+	};
+	
+	this.showThumbAsPreview = function () {
+		console.log('showthumbaspreview')
+		this.imgSrc(this.thumbSrc);
+	};
+	
+	this.hideAddCardPrompt = function () {
+		$('#builder-add-card-prompt').hide();
+		$('#builder-input').val('').change();
+	};
     
 };
 
@@ -75,6 +126,8 @@ ko.utils.extend( BuilderViewModel.prototype, {
     init: function( element, valueAccessor, allBindingsAccessor ) {
         
         ViewModel.initBuilderView();
+		
+		BackgroundController.setBackgroundImage();
         
         builderLayout();
         

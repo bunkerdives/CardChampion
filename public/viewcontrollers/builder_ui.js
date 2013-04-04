@@ -41,6 +41,18 @@ function builderLayout() {
 	});
 	$('#builder-input').css('width', previewWrapperW-12);
 	
+	var addCardPromptImgW = previewWrapperW*0.5*0.9;
+	var addCardPromptImgH = addCardPromptImgW/0.71935483870968;
+	var addCardPromptImgTop = ((bottomScreenHeight-5)-addCardPromptImgH)/2;
+	$('#add-card-thumbnail').css({
+		"height" : addCardPromptImgH
+		, "background-size" : addCardPromptImgW + "px " + addCardPromptImgH + "px"
+		, "margin-top" : addCardPromptImgTop
+	});
+	$('#add-card-btns').css({
+		"margin-top" : addCardPromptImgTop+10
+	});
+	
 	var cardPoolHeight = topScreenHeight;
 	var cardPoolWidth = (windowWidth-15)-previewWrapperW;
 	$('#card-pool').css({
