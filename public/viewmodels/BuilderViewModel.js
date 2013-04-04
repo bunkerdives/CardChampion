@@ -84,9 +84,6 @@ var BuilderViewModel = function() {
 			return;
 		}
 		
-		$('#builder-add-card-prompt').hide();
-		$('#builder-input').val('').change();
-		
 		var numMainBoard = this.mainMagnitude();
 		var numSideBoard = this.sideMagnitude();
 		
@@ -108,8 +105,7 @@ var BuilderViewModel = function() {
 	};
 	
 	this.showThumbAsPreview = function () {
-		console.log('showthumbaspreview')
-		this.imgSrc(this.thumbSrc);
+		this.imgSrc(this.thumbSrc());
 	};
 	
 	this.hideAddCardPrompt = function () {
