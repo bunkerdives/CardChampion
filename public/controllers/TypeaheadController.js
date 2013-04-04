@@ -18,21 +18,22 @@ var TypeaheadController = {
 
 		TypeaheadController.chosenCard = new CardViewModel( cardData );
 		
-		$('#builder-add-card-prompt').show()
+		$('.typeahead').css('display','none');
+		$('#builder-add-card-prompt').css('display','block');
 
 		return item;
 
 	}
 	
     , select: function () {
+		console.log('Typeahead select.')
 	  
         var val = this.$menu.find('.active').attr('data-value')
         this.$element
           .val(this.updater(val))//Updates text in html input
           .change()
-		$('#builder-add-card-prompt').show()
 		
-        return this.$menu.hide()
+        return this
       }
 
 	, show: function () {
@@ -55,6 +56,14 @@ var TypeaheadController = {
 		return this
 	
 	}
+	
+    , hide: function () {
+  	  console.log('Typeahead hide')
+	  
+        $('.typeahead').css('display','none');
+        this.shown = false
+        return this
+      }
 	
 	, render: function (items) {
 	
@@ -147,10 +156,6 @@ var TypeaheadController = {
 			.on('click', $.proxy(this.click, this))
 			.on('mouseenter', 'div', $.proxy(this.mouseenter, this))
 			.on('mouseleave', 'div', $.proxy(this.mouseleave, this))
-		// this.$menu
-		//         .on('click', $.proxy(this.click, this))
-		//         .on('mouseenter', 'li', $.proxy(this.mouseenter, this))
-		//         .on('mouseleave', 'li', $.proxy(this.mouseleave, this))
 	
 	}
 	
@@ -210,6 +215,8 @@ var TypeaheadController = {
 			, select: this.select
 			
 			, show: this.show
+			
+			, hide: this.hide
 			
 			, render: this.render
 			
