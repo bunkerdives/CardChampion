@@ -110,7 +110,8 @@ var BuilderViewModel = function() {
 	
 	this.hideAddCardPrompt = function () {
 		$('#builder-add-card-prompt').hide();
-		$('#builder-input').val('').change();
+		$('#builder-input').val('').change().focus();
+		
 	};
     
 };

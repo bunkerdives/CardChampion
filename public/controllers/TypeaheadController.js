@@ -230,7 +230,7 @@ var TypeaheadController = {
 			
 			, mouseenter: this.mouseenter
 			
-			, items : 20
+			, items : 449
 			
 		    , menu: '<div class="typeahead"></div>'
 			
