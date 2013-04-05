@@ -192,6 +192,7 @@ var BuilderViewModel = function() {
 			width : cardPoolW
 			, height : cardPoolH
 		} );
+        
 				
     };
     
