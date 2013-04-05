@@ -150,7 +150,7 @@ var SealedViewModel = function( set ) {
 		} );
 				
     };
-    
+        
     
 };
 
