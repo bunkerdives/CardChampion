@@ -281,6 +281,7 @@ ISD = {
             , '232'
             , '233'
             , '244'
+            , '999'
         ]
     
 
@@ -3274,6 +3275,17 @@ ISD = {
                     , 'cmc' : '1'
                     , 'multiverse' : '234431'
                     , 'type' : 'Enchantment  — Aura'
+                    , 'pt' : ''
+                }
+                
+                , '999' : {
+                    'name' : 'Liliana of the Veil'
+                    , 'rarity' : 'M'
+                    , 'color' : 'B'
+                    , 'cost' : '1BB'
+                    , 'cmc' : '3'
+                    , 'multiverse' : '235597'
+                    , 'type' : 'Planeswalker  — Liliana'
                     , 'pt' : ''
                 }
             

@@ -3,14 +3,32 @@ var BuilderViewModel = function() {
     this.mainboard = ko.observableArray( [] );
     this.sideboard = ko.observableArray( [] );
     
-    //this.chosenMagnitude = ko.observable();
-	this.mainMagnitude = ko.observable( 4 );
+	this.cardH = 198.7;
+	this.cardW = 143;
+	this.cardPadding = 3;
+	this.cardMarginTop = (this.cardH * 0.894) * -1;
+	
+	this.poolVerticalPadding = 3 * 2; // top and bottom
+	
+	this.yOffsetBool = false;
+	this.yOffsetDragStart = 0;
+	this.yOffset = 0;
+	this.yOffsetOld = 0;
+    
+    this.mainMagnitude = ko.observable( 4 );
 	this.sideMagnitude = ko.observable( 0 );
     
     this.typeaheadController = TypeaheadController;
     
     this.imgSrc = ko.observable( '/static/img/cardback.jpg' );
 	this.thumbSrc = ko.observable( '/static/img/cardback.jpg' );
+    
+    this.mouseController = new MouseController();
+    this.landController = new LandController();
+    this.addLandController = new AddLandController();
+    this.poolSortController = new PoolSortController();
+    this.poolClearController = new PoolClearController();
+    this.deckStatCounterController = new DeckStatCounterController();
     
     this.mainboardSize = ko.observable( 0 );
     
@@ -33,6 +51,21 @@ var BuilderViewModel = function() {
     this.dragDropOrigColIdx = '';
     this.dragDropNewCol = '';
     this.cardDragSrc = '';
+    
+    this.sortOption = function( sortType, optionsText ) {
+        this.sortType = sortType;
+        this.optionsText = optionsText;
+    };
+    
+    this.sortOptions = ko.observableArray( [
+        new this.sortOption( 'cmc', 'by cost' )
+        , new this.sortOption( 'color', 'by color' )
+        , new this.sortOption( 'rarity', 'by rarity' )
+        , new this.sortOption( 'type', 'by type' )
+    ] );
+    
+    this.selectedSortOption = this.sortOptions()[0];
+    this.cardselect = null;
     
     this.initBuilderView = function() {
         
@@ -88,11 +121,13 @@ var BuilderViewModel = function() {
 		var numSideBoard = this.sideMagnitude();
 		
 		for (var i = 0; i < numMainBoard; i++) {
-			ViewModel.mainboard()[0].addCardToPool( TypeaheadController.chosenCard, "cmc", "name" );
+            var card = new CardViewModel( TypeaheadController.chosenCard );
+			ViewModel.mainboard()[0].addCardToPool( card, "cmc", "name" );
 		}
 		
 		for (var i = 0; i < numSideBoard; i++) {
-			this.sideboard()[0].addCardToPool( this.typeaheadController.chosenCard, "cmc", "name" );
+            var card = new CardViewModel( TypeaheadController.chosenCard );
+			this.sideboard()[0].addCardToPool( card, "cmc", "name" );
 		}
 	};
 	
@@ -113,6 +148,52 @@ var BuilderViewModel = function() {
 		$('#builder-input').val('').change().focus();
 		
 	};
+    
+    this.fixPoolSize = function() {
+        
+        // get number of columns and max column length (or # rows) in sideboard
+        var sideboardNumCols = this.sideboard()[0].columns().length;
+        var sideboardNumRows = 0;
+        for( var i = 0; i < sideboardNumCols; ++i ) {
+            var columnLen = this.sideboard()[0].columns()[i].cards().length;
+            if( sideboardNumRows < columnLen ) {
+                sideboardNumRows = columnLen;
+            }
+        }
+        
+        var mainboardNumCols = this.mainboard()[0].columns().length;
+        var mainboardNumRows = 0;
+        for( var i = 0; i < mainboardNumCols; ++i ) {
+            var columnLen = this.mainboard()[0].columns()[i].cards().length;
+            if( mainboardNumRows < columnLen ) {
+                mainboardNumRows = columnLen;
+            }
+        }        
+				
+		//Get current card size
+		var cardW = ViewModel.cardW;
+		var cardH = ViewModel.cardH;
+		var cardPadding = ViewModel.cardPadding;
+		var poolVerticalPadding = ViewModel.poolVerticalPadding;
+		var cardMarginTop = ViewModel.cardMarginTop;
+		
+		var cardPoolW = ( cardW + cardPadding ) * (sideboardNumCols);
+		var cardPoolH = ( sideboardNumRows * cardH ) + (( (sideboardNumRows - 1) * cardMarginTop ) + poolVerticalPadding);
+		
+		$("#card-pool-inner").css( {
+			width : cardPoolW
+			, height : cardPoolH
+		} );
+		
+		cardPoolW = ( cardW + cardPadding ) * ( mainboardNumCols);
+		cardPoolH = ( mainboardNumRows * cardH ) + ( ( mainboardNumRows - 1 ) * cardMarginTop ) + poolVerticalPadding;
+		
+		$("#deck-area-inner").css( {
+			width : cardPoolW
+			, height : cardPoolH
+		} );
+				
+    };
     
 };
 

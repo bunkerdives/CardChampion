@@ -16,7 +16,8 @@ var TypeaheadController = {
 		ViewModel.updatePreviewImage(cardData.multiverse);
 		ViewModel.updateThumbImage(cardData.multiverse);
 
-		TypeaheadController.chosenCard = new CardViewModel( cardData );
+		//TypeaheadController.chosenCard = new CardViewModel( cardData );
+        TypeaheadController.chosenCard = cardData;
 		
 		$('.typeahead').css('display','none');
 		$('#builder-add-card-prompt').css('display','block');

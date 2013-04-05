@@ -162,15 +162,15 @@
 								</li>
 			          <li style="display:none;">
 									<div class="text-center">
-			            	<button class="btn btn-mini btn-primary">Suggest</button>
+			            	<button class="btn btn-mini btn-primary" data-bind="event: { click : landController.suggestLand }">Suggest</button>
 									</div>
 								</li>
 								<li class="add-land-dropdown-btns clearfix">
 									<div class="half-width pull-left">
-			            	<button class="btn btn-mini btn-success pull-right">Add</button>
+			            	<button class="btn btn-mini btn-success pull-right" data-bind="event: { click: addLandController.addLandToMainboard }">Add</button>
 									</div>
 									<div class="half-width pull-right">
-										<button class="btn btn-mini btn-danger pull-left">Reset</button>
+										<button class="btn btn-mini btn-danger pull-left" data-bind="event: { click : addLandController.resetLandCounters }">Reset</button>
 									</div>
 			          </li>
 					 	 	</ul>
@@ -200,8 +200,8 @@
 							<i class="icon-white icon-remove"></i>
 						</button>
 							<ul class="dropdown-menu pull-right">
-								<li><a data-bind="">Reset All</a></li>
-								<li><a data-bind="">Reset Land</a></li>
+								<li><a data-bind="event: { click : poolClearController.clearMainboard }">Reset All</a></li>
+								<li><a data-bind="event: { click : poolClearController.clearMainboardLands }">Reset Land</a></li>
 							</ul>
 					</div>
 				</div><!--End #control-bar-buttons-->

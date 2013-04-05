@@ -56,6 +56,7 @@ var SetController = {
         , 'ODY' : ODY
         , 'ONS' : ONS
         , 'PCY' : PCY
+        , 'PLC' : PLC
         , 'PLS' : PLS
         , 'RAV' : RAV
         , 'ROE' : ROE

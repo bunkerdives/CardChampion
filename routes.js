@@ -224,6 +224,18 @@ app.get( '/:username', function( req, res ){
     
 } );
 
+app.post( '/editprofile', function(req, res) {
+    
+    // get the new profile settings from the post request
+    
+    // update the user's profile with the new settings
+    
+} );
+
+app.post( '/newdeck', function(req, res) {
+    
+} );
+
 
 
 app.post( '/register', Auth.register );
