@@ -129,7 +129,7 @@ var CardViewModel = function( cardData ) {
             
             }
         
-            ViewModel.fixPoolSize();
+            ViewModel.poolViewController.fixPoolSize();
 				
 		}
         

@@ -1,16 +1,3 @@
-var cardSizeInit = function() {
-    
-	/*var cardHeight = 198.7; //standard height
-	var cardWidth = 143; //standard width*/
-	
-	$(".card").css( {
-		"height" : SealedViewModel.cardH,
-		"width" : SealedViewModel.cardW,
-		"background-size" : SealedViewModel.cardW + "px " + SealedViewModel.cardH + "px"
-	} );
-        
-};
-
 var SealedViewModel = function( set ) {
 	
 	this.cardH = 198.7;
@@ -37,6 +24,8 @@ var SealedViewModel = function( set ) {
     this.poolSortController = new PoolSortController();
     this.poolClearController = new PoolClearController();
     this.deckStatCounterController = new DeckStatCounterController();
+    
+    this.poolViewController = new PoolViewController();
     
     this.numMainboardCreatures = ko.observable( 0 );
     this.numMainboardLands = ko.observable( 0 );
@@ -105,52 +94,6 @@ var SealedViewModel = function( set ) {
         
     };
     
-    this.fixPoolSize = function() {
-        
-        // get number of columns and max column length (or # rows) in sideboard
-        var sideboardNumCols = this.sideboard()[0].columns().length;
-        var sideboardNumRows = 0;
-        for( var i = 0; i < sideboardNumCols; ++i ) {
-            var columnLen = this.sideboard()[0].columns()[i].cards().length;
-            if( sideboardNumRows < columnLen ) {
-                sideboardNumRows = columnLen;
-            }
-        }
-        
-        var mainboardNumCols = this.mainboard()[0].columns().length;
-        var mainboardNumRows = 0;
-        for( var i = 0; i < mainboardNumCols; ++i ) {
-            var columnLen = this.mainboard()[0].columns()[i].cards().length;
-            if( mainboardNumRows < columnLen ) {
-                mainboardNumRows = columnLen;
-            }
-        }        
-				
-		//Get current card size
-		var cardW = ViewModel.cardW;
-		var cardH = ViewModel.cardH;
-		var cardPadding = ViewModel.cardPadding;
-		var poolVerticalPadding = ViewModel.poolVerticalPadding;
-		var cardMarginTop = ViewModel.cardMarginTop;
-		
-		var cardPoolW = ( cardW + cardPadding ) * (sideboardNumCols);
-		var cardPoolH = ( sideboardNumRows * cardH ) + (( (sideboardNumRows - 1) * cardMarginTop ) + poolVerticalPadding);
-		
-		$("#card-pool-inner").css( {
-			width : cardPoolW
-			, height : cardPoolH
-		} );
-		
-		cardPoolW = ( cardW + cardPadding ) * ( mainboardNumCols);
-		cardPoolH = ( mainboardNumRows * cardH ) + ( ( mainboardNumRows - 1 ) * cardMarginTop ) + poolVerticalPadding;
-		
-		$("#deck-area-inner").css( {
-			width : cardPoolW
-			, height : cardPoolH
-		} );
-				
-    };
-        
     
 };
 
@@ -168,7 +111,7 @@ ko.utils.extend( SealedViewModel.prototype, {
             $("#header").css('display','block');
             
             limitedInit();
-            cardSizeInit();
+            CardViewController.cardSizeInit();
             headerInit();
             
         	$("#add-land-dropdown").on("click", function(e){
@@ -177,7 +120,7 @@ ko.utils.extend( SealedViewModel.prototype, {
             
             ViewModel.mouseController.init();
 				
-    		self.fixPoolSize();
+    		ViewModel.poolViewController.fixPoolSize();
             
             $("#template-plugin").css("display", "block");
             

@@ -60,9 +60,7 @@ var CardPoolViewModel = function( type ) {
     };
     
     this.removeCardFromPool = function( view, col ) {
-        
         this.columns()[col].cards.remove(view);
-        
     };
     
     this.sortCardsByType = function( cards, type ) {

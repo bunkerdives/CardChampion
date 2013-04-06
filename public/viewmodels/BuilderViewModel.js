@@ -30,6 +30,8 @@ var BuilderViewModel = function() {
     this.poolClearController = new PoolClearController();
     this.deckStatCounterController = new DeckStatCounterController();
     
+    this.poolViewController = new PoolViewController();
+    
     this.mainboardSize = ko.observable( 0 );
     
     this.numMainboardCreatures = ko.observable( 0 );
@@ -85,28 +87,25 @@ var BuilderViewModel = function() {
     
     // setChosenCardMagnitude(magnitude) - set the magnitude observable to the specified amount
     this.setMainMagnitude = function( magnitude ) {
-		//magnitude = parseInt( magnitude );
-		console.log(magnitude)
-		if ( magnitude < 0) {//If decrement
-			console.log('main decrement')
-			if (this.mainMagnitude() > 0) {
-				
-				this.mainMagnitude( this.mainMagnitude() - 1);
+		
+        if( magnitude < 0 ) {
+			if( this.mainMagnitude() > 0 ) {
+				this.mainMagnitude( this.mainMagnitude() - 1 );
 			} 
 		} else {
-			this.mainMagnitude( this.mainMagnitude() + 1);
+			this.mainMagnitude( this.mainMagnitude() + 1 );
 		}
 		
     };
 	
     this.setSideMagnitude = function( magnitude ) {
         
-		if ( magnitude < 0) {//If decrement
-			if (this.sideMagnitude() > 0) {
-				this.sideMagnitude( this.sideMagnitude() - 1);
+		if( magnitude < 0 ) {
+			if( this.sideMagnitude() > 0 ) {
+				this.sideMagnitude( this.sideMagnitude() - 1 );
 			} 
 		} else {
-			this.sideMagnitude( this.sideMagnitude() + 1);
+			this.sideMagnitude( this.sideMagnitude() + 1 );
 		}
 		
     };
@@ -129,6 +128,9 @@ var BuilderViewModel = function() {
             var card = new CardViewModel( TypeaheadController.chosenCard );
 			this.sideboard()[0].addCardToPool( card, "cmc", "name" );
 		}
+        
+        ViewModel.deckStatCounterController.adjustCardCounterUI( card, numMainBoard );
+        
 	};
 	
 	this.updatePreviewImage = function (multiverseID) {
@@ -146,55 +148,7 @@ var BuilderViewModel = function() {
 	this.hideAddCardPrompt = function () {
 		$('#builder-add-card-prompt').hide();
 		$('#builder-input').val('').change().focus();
-		
 	};
-    
-    this.fixPoolSize = function() {
-        
-        // get number of columns and max column length (or # rows) in sideboard
-        var sideboardNumCols = this.sideboard()[0].columns().length;
-        var sideboardNumRows = 0;
-        for( var i = 0; i < sideboardNumCols; ++i ) {
-            var columnLen = this.sideboard()[0].columns()[i].cards().length;
-            if( sideboardNumRows < columnLen ) {
-                sideboardNumRows = columnLen;
-            }
-        }
-        
-        var mainboardNumCols = this.mainboard()[0].columns().length;
-        var mainboardNumRows = 0;
-        for( var i = 0; i < mainboardNumCols; ++i ) {
-            var columnLen = this.mainboard()[0].columns()[i].cards().length;
-            if( mainboardNumRows < columnLen ) {
-                mainboardNumRows = columnLen;
-            }
-        }        
-				
-		//Get current card size
-		var cardW = ViewModel.cardW;
-		var cardH = ViewModel.cardH;
-		var cardPadding = ViewModel.cardPadding;
-		var poolVerticalPadding = ViewModel.poolVerticalPadding;
-		var cardMarginTop = ViewModel.cardMarginTop;
-		
-		var cardPoolW = ( cardW + cardPadding ) * (sideboardNumCols);
-		var cardPoolH = ( sideboardNumRows * cardH ) + (( (sideboardNumRows - 1) * cardMarginTop ) + poolVerticalPadding);
-		
-		$("#card-pool-inner").css( {
-			width : cardPoolW
-			, height : cardPoolH
-		} );
-		
-		cardPoolW = ( cardW + cardPadding ) * ( mainboardNumCols);
-		cardPoolH = ( mainboardNumRows * cardH ) + ( ( mainboardNumRows - 1 ) * cardMarginTop ) + poolVerticalPadding;
-		
-		$("#deck-area-inner").css( {
-			width : cardPoolW
-			, height : cardPoolH
-		} );
-        
-				
-    };
     
 };
 
@@ -204,11 +158,31 @@ ko.utils.extend( BuilderViewModel.prototype, {
     
     init: function( element, valueAccessor, allBindingsAccessor ) {
         
-        ViewModel.initBuilderView();
-		
-		BackgroundController.setBackgroundImage();
-        
-        builderLayout();
+        jQuery(document).ready( function ($) {
+            
+            ViewModel.initBuilderView();
+            
+            BackgroundController.setBackgroundImage();
+            
+            builderLayout();
+            
+            headerInit();
+            $("#header").css('display','block');
+            
+            CardViewController.cardSizeInit();
+            headerInit();
+            
+        	$("#add-land-dropdown").on( "click", function(e){
+        	  e.stopPropagation();
+        	} );
+            
+            ViewModel.mouseController.init();
+				
+    		ViewModel.poolViewController.fixPoolSize();
+            
+            $("#template-plugin").css("display", "block");
+            
+        }, self );
         
     }
     
