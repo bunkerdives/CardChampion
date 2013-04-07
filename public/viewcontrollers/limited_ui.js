@@ -96,7 +96,7 @@ function cardSizeChange(slideAmount) {
 	ViewModel.cardW = newW;
 	ViewModel.cardMarginTop = marginTop;
 	
-	ViewModel.fixPoolSize();
+	ViewModel.poolViewController.fixPoolSize();
 	
 	$(".card").each( function() { //Change background size of cards to 0; add class .cardResize
 		$(this).addClass('cardResize');
@@ -157,7 +157,7 @@ function offsetDragHandlers() {
 			$("body").removeClass("no-select");
 			$("body").removeClass("ns-resize-cursor");
 			ViewModel.yOffsetOld = ViewModel.yOffset;
-            ViewModel.fixPoolSize();
+            ViewModel.poolViewController.fixPoolSize();
 		}
 	}).mousemove(function(e){
 		if (ViewModel.yOffsetBool == true) {
@@ -166,7 +166,7 @@ function offsetDragHandlers() {
 			var yOffsetDelta = yOffsetStart - yOffsetEnd;
 			ViewModel.yOffset = ViewModel.yOffsetOld + yOffsetDelta;
 			limitedLayout();
-            ViewModel.fixPoolSize();
+            ViewModel.poolViewController.fixPoolSize();
 		}
 	});
     
@@ -180,7 +180,7 @@ function limitedInit() {
 }
 
 $(document).ready(function(){
-	cardSizeInit();
+	CardViewController.cardSizeInit();
 	$("#add-land-dropdown").on("click", function(e){
 	  e.stopPropagation();
 	});
