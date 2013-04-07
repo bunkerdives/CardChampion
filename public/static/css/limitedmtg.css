@@ -1,7 +1,7 @@
 /* General classes and styles */
 
-body {
-	
+body, html {
+	height:100%;
 }
 
 #background-wrap {
@@ -283,7 +283,21 @@ a.header-link {
 
 /* Content */
 #content {
-	padding-top:30px;
+	/**/
+	height: -webkit-calc(100% - 30px);
+	height: -moz-calc(100% - 30px);
+	height: calc(100% - 30px);
+	width:100%;
+	/**/
+	
+	padding-top:30px; /* To compensate for height of fixed header */
+}
+
+#template-plugin {
+	/**/
+	height:100%;
+	width:100%;
+	/**/
 }
 /* Content End */
 
@@ -1036,6 +1050,40 @@ a.header-link {
 	width:86%;
 }
 
+#foyer #main-slide-6 {
+	padding:10px;
+}
+
+#foyer #card-view-container {
+	width:100%;
+}
+
+#foyer #card-view-left {
+	
+}
+
+#foyer #card-view-thumbnail {
+	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366246&type=card');
+	height:310px;
+	width:223px;
+	background-size:223px 310px;
+	border-radius:10px;
+}
+
+#foyer #card-view-right {
+	width: -webkit-calc(100% - 223px);
+	width: -moz-calc(100% - 223px);
+	width: calc(100% - 223px);
+}
+
+#foyer #card-view-title {
+	padding-bottom:10px;
+	font-size:30px;
+	line-height:34px;
+	font-weight:600;
+	text-align:center;
+}
+
 
 
 /*#foyer .vertical-rule {
@@ -1545,6 +1593,12 @@ a.header-link {
 #limited, #builder {
 	width:100%;
 	
+	/**/
+	height: -webkit-calc(100% - 5px);
+	height: -moz-calc(100% - 5px);
+	height: calc(100% - 5px);
+	/**/
+	
 	margin:0;
 	padding:0;
 	
@@ -1556,16 +1610,33 @@ a.header-link {
 #top-screen {
 	width:100%;
 	
+	/**/
+	height: -webkit-calc(60% - 14px);
+	height: -moz-calc(60% - 14px);
+	height: calc(60% - 14px);
+	/**/
+	
 	padding:0;
 	
 	overflow:hidden;
 }
 	
 #preview-wrapper {
+	height:100%;
 	margin-left:5px;
 }
 	
 #img-preview {
+	/**/
+	height: -webkit-calc(100% - 6px);
+	height: -moz-calc(100% - 6px);
+	height: calc(100% - 6px);
+	width: -webkit-calc(100% - 6px);
+	width: -moz-calc(100% - 6px);
+	width: calc(100% - 6px);
+	background-size:100% 100%;
+	/**/
+	
 	background-color:transparent;
 	background-repeat: no-repeat;
 	
@@ -1583,12 +1654,14 @@ a.header-link {
 	
 	
 #card-pool {
+	height:100%;
 	margin-left:5px;
+	margin-right:5px;
 }
 	
 #card-pool-scroll {
 	width:100%;
-	
+	height:100%;
 	overflow:auto;
 }
 	
@@ -1836,10 +1909,25 @@ input[type="range"]{
 	
 #bottom-screen {
 	width:100%;
+	
+	/**/
+	height: -webkit-calc(40% - 14px);
+	height: -moz-calc(40% - 14px);
+	height: calc(40% - 14px);
+	/**/
 }
 	
 #deck-area {
 	margin-left:5px;
+	
+	/**/
+	height: -webkit-calc(100% - 5px);
+	height: -moz-calc(100% - 5px);
+	height: calc(100% - 5px);
+	width: -webkit-calc(100% - 10px);
+	width: -moz-calc(100% - 10px);
+	width: calc(100% - 10px);
+	/**/
 }
 	
 #deck-area-scroll {

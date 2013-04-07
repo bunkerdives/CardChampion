@@ -116,10 +116,13 @@ function builderLayout() {
 
 $(document).ready(function(){
 	
-	
+	$(window).resize(function(){
+		
+		if ( $(document.getElementById('builder')).length > 0 ) {//If #limited exists
+			builderLayout();
+		}
+		
+	});
 	
 });
 
-$(window).resize(function(){
-	builderLayout();
-});

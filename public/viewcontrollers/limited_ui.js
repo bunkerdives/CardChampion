@@ -1,40 +1,41 @@
 function limitedLayout() {
 	
-	var windowHeight = $(window).height();
-	var windowWidth = $(window).width();
+	var $win = $(window);
+	var windowHeight = $win.height();
+	var windowWidth = $win.width();
 	
-	var templateH = windowHeight-30-5; // 30 = header height, 5 = limited template padding-top
+	//var templateH = windowHeight-30-5; // 30 = header height, 5 = limited template padding-top
 	
-	var halfScreenHeight = ( (templateH) / 2 ) - 14; // -14 for half of the 28px tall #control-bar
+	//var halfScreenHeight = ( (templateH) / 2 ) - 14; // -14 for half of the 28px tall #control-bar
 	
-	var halfScreenWidth = windowWidth;
+	//var halfScreenWidth = windowWidth;
 	
-	var yOffsetNum = ViewModel.yOffset;
+	//var yOffsetNum = ViewModel.yOffset;
+	//var topScreenHeight = (halfScreenHeight + (templateH/9))-yOffsetNum;
+	//var bottomScreenHeight= (halfScreenHeight - (templateH/9))+yOffsetNum; 	
 	
-	var topScreenHeight = (halfScreenHeight + (templateH/9))-yOffsetNum;
-	var bottomScreenHeight= (halfScreenHeight - (templateH/9))+yOffsetNum; 	
+	// $('#top-screen').css( {
+	// 	"height" : topScreenHeight
+	// } );
+	// $('#bottom-screen').css( {
+	// 	"height" : bottomScreenHeight
+	// } );
 	
-	$('#top-screen').css( {
-		"height" : topScreenHeight
-	} );
-	$('#bottom-screen').css( {
-		"height" : bottomScreenHeight
-	} );
-	
-	var previewWrapperH = topScreenHeight;
+	//var previewWrapperH = topScreenHeight;
+	var previewWrapperH = ((windowHeight-35)*.6)-14;
 	var previewWrapperW = (previewWrapperH*0.71935483870968); // Determine width via card ratio
 	$('#preview-wrapper').css( {
-		"height" : previewWrapperH,
+		// "height" : previewWrapperH,
 		"width" : previewWrapperW
 	} );
 	
-	var cardPoolHeight = topScreenHeight;
+	//var cardPoolHeight = topScreenHeight;
 	var cardPoolWidth = (windowWidth-15)-previewWrapperW;
 	$('#card-pool').css( {
-		"height" : cardPoolHeight,
+		// "height" : cardPoolHeight,
 		"width" : cardPoolWidth
 	} );
-	$('#card-pool-scroll').css("height", cardPoolHeight);
+	// $('#card-pool-scroll').css("height", cardPoolHeight);
 	
 	
 	if (previewWrapperW < 260) {
@@ -57,30 +58,23 @@ function limitedLayout() {
 		"background-size" : previewImgW + "px " + previewImgH + "px"
 	} );
 
-	var deckAreaHeight = bottomScreenHeight-5; // 5 = deck-area bottom-padding
-	var deckAreaWidth = windowWidth-10; // 10 = 5px margin-left + 5px margin-right
-	$('#deck-area').css( {
-		"height" : deckAreaHeight,
-		"width" : deckAreaWidth
-	} );
-	$('#deck-area-scroll').css("height", deckAreaHeight);
+	//var deckAreaHeight = bottomScreenHeight-5; // 5 = deck-area bottom-padding
+	//var deckAreaWidth = windowWidth-10; // 10 = 5px margin-left + 5px margin-right
+	// $('#deck-area').css( {
+	// 	"height" : deckAreaHeight,
+	// 	"width" : deckAreaWidth
+	// } );
+	// $('#deck-area-scroll').css("height", deckAreaHeight);
 	
-	var cardPoolInnerHeight = 800; // Arbitrary number, will be replaced by a calculation of inner dimensions
-	var cardPoolInnerWidth= 500;
-	
-	$("#card-pool-inner").css( {
-		"height" : cardPoolInnerHeight,
-		"width" : cardPoolInnerWidth,
-		"min-width": cardPoolWidth - 3,
-		"min-height": cardPoolHeight
-	} );	
-	
-	$("#deck-area-inner").css( {
-		"height" : cardPoolInnerHeight,
-		"width" : cardPoolInnerWidth,
-		"min-width": deckAreaWidth - 3,
-		"min-height": deckAreaHeight
-	} );
+	// $("#card-pool-inner").css( {
+	// 	"min-width": cardPoolWidth - 3,
+	// 	"min-height": cardPoolHeight
+	// } );	
+	// 
+	// $("#deck-area-inner").css( {
+	// 	"min-width": deckAreaWidth - 3,
+	// 	"min-height": deckAreaHeight
+	// } );
     	
 }
 
@@ -181,13 +175,6 @@ function offsetDragHandlers() {
 function limitedInit() {
 	limitedLayout();
 	offsetDragHandlers();
-	/*$("#card-pool-scroll").niceScroll({ 
-		hidecursordelay : "100"
-		,cursorwidth : "10px"
-	});*/
-	/*$("#deck-area-scroll").niceScroll({ 
-		hidecursordelay : "100" 
-	});*/
 	$('.foyer-header').addClass('translucent-header');
 	headerLayout();
 }
@@ -195,13 +182,19 @@ function limitedInit() {
 $(document).ready(function(){
 	cardSizeInit();
 	$("#add-land-dropdown").on("click", function(e){
-		//do something
 	  e.stopPropagation();
 	});
 	
 	$('.card').on('touchStart', CardViewModel.cardSelect);
+	
+	var $win = $(window);
+	$(window).resize(function() {
+		
+		if ( $(document.getElementById('limited')).length > 0 ) {//If #limited exists
+			limitedLayout();
+		}
+	
+	});
+	
 });
 
-$(window).resize(function() {
-	limitedLayout();
-});
