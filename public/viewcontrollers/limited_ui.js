@@ -22,7 +22,7 @@ function limitedLayout() {
 	// } );
 	
 	//var previewWrapperH = topScreenHeight;
-	var previewWrapperH = ((windowHeight-35)*.6)-14;
+	var previewWrapperH = ((windowHeight-35)*(ViewModel.topScreenCalcPercentage/100))-14;
 	var previewWrapperW = (previewWrapperH*0.71935483870968); // Determine width via card ratio
 	$('#preview-wrapper').css( {
 		// "height" : previewWrapperH,
@@ -156,15 +156,22 @@ function offsetDragHandlers() {
 			ViewModel.yOffsetBool = false;
 			$("body").removeClass("no-select");
 			$("body").removeClass("ns-resize-cursor");
-			ViewModel.yOffsetOld = ViewModel.yOffset;
+			//ViewModel.yOffsetOld = ViewModel.yOffset;
+			ViewModel.topScreenCalcPercentageOld = ViewModel.topScreenCalcPercentage;
             ViewModel.poolViewController.fixPoolSize();
 		}
 	}).mousemove(function(e){
 		if (ViewModel.yOffsetBool == true) {
-			var yOffsetStart = ViewModel.yOffsetDragStart;
 			var yOffsetEnd = e.pageY;
-			var yOffsetDelta = yOffsetStart - yOffsetEnd;
-			ViewModel.yOffset = ViewModel.yOffsetOld + yOffsetDelta;
+			var yOffsetDelta = ViewModel.yOffsetDragStart - yOffsetEnd;
+			console.log(yOffsetDelta);
+			//ViewModel.yOffset = ViewModel.yOffsetOld + yOffsetDelta; //css calc failure fallback
+			var percentageDelta = (yOffsetDelta/$(window).height()) * 100;
+			var topScreenCalcPercentage = ViewModel.topScreenCalcPercentageOld - percentageDelta;
+			var bottomScreenCalcPercentage = 100 - topScreenCalcPercentage;
+			ViewModel.topScreenCalcPercentage = topScreenCalcPercentage;
+			
+			offsetCalc(topScreenCalcPercentage, bottomScreenCalcPercentage);
 			limitedLayout();
             ViewModel.poolViewController.fixPoolSize();
 		}
@@ -175,8 +182,28 @@ function offsetDragHandlers() {
 function limitedInit() {
 	limitedLayout();
 	offsetDragHandlers();
-	$('.foyer-header').addClass('translucent-header');
+	//$('.foyer-header').addClass('translucent-header');
 	headerLayout();
+}
+
+function offsetCalc(topScreenPercentage, bottomScreenPercentage) {
+	if (topScreenPercentage != '' && bottomScreenPercentage != '') {
+		var partialCalcString = "% - 14px";
+		var topScreenCalc = topScreenPercentage + partialCalcString;
+		var bottomScreenCalc = bottomScreenPercentage + partialCalcString;
+	
+		$('#top-screen').css( {
+			'height': '-webkit-calc(' + topScreenCalc + ')'
+			, 'height': '-moz-calc(' + topScreenCalc + ')'
+			, 'height': 'calc(' + topScreenCalc + ')'
+		} );
+	
+		$('#bottom-screen').css( {
+			'height': '-webkit-calc(' + bottomScreenCalc + ')'
+			, 'height': '-moz-calc(' + bottomScreenCalc + ')'
+			, 'height': 'calc(' + bottomScreenCalc + ')'
+		} );
+	}
 }
 
 $(document).ready(function(){

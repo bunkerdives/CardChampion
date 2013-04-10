@@ -60,6 +60,7 @@ function builderLayout() {
 		"width" : cardPoolWidth
 	});
 	$('#card-pool-scroll').css("height", cardPoolHeight);
+	$('#builder-control-bar-right').css("width", cardPoolWidth);
 	
 	
 	if (previewWrapperW < 260) {

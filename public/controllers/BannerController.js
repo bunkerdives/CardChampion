@@ -38,12 +38,12 @@ var BannerController = {
     
 
     , setAnimatedBanner : function() {
-		
+	
 		var currentBg = BackgroundController.backgrounds[ BackgroundController.backgroundId ];
 		var currentBanner = currentBg.banners[ this.bannerId ];
 		var banner = this.banners[ currentBanner ];
 	
-		var containerW = ($(window).width() * 0.95)-2;
+		var containerW = ($(window).width() * 0.95)-2;//-2 for 1 px borded left & right
 		if ( containerW > 1098 ) {
 			containerW = 1098;
 		}
@@ -92,7 +92,10 @@ var BannerController = {
             { 'background-position-y' : bannerEndT } //End position for banner image
             , 12400
             , function() {
-                setTimeout( this.setAnimatedBanner, 8600 );
+                setTimeout( function() {
+					BannerController.setAnimatedBanner();
+				}
+				, 8600 );
             }
         );
         

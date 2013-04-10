@@ -111,7 +111,7 @@
 					<div id="main-slide-4" class="main-slide" data-bind="if: aboutVisible">About Us, About LimitedMTG.com, Mission Statement.
 					</div><!--End #main-slide-4-->
           
-					<div id="main-slide-5" class="main-slide" data-bind="if: profileVisible">
+					<div id="main-slide-5" class="main-slide" data-bind="if: profileVisible" style="display:block;">
 						<div id="profile-container" data-bind="with: ProfileViewModel">
 							<div id="profile-inner">
 								<div id="profile-top-row" class="clearfix" data-bind="with: ProfileGeneralView">
@@ -228,7 +228,7 @@
   															</div>
   														</div>
   													</div>
-  													<hr style="margin-top:7px;margin-bottom:15px;"/>
+  													<hr style="margin-top:7px;margin-bottom:9px;" class="hr-shadow"/>
   													<div class="clearfix">
   														<div class="deck-view-left pull-left">
                                 <div data-bind="foreach: leftColumn">
@@ -251,12 +251,12 @@
                                 </div>
                               </div>
   													</div>
-  													<hr style="margin-top:0px;margin-bottom:18px;"/>
+  													<hr style="margin-top:0px;margin-bottom:17px;" class="hr-faded"/>
   													<div id="deck-view-description" class="deck-view-section">
   														<h1>Description</h1> 
   														<p data-bind="text: description"></p>
   													</div>
-  													<hr style="margin-top:2px;margin-bottom:18px;"/>
+  													<hr style="margin-top:2px;margin-bottom:17px;" class="hr-faded"/>
   													<div id="share-deck-wrapper">
   														<div class="deck-view-section"><h1 style="text-align:center;">Share this deck</h1></div>
   											  		<input type="text" readonly/>
@@ -273,11 +273,112 @@
 					<div id="main-slide-6" style="display:none;">
 						<div id="card-view-container" class="clearfix">
 							<div id="card-view-left" class="pull-left">
-								<div id="card-view-title">Obzedat, Ghost Council</div>
 								<div id="card-view-thumbnail"/>
+								<div id="card-view-info" class="clearfix">
+									<div style="line-height:20px;font-size:12px;">
+										<a href="#" style="font-size:16px;">Gatecrash</a>&nbsp;<span style="vertical-align:top;">[192/249]</span>
+									</div>
+									<div id="card-view-cost">
+										<div class="clearfix" style="display:inline-block;">
+											<img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=medium&name=1&type=symbol"/>
+											<img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=medium&name=W&type=symbol"/>
+											<img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=medium&name=W&type=symbol"/>
+											<img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=medium&name=B&type=symbol"/>
+											<img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=medium&name=B&type=symbol"/>
+										</div>
+									</div>
+									<div>
+										<span style="font-size:16px;line-height:22px;">Creature</span>
+									</div>
+									<div>
+										<img src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=GTC&size=small&rarity=M" style="vertical-align:text-bottom;"/>
+									</div>
+									
+								</div>
 							</div>
 							<div id="card-view-right" class="pull-right">
-								
+								<div id="card-view-title">Obzedat, Ghost Council</div>
+								<hr style="margin-top:10px;margin-bottom:0;" class="hr-shadow"/>
+								<div style="overflow:auto;height:406px;position:relative;top:-6px;">
+									<h4 style="margin:5px 0px;color:#000;text-align:center;padding-top:10px;color:#555;">Near Mint</h4>
+									<table class="table table-striped table-bordered" style="margin-bottom:5px;">
+										<thead>
+											<tr>
+												<th>Vendor</th>
+												<th>Qty</th>
+												<th>Price</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><a href="#">ShuffleandCut</a></td>
+												<td>8</td>
+												<td>$13.99</td>
+												<td><a href="#">Order</a></td>
+											</tr>
+											<tr>
+												<td><a href="#">Top Deck Hobbies</a></td>
+												<td>4</td>
+												<td>$13.49</td>
+												<td><a href="#">Order</a></td>
+											</tr>
+											<tr>
+												<td><a href="#">OldSchoolGaming</a></td>
+												<td>4</td>
+												<td>$13.75</td>
+												<td><a href="">Order</a></td>
+											</tr>
+											<tr>
+												<td><a href="#">Paladins Game Castle</a></td>
+												<td>5</td>
+												<td>$14.24</td>
+												<td><a href="">Order</a></td>
+											</tr>
+										</tbody>
+									</table>
+									<div style="text-align:right;margin-right:5px;">
+										<i class="icon-share-alt"/><a href="#">See More</a>
+									</div>
+									<h4 style="margin:5px 0px;color:#000;text-align:center;color:#555;">Lightly Played</h4>
+									<table class="table table-striped table-bordered">
+										<thead>
+											<tr>
+												<th>Vendor</th>
+												<th>Qty</th>
+												<th>Price</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><a href="#">adventuresOn</a></td>
+												<td>18</td>
+												<td>$13.99</td>
+												<td><a href="#">Order</a></td>
+											</tr>
+											<tr>
+												<td><a href="#">Run MTG</a></td>
+												<td>20</td>
+												<td>$13.90</td>
+												<td><a href="">Order</a></td>
+											</tr>
+											<tr>
+												<td><a href="#">OldSchoolGaming</a></td>
+												<td>4</td>
+												<td>$13.75</td>
+												<td><a href="">Order</a></td>
+											</tr>
+											<tr>
+												<td><a href="#">Paladins Game Castle</a></td>
+												<td>5</td>
+												<td>$14.24</td>
+												<td><a href="">Order</a></td>
+											</tr>
+										</tbody>
+									</table>
+									<br/>
+								</div>
 							</div>
 						</div>
 					</div><!--End #main-slide-6-->

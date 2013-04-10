@@ -100,14 +100,15 @@ textarea::-webkit-input-placeholder {
 .table-bordered {
   border: 1px solid #666666;
 }
-.table-bordered th,
+/*.table-bordered th,
 .table-bordered td {
   border-left: 1px solid #666666;
-}
-.table-striped tbody > tr:nth-child(odd) > td,
+}*/
+
+/*.table-striped tbody > tr:nth-child(odd) > td,
 .table-striped tbody > tr:nth-child(odd) > th {
   background-color: #444444;
-}
+}*/
 
 /* line 165, ../bootstrap/bootstrap/_tables.scss */
 .table-hover tbody tr:hover td,
