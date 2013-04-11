@@ -155,13 +155,15 @@ $(document).ready(function(){
 	    	$(this).animate({
 	    		"height" : "0px"
 	    	}, 400, function(){
-					$(this).hide();
+				$(this).hide();
 	    	});
 	    });
 	});
 	
 	cardToThumbnail('260','#profile-settings-thumbnail');
+	cardToThumbnail('260','#save-deck-thumbnail');
 	
 	$('#profile-settings-image-input').tooltip();
+	$('#save-deck-image-input').tooltip();
 	
 });

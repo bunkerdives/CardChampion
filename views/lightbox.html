@@ -1,6 +1,6 @@
 <div id="lightbox-container">
 	<div id="lightbox-inner">
-			<div id="lightbox-login-register-container" style="display:block;">
+			<div id="lightbox-login-register-container" style="display:none;">
 				<div id="login-username-container" class="row-fluid">
 					<div class="span12">
 						<input type="text" class="span12" id="login-nickname" placeholder="Username"/>
@@ -96,6 +96,53 @@
 					</div>
 					<div class="span6">
 						<button class="btn btn-danger btn-small span12">Cancel</button>
+					</div>
+				</div>
+			</div>
+			<div id="save-deck-form" style="display:block;">
+				<div class="row-fluid"><div class="span12"><h3 style="margin-top:-5px;color:#444;">Save Deck</h3></div></div>
+				<div class="row-fluid">
+					<div class="span12">
+						<input type="text" class="span12" id="" placeholder="Deck Name"/>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span12">
+						<textarea rows="3" class="span12" id="" placeholder="Description"></textarea>
+					</div>
+				</div>
+				<div class="row-fluid" style="margin-bottom:10px;">
+					<div class="span8" style="text-align:left;">
+						<label class="radio inline">
+						  <input type="radio" name="optionsRadios" id="" value="public"> Public
+						</label>
+						<label class="radio inline">
+						  <input type="radio" name="optionsRadios" id="" value="private"> Private
+						</label>
+					</div>
+					<div class="span4">
+						<div class="btn-group pull-right">
+							<button class="btn dropdown-toggle" data-toggle="dropdown">
+								<span class="down-arrow">Format</span>
+							</button>
+							<ul class="dropdown-menu" style="min-width:0;">
+								<li><a href="#">Standard</a></li>
+								<li><a href="#">Modern</a></li>
+								<li><a href="#">Legacy</a></li>
+								<li><a href="#">Vintage</a></li>
+								<li><a href="#">Pauper</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div id="save-deck-thumbnail-wrapper" class="span12" style="height:0px;min-height:0px;opacity:0;overflow:hidden;">
+						<div id="save-deck-thumbnail"></div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span12">
+						<input id="save-deck-image-input" data-provide="typeahead" data-trigger="click" type="text" class="span12 typeahead" data-toggle="tooltip" data-placement="left" title="" data-original-title="Enter the name of any Standard card." data-container="input" placeholder="Thumbnail Image"/>
 					</div>
 				</div>
 			</div>
