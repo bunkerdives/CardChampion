@@ -23,16 +23,18 @@
   									  </ul>
   									</div>
   									<div class="btn-group">
-  									  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="display:none;">
+  									  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="display:block;">
   									    <span class="down-arrow">All Formats</span>
   									  </a>
-  									  <ul class="dropdown-menu pull-right">
-  									    <li><a href="">Standard</a></li>
-  											<li><a href="">Modern</a></li>
-  											<li><a href="">Commander</a></li>
-  											<li><a href="">Pauper</a></li>
-  											<li><a href="">Draft</a></li>
-  											<li><a href="">Sealed</a></li>
+  									  <ul class="dropdown-menu pull-right" style="min-width:0;top:90%;">
+  									    <li><a href="#">Standard</a></li>
+  											<li><a href="#">Modern</a></li>
+												<li><a href="#">Legacy</a></li>
+												<li><a href="#">Vintage</a></li>
+  											<li><a href="#">Commander</a></li>
+  											<li><a href="#">Pauper</a></li>
+  											<li><a href="#">Draft</a></li>
+  											<li><a href="#">Sealed</a></li>
   									  </ul>
   									</div>
   								</div>
@@ -61,6 +63,7 @@
   												</div>
   												<div class="deck-preview-info-right pull-right">
   													<div class="deck-preview-format" data-bind="text: format"></div>
+														<div class="deck-preview-date" data-bind=""><i class="icon-calendar" style="margin-right:4px;"></i><span>04/12/13</span></div>
   													<div class="deck-preview-author" style="color:#0088cc;">
                               <i class="icon-user"/>
                               <a data-bind="text: author, attr: {href:profileUrl}"/>
@@ -73,9 +76,6 @@
   												</div>
   												<div>
   													<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
-  												</div>
-  												<div>
-  													<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
   												</div>
   											</div>
   										</div>
@@ -189,11 +189,12 @@
     															</div>
     														</div>
     														<div class="deck-preview-right pull-right clearfix">
-    															<div class="deck-preview-info pull-left">
-    																<div class="deck-preview-title">
+    															<div class="deck-preview-info pull-left" style="text-align:center;padding-left:3px;">
+    																<div class="deck-preview-title" style="font-size:24px;line-height:30px">
                                       <a data-bind="text: title, attr: {href : deckUrl}"/>
     																</div>
-    																<div class="deck-preview-format" data-bind="text: format"></div>
+    																<div class="deck-preview-format" data-bind="text: format" style="line-height:18px;margin-top:0;"></div>
+																		<div class="deck-preview-date" style="line-height:24px;"><i class="icon-calendar"></i><span>04/12/13</span></div>
     															</div>
     															<div class="deck-preview-btns pull-right">
     																<div>
@@ -216,16 +217,18 @@
                         <div data-bind="if: ProfileDeckVisible">
                           <div class="deck-view" class="clearfix" data-bind="with: ProfileDeckViewModel">
                             <div id="deck-view-title" class="clearfix">
-  														<div id="deck-view-thumbnail" class="pull-right" data-bind="style: {backgroundImage : thumb}"/>
-  														<div id="deck-view-title-right" class="pull-left">
+															<div id="deck-view-title-left" class="pull-left clearfix">
   															<span style="text-align:left;" class="pull-left" data-bind="text: title"/><br/>
-  															<div id="deck-view-mana" class="clearfix">
+  															<div id="deck-view-mana" class="clearfix pull-left">
   																<span id="deck-preview-white" class="deck-preview-color" data-bind="visible: white"/>
   																<span id="deck-preview-blue" class="deck-preview-color" data-bind="visible: blue"/>
   																<span id="deck-preview-black" class="deck-preview-color" data-bind="visible: black"/>
   																<span id="deck-preview-red" class="deck-preview-color" data-bind="visible: red"/>
   																<span id="deck-preview-green" class="deck-preview-color" data-bind="visible: green"/>
   															</div>
+															</div>
+  														<div id="deck-view-title-right" class="pull-right clearfix">
+	  														<div id="deck-view-thumbnail" class="" data-bind="style: {backgroundImage : thumb}"/>
   														</div>
   													</div>
   													<hr style="margin-top:7px;margin-bottom:9px;" class="hr-shadow"/>
@@ -253,13 +256,16 @@
   													</div>
   													<hr style="margin-top:0px;margin-bottom:17px;" class="hr-faded"/>
   													<div id="deck-view-description" class="deck-view-section">
-  														<h1>Description</h1> 
+															<div class="clearfix">
+  															<h1 class="pull-left">Description</h1>
+																<div id="deck-view-date" class="pull-right"><i class="icon-calendar"></i><span>04/11/13</span></div> 
+															</div>
   														<p data-bind="text: description"></p>
   													</div>
   													<hr style="margin-top:2px;margin-bottom:17px;" class="hr-faded"/>
   													<div id="share-deck-wrapper">
   														<div class="deck-view-section"><h1 style="text-align:center;">Share this deck</h1></div>
-  											  		<input type="text" readonly/>
+  											  		<input type="text" value="test.url/decklists?user=Guest&deck=Name" onclick="this.select()" readonly/>
   													</div>
                           </div>
                         </div>

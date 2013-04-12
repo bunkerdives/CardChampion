@@ -93,7 +93,7 @@ function cardToThumbnail(w,t) {
 	var imgBgW = imgW * (1.2252+.1);
 	var imgBgH = imgBgW * 1.39;
 	var imgBgTop = imgBgH * (-0.1258-.01);
-	var imgBgLeft = imgBgW * -0.091;
+	var imgBgLeft = imgBgW * -0.097;
     
 	$(target).css({
 		'height': profileImgH,
