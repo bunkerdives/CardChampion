@@ -11,13 +11,11 @@ var ProfileDeckListViewModel = function() {
         
         var self = this;
         
-        ( function(self) {
-            $.each( decks, function( index, deckPreviewData ) {
-                var profileDeckPreview = new ProfileDeckPreViewModel();
-                profileDeckPreview.initProfileDeckPreView( deckPreviewData );
-                self.ProfileDeckPreviews()[ index ] = profileDeckPreview;
-            } );
-        } ) (self);
+        $.each( decks, function( index, deckPreviewData ) {
+            var profileDeckPreview = new ProfileDeckPreViewModel();
+            profileDeckPreview.initProfileDeckPreView( deckPreviewData );
+            self.ProfileDeckPreviews()[ index ] = profileDeckPreview;
+        } );
         
     };
     

@@ -10,12 +10,14 @@ var MouseController = function() {
         
         if( ViewModel.mousedown == true ){
             
+            ViewModel.stopCardMouseUp = true;
+            
             var pool = ViewModel.dragDropOrigPool;
             pool.removeCardFromPool( ViewModel.cardDragCardView, ViewModel.dragDropOrigColIdx );
             
             var ele = $("#drag-drop-card");
             ele.css( 'background-image', 'url(' + ViewModel.cardDragSrc + ')' );
-            ele.css( 'display', 'block' );
+            
             ele.css( 'background-size', ViewModel.cardW + "px " + ViewModel.cardH + "px" );
             ele.css( 'height', ViewModel.cardH );
             ele.css( 'width', ViewModel.cardW );
@@ -24,18 +26,21 @@ var MouseController = function() {
                 'top' : event.pageY
                 , 'left' : event.pageX
             } );
+            
+            ele.css( 'display', 'block' );
         
         }
     };
     
-    this.mouseUp = function( event ) {
-      
+    this.mouseUp = function() {
+        
         if( ViewModel.mousedown == true ) {
             
             // hide the drag drop card
             $("#drag-drop-card").css( 'display', 'none' );
             
             ViewModel.mousedown = false;
+            ViewModel.stopCardMouseUp = false;
             
             if( ViewModel.dragDropNewCol != '' ){
                 ViewModel.dragDropNewCol.cards.push( ViewModel.cardDragCardView );

@@ -16,8 +16,10 @@ var LayoutController = function( template, options ) {
         case 'Foyer':
             context = new FoyerViewModel();
             context.profileData = options.profile;
+            context.decks = options.decks;
             context.subview = options.subview;
             context.deckName = options.deckname;
+            context.deckContainer = options.deckContainer;
             context.deckCardData = options.deckData;
             context.showSubView();
             break;

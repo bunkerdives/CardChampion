@@ -1,18 +1,19 @@
 <div id="builder">
-	
+	<div id="drag-drop-card" style="display:none;position:absolute;z-index:4000;"></div>
   <div id="top-screen" class="clearfix">
     <div id="preview-wrapper" class="well pull-left">
       <div id="img-preview" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }"></div>
     </div>
-    <div id="card-pool" class="well pull-left" style="position:relative;">
+    <div id="card-pool" class="well pull-right" style="position:relative;">
       <div id="card-pool-scroll" class="clearfix">
-        <div id="card-pool-inner" class="pull-left clearfix"><div data-bind="foreach: mainboard">
-          <div data-bind="foreach: columns">
-            <div class="column" data-bind="foreach: cards, event: { mouseover: mouseOver }">
-              <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(data,event){ mouseDownHandler('mainboard', event); }, mouseup: mouseUpHandler, mouseover: function(){ cardZoom($root,false) }, click: function(){ cardSelect('mainboard');cardZoom($root,true); }, dblclick: function(){ cardSelect('mainboard'); } }"/>
+        <div id="card-pool-inner" class="pull-left clearfix">
+          <div data-bind="foreach: mainboard">
+            <div data-bind="foreach: columns">
+              <div class="column" data-bind="foreach: cards, event: { mouseover: mouseOver }">
+                <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(data,event){ mouseDownHandler('mainboard', event); }, mouseup: mouseUpHandler, mouseover: function(data,event){ cardZoom($root,false,event) }, click: function(data,event){ cardSelect('mainboard',event); cardZoom($root,true,event); }, dblclick: function(data,event){ cardSelect('mainboard',event); } }"/>
+              </div>
             </div>
           </div>
-        </div>
         </div>
 			</div>
 			<div id="mainboard-select-prompt" class="board-select-prompt">
@@ -272,7 +273,7 @@
          <div data-bind="foreach: sideboard">
            <div data-bind="foreach: columns">
              <div class="column" data-bind="foreach: cards, event: { mouseover: mouseOver }">
-               <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(data,event){ mouseDownHandler('sideboard', event); }, mouseup: mouseUpHandler, mouseover: function(){ cardZoom($root,false) }, click: function(){ cardSelect('sideboard');cardZoom($root,true); }, dblclick: function(){ cardSelect('sideboard'); } }"/><!---->
+               <div class="card" data-bind="style: { backgroundImage: 'url(' + imgSrc() + ')' }, event: { mousedown: function(data,event){ mouseDownHandler('sideboard', event); }, mouseup: mouseUpHandler, mouseover: function(data,event){ cardZoom($root,false,event) }, click: function(data,event){ cardSelect('sideboard',event); cardZoom($root,true,event); }, dblclick: function(data,event){ cardSelect('sideboard',event); } }"/><!---->
              </div>
            </div>
          </div>
@@ -283,5 +284,4 @@
 			</div>
     </div>
   </div><!-- End #bottom-screen -->
-	<div id="drag-drop-card" style="display:none;position:absolute;z-index:4000;"></div>
 </div>

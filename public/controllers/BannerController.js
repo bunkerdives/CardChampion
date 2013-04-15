@@ -38,12 +38,12 @@ var BannerController = {
     
 
     , setAnimatedBanner : function() {
-	
+		
 		var currentBg = BackgroundController.backgrounds[ BackgroundController.backgroundId ];
-		var currentBanner = currentBg.banners[ this.bannerId ];
-		var banner = this.banners[ currentBanner ];
+		var currentBanner = currentBg.banners[ BannerController.bannerId ];
+		var banner = BannerController.banners[ currentBanner ];
 	
-		var containerW = ($(window).width() * 0.95)-2;//-2 for 1 px borded left & right
+		var containerW = ($(window).width() * 0.95)-2;
 		if ( containerW > 1098 ) {
 			containerW = 1098;
 		}
@@ -77,9 +77,9 @@ var BannerController = {
 			bannerEndT = tmpReverse;
 		}
 			
-        this.bannerId += 1;
-        if( this.bannerId >= currentBg.banners.length ){
-            this.bannerId = 0;
+        BannerController.bannerId += 1;
+        if( BannerController.bannerId >= currentBg.banners.length ){
+            BannerController.bannerId = 0;
         }
 			
         $('#foyer-banner').css( {
@@ -92,10 +92,7 @@ var BannerController = {
             { 'background-position-y' : bannerEndT } //End position for banner image
             , 12400
             , function() {
-                setTimeout( function() {
-					BannerController.setAnimatedBanner();
-				}
-				, 8600 );
+                setTimeout( BannerController.setAnimatedBanner, 8600 );
             }
         );
         

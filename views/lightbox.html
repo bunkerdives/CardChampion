@@ -1,6 +1,6 @@
 <div id="lightbox-container">
 	<div id="lightbox-inner">
-			<div id="lightbox-login-register-container" style="display:none;">
+			<div id="lightbox-login-register-container" style="display:block;">
 				<div id="login-username-container" class="row-fluid">
 					<div class="span12">
 						<input type="text" class="span12" id="login-nickname" placeholder="Username"/>
@@ -67,17 +67,17 @@
 				<div class="row-fluid"><div class="span12"><h3 style="margin-top:0;color:#444;">Profile Settings</h3></div></div>
 				<div class="row-fluid">
 					<div class="span12">
-						<input type="text" class="span12" id="" placeholder="Full Name"/>
+						<input type="text" id="profile-settings-full-name" class="span12" id="" placeholder="Full Name"/>
 					</div>
 				</div>	
 				<div class="row-fluid">
 					<div class="span12">
-						<input type="text" class="span12" id="" placeholder="Location"/>
+						<input type="text" id="profile-settings-location" class="span12" id="" placeholder="Location"/>
 					</div>
 				</div>	
 				<div class="row-fluid">
 					<div class="span12">
-						<input type="text" class="span12" id="" placeholder="Description"/>
+						<input type="text" id="profile-settings-description" class="span12" id="" placeholder="Description"/>
 					</div>
 				</div>
 				<div class="row-fluid">
@@ -92,14 +92,14 @@
 				</div>
 				<div class="row-fluid">
 					<div class="span6">
-						<button class="btn btn-success btn-small span12" style="margin-bottom:10px;">Save</button>
+						<button class="btn btn-success btn-small span12" id="profile-settings-save" style="margin-bottom:10px;">Save</button>
 					</div>
 					<div class="span6">
 						<button class="btn btn-danger btn-small span12">Cancel</button>
 					</div>
 				</div>
 			</div>
-			<div id="save-deck-form" style="display:block;">
+			<div id="save-deck-form" style="display:none;">
 				<div class="row-fluid"><div class="span12"><h3 style="margin-top:-5px;color:#444;">Save Deck</h3></div></div>
 				<div class="row-fluid">
 					<div class="span12">

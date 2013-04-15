@@ -1,19 +1,15 @@
+var mongoose = require('mongoose');
 
-var DeckContainerModel = function( deckData ) {
+var DeckContainerSchema = require('../schemas/DeckContainerSchema.js');
+
+
+var DeckContainerModel = {
     
-    this.title = deckData.title;
-    this.thumb = deckData.thumb;
-    this.deckUrl = deckData.deckUrl;
-    this.user = deckData.user;
-    this.uuid = deckData.uuid;
-    this.format = deckData.format;
-    this.date = deckData.date;
-    this.white = deckData.white;
-    this.blue = deckData.blue;
-    this.black = deckData.black;
-    this.red = deckData.red;
-    this.green = deckData.green;
+    init : function() {
+        return mongoose.model( 'DeckContainer', DeckContainerSchema, 'DeckContainers' );
+    }
     
-};
+}
+
 
 module.exports = DeckContainerModel;

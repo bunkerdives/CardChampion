@@ -44,6 +44,8 @@ var BuilderViewModel = function() {
     this.greenLandCount = ko.observable( 0 );
     
     this.mousedown = false;
+    this.stopCardMouseUp = false;
+    
     this.cardDragCardCursorTop = '';
     this.cardDragCardCursorLeft = '';
     this.cardDragCardTop = '';
@@ -158,19 +160,16 @@ ko.utils.extend( BuilderViewModel.prototype, {
     
     init: function( element, valueAccessor, allBindingsAccessor ) {
         
+        ViewModel.initBuilderView();
+        
         jQuery(document).ready( function ($) {
             
-            ViewModel.initBuilderView();
-            
             BackgroundController.setBackgroundImage();
-            
-            builderLayout();
-            
             headerInit();
             $("#header").css('display','block');
             
+            builderLayout();
             CardViewController.cardSizeInit();
-            headerInit();
             
         	$("#add-land-dropdown").on( "click", function(e){
         	  e.stopPropagation();
@@ -182,7 +181,7 @@ ko.utils.extend( BuilderViewModel.prototype, {
             
             $("#template-plugin").css("display", "block");
             
-        }, self );
+        } );
         
     }
     

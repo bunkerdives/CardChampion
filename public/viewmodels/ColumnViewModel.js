@@ -59,27 +59,12 @@ var ColumnViewModel = function( cards ) {
         this.cards.sort( CardSort.alphabeticalSort );
     };
     
-    this.columnMouseUpDropCard = function() {
-      
-        if( ViewModel.mousedown == true ) {
-            
-            // hide drag-drop-card
-            $("#drag-drop-card").css( 'display', 'none' );
-            
-            // add the card to this column
-            this.cards.push( ViewModel.cardDragCardView );
-            
-            ViewModel.mousedown = false;
-            
-        }
-        
-    };
-    
-    this.mouseOver = function() {
+    this.mouseOver = function(event) {
         
         if( ViewModel.mousedown == true ) {
             ViewModel.dragDropNewCol = this;
         }
+        
     }
     
 };

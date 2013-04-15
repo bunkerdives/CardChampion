@@ -23,18 +23,16 @@
   									  </ul>
   									</div>
   									<div class="btn-group">
-  									  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="display:block;">
+  									  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="display:none;">
   									    <span class="down-arrow">All Formats</span>
   									  </a>
-  									  <ul class="dropdown-menu pull-right" style="min-width:0;top:90%;">
-  									    <li><a href="#">Standard</a></li>
-  											<li><a href="#">Modern</a></li>
-												<li><a href="#">Legacy</a></li>
-												<li><a href="#">Vintage</a></li>
-  											<li><a href="#">Commander</a></li>
-  											<li><a href="#">Pauper</a></li>
-  											<li><a href="#">Draft</a></li>
-  											<li><a href="#">Sealed</a></li>
+  									  <ul class="dropdown-menu pull-right">
+  									    <li><a href="">Standard</a></li>
+  											<li><a href="">Modern</a></li>
+  											<li><a href="">Commander</a></li>
+  											<li><a href="">Pauper</a></li>
+  											<li><a href="">Draft</a></li>
+  											<li><a href="">Sealed</a></li>
   									  </ul>
   									</div>
   								</div>
@@ -63,7 +61,6 @@
   												</div>
   												<div class="deck-preview-info-right pull-right">
   													<div class="deck-preview-format" data-bind="text: format"></div>
-														<div class="deck-preview-date" data-bind=""><i class="icon-calendar" style="margin-right:4px;"></i><span>04/12/13</span></div>
   													<div class="deck-preview-author" style="color:#0088cc;">
                               <i class="icon-user"/>
                               <a data-bind="text: author, attr: {href:profileUrl}"/>
@@ -76,6 +73,9 @@
   												</div>
   												<div>
   													<button class="btn btn-primary"><i class="icon-white icon-edit"></i></button>
+  												</div>
+  												<div>
+  													<button id="deck-preview-info-btn" class="btn btn-primary"><i class="icon-white icon-info-sign"></i></button>
   												</div>
   											</div>
   										</div>
@@ -111,7 +111,7 @@
 					<div id="main-slide-4" class="main-slide" data-bind="if: aboutVisible">About Us, About LimitedMTG.com, Mission Statement.
 					</div><!--End #main-slide-4-->
           
-					<div id="main-slide-5" class="main-slide" data-bind="if: profileVisible" style="display:block;">
+					<div id="main-slide-5" class="main-slide" data-bind="if: profileVisible">
 						<div id="profile-container" data-bind="with: ProfileViewModel">
 							<div id="profile-inner">
 								<div id="profile-top-row" class="clearfix" data-bind="with: ProfileGeneralView">
@@ -189,12 +189,11 @@
     															</div>
     														</div>
     														<div class="deck-preview-right pull-right clearfix">
-    															<div class="deck-preview-info pull-left" style="text-align:center;padding-left:3px;">
-    																<div class="deck-preview-title" style="font-size:24px;line-height:30px">
+    															<div class="deck-preview-info pull-left">
+    																<div class="deck-preview-title">
                                       <a data-bind="text: title, attr: {href : deckUrl}"/>
     																</div>
-    																<div class="deck-preview-format" data-bind="text: format" style="line-height:18px;margin-top:0;"></div>
-																		<div class="deck-preview-date" style="line-height:24px;"><i class="icon-calendar"></i><span>04/12/13</span></div>
+    																<div class="deck-preview-format" data-bind="text: format"></div>
     															</div>
     															<div class="deck-preview-btns pull-right">
     																<div>
@@ -217,21 +216,19 @@
                         <div data-bind="if: ProfileDeckVisible">
                           <div class="deck-view" class="clearfix" data-bind="with: ProfileDeckViewModel">
                             <div id="deck-view-title" class="clearfix">
-															<div id="deck-view-title-left" class="pull-left clearfix">
+  														<div id="deck-view-thumbnail" class="pull-right" data-bind="style: {backgroundImage : thumb}"/>
+  														<div id="deck-view-title-right" class="pull-left">
   															<span style="text-align:left;" class="pull-left" data-bind="text: title"/><br/>
-  															<div id="deck-view-mana" class="clearfix pull-left">
+  															<div id="deck-view-mana" class="clearfix">
   																<span id="deck-preview-white" class="deck-preview-color" data-bind="visible: white"/>
   																<span id="deck-preview-blue" class="deck-preview-color" data-bind="visible: blue"/>
   																<span id="deck-preview-black" class="deck-preview-color" data-bind="visible: black"/>
   																<span id="deck-preview-red" class="deck-preview-color" data-bind="visible: red"/>
   																<span id="deck-preview-green" class="deck-preview-color" data-bind="visible: green"/>
   															</div>
-															</div>
-  														<div id="deck-view-title-right" class="pull-right clearfix">
-	  														<div id="deck-view-thumbnail" class="" data-bind="style: {backgroundImage : thumb}"/>
   														</div>
   													</div>
-  													<hr style="margin-top:7px;margin-bottom:9px;" class="hr-shadow"/>
+  													<hr style="margin-top:7px;margin-bottom:15px;"/>
   													<div class="clearfix">
   														<div class="deck-view-left pull-left">
                                 <div data-bind="foreach: leftColumn">
@@ -254,18 +251,15 @@
                                 </div>
                               </div>
   													</div>
-  													<hr style="margin-top:0px;margin-bottom:17px;" class="hr-faded"/>
+  													<hr style="margin-top:0px;margin-bottom:18px;"/>
   													<div id="deck-view-description" class="deck-view-section">
-															<div class="clearfix">
-  															<h1 class="pull-left">Description</h1>
-																<div id="deck-view-date" class="pull-right"><i class="icon-calendar"></i><span>04/11/13</span></div> 
-															</div>
+  														<h1>Description</h1> 
   														<p data-bind="text: description"></p>
   													</div>
-  													<hr style="margin-top:2px;margin-bottom:17px;" class="hr-faded"/>
+  													<hr style="margin-top:2px;margin-bottom:18px;"/>
   													<div id="share-deck-wrapper">
   														<div class="deck-view-section"><h1 style="text-align:center;">Share this deck</h1></div>
-  											  		<input type="text" value="test.url/decklists?user=Guest&deck=Name" onclick="this.select()" readonly/>
+  											  		<input type="text" readonly data-bind="value: deckViewURL"/>
   													</div>
                           </div>
                         </div>
@@ -279,112 +273,11 @@
 					<div id="main-slide-6" style="display:none;">
 						<div id="card-view-container" class="clearfix">
 							<div id="card-view-left" class="pull-left">
+								<div id="card-view-title">Obzedat, Ghost Council</div>
 								<div id="card-view-thumbnail"/>
-								<div id="card-view-info" class="clearfix">
-									<div style="line-height:20px;font-size:12px;">
-										<a href="#" style="font-size:16px;">Gatecrash</a>&nbsp;<span style="vertical-align:top;">[192/249]</span>
-									</div>
-									<div id="card-view-cost">
-										<div class="clearfix" style="display:inline-block;">
-											<img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=medium&name=1&type=symbol"/>
-											<img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=medium&name=W&type=symbol"/>
-											<img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=medium&name=W&type=symbol"/>
-											<img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=medium&name=B&type=symbol"/>
-											<img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=medium&name=B&type=symbol"/>
-										</div>
-									</div>
-									<div>
-										<span style="font-size:16px;line-height:22px;">Creature</span>
-									</div>
-									<div>
-										<img src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=GTC&size=small&rarity=M" style="vertical-align:text-bottom;"/>
-									</div>
-									
-								</div>
 							</div>
 							<div id="card-view-right" class="pull-right">
-								<div id="card-view-title">Obzedat, Ghost Council</div>
-								<hr style="margin-top:10px;margin-bottom:0;" class="hr-shadow"/>
-								<div style="overflow:auto;height:406px;position:relative;top:-6px;">
-									<h4 style="margin:5px 0px;color:#000;text-align:center;padding-top:10px;color:#555;">Near Mint</h4>
-									<table class="table table-striped table-bordered" style="margin-bottom:5px;">
-										<thead>
-											<tr>
-												<th>Vendor</th>
-												<th>Qty</th>
-												<th>Price</th>
-												<th></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td><a href="#">ShuffleandCut</a></td>
-												<td>8</td>
-												<td>$13.99</td>
-												<td><a href="#">Order</a></td>
-											</tr>
-											<tr>
-												<td><a href="#">Top Deck Hobbies</a></td>
-												<td>4</td>
-												<td>$13.49</td>
-												<td><a href="#">Order</a></td>
-											</tr>
-											<tr>
-												<td><a href="#">OldSchoolGaming</a></td>
-												<td>4</td>
-												<td>$13.75</td>
-												<td><a href="">Order</a></td>
-											</tr>
-											<tr>
-												<td><a href="#">Paladins Game Castle</a></td>
-												<td>5</td>
-												<td>$14.24</td>
-												<td><a href="">Order</a></td>
-											</tr>
-										</tbody>
-									</table>
-									<div style="text-align:right;margin-right:5px;">
-										<i class="icon-share-alt"/><a href="#">See More</a>
-									</div>
-									<h4 style="margin:5px 0px;color:#000;text-align:center;color:#555;">Lightly Played</h4>
-									<table class="table table-striped table-bordered">
-										<thead>
-											<tr>
-												<th>Vendor</th>
-												<th>Qty</th>
-												<th>Price</th>
-												<th></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td><a href="#">adventuresOn</a></td>
-												<td>18</td>
-												<td>$13.99</td>
-												<td><a href="#">Order</a></td>
-											</tr>
-											<tr>
-												<td><a href="#">Run MTG</a></td>
-												<td>20</td>
-												<td>$13.90</td>
-												<td><a href="">Order</a></td>
-											</tr>
-											<tr>
-												<td><a href="#">OldSchoolGaming</a></td>
-												<td>4</td>
-												<td>$13.75</td>
-												<td><a href="">Order</a></td>
-											</tr>
-											<tr>
-												<td><a href="#">Paladins Game Castle</a></td>
-												<td>5</td>
-												<td>$14.24</td>
-												<td><a href="">Order</a></td>
-											</tr>
-										</tbody>
-									</table>
-									<br/>
-								</div>
+								
 							</div>
 						</div>
 					</div><!--End #main-slide-6-->

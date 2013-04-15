@@ -4,6 +4,8 @@ var FoyerViewModel = function() {
     
     this.subview = '';
 	this.profileData = '';
+    this.decks = '';
+    this.deckContainer = '';
     this.deckCardData = '';
     this.socket = '';
     
@@ -53,8 +55,8 @@ var FoyerViewModel = function() {
     this.initDecksViewModel = function() {
         
         var recentDecksViewModel = new RecentDecksViewModel();
-        if( this.profileData ) {
-            recentDecksViewModel.initRecentDecksView( this.profileData.decks );
+        if( this.decks ) {
+            recentDecksViewModel.initRecentDecksView( this.decks );
         }
         this.RecentDecksViewModel( recentDecksViewModel );
         
@@ -63,7 +65,7 @@ var FoyerViewModel = function() {
     this.initProfileViewModel = function() {
         
         var profileViewModel = new ProfileViewModel();
-        profileViewModel.initProfileView( this.profileData, this.deckCardData );
+        profileViewModel.initProfileView( this.profileData, this.deckContainer, this.deckCardData );
         this.ProfileViewModel( profileViewModel );
         
     };

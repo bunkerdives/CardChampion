@@ -8,7 +8,7 @@ var ProfileViewModel = function() {
     this.ProfileDeckListVisible = ko.observable( false );
     this.ProfileDeckVisible = ko.observable( false );
     
-    this.initProfileView = function( profileData, deckCardData ) {
+    this.initProfileView = function( profileData, deckContainer, deckCardData ) {
 
         this.initGeneralView( profileData );
         
@@ -18,7 +18,7 @@ var ProfileViewModel = function() {
             this.initDeckListView( profileData.decks );
         }
         
-        this.initDeckView( deckCardData );
+        this.initDeckView( deckContainer, deckCardData );
         
     }
     
@@ -42,11 +42,11 @@ var ProfileViewModel = function() {
         
     };
     
-    this.initDeckView = function( deck ) {
+    this.initDeckView = function( deckContainer, deck ) {
         
         // create a ProfileDeckViewModel with some deck data
         var profileDeckViewModel = new ProfileDeckViewModel();
-        profileDeckViewModel.initProfileDeckView( deck );
+        profileDeckViewModel.initProfileDeckView( deckContainer, deck );
         this.ProfileDeckViewModel( profileDeckViewModel );
         
     };
