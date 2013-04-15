@@ -58,11 +58,7 @@ var CardViewModel = function( cardData ) {
         
     };
     
-    this.mouseUpHandler = function() {
-        ViewModel.mousedown = false;
-    };
-    
-    this.cardZoom = function( view, selecting ) {
+    this.cardZoom = function( view, selecting, event ) {
         
         var url = 'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid='
                 + this.multiverse
@@ -97,11 +93,12 @@ var CardViewModel = function( cardData ) {
         
     };
     
-    this.cardSelect = function( poolType ) {
+    this.cardSelect = function( poolType, event ) {
 			
 		var element = $(event.target);
 		var selected = element.hasClass('select');
-		if (selected === true) {
+        
+		if( selected == true ) {
         
             var sideboard = ViewModel.sideboard()[0];
             var mainboard = ViewModel.mainboard()[0];
@@ -151,6 +148,13 @@ var CardViewModel = function( cardData ) {
         
         return -1;
         
-    }
+    };
+    
+    this.mouseUpHandler = function() {
+        
+        if( ViewModel.stopCardMouseUp == false ){
+            ViewModel.mousedown = false;
+        }
+    };
     
 };

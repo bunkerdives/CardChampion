@@ -14,43 +14,61 @@ var ProfileDeckViewModel = function() {
     this.leftColumn = ko.observableArray( [] );
     this.rightColumn = ko.observableArray( [] );
     
+    this.deckViewURL = ko.observable( '' );
     
-    this.initProfileDeckView = function( deck ) {
+    this.initProfileDeckView = function( deckContainer, deck ) {
         
         if( deck == undefined ) {
             return;
         }
         
-        this.title( deck.title );
-        this.author( deck.author );
-        this.description( deck.description );
-        this.thumb( deck.thumb );
+        this.title( deckContainer.title );
+        this.author( deckContainer.author );
+        this.description( deckContainer.description );
+        this.thumb( deckContainer.thumb );
         
-        this.white( deck.white );
-        this.blue( deck.blue );
-        this.black( deck.black );
-        this.red( deck.red );
-        this.green( deck.green );
+        this.white( deckContainer.white );
+        this.blue( deckContainer.blue );
+        this.black( deckContainer.black );
+        this.red( deckContainer.red );
+        this.green( deckContainer.green );
         
         this.populateMainboard( deck );
         
+        this.setShareThisDeckURL();
+        
     };
+    
+    this.setShareThisDeckURL = function() {
+        this.deckViewURL( document.URL );
+    }
     
     
     this.populateMainboard = function( deck ) {
         
         var mainboard = deck.mainboard;
         
-        this.populateTypeCardsIntoBoard( 'Creatures', mainboard.creatures, this.leftColumn );
-        this.populateTypeCardsIntoBoard( 'Lands', mainboard.lands, this.leftColumn );
+        // TODO calculate an optimal ordering based on the number of cards for each type
         
-        this.populateTypeCardsIntoBoard( 'Instants', mainboard.instants, this.rightColumn );
-        this.populateTypeCardsIntoBoard( 'Sorceries', mainboard.sorceries, this.rightColumn );
-        this.populateTypeCardsIntoBoard( 'Enchantments', mainboard.enchantments, this.rightColumn );
-        this.populateTypeCardsIntoBoard( 'Artifacts', mainboard.artifacts, this.rightColumn );
-        this.populateTypeCardsIntoBoard( 'Planeswalkers', mainboard.planeswalkers, this.rightColumn );
+        this.populateTypeCardsIfPresent( 'Creatures', mainboard.creatures, this.leftColumn );
+        this.populateTypeCardsIfPresent( 'Lands', mainboard.lands, this.leftColumn );
+        this.populateTypeCardsIfPresent( 'Instants', mainboard.instants, this.rightColumn );
+        this.populateTypeCardsIfPresent( 'Sorceries', mainboard.sorceries, this.rightColumn );
+        this.populateTypeCardsIfPresent( 'Enchantments', mainboard.enchantments, this.rightColumn );
+        this.populateTypeCardsIfPresent( 'Artifacts', mainboard.artifacts, this.rightColumn );
+        this.populateTypeCardsIfPresent( 'Planeswalkers', mainboard.planeswalkers, this.rightColumn );
+        this.populateTypeCardsIfPresent( 'Sideboard', mainboard.sideboard, this.rightColumn );
         
     };
+    
+    
+    this.populateTypeCardsIfPresent = function( cardType, cardTypeArray, column ) {
+        
+        if( cardTypeArray != null ) {
+            this.populateTypeCardsIntoBoard( cardType, cardTypeArray, column );
+        }
+        
+    }
     
     
     this.populateTypeCardsIntoBoard = function( cardType, cardTypeArray, column ) {

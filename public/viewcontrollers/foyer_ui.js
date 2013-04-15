@@ -95,11 +95,11 @@ function cardToThumbnail(w,t) {
 	var imgBgTop = imgBgH * (-0.1258-.01);
 	var imgBgLeft = imgBgW * -0.091;
     
-	$(target).css({
+	$(target).css( {
 		'height': profileImgH,
 		'background-size': imgBgW + "px " + imgBgH + "px",
 		'background-position': imgBgLeft + "px " + imgBgTop + "px"
-	});
+	} );
 }
 
 

@@ -1,6 +1,20 @@
 var LoginController = {
     
-    sendLoginRequest : function() {
+    sendBasicLogin : function( username, password ) {
+        console.log("Sending basic login for user " + username + "!");
+        var loginRequest = $.post(
+            '/login'
+            , { username : username, password : password }
+            , function( data ) {
+                if( data != 'Error' ) {
+                    console.log("Successfully sent basic login!")
+                    ViewModel.socketController.socketioHandshake();
+                }
+            }
+        );
+    }
+    
+    , sendLoginRequest : function() {
         
 		LoadingWheelController.start('darker');
 				

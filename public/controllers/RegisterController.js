@@ -24,10 +24,10 @@ var RegisterController = {
         
         if( ! pass1.match(alphanumera) || !pass1.match(alphanumera) /*|| spaceRegex.test(pass1)*/ || pass1.length > 16  ){
             console.log("Bad pass1!")
-						console.log("Conditional 1: " + ! pass1.match(alphanumera));
-						console.log("Conditional 2: " + !pass1.match(alphanumera));
-						console.log("Conditional 3: " + spaceRegex.test(pass1));
-						console.log("Conditional 4: " + pass1.length);
+			console.log("Conditional 1: " + ! pass1.match(alphanumera));
+			console.log("Conditional 2: " + !pass1.match(alphanumera));
+			console.log("Conditional 3: " + spaceRegex.test(pass1));
+			console.log("Conditional 4: " + pass1.length);
             return null;
         }
         
@@ -59,10 +59,11 @@ var RegisterController = {
             , function( data ) {
                 if( data != 'Error' ) {
 					LoadingWheelController.stop();
-                    LightboxController.closeAuthLightbox();
-					//$('#lightbox-login-register-container').toggle();
-					//$('#profile-settings-form').toggle();
+                    //LightboxController.closeAuthLightbox();
+                    LightboxController.toggleLoginRegisterLightbox();
+                    //LoginController.sendBasicLogin( username, pass1 );
                     ViewModel.socketController.socketioHandshake();
+					LightboxController.showProfileSettingsController();
                 } else { // TODO display an error message here
 					LoadingWheelController.stop();
                 }

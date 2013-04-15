@@ -5,7 +5,7 @@ var ProfileSchema = require('../schemas/ProfileSchema.js');
 
 var ProfileModel = {
     
-    newProfileModel : function() {
+    init : function() {
         return mongoose.model( 'Profile', ProfileSchema, 'Profiles' );
     }
     

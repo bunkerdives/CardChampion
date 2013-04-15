@@ -37,6 +37,8 @@ var SealedViewModel = function( set ) {
     this.greenLandCount = ko.observable( 0 );
     
     this.mousedown = false;
+    this.stopCardMouseUp = false;
+    
     this.cardDragCardCursorTop = '';
     this.cardDragCardCursorLeft = '';
     this.cardDragCardTop = '';
@@ -103,20 +105,18 @@ ko.utils.extend( SealedViewModel.prototype, {
     
     init: function( element, valueAccessor, allBindingsAccessor ) {
         
-        var self = this;
-        
         jQuery(document).ready( function ($) {
+            
             BackgroundController.setBackgroundImage();
             headerInit();
             $("#header").css('display','block');
             
             limitedInit();
             CardViewController.cardSizeInit();
-            headerInit();
             
-        	$("#add-land-dropdown").on("click", function(e){
+        	$("#add-land-dropdown").on( "click", function(e) {
         	  e.stopPropagation();
-        	});
+        	} );
             
             ViewModel.mouseController.init();
 				
@@ -124,7 +124,7 @@ ko.utils.extend( SealedViewModel.prototype, {
             
             $("#template-plugin").css("display", "block");
             
-        }, self );
+        } );
         
     }
     
