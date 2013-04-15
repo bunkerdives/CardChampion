@@ -11,6 +11,8 @@ var SealedViewModel = function( set ) {
 	this.yOffsetDragStart = 0;
 	this.yOffset = 0;
 	this.yOffsetOld = 0;
+	this.topScreenCalcPercentage = 60;
+	this.topScreenCalcPercentageOld = 60;
     
     this.set = set;
     this.imgSrc = ko.observable( '/static/img/cardback.jpg' );

@@ -6,11 +6,13 @@
       span.header-link-spacer
       a.header-link.pull-left(href="/decks") Decks
       span.header-link-spacer
-      a.header-link.pull-left(onclick="var redirect = '/sealed?set=GTC';window.location.href = redirect;") Sealed
-      span.header-link-spacer
       a.header-link.pull-left(href="/builder") Builder
       span.header-link-spacer
-      #header-profile-btn.pull-right.btn-group
+      a.header-link.pull-left(onclick="var redirect = '/sealed?set=GTC';window.location.href = redirect;") Sealed
+      span.header-link-spacer
+      a.header-link.pull-left(onclick="") Draft
+      span.header-link-spacer
+      #header-profile-btn.pull-right.btn-group.header-link
         a.btn.btn-link.dropdown-toggle(data-toggle="dropdown",href="#")
         ul.dropdown-menu
           li

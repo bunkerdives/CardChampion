@@ -95,6 +95,28 @@ input[readonly] {
 	display:none;
 }
 
+.table-bordered th,
+.table-bordered td {
+  border-left: 0px;
+}
+
+.hr-shadow {
+	height:6px;
+	border:0;
+	box-shadow:inset 0 6px 6px -6px black;
+	position:relative;
+	z-index:100;
+}
+
+.hr-faded {
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
 /* General classes and styles end */
 
 
@@ -814,7 +836,7 @@ a.header-link {
 	margin-top:1.5px;
 }
 
-#foyer #deck-view .deck-preview-color {
+#foyer #deck-view-mana .deck-preview-color {
 	float:right;
 }
 
@@ -897,18 +919,31 @@ a.header-link {
 	white-space:nowrap;
 	font-weight:200;
 	font-size:28px;
+	line-height:37px;
 }
 
 #foyer .deck-preview-info-right {
-	line-height:35px;
 	text-align:right;
 }
 
 #foyer .deck-preview-format {
+	line-height:25px;
 	font-weight:300;
 	font-size:18px;
 	font-style:italic;
-	margin-top:3px;
+	margin-top:2px;
+}
+
+#foyer .deck-preview-date {
+	line-height:25px;
+}
+
+#foyer .deck-preview-date i {
+	margin-right:3px;
+}
+
+#foyer .deck-preview-author {
+	line-height:18px;
 }
 
 #foyer .deck-preview-btns {
@@ -919,7 +954,7 @@ a.header-link {
 }
 
 #foyer .deck-preview-btns .btn {
-	padding: 2px 6px;
+	padding: 8px 6px;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
@@ -962,12 +997,23 @@ a.header-link {
 
 #foyer #deck-view-title {
 	font-size:30px;
-	line-height:34px;
+	line-height:30px;
 	font-weight:600;
 	text-align:left;
 	padding-left:4%;
 	padding-right:4%;
 	
+}
+
+#foyer #deck-view-title-left {
+	width: -webkit-calc(100% - 70px);
+	width: -moz-calc(100% - 70px);
+	width: calc(100% - 70px);	
+}
+
+#deck-view-mana {
+	margin-top:5px;
+	margin-right:3px;
 }
 
 #foyer #deck-view-thumbnail {
@@ -982,16 +1028,16 @@ a.header-link {
 	height:50px;
 }
 
-#foyer #deck-view-title-right {
-	width: -webkit-calc(100% - 70px);
-	width: -moz-calc(100% - 70px);
-	width: calc(100% - 70px);
-	
+#foyer #deck-view-date {
+	font-size:15px;
+	font-weight:400;
+	line-height:14px;
+	text-align:right;
+	margin-top:2px;
 }
 
-#deck-view-mana {
-	margin-top:2px;
-	float:left;
+#foyer #deck-view-date span {
+	padding-left:2px;
 }
 
 #foyer .deck-view-left {
@@ -1036,6 +1082,10 @@ a.header-link {
 	padding-right:4%;
 }
 
+#foyer #deck-view-description h1 {
+	line-height:22px;
+}
+
 #foyer #share-deck-wrapper {
 	margin-bottom:30px;
 }
@@ -1052,6 +1102,7 @@ a.header-link {
 
 #foyer #main-slide-6 {
 	padding:10px;
+	padding-bottom:0;
 }
 
 #foyer #card-view-container {
@@ -1059,7 +1110,7 @@ a.header-link {
 }
 
 #foyer #card-view-left {
-	
+	width:223px;
 }
 
 #foyer #card-view-thumbnail {
@@ -1071,17 +1122,35 @@ a.header-link {
 }
 
 #foyer #card-view-right {
-	width: -webkit-calc(100% - 223px);
-	width: -moz-calc(100% - 223px);
-	width: calc(100% - 223px);
+	width: -webkit-calc(100% - 233px);
+	width: -moz-calc(100% - 233px);
+	width: calc(100% - 233px);
+	padding-left:10px;
 }
 
 #foyer #card-view-title {
-	padding-bottom:10px;
 	font-size:30px;
 	line-height:34px;
 	font-weight:600;
 	text-align:center;
+}
+
+#foyer #card-view-info {
+	padding-top:10px;
+}
+
+#foyer #card-view-cost {
+	height:25px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+#foyer #card-view-cost img {
+	margin:0;
+	padding:0;
+	margin-left:1px;
+	margin-right:1px;
+	float:left;
 }
 
 
@@ -2033,6 +2102,10 @@ div.typeahead-embedded-item.active {
 .board-select-prompt h1 {
 	position:relative;
 	top:42%;
+}
+
+#builder-control-bar-right {
+	margin-right:2px;
 }
 
 /* End builder template styles */

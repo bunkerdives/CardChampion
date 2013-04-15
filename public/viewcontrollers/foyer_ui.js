@@ -93,7 +93,7 @@ function cardToThumbnail(w,t) {
 	var imgBgW = imgW * (1.2252+.1);
 	var imgBgH = imgBgW * 1.39;
 	var imgBgTop = imgBgH * (-0.1258-.01);
-	var imgBgLeft = imgBgW * -0.091;
+	var imgBgLeft = imgBgW * -0.097;
     
 	$(target).css( {
 		'height': profileImgH,
@@ -228,8 +228,5 @@ $(window).resize(function(){
 	}*/
 	
 	//Temporary bg resize
-	var bgSrc = $("body").css("background-image");
-	if ( bgSrc === "url(http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1920x1080_Wallpaper.jpg)") {
-		BackgroundController.stretchBackground('http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1920x1080_Wallpaper.jpg',1920,1080,1920,973,0,39);
-	}
+	BackgroundController.setBackgroundImage();
 });
