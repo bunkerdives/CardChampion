@@ -119,6 +119,24 @@ var LightboxController = {
 				
     }
     
+    , showSaveLightbox : function() {
+        
+        $('#lightbox-shadow').css( 'display', 'block' );
+  	    $("#lightbox-container").css( 'display', 'block' );
+        
+        $("#lightbox-login-register-container").css( 'display', 'none' );
+        $("#save-deck-form").css( 'display', 'block' );
+        
+    }
+    
+    , closeSaveLightbox : function() {
+        
+        $('#lightbox-shadow').css( 'display', 'none' );
+  	    $("#lightbox-container").css( 'display', 'none' );
+        $("#save-deck-form").css( 'display', 'none' );
+        
+    }
+    
     , toggleLoginRegisterLightbox : function() {
         $('#lightbox-login-register-container').toggle();
     }

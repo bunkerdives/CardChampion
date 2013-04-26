@@ -24,7 +24,7 @@ var ProfileDeckViewCardTypeGroupViewModel = function() {
                 var profileDeckItemViewModel = new ProfileDeckItemViewModel();
                 profileDeckItemViewModel.initProfileDeckItem( cardWrapper );
                 self.cards.push( profileDeckItemViewModel );
-                self.cardTypeTotal( self.cardTypeTotal() + cardWrapper.total );
+                self.cardTypeTotal( self.cardTypeTotal() + parseInt( cardWrapper.total ) );
             } );
         } ) ( self );
         

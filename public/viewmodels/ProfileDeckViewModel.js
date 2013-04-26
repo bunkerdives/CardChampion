@@ -46,18 +46,16 @@ var ProfileDeckViewModel = function() {
     
     this.populateMainboard = function( deck ) {
         
-        var mainboard = deck.mainboard;
-        
         // TODO calculate an optimal ordering based on the number of cards for each type
         
-        this.populateTypeCardsIfPresent( 'Creatures', mainboard.creatures, this.leftColumn );
-        this.populateTypeCardsIfPresent( 'Lands', mainboard.lands, this.leftColumn );
-        this.populateTypeCardsIfPresent( 'Instants', mainboard.instants, this.rightColumn );
-        this.populateTypeCardsIfPresent( 'Sorceries', mainboard.sorceries, this.rightColumn );
-        this.populateTypeCardsIfPresent( 'Enchantments', mainboard.enchantments, this.rightColumn );
-        this.populateTypeCardsIfPresent( 'Artifacts', mainboard.artifacts, this.rightColumn );
-        this.populateTypeCardsIfPresent( 'Planeswalkers', mainboard.planeswalkers, this.rightColumn );
-        this.populateTypeCardsIfPresent( 'Sideboard', mainboard.sideboard, this.rightColumn );
+        this.populateTypeCardsIfPresent( 'Creatures', deck.creatures, this.leftColumn );
+        this.populateTypeCardsIfPresent( 'Lands', deck.lands, this.leftColumn );
+        this.populateTypeCardsIfPresent( 'Instants', deck.instants, this.rightColumn );
+        this.populateTypeCardsIfPresent( 'Sorceries', deck.sorceries, this.rightColumn );
+        this.populateTypeCardsIfPresent( 'Enchantments', deck.enchantments, this.rightColumn );
+        this.populateTypeCardsIfPresent( 'Artifacts', deck.artifacts, this.rightColumn );
+        this.populateTypeCardsIfPresent( 'Planeswalkers', deck.planeswalkers, this.rightColumn );
+        this.populateTypeCardsIfPresent( 'Sideboard', deck.sideboard, this.rightColumn );
         
     };
     

@@ -221,6 +221,7 @@ var NayaAggroContainer = function() {
         , description : 'Naya Aggro'
         , format : 'Standard'
         , date : getDate()
+        , _public : true
         , white : true
         , blue : false
         , black : false
@@ -255,6 +256,7 @@ var WolfRunBantContainer = function() {
         , description : 'Wolf Run Bant'
         , format : 'Standard'
         , date : getDate()
+        , _public : true
         , white : true
         , blue : true
         , black : false
@@ -289,6 +291,7 @@ var DelverContainer = function() {
         , description : 'Delver'
         , format : 'Pauper'
         , date : getDate()
+        , _public : true
         , white : false
         , blue : true
         , black : false
@@ -316,9 +319,7 @@ var newWolfRunBantDeck = function() {
     
     wolfRunBantDeck = new deckDataModel( {
         
-        mainboard : {
-            
-            creatures : [
+        creatures : [
                 {
                     total : 3
                     , card : {
@@ -618,8 +619,6 @@ var newWolfRunBantDeck = function() {
                     }
                 }
             ]
-            
-        }
         
     } );
 
@@ -641,9 +640,7 @@ var newDelverDeck = function() {
     
     delverDeck = new deckDataModel( {
         
-        mainboard : {
-            
-            creatures : [
+        creatures : [
                 {
                     total : 4
                     , card : {
@@ -849,8 +846,6 @@ var newDelverDeck = function() {
                     }
                 }
             ]
-            
-        }
         
     } );
 
@@ -871,9 +866,7 @@ var newNayaAggroDeck = function() {
     var deckDataModel = DeckDataModel.init();
     nayaAggroDeck = new deckDataModel( {
         
-        mainboard : {
-            
-            creatures : [
+        creatures : [
                 {
                     total : 4
                     , card : {
@@ -1094,8 +1087,6 @@ var newNayaAggroDeck = function() {
                     }
                 }
             ]
-            
-        }
         
     } );
 

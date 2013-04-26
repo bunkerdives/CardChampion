@@ -13,6 +13,7 @@ var DeckContainerSchema = new Schema( {
     , 'description' : String
     , 'format' : String
     , 'date' : String
+    , '_public' : Boolean
     , 'white' : Boolean
     , 'blue' : Boolean
     , 'black' : Boolean

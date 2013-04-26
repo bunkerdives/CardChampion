@@ -5,7 +5,7 @@ var CardPoolViewModel = function( type ) {
     
     this.newCardPoolInstance = function( cards ) {
         // sort the cards by cmc
-        if( cards != '' ){
+        if( cards != '' && cards != undefined ){
             cards = cards.sort( CardSort.costSort );
             var ColumnView = new ColumnViewModel( cards );
             this.columns.push( ColumnView );

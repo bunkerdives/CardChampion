@@ -41,6 +41,8 @@
 		      <span id="mainboard-creatures" data-bind="text: numMainboardCreatures"></span>
 		      <span style="margin-left:17px;">Lands:</span>
 		      <span id="mainboard-lands" data-bind="text: numMainboardLands"></span>
+		      <span style="margin-left:17px;">Sideboard:</span>
+		      <span id="sideboard-size" data-bind="text: sideboardSize"></span>
 		    </div><!-- End #mainboard-breakdown -->
 				
 				<div id="control-bar-buttons" class="pull-right">
@@ -210,8 +212,12 @@
 							<span>Save</span>
 						</button>
 							<ul class="dropdown-menu pull-right">
-								<li><a data-bind="">Save</a></li>
-								<li><a data-bind="">Save As</a></li>
+								<li>
+                  <a data-bind="">Save</a>
+                </li>
+								<li>
+                  <a data-bind="event: { click: lightboxController.showSaveLightbox }">Save As</a>
+                </li>
 							</ul>
 					</div>
 				</div><!--End #control-bar-buttons-->

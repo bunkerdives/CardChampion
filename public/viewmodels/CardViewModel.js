@@ -113,6 +113,7 @@ var CardViewModel = function( cardData ) {
                 mainboard.addCardToPool( this, colSortType, "name" );
             
                 ViewModel.deckStatCounterController.adjustCardCounterUI( this, 1 );
+                ViewModel.deckStatCounterController.adjustSideboardCounter( -1 );
             
             }
             else if( poolType == 'mainboard' ) {
@@ -123,6 +124,7 @@ var CardViewModel = function( cardData ) {
                 sideboard.addCardToPool( this, colSortType, "name" );
             
                 ViewModel.deckStatCounterController.adjustCardCounterUI( this, -1 );
+                ViewModel.deckStatCounterController.adjustSideboardCounter( 1 );
             
             }
         

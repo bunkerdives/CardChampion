@@ -25,6 +25,8 @@ var LayoutController = function( template, options ) {
             break;
         case 'Builder':
             context = new BuilderViewModel();
+            context.deckData = options.deckData;
+            context.deckContainer = options.deckContainer;
             break;
         default:
             window.location.replace('/'); // TODO make a 404 page

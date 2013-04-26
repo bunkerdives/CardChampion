@@ -28,7 +28,7 @@ app.configure( function(){
     
     app.use( express.static(__dirname + '/public') );
     app.use( express.static(__dirname + '/views') );
-    app.use( express.bodyParser() );
+    //app.use( express.bodyParser() );
     app.set( 'views', __dirname + '/views' );
     app.set( '/public', __dirname + '/public' );
 

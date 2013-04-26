@@ -3,6 +3,10 @@ var Auth = require( './controllers/Auth.js' );
 var mongoose = require('mongoose');
 var ObjectId = mongoose.Schema.ObjectId;
 
+//var ProfileModel = require('./models/ProfileModel.js');
+var DeckContainerModel = require('./models/DeckContainerModel.js');
+var DeckDataModel = require('./models/DeckDataModel.js');
+
 var ProfileSchema = require('./schemas/ProfileSchema.js');
 var DeckContainerSchema = require('./schemas/DeckContainerSchema.js');
 var DeckDataSchema = require('./schemas/DeckDataSchema.js');
@@ -11,6 +15,18 @@ var DeckDataSchema = require('./schemas/DeckDataSchema.js');
 var app = module.parent.exports.app;
 var database = module.parent.exports.database;
 var passport = require('passport');
+
+var routeFrontendWithOptions = function( res, template, options ) {
+  
+    console.log("Sending the following options to the user:")
+    console.log(options);
+  
+    res.render( 'layout.jade', {
+        templateName : JSON.stringify( template )
+        , options : JSON.stringify( options )
+    } );
+    
+};
 
 // '/' - show the main view to the user (right now it's recent decks)
 app.get( '/', function(req, res) {
@@ -183,20 +199,82 @@ app.get( '/sealed', function(req, res) {
 
 app.get( '/builder', function(req, res) {
     
-    console.log("EXPRESS ROUTE '/builer'")
+    console.log("EXPRESS ROUTE '/builder'")
     
     var auth = Auth.authOrGuest( req );
     var user = Auth.getUsernameOrNull( req );
     
-    res.render( 'layout.jade', {
-        templateName : JSON.stringify('Builder')
-        , options : JSON.stringify( {
-            'authOrGuest' : auth
-            , 'user' : user
-        } )
-    } );
+    var deckContainer;
+    var deckData;
+    
+    var options = {
+        'authOrGuest' : auth
+        , 'user' : user
+        , 'deckContainer' : deckContainer
+        , 'deckData' : deckData
+    };
+    
+    mongoose.model( 'DeckContainer', DeckContainerSchema, 'DeckContainers' );
+    mongoose.model( 'DeckData', DeckDataSchema, 'Decks' );
+    
+    var DeckContainerModel = database.model( 'DeckContainer' );
+    var DeckDataModel = database.model( 'DeckData' );
+    
+    console.log("deckId = " + req.query.deckId)
+    
+    // TODO check for a specified deck name + user name; if these are specified,
+    // query for the deck data and add it to the response
+    if( req.query.deckId != undefined ) {
+        
+        console.log("FOUND deckId!! " + req.query.deckId );
+        var deckId = req.query.deckId;
+        
+        // get the deck container from the database
+        DeckContainerModel.findById( deckId, function(err, container) {
+            if( !err ) {
+                console.log("container: " + container)
+                console.log("Found the deck container! Deck name = " + container.title );
+                
+                // get the deck data ID from the deck container
+                var deckDataId = container.deckDataId;
+                
+                // save the deck container
+                options.deckContainer = container;
+                
+                DeckDataModel.findById( deckDataId, function( err, data ) {
+                    if( !err ) {
+                        
+                        console.log("Found the deck data!");
+                        
+                        // save the deck data
+                        options.deckData = data;
+                        routeFrontendWithOptions( res, 'Builder', options );
+                        
+                        
+                        
+                    } else {
+                        // TODO route to blank builder
+                        console.log("Unable to find the deck... routing user to blank builder");
+                        options.deckContainer = undefined;
+                        routeFrontendWithOptions( res, 'Builder', options );
+                    }
+                } );
+                
+            } else {
+                // TODO route to blank builder
+                console.log("Unable to find the deck... routing user to blank builder")
+                routeFrontendWithOptions( res, 'Builder', options );
+            }
+        } );
+        
+    }
+    else {
+        routeFrontendWithOptions( res, 'Builder', options );
+    }
     
 } );
+
+
 
 
 app.get( '/decklists', function(req, res) {
@@ -254,80 +332,91 @@ app.get( '/decklists', function(req, res) {
 } );
 
 
-app.get( '/:username', function( req, res ){
+app.post( '/newDeckList', function(req, res) {
     
-    console.log("EXPRESS ROUTE '/:username'")
+    console.log("/newdecklist for user " + req.user.username)
     
-    var username = req.params.username;
-    switch( username ) {
-        case 'null':
-            return;
+    // TODO if client is a guest, return error
+    if( req.user.username == undefined ) {
+        res.send("Error")
+        return;
     }
     
-    var auth = Auth.authOrGuest( req );
-    var user = Auth.getUsernameOrNull( req );
+    var user = req.user.username;
+    
+    // get the new deck name and deck data from the request
+    var deckContainer = req.body.deckContainer;
+    var deckData = req.body.deckData;
     
     mongoose.model( 'Profile', ProfileSchema, 'Profiles' );
-    mongoose.model( 'DeckContainer', DeckContainerSchema, 'DeckContainers' );
-    
     var ProfileModel = database.model('Profile');
-    var DeckContainerModel = database.model('DeckContainer');
     
-    var numDeckContainers = 0;
-    var numProcessedContainers = 0;
+    var deckDataModel = DeckDataModel.init();
+    var deckData = new deckDataModel( deckData );
     
-    ProfileModel.findOne( { user : username }, function(err, profile) {
-        
-        if( profile != null ) {
+    // save the deck data to the database
+    deckData.save( function(err) {
+        if( err ) {
+            // TODO handle this case
+            console.log("Failed saving deck data.");
+            res.send("Error");
+        } else {
             
-            numDeckContainers = profile.decks.length;
+            var deckContainerModel = DeckContainerModel.init();
+            deckContainer = new deckContainerModel( deckContainer );
             
-            profile.decks.forEach( function( deckContainerId, index ) {
+            // get the deck data ID (as it is now in the database) and update the container with the deck ID.
+            deckContainer.deckDataId = deckData._id;
+            deckContainer.user = user;
+            deckContainer.deckUrl = '/decklists?user=' + user + '&deck=' + deckContainer.uTitle;
             
-                DeckContainerModel.findById( deckContainerId, function(err, deckContainer){
-        
-                    if( !err ){
-                        profile.decks[ index ] = deckContainer;
-                        ++ numProcessedContainers;
-                    }
+            // save the deck container to the database
+            deckContainer.save( function(err) {
+                if( err ) {
+                    // TODO handle error
+                    console.log("Failed saving deck container.")
+                    res.send("Error");
+                } else {
                     
-                    if( numProcessedContainers == numDeckContainers ) {
-                        // route the client to the profile page of the given user
-                        res.render( 'layout.jade', {
-                            templateName : JSON.stringify('Foyer')
-                            , options : JSON.stringify( {
-                                'subview' : 'ProfileDecks'
-                                , 'authOrGuest' : auth
-                                , 'username' : user
-                                , 'user' : username
-                                , 'profile' : profile
-                            } )
-                        } );
-                    }
-        
-                } );
-            
+                    // get the user's profile
+                    ProfileModel.findOne( { user : user }, function( err, profile ){
+                        if( !err ) {
+                            // get the deck container ID, and update the profile with the deck container ID (in the decks array)
+                            var decks = profile.decks;
+                            decks.push( deckContainer._id );
+                            
+                            mongoose.model( 'Profile', ProfileSchema, 'Profiles' );
+                            var profileModel = database.model('Profile');
+    
+                            profileModel.update(
+                                { user : user }
+                                , { decks : decks }
+                                , { multi : true }
+                                , function( error ) {
+                                    // TODO handle this case
+                                    console.log(error);
+                                    res.send("Error");
+                                }
+                            );
+                            
+                            console.log("Success saving the new deck!")
+                            res.send("Success");
+                            
+                        } else {
+                            // TODO handle this case
+                            console.log("Unable to find the user")
+                            res.send("Error");
+                        }
+                    } );
+                    
+                }
             } );
             
         }
-        else{
-            res.render( 'layout.jade', {
-                templateName : JSON.stringify('Foyer')
-                , options : JSON.stringify( {
-                    'subview' : 'ProfileDecks'
-                    , 'authOrGuest' : auth
-                    , 'username' : user
-                    , 'user' : username
-                    , 'profile' : {}
-                } )
-            } );
-        }
-        
-        
-        
     } );
     
 } );
+
 
 app.post( '/profileSettingData', function(req, res) {
     
@@ -442,32 +531,7 @@ app.post( '/editprofile', function(req, res) {
 } );
 
 
-app.post( '/newdeck', function(req, res) {
-    
-    // if client is a guest, return error
-    if( req.user == undefined || req.user.username == 'Guest' ) {
-        return; // TODO send error response
-    }
-    
-    // get the new deck name and deck data from the request
-    var body = JSON.parse( req.body );
-    var deckName = body.deckName;
-    var deckData = body.deckData;
-    
-    mongoose.model( 'DeckContainer', DeckContainerSchema, 'DeckContainers' );
-    mongoose.model( 'DeckData', DeckDataSchema, 'Decks' );
-    
-    var DeckContainerModel = database.model('DeckContainer');
-    var DeckDataModel = database.model('DeckData');
-    
-    // check if the user has an existing deck with the same name, if so, return an error
-    
-    // create a new deck object and store in the decks collection
-    
-    // add a reference to the deck document in the user's profile document
-    
-    
-} );
+
 
 
 app.post( '/savedeck', function(req, res) {
@@ -491,6 +555,87 @@ app.post( '/savedeck', function(req, res) {
     
 } );
 
+
+
+app.get( '/:username', function( req, res ){
+    
+    var username = req.params.username;
+    console.log("EXPRESS ROUTE '/:username', user = " + username)
+    
+    //var username = username;
+    switch( username ) {
+        case 'null':
+            return;
+        case 'Foyer.html':
+            return;
+    }
+    
+    var auth = Auth.authOrGuest( req );
+    var user = Auth.getUsernameOrNull( req );
+    
+    mongoose.model( 'Profile', ProfileSchema, 'Profiles' );
+    mongoose.model( 'DeckContainer', DeckContainerSchema, 'DeckContainers' );
+    
+    var ProfileModel = database.model('Profile');
+    var DeckContainerModel = database.model('DeckContainer');
+    
+    var numDeckContainers = 0;
+    var numProcessedContainers = 0;
+    
+    ProfileModel.findOne( { user : username }, function(err, profile) {
+        
+        if( profile != null ) {
+            
+            numDeckContainers = profile.decks.length;
+            
+            profile.decks.forEach( function( deckContainerId, index ) {
+            
+                console.log("PROFILE deckContainerId = " + deckContainerId )
+                
+                DeckContainerModel.findById( deckContainerId, function(err, deckContainer){
+        
+                    if( !err ){
+                        profile.decks[ index ] = deckContainer;
+                        ++ numProcessedContainers;
+                    }
+                    
+                    if( numProcessedContainers == numDeckContainers ) {
+                        // route the client to the profile page of the given user
+                        res.render( 'layout.jade', {
+                            templateName : JSON.stringify('Foyer')
+                            , options : JSON.stringify( {
+                                'subview' : 'ProfileDecks'
+                                , 'authOrGuest' : auth
+                                , 'username' : user
+                                , 'user' : username
+                                , 'profile' : profile
+                            } )
+                        } );
+                    }
+        
+                } );
+            
+            } );
+            
+        }
+        else{
+            res.render( 'layout.jade', {
+                templateName : JSON.stringify('Foyer')
+                , options : JSON.stringify( {
+                    'subview' : 'ProfileDecks'
+                    , 'authOrGuest' : auth
+                    , 'username' : user
+                    , 'user' : username
+                    , 'profile' : {}
+                } )
+            } );
+        }
+        
+        
+        
+    } );
+    
+} );
 
 
 app.post( '/register', Auth.register );

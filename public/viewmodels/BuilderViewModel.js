@@ -23,6 +23,14 @@ var BuilderViewModel = function() {
     this.imgSrc = ko.observable( '/static/img/cardback.jpg' );
 	this.thumbSrc = ko.observable( '/static/img/cardback.jpg' );
     
+    // TODO add a function that loads the cards in a premade deck
+    this.deckName;
+    this.deckContainer;
+    this.deckData;
+    
+    this.lightboxController = LightboxController;
+    this.saveDeckController = SaveDeckController;
+    
     this.mouseController = new MouseController();
     this.landController = new LandController();
     this.addLandController = new AddLandController();
@@ -33,6 +41,7 @@ var BuilderViewModel = function() {
     this.poolViewController = new PoolViewController();
     
     this.mainboardSize = ko.observable( 0 );
+    this.sideboardSize = ko.observable( 0 );
     
     this.numMainboardCreatures = ko.observable( 0 );
     this.numMainboardLands = ko.observable( 0 );
@@ -73,19 +82,113 @@ var BuilderViewModel = function() {
     
     this.initBuilderView = function() {
         
+        console.log("INIT BUILDER VIEW")
+        
         this.typeaheadController.initTypeahead();
+        
+        var main = this.createMainboardFromDeckData( ViewModel.deckData );
+        var side = this.createSideboardFromDeckData( ViewModel.deckData );
         
         // create sideboard CardPoolViewModel
         var sideboard = new CardPoolViewModel( 'sideboard' );
-        sideboard.newCardPoolInstance( '' );
+        sideboard.newCardPoolInstance( side );
         this.sideboard( [ sideboard ] );
         
         // create mainboard CardPoolViewModel
         var mainboard = new CardPoolViewModel( 'mainboard' );
-        mainboard.newCardPoolInstance( '' );
+        mainboard.newCardPoolInstance( main );
         this.mainboard( [ mainboard ] );
         
     };
+    
+    this.createMainboardFromDeckData = function( deckData ) {
+        
+        var mainboard = [];
+        
+        if( deckData == undefined || deckData.creatures == undefined || deckData.instants == undefined || deckData.sorceries == undefined
+             || deckData.planeswalkers == undefined || deckData.lands == undefined || deckData.enchantments == undefined || deckData.artifacts == undefined ) {
+            return mainboard;
+        }
+        
+        this.addTypeCardToBoard( deckData, 'creatures', mainboard );
+        this.addTypeCardToBoard( deckData, 'lands', mainboard );
+        this.addTypeCardToBoard( deckData, 'instants', mainboard );
+        this.addTypeCardToBoard( deckData, 'sorceries', mainboard );
+        this.addTypeCardToBoard( deckData, 'enchantments', mainboard );
+        this.addTypeCardToBoard( deckData, 'planeswalkers', mainboard );
+        this.addTypeCardToBoard( deckData, 'artifacts', mainboard );
+        
+        return mainboard;
+        
+    };
+    
+    this.createSideboardFromDeckData = function( deckData ) {
+        
+        var sideboard = [];
+        
+        // TODO check for undefined sideboard
+        if( deckData == undefined || deckData.sideboard == undefined ) {
+            return sideboard;
+        }
+        
+        this.addTypeCardToBoard( deckData, 'sideboard', sideboard );
+        
+        return sideboard;
+        
+    };
+    
+    // addTypeCardToBoard - add all cards of a given type (which are partitioned separately in deckData sent from server)
+    //                      to a board object (or card pool object)
+    this.addTypeCardToBoard = function( deckData, cardType, boardArray ) {
+        
+        // array of cards for a given type
+        var typeArray;
+        var mainboard = true;
+        
+        switch( cardType ) {
+            
+            case 'creatures' :
+                typeArray = deckData.creatures;
+                break;
+            case 'lands' :
+                typeArray = deckData.lands;
+                break;
+            case 'instants' :
+                typeArray = deckData.instants;
+                break;
+            case 'sorceries' :
+                typeArray = deckData.sorceries;
+                break;
+            case 'enchantments' :
+                typeArray = deckData.enchantments;
+                break;
+            case 'planeswalkers' :
+                typeArray = deckData.planeswalkers;
+                break;
+            case 'artifacts' :
+                typeArray = deckData.artifacts;
+                break;
+            case 'sideboard' :
+                typeArray = deckData.sideboard;
+                mainboard = false;
+                break;
+            
+        }
+        
+        typeArray.forEach( function(element, index) {
+            for( var i = 0; i < element.total; ++i ) {
+                var card = new CardViewModel( element.card );
+                boardArray.push( card );
+                ViewModel.deckStatCounterController.adjustCardCounterUI( card, 1 );
+                
+                // update the sideboard counter if the added card is a sideboard card
+                if( ! mainboard ) {
+                    ViewModel.adjustSideboardCounter( 1 );
+                }
+            }
+        } );
+        
+    }
     
     // setChosenCardMagnitude(magnitude) - set the magnitude observable to the specified amount
     this.setMainMagnitude = function( magnitude ) {
@@ -144,7 +247,7 @@ var BuilderViewModel = function() {
 	};
 	
 	this.showThumbAsPreview = function () {
-		this.imgSrc(this.thumbSrc());
+		this.imgSrc( this.thumbSrc() );
 	};
 	
 	this.hideAddCardPrompt = function () {
