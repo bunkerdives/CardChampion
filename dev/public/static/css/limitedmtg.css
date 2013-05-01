@@ -576,7 +576,7 @@ a.header-link {
 	vertical-align:baseline;
 }
 
-#foyer #sets {
+/*#foyer #sets {
 	height:411px;
 	overflow:auto;
 }
@@ -602,6 +602,14 @@ a.header-link {
 
 #foyer #select-draft-button {
 	margin-right:3px;
+}*/
+
+#foyer #sealed-menu {
+	
+}
+
+#foyer #sealed-menu td {
+	text-align:center;
 }
 
 #foyer #profile-container {
@@ -1098,6 +1106,57 @@ a.header-link {
 	margin-left:6%;
 	margin-right:6%;
 	width:86%;
+}
+
+#foyer #main-slide-2 {
+	
+}
+
+#foyer #sealed-menu {
+	padding:10px;
+}
+
+#foyer #sealed-menu-inner {
+	
+}
+
+#foyer #sealed-menu-top {
+	width:100%;
+}
+
+#foyer #sealed-menu-top h3 {
+	color:#000;
+	margin-top:0px;
+	margin-bottom:10px;
+}
+
+#foyer #sealed-menu-left {
+	width:0%;
+	opacity:0;
+}
+
+#foyer .custom-sealed-pack {
+	text-align:left;
+	padding-left:10%;
+}
+
+#foyer #sealed-menu-right {
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#foyer #sealed-menu-right input {
+	width:96%;
+}
+
+#foyer #sealed-menu-table-container {
+	margin-bottom:10px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-box-shadow: inset 0px 0px 0px 1px #000;
+	box-shadow: inset 0px 0px 0px 1px #000;
 }
 
 #foyer #main-slide-6 {

@@ -93,8 +93,8 @@
             </div>
 					</div>
 					
-					<div id="main-slide-2" class="main-slide" data-bind="if: newEventVisible">
-		        <div id="sets" style="display:none;">
+					<div id="main-slide-2" class="main-slide" data-bind="" style="display:none;">
+		        <!-- <div id="sets" style="display:none;">
               <div data-bind="foreach: NewSealedViewModel">
   		          <table class="table">
   		            <tbody data-bind="foreach: setQueues">
@@ -105,8 +105,76 @@
   								</tbody>
   		          </table>
               </div>
-		        </div><!--End #sets-->
-		        <button id="select-sealed-button" class="btn btn-large" style="margin-top:200px;" data-bind="click: startSealed">Start GTC Sealed</button>
+		        </div>
+		        <button id="select-sealed-button" class="btn btn-large" style="margin-top:200px;" data-bind="click: startSealed">Start GTC Sealed</button> -->
+							
+							
+							<div id="sealed-menu">
+								<div id="sealed-menu-inner" class="clearfix">
+									<div id="sealed-menu-top">
+										<h3>New Sealed Event</h3>
+									</div>
+									<div id="sealed-menu-left" class="pull-right">
+										<div style="font-size:24px;line-height:36px;">
+											<div class="custom-sealed-pack">1.&nbsp;<span>Dragon's Maze</span></div>
+											<div class="custom-sealed-pack">2.&nbsp;<span>Dragon's Maze</span></div>
+											<div class="custom-sealed-pack">3.&nbsp;<span>Gatecrash</span></div>
+											<div class="custom-sealed-pack">4.&nbsp;<span>Gatecrash</span></div>
+											<div class="custom-sealed-pack">5.&nbsp;<span>Return to Ravnica</span></div>
+											<div class="custom-sealed-pack">6.&nbsp;<span>Return to Ravnica</span></div>
+										</div>
+									</div>
+									<div id="sealed-menu-right">
+										<input id="" type="text" placeholder="Set Name" style="text-align:center;"/>
+										<div id="sealed-menu-table-container" style="height:297px;overflow:auto;">
+											<table class="table" style="margin-bottom:0;">
+												<thead>
+												</thead>
+												<tbody style="">
+													<tr>
+														<td>Gatecrash</td>
+													</tr>
+													<tr>
+														<td>Return to Ravnica</td>
+													</tr>
+													<tr>
+														<td>Avacyn Restored</td>
+													</tr>
+													<tr>
+														<td>Gatecrash</td>
+													</tr>
+													<tr>
+														<td>Return to Ravnica</td>
+													</tr>
+													<tr>
+														<td>Avacyn Restored</td>
+													</tr>
+													<tr>
+														<td>Gatecrash</td>
+													</tr>
+													<tr>
+														<td>Return to Ravnica</td>
+													</tr>
+													<tr>
+														<td>Avacyn Restored</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="row-fluid">
+											<div class="span6">
+												<button class="btn btn-large btn-success span12">Start</button>
+											</div>
+											<div class="span6">
+												<button class="btn btn-large btn-primary span12" onclick="showCustomSealedForm();">Custom</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							
+							
 					</div><!--End #main-slide-2-->
 					
 					<div id="main-slide-3" class="main-slide" data-bind="if: joinDraftVisible">Join an open draft queue.

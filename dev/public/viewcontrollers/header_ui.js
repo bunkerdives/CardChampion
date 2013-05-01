@@ -1,30 +1,36 @@
-function headerLayout() {
-    
+function headerLayout(){
 	var windowWidth = $(window).width();
-    
-	var headerContainerW = windowWidth * 0.95 * 0.95;
-	if( headerContainerW > 1026 ) {
-        headerContainerW = 1080 * 0.95;
-    }
-    
-	$('#header-container').css( 'width', headerContainerW );
-    
-	cardToThumbnail( 36, '#header-profile-btn' );
-    
-	var headerLinksW = 0;
-	var headerLinksNum = 0;
-	$('.header-link').each( function() {
-		headerLinksW += $(this).outerWidth();
-		++ headerLinksNum;
-	} );
-    
-	var headerLinksSpacer = ( (headerContainerW - headerLinksW - 38) - $('#logo').outerWidth() ) / headerLinksNum;
-    if( headerLinksSpacer < 10 ) {
-        headerLinksSpacer = 10;
-    }
-    
-	$('.header-link-spacer').css( 'width', headerLinksSpacer );
-    
+	//console.log('windowWidth: ' + windowWidth)
+	var tmpW = windowWidth * 0.95;
+	//console.log('tmpW: ' + tmpW)
+	if (tmpW>=1080) tmpW=1080;
+	//console.log('tmpW: ' + tmpW)
+	var headerContainerW = tmpW*0.95;
+	//console.log('headerContainerW: ' + headerContainerW)
+	$("#header-container").css("width", headerContainerW);
+	var headerLinksW = 244;
+	var headerLinksNum = 5;
+	cardToThumbnail(36,'#header-profile-btn');
+	// console.log('Test: ' + $('.header-link').width() );
+// 	$('.header-link').each(function() {
+// 		headerLinksW = headerLinksW + $(this).width();
+// 		
+// 		headerLinksNum++;
+// 		console.log('headerLinksNum: ' + headerLinksNum)
+// 		console.log('this: ' + this)
+// 		console.log('headerLinksW: ' + headerLinksW)
+// 		//console.log('headerLinksW: ' + headerLinksW);
+// 	});
+	//console.log('headerLinksNum: ' + headerLinksNum)
+	var logoW = 190;
+	//console.log('logoW: ' + logoW)
+	var headerLinksSpacer = ((headerContainerW-headerLinksW-38)-logoW)/(headerLinksNum);
+	//console.log('headerLinksSpacer: ' + headerLinksSpacer)
+	if (headerLinksSpacer>=10){
+		$(".header-link-spacer").css("width", headerLinksSpacer);
+	} else {
+		$(".header-link-spacer").css("width", 10);
+	}
 }
 
 function headerInit(){
@@ -32,7 +38,8 @@ function headerInit(){
 }
 
 $(window).resize(function() {
-	if( $('#header').css('display') == 'block' ) {
+	var headerExists = $("#header").css("display");
+	if (headerExists=="block") {
 		headerLayout();
 	}
 });
