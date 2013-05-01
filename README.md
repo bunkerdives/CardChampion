@@ -1,2 +1,2 @@
-LimitedMTG - GitHub   
-=================
+Card Champion - GitHub   
+======================

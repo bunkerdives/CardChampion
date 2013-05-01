@@ -1,0 +1,57 @@
+var LayoutController = function( template, options ) {
+    
+    var context;
+    
+    switch( template ) {
+        case 'Splash':
+            context = new SplashViewModel();
+            break;
+        case 'Limited':
+            if( options.format == 'sealed' ) {
+                context = new SealedViewModel( options.set );
+                context.newSealedInstance();
+            } else {
+                window.location.replace('/');
+            }
+            break;
+        case 'Foyer':
+            context = new FoyerViewModel();
+            context.profileData = options.profile;
+            context.decks = options.decks;
+            context.subview = options.subview;
+            context.deckName = options.deckname;
+            context.deckContainer = options.deckContainer;
+            context.deckCardData = options.deckData;
+            context.showSubView();
+            break;
+        case 'Builder':
+            context = new BuilderViewModel();
+            context.deckData = options.deckData;
+            context.deckContainer = options.deckContainer;
+            break;
+        default:
+            window.location.replace('/'); // TODO make a 404 page
+    }
+
+    ViewModel = context;
+    
+    this.plugin = new ko.plugin( {
+        template : template
+        , context : context }
+    );
+    
+    var loggedIn = options.auth;
+    
+    if( template != 'Splash'  &&  !loggedIn ) {
+        LightboxController.showAuthLightbox();
+    }
+    else if( template != 'Splash' && loggedIn ) {
+        SocketController.socketioHandshake();
+        LightboxController.closeAuthLightbox();
+    }
+    
+};
+
+var initLayout = function( template, options ) {
+    ko.applyBindings( new LayoutController( template, options ) );
+};
