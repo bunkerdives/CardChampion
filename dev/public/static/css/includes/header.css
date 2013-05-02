@@ -1,0 +1,145 @@
+/* Header */
+#header {
+	height:30px;/* linked with #content padding-top */
+	margin-bottom: 0;
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	display:none;
+	width:100%;
+}
+#header #header-container {
+	margin-left:auto;
+	margin-right:auto;
+	height:30px;/* linked with #content padding-top */
+	margin-bottom: 0;
+}
+
+.foyer-header {
+	-webkit-box-shadow: 0px 1px 7px #111;
+	-moz-box-shadow:    0px 1px 7px #111;
+	box-shadow:         0px 1px 7px #111;
+	
+	background-color: #fafafa;
+	background-image: -moz-linear-gradient(top, #fff, #a0a0a0);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#a0a0a0));
+	background-image: -webkit-linear-gradient(top, #fff, #a0a0a0);
+	background-image: -o-linear-gradient(top, #fff, #a0a0d0);
+	background-image: linear-gradient(to bottom, #fff, #a0a0a0);
+	background-repeat: repeat-x;
+}
+
+.translucent-header {
+	filter: alpha(opacity=0.75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;	
+}
+
+#header #logo {
+	padding-right:20px;
+}
+
+#header img {
+	height:24px;
+	margin-top:2px;
+}
+
+#header .nav {
+	margin:0;
+}
+
+#header-profile-btn {
+	height:26px !important;
+	width:36px !important;
+	margin-top:1px;
+	background-repeat:no-repeat;
+	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=278058&type=card');
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #000;
+}
+
+#header-profile-btn img {
+	height:100%;
+	width:100%;
+	float:left;
+	margin-top:0;
+}
+#header-profile-btn .btn {
+	height:26px;
+	width:36px;
+	border:0;
+	margin:0;
+	padding:0;
+	margin-top:0 !important;
+}
+
+#header-profile-btn ul {
+	min-width:0;
+	text-align:center;
+}
+
+#header .btn-group.open .btn.dropdown-toggle {
+	background-color: transparent;
+}
+
+#header .tab {
+	font-size:12px;
+	font-weight:200;
+	line-height:12px;
+	padding-top:6px;
+	padding-bottom:6px;
+	color:#888;
+}
+
+#header .well {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#header li {
+	
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+	background-color:transparent;
+}
+
+#header-links {
+	font-family: 'Viga', sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+	height:30px;
+	text-align:right;
+	font-weight:400;
+}
+
+#header-links .header-link {
+	
+}
+
+#header-links .header-link-spacer {
+	height:30px;
+	min-height:30px;
+	float:left;
+}
+
+#header-links .btn {
+	margin-top:3px;
+}
+
+#header-links .dropdown-menu {
+	font-family: 'Open Sans', sans-serif;
+	min-width:0;
+}
+
+a.header-link {
+	color:#000;
+	text-decoration:none;
+}
+
+/* Header End */

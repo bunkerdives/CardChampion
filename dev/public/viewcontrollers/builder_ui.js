@@ -7,6 +7,8 @@ function showBuilder() {
 
 function builderLayout() {
 	
+	console.log('builderLayout function called');
+	
 	var windowWidth = $(window).width();
 	
     // 30 = header height, 5=limited template padding-top
@@ -65,6 +67,7 @@ function builderLayout() {
 	var controlBtnW = $('#control-bar-buttons').outerWidth( true );
 	
 	var previewImgH = previewWrapperH - 6; // 6 = 3px margin-top + 3px margin-bottom
+	var previewImgW = previewWrapperW-6;
 	$('#img-preview').css( {
 		'height' : previewImgH
 		, 'width' : previewImgW

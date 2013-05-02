@@ -1,0 +1,1139 @@
+/* Foyer */
+#foyer {
+	width:100%;
+}
+
+#foyer #foyer-content-container {
+	width:95%;
+	max-width:1100px;
+	height:auto;
+	
+	margin-left:auto;
+	margin-right:auto;
+	
+	-moz-box-shadow: inset 0 0 1px 1px #202020;
+	-webkit-box-shadow: inset 0 0 1px 1px #202020;
+	box-shadow: inset 0 0 1px 1px #202020;
+	margin-top:-1px;
+	
+	background-color:transparent;
+	background-image:url('/static/img/transparent-foyer-bg.png');
+	background-repeat:repeat;
+	
+	-moz-border-bottom-left-radius:10px;
+	-moz-border-bottom-right-radius:10px;
+	-webkit-border-bottom-left-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+
+#foyer #foyer-banner-container {
+	
+	width: -webkit-calc(100% - 2px);
+	width: -moz-calc(100% - 2px);
+	width: calc(100% - 2px);
+
+	/*padding:10px;*/
+	
+	border-bottom: 1px solid #231F20;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+}
+
+#foyer #foyer-banner {
+	width:100%;
+	
+	height:150px;
+	
+	background-color:#000;
+	background-image:url('http://media.wizards.com/images/magic/daily/wallpapers/Nice_Holiday_1280x960_Wallpaper.jpg');
+	background-position:0px -250px;
+}
+
+/*#foyer .foyer-padding {
+	margin-left:10px;
+	margin-right:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+}*/
+
+#foyer #foyer-links {
+	width:100%;
+	
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 36px;
+	height:36px;
+	text-transform: uppercase;
+	text-align:center;
+	font-weight:400;
+	
+	border-bottom: 2px solid #231f20;
+}
+
+#foyer #foyer-links a {
+	color:#000;
+	text-decoration:none;
+}
+
+/*#foyer #foyer-links .foyer-link {
+	float:left;
+}
+
+#foyer #foyer-links .foyer-link-spacer {
+	height:36px;
+	min-height:36px;
+	float:left;
+}*/
+
+#foyer #portal-container {
+	width:100%;
+	height:auto;
+	
+	color:#000;
+	text-align:center;
+}
+
+#foyer #portal-left-pane {
+	width: -webkit-calc(67.5% - 1px);
+	width: -moz-calc(67.5% - 1px);
+	width: calc(67.5% - 1px);
+	
+	height:510px;
+	
+	margin:0;
+	
+	border-right:1px solid #000;
+}
+
+#foyer #main-animate-wrapper {
+	width:100%;
+	height:510px;
+	min-height:0px;
+	
+	overflow:hidden;
+	
+	/*-webkit-box-shadow: inset 0px 0px 0px 1px #000;
+	box-shadow: inset 0px 0px 0px 1px #000;*/
+}
+
+#foyer #recent-decks {
+	padding:0;
+}
+
+#foyer #recent-decks-top {
+	width: -webkit-calc(100% - 1px);
+	width: -moz-calc(100% - 1px);
+	width: calc(100% - 1px);
+	
+	
+	height:34px;
+	
+	border-bottom:1px solid #000;
+	border-left:1px solid #000;
+	
+	-webkit-box-shadow: 0px 1px 7px #111;
+	-moz-box-shadow:    0px 1px 7px #111;
+	box-shadow:         0px 1px 7px #111;
+	
+	
+	background-color:#fff;
+	background-image: -moz-linear-gradient(top, #eee, #ccc);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eee), to(#ccc));
+	background-image: -webkit-linear-gradient(top, #eee, #ccc);
+	background-image: -o-linear-gradient(top, #eee, #ccc);
+	background-image: linear-gradient(to bottom, #eee, #ccc);
+	background-repeat: repeat-x;
+	
+	position:relative;
+	z-index:1000;
+}
+
+#foyer #recent-decks-title {
+	width:35%;
+	/*font-family: 'Viga', sans-serif;*/
+	font-family: 'Courgette', cursive;
+	/*font-family: 'Orbitron', sans-serif;*/
+	color:#373737;
+	font-size:24px;
+	line-height:34px;
+	white-space:nowrap;
+	font-weight:400;
+	/*text-shadow: -1px -1px 1px #000, 0px 1px 1px #999;*/
+}
+
+#foyer #recent-decks-filters {
+	line-height:34px;
+	padding-right:60px;
+	vertical-align:baseline;
+	max-height:34px;
+}
+
+#foyer #recent-decks-filters .btn-group, #foyer #recent-decks-filters .btn {
+	vertical-align:baseline;
+}
+
+#foyer #recent-decks-filters .dropdown-menu {
+	top:75%;
+}
+
+#foyer #recent-decks-filters .btn-group + .btn-group {
+	margin-left: 0px;
+}
+
+#foyer #recent-decks-content {
+	height:425px;
+}
+
+#foyer #recent-decks-list {
+	padding-left:60px;
+	padding-right:60px;
+	width: -webkit-calc(100% - 120px);
+	width: -moz-calc(100% - 120px);
+	width: calc(100% - 120px);
+	
+	overflow:auto;
+	height:420px;
+	padding-top:15px;
+}
+
+#foyer #recent-decks-load-more {
+	display:block;
+	width:100%;
+	padding-top:10px;
+	height:44px;
+	line-height:44px;
+}
+
+#foyer #recent-decks-load-more button {
+	vertical-align:baseline;
+}
+
+/*#foyer #sets {
+	height:411px;
+	overflow:auto;
+}
+
+#foyer #sets .table {
+	margin-bottom:0px;
+}
+
+#foyer #sets tr:hover {
+	cursor:pointer;
+}
+
+#foyer #set-select {
+	clear:both;
+	height:24px;
+	margin-top:5px;
+	text-align:right;
+}
+
+#foyer #set-select button {
+	line-height:18px;
+}
+
+#foyer #select-draft-button {
+	margin-right:3px;
+}*/
+
+#foyer #sealed-menu {
+	
+}
+
+#foyer #sealed-menu td {
+	text-align:center;
+}
+
+#foyer #profile-container {
+	width:100%;
+}
+
+#foyer #profile-container a {
+	color:#000;
+	text-decoration:none;
+}
+
+#foyer #profile-inner {
+	width:100%;
+}
+
+#foyer #profile-top-row {
+	width: -webkit-calc(100% - 1px);
+	width: -moz-calc(100% - 1px);
+	width: calc(100% - 1px);
+	
+	
+	text-align:center;
+	/*background-color:#aaa;*/
+	height:34px;
+	border-left:1px solid #000;
+	
+	/*-webkit-box-shadow: 0px 3px 5px -2px #444;
+	box-shadow: 0px 3px 5px -2px #444;*/
+	
+	-webkit-box-shadow: 0px 1px 7px #111;
+	-moz-box-shadow:    0px 1px 7px #111;
+	box-shadow:         0px 1px 7px #111;
+	
+	
+	background-color:#fff;
+	background-image: -moz-linear-gradient(top, #eee, #ccc);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eee), to(#ccc));
+	background-image: -webkit-linear-gradient(top, #eee, #ccc);
+	background-image: -o-linear-gradient(top, #eee, #ccc);
+	background-image: linear-gradient(to bottom, #eee, #ccc);
+	background-repeat: repeat-x;
+	
+	position:relative;
+	z-index:1000;
+}
+
+#foyer #profile-username {
+	width:35%;
+	font-size:24px;
+	line-height:34px;
+	white-space:pre-wrap;
+	font-weight:400;
+	font-family: 'Viga', sans-serif;
+	color:#373737;
+}
+
+#foyer #profile-nav {
+	line-height:34px;
+	width: -webkit-calc(65% - 15px);
+	width: -moz-calc(65% - 15px);
+	width: calc(65% - 15px);
+	padding-right:10px;
+}
+
+#foyer .nav {
+	margin:0;
+}
+
+#foyer #profile-nav .nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+	color: #ffffff;
+	background-color: #0088cc;
+}
+
+/*#foyer #profile-nav .profile-link {
+	width:33%;
+	float:left;
+}*/
+
+#foyer #profile-bottom-row {
+	width: -webkit-calc(100% - 10px);
+	width: -moz-calc(100% - 10px);
+	width: calc(100% - 10px);
+	margin-left:10px;
+}
+
+#foyer #profile-left-col {
+	width:35%;
+}
+
+#foyer #profile-info {
+	text-align:center;
+	font-size:14px;
+	line-height:14px;
+	font-family: 'Open Sans', sans-serif;
+	padding-top:10px;
+}
+
+#foyer #profile-info > .clearfix > .pull-left {
+	font-family: 'Viga', sans-serif;
+	color:#0088cc;
+	width:44%;
+	text-align:right;
+}
+
+#foyer #profile-info > .clearfix > .pull-right {
+	width:54%;
+	text-align:left;
+}
+
+#foyer #profile-image {
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+	border:2px solid #000;
+	
+	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366448&type=card');
+	background-repeat:no-repeat;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	-webkit-box-shadow: 0px 1px 3px 1px #777;
+	box-shadow: 0px 1px 3px 1px #777;
+}
+
+#foyer #profile-image img {
+	width:100%;
+	height:100%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#foyer #profile-description {
+	margin-top:10px;
+}
+
+#foyer #profile-right-col {
+	width:65%;
+}
+
+#foyer #profile-content-wrapper {
+	overflow:auto;
+	height: 415px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
+}
+
+#foyer #profile-content {
+	
+}
+
+#foyer #profile-deck-previews {
+	
+}
+
+#foyer .deck-preview {
+	background-color:#fff;
+	background-image: -moz-linear-gradient(top, #eee, #ccc);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eee), to(#ccc));
+	background-image: -webkit-linear-gradient(top, #eee, #ccc);
+	background-image: -o-linear-gradient(top, #eee, #ccc);
+	background-image: linear-gradient(to bottom, #eee, #ccc);
+	background-repeat: repeat-x;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	margin-bottom:5px;
+
+	
+	border: 2px solid #000;
+	
+	min-width:450px;
+	
+	-webkit-box-shadow: 0px 1px 3px 1px #777;
+	box-shadow: 0px 1px 3px 1px #777;
+}
+
+#foyer .deck-preview a {
+	color:#0088cc !important;
+}
+
+#foyer .deck-preview-left {
+
+}
+
+#foyer .deck-preview-img {
+	height:75px;
+	width:75px;
+	border-right:2px solid #000;
+	
+	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366385&type=card');
+	background-repeat:no-repeat;
+	
+	-webkit-border-top-left-radius: 2px;
+	-moz-border-top-left-radius: 2px;
+	border-top-left-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-bottom-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+#foyer .deck-preview-img img {
+	width:100%;
+	height:100%;
+	-webkit-border-top-left-radius: 2px;
+	-moz-border-top-left-radius: 2px;
+	border-top-left-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-bottom-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+#foyer .deck-preview-mana {
+	width:14px;
+	height:73px;
+	padding-left:2px;
+	padding-right:2px;
+	margin-top:2px;
+}
+
+#foyer .deck-preview-color {
+	float:left;
+	height:12.5px;
+	width:12.5px;
+	background-size:12px 12px;
+	background-repeat:no-repeat;
+	margin-top:1.5px;
+}
+
+#foyer #deck-view-mana .deck-preview-color {
+	float:right;
+	height:22px;
+	width:22px;
+	background-size:22px 22px;
+	background-repeat:no-repeat;
+}
+
+#foyer #recent-decks-mana {
+	height:37px;
+	padding-top:1px;
+}
+
+#foyer #recent-decks-mana .deck-preview-color {
+	float:left;
+	height:24px;
+	width:24px;
+	background-size:24px 24px;
+	background-repeat:no-repeat;
+	margin-top:4px;
+	margin-right:5px;
+}
+
+#foyer #deck-preview-white {
+	background-image:url('/static/img/white-mana.jpg');
+}
+
+#foyer #deck-preview-blue {
+	background-image:url('/static/img/blue-mana.jpg');
+}
+
+#foyer #deck-preview-black {
+	background-image:url('/static/img/black-mana.jpg');
+}
+
+#foyer #deck-preview-red {
+	background-image:url('/static/img/red-mana.jpg');
+}
+
+#foyer #deck-preview-green {
+	background-image:url('/static/img/green-mana.jpg');
+}
+
+#foyer .deck-preview-right {
+	width: -webkit-calc(100% - 98px);
+	width: -moz-calc(100% - 98px);
+	width: calc(100% - 98px);
+	text-align:left;
+	-webkit-border-top-right-radius: 2px;
+	-moz-border-top-right-radius: 2px;
+	border-top-right-radius: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	-moz-border-bottom-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+#foyer .recent-deck-right {
+	width: -webkit-calc(100% - 77px);
+	width: -moz-calc(100% - 77px);
+	width: calc(100% - 77px);
+	text-align:left;
+	-webkit-border-top-right-radius: 2px;
+	-moz-border-top-right-radius: 2px;
+	border-top-right-radius: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	-moz-border-bottom-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+#foyer .deck-preview-info {
+	width: -webkit-calc(100% - 50px);
+	width: -moz-calc(100% - 50px);
+	width: calc(100% - 50px);
+	text-align:left;
+	line-height:35px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+#foyer .deck-preview-info-left {
+	line-height:37px;
+}
+
+#foyer .deck-preview-title {
+	white-space:nowrap;
+	font-weight:200;
+	font-size:28px;
+	line-height:37px;
+}
+
+#foyer .deck-preview-info-right {
+	text-align:right;
+}
+
+#foyer .deck-preview-format {
+	line-height:25px;
+	font-weight:300;
+	font-size:18px;
+	font-style:italic;
+	margin-top:2px;
+}
+
+#foyer .deck-preview-date {
+	line-height:25px;
+}
+
+#foyer .deck-preview-date i {
+	margin-right:3px;
+}
+
+#foyer .deck-preview-author {
+	line-height:18px;
+}
+
+#foyer .deck-preview-btns {
+	text-align:right;
+	max-height:75px;
+	overflow:hidden;
+	border-left:2px solid #000;
+}
+
+#foyer .deck-preview-btns .btn {
+	padding: 8px 6px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	/*margin-top:3px;*/
+}
+
+#foyer #deck-preview-view-btn {
+	-webkit-border-top-right-radius: 2px;
+	-moz-border-top-right-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+#foyer #deck-preview-info-btn {
+	-webkit-border-bottom-right-radius: 2px;
+	-moz-border-bottom-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+#foyer #deck-view-nav {
+	height:34px;
+	line-height:34px;
+	vertical-align:baseline;
+	max-height:34px;
+}
+
+#foyer #deck-view-nav .btn-group, #foyer #deck-view-nav .btn {
+	vertical-align:baseline;
+	max-height:34px;
+	margin-top:1px;
+}
+
+#foyer #deck-view-nav .dropdown-menu {
+	top:85%;
+	min-width:0px;
+}
+
+#foyer #deck-view-nav .btn-group + .btn-group {
+	margin-left: 0px;
+}
+
+#foyer #deck-view-title {
+	font-size:30px;
+	line-height:30px;
+	font-weight:600;
+	text-align:left;
+	padding-left:4%;
+	padding-right:4%;
+	
+}
+
+#foyer #deck-view-title-left {
+	width: -webkit-calc(100% - 70px);
+	width: -moz-calc(100% - 70px);
+	width: calc(100% - 70px);	
+}
+
+#deck-view-mana {
+	margin-top:5px;
+	margin-right:3px;
+}
+
+#foyer #deck-view-thumbnail {
+	background-repeat:no-repeat;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color:#000;
+	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366369&type=card');
+	border:1px solid #444;
+	width:67px;
+	height:50px;
+}
+
+#foyer #deck-view-date {
+	font-size:15px;
+	font-weight:400;
+	line-height:14px;
+	text-align:right;
+	margin-top:2px;
+}
+
+#foyer #deck-view-date span {
+	padding-left:2px;
+}
+
+#foyer .deck-view-left {
+	width:44%;
+	padding-left:4%;
+}
+
+#foyer .deck-view-right {
+	width:44%;
+	padding-right:4%;
+}
+
+#foyer .deck-view-section {
+	text-align:right;
+	padding-bottom:20px;
+}
+
+#foyer .deck-view-section a {
+	color:#0088cc !important;
+}
+
+#foyer .deck-view-section h1 {
+	color:#000;
+	line-height:26px;
+	font-size:22px;
+	font-weight:200;
+	text-align:left;
+	margin-top:0;
+	font-family: 'Viga', sans-serif;
+	color:#444;
+}
+
+#foyer .deck-view-section p {
+	line-height:14px;
+	margin-bottom:0;
+	text-align:left;
+}
+
+#foyer #deck-view-description {
+	text-align:left;
+	padding-left:4%;
+	padding-right:4%;
+}
+
+#foyer #deck-view-description h1 {
+	line-height:22px;
+}
+
+#foyer #share-deck-wrapper {
+	margin-bottom:30px;
+}
+
+#foyer #share-deck-wrapper > .deck-view-section {
+	padding-bottom:0px;
+}
+
+#foyer #share-deck-wrapper input {
+	margin-left:6%;
+	margin-right:6%;
+	width:86%;
+}
+
+#foyer #main-slide-2 {
+	
+}
+
+#foyer #sealed-menu {
+	padding:10px;
+}
+
+#foyer #sealed-menu-inner {
+	
+}
+
+#foyer #sealed-menu-top {
+	width:100%;
+}
+
+#foyer #sealed-menu-top h3 {
+	color:#000;
+	margin-top:0px;
+	margin-bottom:10px;
+}
+
+#foyer #sealed-menu-left {
+	width:0%;
+	opacity:0;
+}
+
+#foyer .custom-sealed-pack {
+	text-align:left;
+	padding-left:10%;
+}
+
+#foyer #sealed-menu-right {
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#foyer #sealed-menu-right input {
+	width:96%;
+}
+
+#foyer #sealed-menu-table-container {
+	margin-bottom:10px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-box-shadow: inset 0px 0px 0px 1px #000;
+	box-shadow: inset 0px 0px 0px 1px #000;
+}
+
+#foyer #main-slide-6 {
+	padding:10px;
+	padding-bottom:0;
+}
+
+#foyer #card-view-container {
+	width:100%;
+}
+
+#foyer #card-view-left {
+	width:223px;
+}
+
+#foyer #card-view-thumbnail {
+	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=366246&type=card');
+	height:310px;
+	width:223px;
+	background-size:223px 310px;
+	border-radius:10px;
+}
+
+#foyer #card-view-right {
+	width: -webkit-calc(100% - 233px);
+	width: -moz-calc(100% - 233px);
+	width: calc(100% - 233px);
+	padding-left:10px;
+}
+
+#foyer #card-view-title {
+	font-size:30px;
+	line-height:34px;
+	font-weight:600;
+	text-align:center;
+}
+
+#foyer #card-view-info {
+	padding-top:10px;
+}
+
+#foyer #card-view-cost {
+	height:25px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+#foyer #card-view-cost img {
+	margin:0;
+	padding:0;
+	margin-left:1px;
+	margin-right:1px;
+	float:left;
+}
+
+
+
+/*#foyer .vertical-rule {
+	display:inline-block;
+	width:0;
+	height:460px;
+	-webkit-box-shadow: rgba(255, 255, 255, 0.07) 1px 0 0;
+	-moz-box-shadow: rgba(255, 255, 255, 0.07) 1px 0 0;
+	box-shadow: rgba(255, 255, 255, 0.07) 1px 0 0;
+	border-left: 1px solid #121212;
+	border-top: none;
+	margin:0;
+	margin-top:-10px;
+	margin-left:10px;
+	margin-right:10px;
+	}*/
+
+#foyer #portal-right-pane {
+	width: -webkit-calc(32.5% - 1px);
+	width: -moz-calc(32.5% - 1px);
+	width: calc(32.5% - 1px);
+	
+	height:460px;
+	
+	margin:0;
+}
+
+#foyer #chat {
+	width: 100%;
+}
+
+#foyer .chat-username {
+	font-size:14px;
+	font-weight:600;
+	padding-right:5px;
+	line-height:14px;
+	color:#0088cc !important;
+}
+
+#foyer .chat-msg {
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	font-size:14px;
+	font-weight:200;
+	line-height:14px;
+}
+
+#foyer #chat #chat-convo-wrapper {
+	width:100%;
+	height:425px;
+	overflow:auto;
+	text-align:left;
+	padding:0;
+}
+
+#foyer #chat #chat-convo {
+	width:100%;
+	padding-bottom:20px;
+	font-family: 'Viga', sans-serif;
+}
+
+#foyer #chat-input {
+	clear:both;
+	width: -webkit-calc(100% - 20px);
+	width: -moz-calc(100% - 20px);
+	width: calc(100% - 20px);
+	
+	padding-left:10px;
+	padding-right:10px;
+	height:34px;
+	
+	background-color:#fff;
+	background-image: -moz-linear-gradient(top, #eee, #ccc);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eee), to(#ccc));
+	background-image: -webkit-linear-gradient(top, #eee, #ccc);
+	background-image: -o-linear-gradient(top, #eee, #ccc);
+	background-image: linear-gradient(to bottom, #eee, #ccc);
+	background-repeat: repeat-x;
+	
+	border-top:1px solid #000;
+}
+
+#foyer #chat-input input {
+	width: -webkit-calc(100% - 96px);
+	width: -moz-calc(100% - 96px);
+	width: calc(100% - 96px);
+	height:24px;
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+	-moz-border-top-right-radius:0;
+	-moz-border-bottom-right-radius:0;
+	-webkit-border-top-right-radius:0;
+	-webkit-border-bottom-right-radius:0;
+	border-top-right-radius:0;
+	border-bottom-right-radius:0;
+	margin-top:5px;
+	background-color:#eee;
+	color:#000;
+	padding-left:5px;
+}
+
+#foyer #chat-input button {
+	line-height:18px;
+	margin-top:5px;
+	font-family: 'Viga', sans-serif;
+}
+
+#foyer .appended {
+	-moz-border-top-left-radius:0;
+	-moz-border-bottom-left-radius:0;
+	-webkit-border-top-left-radius:0;
+	-webkit-border-bottom-left-radius:0;
+	border-top-left-radius:0;
+	border-bottom-left-radius:0;
+}
+
+/*#foyer #portal #chat-input #color-picker {
+	height:25px;
+	width:25px;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:1px;
+	padding-right:1px;
+	display:inline-block;
+	margin-bottom:0px;
+	margin-left:5px;
+	margin-right:5px;
+}*/
+
+#foyer #userlist {
+	margin-left:0px;
+	height:425px;
+	overflow:auto;
+	width:100%;
+	text-align:left;
+}
+
+#foyer #chat-user-total {
+	line-height:35px;
+	font-size:22px;
+	font-family: 'Viga', sans-serif;
+	font-weight:400;
+	color:#444;
+	width: 100%;
+	text-align:center;
+	padding-bottom:10px;
+}
+
+#foyer .chat-user {
+	padding-right:5px;
+	color:#0088cc;
+}
+
+#foyer .chat-user:hover, #foyer .chat-username:hover {
+	cursor:pointer;
+}
+
+#foyer .chat-status {
+	font-size:10px;
+	font-weight:200px;
+	font-style:italic;
+	color:#000;
+}
+
+#foyer #foyer-subcontent {
+	width:100%;
+	
+	margin-left:auto;
+	margin-right:auto;
+
+	padding-top:25px;
+	padding-bottom:25px;
+	
+	text-align:center;
+	color:#000;
+	
+	border-top: 1px solid #231f20;
+}
+
+#foyer .headline-txt {
+	font-size:45px;
+	font-weight:200;
+	line-height:45px;
+	font-style:italic;
+	font-family: 'Raleway', sans-serif;
+}
+
+#foyer #foyer-subcontent #share {
+}
+
+#foyer #foyer-subcontent #share-msg {
+	margin-bottom:7px;
+}
+
+#foyer #foyer-subcontent #share-buttons {
+	height:38px;
+	line-height:38px;
+}
+
+#foyer #foyer-subcontent #share-caption {
+	font-size:15px;
+	line-height:15px;
+	font-style:normal;
+	font-weight:200;
+}
+
+#foyer .horizontal-rule {
+	clear:both;
+	width:100px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#foyer #foyer-subcontent #donate {
+	font-family: 'Raleway', sans-serif;
+	font-size:38px;
+	font-weight:200;
+	line-height:38px;
+	font-style:italic;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#foyer #foyer-subcontent #donate-quote {
+	max-width:550px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#foyer #foyer-subcontent #donate-quote small {
+	font-size:22px;
+	line-height:22px;
+	font-style:normal;
+	display:block;
+	padding-top:3px;
+	padding-bottom:20px;
+}
+
+#foyer #foyer-subcontent #donate-closer {
+	
+}
+
+#foyer #foyer-subcontent #donate-closer span {
+	font-size:32px;
+	line-height:32px;
+}
+
+#foyer #foyer-subcontent #donate-closer img {
+	width:100%;
+	max-width:100px;
+	margin-top:3px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#foyer #foyer-footer {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#foyer #foyer-disclaimer {
+	clear:both;
+	width:auto;
+	height:80px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+	text-align:center;
+	width:70%;
+}
+
+#foyer #foyer-disclaimer small {
+	display:block;
+}
+
+#foyer #card-preview-container {
+	width:223px;
+	height:310px;
+	background-size:223px 310px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+/* Foyer end */

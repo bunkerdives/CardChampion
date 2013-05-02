@@ -1,0 +1,33 @@
+/* Splash */
+#splash {
+	display:block;
+	background-color:#fff;
+	width:100%;
+	height:auto;
+	margin-top:-30px;
+}
+
+#splash-content-container {
+	max-width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:50px;
+	padding-top:20px;
+	text-align:center;
+}
+
+#splash #imac-wrapper {
+	width:100%;
+}
+
+#splash #imac-screenshot-wrapper {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#splash .imac-screenshot {
+	width:100%;
+	height:100%;
+	display:none;
+}
+/* Splash End */
