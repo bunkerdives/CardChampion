@@ -1,31 +1,27 @@
 @import url('../css/includes/header.css');
-@import url('../css/includes/splash.css');
+/*@import url('../css/includes/splash.css');*/
 @import url('../css/includes/foyer.css');
 @import url('../css/includes/limited-and-builder.css');
 @import url('../css/includes/lightbox.css');
 /*@import url('../css/includes/draft.css');*/
 
 /* General classes and styles */
-
 body, html {
 	height:100%;
+	width:100%;
 }
 
 #background-wrap {
-	/*background-image:url('http://media.wizards.com/images/magic/daily/wallpapers/Moat_MTGOweek_1920x1080_Wallpaper.jpg');*/
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	-webkit-background-attachment:fixed;
-	/*background-position:-50px -50px;*/
 	background-color:transparent !important;
-	
 	z-index: -1;
 	position: fixed;
-	    top: 0;
-	    left: 0;
-	    height: 100%;
-	    width: 100%;
-	    background-attachment: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
 }
 
 textarea {
@@ -36,7 +32,6 @@ a:hover {
 	cursor:pointer;
 }
 
-/* Don't show shadows when selecting text */
 ::-moz-selection { background: #555; color: #fff; text-shadow: none; }
 ::selection { background: #555; color: #fff; text-shadow: none; }
 
@@ -52,11 +47,8 @@ a:hover {
 	-moz-box-shadow: inset 0 -5px 15px -3px rgba(0, 0, 0, 0.8), inset 0 5px 15px -6px rgba(255, 255, 255, 0.3);
 	-webkit-box-shadow: inset 0 -5px 15px -3px rgba(0, 0, 0, 0.8), inset 0 5px 15px -6px rgba(255, 255, 255, 0.3);
 	box-shadow: inset 0 -5px 15px -3px rgba(0, 0, 0, 0.8), inset 0 5px 15px -6px rgba(255, 255, 255, 0.3);
-  /*-webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 -1px 0, rgba(0, 0, 0, 0.8) 0 -1px 7px 0px inset;
-  -moz-box-shadow: rgba(255, 255, 255, 0.1) 0 -1px 0, rgba(0, 0, 0, 0.8) 0 -1px 7px 0px inset;
-  box-shadow: rgba(255, 255, 255, 0.1) 0 -1px 0, rgba(0, 0, 0, 0.8) 0 -1px 7px 0px inset;*/
-  background: #202020;
-  border: 0;
+	background: #202020;
+	border: 0;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
@@ -72,10 +64,6 @@ a:hover {
 body.ns-resize-cursor {
 	cursor:ns-resize !important;
 }
-
-.btn-group.btn {   border: 0;   padding: 0; }
-
-.btn-group.btn > .dropdown-menu {  text-align: left; }
 
 input[readonly] {
 	cursor:auto;
@@ -93,11 +81,6 @@ input[readonly] {
 	left:0;
 	z-index:99999;
 	display:none;
-}
-
-.table-bordered th,
-.table-bordered td {
-  border-left: 0px;
 }
 
 .hr-shadow {
@@ -131,27 +114,25 @@ input[readonly] {
 	padding: 0 9px 0 0;
 }
 
-/* General classes and styles end */
+.btn-group.btn {   border: 0;   padding: 0; }
 
+.btn-group.btn > .dropdown-menu {  text-align: left; }
 
+.table-bordered th,
+.table-bordered td {
+  border-left: 0px;
+}
 
-
-/* Content */
 #content {
-	/**/
-	height: -webkit-calc(100% - 30px);
-	height: -moz-calc(100% - 30px);
-	height: calc(100% - 30px);
+	padding-top:45px; /* To compensate for height of fixed header */
+	height: -webkit-calc(100% - 45px);
+	height: -moz-calc(100% - 45px);
+	height: calc(100% - 45px);
 	width:100%;
-	/**/
-	
-	padding-top:30px; /* To compensate for height of fixed header */
 }
 
 #template-plugin {
-	/**/
 	height:100%;
 	width:100%;
-	/**/
 }
-/* Content End */
+/* General classes and styles end */

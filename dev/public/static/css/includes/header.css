@@ -1,19 +1,22 @@
 /* Header */
 #header {
-	height:30px;/* linked with #content padding-top */
 	margin-bottom: 0;
 	position: fixed;
 	right: 0;
 	left: 0;
-	z-index: 1030;
-	display:none;
-	width:100%;
+	z-index: 2000;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
-#header #header-container {
+
+#header-container {
+	width:95%;
+	max-width:1100px;
+	height:45px;/* linked with #content padding-top */
+	margin-bottom: 0;
 	margin-left:auto;
 	margin-right:auto;
-	height:30px;/* linked with #content padding-top */
-	margin-bottom: 0;
 }
 
 .foyer-header {
@@ -30,30 +33,21 @@
 	background-repeat: repeat-x;
 }
 
-.translucent-header {
-	filter: alpha(opacity=0.75);
-	-moz-opacity: 0.75;
-	-khtml-opacity: 0.75;
-	opacity: 0.75;	
-}
-
-#header #logo {
+#logo {
+	padding-left:5px;
 	padding-right:20px;
+	margin-top:5px;
 }
 
-#header img {
-	height:24px;
-	margin-top:2px;
-}
-
-#header .nav {
-	margin:0;
+#logo img {
+	height:35px;
 }
 
 #header-profile-btn {
-	height:26px !important;
-	width:36px !important;
+	height:41px !important;
+	width:57px !important;
 	margin-top:1px;
+	margin-right:1px;
 	background-repeat:no-repeat;
 	background-image:url('http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=278058&type=card');
 	-webkit-border-radius: 5px;
@@ -69,8 +63,8 @@
 	margin-top:0;
 }
 #header-profile-btn .btn {
-	height:26px;
-	width:36px;
+	height:41px;
+	width:57px;
 	border:0;
 	margin:0;
 	padding:0;
@@ -95,31 +89,14 @@
 	color:#888;
 }
 
-#header .well {
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
-
-#header li {
-	
-}
-
-.nav-pills > .active > a, .nav-pills > .active > a:hover {
-	background-color:transparent;
-}
-
 #header-links {
 	font-family: 'Viga', sans-serif;
-	font-size: 18px;
-	line-height: 30px;
-	height:30px;
+	font-size: 20px;
+	line-height: 45px;
+	height:45px;
 	text-align:right;
 	font-weight:400;
-}
-
-#header-links .header-link {
-	
+	text-decoration:none;
 }
 
 #header-links .header-link-spacer {
@@ -138,8 +115,7 @@
 }
 
 a.header-link {
-	color:#000;
-	text-decoration:none;
+	color:#373737;
 }
 
 /* Header End */
