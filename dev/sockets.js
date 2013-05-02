@@ -13,6 +13,15 @@ io.sockets.on( 'connection', function(socket) {
     
     var user = socket.handshake.user.username;
     
+    socket.on( 'joinChat', function(data) {
+        Chat.joinChat( JSON.parse(data, socket) );
+    } );
+	
+    socket.on( 'newmsg', function(data) {
+        Chat.newMsg( JSON.parse(data), user );
+    } );
+	
+	/*
     ( function(socket, user) {
         socket.on( 'joinChat', function(data) {
             Chat.joinChat( JSON.parse(data, socket) );
@@ -24,5 +33,7 @@ io.sockets.on( 'connection', function(socket) {
             Chat.newMsg( JSON.parse(data), user );
         } );
     } )(socket, user)
+	*/
+	
     
 } );

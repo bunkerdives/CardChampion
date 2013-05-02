@@ -4,6 +4,11 @@ var ProfileDeckViewModel = function() {
     this.author = ko.observable( '' );
     this.description = ko.observable( '' );
     this.thumb = ko.observable( '' );
+	
+	this.deckId = ko.observable( '' );
+	this.buildUrl = ko.computed( function() {
+		return '/builder?deckId=' + this.deckId();
+	}, this );
     
     this.white = ko.observable( false );
     this.blue = ko.observable( false );
@@ -26,6 +31,7 @@ var ProfileDeckViewModel = function() {
         this.author( deckContainer.author );
         this.description( deckContainer.description );
         this.thumb( deckContainer.thumb );
+		this.deckId( deckContainer._id );
         
         this.white( deckContainer.white );
         this.blue( deckContainer.blue );

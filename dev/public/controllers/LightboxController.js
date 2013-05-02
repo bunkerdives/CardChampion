@@ -33,6 +33,8 @@ var LightboxController = {
 		    }
         );
 		
+		$('#login-register-title').html('Signup')
+		
 	}
 
 	, showLoginForm : function() {
@@ -67,6 +69,9 @@ var LightboxController = {
 				} ).animate( { opacity: '1' }, 450 );
 		    }
         );
+		
+		$('#login-register-title').html('Login')
+		
 	}
     
     // show an error message between inputs and buttons

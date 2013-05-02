@@ -300,7 +300,8 @@
                           <div class="deck-view" class="clearfix" data-bind="with: ProfileDeckViewModel">
                             <div id="deck-view-title" class="clearfix">
 															<div id="deck-view-title-left" class="pull-left clearfix">
-  															<span style="text-align:left;" class="pull-left" data-bind="text: title"/><br/>
+  															<span style="text-align:left;font-family:'Viga',sans-serif;color:#444;" class="pull-left" data-bind="text: title"/>
+															<br/>
   															<div id="deck-view-mana" class="clearfix pull-left">
   																<span id="deck-preview-white" class="deck-preview-color" data-bind="visible: white"/>
   																<span id="deck-preview-blue" class="deck-preview-color" data-bind="visible: blue"/>
@@ -310,8 +311,10 @@
   															</div>
 															</div>
 															<div id="deck-view-title-right" class="pull-right clearfix">
-																<div id="deck-view-thumbnail" class="" data-bind="style: {backgroundImage : thumb}"/>
-  														</div>
+																<a data-bind="attr:{href:buildUrl}">
+																	<div id="deck-view-thumbnail" data-bind="style:{backgroundImage:thumb}"/>
+																</a>
+  															</div>
   													</div>
   													<hr style="margin-top:7px;margin-bottom:9px;" class="hr-shadow"/>
   													<div class="clearfix">
@@ -499,9 +502,20 @@
 		  </div><!--End #portal-right-pane-->
     </div><!--End #portal-container-->
 	  <div id="foyer-subcontent">
+  		<div id="donate">
+  			<div id="donate-quote">
+  				<span>"Those who don't believe in magic will never find it."</span>
+  				<small>Roald Dahl</small>
+  		  </div><!--End #donate-quote-->
+  			<div id="donate-closer">
+  				<span class="headline-txt">Those who do,</span>
+  				<img src="http://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"/>
+  			</div><!--End #donate-closer-->
+  		</div><!--End #donate-->
+	  	<hr class="horizontal-rule"/>
 	  	<div id="share">
-		  	<div id="share-msg" class="headline-txt">
-					<span>Tired of waiting in draft queues?</span>
+		  	<div id="share-msg">
+					<medium>Share LimitedMTG.com with your fellow planeswalkers.</span>
 				</div><!--End #share-msg-->
 	  		<div id="share-buttons">
 	  			<span><img src="http://w.sharethis.com/images/facebook_32.png"/></span>
@@ -511,21 +525,11 @@
 	  			<span><img src="http://w.sharethis.com/images/reddit_32.png"/></span>
 	  			<span><img src="http://w.sharethis.com/images/pinterest_32.png"/></span>
 	  		</div><!--End #share-buttons-->
-				<div id="share-caption">
-					<small>Share LimitedMTG.com with your fellow planeswalkers.</small>
-				</div><!--End #share-caption-->
+			<div id="share-caption">
+				<small>Tired of waiting in draft queues?</small>
+			</div>
+			<!--End #share-caption-->
 	  	</div><!--End #share-->
-	  	<hr class="horizontal-rule"/>
-			<div id="donate">
-				<div id="donate-quote">
-					<span>"Those who don't believe in magic will never find it."</span>
-					<small>Roald Dahl</small>
-			  </div><!--End #donate-quote-->
-				<div id="donate-closer">
-					<span class="headline-txt">Those who do,</span>
-					<img src="http://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"/>
-				</div><!--End #donate-closer-->
-			</div><!--End #donate-->
 	  </div><!--End #foyer-subcontent-->
 	</div><!--End #foyer-content-container-->
 	<div id="foyer-footer" class="clearfix">

@@ -1,6 +1,11 @@
 <div id="lightbox-container">
 	<div id="lightbox-inner">
 			<div id="lightbox-login-register-container" style="display:block;">
+				<div class="row-fluid">
+					<div class="span12" style="text-align:left">
+						<h3 style="margin-top:0px; margin-bottom:0px;color:#444;" id="login-register-title">Login</h3>
+					</div>
+				</div>
 				<div id="login-username-container" class="row-fluid">
 					<div class="span12">
 						<input type="text" class="span12" id="login-nickname" placeholder="Username"/>
@@ -54,7 +59,7 @@
 						<button id="login-btn" onclick="LoginController.sendLoginRequest();" class="btn btn-small btn-success span12">Sign In</button>
 					</div>
 					<div class="span6">
-						<button id="guest-btn" onclick="LoginController.sendGuestRequest();" class="btn btn-small btn-success span12">Sign In as Guest</button>
+						<button id="guest-btn" onclick="LoginController.sendGuestRequest();" class="btn btn-small btn-success span12">Login as Guest</button>
 					</div>
 				</div>
 				<div id="login-view-register-btn" class="row-fluid">
@@ -64,7 +69,11 @@
 				</div>
 			</div>
 			<div id="profile-settings-form" style="display:none;">
-				<div class="row-fluid"><div class="span12"><h3 style="margin-top:0;color:#444;">Profile Settings</h3></div></div>
+				<div class="row-fluid">
+					<div class="span12" style="text-align:left">
+						<h3 style="margin-top:0px; margin-bottom:0px;color:#444;">Profile Settings</h3>
+					</div>
+				</div>
 				<div class="row-fluid">
 					<div class="span12">
 						<input type="text" id="profile-settings-full-name" class="span12" placeholder="Full Name"/>
@@ -92,7 +101,7 @@
 				</div>
 				<div class="row-fluid">
 					<div class="span6">
-						<button class="btn btn-success btn-small span12" id="profile-settings-save" style="margin-bottom:10px;">Save</button>
+						<button class="btn btn-success btn-small span12" id="profile-settings-save">Save</button>
 					</div>
 					<div class="span6">
 						<button class="btn btn-danger btn-small span12">Cancel</button>
