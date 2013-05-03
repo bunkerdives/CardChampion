@@ -769,22 +769,12 @@
 }
 
 #foyer #sealed-menu-left {
-	width:0%;
-	opacity:0;
-}
-
-#foyer .custom-sealed-pack {
-	text-align:left;
-	padding-left:10%;
-}
-
-#foyer #sealed-menu-right {
 	width:50%;
 	margin-left:auto;
 	margin-right:auto;
 }
 
-#foyer #sealed-menu-right input {
+#foyer #sealed-menu-left input {
 	width:96%;
 }
 
@@ -795,6 +785,18 @@
 	border-radius: 0px;
 	-webkit-box-shadow: inset 0px 0px 0px 1px #000;
 	box-shadow: inset 0px 0px 0px 1px #000;
+}
+
+#foyer #sealed-menu-right {
+	width:0%;
+	opacity:0;
+	margin-top:25px;
+}
+
+#foyer .custom-sealed-pack {
+	text-align:left;
+	padding-left:10%;
+	padding-top:15px;
 }
 
 #foyer #main-slide-6 {

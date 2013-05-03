@@ -114,17 +114,7 @@
 									<div id="sealed-menu-top">
 										<h3>New Sealed Event</h3>
 									</div>
-									<div id="sealed-menu-left" class="pull-right">
-										<div style="font-size:24px;line-height:36px;">
-											<div class="custom-sealed-pack">1.&nbsp;<span>Dragon's Maze</span></div>
-											<div class="custom-sealed-pack">2.&nbsp;<span>Dragon's Maze</span></div>
-											<div class="custom-sealed-pack">3.&nbsp;<span>Gatecrash</span></div>
-											<div class="custom-sealed-pack">4.&nbsp;<span>Gatecrash</span></div>
-											<div class="custom-sealed-pack">5.&nbsp;<span>Return to Ravnica</span></div>
-											<div class="custom-sealed-pack">6.&nbsp;<span>Return to Ravnica</span></div>
-										</div>
-									</div>
-									<div id="sealed-menu-right">
+									<div id="sealed-menu-left">
 										<input id="" type="text" placeholder="Set Name" style="text-align:center;"/>
 										<div id="sealed-menu-table-container" style="height:297px;overflow:auto;">
 											<table class="table" style="margin-bottom:0;">
@@ -163,10 +153,39 @@
 										</div>
 										<div class="row-fluid">
 											<div class="span6">
-												<button class="btn btn-large btn-success span12">Start</button>
+												<button class="btn btn-large btn-primary span12" onclick="showCustomSealedForm();" id="sealed-custom-btn">Custom</button>
+												<button class="btn btn-large btn-danger span12" style="opacity:0;display:none;" onclick="hideCustomSealedForm();" id="sealed-back-btn">Back</button>
 											</div>
 											<div class="span6">
-												<button class="btn btn-large btn-primary span12" onclick="showCustomSealedForm();">Custom</button>
+												<button class="btn btn-large btn-success span12" id="sealed-start-btn">Start</button>
+												<button class="btn btn-large btn-success span12" style="opacity:0;display:none;" id="sealed-select-btn">Select</button>
+											</div>
+										</div>
+									</div>
+									<div id="sealed-menu-right" class="pull-right">
+										<div style="font-size:24px;line-height:36px;">
+											<div class="custom-sealed-pack clearfix">
+												<span class="pull-left">1.&nbsp;<span>Dragon's Maze</span></span>
+												<button type="button" class="close pull-left">&times;</button>
+											</div>
+											<div class="custom-sealed-pack clearfix">
+												<span class="pull-left">2.&nbsp;<span>Dragon's Maze</span></span>
+												<button type="button" class="close pull-left">&times;</button>
+											</div>
+											<div class="custom-sealed-pack clearfix">
+												<span class="pull-left">3.&nbsp;<span>Gatecrash</span></span>
+												<button type="button" class="close pull-left">&times;</button>
+											</div>
+											<div class="custom-sealed-pack clearfix">
+												<span class="pull-left">4.&nbsp;<span>Gatecrash</span></span>
+												<button type="button" class="close pull-left">&times;</button>
+											</div>
+											<div class="custom-sealed-pack clearfix">
+												<span class="pull-left">5.&nbsp;<span>Return to Ravnica</span></span>
+												<button type="button" class="close pull-left">&times;</button>
+											</div>
+											<div class="custom-sealed-pack clearfix">
+												<span class="pull-left">6.&nbsp;<span></span></span>
 											</div>
 										</div>
 									</div>

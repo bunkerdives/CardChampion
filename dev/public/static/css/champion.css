@@ -114,6 +114,10 @@ input[readonly] {
 	padding: 0 9px 0 0;
 }
 
+.close.pull-left {
+	margin-left:1px;
+}
+
 .btn-group.btn {   border: 0;   padding: 0; }
 
 .btn-group.btn > .dropdown-menu {  text-align: left; }
