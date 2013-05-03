@@ -150,7 +150,7 @@ function profileLayout() {
 	var leftColW = (contentW-20)*0.35;
 	
 	var target = '#profile-image';
-	cardToThumbnail(leftColW,target);
+	ThumbnailViewController.renderThumbnail(leftColW,target);
 	
 	var deckImgH = 174.812;
 	var deckImgW = deckImgH * 0.71935;
@@ -161,23 +161,7 @@ function profileLayout() {
 		'background-position': deckImgLeft + "px " + deckImgTop + "px"
 	});
 	
-	cardToThumbnail(67,'#deck-view-thumbnail');
-}
-
-function cardToThumbnail(w,t) {
-	var imgW = w;
-	var target = t;
-	var profileImgH = imgW * 0.7252;
-	var imgBgW = imgW * (1.2252+.1);
-	var imgBgH = imgBgW * 1.39;
-	var imgBgTop = imgBgH * (-0.1258-.01);
-	var imgBgLeft = imgBgW * -0.097;
-    
-	$(target).css( {
-		'height': profileImgH,
-		'background-size': imgBgW + "px " + imgBgH + "px",
-		'background-position': imgBgLeft + "px " + imgBgTop + "px"
-	} );
+	ThumbnailViewController.renderThumbnail(67,'#deck-view-thumbnail');
 }
 
 
@@ -266,7 +250,7 @@ function foyerInit(){
 }
 
 $(document).ready(function($){
-	cardToThumbnail(50,'.deck-preview-img');
+	ThumbnailViewController.renderThumbnail(50,'.deck-preview-img');
 });
 
 $(window).resize(function(){

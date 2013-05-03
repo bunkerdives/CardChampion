@@ -1,10 +1,3 @@
-function showBuilder() {
-	$('#splash').css( 'display', 'none' );
-	$('#builder').css( 'display', 'block' );
-	builderLayout();
-}
-
-
 function builderLayout() {
 	
 	console.log('builderLayout function called');

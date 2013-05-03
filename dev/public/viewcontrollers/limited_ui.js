@@ -164,7 +164,6 @@ function offsetCalc(topScreenPercentage, bottomScreenPercentage) {
 }
 
 $(document).ready(function(){
-	CardViewController.cardSizeInit();
 	$("#add-land-dropdown").on("click", function(e){
 	  e.stopPropagation();
 	});

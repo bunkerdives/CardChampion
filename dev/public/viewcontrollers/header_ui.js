@@ -1,4 +1,6 @@
 function headerLayout(){
+	ThumbnailViewController.renderThumbnail(57,'#header-profile-btn');
+	
 	var windowWidth = $(window).width();
 	
 	var tmpW = windowWidth * 0.95;
@@ -10,7 +12,7 @@ function headerLayout(){
 	
 	var headerLinksW = 244;
 	var headerLinksNum = 5;
-	cardToThumbnail(57,'#header-profile-btn');
+	
 	
 	var logoW = 272;
 	

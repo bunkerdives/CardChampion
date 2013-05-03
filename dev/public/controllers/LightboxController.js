@@ -210,7 +210,7 @@ $(document).ready(function(){
 	    });
 	});
 	
-	cardToThumbnail( '260', '#profile-settings-thumbnail' );
+	ThumbnailViewController.renderThumbnail( '260', '#profile-settings-thumbnail' );
 	
 	$('#profile-settings-image-input').tooltip();
 	
