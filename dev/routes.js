@@ -10,10 +10,15 @@ var ProfileSchema = require('./schemas/ProfileSchema.js');
 var DeckContainerSchema = require('./schemas/DeckContainerSchema.js');
 var DeckDataSchema = require('./schemas/DeckDataSchema.js');
 
+var BoosterPack = require('./utils/BoosterPack.js');
+var SetController = require('./utils/SetController.js')
+
 // get the express object
 var app = module.parent.exports.app;
 var database = module.parent.exports.database;
 var passport = require('passport');
+
+var $ = require('jQuery');
 
 var routeFrontendWithOptions = function( res, template, options ) {
     res.render( 'layout.jade', {
@@ -91,7 +96,7 @@ app.get( '/decks', function(req, res) {
             } );
         }
         else {
-            res.send( { status : 'Error' } );
+            res.send( { status : 'Error' } );va
         }
         
     } );
@@ -132,17 +137,81 @@ app.get( '/about', function(req, res) {
 } );
 
 
-// '/sealed/:set' - show the Sealed View with the specified set to the user
-app.get( '/sealed', function(req, res) {
-    // TODO create the six packs, randomly
+app.get( '/sealed/:pack1/:pack2/:pack3/:pack4/:pack5/:pack6', function(req, res) {
+	
+	console.log("********")
+	console.log("/sealed/:pack1/:pack2/:pack3/:pack4/:pack5/:pack6")
+	console.log("********")
+	
+	var params = req.params;
+	
+	var boosters = [];
+	for( var i = 0; i < 7; ++i ) {
+		if( ! SetController.validSet( set ) ) {
+			packNum = 'pack' + i;
+			var packSet = params[packNum];
+			var booster = BoosterPack.newBooster(packSet);
+			if( booster != null ) {
+				$.merge( boosters, booster );
+			} else {
+				res.send( 'Invalid sealed data!', 501 );
+			}
+		} else {
+			res.send( 'Invalid sealed data!', 501 );
+		}
+	}
+	
+	// route the user to the sealed screen, and pass it the six packs of cards
     res.render( 'layout.jade', {
-        templateName : JSON.stringify('Limited')
+		status : 200
+        , templateName : JSON.stringify('Limited')
         , options : JSON.stringify( {
-            format : 'sealed'
-            , set : req.query['set']
+            format : 'Sealed'
+			, boosters : boosters
             , auth : Auth.getAuthority( req )
         } )
     } );
+	
+} );
+
+
+// '/sealed/:set' - show the Sealed View with the specified set to the user
+app.get( '/sealed', function(req, res) {
+	
+	console.log("********")
+	console.log("/sealed/:set")
+	console.log("********")
+	
+    //var set = req.params.set;
+	var set = req.query.set;
+	
+	// check to make sure the set provided is valid
+	if( ! SetController.validSet(set) ) {
+		res.send( 'Invalid set!', 501 );
+	}
+	
+	var boosters = [];
+	
+	// create the six packs, randomly
+	for( var i = 0; i < 6; ++i ) {
+		var booster = BoosterPack.newBooster(set);
+		if( booster != null ) {
+			$.merge( boosters, booster );
+		} else {
+			res.send( 'Error creating booster pack!', 501 );
+		}
+	}
+	
+	// route the user to the sealed screen, and pass it the six packs of cards
+    res.render( 'layout.jade', {
+		templateName : JSON.stringify('Limited')
+        , options : JSON.stringify( {
+            format : 'Sealed'
+			, boosters : boosters
+            , auth : Auth.getAuthority( req )
+        } )
+    } );
+	
 } );
 
 

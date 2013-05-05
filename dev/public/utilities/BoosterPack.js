@@ -39,7 +39,7 @@ var BoosterPack = {
         
     }
     
-    , chanceMythic : function(){
+    , chanceMythic : function() {
         
         var chance = Math.floor( Math.random() * 1000 );
         
@@ -50,7 +50,7 @@ var BoosterPack = {
         
     }
     
-    , randCommon : function( set ){
+    , randCommon : function( set ) {
         
         // pick a random index
         var commons = set.commons;

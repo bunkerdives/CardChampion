@@ -70,14 +70,36 @@ var SealedViewModel = function( set ) {
     this.cardselect = null;
     
     
-    this.newSealedInstance = function() {
-        
-        // generate a sealed card pool, given to us as an array of CardViewModels
-        var cards = this.newSealedPool();
-        
+    this.newSealedInstance = function( boosters ) {
+		
+		var cardPool = [];
+		
+		// if the server passed sealed data, load it up!
+		if( boosters == undefined || boosters == null ) {
+			// TODO display an error to the user and 'exit' gracefully
+			console.log("Error getting boosters")
+		}
+		
+		for( var i = 0; i < boosters.length; ++i ) {
+			cardData = boosters[i];
+	
+			var obj = {
+				name : cardData.name
+				, rarity : cardData.rarity
+				, color : cardData.color
+				, cmc : cardData.cmc
+				, multiverse : cardData.multiverse
+				, type : cardData.type
+				, pt : cardData.pt
+			}
+			
+			//console.log(obj)
+			cardPool[i] = new CardViewModel( obj );
+		}
+		
         // create sideboard CardPoolViewModel and add the generated card pool to it
         var sideboard = new CardPoolViewModel( 'sideboard' );
-        sideboard.newCardPoolInstance( cards );
+        sideboard.newCardPoolInstance( cardPool );
         this.sideboard( [ sideboard ] );
         
         // create mainboard CardPoolViewModel

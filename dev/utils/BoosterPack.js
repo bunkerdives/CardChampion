@@ -1,7 +1,17 @@
+var SetController = require('./SetController.js');
+var $ = require('jQuery');
+
 var BoosterPack = {
     
     newBooster : function( setAbbr ) {
+		
+		console.log("NEW SERVER BOOSTER")
         
+		// if the set passed is not valid, return null
+		if( ! SetController.validSet( setAbbr ) ) {
+			return null;
+		}
+		
         var booster = [];
         var set = SetController.getSet( setAbbr );
         var i = 0;
@@ -32,75 +42,62 @@ var BoosterPack = {
             }   
             
         }
+		
+		console.log(booster)
         
         // TODO add random chance of foil card
-        
+		
         return booster;
         
     }
     
     , chanceMythic : function(){
-        
         var chance = Math.floor( Math.random() * 1000 );
-        
         if( chance <= 125 ){
             return true;
         }
         return false;
-        
     }
     
     , randCommon : function( set ){
-        
-        // pick a random index
+        // return a random card's data
         var commons = set.commons;
         var idx = Math.floor( Math.random() * commons.length );
-        
-        // get the random card's ID
         var id = commons[ idx ];
         var cardData = set.card_data[ id ];
-        
-        // create a CardView object with the card's attributes
-        return new CardViewModel( cardData );
-        
+        return cardData;
     }
     
     , randUncommon : function( set ){
-        
-        // pick a random index
+        // return a random card's data
         var uncommons = set.uncommons;
         var idx = Math.floor( Math.random() * uncommons.length );
-        
-        // get the random card's ID
         var id = uncommons[ idx ];
         var cardData = set.card_data[ id ];
-        
-        // create a CardView object with the card's attributes
-        return new CardViewModel( cardData );
-        
+        return cardData;
     }
     
     , randRare : function( set ){
         
-        if( this.chanceMythic() == false || set.mythics.length == 0 ){
+        if( this.chanceMythic() == false || set.mythics.length == 0 ) {
+			// return a random card's data
             var rares = set.rares;
             var idx = Math.floor( Math.random() * rares.length );
-            var id = rares[ idx ];
-        
-            // create a CardView object with the card's attributes
+			var id = rares[ idx ];
             var cardData = set.card_data[ id ];
-            return new CardViewModel( cardData );
+            return cardData;
         }
         else{
+			// return a random card's data
             var mythics = set.mythics;
             var idx = Math.floor( Math.random() * mythics.length );
-            var id = mythics[ idx ];
-        
-            // create a CardView object with the card's attributes
+			var id = mythics[ idx ];
             var cardData = set.card_data[ id ];
-            return new CardViewModel( cardData );
+            return cardData ;
         }
         
     }
     
 };
+
+module.exports = BoosterPack;

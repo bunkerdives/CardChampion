@@ -7,9 +7,10 @@ var LayoutController = function( template, options ) {
             context = new SplashViewModel();
             break;
         case 'Limited':
-            if( options.format == 'sealed' ) {
-                context = new SealedViewModel( options.set );
-                context.newSealedInstance();
+            if( options.format == 'Sealed' ) {
+				boosters = options.boosters;
+                context = new SealedViewModel();
+                context.newSealedInstance( boosters );
             } else {
                 window.location.replace('/');
             }
