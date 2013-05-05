@@ -15,14 +15,6 @@ function splashInit() {
 	iMacLayout();
 }
 
-$(window).resize( function() {
-    // if the splash element is showing, setup its layout
-	if( $('#splash').length == 1 ) {
-		splashLayout();
-	}
-} );
-
-
 var cards = [];
 var map = {};
 

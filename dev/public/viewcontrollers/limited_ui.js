@@ -167,14 +167,4 @@ $(document).ready(function(){
 	$("#add-land-dropdown").on("click", function(e){
 	  e.stopPropagation();
 	});
-
-	$('.card').on('touchStart', CardViewModel.cardSelect);
-
-	var $win = $(window);
-	$(window).resize(function() {
-		if ( $(document.getElementById('limited')).length > 0 ) {//If #limited exists
-			limitedLayout();
-		}
-	});
-
 });

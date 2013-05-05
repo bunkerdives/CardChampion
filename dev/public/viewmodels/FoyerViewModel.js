@@ -1,5 +1,7 @@
 var FoyerViewModel = function() {
     
+	this.viewName = 'Foyer';
+	
 	this.hidePreviewTimeout = 0;
     
     this.subview = '';
@@ -120,9 +122,9 @@ ko.utils.extend( FoyerViewModel.prototype, {
             BackgroundController.setBackgroundImage();
             BannerController.setAnimatedBanner();
             ChatController.bindEnterKeyForChat();
-    	    foyerInit();
+    	    FoyerViewController.foyerInit();
     		headerLayout();
-            profileLayout();
+            FoyerViewController.profileLayout();
         } );
         
     }

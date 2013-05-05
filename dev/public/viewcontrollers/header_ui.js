@@ -11,7 +11,7 @@ function headerLayout(){
 	
 	
 	var headerLinksW = 244;
-	var headerLinksNum = 5;
+	var headerLinksNum = 4;
 	
 	
 	var logoW = 272;
@@ -28,10 +28,3 @@ function headerLayout(){
 function headerInit(){
 	headerLayout();
 }
-
-$(window).resize(function() {
-	var headerExists = $("#header").css("display");
-	if (headerExists=="block") {
-		headerLayout();
-	}
-});

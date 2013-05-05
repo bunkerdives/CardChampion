@@ -1,7 +1,8 @@
 <div id="foyer">
 	<div id="foyer-content-container">
-		<div id="foyer-banner-container">
+		<div id="foyer-banner-container" style="position:relative;">
 			<div id="foyer-banner"></div><!--End #foyer-banner-->
+			<div id="logo-overlay" style="position:absolute;top:0;left:0;height:100%;width:100%;text-align:center;"><img src="/static/img/logo.png" style="width:60%;margin-top:35px;"></div>
 		</div><!--End #foyer-banner-wrapper-->
     <div id="portal-container" class="clearfix">
       <div id="portal-left-pane" class="pull-left">
@@ -516,7 +517,7 @@
         <div id="chat-input" class="clearfix">
         	<input id="chat-msg" class="pull-left" type="text"/>
           <button id="chat-send-btn" class="btn btn-small pull-left appended" data-bind="event: { click: ChatController.sendChatMsg }">Send</button>
-					<button id="userlist-toggle-btn" class="btn btn-small pull-right" style="margin-left:5px;" onclick="showChatUserlist();"><i class="icon-user"></i></button>
+					<button id="userlist-toggle-btn" class="btn btn-small pull-right" style="margin-left:5px;" onclick="FoyerViewController.showChatUserlist();"><i class="icon-user"></i></button>
         </div><!--End #chat-input-->
 		  </div><!--End #portal-right-pane-->
     </div><!--End #portal-container-->

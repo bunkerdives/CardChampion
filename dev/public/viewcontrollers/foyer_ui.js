@@ -1,3 +1,4 @@
+//Temporary functions for New Sealed Event subview mockup
 function showCustomSealedForm() {
 	
 	console.log('showCustomSealedForm function called.');
@@ -143,119 +144,10 @@ function hideCustomSealedForm() {
 		
 		} );
 }
-
-function profileLayout() {
-    
-	var contentW = $('#main-animate-wrapper').width();
-	var leftColW = (contentW-20)*0.35;
-	
-	var target = '#profile-image';
-	ThumbnailViewController.renderThumbnail(leftColW,target);
-	
-	var deckImgH = 174.812;
-	var deckImgW = deckImgH * 0.71935;
-	var deckImgTop = deckImgH * -0.1258;
-	var deckImgLeft = deckImgW * -0.15;
-	$('.deck-preview-img').css({
-		'background-size': deckImgW + "px " + deckImgH + "px",
-		'background-position': deckImgLeft + "px " + deckImgTop + "px"
-	});
-	
-	ThumbnailViewController.renderThumbnail(67,'#deck-view-thumbnail');
-}
-
-
-function showChatUserlist() {
-	$('#chat').toggle();
-	$('#userlist').toggle();
-	$('#chat-msg').toggle();
-	$('#chat-send-btn').toggle();
-	$('#chat-user-total').toggle();
-	$('#userlist-toggle-btn i').toggleClass('icon-user');
-	$('#userlist-toggle-btn i').toggleClass('icon-comment');
-}
-
-
-
-/* Card Preview Start */
-function positionPreviewCard() {
-	$('#card-preview-container').css( {
-  	'top' : event.pageY -20
-  	, 'left' : event.pageX + 20
-  });
-}
-
-
-function showPreviewCard(t,c) {
-	
-	var target = t;
-	
-	$('#card-preview-container').css("background-image", target);
-	$('#card-preview-container').css('display', 'block');
-	$('#card-preview-container').stop().animate({ opacity: 1 }, 300);
- 
-	positionPreviewCard();
-	$('body').mousemove(function(){
-		positionPreviewCard();
-	});
-	
-}
-
-function hidePreviewCard() {
-	$('#card-preview-container').stop().animate({ opacity: 0 }, 300, function(){
-		$('#card-preview-container').css('display', 'none');
-		$('body').off('mousemove');
-		touchEvent = false;
-	});
-}
-
-
-function tabletPreviewEvent(t,c) {
-	clearTimeout(ViewModel.hidePreviewTimeout);
-	//hidePreviewCard();
-	ViewModel.hidePreviewTimeout = setTimeout(function() {
-		hidePreviewCard();
-	}, 1000);
-	$('#card-preview-container').css( {
-  		'top' : event.pageY - 20
-  		, 'left' : event.pageX + 20
-  	});
-	showPreviewCard( t, c );
-}
-
-var touchEvent;
-function cardPreviewEvent() {
-	
-	
-	$('.deck-view-section a').mouseenter(function() {
-        console.log("cardPreviewEvent " + $(this).attr("data-img"))
-		showPreviewCard( $(this).attr("data-img"), false );
-	}).mouseleave(function(){
-		hidePreviewCard();
-	});
-	
-}
-/* Card Preview End */
-
-function foyerInit(){ 
-	//foyerLayout();
-	var headerExists = $("#header").css("display");
-	if (headerExists=="none"){
-		$("#header").css("display", "block");//Show header on foyer init
-		headerInit();
-	}
-	profileLayout();
-	cardPreviewEvent();
-	$('.foyer-header').removeClass('translucent-header');
-}
+//End temporary functions
 
 $(document).ready(function($){
+
 	ThumbnailViewController.renderThumbnail(50,'.deck-preview-img');
-});
 
-$(window).resize(function(){
-
-	profileLayout();
-
-	BackgroundController.setBackgroundImage();
 });

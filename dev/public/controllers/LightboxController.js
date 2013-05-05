@@ -1,6 +1,23 @@
 var LightboxController = {
 	
-	showRegisterForm : function() {
+	isVisible : false
+	
+    // display the authorization lightbox
+    , showAuthLightbox : function( content ) {
+		
+		console.log('showAuthLightbox')
+		this.isVisible = true;
+        
+        // display the lightbox
+        jQuery(document).ready( function ($) {
+            $('#lightbox-shadow').css('display','block');
+      	    $("#lightbox-container").css('display','block');
+			LightboxController.positionAuthLightbox();
+        } );		
+				
+    }
+	
+	, showRegisterForm : function() {
 		
         LightboxController.closeErrorAlert();
 		
@@ -33,11 +50,13 @@ var LightboxController = {
 		    }
         );
 		
-		$('#login-register-title').html('Signup')
+		$('#login-register-title').html('Signup');
 		
 	}
 
 	, showLoginForm : function() {
+		
+		console.log('showLoginForm')
 		
         LightboxController.closeErrorAlert();
         
@@ -98,24 +117,12 @@ var LightboxController = {
 		    }
         );
     }
-    
-    // display the authorization lightbox
-    , showAuthLightbox : function( content ) {
-        
-        // display the lightbox
-        jQuery(document).ready( function ($) {
-            $('#lightbox-shadow').css('display','block');
-      	    $("#lightbox-container").css('display','block');
-			LightboxController.positionAuthLightbox();
-			$(window).resize( function() {
-				LightboxController.positionAuthLightbox();
-			} );
-        } );		
-				
-    }
 
     // close the authorization lightbox
     , closeAuthLightbox : function() {
+		
+		console.log('closeAuthLightbox')
+		this.isVisible = false;
 				
         jQuery(document).ready( function ($) {
             $("#lightbox-container").css( 'display','none' );
@@ -125,6 +132,8 @@ var LightboxController = {
     }
     
     , showSaveLightbox : function() {
+		
+		this.isVisible = true;
         
         $('#lightbox-shadow').css( 'display', 'block' );
   	    $("#lightbox-container").css( 'display', 'block' );
@@ -135,6 +144,8 @@ var LightboxController = {
     }
     
     , closeSaveLightbox : function() {
+		
+		this.isVisible = false;
         
         $('#lightbox-shadow').css( 'display', 'none' );
   	    $("#lightbox-container").css( 'display', 'none' );
@@ -147,6 +158,8 @@ var LightboxController = {
     }
     
     , showProfileSettingsController : function() {
+		
+		console.log('showProfileSettingsController')
         
         // show the profile settings form
 		$('#profile-settings-form').toggle();
@@ -157,6 +170,8 @@ var LightboxController = {
     }
     
 	, positionAuthLightbox : function() {
+		
+		console.log('positionAuthLightbox')
         /*
 		var lightboxW = 350;
 		var lightboxLeft = ( $(window).width() / 2 ) - ( lightboxW / 2 );

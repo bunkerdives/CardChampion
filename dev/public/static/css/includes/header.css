@@ -33,16 +33,6 @@
 	background-repeat: repeat-x;
 }
 
-#logo {
-	padding-left:5px;
-	padding-right:20px;
-	margin-top:5px;
-}
-
-#logo img {
-	height:35px;
-}
-
 #header-profile-btn {
 	height:41px !important;
 	width:57px !important;

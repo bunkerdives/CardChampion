@@ -93,14 +93,3 @@ function builderLayout() {
 	} );
     
 }
-
-$(document).ready(function(){
-	
-	$(window).resize(function(){
-        // if #limited exists
-		if ( $(document.getElementById('builder')).length > 0 ) {
-			builderLayout();
-		}
-	});
-	
-});

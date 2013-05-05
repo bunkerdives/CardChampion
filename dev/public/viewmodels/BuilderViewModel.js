@@ -1,4 +1,6 @@
 var BuilderViewModel = function() {
+	
+	this.viewName = 'Builder';
     
     this.mainboard = ko.observableArray( [] );
     this.sideboard = ko.observableArray( [] );

@@ -1,5 +1,7 @@
 var SealedViewModel = function( set ) {
 	
+	this.viewName = 'Sealed';
+	
 	this.cardH = 198.7;
 	this.cardW = 143;
 	this.cardPadding = 3;
