@@ -20,6 +20,8 @@ var passport = require('passport');
 
 var $ = require('jQuery');
 
+var MultiverseToCardMap = require('./utils/MultiverseToCardMap.js')
+
 var routeFrontendWithOptions = function( res, template, options ) {
     res.render( 'layout.jade', {
         templateName : JSON.stringify( template )
@@ -70,6 +72,31 @@ app.get( '/splash', function(req, res) {
     } );
 } );
 
+app.get( '/cardData', function(req,res) {
+	
+	var multiverse = req.query.multiverse;
+	
+	console.log("multiverse: " + multiverse)
+	
+	// get the card meta data TODO test if the multiverse is not valid
+	var cardMetaData = MultiverseToCardMap[ multiverse ];
+	console.log("cardMetaData: " + cardMetaData);
+	var set = cardMetaData.set;
+	var cardnum = cardMetaData.cardnum;
+	
+	// get the card data
+	var setObj = SetController.getSet( set );
+	var cardData = setObj.card_data[cardnum];
+	
+	// send the card data to the client
+	sendData = {
+		status : "Success"
+		, cardData : cardData
+	};
+	res.send( sendData );
+	
+} );
+
 
 // '/decks' - show the Foyer view to the user with decks visible
 app.get( '/decks', function(req, res) {
@@ -96,7 +123,7 @@ app.get( '/decks', function(req, res) {
             } );
         }
         else {
-            res.send( { status : 'Error' } );va
+            res.send( { status : 'Error' } );
         }
         
     } );

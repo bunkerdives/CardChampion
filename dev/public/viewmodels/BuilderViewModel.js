@@ -84,8 +84,6 @@ var BuilderViewModel = function() {
     
     this.initBuilderView = function() {
         
-        console.log("INIT BUILDER VIEW")
-        
         this.typeaheadController.initTypeahead();
         
         var main = this.createMainboardFromDeckData( ViewModel.deckData );
@@ -219,24 +217,49 @@ var BuilderViewModel = function() {
 	
 	this.addChosenCardToBoards = function() {
 		
-		if( ViewModel.typeaheadController.chosenCard == '' ) {
+		if( TypeaheadController.chosenMultiverse == '' ) {
+			// TODO handle this error?
 			return;
 		}
 		
-		var numMainBoard = this.mainMagnitude();
-		var numSideBoard = this.sideMagnitude();
+		// get the currently selected (in the typeahead) card's multiverse
+		var multiverse = TypeaheadController.chosenMultiverse;
 		
-		for (var i = 0; i < numMainBoard; i++) {
-            var card = new CardViewModel( TypeaheadController.chosenCard );
-			ViewModel.mainboard()[0].addCardToPool( card, "cmc", "name" );
-		}
+		// send request to server for the card data
+		var cardDataRequest = $.get(
+			'/cardData?multiverse=' + multiverse
+			, function(data) {
+				if( data.status == 'Success' ) {
+					
+					var chosenCard = data.cardData;
+					console.log("Chosen Card: " + chosenCard)
+					
+					var numMainBoard = ViewModel.mainMagnitude();
+					var numSideBoard = ViewModel.sideMagnitude();
 		
-		for (var i = 0; i < numSideBoard; i++) {
-            var card = new CardViewModel( TypeaheadController.chosenCard );
-			this.sideboard()[0].addCardToPool( card, "cmc", "name" );
-		}
+					for (var i = 0; i < numMainBoard; i++) {
+			            var card = new CardViewModel( chosenCard );
+						ViewModel.mainboard()[0].addCardToPool( card, "cmc", "name" );
+					}
+		
+					for (var i = 0; i < numSideBoard; i++) {
+			            var card = new CardViewModel( chosenCard );
+						ViewModel.sideboard()[0].addCardToPool( card, "cmc", "name" );
+					}
         
-        ViewModel.deckStatCounterController.adjustCardCounterUI( card, numMainBoard );
+			        ViewModel.deckStatCounterController.adjustCardCounterUI( card, numMainBoard );
+					
+				} else {
+					// TODO display error to user
+					console.log("Error retrieving card data from server!");
+				}
+			}
+		);
+		
+		cardDataRequest.error( function( jqxhr, status, error ) {
+            // TODO display error to user
+			console.log("Error retrieving card data from server!");
+		} );
         
 	};
 	

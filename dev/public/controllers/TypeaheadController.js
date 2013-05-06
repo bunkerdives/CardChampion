@@ -1,23 +1,19 @@
 var TypeaheadController = {
     
-    chosenCard : ''
+    chosenMultiverse : ''
     , typeaheadMap : {}
 
 
 	, updater : function (item) {
 		
-		console.log('Typeahead updater.')
-
-		var setAbbr = this.typeaheadMap[item].setAbbr;
-		var cardId = this.typeaheadMap[item].cardId;
-		var setData = SetController.getSet( setAbbr );
-		var cardData = setData.card_data[ cardId ];
+		// set the multiverse as the chosen card
+		// NOTE: item = '[name] - [set]'
+		var multiverse = this.typeaheadMap[item];
 		
-		ViewModel.updatePreviewImage(cardData.multiverse);
-		ViewModel.updateThumbImage(cardData.multiverse);
-
-		//TypeaheadController.chosenCard = new CardViewModel( cardData );
-        TypeaheadController.chosenCard = cardData;
+		ViewModel.updatePreviewImage(multiverse);
+		ViewModel.updateThumbImage(multiverse);
+		
+		TypeaheadController.chosenMultiverse = multiverse;
 		
 		$('.typeahead').css('display','none');
 		$('#builder-add-card-prompt').css('display','block');
@@ -27,78 +23,55 @@ var TypeaheadController = {
 	}
 	
     , select: function () {
-		console.log('Typeahead select.')
-	  
-        var val = this.$menu.find('.active').attr('data-value')
-        this.$element
-          .val(this.updater(val))//Updates text in html input
-          .change()
-		
+		var val = this.$menu.find('.active').attr('data-value')
+		// Updates text in html input
+        this.$element.val(this.updater(val)).change();
         return this
       }
 
 	, show: function () {
 	
-		console.log('Typeahead show.');
-		//console.log(this.$element.position());
-		// var pos = $.extend({}, this.$element.position(), {
-// 			height: this.$element[0].offsetHeight
-// 		})
-
-		$('#builder-add-card-prompt').hide()
-
-		this.$menu
-			.insertAfter($('#builder-card-list-marker')).show()
+		$('#builder-add-card-prompt').hide();
+		this.$menu.insertAfter($('#builder-card-list-marker')).show();
 		
 		var active = $('div.active').data('multiverse');
 		ViewModel.updatePreviewImage(active);
 
-		this.shown = true
-		return this
+		this.shown = true;
+		return this;
 	
 	}
 	
     , hide: function () {
-  	  console.log('Typeahead hide')
-	  
-        $('.typeahead').css('display','none');
+  	    $('.typeahead').css('display','none');
         this.shown = false
         return this
       }
 	
 	, render: function (items) {
 	
-		console.log('Typeahead render.');
-
-		var that = this
+		var self = this;
 
 		items = $(items).map(function (i, item) {
-			var multiverse = that.typeaheadMap[item].multiverse;
-			i = $(that.options.item).attr( {
+			var multiverse = self.typeaheadMap[item];
+			i = $(self.options.item).attr( {
 				'data-value': item
 				, 'data-multiverse': multiverse
 			} )
-			// i = $(that.options.item);
-// 			i.data( 'value', item );
-// 			i.data( 'multiverse', multiverse );
-			i.find('a').html(that.highlighter(item))
+			i.find('a').html(self.highlighter(item))
 			return i[0]
-		})
+		} );
 
 		items.first().addClass('active')
-
 		
-		this.$menu.html(items)
-		//console.log('render typeahead: ' + $('.active').data('value'))
-		return this
-
+		this.$menu.html(items);
+		
+		return this;
 
 	}
 	
 	, next: function (event) {
 	
-		console.log('Typeahead next.');
-
 		var active = this.$menu.find('.active').removeClass('active')
 		var next = active.next()
 
@@ -110,22 +83,14 @@ var TypeaheadController = {
 		
 		var active = $('div.active').data('multiverse');
 		ViewModel.updatePreviewImage(active);
-
-		//console.log($('.active').data('value'));
 		
-	
 	}
 
 	, prev: function (event) { //event
 	
-		console.log('Typeahead prev.');
+		var active = this.$menu.find('.active').removeClass('active');
+		var prev = active.prev();
 
-		var active = this.$menu.find('.active').removeClass('active')
-			, prev = active.prev()
-
-		// if (!prev.length) {
-		//         prev = this.$menu.find('li').last()
-		//       }
 		if (!prev.length) {
 			prev = this.$menu.find('div').last()
 		}
@@ -134,15 +99,11 @@ var TypeaheadController = {
 		
 		var active = $('div.active').data('multiverse');
 		ViewModel.updatePreviewImage(active);
-
-		
 	
 	}
 
 	, listen: function () {
 	
-		console.log('Typeahead listen.');
-
 		this.$element
 			.on('focus',    $.proxy(this.focus, this))
 			.on('blur',     $.proxy(this.blur, this))
@@ -161,45 +122,30 @@ var TypeaheadController = {
 	}
 	
     , mouseenter: function (e) {
-		console.log('Typeahead mouseenter');
-        this.mousedover = true
+		this.mousedover = true
         this.$menu.find('.active').removeClass('active')
         $(e.currentTarget).addClass('active')
-		
 		var active = $('div.active').data('multiverse');
 		ViewModel.updatePreviewImage(active);
     }
 
 	, source : function (query, process) {
 		
-		console.log('Typeahead source.')
-
-		cards = [];
-		map = {};
-
-		var cardData;
-		var data = [ ];
-
-		$.each( SetController.setList, function(key, setObj) {
-
-		var cardData = setObj.card_data;
-		var set = setObj.set;
-		var setAbbr = setObj.abbr;
-
-		$.each( cardData, function( index, value ) {
-			var cardObj = { cardData : value, set : set, setAbbr : setAbbr, cardId : index };
-			data.push( cardObj );
-		} );
-
-		} );
-
-		$.each( data, function (key, cardObj) {
-			var processKey = cardObj.cardData.name + " - " + cardObj.set;
-			//console.log(cardObj.cardData.multiverse)
-			map[processKey] = { setAbbr : cardObj.setAbbr, cardId : cardObj.cardId, multiverse : cardObj.cardData.multiverse  };
+		var cards = [];
+		var map = {};
+		
+		// put the card data into the process array
+		$.each( MultiverseToNameSetMapOld, function(multiverse, meta) {
+			var processKey = meta.name + " - " + meta.set;
+			map[processKey] = multiverse;
 			cards.push( processKey );
 		} );
-
+		$.each( MultiverseToNameSetMapNew, function(multiverse, meta) {
+			var processKey = meta.name + " - " + meta.set;
+			map[processKey] = multiverse;
+			cards.push( processKey );
+		} );
+		
 		this.typeaheadMap = map;
 
 		process(cards);
@@ -208,46 +154,28 @@ var TypeaheadController = {
     
     , initTypeahead : function() {
 		
-    
         $('#builder-input').typeahead( {
-
     		updater: this.updater
-			
 			, select: this.select
-			
 			, show: this.show
-			
 			, hide: this.hide
-			
 			, render: this.render
-			
 			, next: this.next
-			
 			, prev: this.prev
-			
 			, listen: this.listen
-			
 			, source: this.source
-			
 			, mouseenter: this.mouseenter
-			
 			, items : 449
-			
 		    , menu: '<div class="typeahead"></div>'
-			
 		    , item: '<div class="typeahead-embedded-item"><a href="#"></a></div>'
-
     	} );
-		
-		
 		
 		$('#profile-settings-image-input').typeahead({
 
 			
 				source: function (query, process) {
-					//console.log("source")
-				
-				    cards = [];
+					/*
+					cards = [];
 				    map = {};
 					
 						var setList = ["GTC", "RTR", "M13", "ISD", "AVR", "DKA"];
@@ -275,6 +203,22 @@ var TypeaheadController = {
 				    } );
  
 				    process(cards);
+					*/
+					
+					var cards = [];
+					var map = {};
+		
+					// put the card data into the process array
+					$.each( MultiverseToNameSetMapNew, function(multiverse, meta) {
+						var processKey = meta.name + " - " + meta.set;
+						map[processKey] = multiverse;
+						cards.push( processKey );
+					} );
+		
+					this.typeaheadMap = map;
+
+					process(cards);
+					
 				}
 			
 				, updater: function (item) {

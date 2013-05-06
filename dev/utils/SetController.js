@@ -1,3 +1,6 @@
+var $ = require('jQuery');
+var fs = require('fs');
+
 var ED2 = require('../sets/2ED');
 var ED3 = require('../sets/3ED');
 var ED4 = require('../sets/4ED');
@@ -172,6 +175,237 @@ var SetController = {
             return null;
         }
     }
+	
+	, createMultiverseMap : function() {
+		
+		fs.open('multiverse_map.js', 'a', 777, function( e, id ) {
+		
+			$.each( SetController.setList, function(set, setObj) {
+				var setCardData = setObj.card_data;
+			
+				$.each( setCardData, function(cardnum, cardObj) {
+				
+					var multiverse = cardObj.multiverse;
+				
+					cardData = ", \"" + multiverse + "\" : {\n"
+					cardData += "    set : \"" + set + "\"\n"
+					cardData += "    , cardnum : \"" + cardnum + "\"\n"
+					cardData += "}\n"
+					
+			  		fs.write( id, cardData, null, 'utf8', function() {
+			  			fs.close( id, function() {
+			  				console.log('file closed');
+			  		    } );
+			  		 } );
+				
+				} );
+			
+			} );
+			
+		} );
+		
+	}
+	
+	, createNameToMultiverseMap : function() {
+	
+		fs.open('NameToMultiverse.js', 'a', 777, function( e, id ){
+		
+			$.each( SetController.setList, function(set, setObj){
+			
+				var setCardData = setObj.card_data;
+				
+				$.each( setCardData, function(cardnum, cardObj){
+				
+					var name = cardObj.name;
+					var multiverse = cardObj.multiverse;
+				
+					//cardData = ", '" + name + "' : '" + multiverse + "'\n"
+					cardData = ', "' + name + '" : "' + multiverse + '"\n'
+					
+			  		fs.write( id, cardData, null, 'utf8', function() {
+			  			fs.close( id, function() {} );
+			  		 } );
+				
+				})
+			
+			})
+		
+		})
+	
+	}
+	
+	, createMultiverseToNameSetMap : function() {
+		
+		fs.open('MultiverseToNameSetMap.js', 'a', 777, function( e, id ){
+		
+			$.each( SetController.setList, function(set, setObj){
+			
+				var setCardData = setObj.card_data;
+				
+				$.each( setCardData, function(cardnum, cardObj){
+				
+					var multiverse = cardObj.multiverse;
+					var name = cardObj.name;
+				
+					cardData = ", \"" + multiverse + "\" : {\n"
+					cardData += "    name : \"" + name + "\"\n"
+					cardData += "    , set : \"" + set + "\"\n"
+					cardData += "}\n"
+					
+			  		fs.write( id, cardData, null, 'utf8', function() {
+			  			fs.close( id, function() {} );
+			  		 } );
+					
+				})
+			
+			})
+		
+		})
+		
+	}
+	
+	, createMultiverseToNameSetMapOld : function() {
+		
+		fs.open('MultiverseToNameSetMapOld.js', 'a', 777, function( e, id ){
+		
+			var sets = {
+				'ARN' : SetController.getSet('ARN')
+				, 'ATQ' : SetController.getSet('ATQ')
+				, 'LEG' : SetController.getSet('LEG')
+				, 'DRK' : SetController.getSet('DRK')
+				, 'FEM' : SetController.getSet('FEM')
+				, 'HML' : SetController.getSet('HML')
+				, 'ICE' : SetController.getSet('ICE')
+				, 'ALL' : SetController.getSet('ALL')
+				, 'CSP' : SetController.getSet('CSP')
+				, 'MIR' : SetController.getSet('MIR')
+				, 'VIS' : SetController.getSet('VIS')
+				, 'WTH' : SetController.getSet('WTH')
+				, 'TMP' : SetController.getSet('TMP')
+				, 'STH' : SetController.getSet('STH')
+				, 'EXO' : SetController.getSet('EXO')
+				, 'USG' : SetController.getSet('USG')
+				, 'ULG' : SetController.getSet('ULG')
+				, 'UDS' : SetController.getSet('UDS')
+				, 'MMQ' : SetController.getSet('MMQ')
+				, 'NMS' : SetController.getSet('NMS')
+				, 'PCY' : SetController.getSet('PCY')
+				, 'INV' : SetController.getSet('INV')
+				, 'PLS' : SetController.getSet('PLS')
+				, 'APC' : SetController.getSet('APC')
+				, 'ODY' : SetController.getSet('ODY')
+				, 'TOR' : SetController.getSet('TOR')
+				, 'JUD' : SetController.getSet('JUD')
+				, 'ONS' : SetController.getSet('ONS')
+				, 'LGN' : SetController.getSet('LGN')
+				, 'SCG' : SetController.getSet('SCG')
+			
+				, 'LEA' : SetController.getSet('LEA')
+				, 'LEB' : SetController.getSet('LEB')
+				, '2ED' : SetController.getSet('2ED')
+				, '3ED' : SetController.getSet('3ED')
+				, '4ED' : SetController.getSet('4ED')
+				, '5ED' : SetController.getSet('5ED')
+				, '6ED' : SetController.getSet('6ED')
+				, '7ED' : SetController.getSet('7ED')
+				, '8ED' : SetController.getSet('8ED')
+			}
+		
+			$.each( sets, function(set, setObj){
+			
+				var setCardData = setObj.card_data;
+				
+				$.each( setCardData, function(cardnum, cardObj){
+				
+					var multiverse = cardObj.multiverse;
+					var name = cardObj.name;
+				
+					cardData = ", \"" + multiverse + "\" : {\n"
+					cardData += "    name : \"" + name + "\"\n"
+					cardData += "    , set : \"" + set + "\"\n"
+					cardData += "}\n"
+					
+			  		fs.write( id, cardData, null, 'utf8', function() {
+			  			fs.close( id, function() {} );
+			  		 } );
+					
+				})
+			
+			})
+		
+		})
+		
+	}
+	
+	, createMultiverseToNameSetMapNew : function() {
+		
+		fs.open('MultiverseToNameSetMapNew.js', 'a', 777, function( e, id ){
+		
+			var sets = {
+				'MRD' : SetController.getSet('MRD')
+				, 'DST' : SetController.getSet('DST')
+				, '5DN' : SetController.getSet('5DN')
+				, 'CHK' : SetController.getSet('CHK')
+				, 'BOK' : SetController.getSet('BOK')
+				, 'SOK' : SetController.getSet('SOK')
+				, 'RAV' : SetController.getSet('RAV')
+				, 'GPT' : SetController.getSet('GPT')
+				, 'DIS' : SetController.getSet('DIS')
+				, 'TSP' : SetController.getSet('TSP')
+				, 'PLC' : SetController.getSet('PLC')
+				, 'FUT' : SetController.getSet('FUT')
+				, 'LRW' : SetController.getSet('LRW')
+				, 'MOR' : SetController.getSet('MOR')
+				, 'SHM' : SetController.getSet('SHM')
+				, 'EVE' : SetController.getSet('EVE')
+				, 'ALA' : SetController.getSet('ALA')
+				, 'CON' : SetController.getSet('CON')
+				, 'ARB' : SetController.getSet('ARB')
+				, 'ZEN' : SetController.getSet('ZEN')
+				, 'WWK' : SetController.getSet('WWK')
+				, 'ROE' : SetController.getSet('ROE')
+				, 'SOM' : SetController.getSet('SOM')
+				, 'MBS' : SetController.getSet('MBS')
+				, 'NPH' : SetController.getSet('NPH')
+				, 'ISD' : SetController.getSet('ISD')
+				, 'DKA' : SetController.getSet('DKA')
+				, 'AVR' : SetController.getSet('AVR')
+				, 'RTR' : SetController.getSet('RTR')
+				, 'GTC' : SetController.getSet('GTC')
+			
+				, '9ED' : SetController.getSet('9ED')
+				, '10E' : SetController.getSet('10E')
+				, 'M10' : SetController.getSet('M10')
+				, 'M11' : SetController.getSet('M11')
+				, 'M12' : SetController.getSet('M12')
+				, 'M13' : SetController.getSet('M13')
+			}
+		
+			$.each( sets, function(set, setObj){
+			
+				var setCardData = setObj.card_data;
+				
+				$.each( setCardData, function(cardnum, cardObj){
+				
+					var multiverse = cardObj.multiverse;
+					var name = cardObj.name;
+				
+					cardData = ", \"" + multiverse + "\" : {\n"
+					cardData += "    name : \"" + name + "\"\n"
+					cardData += "    , set : \"" + set + "\"\n"
+					cardData += "}\n"
+					
+			  		fs.write( id, cardData, null, 'utf8', function() {
+			  			fs.close( id, function() {} );
+			  		 } );
+					
+				})
+			
+			})
+		
+		})
+		
+	}
     
 };
 
