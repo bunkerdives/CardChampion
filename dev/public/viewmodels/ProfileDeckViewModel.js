@@ -26,7 +26,7 @@ var ProfileDeckViewModel = function() {
         if( deck == undefined ) {
             return;
         }
-        
+		
         this.title( deckContainer.title );
         this.author( deckContainer.author );
         this.description( deckContainer.description );

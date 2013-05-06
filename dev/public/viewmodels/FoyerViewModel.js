@@ -22,7 +22,7 @@ var FoyerViewModel = function() {
     
     
     this.showSubView = function() {
-        
+		
         switch( this.subview ) {
             case 'ProfileDecks' :
                 this.initProfileViewModel();
