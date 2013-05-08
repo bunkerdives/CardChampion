@@ -9,17 +9,24 @@ var FoyerViewModel = function() {
     this.decks = '';
     this.deckContainer = '';
     this.deckCardData = '';
+	this.cardData = '';
+	
+	this.set = '';
+	this.setAbbr = '';
+	this.setTotal = '';
+	this.cardnum = '';
     
     this.decksVisible = ko.observable( false );
     this.profileVisible = ko.observable( false );
     this.aboutVisible = ko.observable( false );
     this.newEventVisible = ko.observable( false );
     this.joinDraftVisible = ko.observable( false );
+	this.cardViewVisible = ko.observable( false );
     
     this.RecentDecksViewModel = ko.observable( '' );
     this.ProfileViewModel = ko.observable( '' );
     this.NewSealedViewModel = ko.observable( '' );
-    
+    this.FoyerCardViewModel = ko.observable( '' );
     
     this.showSubView = function() {
 		
@@ -48,10 +55,27 @@ var FoyerViewModel = function() {
                 this.initDecksViewModel();
                 this.showDecksView();
                 break;
+			case 'Card' :
+				this.initCardViewModel();
+				this.showCardView();
         }
         
     };
-    
+	
+	this.initCardViewModel = function() {
+		
+		var foyerCardViewModel = new FoyerCardViewModel();
+		
+		if( this.cardData ) {
+			foyerCardViewModel.initFoyerCardView( this.cardData, this.cardnum, this.set, this.setAbbr, this.setTotal );
+		}
+		
+		this.FoyerCardViewModel( foyerCardViewModel );
+	};
+	
+	this.showCardView = function() {
+		this.cardViewVisible( true );
+	};
     
     this.initDecksViewModel = function() {
         

@@ -23,6 +23,11 @@ var LayoutController = function( template, options ) {
             context.deckName = options.deckname;
             context.deckContainer = options.deckContainer;
             context.deckCardData = options.deckData;
+			context.cardData = options.cardData;
+			context.cardnum = options.cardnum;
+			context.set = options.set;
+			context.setAbbr = options.setAbbr;
+			context.setTotal = options.setTotal;
             context.showSubView();
             break;
         case 'Builder':

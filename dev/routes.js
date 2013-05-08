@@ -72,11 +72,40 @@ app.get( '/splash', function(req, res) {
     } );
 } );
 
-app.get( '/cardData', function(req,res) {
+app.get( '/card', function(req, res) {
 	
 	var multiverse = req.query.multiverse;
 	
-	console.log("multiverse: " + multiverse)
+	// get the card meta data TODO test if the multiverse is not valid
+	var cardMetaData = MultiverseToCardMap[ multiverse ];
+	
+	var set = cardMetaData.set;
+	var cardnum = cardMetaData.cardnum;
+	
+	// get the card data
+	var setObj = SetController.getSet( set );
+	var cardData = setObj.card_data[cardnum];
+	
+	// TODO add set name and set total to response data
+	var setTotal = Object.keys( setObj.card_data ).length;
+    res.render( 'layout.jade', {
+        templateName: JSON.stringify('Foyer')
+        , options: JSON.stringify( {
+            subview : 'Card'
+            , auth : Auth.getAuthority( req )
+            , cardData : cardData
+			, set : setObj.set
+			, setAbbr : set
+			, cardnum : cardnum
+			, setTotal : setTotal
+        } )
+    } );
+	
+} );
+
+app.get( '/cardData', function(req,res) {
+	
+	var multiverse = req.query.multiverse;
 	
 	// get the card meta data TODO test if the multiverse is not valid
 	var cardMetaData = MultiverseToCardMap[ multiverse ];
@@ -204,10 +233,6 @@ app.get( '/sealed/:pack1/:pack2/:pack3/:pack4/:pack5/:pack6', function(req, res)
 
 // '/sealed/:set' - show the Sealed View with the specified set to the user
 app.get( '/sealed', function(req, res) {
-	
-	console.log("********")
-	console.log("/sealed/:set")
-	console.log("********")
 	
     //var set = req.params.set;
 	var set = req.query.set;

@@ -381,33 +381,34 @@
 							</div>
 						</div>
 					</div><!--End #main-slide-5-->
-					<div id="main-slide-6" style="display:none;">
-						<div id="card-view-container" class="clearfix">
+					<div id="main-slide-6" data-bind="if:cardViewVisible">
+						<div id="card-view-container" class="clearfix" data-bind="with: FoyerCardViewModel">
 							<div id="card-view-left" class="pull-left">
-								<div id="card-view-thumbnail"/>
+								<div id="card-view-thumbnail" data-bind="style:{backgroundImage:background}"/>
 								<div id="card-view-info" class="clearfix">
 									<div style="line-height:20px;font-size:12px;">
-										<a href="#" style="font-size:16px;">Gatecrash</a>&nbsp;<span style="vertical-align:top;">[192/249]</span>
+										<a href="#" style="font-size:16px;" data-bind="text:set"></a>&nbsp;<span style="vertical-align:top;" data-bind="text:checklist"></span>
 									</div>
 									<div id="card-view-cost">
-										<div class="clearfix" style="display:inline-block;">
-											<img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=medium&name=1&type=symbol"/>
-											<img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=medium&name=W&type=symbol"/>
-											<img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=medium&name=W&type=symbol"/>
-											<img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=medium&name=B&type=symbol"/>
-											<img src="http://gatherer.wizards.com/Handlers/Image.ashx?size=medium&name=B&type=symbol"/>
+										<div class="clearfix" style="display:inline-block;" data-bind="foreach:manaSymbols">
+											<img data-bind="attr:{src:symbol}">
 										</div>
 									</div>
 									<div>
-										<span style="font-size:16px;line-height:22px;">Creature</span>
+										<span style="font-size:16px;line-height:22px;" data-bind="text:type"></span>
 									</div>
 									<div>
-										<img src="http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=GTC&size=small&rarity=M" style="vertical-align:text-bottom;"/>
+										<div data-bind="if:raritySymbolVisible">
+											<img data-bind="attr:{src:raritySymbol}" style="vertical-align:text-bottom;"/>
+										</div>
+										<div data-bind="if:rarityTextVisible">
+											<span data-bind="text:rarityText">
+										</div>
 									</div>
 								</div>
 							</div>
 							<div id="card-view-right" class="pull-right">
-								<div id="card-view-title">Obzedat, Ghost Council</div>
+								<div id="card-view-title" data-bind="text:name"></div>
 								<hr style="margin-top:10px;margin-bottom:0;" class="hr-shadow"/>
 								<div style="overflow:auto;height:406px;position:relative;top:-6px;">
 									<h4 style="margin:5px 0px;color:#000;text-align:center;padding-top:10px;color:#555;">Near Mint</h4>
