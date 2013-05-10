@@ -49,11 +49,11 @@ var LayoutController = function( template, options ) {
     var loggedIn = options.auth;
     
     if( template != 'Splash'  &&  !loggedIn ) {
-        LightboxController.showAuthLightbox();
+        LightboxController.showLightbox( 'Auth' );
     }
     else if( template != 'Splash' && loggedIn ) {
         SocketController.socketioHandshake();
-        LightboxController.closeAuthLightbox();
+        LightboxController.closeLightbox();
     }
     
 };

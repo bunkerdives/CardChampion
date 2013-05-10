@@ -2,22 +2,132 @@ var LightboxController = {
 	
 	isVisible : false
 	
-    // display the authorization lightbox
-    , showAuthLightbox : function( content ) {
+	, currentSubview : 'Auth'
+	
+	, subviewCases : {
 		
-		console.log('showAuthLightbox')
+		'Auth' : function( action ) { 
+			
+			if( action === 'show' ) { 
+				LightboxController.showAuthSubview() 
+			} else { 
+				LightboxController.closeAuthSubview() 
+			}
+			
+		}
+		, 'SaveDeck' : function( action ) { 
+			
+			if( action === 'show' ) {
+				LightboxController.showSaveDeckSubview()
+			} else {
+				LightboxController.closeSaveDeckSubview()
+			}
+			
+		}
+		, 'ProfileSettings' : function( action ) {
+			
+			if( action === 'show' ) {
+				LightboxController.showProfileSettingsSubview() 
+			} else {
+				LightboxController.closeProfileSettingsSubview()
+			}
+			
+		}
+		
+	}
+	
+	, showLightbox : function( subview ) {
+		
+		console.log('showLightbox, subview: ' + subview)
 		this.isVisible = true;
-        
-        // display the lightbox
-        jQuery(document).ready( function ($) {
-            $('#lightbox-shadow').css('display','block');
-      	    $("#lightbox-container").css('display','block');
-			LightboxController.positionAuthLightbox();
-        } );		
-				
+        $('#lightbox-shadow').show();
+  	    $("#lightbox-container").show();
+		LightboxController.positionLightbox();
+		
+		this.currentSubview = subview;
+		
+		var subviewCase = this.subviewCases[ this.currentSubview ];
+		
+		if( subviewCase ) { 
+			subviewCase( 'show' );
+		} else {
+			console.log('Error: Subview name not recognized by LightboxController.showLightbox().');
+		}
+		
+	}
+	
+    , closeLightbox : function() {
+		
+		console.log('closeLightbox')
+		this.isVisible = false;
+		
+        $("#lightbox-container").hide();
+		$("#lightbox-shadow").hide();
+		
+		var subviewCase = this.subviewCases[ this.currentSubview ];
+		
+		if( subviewCase ) { 
+			subviewCase( 'close' );
+		} else {
+			console.log('Error: Subview name not recognized by LightboxController.closeLightbox().');
+		}
+		
     }
 	
+	, showAuthSubview : function() {
+		
+		console.log('showAuthSubview')
+		$("#lightbox-login-register-container").show();
+		
+        LightboxController.displayLoginContainers();
+        LightboxController.hideRegisterContainers();
+		
+	}
+	
+	
+	, showSaveDeckSubview : function() {
+		
+		console.log('showSaveDeckSubview')
+		$("#save-deck-form").show();
+		
+	}
+	
+	, showProfileSettingsSubview : function() {
+		
+		console.log('showProfileSettingsSubview')
+		$("#profile-settings-form").show();
+		ProfileSettingsController.init();
+		
+		ThumbnailViewController.renderThumbnail( '260', '#profile-settings-thumbnail' );
+	
+		$('#profile-settings-image-input').tooltip();
+		
+	}
+	
+	, closeAuthSubview : function() {
+		
+		console.log('closeAuthSubview')
+		$("#lightbox-login-register-container").hide();
+		
+	}
+	
+	, closeSaveDeckSubview : function() {
+		
+		console.log('closeSaveDeckSubview')
+		$("#save-deck-form").hide();
+		
+	}
+	
+	, closeProfileSettingsSubview : function() {
+		
+		console.log('closeProfileSettingsSubview')
+		$("#profile-settings-form").hide();
+		
+	}
+	
 	, showRegisterForm : function() {
+		
+		console.log('showRegisterForm')
 		
         LightboxController.closeErrorAlert();
 		
@@ -118,60 +228,9 @@ var LightboxController = {
         );
     }
 
-    // close the authorization lightbox
-    , closeAuthLightbox : function() {
+	, positionLightbox : function() {
 		
-		console.log('closeAuthLightbox')
-		this.isVisible = false;
-				
-        jQuery(document).ready( function ($) {
-            $("#lightbox-container").css( 'display','none' );
-			$("#lightbox-shadow").css( 'display', 'none' );
-        } );
-				
-    }
-    
-    , showSaveLightbox : function() {
-		
-		this.isVisible = true;
-        
-        $('#lightbox-shadow').css( 'display', 'block' );
-  	    $("#lightbox-container").css( 'display', 'block' );
-        
-        $("#lightbox-login-register-container").css( 'display', 'none' );
-        $("#save-deck-form").css( 'display', 'block' );
-        
-    }
-    
-    , closeSaveLightbox : function() {
-		
-		this.isVisible = false;
-        
-        $('#lightbox-shadow').css( 'display', 'none' );
-  	    $("#lightbox-container").css( 'display', 'none' );
-        $("#save-deck-form").css( 'display', 'none' );
-        
-    }
-    
-    , toggleLoginRegisterLightbox : function() {
-        $('#lightbox-login-register-container').toggle();
-    }
-    
-    , showProfileSettingsController : function() {
-		
-		console.log('showProfileSettingsController')
-        
-        // show the profile settings form
-		$('#profile-settings-form').toggle();
-        
-        // initialize the profile settings view (prepopulate the data and register a save callback)
-        ProfileSettingsController.init();
-        
-    }
-    
-	, positionAuthLightbox : function() {
-		
-		console.log('positionAuthLightbox')
+		console.log('positionLightbox')
         /*
 		var lightboxW = 350;
 		var lightboxLeft = ( $(window).width() / 2 ) - ( lightboxW / 2 );
@@ -180,33 +239,32 @@ var LightboxController = {
     }
     
     , displayLoginContainers : function() {
-		$('#login-username-container').css( 'display', 'block' );
-		$('#login-password-container').css( 'display', 'block' );
+		$('#login-username-container').show();
+		$('#login-password-container').show();
     }
     
     , hideLoginContainers : function() {
-		$('#login-username-container').css( 'display', 'none' );
-		$('#login-password-container').css( 'display', 'none' );
+		$('#login-username-container').hide();
+		$('#login-password-container').hide();
     }
     
     , displayRegisterContainers : function() {
-		$('#register-username-container').css( 'display', 'block' );
-		$('#register-password-container').css( 'display', 'block' );
+		$('#register-username-container').show();
+		$('#register-password-container').show();
     }
     
     , hideRegisterContainers : function() {
-		$('#register-username-container').css( 'display', 'none' );
-		$('#register-password-container').css( 'display', 'none' );
+		$('#register-username-container').hide();
+		$('#register-password-container').hide();
     }
     
     , closeErrorAlert : function() {
-        //close error alerts
+        console.log('closeErrorAlert')
 		$('.alert .close').trigger('click');
     }
     
 };
 
-//Temporary, so I can remember where this is. 
 $(document).ready(function(){
     
     //Turn on 'close' buttons for alerts
@@ -224,9 +282,5 @@ $(document).ready(function(){
 	    	});
 	    });
 	});
-	
-	ThumbnailViewController.renderThumbnail( '260', '#profile-settings-thumbnail' );
-	
-	$('#profile-settings-image-input').tooltip();
 	
 });

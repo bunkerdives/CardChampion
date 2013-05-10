@@ -30,7 +30,7 @@ var RegisterController = {
             return null;
         }
         
-        if( ! pass2.match(alphanumera) || !pass2.match(alphanumera) /*|| spaceRegex.test(pass2)*/ || pass2.length > 16  ){
+        if( ! pass2.match(alphanumera) || !pass2.match(alphanumera) || spaceRegex.test(pass2) || pass2.length > 16  ){
             console.log("Bad pass2")
             return null;
         }
@@ -50,7 +50,7 @@ var RegisterController = {
             return null;
         }
         
-        LoadingWheelController.start('darker');
+        LoadingWheelController.start( 'darker' );
         
         $.post(
             '/register'
@@ -62,8 +62,8 @@ var RegisterController = {
             , function( data ) {
                 if( data != 'Error' ) {
                     // TODO display to the user that the registration was successful
-                    LightboxController.toggleLoginRegisterLightbox();
-					LightboxController.showProfileSettingsController();
+                    LightboxController.closeLightbox();
+					LightboxController.showLightbox( 'ProfileSettings' );
 					LoadingWheelController.stop();
                     SocketController.socketioHandshake();
                 } else {

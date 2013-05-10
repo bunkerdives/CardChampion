@@ -72,7 +72,7 @@ var ProfileSettingsController = {
                 // TODO on success, display success briefly and hide the profile settings lightbox
                 if( data.status == "Success" ){
                     console.log("Successfully saved user's profile settings!");
-                    LightboxController.closeAuthLightbox();
+                    LightboxController.closeLightbox();
                 } else {
                     console.log("Failure saving user's profile settings!");
                 }

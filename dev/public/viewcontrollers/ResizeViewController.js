@@ -28,7 +28,7 @@ var ResizeViewController = {
 		
 		if( LightboxController.isVisible ) {
 			//TODO Finish cleaning up LightboxController
-			LightboxController.positionAuthLightbox();
+			LightboxController.positionLightbox();
 		}
 		
 	}

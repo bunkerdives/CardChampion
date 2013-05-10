@@ -10,7 +10,7 @@ var LoginController = {
             , function( data ) {
                 console.log("loginRequest: data = " + data)
                 if( data != 'Error' ) {
-                    LightboxController.closeAuthLightbox();
+                    LightboxController.closeLightbox();
 					LoadingWheelController.stop();
                     SocketController.socketioHandshake();
                 }
@@ -35,7 +35,7 @@ var LoginController = {
             , function(data) {
                 console.log("guestRequest: data = " + data)
                 if( data != 'Error' ) {
-                    LightboxController.closeAuthLightbox();
+                    LightboxController.closeLightbox();
 					LoadingWheelController.stop();
                     SocketController.socketioHandshake();
                 }
