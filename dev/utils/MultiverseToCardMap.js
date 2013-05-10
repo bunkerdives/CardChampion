@@ -20431,6 +20431,630 @@ var MultiverseToCardMap = {
     set : "CSP"
     , cardnum : "155"
 }
+, "369028" : {
+    set : "DGM"
+    , cardnum : "1"
+}
+, "369077" : {
+    set : "DGM"
+    , cardnum : "2"
+}
+, "368965" : {
+    set : "DGM"
+    , cardnum : "3"
+}
+, "368976" : {
+    set : "DGM"
+    , cardnum : "4"
+}
+, "368993" : {
+    set : "DGM"
+    , cardnum : "5"
+}
+, "368979" : {
+    set : "DGM"
+    , cardnum : "6"
+}
+, "369092" : {
+    set : "DGM"
+    , cardnum : "7"
+}
+, "368992" : {
+    set : "DGM"
+    , cardnum : "8"
+}
+, "368949" : {
+    set : "DGM"
+    , cardnum : "9"
+}
+, "369012" : {
+    set : "DGM"
+    , cardnum : "10"
+}
+, "368961" : {
+    set : "DGM"
+    , cardnum : "11"
+}
+, "369021" : {
+    set : "DGM"
+    , cardnum : "12"
+}
+, "369014" : {
+    set : "DGM"
+    , cardnum : "13"
+}
+, "368980" : {
+    set : "DGM"
+    , cardnum : "14"
+}
+, "369007" : {
+    set : "DGM"
+    , cardnum : "15"
+}
+, "368996" : {
+    set : "DGM"
+    , cardnum : "16"
+}
+, "368966" : {
+    set : "DGM"
+    , cardnum : "17"
+}
+, "369034" : {
+    set : "DGM"
+    , cardnum : "18"
+}
+, "369010" : {
+    set : "DGM"
+    , cardnum : "19"
+}
+, "369037" : {
+    set : "DGM"
+    , cardnum : "20"
+}
+, "369044" : {
+    set : "DGM"
+    , cardnum : "21"
+}
+, "369030" : {
+    set : "DGM"
+    , cardnum : "22"
+}
+, "369056" : {
+    set : "DGM"
+    , cardnum : "23"
+}
+, "368962" : {
+    set : "DGM"
+    , cardnum : "24"
+}
+, "369048" : {
+    set : "DGM"
+    , cardnum : "25"
+}
+, "369050" : {
+    set : "DGM"
+    , cardnum : "26"
+}
+, "369006" : {
+    set : "DGM"
+    , cardnum : "27"
+}
+, "369085" : {
+    set : "DGM"
+    , cardnum : "28"
+}
+, "369043" : {
+    set : "DGM"
+    , cardnum : "29"
+}
+, "369046" : {
+    set : "DGM"
+    , cardnum : "30"
+}
+, "369053" : {
+    set : "DGM"
+    , cardnum : "31"
+}
+, "369029" : {
+    set : "DGM"
+    , cardnum : "32"
+}
+, "369076" : {
+    set : "DGM"
+    , cardnum : "33"
+}
+, "369013" : {
+    set : "DGM"
+    , cardnum : "34"
+}
+, "369090" : {
+    set : "DGM"
+    , cardnum : "35"
+}
+, "368946" : {
+    set : "DGM"
+    , cardnum : "36"
+}
+, "368998" : {
+    set : "DGM"
+    , cardnum : "37"
+}
+, "369075" : {
+    set : "DGM"
+    , cardnum : "38"
+}
+, "369067" : {
+    set : "DGM"
+    , cardnum : "39"
+}
+, "369004" : {
+    set : "DGM"
+    , cardnum : "40"
+}
+, "368984" : {
+    set : "DGM"
+    , cardnum : "41"
+}
+, "369059" : {
+    set : "DGM"
+    , cardnum : "42"
+}
+, "369091" : {
+    set : "DGM"
+    , cardnum : "43"
+}
+, "368957" : {
+    set : "DGM"
+    , cardnum : "44"
+}
+, "368988" : {
+    set : "DGM"
+    , cardnum : "45"
+}
+, "369054" : {
+    set : "DGM"
+    , cardnum : "46"
+}
+, "369033" : {
+    set : "DGM"
+    , cardnum : "47"
+}
+, "369088" : {
+    set : "DGM"
+    , cardnum : "48"
+}
+, "369083" : {
+    set : "DGM"
+    , cardnum : "49"
+}
+, "369020" : {
+    set : "DGM"
+    , cardnum : "50"
+}
+, "369036" : {
+    set : "DGM"
+    , cardnum : "51"
+}
+, "369082" : {
+    set : "DGM"
+    , cardnum : "52"
+}
+, "369016" : {
+    set : "DGM"
+    , cardnum : "53"
+}
+, "369000" : {
+    set : "DGM"
+    , cardnum : "54"
+}
+, "368985" : {
+    set : "DGM"
+    , cardnum : "55"
+}
+, "369047" : {
+    set : "DGM"
+    , cardnum : "56"
+}
+, "368954" : {
+    set : "DGM"
+    , cardnum : "57"
+}
+, "369051" : {
+    set : "DGM"
+    , cardnum : "58"
+}
+, "368953" : {
+    set : "DGM"
+    , cardnum : "59"
+}
+, "368971" : {
+    set : "DGM"
+    , cardnum : "60"
+}
+, "369057" : {
+    set : "DGM"
+    , cardnum : "61"
+}
+, "368999" : {
+    set : "DGM"
+    , cardnum : "62"
+}
+, "369003" : {
+    set : "DGM"
+    , cardnum : "63"
+}
+, "369039" : {
+    set : "DGM"
+    , cardnum : "64"
+}
+, "369084" : {
+    set : "DGM"
+    , cardnum : "65"
+}
+, "369061" : {
+    set : "DGM"
+    , cardnum : "66"
+}
+, "369086" : {
+    set : "DGM"
+    , cardnum : "67"
+}
+, "368944" : {
+    set : "DGM"
+    , cardnum : "68"
+}
+, "369055" : {
+    set : "DGM"
+    , cardnum : "69"
+}
+, "368969" : {
+    set : "DGM"
+    , cardnum : "70"
+}
+, "368955" : {
+    set : "DGM"
+    , cardnum : "71"
+}
+, "369095" : {
+    set : "DGM"
+    , cardnum : "72"
+}
+, "368987" : {
+    set : "DGM"
+    , cardnum : "73"
+}
+, "368964" : {
+    set : "DGM"
+    , cardnum : "74"
+}
+, "368956" : {
+    set : "DGM"
+    , cardnum : "75"
+}
+, "369087" : {
+    set : "DGM"
+    , cardnum : "76"
+}
+, "368947" : {
+    set : "DGM"
+    , cardnum : "77"
+}
+, "369064" : {
+    set : "DGM"
+    , cardnum : "78"
+}
+, "369052" : {
+    set : "DGM"
+    , cardnum : "79"
+}
+, "368983" : {
+    set : "DGM"
+    , cardnum : "80"
+}
+, "369066" : {
+    set : "DGM"
+    , cardnum : "81"
+}
+, "368981" : {
+    set : "DGM"
+    , cardnum : "82"
+}
+, "368994" : {
+    set : "DGM"
+    , cardnum : "83"
+}
+, "369062" : {
+    set : "DGM"
+    , cardnum : "84"
+}
+, "369026" : {
+    set : "DGM"
+    , cardnum : "85"
+}
+, "369049" : {
+    set : "DGM"
+    , cardnum : "86"
+}
+, "369093" : {
+    set : "DGM"
+    , cardnum : "87"
+}
+, "368973" : {
+    set : "DGM"
+    , cardnum : "88"
+}
+, "369002" : {
+    set : "DGM"
+    , cardnum : "89"
+}
+, "369099" : {
+    set : "DGM"
+    , cardnum : "90"
+}
+, "369069" : {
+    set : "DGM"
+    , cardnum : "91"
+}
+, "369001" : {
+    set : "DGM"
+    , cardnum : "92"
+}
+, "369073" : {
+    set : "DGM"
+    , cardnum : "93"
+}
+, "369031" : {
+    set : "DGM"
+    , cardnum : "94"
+}
+, "368958" : {
+    set : "DGM"
+    , cardnum : "95"
+}
+, "369022" : {
+    set : "DGM"
+    , cardnum : "96"
+}
+, "368978" : {
+    set : "DGM"
+    , cardnum : "97"
+}
+, "368986" : {
+    set : "DGM"
+    , cardnum : "98"
+}
+, "369025" : {
+    set : "DGM"
+    , cardnum : "99"
+}
+, "368952" : {
+    set : "DGM"
+    , cardnum : "100"
+}
+, "369005" : {
+    set : "DGM"
+    , cardnum : "101"
+}
+, "368945" : {
+    set : "DGM"
+    , cardnum : "102"
+}
+, "368968" : {
+    set : "DGM"
+    , cardnum : "103"
+}
+, "369068" : {
+    set : "DGM"
+    , cardnum : "104"
+}
+, "369015" : {
+    set : "DGM"
+    , cardnum : "105"
+}
+, "368972" : {
+    set : "DGM"
+    , cardnum : "106"
+}
+, "369098" : {
+    set : "DGM"
+    , cardnum : "107"
+}
+, "369011" : {
+    set : "DGM"
+    , cardnum : "108"
+}
+, "368970" : {
+    set : "DGM"
+    , cardnum : "109"
+}
+, "369072" : {
+    set : "DGM"
+    , cardnum : "110"
+}
+, "369074" : {
+    set : "DGM"
+    , cardnum : "111"
+}
+, "368977" : {
+    set : "DGM"
+    , cardnum : "112"
+}
+, "369070" : {
+    set : "DGM"
+    , cardnum : "113"
+}
+, "368951" : {
+    set : "DGM"
+    , cardnum : "114"
+}
+, "369045" : {
+    set : "DGM"
+    , cardnum : "115"
+}
+, "369081" : {
+    set : "DGM"
+    , cardnum : "116"
+}
+, "369094" : {
+    set : "DGM"
+    , cardnum : "117"
+}
+, "369027" : {
+    set : "DGM"
+    , cardnum : "118"
+}
+, "369019" : {
+    set : "DGM"
+    , cardnum : "119"
+}
+, "369065" : {
+    set : "DGM"
+    , cardnum : "120"
+}
+, "369041" : {
+    set : "DGM"
+    , cardnum : "121"
+}
+, "368989" : {
+    set : "DGM"
+    , cardnum : "122"
+}
+, "369063" : {
+    set : "DGM"
+    , cardnum : "123"
+}
+, "369009" : {
+    set : "DGM"
+    , cardnum : "124"
+}
+, "368982" : {
+    set : "DGM"
+    , cardnum : "125"
+}
+, "369089" : {
+    set : "DGM"
+    , cardnum : "126"
+}
+, "369042" : {
+    set : "DGM"
+    , cardnum : "127"
+}
+, "368991" : {
+    set : "DGM"
+    , cardnum : "128"
+}
+, "369097" : {
+    set : "DGM"
+    , cardnum : "129"
+}
+, "369071" : {
+    set : "DGM"
+    , cardnum : "130"
+}
+, "369024" : {
+    set : "DGM"
+    , cardnum : "131"
+}
+, "368967" : {
+    set : "DGM"
+    , cardnum : "132"
+}
+, "369032" : {
+    set : "DGM"
+    , cardnum : "133"
+}
+, "369080" : {
+    set : "DGM"
+    , cardnum : "134"
+}
+, "368950" : {
+    set : "DGM"
+    , cardnum : "135"
+}
+, "369017" : {
+    set : "DGM"
+    , cardnum : "136"
+}
+, "368997" : {
+    set : "DGM"
+    , cardnum : "137"
+}
+, "369096" : {
+    set : "DGM"
+    , cardnum : "138"
+}
+, "369023" : {
+    set : "DGM"
+    , cardnum : "139"
+}
+, "369035" : {
+    set : "DGM"
+    , cardnum : "140"
+}
+, "368948" : {
+    set : "DGM"
+    , cardnum : "141"
+}
+, "369078" : {
+    set : "DGM"
+    , cardnum : "142"
+}
+, "368975" : {
+    set : "DGM"
+    , cardnum : "143"
+}
+, "369060" : {
+    set : "DGM"
+    , cardnum : "144"
+}
+, "368963" : {
+    set : "DGM"
+    , cardnum : "145"
+}
+, "368974" : {
+    set : "DGM"
+    , cardnum : "146"
+}
+, "369008" : {
+    set : "DGM"
+    , cardnum : "147"
+}
+, "369058" : {
+    set : "DGM"
+    , cardnum : "148"
+}
+, "368960" : {
+    set : "DGM"
+    , cardnum : "149"
+}
+, "369040" : {
+    set : "DGM"
+    , cardnum : "150"
+}
+, "368995" : {
+    set : "DGM"
+    , cardnum : "151"
+}
+, "369038" : {
+    set : "DGM"
+    , cardnum : "152"
+}
+, "369079" : {
+    set : "DGM"
+    , cardnum : "153"
+}
+, "368990" : {
+    set : "DGM"
+    , cardnum : "154"
+}
+, "369018" : {
+    set : "DGM"
+    , cardnum : "155"
+}
+, "368959" : {
+    set : "DGM"
+    , cardnum : "156"
+}
 , "110639" : {
     set : "DIS"
     , cardnum : "1"
@@ -36227,6 +36851,10 @@ var MultiverseToCardMap = {
     set : "LRW"
     , cardnum : "7"
 }
+, "145968" : {
+    set : "LRW"
+    , cardnum : "8"
+}
 , "139664" : {
     set : "LRW"
     , cardnum : "9"
@@ -39670,10 +40298,6 @@ var MultiverseToCardMap = {
 , "241858" : {
     set : "M12"
     , cardnum : "130"
-}
-, "145968" : {
-    set : "LRW"
-    , cardnum : "8"
 }
 , "220103" : {
     set : "M12"
@@ -52019,37 +52643,37 @@ var MultiverseToCardMap = {
     set : "RAV"
     , cardnum : "63"
 }
-, "83748" : {
-    set : "RAV"
-    , cardnum : "65"
-}
 , "87986" : {
     set : "RAV"
     , cardnum : "64"
+}
+, "83748" : {
+    set : "RAV"
+    , cardnum : "65"
 }
 , "88944" : {
     set : "RAV"
     , cardnum : "66"
 }
-, "87930" : {
-    set : "RAV"
-    , cardnum : "68"
-}
 , "87904" : {
     set : "RAV"
     , cardnum : "67"
+}
+, "87930" : {
+    set : "RAV"
+    , cardnum : "68"
 }
 , "88988" : {
     set : "RAV"
     , cardnum : "69"
 }
-, "83679" : {
-    set : "RAV"
-    , cardnum : "71"
-}
 , "87905" : {
     set : "RAV"
     , cardnum : "70"
+}
+, "83679" : {
+    set : "RAV"
+    , cardnum : "71"
 }
 , "89022" : {
     set : "RAV"
@@ -52071,409 +52695,409 @@ var MultiverseToCardMap = {
     set : "RAV"
     , cardnum : "76"
 }
-, "88965" : {
-    set : "RAV"
-    , cardnum : "78"
-}
 , "89102" : {
     set : "RAV"
     , cardnum : "77"
+}
+, "88965" : {
+    set : "RAV"
+    , cardnum : "78"
 }
 , "88974" : {
     set : "RAV"
     , cardnum : "79"
 }
-, "83771" : {
-    set : "RAV"
-    , cardnum : "81"
-}
 , "83822" : {
     set : "RAV"
     , cardnum : "80"
+}
+, "83771" : {
+    set : "RAV"
+    , cardnum : "81"
 }
 , "87922" : {
     set : "RAV"
     , cardnum : "82"
 }
-, "87981" : {
-    set : "RAV"
-    , cardnum : "84"
-}
 , "87926" : {
     set : "RAV"
     , cardnum : "83"
+}
+, "87981" : {
+    set : "RAV"
+    , cardnum : "84"
 }
 , "87917" : {
     set : "RAV"
     , cardnum : "85"
 }
-, "88994" : {
-    set : "RAV"
-    , cardnum : "87"
-}
 , "89015" : {
     set : "RAV"
     , cardnum : "86"
+}
+, "88994" : {
+    set : "RAV"
+    , cardnum : "87"
 }
 , "88990" : {
     set : "RAV"
     , cardnum : "88"
 }
-, "89005" : {
-    set : "RAV"
-    , cardnum : "90"
-}
 , "89059" : {
     set : "RAV"
     , cardnum : "89"
+}
+, "89005" : {
+    set : "RAV"
+    , cardnum : "90"
 }
 , "87966" : {
     set : "RAV"
     , cardnum : "91"
 }
-, "89056" : {
-    set : "RAV"
-    , cardnum : "93"
-}
 , "83599" : {
     set : "RAV"
     , cardnum : "92"
+}
+, "89056" : {
+    set : "RAV"
+    , cardnum : "93"
 }
 , "83893" : {
     set : "RAV"
     , cardnum : "94"
 }
-, "87955" : {
-    set : "RAV"
-    , cardnum : "96"
-}
 , "89088" : {
     set : "RAV"
     , cardnum : "95"
+}
+, "87955" : {
+    set : "RAV"
+    , cardnum : "96"
 }
 , "87985" : {
     set : "RAV"
     , cardnum : "97"
 }
-, "88972" : {
-    set : "RAV"
-    , cardnum : "99"
-}
 , "88956" : {
     set : "RAV"
     , cardnum : "98"
+}
+, "88972" : {
+    set : "RAV"
+    , cardnum : "99"
 }
 , "89062" : {
     set : "RAV"
     , cardnum : "100"
 }
-, "87945" : {
-    set : "RAV"
-    , cardnum : "102"
-}
 , "83634" : {
     set : "RAV"
     , cardnum : "101"
+}
+, "87945" : {
+    set : "RAV"
+    , cardnum : "102"
 }
 , "83745" : {
     set : "RAV"
     , cardnum : "103"
 }
-, "87962" : {
-    set : "RAV"
-    , cardnum : "105"
-}
 , "88995" : {
     set : "RAV"
     , cardnum : "104"
+}
+, "87962" : {
+    set : "RAV"
+    , cardnum : "105"
 }
 , "83648" : {
     set : "RAV"
     , cardnum : "106"
 }
-, "83819" : {
-    set : "RAV"
-    , cardnum : "108"
-}
 , "87984" : {
     set : "RAV"
     , cardnum : "107"
+}
+, "83819" : {
+    set : "RAV"
+    , cardnum : "108"
 }
 , "83576" : {
     set : "RAV"
     , cardnum : "109"
 }
-, "88986" : {
-    set : "RAV"
-    , cardnum : "111"
-}
 , "88951" : {
     set : "RAV"
     , cardnum : "110"
+}
+, "88986" : {
+    set : "RAV"
+    , cardnum : "111"
 }
 , "89002" : {
     set : "RAV"
     , cardnum : "112"
 }
-, "87972" : {
-    set : "RAV"
-    , cardnum : "114"
-}
 , "89049" : {
     set : "RAV"
     , cardnum : "113"
+}
+, "87972" : {
+    set : "RAV"
+    , cardnum : "114"
 }
 , "87977" : {
     set : "RAV"
     , cardnum : "115"
 }
-, "87942" : {
-    set : "RAV"
-    , cardnum : "117"
-}
 , "89099" : {
     set : "RAV"
     , cardnum : "116"
+}
+, "87942" : {
+    set : "RAV"
+    , cardnum : "117"
 }
 , "83567" : {
     set : "RAV"
     , cardnum : "118"
 }
-, "87921" : {
-    set : "RAV"
-    , cardnum : "120"
-}
 , "87949" : {
     set : "RAV"
     , cardnum : "119"
+}
+, "87921" : {
+    set : "RAV"
+    , cardnum : "120"
 }
 , "87900" : {
     set : "RAV"
     , cardnum : "121"
 }
-, "83912" : {
-    set : "RAV"
-    , cardnum : "123"
-}
 , "83620" : {
     set : "RAV"
     , cardnum : "122"
+}
+, "83912" : {
+    set : "RAV"
+    , cardnum : "123"
 }
 , "87953" : {
     set : "RAV"
     , cardnum : "124"
 }
-, "87968" : {
-    set : "RAV"
-    , cardnum : "126"
-}
 , "87947" : {
     set : "RAV"
     , cardnum : "125"
+}
+, "87968" : {
+    set : "RAV"
+    , cardnum : "126"
 }
 , "87965" : {
     set : "RAV"
     , cardnum : "127"
 }
-, "87934" : {
-    set : "RAV"
-    , cardnum : "129"
-}
 , "83803" : {
     set : "RAV"
     , cardnum : "128"
+}
+, "87934" : {
+    set : "RAV"
+    , cardnum : "129"
 }
 , "83712" : {
     set : "RAV"
     , cardnum : "130"
 }
-, "87993" : {
-    set : "RAV"
-    , cardnum : "132"
-}
 , "89086" : {
     set : "RAV"
     , cardnum : "131"
+}
+, "87993" : {
+    set : "RAV"
+    , cardnum : "132"
 }
 , "87897" : {
     set : "RAV"
     , cardnum : "133"
 }
-, "88982" : {
-    set : "RAV"
-    , cardnum : "135"
-}
 , "88997" : {
     set : "RAV"
     , cardnum : "134"
+}
+, "88982" : {
+    set : "RAV"
+    , cardnum : "135"
 }
 , "89080" : {
     set : "RAV"
     , cardnum : "136"
 }
-, "87943" : {
-    set : "RAV"
-    , cardnum : "138"
-}
 , "87902" : {
     set : "RAV"
     , cardnum : "137"
+}
+, "87943" : {
+    set : "RAV"
+    , cardnum : "138"
 }
 , "89087" : {
     set : "RAV"
     , cardnum : "139"
 }
-, "83829" : {
-    set : "RAV"
-    , cardnum : "141"
-}
 , "87937" : {
     set : "RAV"
     , cardnum : "140"
+}
+, "83829" : {
+    set : "RAV"
+    , cardnum : "141"
 }
 , "87909" : {
     set : "RAV"
     , cardnum : "142"
 }
-, "87967" : {
-    set : "RAV"
-    , cardnum : "144"
-}
 , "83646" : {
     set : "RAV"
     , cardnum : "143"
+}
+, "87967" : {
+    set : "RAV"
+    , cardnum : "144"
 }
 , "89105" : {
     set : "RAV"
     , cardnum : "145"
 }
-, "89004" : {
-    set : "RAV"
-    , cardnum : "147"
-}
 , "87956" : {
     set : "RAV"
     , cardnum : "146"
+}
+, "89004" : {
+    set : "RAV"
+    , cardnum : "147"
 }
 , "87974" : {
     set : "RAV"
     , cardnum : "148"
 }
-, "89084" : {
-    set : "RAV"
-    , cardnum : "150"
-}
 , "83605" : {
     set : "RAV"
     , cardnum : "149"
+}
+, "89084" : {
+    set : "RAV"
+    , cardnum : "150"
 }
 , "87971" : {
     set : "RAV"
     , cardnum : "151"
 }
-, "83688" : {
-    set : "RAV"
-    , cardnum : "153"
-}
 , "88946" : {
     set : "RAV"
     , cardnum : "152"
+}
+, "83688" : {
+    set : "RAV"
+    , cardnum : "153"
 }
 , "87964" : {
     set : "RAV"
     , cardnum : "154"
 }
-, "89064" : {
-    set : "RAV"
-    , cardnum : "156"
-}
 , "89048" : {
     set : "RAV"
     , cardnum : "155"
+}
+, "89064" : {
+    set : "RAV"
+    , cardnum : "156"
 }
 , "83584" : {
     set : "RAV"
     , cardnum : "157"
 }
-, "88968" : {
-    set : "RAV"
-    , cardnum : "159"
-}
 , "89116" : {
     set : "RAV"
     , cardnum : "158"
+}
+, "88968" : {
+    set : "RAV"
+    , cardnum : "159"
 }
 , "87958" : {
     set : "RAV"
     , cardnum : "160"
 }
-, "87928" : {
-    set : "RAV"
-    , cardnum : "162"
-}
 , "83833" : {
     set : "RAV"
     , cardnum : "161"
+}
+, "87928" : {
+    set : "RAV"
+    , cardnum : "162"
 }
 , "87970" : {
     set : "RAV"
     , cardnum : "163"
 }
-, "87940" : {
-    set : "RAV"
-    , cardnum : "165"
-}
 , "83672" : {
     set : "RAV"
     , cardnum : "164"
+}
+, "87940" : {
+    set : "RAV"
+    , cardnum : "165"
 }
 , "89019" : {
     set : "RAV"
     , cardnum : "166"
 }
-, "88959" : {
-    set : "RAV"
-    , cardnum : "168"
-}
 , "88960" : {
     set : "RAV"
     , cardnum : "167"
+}
+, "88959" : {
+    set : "RAV"
+    , cardnum : "168"
 }
 , "87899" : {
     set : "RAV"
     , cardnum : "169"
 }
-, "87916" : {
-    set : "RAV"
-    , cardnum : "171"
-}
 , "89079" : {
     set : "RAV"
     , cardnum : "170"
+}
+, "87916" : {
+    set : "RAV"
+    , cardnum : "171"
 }
 , "89001" : {
     set : "RAV"
     , cardnum : "172"
 }
-, "83913" : {
-    set : "RAV"
-    , cardnum : "174"
-}
 , "89009" : {
     set : "RAV"
     , cardnum : "173"
+}
+, "83913" : {
+    set : "RAV"
+    , cardnum : "174"
 }
 , "89044" : {
     set : "RAV"
     , cardnum : "175"
 }
-, "89083" : {
-    set : "RAV"
-    , cardnum : "177"
-}
 , "83744" : {
     set : "RAV"
     , cardnum : "176"
+}
+, "89083" : {
+    set : "RAV"
+    , cardnum : "177"
 }
 , "88966" : {
     set : "RAV"
@@ -52495,613 +53119,613 @@ var MultiverseToCardMap = {
     set : "RAV"
     , cardnum : "182"
 }
-, "89041" : {
-    set : "RAV"
-    , cardnum : "184"
-}
 , "87932" : {
     set : "RAV"
     , cardnum : "183"
+}
+, "89041" : {
+    set : "RAV"
+    , cardnum : "184"
 }
 , "87927" : {
     set : "RAV"
     , cardnum : "185"
 }
-, "89107" : {
-    set : "RAV"
-    , cardnum : "187"
-}
 , "87946" : {
     set : "RAV"
     , cardnum : "186"
+}
+, "89107" : {
+    set : "RAV"
+    , cardnum : "187"
 }
 , "88979" : {
     set : "RAV"
     , cardnum : "188"
 }
-, "89101" : {
-    set : "RAV"
-    , cardnum : "190"
-}
 , "83559" : {
     set : "RAV"
     , cardnum : "189"
+}
+, "89101" : {
+    set : "RAV"
+    , cardnum : "190"
 }
 , "89096" : {
     set : "RAV"
     , cardnum : "191"
 }
-, "83588" : {
-    set : "RAV"
-    , cardnum : "193"
-}
 , "89000" : {
     set : "RAV"
     , cardnum : "192"
+}
+, "83588" : {
+    set : "RAV"
+    , cardnum : "193"
 }
 , "89068" : {
     set : "RAV"
     , cardnum : "194"
 }
-, "89111" : {
-    set : "RAV"
-    , cardnum : "196"
-}
 , "89053" : {
     set : "RAV"
     , cardnum : "195"
+}
+, "89111" : {
+    set : "RAV"
+    , cardnum : "196"
 }
 , "89037" : {
     set : "RAV"
     , cardnum : "197"
 }
-, "87923" : {
-    set : "RAV"
-    , cardnum : "199"
-}
 , "87995" : {
     set : "RAV"
     , cardnum : "198"
+}
+, "87923" : {
+    set : "RAV"
+    , cardnum : "199"
 }
 , "89017" : {
     set : "RAV"
     , cardnum : "200"
 }
-, "83850" : {
-    set : "RAV"
-    , cardnum : "202"
-}
 , "87906" : {
     set : "RAV"
     , cardnum : "201"
+}
+, "83850" : {
+    set : "RAV"
+    , cardnum : "202"
 }
 , "87987" : {
     set : "RAV"
     , cardnum : "203"
 }
-, "89074" : {
-    set : "RAV"
-    , cardnum : "205"
-}
 , "87989" : {
     set : "RAV"
     , cardnum : "204"
+}
+, "89074" : {
+    set : "RAV"
+    , cardnum : "205"
 }
 , "83562" : {
     set : "RAV"
     , cardnum : "206"
 }
-, "83597" : {
-    set : "RAV"
-    , cardnum : "208"
-}
 , "89027" : {
     set : "RAV"
     , cardnum : "207"
+}
+, "83597" : {
+    set : "RAV"
+    , cardnum : "208"
 }
 , "89069" : {
     set : "RAV"
     , cardnum : "209"
 }
-, "89073" : {
-    set : "RAV"
-    , cardnum : "211"
-}
 , "89038" : {
     set : "RAV"
     , cardnum : "210"
+}
+, "89073" : {
+    set : "RAV"
+    , cardnum : "211"
 }
 , "89030" : {
     set : "RAV"
     , cardnum : "212"
 }
-, "83738" : {
-    set : "RAV"
-    , cardnum : "214"
-}
 , "87908" : {
     set : "RAV"
     , cardnum : "213"
+}
+, "83738" : {
+    set : "RAV"
+    , cardnum : "214"
 }
 , "89054" : {
     set : "RAV"
     , cardnum : "215"
 }
-, "87992" : {
-    set : "RAV"
-    , cardnum : "217"
-}
 , "83631" : {
     set : "RAV"
     , cardnum : "216"
+}
+, "87992" : {
+    set : "RAV"
+    , cardnum : "217"
 }
 , "88969" : {
     set : "RAV"
     , cardnum : "218"
 }
-, "89114" : {
-    set : "RAV"
-    , cardnum : "220"
-}
 , "89011" : {
     set : "RAV"
     , cardnum : "219"
+}
+, "89114" : {
+    set : "RAV"
+    , cardnum : "220"
 }
 , "89063" : {
     set : "RAV"
     , cardnum : "221"
 }
-, "89061" : {
-    set : "RAV"
-    , cardnum : "223"
-}
 , "83680" : {
     set : "RAV"
     , cardnum : "222"
+}
+, "89061" : {
+    set : "RAV"
+    , cardnum : "223"
 }
 , "89115" : {
     set : "RAV"
     , cardnum : "224"
 }
-, "89117" : {
-    set : "RAV"
-    , cardnum : "226"
-}
 , "89113" : {
     set : "RAV"
     , cardnum : "225"
+}
+, "89117" : {
+    set : "RAV"
+    , cardnum : "226"
 }
 , "89075" : {
     set : "RAV"
     , cardnum : "227"
 }
-, "83880" : {
-    set : "RAV"
-    , cardnum : "229"
-}
 , "87936" : {
     set : "RAV"
     , cardnum : "228"
+}
+, "83880" : {
+    set : "RAV"
+    , cardnum : "229"
 }
 , "89021" : {
     set : "RAV"
     , cardnum : "230"
 }
-, "109082" : {
-    set : "RAV"
-    , cardnum : "232"
-}
 , "83746" : {
     set : "RAV"
     , cardnum : "231"
+}
+, "109082" : {
+    set : "RAV"
+    , cardnum : "232"
 }
 , "89070" : {
     set : "RAV"
     , cardnum : "233"
 }
-, "83611" : {
-    set : "RAV"
-    , cardnum : "235"
-}
 , "89092" : {
     set : "RAV"
     , cardnum : "234"
+}
+, "83611" : {
+    set : "RAV"
+    , cardnum : "235"
 }
 , "89110" : {
     set : "RAV"
     , cardnum : "236"
 }
-, "89082" : {
-    set : "RAV"
-    , cardnum : "238"
-}
 , "89052" : {
     set : "RAV"
     , cardnum : "237"
+}
+, "89082" : {
+    set : "RAV"
+    , cardnum : "238"
 }
 , "83625" : {
     set : "RAV"
     , cardnum : "239"
 }
-, "83908" : {
-    set : "RAV"
-    , cardnum : "241"
-}
 , "83747" : {
     set : "RAV"
     , cardnum : "240"
+}
+, "83908" : {
+    set : "RAV"
+    , cardnum : "241"
 }
 , "87918" : {
     set : "RAV"
     , cardnum : "242"
 }
-, "87959" : {
-    set : "RAV"
-    , cardnum : "244"
-}
 , "88992" : {
     set : "RAV"
     , cardnum : "243"
+}
+, "87959" : {
+    set : "RAV"
+    , cardnum : "244"
 }
 , "87990" : {
     set : "RAV"
     , cardnum : "245"
 }
-, "83702" : {
-    set : "RAV"
-    , cardnum : "247"
-}
 , "83933" : {
     set : "RAV"
     , cardnum : "246"
+}
+, "83702" : {
+    set : "RAV"
+    , cardnum : "247"
 }
 , "83838" : {
     set : "RAV"
     , cardnum : "248"
 }
-, "83572" : {
-    set : "RAV"
-    , cardnum : "250"
-}
 , "83834" : {
     set : "RAV"
     , cardnum : "249"
+}
+, "83572" : {
+    set : "RAV"
+    , cardnum : "250"
 }
 , "83720" : {
     set : "RAV"
     , cardnum : "251"
 }
-, "83827" : {
-    set : "RAV"
-    , cardnum : "253"
-}
 , "87988" : {
     set : "RAV"
     , cardnum : "252"
+}
+, "83827" : {
+    set : "RAV"
+    , cardnum : "253"
 }
 , "83928" : {
     set : "RAV"
     , cardnum : "254"
 }
-, "89018" : {
-    set : "RAV"
-    , cardnum : "256"
-}
 , "95537" : {
     set : "RAV"
     , cardnum : "255"
+}
+, "89018" : {
+    set : "RAV"
+    , cardnum : "256"
 }
 , "89089" : {
     set : "RAV"
     , cardnum : "257"
 }
-, "89035" : {
-    set : "RAV"
-    , cardnum : "259"
-}
 , "83903" : {
     set : "RAV"
     , cardnum : "258"
+}
+, "89035" : {
+    set : "RAV"
+    , cardnum : "259"
 }
 , "95535" : {
     set : "RAV"
     , cardnum : "260"
 }
-, "95536" : {
-    set : "RAV"
-    , cardnum : "262"
-}
 , "83719" : {
     set : "RAV"
     , cardnum : "261"
+}
+, "95536" : {
+    set : "RAV"
+    , cardnum : "262"
 }
 , "83619" : {
     set : "RAV"
     , cardnum : "263"
 }
-, "89008" : {
-    set : "RAV"
-    , cardnum : "265"
-}
 , "88977" : {
     set : "RAV"
     , cardnum : "264"
+}
+, "89008" : {
+    set : "RAV"
+    , cardnum : "265"
 }
 , "83726" : {
     set : "RAV"
     , cardnum : "266"
 }
-, "89090" : {
-    set : "RAV"
-    , cardnum : "268"
-}
 , "83730" : {
     set : "RAV"
     , cardnum : "267"
+}
+, "89090" : {
+    set : "RAV"
+    , cardnum : "268"
 }
 , "83556" : {
     set : "RAV"
     , cardnum : "269"
 }
-, "89003" : {
-    set : "RAV"
-    , cardnum : "271"
-}
 , "95538" : {
     set : "RAV"
     , cardnum : "270"
+}
+, "89003" : {
+    set : "RAV"
+    , cardnum : "271"
 }
 , "83618" : {
     set : "RAV"
     , cardnum : "272"
 }
-, "88991" : {
-    set : "RAV"
-    , cardnum : "274"
-}
 , "83629" : {
     set : "RAV"
     , cardnum : "273"
+}
+, "88991" : {
+    set : "RAV"
+    , cardnum : "274"
 }
 , "83900" : {
     set : "RAV"
     , cardnum : "275"
 }
-, "88943" : {
-    set : "RAV"
-    , cardnum : "277"
-}
 , "87929" : {
     set : "RAV"
     , cardnum : "276"
+}
+, "88943" : {
+    set : "RAV"
+    , cardnum : "277"
 }
 , "87939" : {
     set : "RAV"
     , cardnum : "278"
 }
-, "89066" : {
-    set : "RAV"
-    , cardnum : "280"
-}
 , "89072" : {
     set : "RAV"
     , cardnum : "279"
+}
+, "89066" : {
+    set : "RAV"
+    , cardnum : "280"
 }
 , "87963" : {
     set : "RAV"
     , cardnum : "281"
 }
-, "89045" : {
-    set : "RAV"
-    , cardnum : "283"
-}
 , "83794" : {
     set : "RAV"
     , cardnum : "282"
+}
+, "89045" : {
+    set : "RAV"
+    , cardnum : "283"
 }
 , "89093" : {
     set : "RAV"
     , cardnum : "284"
 }
-, "83731" : {
-    set : "RAV"
-    , cardnum : "286"
-}
 , "89016" : {
     set : "RAV"
     , cardnum : "285"
+}
+, "83731" : {
+    set : "RAV"
+    , cardnum : "286"
 }
 , "95112" : {
     set : "RAV"
     , cardnum : "287"
 }
-, "95110" : {
-    set : "RAV"
-    , cardnum : "289"
-}
 , "95107" : {
     set : "RAV"
     , cardnum : "288"
+}
+, "95110" : {
+    set : "RAV"
+    , cardnum : "289"
 }
 , "95104" : {
     set : "RAV"
     , cardnum : "290"
 }
-, "193658" : {
-    set : "ROE"
-    , cardnum : "1"
-}
 , "95099" : {
     set : "RAV"
     , cardnum : "291"
+}
+, "193658" : {
+    set : "ROE"
+    , cardnum : "1"
 }
 , "193429" : {
     set : "ROE"
     , cardnum : "2"
 }
-, "193452" : {
-    set : "ROE"
-    , cardnum : "4"
-}
 , "193492" : {
     set : "ROE"
     , cardnum : "3"
+}
+, "193452" : {
+    set : "ROE"
+    , cardnum : "4"
 }
 , "193616" : {
     set : "ROE"
     , cardnum : "5"
 }
-, "198171" : {
-    set : "ROE"
-    , cardnum : "7"
-}
 , "193632" : {
     set : "ROE"
     , cardnum : "6"
+}
+, "198171" : {
+    set : "ROE"
+    , cardnum : "7"
 }
 , "198296" : {
     set : "ROE"
     , cardnum : "8"
 }
-, "193614" : {
-    set : "ROE"
-    , cardnum : "10"
-}
 , "193607" : {
     set : "ROE"
     , cardnum : "9"
+}
+, "193614" : {
+    set : "ROE"
+    , cardnum : "10"
 }
 , "193535" : {
     set : "ROE"
     , cardnum : "11"
 }
-, "194908" : {
-    set : "ROE"
-    , cardnum : "13"
-}
 , "194911" : {
     set : "ROE"
     , cardnum : "12"
+}
+, "194908" : {
+    set : "ROE"
+    , cardnum : "13"
 }
 , "198305" : {
     set : "ROE"
     , cardnum : "14"
 }
-, "193558" : {
-    set : "ROE"
-    , cardnum : "16"
-}
 , "194918" : {
     set : "ROE"
     , cardnum : "15"
+}
+, "193558" : {
+    set : "ROE"
+    , cardnum : "16"
 }
 , "193629" : {
     set : "ROE"
     , cardnum : "17"
 }
-, "194941" : {
-    set : "ROE"
-    , cardnum : "19"
-}
 , "198313" : {
     set : "ROE"
     , cardnum : "18"
+}
+, "194941" : {
+    set : "ROE"
+    , cardnum : "19"
 }
 , "194949" : {
     set : "ROE"
     , cardnum : "20"
 }
-, "193445" : {
-    set : "ROE"
-    , cardnum : "22"
-}
 , "193557" : {
     set : "ROE"
     , cardnum : "21"
+}
+, "193445" : {
+    set : "ROE"
+    , cardnum : "22"
 }
 , "198165" : {
     set : "ROE"
     , cardnum : "23"
 }
-, "198294" : {
-    set : "ROE"
-    , cardnum : "25"
-}
 , "193421" : {
     set : "ROE"
     , cardnum : "24"
+}
+, "198294" : {
+    set : "ROE"
+    , cardnum : "25"
 }
 , "198176" : {
     set : "ROE"
     , cardnum : "26"
 }
-, "194951" : {
-    set : "ROE"
-    , cardnum : "28"
-}
 , "193433" : {
     set : "ROE"
     , cardnum : "27"
+}
+, "194951" : {
+    set : "ROE"
+    , cardnum : "28"
 }
 , "193550" : {
     set : "ROE"
     , cardnum : "29"
 }
-, "193463" : {
-    set : "ROE"
-    , cardnum : "31"
-}
 , "193544" : {
     set : "ROE"
     , cardnum : "30"
+}
+, "193463" : {
+    set : "ROE"
+    , cardnum : "31"
 }
 , "193660" : {
     set : "ROE"
     , cardnum : "32"
 }
-, "193549" : {
-    set : "ROE"
-    , cardnum : "34"
-}
 , "193426" : {
     set : "ROE"
     , cardnum : "33"
+}
+, "193549" : {
+    set : "ROE"
+    , cardnum : "34"
 }
 , "193514" : {
     set : "ROE"
     , cardnum : "35"
 }
-, "193467" : {
-    set : "ROE"
-    , cardnum : "37"
-}
 , "193541" : {
     set : "ROE"
     , cardnum : "36"
+}
+, "193467" : {
+    set : "ROE"
+    , cardnum : "37"
 }
 , "198180" : {
     set : "ROE"
     , cardnum : "38"
 }
-, "193566" : {
-    set : "ROE"
-    , cardnum : "40"
-}
 , "194923" : {
     set : "ROE"
     , cardnum : "39"
+}
+, "193566" : {
+    set : "ROE"
+    , cardnum : "40"
 }
 , "194930" : {
     set : "ROE"
     , cardnum : "41"
 }
-, "193499" : {
-    set : "ROE"
-    , cardnum : "43"
-}
 , "193595" : {
     set : "ROE"
     , cardnum : "42"
+}
+, "193499" : {
+    set : "ROE"
+    , cardnum : "43"
 }
 , "193615" : {
     set : "ROE"
@@ -53123,13 +53747,13 @@ var MultiverseToCardMap = {
     set : "ROE"
     , cardnum : "48"
 }
-, "194917" : {
-    set : "ROE"
-    , cardnum : "50"
-}
 , "198175" : {
     set : "ROE"
     , cardnum : "49"
+}
+, "194917" : {
+    set : "ROE"
+    , cardnum : "50"
 }
 , "193416" : {
     set : "ROE"
@@ -63435,13 +64059,13 @@ var MultiverseToCardMap = {
     set : "USG"
     , cardnum : "120"
 }
-, "5620" : {
-    set : "USG"
-    , cardnum : "122"
-}
 , "5567" : {
     set : "USG"
     , cardnum : "121"
+}
+, "5620" : {
+    set : "USG"
+    , cardnum : "122"
 }
 , "5768" : {
     set : "USG"
@@ -64095,6 +64719,10 @@ var MultiverseToCardMap = {
     set : "USG"
     , cardnum : "285"
 }
+, "5735" : {
+    set : "USG"
+    , cardnum : "286"
+}
 , "10659" : {
     set : "USG"
     , cardnum : "287"
@@ -64102,10 +64730,6 @@ var MultiverseToCardMap = {
 , "8858" : {
     set : "USG"
     , cardnum : "288"
-}
-, "5735" : {
-    set : "USG"
-    , cardnum : "286"
 }
 , "8868" : {
     set : "USG"

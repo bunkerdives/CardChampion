@@ -476,7 +476,7 @@ ALA = {
         
             , '230' : {
                 'name' : 'Forest'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'
@@ -487,7 +487,7 @@ ALA = {
         
             , '228' : {
                 'name' : 'Swamp'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'
@@ -1532,7 +1532,7 @@ ALA = {
         
             , '229' : {
                 'name' : 'Mountain'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'
@@ -1708,7 +1708,7 @@ ALA = {
         
             , '226' : {
                 'name' : 'Plains'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'
@@ -2643,7 +2643,7 @@ ALA = {
         
             , '227' : {
                 'name' : 'Island'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'

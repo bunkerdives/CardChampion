@@ -346,7 +346,7 @@ var newWolfRunBantDeck = function() {
                     total : 1
                     , card : {
                         'name' : 'Island'
-                        , 'rarity' : 'L'
+                        , 'rarity' : 'C'
                         , 'color' : 'A'
                         , 'cost' : ''
                         , 'cmc' : '0'
@@ -648,7 +648,7 @@ var newDelverDeck = function() {
                     total : 8
                     , card : {
                         'name' : 'Island'
-                        , 'rarity' : 'L'
+                        , 'rarity' : 'C'
                         , 'color' : 'A'
                         , 'cost' : ''
                         , 'cmc' : '0'
@@ -661,7 +661,7 @@ var newDelverDeck = function() {
                     total : 4
                     , card : {
                         'name' : 'Mountain'
-                        , 'rarity' : 'L'
+                        , 'rarity' : 'C'
                         , 'color' : 'A'
                         , 'cost' : ''
                         , 'cmc' : '0'

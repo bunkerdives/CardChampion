@@ -433,7 +433,7 @@ SOM = {
         
             , '231' : {
                 'name' : 'Forest'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'
@@ -444,7 +444,7 @@ SOM = {
         
             , '229' : {
                 'name' : 'Swamp'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'
@@ -1632,7 +1632,7 @@ SOM = {
         
             , '230' : {
                 'name' : 'Mountain'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'
@@ -1797,7 +1797,7 @@ SOM = {
         
             , '227' : {
                 'name' : 'Plains'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'
@@ -2655,7 +2655,7 @@ SOM = {
         
             , '228' : {
                 'name' : 'Island'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'

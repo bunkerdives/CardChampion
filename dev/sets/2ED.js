@@ -429,7 +429,7 @@ ED2 = {
         
             , '240' : {
                 'name' : 'Swamp'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'
@@ -1991,7 +1991,7 @@ ED2 = {
         
             , '92' : {
                 'name' : 'Forest'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'
@@ -2838,7 +2838,7 @@ ED2 = {
         
             , '165' : {
                 'name' : 'Mountain'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'
@@ -2948,7 +2948,7 @@ ED2 = {
         
             , '189' : {
                 'name' : 'Plains'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'
@@ -3366,7 +3366,7 @@ ED2 = {
         
             , '127' : {
                 'name' : 'Island'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'

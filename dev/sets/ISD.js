@@ -453,7 +453,7 @@ ISD = {
         
             , '270' : {
                 'name' : 'Swamp'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'
@@ -1993,7 +1993,7 @@ ISD = {
         
             , '272' : {
                 'name' : 'Forest'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'
@@ -2532,7 +2532,7 @@ ISD = {
         
             , '271' : {
                 'name' : 'Mountain'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'
@@ -2697,7 +2697,7 @@ ISD = {
         
             , '268' : {
                 'name' : 'Plains'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'
@@ -3236,7 +3236,7 @@ ISD = {
         
             , '269' : {
                 'name' : 'Island'
-                , 'rarity' : 'L'
+                , 'rarity' : 'C'
                 , 'color' : 'A'
                 , 'cost' : ''
                 , 'cmc' : '0'

@@ -527,7 +527,7 @@ E10 = {
             
                 , '366' : {
                     'name' : 'Swamp'
-                    , 'rarity' : 'L'
+                    , 'rarity' : 'C'
                     , 'color' : 'A'
                     , 'cost' : ''
                     , 'cmc' : '0'
@@ -2474,7 +2474,7 @@ E10 = {
             
                 , '368' : {
                     'name' : 'Forest'
-                    , 'rarity' : 'L'
+                    , 'rarity' : 'C'
                     , 'color' : 'A'
                     , 'cost' : ''
                     , 'cmc' : '0'
@@ -3398,7 +3398,7 @@ E10 = {
             
                 , '367' : {
                     'name' : 'Mountain'
-                    , 'rarity' : 'L'
+                    , 'rarity' : 'C'
                     , 'color' : 'A'
                     , 'cost' : ''
                     , 'cmc' : '0'
@@ -3519,7 +3519,7 @@ E10 = {
             
                 , '364' : {
                     'name' : 'Plains'
-                    , 'rarity' : 'L'
+                    , 'rarity' : 'C'
                     , 'color' : 'A'
                     , 'cost' : ''
                     , 'cmc' : '0'
@@ -4311,7 +4311,7 @@ E10 = {
             
                 , '365' : {
                     'name' : 'Island'
-                    , 'rarity' : 'L'
+                    , 'rarity' : 'C'
                     , 'color' : 'A'
                     , 'cost' : ''
                     , 'cmc' : '0'

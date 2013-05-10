@@ -479,7 +479,7 @@ ED8 = {
             
                 , '340' : {
                     'name' : 'Swamp'
-                    , 'rarity' : 'L'
+                    , 'rarity' : 'C'
                     , 'color' : 'A'
                     , 'cost' : ''
                     , 'cmc' : '0'
@@ -2151,7 +2151,7 @@ ED8 = {
             
                 , '342' : {
                     'name' : 'Forest'
-                    , 'rarity' : 'L'
+                    , 'rarity' : 'C'
                     , 'color' : 'A'
                     , 'cost' : ''
                     , 'cmc' : '0'
@@ -3097,7 +3097,7 @@ ED8 = {
             
                 , '341' : {
                     'name' : 'Mountain'
-                    , 'rarity' : 'L'
+                    , 'rarity' : 'C'
                     , 'color' : 'A'
                     , 'cost' : ''
                     , 'cmc' : '0'
@@ -3207,7 +3207,7 @@ ED8 = {
             
                 , '338' : {
                     'name' : 'Plains'
-                    , 'rarity' : 'L'
+                    , 'rarity' : 'C'
                     , 'color' : 'A'
                     , 'cost' : ''
                     , 'cmc' : '0'
@@ -3966,7 +3966,7 @@ ED8 = {
             
                 , '339' : {
                     'name' : 'Island'
-                    , 'rarity' : 'L'
+                    , 'rarity' : 'C'
                     , 'color' : 'A'
                     , 'cost' : ''
                     , 'cmc' : '0'

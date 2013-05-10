@@ -16739,12 +16739,12 @@ var MultiverseToNameSetMapNew = {
     name : "Forest"
     , set : "ZEN"
 }
-, "197769" : {
-    name : "Apex Hawks"
-    , set : "WWK"
-}
 , "197160" : {
     name : "Admonition Angel"
+    , set : "WWK"
+}
+, "197769" : {
+    name : "Apex Hawks"
     , set : "WWK"
 }
 , "201575" : {
@@ -17315,12 +17315,12 @@ var MultiverseToNameSetMapNew = {
     name : "Tectonic Edge"
     , set : "WWK"
 }
-, "193429" : {
-    name : "Artisan of Kozilek"
-    , set : "ROE"
-}
 , "193658" : {
     name : "All Is Dust"
+    , set : "ROE"
+}
+, "193429" : {
+    name : "Artisan of Kozilek"
     , set : "ROE"
 }
 , "193492" : {
@@ -18003,12 +18003,12 @@ var MultiverseToNameSetMapNew = {
     name : "Wrap in Flames"
     , set : "ROE"
 }
-, "193478" : {
-    name : "Aura Gnarlid"
-    , set : "ROE"
-}
 , "193437" : {
     name : "Ancient Stirrings"
+    , set : "ROE"
+}
+, "193478" : {
+    name : "Aura Gnarlid"
     , set : "ROE"
 }
 , "193507" : {
@@ -18251,12 +18251,12 @@ var MultiverseToNameSetMapNew = {
     name : "Auriok Edgewright"
     , set : "SOM"
 }
-, "209015" : {
-    name : "Dispense Justice"
-    , set : "SOM"
-}
 , "208249" : {
     name : "Auriok Sunchaser"
+    , set : "SOM"
+}
+, "209015" : {
+    name : "Dispense Justice"
     , set : "SOM"
 }
 , "205488" : {
@@ -19739,12 +19739,12 @@ var MultiverseToNameSetMapNew = {
     name : "Inkmoth Nexus"
     , set : "MBS"
 }
-, "220365" : {
-    name : "Island"
-    , set : "MBS"
-}
 , "220366" : {
     name : "Plains"
+    , set : "MBS"
+}
+, "220365" : {
+    name : "Island"
     , set : "MBS"
 }
 , "220368" : {
@@ -21079,12 +21079,12 @@ var MultiverseToNameSetMapNew = {
     name : "Terror of Kruin Pass"
     , set : "ISD"
 }
-, "220386" : {
-    name : "Nightbird's Clutches"
-    , set : "ISD"
-}
 , "226879" : {
     name : "Night Revelers"
+    , set : "ISD"
+}
+, "220386" : {
+    name : "Nightbird's Clutches"
     , set : "ISD"
 }
 , "245197" : {
@@ -21419,16 +21419,16 @@ var MultiverseToNameSetMapNew = {
     name : "Manor Gargoyle"
     , set : "ISD"
 }
+, "221193" : {
+    name : "Mask of Avacyn"
+    , set : "ISD"
+}
 , "220045" : {
     name : "One-Eyed Scarecrow"
     , set : "ISD"
 }
 , "244681" : {
     name : "Runechanter's Pike"
-    , set : "ISD"
-}
-, "221193" : {
-    name : "Mask of Avacyn"
     , set : "ISD"
 }
 , "220642" : {
@@ -21527,12 +21527,12 @@ var MultiverseToNameSetMapNew = {
     name : "Liliana of the Veil"
     , set : "ISD"
 }
-, "262858" : {
-    name : "Bar the Door"
-    , set : "DKA"
-}
 , "244691" : {
     name : "Archangel's Light"
+    , set : "DKA"
+}
+, "262858" : {
+    name : "Bar the Door"
     , set : "DKA"
 }
 , "262702" : {
@@ -22691,12 +22691,12 @@ var MultiverseToNameSetMapNew = {
     name : "Triumph of Cruelty"
     , set : "AVR"
 }
-, "239974" : {
-    name : "Unhallowed Pact"
-    , set : "AVR"
-}
 , "240171" : {
     name : "Undead Executioner"
+    , set : "AVR"
+}
+, "239974" : {
+    name : "Unhallowed Pact"
     , set : "AVR"
 }
 , "275707" : {
@@ -25131,6 +25131,630 @@ var MultiverseToNameSetMapNew = {
     name : "Watery Grave"
     , set : "GTC"
 }
+, "369028" : {
+    name : "Boros Mastiff"
+    , set : "DGM"
+}
+, "369077" : {
+    name : "Haazda Snare Squad"
+    , set : "DGM"
+}
+, "368965" : {
+    name : "Lyev Decree"
+    , set : "DGM"
+}
+, "368976" : {
+    name : "Maze Sentinel"
+    , set : "DGM"
+}
+, "368993" : {
+    name : "Renounce the Guilds"
+    , set : "DGM"
+}
+, "368979" : {
+    name : "Riot Control"
+    , set : "DGM"
+}
+, "369092" : {
+    name : "Scion of Vitu-Ghazi"
+    , set : "DGM"
+}
+, "368992" : {
+    name : "Steeple Roc"
+    , set : "DGM"
+}
+, "368949" : {
+    name : "Sunspire Gatekeepers"
+    , set : "DGM"
+}
+, "369012" : {
+    name : "Wake the Reflections"
+    , set : "DGM"
+}
+, "368961" : {
+    name : "Aetherling"
+    , set : "DGM"
+}
+, "369021" : {
+    name : "Hidden Strings"
+    , set : "DGM"
+}
+, "369014" : {
+    name : "Maze Glider"
+    , set : "DGM"
+}
+, "368980" : {
+    name : "Mindstatic"
+    , set : "DGM"
+}
+, "369007" : {
+    name : "Murmuring Phantasm"
+    , set : "DGM"
+}
+, "368996" : {
+    name : "Opal Lake Gatekeepers"
+    , set : "DGM"
+}
+, "368966" : {
+    name : "Runner's Bane"
+    , set : "DGM"
+}
+, "369034" : {
+    name : "Trait Doctoring"
+    , set : "DGM"
+}
+, "369010" : {
+    name : "Uncovered Clues"
+    , set : "DGM"
+}
+, "369037" : {
+    name : "Wind Drake"
+    , set : "DGM"
+}
+, "369044" : {
+    name : "Bane Alley Blackguard"
+    , set : "DGM"
+}
+, "369030" : {
+    name : "Blood Scrivener"
+    , set : "DGM"
+}
+, "369056" : {
+    name : "Crypt Incursion"
+    , set : "DGM"
+}
+, "368962" : {
+    name : "Fatal Fumes"
+    , set : "DGM"
+}
+, "369048" : {
+    name : "Hired Torturer"
+    , set : "DGM"
+}
+, "369050" : {
+    name : "Maze Abomination"
+    , set : "DGM"
+}
+, "369006" : {
+    name : "Pontiff of Blight"
+    , set : "DGM"
+}
+, "369085" : {
+    name : "Rakdos Drake"
+    , set : "DGM"
+}
+, "369043" : {
+    name : "Sinister Possession"
+    , set : "DGM"
+}
+, "369046" : {
+    name : "Ubul Sar Gatekeepers"
+    , set : "DGM"
+}
+, "369053" : {
+    name : "Awe for the Guilds"
+    , set : "DGM"
+}
+, "369029" : {
+    name : "Clear a Path"
+    , set : "DGM"
+}
+, "369076" : {
+    name : "Maze Rusher"
+    , set : "DGM"
+}
+, "369013" : {
+    name : "Possibility Storm"
+    , set : "DGM"
+}
+, "369090" : {
+    name : "Punish the Enemy"
+    , set : "DGM"
+}
+, "368946" : {
+    name : "Pyrewild Shaman"
+    , set : "DGM"
+}
+, "368998" : {
+    name : "Riot Piker"
+    , set : "DGM"
+}
+, "369075" : {
+    name : "Rubblebelt Maaka"
+    , set : "DGM"
+}
+, "369067" : {
+    name : "Smelt-Ward Gatekeepers"
+    , set : "DGM"
+}
+, "369004" : {
+    name : "Weapon Surge"
+    , set : "DGM"
+}
+, "368984" : {
+    name : "Battering Krasis"
+    , set : "DGM"
+}
+, "369059" : {
+    name : "Kraul Warrior"
+    , set : "DGM"
+}
+, "369091" : {
+    name : "Maze Behemoth"
+    , set : "DGM"
+}
+, "368957" : {
+    name : "Mending Touch"
+    , set : "DGM"
+}
+, "368988" : {
+    name : "Mutant's Prey"
+    , set : "DGM"
+}
+, "369054" : {
+    name : "Phytoburst"
+    , set : "DGM"
+}
+, "369033" : {
+    name : "Renegade Krasis"
+    , set : "DGM"
+}
+, "369088" : {
+    name : "Saruli Gatekeepers"
+    , set : "DGM"
+}
+, "369083" : {
+    name : "Skylasher"
+    , set : "DGM"
+}
+, "369020" : {
+    name : "Thrashing Mossdog"
+    , set : "DGM"
+}
+, "369036" : {
+    name : "Advent of the Wurm"
+    , set : "DGM"
+}
+, "369082" : {
+    name : "Armored Wolf-Rider"
+    , set : "DGM"
+}
+, "369016" : {
+    name : "Ascended Lawmage"
+    , set : "DGM"
+}
+, "369000" : {
+    name : "Beetleform Mage"
+    , set : "DGM"
+}
+, "368985" : {
+    name : "Blast of Genius"
+    , set : "DGM"
+}
+, "369047" : {
+    name : "Blaze Commando"
+    , set : "DGM"
+}
+, "368954" : {
+    name : "Blood Baron of Vizkopa"
+    , set : "DGM"
+}
+, "369051" : {
+    name : "Boros Battleshaper"
+    , set : "DGM"
+}
+, "368953" : {
+    name : "Bred for the Hunt"
+    , set : "DGM"
+}
+, "368971" : {
+    name : "Bronzebeak Moa"
+    , set : "DGM"
+}
+, "369057" : {
+    name : "Carnage Gladiator"
+    , set : "DGM"
+}
+, "368999" : {
+    name : "Council of the Absolute"
+    , set : "DGM"
+}
+, "369003" : {
+    name : "Deadbridge Chant"
+    , set : "DGM"
+}
+, "369039" : {
+    name : "Debt to the Deathless"
+    , set : "DGM"
+}
+, "369084" : {
+    name : "Deputy of Acquittals"
+    , set : "DGM"
+}
+, "369061" : {
+    name : "Dragonshift"
+    , set : "DGM"
+}
+, "369086" : {
+    name : "Drown in Filth"
+    , set : "DGM"
+}
+, "368944" : {
+    name : "Emmara Tandris"
+    , set : "DGM"
+}
+, "369055" : {
+    name : "Exava, Rakdos Blood Witch"
+    , set : "DGM"
+}
+, "368969" : {
+    name : "Feral Animist"
+    , set : "DGM"
+}
+, "368955" : {
+    name : "Fluxcharger"
+    , set : "DGM"
+}
+, "369095" : {
+    name : "Gaze of Granite"
+    , set : "DGM"
+}
+, "368987" : {
+    name : "Gleam of Battle"
+    , set : "DGM"
+}
+, "368964" : {
+    name : "Goblin Test Pilot"
+    , set : "DGM"
+}
+, "368956" : {
+    name : "Gruul War Chant"
+    , set : "DGM"
+}
+, "369087" : {
+    name : "Haunter of Nightveil"
+    , set : "DGM"
+}
+, "368947" : {
+    name : "Jelenn Sphinx"
+    , set : "DGM"
+}
+, "369064" : {
+    name : "Korozda Gorgon"
+    , set : "DGM"
+}
+, "369052" : {
+    name : "Krasis Incubation"
+    , set : "DGM"
+}
+, "368983" : {
+    name : "Lavinia of the Tenth"
+    , set : "DGM"
+}
+, "369066" : {
+    name : "Legion's Initiative"
+    , set : "DGM"
+}
+, "368981" : {
+    name : "Master of Cruelties"
+    , set : "DGM"
+}
+, "368994" : {
+    name : "Maw of the Obzedat"
+    , set : "DGM"
+}
+, "369062" : {
+    name : "Melek, Izzet Paragon"
+    , set : "DGM"
+}
+, "369026" : {
+    name : "Mirko Vosk, Mind Drinker"
+    , set : "DGM"
+}
+, "369049" : {
+    name : "Morgue Burst"
+    , set : "DGM"
+}
+, "369093" : {
+    name : "Nivix Cyclops"
+    , set : "DGM"
+}
+, "368973" : {
+    name : "Notion Thief"
+    , set : "DGM"
+}
+, "369002" : {
+    name : "Obzedat's Aid"
+    , set : "DGM"
+}
+, "369099" : {
+    name : "Pilfered Plans"
+    , set : "DGM"
+}
+, "369069" : {
+    name : "Plasm Capture"
+    , set : "DGM"
+}
+, "369001" : {
+    name : "Progenitor Mimic"
+    , set : "DGM"
+}
+, "369073" : {
+    name : "Putrefy"
+    , set : "DGM"
+}
+, "369031" : {
+    name : "Ral Zarek"
+    , set : "DGM"
+}
+, "368958" : {
+    name : "Reap Intellect"
+    , set : "DGM"
+}
+, "369022" : {
+    name : "Render Silent"
+    , set : "DGM"
+}
+, "368978" : {
+    name : "Restore the Peace"
+    , set : "DGM"
+}
+, "368986" : {
+    name : "Rot Farm Skeleton"
+    , set : "DGM"
+}
+, "369025" : {
+    name : "Ruric Thar, the Unbowed"
+    , set : "DGM"
+}
+, "368952" : {
+    name : "Savageborn Hydra"
+    , set : "DGM"
+}
+, "369005" : {
+    name : "Scab-Clan Giant"
+    , set : "DGM"
+}
+, "368945" : {
+    name : "Showstopper"
+    , set : "DGM"
+}
+, "368968" : {
+    name : "Sin Collector"
+    , set : "DGM"
+}
+, "369068" : {
+    name : "Sire of Insanity"
+    , set : "DGM"
+}
+, "369015" : {
+    name : "Species Gorger"
+    , set : "DGM"
+}
+, "368972" : {
+    name : "Spike Jester"
+    , set : "DGM"
+}
+, "369098" : {
+    name : "Tajic, Blade of the Legion"
+    , set : "DGM"
+}
+, "369011" : {
+    name : "Teysa, Envoy of Ghosts"
+    , set : "DGM"
+}
+, "368970" : {
+    name : "Tithe Drinker"
+    , set : "DGM"
+}
+, "369072" : {
+    name : "Trostani's Summoner"
+    , set : "DGM"
+}
+, "369074" : {
+    name : "Unflinching Courage"
+    , set : "DGM"
+}
+, "368977" : {
+    name : "Varolz, the Scar-Striped"
+    , set : "DGM"
+}
+, "369070" : {
+    name : "Viashino Firstblade"
+    , set : "DGM"
+}
+, "368951" : {
+    name : "Voice of Resurgence"
+    , set : "DGM"
+}
+, "369045" : {
+    name : "Vorel of the Hull Clade"
+    , set : "DGM"
+}
+, "369081" : {
+    name : "Warleader's Helix"
+    , set : "DGM"
+}
+, "369094" : {
+    name : "Warped Physique"
+    , set : "DGM"
+}
+, "369027" : {
+    name : "Woodlot Crawler"
+    , set : "DGM"
+}
+, "369019" : {
+    name : "Zhur-Taa Ancient"
+    , set : "DGM"
+}
+, "369065" : {
+    name : "Zhur-Taa Druid"
+    , set : "DGM"
+}
+, "369041" : {
+    name : "Alive // Well"
+    , set : "DGM"
+}
+, "368989" : {
+    name : "Armed // Dangerous"
+    , set : "DGM"
+}
+, "369063" : {
+    name : "Beck // Call"
+    , set : "DGM"
+}
+, "369009" : {
+    name : "Breaking // Entering"
+    , set : "DGM"
+}
+, "368982" : {
+    name : "Catch // Release"
+    , set : "DGM"
+}
+, "369089" : {
+    name : "Down // Dirty"
+    , set : "DGM"
+}
+, "369042" : {
+    name : "Far // Away"
+    , set : "DGM"
+}
+, "368991" : {
+    name : "Flesh // Blood"
+    , set : "DGM"
+}
+, "369097" : {
+    name : "Give // Take"
+    , set : "DGM"
+}
+, "369071" : {
+    name : "Profit // Loss"
+    , set : "DGM"
+}
+, "369024" : {
+    name : "Protect // Serve"
+    , set : "DGM"
+}
+, "368967" : {
+    name : "Ready // Willing"
+    , set : "DGM"
+}
+, "369032" : {
+    name : "Toil // Trouble"
+    , set : "DGM"
+}
+, "369080" : {
+    name : "Turn // Burn"
+    , set : "DGM"
+}
+, "368950" : {
+    name : "Wear // Tear"
+    , set : "DGM"
+}
+, "369017" : {
+    name : "Azorius Cluestone"
+    , set : "DGM"
+}
+, "368997" : {
+    name : "Boros Cluestone"
+    , set : "DGM"
+}
+, "369096" : {
+    name : "Dimir Cluestone"
+    , set : "DGM"
+}
+, "369023" : {
+    name : "Golgari Cluestone"
+    , set : "DGM"
+}
+, "369035" : {
+    name : "Gruul Cluestone"
+    , set : "DGM"
+}
+, "368948" : {
+    name : "Izzet Cluestone"
+    , set : "DGM"
+}
+, "369078" : {
+    name : "Orzhov Cluestone"
+    , set : "DGM"
+}
+, "368975" : {
+    name : "Rakdos Cluestone"
+    , set : "DGM"
+}
+, "369060" : {
+    name : "Selesnya Cluestone"
+    , set : "DGM"
+}
+, "368963" : {
+    name : "Simic Cluestone"
+    , set : "DGM"
+}
+, "368974" : {
+    name : "Azorius Guildgate"
+    , set : "DGM"
+}
+, "369008" : {
+    name : "Boros Guildgate"
+    , set : "DGM"
+}
+, "369058" : {
+    name : "Dimir Guildgate"
+    , set : "DGM"
+}
+, "368960" : {
+    name : "Golgari Guildgate"
+    , set : "DGM"
+}
+, "369040" : {
+    name : "Gruul Guildgate"
+    , set : "DGM"
+}
+, "368995" : {
+    name : "Izzet Guildgate"
+    , set : "DGM"
+}
+, "369038" : {
+    name : "Maze's End"
+    , set : "DGM"
+}
+, "369079" : {
+    name : "Orzhov Guildgate"
+    , set : "DGM"
+}
+, "368990" : {
+    name : "Rakdos Guildgate"
+    , set : "DGM"
+}
+, "369018" : {
+    name : "Selesnya Guildgate"
+    , set : "DGM"
+}
+, "368959" : {
+    name : "Simic Guildgate"
+    , set : "DGM"
+}
 , "82992" : {
     name : "Angel of Mercy"
     , set : "9ED"
@@ -26511,16 +27135,16 @@ var MultiverseToNameSetMapNew = {
     name : "Forest"
     , set : "9ED"
 }
+, "130550" : {
+    name : "Ancestor's Chosen"
+    , set : "10E"
+}
 , "129465" : {
     name : "Angel of Mercy"
     , set : "10E"
 }
 , "129711" : {
     name : "Angelic Blessing"
-    , set : "10E"
-}
-, "130550" : {
-    name : "Ancestor's Chosen"
     , set : "10E"
 }
 , "129710" : {
@@ -27011,12 +27635,12 @@ var MultiverseToNameSetMapNew = {
     name : "Afflict"
     , set : "10E"
 }
-, "106525" : {
-    name : "Ascendant Evincar"
-    , set : "10E"
-}
 , "135228" : {
     name : "Agonizing Memories"
+    , set : "10E"
+}
+, "106525" : {
+    name : "Ascendant Evincar"
     , set : "10E"
 }
 , "135194" : {
@@ -28403,12 +29027,12 @@ var MultiverseToNameSetMapNew = {
     name : "Relentless Rats"
     , set : "M10"
 }
-, "190192" : {
-    name : "Rise from the Grave"
-    , set : "M10"
-}
 , "191318" : {
     name : "Royal Assassin"
+    , set : "M10"
+}
+, "190192" : {
+    name : "Rise from the Grave"
     , set : "M10"
 }
 , "190190" : {
@@ -28939,12 +29563,12 @@ var MultiverseToNameSetMapNew = {
     name : "Condemn"
     , set : "M11"
 }
-, "208291" : {
-    name : "Elite Vanguard"
-    , set : "M11"
-}
 , "208297" : {
     name : "Day of Judgment"
+    , set : "M11"
+}
+, "208291" : {
+    name : "Elite Vanguard"
     , set : "M11"
 }
 , "208273" : {
@@ -29067,12 +29691,12 @@ var MultiverseToNameSetMapNew = {
     name : "Alluring Siren"
     , set : "M11"
 }
-, "208225" : {
-    name : "Augury Owl"
-    , set : "M11"
-}
 , "205083" : {
     name : "Armored Cancrix"
+    , set : "M11"
+}
+, "208225" : {
+    name : "Augury Owl"
     , set : "M11"
 }
 , "204984" : {
@@ -31643,4 +32267,4 @@ var MultiverseToNameSetMapNew = {
     name : "Forest"
     , set : "M13"
 }
-}
+};
