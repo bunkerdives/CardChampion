@@ -2,41 +2,19 @@ var express = require('express');
 var app = module.exports = express();
 var server = require('http').createServer(app);
 var io = module.exports = require('socket.io').listen(server);
-
 var mongoose = require('mongoose');
 var passport = require('passport');
 var passportSocketIo = require("passport.socketio");
 var LocalStrategy = require('passport-local').Strategy;
 var connect = require('connect');
-
-var fs = require('fs'),
-    path = require('path');
-
 var sessionStore    = new connect.session.MemoryStore();
-var sessionSecret  = 'asdasdsdas1312312';
+var sessionSecret  = 'lospolloshermanos';
 var sessionKey    = 'test-session-key';
 var sessionOptions = {
     store:  sessionStore,
     key:    sessionKey,
     secret: sessionSecret
 };
-
-/*
-var files = fs.readdirSync('./routes');
-for( var i in files ) {
-	;
-}
-*/
-
-/*
-var files = fs.readdirSync('./routes');
-
-files.forEach(function (file) {
-    var filePath = path.resolve('./', 'routes', file),
-        route = require(filePath);
-    route.init(app);
-});
-*/
 
 app.configure( function(){
     
@@ -104,8 +82,6 @@ require('./routes/IndexRouter.js').init(app);
 require('./routes/ProfileRouter.js').init(app);
 require('./routes/SplashRouter.js').init(app);
 
-
 server.listen(3000);
 
-//var routes = require('./routes');
 var sockets = require('./sockets');
