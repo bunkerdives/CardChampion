@@ -145,7 +145,7 @@ ko.utils.extend( FoyerViewModel.prototype, {
             BannerController.setAnimatedBanner();
             ChatController.bindEnterKeyForChat();
     	    FoyerViewController.foyerInit();
-    		headerLayout();
+    		HeaderViewController.headerLayout();
             FoyerViewController.profileLayout();
         } );
         

@@ -293,10 +293,10 @@ ko.utils.extend( BuilderViewModel.prototype, {
         jQuery(document).ready( function ($) {
             
             BackgroundController.setBackgroundImage();
-            headerInit();
+            HeaderViewController.headerLayout();
             $("#header").css('display','block');
             
-            builderLayout();
+            BuilderViewController.builderLayout();
             CardViewController.cardSizeInit();
             
         	$("#add-land-dropdown").on( "click", function(e){
@@ -308,6 +308,10 @@ ko.utils.extend( BuilderViewModel.prototype, {
     		ViewModel.poolViewController.fixPoolSize();
             
             $("#template-plugin").css("display", "block");
+			
+			$("#add-land-dropdown").on("click", function(e){
+			  e.stopPropagation();
+			});
             
         } );
         

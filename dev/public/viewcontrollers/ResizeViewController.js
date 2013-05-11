@@ -23,7 +23,7 @@ var ResizeViewController = {
 		//TODO Create HeaderViewController
 		var headerExists = $("#header").css("display");
 		if (headerExists=="block") {
-			headerLayout();
+			HeaderViewController.headerLayout();
 		}
 		
 		if( LightboxController.isVisible ) {
@@ -38,11 +38,11 @@ var ResizeViewController = {
 	}
 	
 	, builderResize : function() {
-		builderLayout();
+		BuilderViewController.builderLayout();
 	}
 	
 	, sealedResize : function() {
-		limitedLayout();
+		LimitedViewController.limitedLayout();
 	}
 	
 }

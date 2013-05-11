@@ -134,10 +134,10 @@ ko.utils.extend( SealedViewModel.prototype, {
         jQuery(document).ready( function ($) {
             
             BackgroundController.setBackgroundImage();
-            headerInit();
+            HeaderViewController.headerLayout();
             $("#header").css('display','block');
             
-            limitedInit();
+            LimitedViewController.limitedInit();
             CardViewController.cardSizeInit();
             
         	$("#add-land-dropdown").on( "click", function(e) {
@@ -149,6 +149,10 @@ ko.utils.extend( SealedViewModel.prototype, {
     		ViewModel.poolViewController.fixPoolSize();
             
             $("#template-plugin").css("display", "block");
+			
+			$("#add-land-dropdown").on("click", function(e){
+			  e.stopPropagation();
+			});
             
         } );
         

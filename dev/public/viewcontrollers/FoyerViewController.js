@@ -1,6 +1,152 @@
 var FoyerViewController = {
 	
-	profileLayout : function() {
+	showCustomSealedForm : function () {
+	
+		console.log('showCustomSealedForm function called.');
+	
+		var $menuRight = $('#sealed-menu-right');
+		var $menuLeft = $('#sealed-menu-left');
+		var $startBtn = $('#sealed-start-btn');
+		var $selectBtn = $('#sealed-select-btn');
+		var $customBtn = $('#sealed-custom-btn');
+		var $backBtn = $('#sealed-back-btn');
+	
+		$startBtn
+			.stop()
+			.animate( {
+				'opacity' : '0'
+			}
+			, 250
+			, 'linear'
+			, function () {
+				$startBtn.hide();
+				$selectBtn
+					.show()
+					.stop()
+					.animate( {
+						'opacity' : '1'
+					}
+					, 250
+					, 'linear' 
+				);
+			} );
+	
+		$customBtn
+			.stop()
+			.animate( {
+				'opacity' : '0'
+			}
+			, 250
+			, 'linear'
+			, function () {
+				$customBtn.hide();
+				$backBtn
+					.show()
+					.stop()
+					.animate( {
+						'opacity' : '1'
+					}
+					, 250
+					, 'linear'
+				);
+			} );
+	
+		$menuLeft
+			.stop()
+			.animate( {
+				'margin-left' : 0
+			}
+			, 500
+			, function() {
+				$menuLeft
+					.css('margin-right', 0)
+					.addClass('pull-left');
+				$menuRight
+					.css('width', '50%')
+					.stop()
+					.animate( {
+						'opacity' : '1'
+					}
+					, 300
+					, 'linear' );
+			} );
+	}
+
+	, hideCustomSealedForm : function () {
+	
+		console.log('hideCustomSealedForm function called.');
+	
+		var $menuRight = $('#sealed-menu-right');
+		var $menuLeft = $('#sealed-menu-left');
+		var $startBtn = $('#sealed-start-btn');
+		var $selectBtn = $('#sealed-select-btn');
+		var $customBtn = $('#sealed-custom-btn');
+		var $backBtn = $('#sealed-back-btn');
+	
+		$menuRight
+			.stop()
+			.animate( {
+				'opacity' : '0'
+			}
+			, 300
+			, 'linear'
+			, function() {
+			
+				$selectBtn
+					.stop()
+					.animate( {
+						'opacity' : '0'
+					}
+					, 250
+					, 'linear'
+					, function () {
+						$selectBtn.hide();
+						$startBtn
+							.show()
+							.stop()
+							.animate( {
+								'opacity' : '1'
+							}
+							, 250
+							, 'linear' );
+					} );
+	
+				$backBtn
+					.stop()
+					.animate( {
+						'opacity' : '0'
+					}
+					, 250
+					, 'linear'
+					, function () {
+						$backBtn.hide();
+						$customBtn
+							.show()
+							.stop()
+							.animate( {
+								'opacity' : '1'
+							}
+							, 250
+							, 'linear' );
+					} );
+			
+				$menuRight.css('width', '0%');
+				var margin = ($('#sealed-menu-inner').width()-$('#sealed-menu-left').width())/2;
+				console.log(margin)
+				$menuLeft
+					.removeClass('pull-left')
+					.stop()
+					.animate( {
+						'margin-left' : margin + 'px'
+						, 'margin-right' : margin + 'px'
+					}
+					, 500
+					, 'linear' );
+		
+			} );
+	}
+	
+	, profileLayout : function() {
     
 		var contentW = $('#main-animate-wrapper').width();
 		var leftColW = (contentW-20)*0.35;
@@ -77,9 +223,10 @@ var FoyerViewController = {
 		var headerExists = $("#header").css("display");
 		if (headerExists=="none"){
 			$("#header").css("display", "block");//Show header on foyer init
-			headerInit();
+			HeaderViewController.headerLayout();
 		}
 		FoyerViewController.profileLayout();
+		ThumbnailViewController.renderThumbnail(50,'.deck-preview-img');
 		FoyerViewController.cardPreviewEvent();
 		$('.foyer-header').removeClass('translucent-header');
 
