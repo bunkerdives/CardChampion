@@ -9,6 +9,9 @@ var passportSocketIo = require("passport.socketio");
 var LocalStrategy = require('passport-local').Strategy;
 var connect = require('connect');
 
+var fs = require('fs'),
+    path = require('path');
+
 var sessionStore    = new connect.session.MemoryStore();
 var sessionSecret  = 'asdasdsdas1312312';
 var sessionKey    = 'test-session-key';
@@ -17,6 +20,23 @@ var sessionOptions = {
     key:    sessionKey,
     secret: sessionSecret
 };
+
+/*
+var files = fs.readdirSync('./routes');
+for( var i in files ) {
+	;
+}
+*/
+
+/*
+var files = fs.readdirSync('./routes');
+
+files.forEach(function (file) {
+    var filePath = path.resolve('./', 'routes', file),
+        route = require(filePath);
+    route.init(app);
+});
+*/
 
 app.configure( function(){
     
@@ -58,19 +78,34 @@ passport.use( new LocalStrategy( Account.authenticate() ) );
 passport.serializeUser( Account.serializeUser() );
 passport.deserializeUser( Account.deserializeUser() );
 
-// Connect mongoose TODO update for www.cardchampion.com
-var database = mongoose.connect('mongodb://localhost/LimitedMTG');
+// Connect to the MongoDB database
+var database = mongoose.connect('mongodb://localhost/CardChampion');
 
 module.exports.app = app;
 module.exports.server = server;
 module.exports.passport = passport;
 module.exports.passportSocketIo = passportSocketIo;
+module.exports.mongoose = mongoose;
 module.exports.database = database;
 module.exports.sessionStore = sessionStore;
 module.exports.sessionOptions = sessionOptions;
 module.exports.io = io;
 
+
+// setup routers
+require('./routes/SealedRouter.js').init(app);
+require('./routes/AboutRouter.js').init(app);
+require('./routes/AuthRouter.js').init(app);
+require('./routes/BuilderRouter.js').init(app);
+require('./routes/CardRouter.js').init(app);
+require('./routes/ChatRouter.js').init(app);
+require('./routes/DecksRouter.js').init(app);
+require('./routes/IndexRouter.js').init(app);
+require('./routes/ProfileRouter.js').init(app);
+require('./routes/SplashRouter.js').init(app);
+
+
 server.listen(3000);
 
-var routes = require('./routes');
+//var routes = require('./routes');
 var sockets = require('./sockets');

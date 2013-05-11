@@ -106,8 +106,10 @@ var FoyerViewModel = function() {
     this.initEventViewModel = function() {
         this.NewSealedViewModel( new NewSealedViewModel() );
     };
-    
-    
+	
+    this.showNewSealedView = function() {
+        this.newEventVisible(true);
+    };
     
     this.showProfileDeckListView = function() {
         this.ProfileViewModel().displayProfileDeckList();
@@ -125,10 +127,6 @@ var FoyerViewModel = function() {
     
     this.showNewDraftView = function() {
         this.joinDraftVisible(true);
-    };
-    
-    this.showNewSealedView = function() {
-        this.newEventVisible(true);
     };
     
     this.showDecksView = function() {
