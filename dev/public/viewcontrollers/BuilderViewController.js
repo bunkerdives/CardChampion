@@ -1,7 +1,7 @@
 var BuilderViewController = {
 	
 	builderLayout : function () {
-	
+		
 		console.log('builderLayout function called');
 	
 		var windowWidth = $(window).width();

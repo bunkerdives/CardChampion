@@ -2,10 +2,9 @@
 html(lang='en')
   head
     <title id="title">Card Champion</title>
-    <!-- build:js js/app.js -->
+    <link href="/css/champion.css" rel="stylesheet"></link>
     <link href="/static/css/bootstrap.css" rel="stylesheet"></link>
     <link href="/static/css/darkstrap-v0.9.0.css" rel="stylesheet"></link>
-    <link href="/static/css/champion.css" rel="stylesheet"></link>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Viga|Courgette|Orbitron:400,500' rel='stylesheet' type='text/css'>
@@ -38,12 +37,10 @@ html(lang='en')
     script(src="/viewcontrollers/LimitedViewController.js")
     script(src="/viewcontrollers/BuilderViewController.js")
     script(src="/viewcontrollers/ResizeViewController.js")
-    script(src="/viewcontrollers/StatisticsController.js")
     script(src="/models/Land.js")
-    script(src="/utilities/CardSort.js")
-    script(src="/utilities/BoosterPack.js")
-    script(src="/utilities/MultiverseToNameSetMapNew.js")
-    script(src="/utilities/MultiverseToNameSetMapOld.js")
+    script(src="/utils/CardSort.js")
+    script(src="/utils/MultiverseToNameSetMapNew.js")
+    script(src="/utils/MultiverseToNameSetMapOld.js")
     script(src="/viewmodels/CardViewModel.js")
     script(src="/viewmodels/ColumnViewModel.js")
     script(src="/viewmodels/CardPoolViewModel.js")
@@ -82,5 +79,6 @@ html(lang='en')
     script(src="/controllers/LoadingWheelController.js")
     script(src="/controllers/BannerController.js")
     script(src="/controllers/TemplatePluginController.js")
+    script(src="/controllers/StatisticsController.js")
     script(type="text/javascript")
       initLayout( !{templateName}, !{options} );

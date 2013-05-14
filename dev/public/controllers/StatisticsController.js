@@ -157,6 +157,7 @@ var StatisticsController = {
 		    .text( function(d){
 		        if( d.data.total > 0 ) {
 		            return d.data.total;
+				}
 			} );
 		
 	}

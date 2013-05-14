@@ -1,8 +1,6 @@
 var FoyerViewController = {
 	
-	showCustomSealedForm : function () {
-	
-		console.log('showCustomSealedForm function called.');
+	showCustomSealedForm : function() {
 	
 		var $menuRight = $('#sealed-menu-right');
 		var $menuLeft = $('#sealed-menu-left');
@@ -10,140 +8,100 @@ var FoyerViewController = {
 		var $selectBtn = $('#sealed-select-btn');
 		var $customBtn = $('#sealed-custom-btn');
 		var $backBtn = $('#sealed-back-btn');
-	
-		$startBtn
-			.stop()
-			.animate( {
-				'opacity' : '0'
-			}
-			, 250
+		
+		var transparent =  { opacity : 0 };
+		var visible = { opacity : 1 };
+		
+		var shortDuration = 250;
+		var mediumDuration = 300;
+		var longDuration = 500;
+		
+		$startBtn.stop().animate(
+			transparent
+			, shortDuration
 			, 'linear'
-			, function () {
-				$startBtn.hide();
-				$selectBtn
-					.show()
-					.stop()
-					.animate( {
-						'opacity' : '1'
-					}
-					, 250
-					, 'linear' 
-				);
-			} );
-	
-		$customBtn
-			.stop()
-			.animate( {
-				'opacity' : '0'
-			}
-			, 250
-			, 'linear'
-			, function () {
-				$customBtn.hide();
-				$backBtn
-					.show()
-					.stop()
-					.animate( {
-						'opacity' : '1'
-					}
-					, 250
-					, 'linear'
-				);
-			} );
-	
-		$menuLeft
-			.stop()
-			.animate( {
-				'margin-left' : 0
-			}
-			, 500
 			, function() {
-				$menuLeft
-					.css('margin-right', 0)
-					.addClass('pull-left');
-				$menuRight
-					.css('width', '50%')
-					.stop()
-					.animate( {
-						'opacity' : '1'
-					}
-					, 300
-					, 'linear' );
-			} );
+				$startBtn.hide();
+				$selectBtn.show().stop().animate( visible, shortDuration, 'linear' );
+			}
+		);
+		
+		$customBtn.stop().animate(
+			transparent
+			, shortDuration
+			, 'linear'
+			, function() {
+				$customBtn.hide();
+				$backBtn.show().stop().animate( visible, shortDuration, 'linear' );
+			}
+		);
+		
+		$menuLeft.stop().animate(
+			{ 'margin-left' : 0 }
+			, longDuration
+			, function() {
+				$menuLeft.css('margin-right', 0).addClass('pull-left');
+				$menuRight.css('width', '50%').stop().animate( visible, mediumDuration, 'linear' );
+			}
+		);
+		
 	}
 
-	, hideCustomSealedForm : function () {
-	
-		console.log('hideCustomSealedForm function called.');
+	, hideCustomSealedForm : function() {
 	
 		var $menuRight = $('#sealed-menu-right');
 		var $menuLeft = $('#sealed-menu-left');
+		var $menuInner = $('#sealed-menu-inner');
 		var $startBtn = $('#sealed-start-btn');
 		var $selectBtn = $('#sealed-select-btn');
 		var $customBtn = $('#sealed-custom-btn');
 		var $backBtn = $('#sealed-back-btn');
+		
+		var transparent =  { 'opacity' : '0' };
+		var visible = { 'opacity' : '1' };
+		
+		var shortDuration = 250;
+		var mediumDuration = 300;
+		var longDuration = 500;
 	
-		$menuRight
-			.stop()
-			.animate( {
-				'opacity' : '0'
-			}
-			, 300
+		$menuRight.stop().animate(
+			transparent
+			, mediumDuration
 			, 'linear'
 			, function() {
-			
-				$selectBtn
-					.stop()
-					.animate( {
-						'opacity' : '0'
-					}
-					, 250
+				
+				$selectBtn.stop().animate(
+					transparent
+					, shortDuration
 					, 'linear'
-					, function () {
+					, function() {
 						$selectBtn.hide();
-						$startBtn
-							.show()
-							.stop()
-							.animate( {
-								'opacity' : '1'
-							}
-							, 250
-							, 'linear' );
-					} );
-	
-				$backBtn
-					.stop()
-					.animate( {
-						'opacity' : '0'
+						$startBtn.show().stop().animate( visible, shortDuration, 'linear' );
 					}
-					, 250
+				);
+	
+				$backBtn.stop().animate(
+					transparent
+					, shortDuration
 					, 'linear'
-					, function () {
+					, function() {
 						$backBtn.hide();
-						$customBtn
-							.show()
-							.stop()
-							.animate( {
-								'opacity' : '1'
-							}
-							, 250
-							, 'linear' );
-					} );
+						$customBtn.show().stop().animate( visible, shortDuration, 'linear' );
+					}
+				);
 			
 				$menuRight.css('width', '0%');
-				var margin = ($('#sealed-menu-inner').width()-$('#sealed-menu-left').width())/2;
-				console.log(margin)
-				$menuLeft
-					.removeClass('pull-left')
-					.stop()
-					.animate( {
-						'margin-left' : margin + 'px'
-						, 'margin-right' : margin + 'px'
-					}
-					, 500
-					, 'linear' );
+				var margin = ( $menuInner.width() - $menuLeft.width() ) / 2;
+				
+				$menuLeft.removeClass('pull-left').stop().animate(
+					{ 'margin-left' : margin + 'px', 'margin-right' : margin + 'px' }
+					, longDuration
+					, 'linear'
+				);
 		
-			} );
+			}
+		);
+		
 	}
 	
 	, profileLayout : function() {
@@ -167,45 +125,40 @@ var FoyerViewController = {
 	}
 	
 	, positionPreviewCard : function() {
-		
 		$('#card-preview-container').css( {
-	  	'top' : event.pageY - 20
-	  	, 'left' : event.pageX + 20
-	  });
-	  
+		  	'top' : event.pageY - 20
+		  	, 'left' : event.pageX + 20
+	  	} );
 	}
 
 
-	, showPreviewCard : function(target,c) {
-	
-		$('#card-preview-container').css("background-image", target);
-		$('#card-preview-container').css('display', 'block');
-		$('#card-preview-container').stop().animate({ opacity: 1 }, 300);
- 
+	, showPreviewCard : function( image ) {
+		$('#card-preview-container').css( 'background-image', image );
+		$('#card-preview-container').css( 'display', 'block' );
+		$('#card-preview-container').stop().animate( { opacity : 1 }, 300 );
 		FoyerViewController.positionPreviewCard();
-		$('body').mousemove(function(){
-			FoyerViewController.positionPreviewCard();
-		});
-	
+		$('body').mousemove( FoyerViewController.positionPreviewCard );
 	}
 
 	, hidePreviewCard : function() {
-		
-		$('#card-preview-container').stop().animate({ opacity: 0 }, 300, function(){
-			$('#card-preview-container').css('display', 'none');
-			$('body').off('mousemove');
-		});
+		$cardPreviewContainer = $('#card-preview-container');
+		$cardPreviewContainer.stop().animate(
+			{ opacity : 0 }
+			, 300
+			, function() {
+				$cardPreviewContainer.css('display', 'none');
+				$('body').off('mousemove');
+			}
+		);
 		
 	}
 
 	, cardPreviewEvent : function() {
-	
-		$('.deck-view-section a').mouseenter(function() {
-			FoyerViewController.showPreviewCard( $(this).attr("data-img"), false );
-		}).mouseleave(function(){
-			FoyerViewController.hidePreviewCard();
-		});
-	
+		var $target = $('.deck-view-section a');
+		$target.mouseenter( function() {
+			FoyerViewController.showPreviewCard( $(this).attr("data-img") );
+		} );
+		$target.mouseleave( FoyerViewController.hidePreviewCard );
 	}
 	
 	, showChatUserlist : function() {
@@ -220,13 +173,14 @@ var FoyerViewController = {
 	
 	, foyerInit : function(){ 
 
-		var headerExists = $("#header").css("display");
-		if (headerExists=="none"){
-			$("#header").css("display", "block");//Show header on foyer init
+		if( $("#header").css("display") == "none" ) {
+			//Show header on foyer init
+			$("#header").css("display", "block");
 			HeaderViewController.headerLayout();
 		}
+		
 		FoyerViewController.profileLayout();
-		ThumbnailViewController.renderThumbnail(75,'.deck-preview-img');
+		ThumbnailViewController.renderThumbnail( 75, '.deck-preview-img' );
 		FoyerViewController.cardPreviewEvent();
 		$('.foyer-header').removeClass('translucent-header');
 

@@ -294,7 +294,7 @@ ko.utils.extend( BuilderViewModel.prototype, {
             
             BackgroundController.setBackgroundImage();
             HeaderViewController.headerLayout();
-            $("#header").css('display','block');
+            $("#header").css('display', 'block');
             
             BuilderViewController.builderLayout();
             CardViewController.cardSizeInit();

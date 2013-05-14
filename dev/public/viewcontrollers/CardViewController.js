@@ -2,10 +2,12 @@ var CardViewController = {
     
     cardSizeInit : function() {
 		
+		console.log("cardSizeInit")
+		
     	$(".card").css( {
-    		"height" : SealedViewModel.cardH,
-    		"width" : SealedViewModel.cardW,
-    		"background-size" : SealedViewModel.cardW + "px " + SealedViewModel.cardH + "px"
+    		"height" : ViewModel.cardH
+    		, "width" : ViewModel.cardW
+    		, "background-size" : ViewModel.cardW + "px " + ViewModel.cardH + "px"
     	} );
         
     } 

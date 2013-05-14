@@ -1,6 +1,8 @@
 var PoolViewController = function() {
     
     this.fixPoolSize = function() {
+		
+		console.log("fixPoolSize")
         
         // get number of columns and max column length (or # rows) in sideboard
         var sideboardNumCols = ViewModel.sideboard()[0].columns().length;
