@@ -38,7 +38,6 @@ var LightboxController = {
 	
 	, showLightbox : function( subview ) {
 		
-		console.log('showLightbox, subview: ' + subview)
 		this.isVisible = true;
         $('#lightbox-shadow').show();
   	    $("#lightbox-container").show();
@@ -58,7 +57,6 @@ var LightboxController = {
 	
     , closeLightbox : function() {
 		
-		console.log('closeLightbox')
 		this.isVisible = false;
 		
         $("#lightbox-container").hide();
@@ -75,61 +73,37 @@ var LightboxController = {
     }
 	
 	, showAuthSubview : function() {
-		
-		console.log('showAuthSubview')
 		$("#lightbox-login-register-container").show();
-		
-        LightboxController.displayLoginContainers();
+		LightboxController.displayLoginContainers();
         LightboxController.hideRegisterContainers();
-		
 	}
 	
-	
 	, showSaveDeckSubview : function() {
-		
-		console.log('showSaveDeckSubview')
 		$("#save-deck-form").show();
-		
 	}
 	
 	, showProfileSettingsSubview : function() {
-		
-		console.log('showProfileSettingsSubview')
 		$("#profile-settings-form").show();
 		ProfileSettingsController.init();
-		
 		ThumbnailViewController.renderThumbnail( '260', '#profile-settings-thumbnail' );
-	
 		$('#profile-settings-image-input').tooltip();
-		
 	}
 	
 	, closeAuthSubview : function() {
-		
-		console.log('closeAuthSubview')
 		$("#lightbox-login-register-container").hide();
-		
 	}
 	
 	, closeSaveDeckSubview : function() {
-		
-		console.log('closeSaveDeckSubview')
 		$("#save-deck-form").hide();
-		
 	}
 	
 	, closeProfileSettingsSubview : function() {
-		
-		console.log('closeProfileSettingsSubview')
 		$("#profile-settings-form").hide();
-		
 	}
 	
 	, showRegisterForm : function() {
 		
-		console.log('showRegisterForm')
-		
-        LightboxController.closeErrorAlert();
+		LightboxController.closeErrorAlert();
 		
         LightboxController.displayRegisterContainers();
         LightboxController.hideLoginContainers();
@@ -166,9 +140,7 @@ var LightboxController = {
 
 	, showLoginForm : function() {
 		
-		console.log('showLoginForm')
-		
-        LightboxController.closeErrorAlert();
+		LightboxController.closeErrorAlert();
         
         LightboxController.displayLoginContainers();
         LightboxController.hideRegisterContainers();
@@ -229,9 +201,7 @@ var LightboxController = {
     }
 
 	, positionLightbox : function() {
-		
-		console.log('positionLightbox')
-        /*
+		/*
 		var lightboxW = 350;
 		var lightboxLeft = ( $(window).width() / 2 ) - ( lightboxW / 2 );
 		$('#lightbox-container').css( 'left', lightboxLeft );

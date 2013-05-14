@@ -76,9 +76,9 @@
 }
 
 #portal-left-pane {
-	width: -webkit-calc(67.5% - 1px);
-	width: -moz-calc(67.5% - 1px);
-	width: calc(67.5% - 1px);
+	width: -webkit-calc(72.5% - 1px);
+	width: -moz-calc(72.5% - 1px);
+	width: calc(72.5% - 1px);
 	
 	height:510px;
 	
@@ -789,9 +789,9 @@
 }
 
 #portal-right-pane {
-	width: -webkit-calc(32.5% - 1px);
-	width: -moz-calc(32.5% - 1px);
-	width: calc(32.5% - 1px);
+	width: -webkit-calc(27.5% - 1px);
+	width: -moz-calc(27.5% - 1px);
+	width: calc(27.5% - 1px);
 	
 	height:510px;
 	
@@ -814,7 +814,7 @@
 	padding-left:10px;
 	padding-right:10px;
 	padding-top:5px;
-	font-size:14px;
+	font-size:12px;
 	font-weight:200;
 	line-height:14px;
 }

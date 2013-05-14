@@ -226,7 +226,7 @@ var FoyerViewController = {
 			HeaderViewController.headerLayout();
 		}
 		FoyerViewController.profileLayout();
-		ThumbnailViewController.renderThumbnail(50,'.deck-preview-img');
+		ThumbnailViewController.renderThumbnail(75,'.deck-preview-img');
 		FoyerViewController.cardPreviewEvent();
 		$('.foyer-header').removeClass('translucent-header');
 
