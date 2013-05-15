@@ -1,5 +1,6 @@
 var LimitedViewController = {
 	
+	
 	limitedLayout : function () {
 		
 		var $win = $(window);

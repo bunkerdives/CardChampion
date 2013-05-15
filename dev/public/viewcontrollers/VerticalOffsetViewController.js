@@ -1,5 +1,6 @@
 var VerticalOffsetViewController = {
 	
+	
 	offsetDragHandlers : function () {
 		
 		console.log("offsetDragHandlers")
