@@ -8,9 +8,9 @@ var LayoutController = function( template, options ) {
             break;
         case 'Limited':
             if( options.format == 'Sealed' ) {
-				boosters = options.boosters;
-                context = new SealedViewModel();
-                context.newSealedInstance( boosters );
+				boosters = JSON.parse(options.boosters);
+                context = new SealedViewModel(boosters);
+                context.newSealedInstance();
             } else {
                 window.location.replace('/');
             }

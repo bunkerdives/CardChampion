@@ -36,17 +36,17 @@ var CardSizeViewController = {
 
 		//Set timeout
 		CardSizeViewController.rtime = new Date();
-	  if (CardSizeViewController.timeout === false) {
-	      CardSizeViewController.timeout = true;
-	      setTimeout(CardSizeViewController.cardSizeChangeEnd, CardSizeViewController.delta);
-	  }
+		if( CardSizeViewController.timeout === false ) {
+			CardSizeViewController.timeout = true;
+			setTimeout( CardSizeViewController.cardSizeChangeEnd, CardSizeViewController.delta );
+		}
   
 	}
 
 	, cardSizeChangeEnd : function () {
 
-	  if (new Date() - CardSizeViewController.rtime < CardSizeViewController.delta) {
-	  	setTimeout(CardSizeViewController.cardSizeChangeEnd, CardSizeViewController.delta);
+	  if( new Date() - CardSizeViewController.rtime < CardSizeViewController.delta ) {
+	  	setTimeout( CardSizeViewController.cardSizeChangeEnd, CardSizeViewController.delta );
 	  } else {
 	  	CardSizeViewController.timeout = false;
 			var newW = ViewModel.cardW;
@@ -55,9 +55,7 @@ var CardSizeViewController = {
 			//remove .cardResize class, change the background size of these elements
 			$( ".card" ).each(function() {//Change background size of cards to 0; add class .cardResize
 				$(this).removeClass('cardResize');
-				$(this).css({
-					'background-size': bgSize
-				});
+				$(this).css( 'background-size', bgSize );
 			});
 		}
 	}

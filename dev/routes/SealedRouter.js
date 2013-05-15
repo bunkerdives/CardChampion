@@ -72,6 +72,8 @@ var SealedRouter = {
 					res.send( 'Error creating booster pack!', 501 );
 				}
 			}
+			
+			boosters = JSON.stringify(boosters);
 	
 			// route the user to the sealed screen, and pass it the six packs of cards
 		    res.render( 'layout.jade', {

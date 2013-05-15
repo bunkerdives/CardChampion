@@ -1,9 +1,9 @@
-@import url('./header.css');
-/*@import url('./splash.css');*/
-@import url('./foyer.css');
-@import url('./limited-and-builder.css');
-@import url('./lightbox.css');
-/*@import url('./draft.css');*/
+@import url('header.css');
+/*@import url('splash.css');*/
+@import url('foyer.css');
+@import url('limited-and-builder.css');
+@import url('lightbox.css');
+/*@import url('draft.css');*/
 
 /* General classes and styles */
 body, html {

@@ -2,9 +2,7 @@ var PoolViewController = function() {
     
     this.fixPoolSize = function() {
 		
-		console.log("fixPoolSize")
-        
-        // get number of columns and max column length (or # rows) in sideboard
+		// get number of columns and max column length (or # rows) in sideboard
         var sideboardNumCols = ViewModel.sideboard()[0].columns().length;
         var sideboardNumRows = 0;
         for( var i = 0; i < sideboardNumCols; ++i ) {
@@ -23,7 +21,7 @@ var PoolViewController = function() {
             }
         }        
 				
-		//Get current card size
+		// Get current card size
 		var cardW = ViewModel.cardW;
 		var cardH = ViewModel.cardH;
 		var cardPadding = ViewModel.cardPadding;

@@ -1,4 +1,6 @@
-var SealedViewModel = function( set ) {
+var SealedViewModel = function(boosters) {
+	
+	this.boosters = boosters;
 	
 	this.viewName = 'Sealed';
 	
@@ -16,7 +18,6 @@ var SealedViewModel = function( set ) {
 	this.topScreenCalcPercentage = 60;
 	this.topScreenCalcPercentageOld = 60;
     
-    this.set = set;
     this.imgSrc = ko.observable( '/static/img/cardback.jpg' );
     this.sideboard = ko.observableArray( [] );
     this.mainboard = ko.observableArray( [] );
@@ -70,34 +71,32 @@ var SealedViewModel = function( set ) {
     this.cardselect = null;
     
     
-    this.newSealedInstance = function( boosters ) {
-		
-		var cardPool = [];
+    this.newSealedInstance = function() {
 		
 		// if the server passed sealed data, load it up!
-		if( boosters == undefined || boosters == null ) {
+		if( this.boosters == undefined || this.boosters == null ) {
 			// TODO display an error to the user and 'exit' gracefully
 			console.log("Error getting boosters")
 		}
 		
-		for( var i = 0; i < boosters.length; ++i ) {
-			cardData = boosters[i];
-	
-			var obj = {
+		var cardPool = [];
+		for( var i = 0; i < this.boosters.length; ++i ) {
+			
+			cardData = this.boosters[i];
+			
+			cardPool[i] = new CardViewModel( {
 				name : cardData.name
 				, rarity : cardData.rarity
+				, type : cardData.type
 				, color : cardData.color
+				, cost : cardData.cost
 				, cmc : cardData.cmc
 				, multiverse : cardData.multiverse
-				, type : cardData.type
-				, pt : cardData.pt
-			}
+			} );
 			
-			//console.log(obj)
-			cardPool[i] = new CardViewModel( obj );
 		}
 		
-        // create sideboard CardPoolViewModel and add the generated card pool to it
+		// create sideboard CardPoolViewModel and add the generated card pool to it
         var sideboard = new CardPoolViewModel( 'sideboard' );
         sideboard.newCardPoolInstance( cardPool );
         this.sideboard( [ sideboard ] );
@@ -108,20 +107,6 @@ var SealedViewModel = function( set ) {
         this.mainboard( [ mainboard ] );
         
     };
-    
-    this.newSealedPool = function() {
-        
-        var boosters = [];
-        
-        for( var i = 0; i < 6; ++i ){
-            var booster = BoosterPack.newBooster( this.set );
-            $.merge( boosters, booster );
-        }
-        
-        return boosters;
-        
-    };
-    
     
 };
 

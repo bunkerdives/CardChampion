@@ -20,21 +20,20 @@ var ResizeViewController = {
 			BackgroundController.setBackgroundImage();
 		}
 		
-		//TODO Create HeaderViewController
+		// TODO Create HeaderViewController
 		var headerExists = $("#header").css("display");
 		if (headerExists=="block") {
 			HeaderViewController.headerLayout();
 		}
 		
 		if( LightboxController.isVisible ) {
-			//TODO Finish cleaning up LightboxController
 			LightboxController.positionLightbox();
 		}
 		
 	}
 	
 	, foyerResize : function() {
-		FoyerViewController.profileLayout(); //TODO Should only be called if profile is showing
+		FoyerViewController.profileLayout();
 	}
 	
 	, builderResize : function() {

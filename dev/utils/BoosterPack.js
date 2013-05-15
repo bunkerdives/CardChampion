@@ -5,8 +5,6 @@ var BoosterPack = {
     
     newBooster : function( setAbbr ) {
 		
-		console.log("NEW SERVER BOOSTER")
-        
 		// if the set passed is not valid, return null
 		if( ! SetController.validSet( setAbbr ) ) {
 			return null;
@@ -43,9 +41,7 @@ var BoosterPack = {
             
         }
 		
-		console.log(booster)
-        
-        // TODO add random chance of foil card
+		// TODO add random chance of foil card
 		
         return booster;
         

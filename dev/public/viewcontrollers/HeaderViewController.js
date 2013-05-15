@@ -7,14 +7,14 @@ var HeaderViewController = {
 	
 		var tmpW = windowWidth * 0.95;
 	
-		if (tmpW>=1080) tmpW=1080;
+		if( tmpW >= 1080 ) {
+			tmpW = 1080;
+		}
 	
-		var headerContainerW = tmpW*0.95;
-	
+		var headerContainerW = tmpW * 0.95;
 	
 		var headerLinksW = 244;
 		var headerLinksNum = 4;
-	
 	
 		var logoW = 272;
 	

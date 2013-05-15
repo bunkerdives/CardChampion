@@ -2,9 +2,9 @@
 html(lang='en')
   head
     <title id="title">Card Champion</title>
-    <link href="/css/champion.css" rel="stylesheet"></link>
-    <link href="/static/css/bootstrap.css" rel="stylesheet"></link>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet"></link>
     <link href="/static/css/darkstrap-v0.9.0.css" rel="stylesheet"></link>
+    <link href="/css/champion.css" rel="stylesheet"></link>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Viga|Courgette|Orbitron:400,500' rel='stylesheet' type='text/css'>
@@ -27,15 +27,15 @@ html(lang='en')
     <div id="loading"></div>
     <div id="template-plugin" data-bind="plugin: plugin" style="display:hidden;"></div>
     </div>
+    script(src="/viewcontrollers/BuilderViewController.js")
     script(src="/viewcontrollers/HeaderViewController.js")
     script(src="/viewcontrollers/PoolViewController.js")
     script(src="/viewcontrollers/CardViewController.js")
     script(src="/viewcontrollers/CardSizeViewController.js")
-    script(src="/viewcontrollers/VerticalOffsetViewController.js")
-    script(src="/viewcontrollers/ThumbnailViewController.js")
     script(src="/viewcontrollers/FoyerViewController.js")
+    script(src="/viewcontrollers/ThumbnailViewController.js")
+    script(src="/viewcontrollers/VerticalOffsetViewController.js")
     script(src="/viewcontrollers/LimitedViewController.js")
-    script(src="/viewcontrollers/BuilderViewController.js")
     script(src="/viewcontrollers/ResizeViewController.js")
     script(src="/models/Land.js")
     script(src="/utils/CardSort.js")
@@ -79,6 +79,5 @@ html(lang='en')
     script(src="/controllers/LoadingWheelController.js")
     script(src="/controllers/BannerController.js")
     script(src="/controllers/TemplatePluginController.js")
-    script(src="/controllers/StatisticsController.js")
     script(type="text/javascript")
       initLayout( !{templateName}, !{options} );

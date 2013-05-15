@@ -1,6 +1,9 @@
 var VerticalOffsetViewController = {
 	
 	offsetDragHandlers : function () {
+		
+		console.log("offsetDragHandlers")
+		
 		$('#drag-offset-y').mousedown(function(e){
 			ViewModel.yOffsetBool=true;
 			$("body").addClass("no-select");
