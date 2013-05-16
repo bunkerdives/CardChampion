@@ -121,6 +121,9 @@ ko.utils.extend( SealedViewModel.prototype, {
             BackgroundController.setBackgroundImage();
             HeaderViewController.headerLayout();
             $("#header").css('display','block');
+			
+			
+			CompatibilityController.checkCss3Calc();
             
             LimitedViewController.limitedInit();
             CardViewController.cardSizeInit();
