@@ -3,6 +3,8 @@ var TemplateOptions = {
 	, context : ''
 }
 
+var Layout = '';
+
 var LayoutController = function( template, options ) {
     
     var context;
@@ -67,5 +69,6 @@ var LayoutController = function( template, options ) {
 };
 
 var initLayout = function( template, options ) {
-    ko.applyBindings( new LayoutController( template, options ) );
+	Layout = new LayoutController( template, options );
+    ko.applyBindings( Layout );
 };
