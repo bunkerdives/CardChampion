@@ -82,6 +82,6 @@ require('./routes/IndexRouter.js').init(app);
 require('./routes/ProfileRouter.js').init(app);
 require('./routes/SplashRouter.js').init(app);
 
-server.listen(3000);
+server.listen(80);
 
 var sockets = require('./sockets');
