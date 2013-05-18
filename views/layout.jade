@@ -16,7 +16,6 @@ html(lang='en')
     script(src="/static/js/bootstrap.js")
     script(src="/static/js/spin.min.js")
     script(src="/static/js/modernizr.custom.56114.js")
-    script(src="/controllers/TemplatePluginController.js")
     script(src="/viewcontrollers/BuilderViewController.js")
     script(src="/viewcontrollers/HeaderViewController.js")
     script(src="/viewcontrollers/PoolViewController.js")
@@ -76,7 +75,8 @@ html(lang='en')
     <div id="content">
     include lightbox.html
     <div id="loading"></div>
-    <div id="template-plugin" data-bind="plugin: plugin" style="display:hidden;"></div>
+    <div id="template-plugin" data-bind="plugin: $root.plugin" style="display:hidden;"></div>
     </div>
+    script(src="/controllers/TemplatePluginController.js")
     script(type="text/javascript")
       initLayout( !{templateName}, !{options} );

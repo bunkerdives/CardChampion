@@ -1,3 +1,8 @@
+var TemplateOptions = {
+	template : ''
+	, context : ''
+}
+
 var LayoutController = function( template, options ) {
     
     var context;
@@ -45,6 +50,9 @@ var LayoutController = function( template, options ) {
         template : template
         , context : context }
     );
+	
+	TemplateOptions.template = template;
+	TemplateOptions.context = context;
     
     var loggedIn = options.auth;
     
