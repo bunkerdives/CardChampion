@@ -57,7 +57,7 @@ passport.serializeUser( Account.serializeUser() );
 passport.deserializeUser( Account.deserializeUser() );
 
 // Connect to the MongoDB database
-var database = mongoose.connect('mongodb://localhost/CardChampion');
+var database = mongoose.connect('mongodb://ec2-54-226-59-86.compute-1.amazonaws.com/CardChampion');
 
 module.exports.app = app;
 module.exports.server = server;
