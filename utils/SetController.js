@@ -1,4 +1,3 @@
-var $ = require('jQuery');
 var fs = require('fs');
 
 var ED2 = require('../sets/2ED');

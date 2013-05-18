@@ -1,5 +1,4 @@
 var SetController = require('./SetController.js');
-var $ = require('jQuery');
 
 var BoosterPack = {
     

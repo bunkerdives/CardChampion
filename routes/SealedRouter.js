@@ -1,7 +1,6 @@
 var BoosterPack = require('../utils/BoosterPack.js');
 var SetController = require('../utils/SetController.js');
 var Auth = require( '../controllers/Auth.js' );
-var $ = require('jQuery');
 
 
 var SealedRouter = {
