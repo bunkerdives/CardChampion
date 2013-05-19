@@ -1,10 +1,3 @@
-var TemplateOptions = {
-	template : ''
-	, context : ''
-}
-
-var Layout = '';
-
 var LayoutController = function( template, options ) {
     
     var context;
@@ -52,9 +45,6 @@ var LayoutController = function( template, options ) {
         template : template
         , context : context }
     );
-	
-	TemplateOptions.template = template;
-	TemplateOptions.context = context;
     
     var loggedIn = options.auth;
     
@@ -70,5 +60,6 @@ var LayoutController = function( template, options ) {
 
 var initLayout = function( template, options ) {
 	Layout = new LayoutController( template, options );
+	console.log("initLayout")
     ko.applyBindings( Layout );
 };

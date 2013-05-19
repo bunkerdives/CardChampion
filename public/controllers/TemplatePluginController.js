@@ -16,14 +16,7 @@ ko.bindingHandlers.plugin = {
         		viewModel.context.init();
         	}
         }, element.children('#templateContainer'), 'replaceNode' );
-		
-		/*
-		ko.renderTemplate( TemplateOptions.template, TemplateOptions.context, {
-        	afterRender: function(renderedElement){
-        		TemplateOptions.context.init();
-        	}
-		}, element.children('#templateContainer'), 'replaceNode');
-		*/
+
 	}
     
 };
